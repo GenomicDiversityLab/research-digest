@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Transient build artifacts (regenerated each run)
+data/_chunk_*.json
+data/_week_raw.json
+digests/__mock_render__.html
+digests/_combined_*.html
+
+# Build script — keep in repo for reproducibility but not part of the site
+build_combined.py
+build_weekly.py
+
+# Don't expose any local secrets if they slip in
+*.pem
+*.key
+.env
+.env.*

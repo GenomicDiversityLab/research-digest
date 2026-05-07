@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Paper Digest — 2026-05-06</title>
+<style>
+:root {
+  --bg: #fafaf7;
+  --fg: #1c1c1a;
+  --muted: #6b6b66;
+  --accent: #b85c00;
+  --card: #ffffff;
+  --border: #e5e3dc;
+  --chip: #f0ede4;
+  --chip-active: #b85c00;
+  --chip-active-fg: #ffffff;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  font-size: 15px; line-height: 1.55; }
+.wrap { max-width: 880px; margin: 0 auto; padding: 32px 20px 80px; }
+header h1 { margin: 0 0 4px; font-size: 26px; letter-spacing: -0.01em; }
+header .meta { color: var(--muted); font-size: 13px; }
+.summary { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; margin: 22px 0; }
+.summary h2 { margin: 0 0 10px; font-size: 14px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
+.summary-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(180px,1fr)); gap: 14px 28px; }
+.summary-grid .col h3 { margin: 0 0 6px; font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+.summary-grid .col ul { margin: 0; padding: 0; list-style: none; font-size: 14px; }
+.summary-grid .col li { display: flex; justify-content: space-between; gap: 12px; padding: 2px 0; border-bottom: 1px dashed var(--border); }
+.summary-grid .col li:last-child { border-bottom: 0; }
+.summary-grid .col li b { font-weight: 600; }
+.filters { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 18px; }
+.chip { display: inline-flex; align-items: center; padding: 4px 10px; border-radius: 999px; background: var(--chip); border: 1px solid var(--border);
+  font-size: 13px; cursor: pointer; user-select: none; transition: all 0.12s; }
+.chip:hover { border-color: var(--accent); }
+.chip.active { background: var(--chip-active); color: var(--chip-active-fg); border-color: var(--chip-active); }
+.chip .count { opacity: 0.6; margin-left: 6px; font-variant-numeric: tabular-nums; }
+.chip.active .count { opacity: 0.85; }
+.filter-row { display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; margin-bottom: 8px; }
+.filter-row .lbl { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; min-width: 70px; }
+.search-box { width: 100%; margin: 14px 0 22px; }
+.search-box input { width: 100%; padding: 10px 14px; border: 1px solid var(--border); border-radius: 8px; font-size: 14px; background: var(--card); }
+.papers { display: flex; flex-direction: column; gap: 14px; }
+.paper { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; transition: border-color 0.12s; }
+.paper:hover { border-color: var(--accent); }
+.paper.hidden { display: none; }
+.paper h3 { margin: 0 0 6px; font-size: 17px; line-height: 1.35; font-weight: 600; }
+.paper h3 a { color: var(--fg); text-decoration: none; }
+.paper h3 a:hover { color: var(--accent); text-decoration: underline; }
+.paper .by { font-size: 13px; color: var(--muted); margin: 0 0 6px; }
+.paper .meta { font-size: 12px; color: var(--muted); margin: 0 0 8px; display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: center; }
+.paper .meta .src { display: inline-block; padding: 1px 7px; border-radius: 4px; background: var(--chip); font-weight: 600; letter-spacing: 0.02em; font-size: 11px; }
+.paper .meta .src.PPR { background: #fff3df; color: #8a4b00; }
+.paper .meta .src.MED { background: #e3eef6; color: #1f4e75; }
+.paper .meta .src.PMC { background: #e3f4e6; color: #2a6b35; }
+.paper .meta .kw { display: inline-block; padding: 0 6px; background: var(--chip); border-radius: 4px; font-size: 11px; }
+.paper .meta .pinned-tag { background: #fff0d6; color: #8a4b00; font-weight: 600; }
+.chip.pinned { background: #fff0d6; border-color: #f0c388; color: #8a4b00; }
+.chip.pinned.active { background: #b85c00; color: #ffffff; border-color: #b85c00; }
+.paper .ab { font-size: 14px; color: #2c2c28; margin: 6px 0 0; }
+.paper .doi a { color: var(--muted); font-size: 12px; text-decoration: none; }
+.paper .doi a:hover { color: var(--accent); }
+.empty { background: var(--card); border: 1px dashed var(--border); border-radius: 10px; padding: 30px; text-align: center; color: var(--muted); }
+.failures { background: #fff8e9; border: 1px solid #f0d99a; border-radius: 8px; padding: 10px 14px; margin: 18px 0; font-size: 13px; color: #6b4a00; }
+footer { margin-top: 60px; padding-top: 18px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted); }
+footer a { color: var(--muted); }
+.nav { display: flex; gap: 14px; margin-bottom: 18px; font-size: 13px; }
+.nav a { color: var(--accent); text-decoration: none; }
+.nav a:hover { text-decoration: underline; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #181815; --fg: #e8e6df; --muted: #8a8780; --card: #232320; --border: #353330; --chip: #2a2825; --accent: #f29349; }
+  .paper .meta .src.PPR { background: #3a2a13; color: #f0c388; }
+  .paper .meta .src.MED { background: #1a2a3a; color: #93c0e8; }
+  .paper .meta .src.PMC { background: #1d3322; color: #8fd29a; }
+  .summary, .paper { box-shadow: 0 1px 0 rgba(0,0,0,0.2); }
+  .failures { background: #2e2615; border-color: #5a4818; color: #e8c478; }
+  .paper .meta .pinned-tag { background: #3a2a13; color: #f0c388; }
+  .chip.pinned { background: #3a2a13; border-color: #5a4818; color: #f0c388; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="nav"><a href="../index.html">← All digests</a></div>
+<header>
+  <h1>Paper Digest</h1>
+  <div class="meta">Wednesday, May 06, 2026 · Europe PMC (PubMed + bioRxiv + medRxiv + others) · <b>6</b> unique paper(s)</div>
+</header>
+
+<section class="summary">
+  <h2>Summary</h2>
+  <div class="summary-grid">
+    <div class="col"><h3>By source</h3><ul><li><span>Preprint</span><b>6</b></li></ul></div>
+    <div class="col"><h3>Top journals</h3><ul><li><span>(unspecified)</span><b>6</b></li></ul></div>
+    <div class="col"><h3>By keyword</h3><ul><li><span>Somatic mosaicism</span><b>0</b></li><li><span>mosaic</span><b>2</b></li><li><span>mosaic variant</span><b>0</b></li><li><span>methylation</span><b>4</b></li><li><span>PacBio</span><b>0</b></li></ul></div>
+    <div class="col"><h3>📌 Pinned journals</h3><ul><li><span>📌 Cell</span><b>0</b></li><li><span>📌 Nature</span><b>0</b></li><li><span>📌 Science</span><b>0</b></li></ul></div>
+  </div>
+</section>
+
+<div class="filter-row"><div class="lbl">Keyword</div><div class="filters"><span class="chip active" data-filter="keyword" data-value="all">All <span class="count" id="visibleCount">6</span></span><span class="chip" data-filter="keyword" data-value="Somatic mosaicism">Somatic mosaicism<span class="count">0</span></span><span class="chip" data-filter="keyword" data-value="mosaic">mosaic<span class="count">2</span></span><span class="chip" data-filter="keyword" data-value="mosaic variant">mosaic variant<span class="count">0</span></span><span class="chip" data-filter="keyword" data-value="methylation">methylation<span class="count">4</span></span><span class="chip" data-filter="keyword" data-value="PacBio">PacBio<span class="count">0</span></span></div></div>
+<div class="filter-row"><div class="lbl">Source</div><div class="filters"><span class="chip active" data-filter="source" data-value="all">All sources</span><span class="chip" data-filter="source" data-value="PPR">Preprint<span class="count">6</span></span></div></div>
+<div class="search-box"><input id="search" type="search" placeholder="Filter by title, author, journal, abstract…"></div>
+<div class="papers">
+<article class="paper" data-keywords="mosaic" data-source="PPR" data-search="Karyotype-Specific Cardiovascular Disease in Turner Syndrome: Insights from Transthoracic Echocardiography &lt;title&gt;Abstract&lt;/title&gt;  &lt;p&gt;  Background:​​  As the only survivable sex chromosome monosomy, Turner syndrome (TS) demonstrates a certain association with cardiovascular disease (CVD), which severely impacts patients&#x27; quality of life. While the CVD phenotype and prognosis differ among TS patients suffering from specific karyotypes, these discrepancies remain inadequately studied. &lt;h4&gt;Objective:&lt;/h4&gt; ​​  This study was predominantly intended to assess the association between baseline metabolic characteristics and the incidence rate of CVD in TS patients with different karyotypes identified by transthoracic echocardiography (TTE). &lt;h4&gt;Methods:&lt;/h4&gt; ​​  We conducted a retrospective longitudinal cohort study of 289 TS patients and 289 strictly matched non-TS patients at Guangzhou Women&#x27;s and Children&#x27;s Medical Center between October 2016 and October 2023. Participants were stratified by karyotype: 45, X monosomy (n = 149) and mosaic karyotypes (n = 140). &lt;h4&gt;Results:&lt;/h4&gt; ​​  Patients suffering from the 45, X karyotype demonstrated an incidence of CVD tremendously higher than those with mosaic karyotypes. 45, X cohort (n = 149) in comparison with the mosaic karyotype group (n = 140): SBP (89.7 ± 14.1 mmHg vs. 93.3 ± 13.1 mmHg,  &lt;italic&gt;P&lt;/italic&gt;   = 0.026).hypercholesterolemia (34.2% vs. 11.4%;  &lt;italic&gt;p&lt;/italic&gt;   &lt; 0.001), elevated LDL cholesterol (34.9% vs. 22.9%;  &lt;italic&gt;p&lt;/italic&gt;   = 0.002), and insulin resistance (37.6% vs. 19.3%;  &lt;italic&gt;p&lt;/italic&gt;   &lt; 0.001). In contrast, the mosaic karyotype group exhibited a tremendously higher prevalence of low estradiol levels (39.3% vs. 26.8%;  &lt;italic&gt;p&lt;/italic&gt;   &lt; 0.001). TTE assessment identified a statistically significant disparity in left ventricular end-diastolic dimension (LVDD) between the 45, X group and mosaic karyotype patients (  &lt;italic&gt;p&lt;/italic&gt;   &lt; 0.05). &lt;h4&gt;Conclusions:&lt;/h4&gt; Patients suffering from the 45, X karyotype exhibited a strikingly higher incidence of dyslipidemia and insulin resistance. These individuals demonstrated notably impaired left ventricular diastolic function. It is imperative to better the cardiovascular risk management strategy of TS by implementing personalized intervention measures for this high-risk subgroup.  &lt;/p&gt; Huang Y, Luo S, Qi Y, Qin S, Yue C, Lu Q, Lash GE, Li L.  mosaic ">
+  <h3><a href="https://europepmc.org/abstract/PPR/PPR1185205" target="_blank" rel="noopener">Karyotype-Specific Cardiovascular Disease in Turner Syndrome: Insights from Transthoracic Echocardiography</a></h3>
+  <div class="by">Huang Y, Luo S, Qi Y, et al.</div>
+  <div class="meta"><span class="src PPR">Preprint</span><span>2026-05-04</span><span class="kw">mosaic</span></div>
+  <div class="ab">&lt;title&gt;Abstract&lt;/title&gt;  &lt;p&gt;  Background:​​  As the only survivable sex chromosome monosomy, Turner syndrome (TS) demonstrates a certain association with cardiovascular disease (CVD), which severely impacts patients&#x27; quality of life. While the CVD…</div>
+  <div class="doi"><a href="https://doi.org/10.21203/rs.3.rs-9246643/v1" target="_blank" rel="noopener">10.21203/rs.3.rs-9246643/v1</a></div>
+</article><article class="paper" data-keywords="mosaic" data-source="PPR" data-search="Application and value of multi-technique integration in the prenatal diagnosis of mosaicism derived of ICSI blastocyst &lt;title&gt;Abstract&lt;/title&gt;  &lt;p&gt;  &lt;bold&gt;Background.&lt;/bold&gt;  To investigate the antenatal diagnosis of a pregnant fetus after intracytoplasmic sperm injection (ICSI) and blastocyst transplantation. By integrating multiple technologies, we clarified the specific characteristics of the 20p mosaic duplication, evaluated its pathogenicity and clinical significance, and provided evidence for prenatal genetic counseling.  &lt;bold&gt;Methods.&lt;/bold&gt;  Amniocentesis was performed on a pregnant woman identified as high-risk by non-invasive prenatal testing (NIPT) suggesting a 15q26.3 deletion.Fetal amniotic fluid exfoliative cells were analyzed using an integrated approach combining G-banding karyotyping, chromosomal microarray analysis (CMA), and fluorescence in situ hybridization (FISH).  &lt;bold&gt;Results.&lt;/bold&gt;  NIPT showed a 3.04 Mb deletion at 15q26.3.CMA showed a 20.51 Mb mosaic duplication in the 20p13p11.23 region (approximately 50% mosaicism),while G-banding karyotype analysis showed no abnormality in amniotic fluid cells.Mid-term FISH analysis of amniotic fluid cells in our hospital showed a der(15)t(15;20)(qter;p13) mosaicism, meaning that a portion of the 20p13 segment was translocated to the end of chromosome 15. FISH analysis from outer hospital indicated that 49% of cells carried a 20p13 duplication signal. Both parents had normal peripheral blood karyotypes.  &lt;bold&gt;Conclusion.&lt;/bold&gt;  This case is a complex chromosomal rearrangement in the early cleavage stage of ICSI blastocyst transfer. The high proportion of 20p13p11.23 mosaic duplication has potential serious pathogenicity, and the risk of poor prognosis in continued pregnancy is high. Termination of pregnancy is a reasonable decision. This study highlights the core value of multi-technology integration in the prenatal diagnosis of complex chromosomal abnormalities after ICSI. At the same time, it is suggested that couples with abnormal sperm parameters such as male UU infection, abnormal sperm morphology, or a history of repeated fertilization/implantation failure should be alert to the risk of mosaic chromosomal abnormalities. Strengthening preimplantation genetic testing (PGT) protocols before assisted reproduction is recommended, providing a reference for optimizing prenatal diagnosis strategies in ICSI-assisted pregnancies.  &lt;/p&gt; Huang Y, Zhang S, Zou P, Huang L, Li X, Wang H.  mosaic ">
+  <h3><a href="https://europepmc.org/abstract/PPR/PPR1185306" target="_blank" rel="noopener">Application and value of multi-technique integration in the prenatal diagnosis of mosaicism derived of ICSI blastocyst</a></h3>
+  <div class="by">Huang Y, Zhang S, Zou P, et al.</div>
+  <div class="meta"><span class="src PPR">Preprint</span><span>2026-05-04</span><span class="kw">mosaic</span></div>
+  <div class="ab">&lt;title&gt;Abstract&lt;/title&gt;  &lt;p&gt;  &lt;bold&gt;Background.&lt;/bold&gt;  To investigate the antenatal diagnosis of a pregnant fetus after intracytoplasmic sperm injection (ICSI) and blastocyst transplantation. By integrating multiple technologies, we clarified the…</div>
+  <div class="doi"><a href="https://doi.org/10.21203/rs.3.rs-8634923/v1" target="_blank" rel="noopener">10.21203/rs.3.rs-8634923/v1</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="PPR" data-search="Cervical detection of STIC-associated TUBB6 methylation in high-grade serous ovarian carcinoma compared with benign ovarian tumors &lt;title&gt;Abstract&lt;/title&gt;  &lt;p&gt;  Background:  High-grade serous ovarian carcinoma (HGSOC) is the most lethal subtype of ovarian cancer and is increasingly recognized to originate from serous tubal intraepithelial carcinoma (STIC) in the fallopian tube epithelium. DNA methylation alterations occur early in serous tumorigenesis and may provide potential biomarkers for disease detection. However, whether STIC-associated methylation signals can be detected using minimally invasive cervical specimens remains unclear. This study investigated the detectability of STIC-related methylation markers in cervical scrapings from patients with HGSOC. &lt;h4&gt;Methods:&lt;/h4&gt; In this retrospective case–control study, cervical swab samples from 185 women were analyzed, including 83 patients with HGSOC and 102 patients with benign ovarian tumors. Candidate loci previously identified from genome-wide methylation analyses of STIC lesions (  &lt;italic&gt;c17orf64&lt;/italic&gt;  ,  &lt;italic&gt;IRX2&lt;/italic&gt;  , and  &lt;italic&gt;TUBB6&lt;/italic&gt;  ) were evaluated in the pilot study using quantitative methylation-specific polymerase chain reaction. Methylation levels were compared between malignant and benign groups, and diagnostic performance was assessed using receiver operating characteristic analysis. &lt;h4&gt;Results:&lt;/h4&gt; Among the three candidate loci,  &lt;italic&gt;TUBB6&lt;/italic&gt;  methylation was consistently detectable in cervical scrapings and was significantly elevated in patients with HGSOC compared with benign controls. TUBB6 methylation levels were independent of tumor stage, suggesting that the alteration occurs early during serous tumorigenesis. In benign samples, TUBB6 methylation increased with age, consistent with age-related epigenetic drift, whereas in malignant samples, methylation was elevated independent of age, indicating tumor-associated epigenetic remodeling. The  &lt;italic&gt;TUBB6&lt;/italic&gt;  -only model yielded an area under the curve of 0.75. When combined with serum CA125, the discriminatory performance improved. &lt;h4&gt;Conclusions:&lt;/h4&gt; &lt;italic&gt;TUBB6&lt;/italic&gt;  methylation can be detected in cervical scrapings and reflects molecular alterations associated with STIC-related serous ovarian tumorigenesis. These findings demonstrate that STIC-associated methylation signals can be detected in cervical specimens and highlight the potential of cervical-based sampling for studying molecular alterations associated with HGSOC. Further validation studies are warranted to evaluate its potential role in ovarian cancer detection strategies.  &lt;/p&gt; Su K, Wen K, Chen L, Wang H, Weng Y, Su P, Lai H.  methylation ">
+  <h3><a href="https://europepmc.org/abstract/PPR/PPR1185386" target="_blank" rel="noopener">Cervical detection of STIC-associated TUBB6 methylation in high-grade serous ovarian carcinoma compared with benign ovarian tumors</a></h3>
+  <div class="by">Su K, Wen K, Chen L, et al.</div>
+  <div class="meta"><span class="src PPR">Preprint</span><span>2026-05-04</span><span class="kw">methylation</span></div>
+  <div class="ab">&lt;title&gt;Abstract&lt;/title&gt;  &lt;p&gt;  Background:  High-grade serous ovarian carcinoma (HGSOC) is the most lethal subtype of ovarian cancer and is increasingly recognized to originate from serous tubal intraepithelial carcinoma (STIC) in the fallopian tube…</div>
+  <div class="doi"><a href="https://doi.org/10.21203/rs.3.rs-9130224/v1" target="_blank" rel="noopener">10.21203/rs.3.rs-9130224/v1</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="PPR" data-search="Conditioning chemotherapy exposure is associated with epigenetic modifications in Clostridioides difficile isolates from stem cell transplant recipients &lt;title&gt;Abstract&lt;/title&gt;  &lt;p&gt;  &lt;italic&gt;Clostridioides difficile&lt;/italic&gt;  is a highly methylated organism within the gut microbiome that is responsible for  &lt;italic&gt;Clostridioides difficile&lt;/italic&gt;  infection (CDI), a common disease that is mediated by toxins production from the bacterium.  &lt;italic&gt;C. difficile&lt;/italic&gt;  infection is ten times more common in chemotherapy patients than the average patient, but the reasons for this disparity are unclear. Conditioning chemotherapy (CC), an integral part of cancer treatments, has the ability to induce methylation changes in many cell types. We posit that CC induces methylation changes within  &lt;italic&gt;C. difficile&lt;/italic&gt;  that may promote toxin production and consequently CDI. To test our hypothesis, we sought to identify the epigenetic changes, particularly methylation changes, within  &lt;italic&gt;C. difficile&lt;/italic&gt;  isolates before and after chemotherapy and within isolates that express toxin and isolates that do not. After stool sampling, we isolated  &lt;italic&gt;C. difficile&lt;/italic&gt;  by culture then sequenced and created a hybrid assembly of each isolate using nanopore long read sequencing and Illumina short read sequencing. Bioinformatics tools such as Dorado and Samtools were used to basecall and determine methylation states, while Unicycler was used for genome assembly. Methylartist was then used for data visualization. Genome-wide methylation profiling revealed distinct epigenetic signatures in  &lt;italic&gt;Clostridioides difficile&lt;/italic&gt;  associated with toxin expression and chemotherapy exposure. Whole-genome 6mA analysis demonstrated significant differences between toxin-positive and toxin-negative isolates, with prominent methylation changes in  &lt;italic&gt;tcdA&lt;/italic&gt;  and  &lt;italic&gt;tcdE&lt;/italic&gt;  , while selected sporulation genes were unmethylated in toxin-negative strains. Chemotherapy was associated with a significant shift in global 6mA methylation patterns. Targeted 5mC analysis of the pathogenicity locus revealed reduced methylation around  &lt;italic&gt;tcdB&lt;/italic&gt;  and across multiple toxin genes following chemotherapy, whereas sporulation genes remained unaffected. These findings suggest chemotherapy-associated epigenetic remodeling of toxin-associated loci in  &lt;italic&gt;C. difficile&lt;/italic&gt;  .  &lt;/p&gt; Ng J, Trannguyen J, Wilkinson R, Conard F, Fehrenback S, Ebersole B, Ghosh D, APEWOKIN S.  methylation ">
+  <h3><a href="https://europepmc.org/abstract/PPR/PPR1184604" target="_blank" rel="noopener">Conditioning chemotherapy exposure is associated with epigenetic modifications in Clostridioides difficile isolates from stem cell transplant recipients</a></h3>
+  <div class="by">Ng J, Trannguyen J, Wilkinson R, et al.</div>
+  <div class="meta"><span class="src PPR">Preprint</span><span>2026-05-05</span><span class="kw">methylation</span></div>
+  <div class="ab">&lt;title&gt;Abstract&lt;/title&gt;  &lt;p&gt;  &lt;italic&gt;Clostridioides difficile&lt;/italic&gt;  is a highly methylated organism within the gut microbiome that is responsible for  &lt;italic&gt;Clostridioides difficile&lt;/italic&gt;  infection (CDI), a common disease that is mediated…</div>
+  <div class="doi"><a href="https://doi.org/10.21203/rs.3.rs-8865869/v1" target="_blank" rel="noopener">10.21203/rs.3.rs-8865869/v1</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="PPR" data-search="Premature Epigenetic Aging, Deviations from Normative Brain Development, and Cognitive Performance in Young Adulthood &lt;title&gt;Abstract&lt;/title&gt;  &lt;p&gt;Premature epigenetic aging has been linked to poorer cognitive performance, but the neuroanatomical pathways underlying this association remain unclear. Therefore, we tested whether premature epigenetic aging predicts deviations from normative brain development and cognition in young adulthood. We followed 254 young adults from the ELSPAC prenatal birth cohort. Epigenetic aging was estimated using Horvath’s DNA methylation clock, CheekAge, and AltumAge. Structural MRI was processed with FreeSurfer to derive cortical thickness and surface area in 68 Desikan–Killiany regions and subcortical volumes in 14 Aseg regions. CentileBrain normative models trained on 37,407 MRI scans from individuals aged 3–90 years were used to quantify age- and sex-specific deviations from normative brain development. Cognitive performance was assessed using the WAIS-IV. Premature epigenetic aging estimated using Horvath’s clock was associated with more negative deviations from normative volume of the putamen and caudate, but not with other subcortical volumes, cortical thickness, or surface area. In women, this premature epigenetic aging was also associated with lower full-scale IQ and performance IQ, and moderated mediation analyses indicated that the deviations in putamen volume mediated the relationship between premature epigenetic aging and cognitive performance. In men, the relationship between premature epigenetic aging and cognitive performance was quadratic (U-shaped). No similar effects were observed when using CheekAge or AltumAge.Premature epigenetic aging estimated using Horvath’s clock and the associated deviations in development of the dorsal striatum in young adulthood may represent an early marker of poorer cognitive performance long before clinical symptoms might emerge.&lt;/p&gt; Mareckova K, Pelant L, Marecek R, Pacinkova A, Klánová J, Nikolova Y.  methylation ">
+  <h3><a href="https://europepmc.org/abstract/PPR/PPR1185274" target="_blank" rel="noopener">Premature Epigenetic Aging, Deviations from Normative Brain Development, and Cognitive Performance in Young Adulthood</a></h3>
+  <div class="by">Mareckova K, Pelant L, Marecek R, et al.</div>
+  <div class="meta"><span class="src PPR">Preprint</span><span>2026-05-04</span><span class="kw">methylation</span></div>
+  <div class="ab">&lt;title&gt;Abstract&lt;/title&gt;  &lt;p&gt;Premature epigenetic aging has been linked to poorer cognitive performance, but the neuroanatomical pathways underlying this association remain unclear. Therefore, we tested whether premature epigenetic aging predicts…</div>
+  <div class="doi"><a href="https://doi.org/10.21203/rs.3.rs-9400608/v1" target="_blank" rel="noopener">10.21203/rs.3.rs-9400608/v1</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="PPR" data-search="Modified Azacitidine plus Cytarabine versus Traditional Cytarabine in Patients with Newly Diagnosed Acute Myeloid Leukemia: A Retrospective and Propensity Score Matched Analysis &lt;title&gt;Abstract&lt;/title&gt;  &lt;p&gt;  &lt;bold&gt;Background&lt;/bold&gt;  Azacitidine (AZA) is a hypomethylating agent with well-known antileukemic activity. The addition of AZA to intermediate-dose Cytarabine (IDAra-c) plus idarubicin (Ida) or etoposide (Eto) in consolidation may improve outcomes in acute myeloid leukemia (AML) patients and reduce side effect.  &lt;bold&gt;Methods&lt;/bold&gt;  We retrospectively evaluated whether adding AZA to IDAra-c plus Ida or Eto during consolidation could improve outcomes and reduce toxicity in newly diagnosed AML patients who achieved complete remission (CR) or partial remission (PR) after induction therapy. Propensity score matching was performed between patients in AZA+ IDAra-c + Ida/Eto and patients received IDAra-c as consolidation in the corresponding period at a 1:1 ratio according to age at diagnosis, sex, Eastern Cooperative Oncology Group performance status, European Leukemia Net 2022 risk stratification and induction therapy classification.  &lt;bold&gt;Results&lt;/bold&gt;  Fifty patients treated with AZA+IDAra-c + Ida/Eto were matched with 50 patients receiving IDAra-c alone. AZA+ IDAra-c + Ida/Eto was associated with longer overall survival (OS, 90.0% vs. 53.4%,  &lt;italic&gt;p&lt;/italic&gt;   = 0.0006) and event free survival (EFS, 81.7% vs. 45.9%,  &lt;italic&gt;p&lt;/italic&gt;   = 0.0021) at 40 months. Subgroups analysis implied patients who ≦ 40 years, achieved MRD negative after induction therapy, diagnosed as adverse risk or patients carried methylation associated mutations may have potential beneficial survival choosing AZA+ IDAra-c + Ida/Eto as consolidation treatment. Myelosuppression was present in both groups, but the cells affected were different.  &lt;bold&gt;Conclusion&lt;/bold&gt;  In conclusion, AZA+IDAra-c + Ida/Eto consolidation was associated with improved long-term survival and comparable toxicity versus IDAra-c alone in newly diagnosed AML.  &lt;/p&gt; Li Z, Liu J, Hong J, Xie D, Jiang Y, Gao T, Jin R, Hong M, Wu Q.  methylation ">
+  <h3><a href="https://europepmc.org/abstract/PPR/PPR1185341" target="_blank" rel="noopener">Modified Azacitidine plus Cytarabine versus Traditional Cytarabine in Patients with Newly Diagnosed Acute Myeloid Leukemia: A Retrospective and Propensity Score Matched Analysis</a></h3>
+  <div class="by">Li Z, Liu J, Hong J, et al.</div>
+  <div class="meta"><span class="src PPR">Preprint</span><span>2026-05-04</span><span class="kw">methylation</span></div>
+  <div class="ab">&lt;title&gt;Abstract&lt;/title&gt;  &lt;p&gt;  &lt;bold&gt;Background&lt;/bold&gt;  Azacitidine (AZA) is a hypomethylating agent with well-known antileukemic activity. The addition of AZA to intermediate-dose Cytarabine (IDAra-c) plus idarubicin (Ida) or etoposide (Eto) in…</div>
+  <div class="doi"><a href="https://doi.org/10.21203/rs.3.rs-9409121/v1" target="_blank" rel="noopener">10.21203/rs.3.rs-9409121/v1</a></div>
+</article>
+</div>
+<div id="empty" class="empty" style="display:none">No papers match the current filters.</div>
+
+<footer>
+  Generated 2026-05-07 08:42 KST · Source: <a href="https://europepmc.org" target="_blank">Europe PMC</a> ·
+  Window: <code>CREATION_DATE = 2026-05-06</code> ·
+  <a href="https://europepmc.org/Help#searchcommands" target="_blank">EPMC search syntax</a>
+</footer>
+</div>
+<script>
+(function() {
+  var state = { keyword: 'all', source: 'all', q: '' };
+  function apply() {
+    var q = state.q.toLowerCase();
+    document.querySelectorAll('.paper').forEach(function(el) {
+      var kws = (el.dataset.keywords || '').split('|');
+      var src = el.dataset.source || '';
+      var hay = (el.dataset.search || '').toLowerCase();
+      var ok = true;
+      if (state.keyword !== 'all' && kws.indexOf(state.keyword) === -1) ok = false;
+      if (state.source !== 'all' && src !== state.source) ok = false;
+      if (q && hay.indexOf(q) === -1) ok = false;
+      el.classList.toggle('hidden', !ok);
+    });
+    var visible = document.querySelectorAll('.paper:not(.hidden)').length;
+    document.getElementById('empty').style.display = visible ? 'none' : 'block';
+    document.getElementById('visibleCount').textContent = visible;
+  }
+  document.querySelectorAll('.chip[data-filter]').forEach(function(chip) {
+    chip.addEventListener('click', function() {
+      var dim = chip.dataset.filter;
+      var val = chip.dataset.value;
+      state[dim] = val;
+      document.querySelectorAll('.chip[data-filter="' + dim + '"]').forEach(function(c) { c.classList.remove('active'); });
+      chip.classList.add('active');
+      apply();
+    });
+  });
+  var search = document.getElementById('search');
+  if (search) search.addEventListener('input', function(e) { state.q = e.target.value; apply(); });
+  apply();
+})();
+</script>
+</body>
+</html>

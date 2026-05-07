@@ -1,0 +1,21 @@
+{
+  "_comment": "Watched keywords for the daily Europe PMC digest. Edit this file to change what gets fetched. Each keyword runs as: (TITLE:\"kw\" OR ABSTRACT:\"kw\") AND CREATION_DATE:[date TO date]",
+  "keywords": [
+    "Somatic mosaicism",
+    "mosaic",
+    "mosaic variant",
+    "methylation",
+    "PacBio"
+  ],
+  "_always_include_journals": "Papers from these journals are ALWAYS included even if no keyword matches. Europe PMC indexes only biomedical content, so all hits from generalist titles like Nature/Science are already bio. Add Nature Genetics, Cell Reports, etc. to expand. Match is exact on the JOURNAL field.",
+  "always_include_journals": [
+    "Cell",
+    "Nature",
+    "Science"
+  ],
+  "page_size": 50,
+  "timezone": "Asia/Seoul",
+  "slack_user_id": "U09DS8JQ476",
+  "_query_tips": "If a keyword is too noisy, change its entry to a raw EPMC query string in 'keyword_overrides' below. The override replaces the (TITLE OR ABSTRACT) wrapper but the CREATION_DATE filter is still appended.",
+  "keyword_overrides": {}
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Paper Digest — 2026-05-03</title>
+<style>
+:root {
+  --bg: #fafaf7; --fg: #1c1c1a; --muted: #6b6b66; --accent: #b85c00;
+  --card: #ffffff; --border: #e5e3dc; --chip: #f0ede4;
+  --chip-active: #b85c00; --chip-active-fg: #ffffff;
+  --hi-bg: #fff4e6; --hi-border: #f0c388; --hi-tag: #8a4b00;
+}
+* { box-sizing: border-box; }
+html, body { margin:0; padding:0; background: var(--bg); color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  font-size: 15px; line-height: 1.6; }
+.wrap { max-width: 920px; margin: 0 auto; padding: 28px 20px 80px; }
+header h1 { margin: 4px 0 4px; font-size: 26px; letter-spacing: -0.01em; }
+header .meta { color: var(--muted); font-size: 13px; }
+
+.daynav { display:flex; align-items:center; justify-content:space-between; gap: 6px;
+  background: var(--card); border:1px solid var(--border); border-radius: 10px;
+  padding: 8px 12px; margin: 6px 0 18px; font-size: 13px; }
+.daynav a, .daynav span { color: var(--accent); text-decoration:none; padding: 6px 10px; border-radius: 6px; }
+.daynav a:hover { background: var(--chip); text-decoration:none; }
+.daynav .center { display:flex; gap:4px; flex-wrap:wrap; align-items:center; }
+.daynav .center a, .daynav .center span { color: var(--fg); font-variant-numeric: tabular-nums; }
+.daynav .center .today { background: var(--accent); color: #fff; font-weight: 600; }
+.daynav .center .empty { color: var(--muted); }
+.daynav .home { color: var(--muted); }
+.daynav .disabled { color: #c5c2b9; cursor: default; }
+
+.summary { background: var(--card); border:1px solid var(--border); border-radius: 10px; padding: 14px 18px; margin: 12px 0 18px; }
+.summary h2 { margin: 0 0 10px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
+.summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px 24px; }
+.summary-grid .col h3 { margin: 0 0 4px; font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+.summary-grid .col ul { margin:0; padding:0; list-style: none; font-size: 13px; }
+.summary-grid .col li { display:flex; justify-content:space-between; gap: 8px; padding: 1px 0; border-bottom: 1px dashed var(--border); }
+.summary-grid .col li:last-child { border-bottom: 0; }
+
+.filters { display:flex; flex-wrap:wrap; gap:6px; margin: 0 0 8px; }
+.filter-row { display:flex; gap:12px; align-items:baseline; flex-wrap:wrap; margin-bottom: 6px; }
+.filter-row .lbl { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; min-width: 64px; }
+.chip { display:inline-flex; align-items:center; padding: 3px 9px; border-radius: 999px; background: var(--chip); border: 1px solid var(--border); font-size: 12px; cursor:pointer; user-select:none; transition: all 0.12s; }
+.chip:hover { border-color: var(--accent); }
+.chip.active { background: var(--chip-active); color: var(--chip-active-fg); border-color: var(--chip-active); }
+.chip .count { opacity: 0.6; margin-left: 5px; font-variant-numeric: tabular-nums; }
+.chip.pinned { background: #fff0d6; border-color:#f0c388; color:#8a4b00; }
+.chip.pinned.active { background: var(--accent); color:#fff; }
+
+.search-box { width:100%; margin: 8px 0 18px; }
+.search-box input { width:100%; padding: 9px 13px; border:1px solid var(--border); border-radius: 8px; font-size: 14px; background: var(--card); }
+
+.papers { display:flex; flex-direction:column; gap: 12px; }
+.paper { background: var(--card); border:1px solid var(--border); border-radius: 10px; padding: 14px 18px; transition: border-color 0.12s; }
+.paper:hover { border-color: var(--accent); }
+.paper.hidden { display:none; }
+.paper.hi { border-color: var(--hi-border); background: var(--hi-bg); }
+.paper h3 { margin: 0 0 4px; font-size: 16px; line-height: 1.35; font-weight: 600; }
+.paper h3 a { color: var(--fg); text-decoration:none; }
+.paper h3 a:hover { color: var(--accent); text-decoration: underline; }
+.paper .if-tag { display:inline-block; margin-left:6px; padding:1px 7px; border-radius:4px; background:#fff0d6; color:#8a4b00; font-size:11px; font-weight:600; vertical-align: middle; letter-spacing: 0.02em; }
+.paper.hi .if-tag { background:#b85c00; color:#fff; }
+.paper .by { font-size: 12px; color: var(--muted); margin: 0 0 4px; }
+.paper .meta { font-size: 11px; color: var(--muted); margin: 0 0 8px; display:flex; flex-wrap:wrap; gap: 4px 12px; align-items:center; }
+.paper .meta .src { display:inline-block; padding: 1px 7px; border-radius: 4px; background: var(--chip); font-weight:600; letter-spacing: 0.02em; font-size: 10px; }
+.paper .meta .src.PPR { background:#fff3df; color:#8a4b00; }
+.paper .meta .src.MED { background:#e3eef6; color:#1f4e75; }
+.paper .meta .src.PMC { background:#e3f4e6; color:#2a6b35; }
+.paper .meta .kw { display:inline-block; padding:0 6px; background: var(--chip); border-radius:4px; font-size:10px; }
+.paper .meta .pinned-tag { background:#fff0d6; color:#8a4b00; font-weight:600; }
+.paper .doi a { color: var(--muted); font-size: 11px; text-decoration:none; }
+
+/* Korean summary */
+.ksum { background: #fffefa; border:1px solid #efe9d8; border-radius: 8px; padding: 10px 14px; margin: 8px 0 4px; font-size: 14px; line-height: 1.65; color: #2c2c28; }
+.paper.hi .ksum { background: #fffaf2; border-color: #efd9b8; }
+.ksum .label { display:inline-block; font-size: 10px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.06em; margin-right: 6px; vertical-align: 2px; }
+.ksum-struct { display:flex; flex-direction:column; gap: 6px; }
+.ksum-struct .line { display:flex; gap: 8px; }
+.ksum-struct .line .lbl { flex: 0 0 56px; font-size: 11px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.04em; padding-top: 3px; }
+.ksum-struct .line .body { flex: 1 1 auto; }
+.ksum-struct ul { margin:2px 0 0; padding-left: 18px; }
+.ksum-struct ul li { margin: 0; }
+
+.empty { background: var(--card); border:1px dashed var(--border); border-radius: 10px; padding: 30px; text-align:center; color: var(--muted); }
+footer { margin-top: 50px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 11px; color: var(--muted); }
+footer a { color: var(--muted); }
+
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #181815; --fg:#e8e6df; --muted:#8a8780; --card:#232320; --border:#353330; --chip:#2a2825; --accent:#f29349;
+          --hi-bg:#2c2418; --hi-border:#5a4818; --hi-tag:#f0c388; }
+  .ksum { background:#1f1f1c; border-color:#3a3833; color:#e0ddd2; }
+  .paper.hi .ksum { background:#2a2419; border-color:#4a3e22; }
+  .paper.hi .if-tag { background:#f29349; color:#181815; }
+  .paper .meta .src.PPR { background:#3a2a13; color:#f0c388; }
+  .paper .meta .src.MED { background:#1a2a3a; color:#93c0e8; }
+  .paper .meta .src.PMC { background:#1d3322; color:#8fd29a; }
+  .chip.pinned { background:#3a2a13; border-color:#5a4818; color:#f0c388; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="daynav">
+  <a href="2026-05-02.html">← 2026-05-02</a>
+  <div class="center"><a class="" href="2026-04-29.html">4/29</a><a class="" href="2026-04-30.html">4/30</a><a class="" href="2026-05-01.html">5/1</a><a class="" href="2026-05-02.html">5/2</a><a class="today" href="2026-05-03.html">5/3</a><a class="" href="2026-05-04.html">5/4</a><a class="" href="2026-05-05.html">5/5</a></div>
+  <a href="2026-05-04.html">2026-05-04 →</a>
+</nav>
+<div style="text-align:right;margin:-12px 0 14px"><a class="home" href="../index.html" style="color:var(--muted);font-size:12px;text-decoration:none">📚 전체 목록 보기</a></div>
+<header>
+  <h1>Paper Digest</h1>
+  <div class="meta">2026년 05월 03일 (Sun) · Europe PMC · <b>0</b>편 / IF≥10 <b>0</b>편</div>
+</header>
+<section class="summary">
+  <h2>Summary</h2>
+  <div class="summary-grid">
+    <div class="col"><h3>Source</h3><ul><li><span style="color:var(--muted)">(없음)</span><b></b></li></ul></div>
+    <div class="col"><h3>Top journals</h3><ul><li><span style="color:var(--muted)">(없음)</span><b></b></li></ul></div>
+    <div class="col"><h3>Keyword</h3><ul><li><span>Somatic mosaicism</span><b>0</b></li><li><span>mosaic</span><b>0</b></li><li><span>mosaic variant</span><b>0</b></li><li><span>methylation</span><b>0</b></li><li><span>PacBio</span><b>0</b></li></ul></div>
+    <div class="col"><h3>📌 Pinned</h3><ul><li><span>📌 Cell</span><b>0</b></li><li><span>📌 Nature</span><b>0</b></li><li><span>📌 Science</span><b>0</b></li></ul></div>
+  </div>
+</section><div class="empty">2026-05-03에는 해당 키워드로 색인된 새 논문이 없습니다.</div>
+<footer>
+  Generated 2026-05-05 11:34 KST · <a href="https://europepmc.org" target="_blank">Europe PMC</a> ·
+  IF: JCR 2024 (curated) · 한글 요약은 abstract 기반.
+</footer>
+</div>
+<script>
+(function() {
+  var state = { keyword: 'all', source: 'all', q: '' };
+  function apply() {
+    var q = state.q.toLowerCase();
+    document.querySelectorAll('.paper').forEach(function(el) {
+      var kws = (el.dataset.keywords || '').split('|');
+      var src = el.dataset.source || '';
+      var hay = (el.dataset.search || '').toLowerCase();
+      var ok = true;
+      if (state.keyword !== 'all' && kws.indexOf(state.keyword) === -1) ok = false;
+      if (state.source !== 'all' && src !== state.source) ok = false;
+      if (q && hay.indexOf(q) === -1) ok = false;
+      el.classList.toggle('hidden', !ok);
+    });
+    var visible = document.querySelectorAll('.paper:not(.hidden)').length;
+    var emptyEl = document.getElementById('empty');
+    if (emptyEl) emptyEl.style.display = visible ? 'none' : 'block';
+    var vc = document.getElementById('visibleCount');
+    if (vc) vc.textContent = visible;
+  }
+  document.querySelectorAll('.chip[data-filter]').forEach(function(chip) {
+    chip.addEventListener('click', function() {
+      var dim = chip.dataset.filter;
+      state[dim] = chip.dataset.value;
+      document.querySelectorAll('.chip[data-filter="' + dim + '"]').forEach(function(c) { c.classList.remove('active'); });
+      chip.classList.add('active');
+      apply();
+    });
+  });
+  var search = document.getElementById('search');
+  if (search) search.addEventListener('input', function(e) { state.q = e.target.value; apply(); });
+  apply();
+  // Keyboard navigation: ← / → between days
+  document.addEventListener('keydown', function(e) {
+    if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) return;
+    if (e.key === 'ArrowLeft') {
+      var p = document.querySelector('.daynav > a:first-child'); if (p && p.href) location.href = p.href;
+    } else if (e.key === 'ArrowRight') {
+      var n = document.querySelector('.daynav > a:last-child'); if (n && n.href) location.href = n.href;
+    }
+  });
+})();
+</script>
+</body></html>

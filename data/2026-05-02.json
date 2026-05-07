@@ -1,0 +1,22 @@
+{
+  "date": "2026-05-02",
+  "total": 25,
+  "hi_count": 3,
+  "by_source": {
+    "MED": 22,
+    "PPR": 3
+  },
+  "by_keyword": {
+    "Somatic mosaicism": 0,
+    "mosaic": 8,
+    "mosaic variant": 0,
+    "methylation": 17,
+    "PacBio": 0
+  },
+  "by_pinned_journal": {
+    "Cell": 0,
+    "Nature": 0,
+    "Science": 0
+  },
+  "generated_at": "2026-05-05T11:34:24.866101+09:00"
+}

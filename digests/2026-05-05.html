@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Paper Digest — 2026-05-05</title>
+<style>
+:root {
+  --bg: #fafaf7;
+  --fg: #1c1c1a;
+  --muted: #6b6b66;
+  --accent: #b85c00;
+  --card: #ffffff;
+  --border: #e5e3dc;
+  --chip: #f0ede4;
+  --chip-active: #b85c00;
+  --chip-active-fg: #ffffff;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  font-size: 15px; line-height: 1.55; }
+.wrap { max-width: 880px; margin: 0 auto; padding: 32px 20px 80px; }
+header h1 { margin: 0 0 4px; font-size: 26px; letter-spacing: -0.01em; }
+header .meta { color: var(--muted); font-size: 13px; }
+.summary { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; margin: 22px 0; }
+.summary h2 { margin: 0 0 10px; font-size: 14px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
+.summary-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(180px,1fr)); gap: 14px 28px; }
+.summary-grid .col h3 { margin: 0 0 6px; font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+.summary-grid .col ul { margin: 0; padding: 0; list-style: none; font-size: 14px; }
+.summary-grid .col li { display: flex; justify-content: space-between; gap: 12px; padding: 2px 0; border-bottom: 1px dashed var(--border); }
+.summary-grid .col li:last-child { border-bottom: 0; }
+.summary-grid .col li b { font-weight: 600; }
+.filters { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 18px; }
+.chip { display: inline-flex; align-items: center; padding: 4px 10px; border-radius: 999px; background: var(--chip); border: 1px solid var(--border);
+  font-size: 13px; cursor: pointer; user-select: none; transition: all 0.12s; }
+.chip:hover { border-color: var(--accent); }
+.chip.active { background: var(--chip-active); color: var(--chip-active-fg); border-color: var(--chip-active); }
+.chip .count { opacity: 0.6; margin-left: 6px; font-variant-numeric: tabular-nums; }
+.chip.active .count { opacity: 0.85; }
+.filter-row { display: flex; gap: 12px; align-items: baseline; flex-wrap: wrap; margin-bottom: 8px; }
+.filter-row .lbl { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; min-width: 70px; }
+.search-box { width: 100%; margin: 14px 0 22px; }
+.search-box input { width: 100%; padding: 10px 14px; border: 1px solid var(--border); border-radius: 8px; font-size: 14px; background: var(--card); }
+.papers { display: flex; flex-direction: column; gap: 14px; }
+.paper { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; transition: border-color 0.12s; }
+.paper:hover { border-color: var(--accent); }
+.paper.hidden { display: none; }
+.paper h3 { margin: 0 0 6px; font-size: 17px; line-height: 1.35; font-weight: 600; }
+.paper h3 a { color: var(--fg); text-decoration: none; }
+.paper h3 a:hover { color: var(--accent); text-decoration: underline; }
+.paper .by { font-size: 13px; color: var(--muted); margin: 0 0 6px; }
+.paper .meta { font-size: 12px; color: var(--muted); margin: 0 0 8px; display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: center; }
+.paper .meta .src { display: inline-block; padding: 1px 7px; border-radius: 4px; background: var(--chip); font-weight: 600; letter-spacing: 0.02em; font-size: 11px; }
+.paper .meta .src.PPR { background: #fff3df; color: #8a4b00; }
+.paper .meta .src.MED { background: #e3eef6; color: #1f4e75; }
+.paper .meta .src.PMC { background: #e3f4e6; color: #2a6b35; }
+.paper .meta .kw { display: inline-block; padding: 0 6px; background: var(--chip); border-radius: 4px; font-size: 11px; }
+.paper .meta .pinned-tag { background: #fff0d6; color: #8a4b00; font-weight: 600; }
+.chip.pinned { background: #fff0d6; border-color: #f0c388; color: #8a4b00; }
+.chip.pinned.active { background: #b85c00; color: #ffffff; border-color: #b85c00; }
+.paper .ab { font-size: 14px; color: #2c2c28; margin: 6px 0 0; }
+.paper .doi a { color: var(--muted); font-size: 12px; text-decoration: none; }
+.paper .doi a:hover { color: var(--accent); }
+.empty { background: var(--card); border: 1px dashed var(--border); border-radius: 10px; padding: 30px; text-align: center; color: var(--muted); }
+.failures { background: #fff8e9; border: 1px solid #f0d99a; border-radius: 8px; padding: 10px 14px; margin: 18px 0; font-size: 13px; color: #6b4a00; }
+footer { margin-top: 60px; padding-top: 18px; border-top: 1px solid var(--border); font-size: 12px; color: var(--muted); }
+footer a { color: var(--muted); }
+.nav { display: flex; gap: 14px; margin-bottom: 18px; font-size: 13px; }
+.nav a { color: var(--accent); text-decoration: none; }
+.nav a:hover { text-decoration: underline; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #181815; --fg: #e8e6df; --muted: #8a8780; --card: #232320; --border: #353330; --chip: #2a2825; --accent: #f29349; }
+  .paper .meta .src.PPR { background: #3a2a13; color: #f0c388; }
+  .paper .meta .src.MED { background: #1a2a3a; color: #93c0e8; }
+  .paper .meta .src.PMC { background: #1d3322; color: #8fd29a; }
+  .summary, .paper { box-shadow: 0 1px 0 rgba(0,0,0,0.2); }
+  .failures { background: #2e2615; border-color: #5a4818; color: #e8c478; }
+  .paper .meta .pinned-tag { background: #3a2a13; color: #f0c388; }
+  .chip.pinned { background: #3a2a13; border-color: #5a4818; color: #f0c388; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="nav"><a href="../index.html">← All digests</a></div>
+<header>
+  <h1>Paper Digest</h1>
+  <div class="meta">Tuesday, May 05, 2026 · Europe PMC (PubMed + bioRxiv + medRxiv + others) · <b>2</b> unique paper(s)</div>
+</header>
+
+<section class="summary">
+  <h2>Summary</h2>
+  <div class="summary-grid">
+    <div class="col"><h3>By source</h3><ul><li><span>Preprint</span><b>2</b></li></ul></div>
+    <div class="col"><h3>Top journals</h3><ul><li><span>(unspecified)</span><b>2</b></li></ul></div>
+    <div class="col"><h3>By keyword</h3><ul><li><span>Somatic mosaicism</span><b>0</b></li><li><span>mosaic</span><b>0</b></li><li><span>mosaic variant</span><b>0</b></li><li><span>methylation</span><b>2</b></li><li><span>PacBio</span><b>0</b></li></ul></div>
+    <div class="col"><h3>📌 Pinned journals</h3><ul><li><span>📌 Cell</span><b>0</b></li><li><span>📌 Nature</span><b>0</b></li><li><span>📌 Science</span><b>0</b></li></ul></div>
+  </div>
+</section>
+
+<div class="filter-row"><div class="lbl">Keyword</div><div class="filters"><span class="chip active" data-filter="keyword" data-value="all">All <span class="count" id="visibleCount">2</span></span><span class="chip" data-filter="keyword" data-value="Somatic mosaicism">Somatic mosaicism<span class="count">0</span></span><span class="chip" data-filter="keyword" data-value="mosaic">mosaic<span class="count">0</span></span><span class="chip" data-filter="keyword" data-value="mosaic variant">mosaic variant<span class="count">0</span></span><span class="chip" data-filter="keyword" data-value="methylation">methylation<span class="count">2</span></span><span class="chip" data-filter="keyword" data-value="PacBio">PacBio<span class="count">0</span></span></div></div>
+<div class="filter-row"><div class="lbl">Source</div><div class="filters"><span class="chip active" data-filter="source" data-value="all">All sources</span><span class="chip" data-filter="source" data-value="PPR">Preprint<span class="count">2</span></span></div></div>
+<div class="search-box"><input id="search" type="search" placeholder="Filter by title, author, journal, abstract…"></div>
+<div class="papers">
+<article class="paper" data-keywords="methylation" data-source="PPR" data-search="DNA methylation variability defines a fundamental dimension of tumor epigenomes linked to genomic instability, tumor aggressiveness, and clinical outcomes &lt;title&gt;Abstract&lt;/title&gt;  &lt;p&gt;Background  Tumors exhibit substantial cellular and molecular diversity driven by genetic and epigenetic mechanisms. Large-scale profiling efforts have established aberrant DNA methylation as a universal hallmark of cancer. Beyond changes in mean methylation levels, tumor tissues exhibit elevated DNA methylation variability at specific genomic regions within and across tumors. This constitutes a fundamental dimension of cancer epigenomes, reflecting disrupted maintenance of epigenomic states and stochastic drift, which may enable adaptation to the microenvironment, phenotypic plasticity, invasion, disease progression, and treatment resistance. However, the genome-wide organization and functional consequences of DNA methylation variability across cancer types remain incompletely understood. Methods  We analyzed paired tumor–normal DNA methylation profiles across 16 cancer types to systematically quantify DNA methylation variability. Pan-cancer DNA methylation variability was consistently observed using complementary statistical approaches and multiple modes of data representation. We identified cancer-specific and pan-cancer differentially variable regions and evaluated their associations with genomic features, transcriptional and chromatin regulators, and biological processes. Variability was quantified using three measures per sample: the proportion of intermediately methylated sites (PIM), genome-wide Shannon entropy, and a DNA methylation–based stemness index. Associations with genomic instability, tumor biological features, and clinical outcomes were subsequently assessed. Results  Tumor samples consistently exhibited higher DNA methylation variability than matched normal tissues, reflected by increased dispersion and wider interquartile ranges. Pan-cancer variably methylated regions were depleted in promoters and enriched in open sea regions, in heterochromatic H3K27me3-decorated PRC2-repressed domains, and at enhancers. They preferentially contained motifs for transcription factors involved in developmental regulation. Elevated DNA methylation variability, captured by higher PIM, entropy, and stemness scores, was associated with increased genomic instability manifested by higher aneuploidy, increased DNA break points, a greater fraction of the genome altered, and increased tumor mutational burden, as well as with aggressive tumor features such as lymph node involvement, post-therapy neoplasm events, and elevated hypoxia scores. Importantly, tumors with high DNA methylation variability exhibited significantly worse overall, progression-free, and disease-free survival. Conclusions  DNA methylation variability is a pervasive and clinically relevant feature of tumor epigenomes, reflecting epigenetic and genetic instability, expanded regulatory plasticity, and tumor aggressiveness.&lt;/p&gt; Bukovec D, Gjorgjioski B, Misheva MS, Kungulovski G.  methylation ">
+  <h3><a href="https://europepmc.org/abstract/PPR/PPR1184372" target="_blank" rel="noopener">DNA methylation variability defines a fundamental dimension of tumor epigenomes linked to genomic instability, tumor aggressiveness, and clinical outcomes</a></h3>
+  <div class="by">Bukovec D, Gjorgjioski B, Misheva MS, et al.</div>
+  <div class="meta"><span class="src PPR">Preprint</span><span>2026-04-30</span><span class="kw">methylation</span></div>
+  <div class="ab">&lt;title&gt;Abstract&lt;/title&gt;  &lt;p&gt;Background  Tumors exhibit substantial cellular and molecular diversity driven by genetic and epigenetic mechanisms. Large-scale profiling efforts have established aberrant DNA methylation as a universal hallmark of…</div>
+  <div class="doi"><a href="https://doi.org/10.21203/rs.3.rs-9393929/v1" target="_blank" rel="noopener">10.21203/rs.3.rs-9393929/v1</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="PPR" data-search="A Systemic Immune-State Axis Distinguishes Psoriatic Arthritis from Psoriasis Psoriasis and psoriatic arthritis (PsA) are systemic immune-mediated diseases, but the features that distinguish cutaneous-dominant psoriasis from musculoskeletal involvement remain unclear. We analyzed four core public cross-sectional datasets spanning whole-blood methylation, PBMC single-cell RNA sequencing summarized at the subject level, skin RNA sequencing, and purified CD4+ T-cell methylation, and used two additional public skin cohorts for external contextual checks to define an inflammatory disease axis (DIR) and a contrast-resolved systemic-state coordinate (CRS) representing additional systemic immune-state variation associated with PsA. In whole-blood methylation, DIR primarily separated healthy controls from psoriasis, whereas CRS separated psoriasis from PsA with minimal correlation to DIR. In PBMC single-cell data, CRS was higher in PsA and in the source-defined PSX subgroup (joint pain without CASPAR-classified PsA) than in PsO. Cell-type-resolved analyses localized CRS-related shifts to CD8 naive T cells, NK cells, CD14 monocytes, and regulatory T cells and identified multicompartment pathway-state remodeling along the CRS continuum. In contrast, skin RNA sequencing mainly captured lesional inflammatory burden and showed only limited additional PsA-related separation within the same tissue state. These findings support a model in which PsA is distinguished from psoriasis by an additional systemic immune-state axis rather than by skin inflammatory burden alone. Lee YK, Seong H.  methylation ">
+  <h3><a href="https://europepmc.org/abstract/PPR/PPR1184034" target="_blank" rel="noopener">A Systemic Immune-State Axis Distinguishes Psoriatic Arthritis from Psoriasis</a></h3>
+  <div class="by">Lee YK, Seong H.</div>
+  <div class="meta"><span class="src PPR">Preprint</span><span>2026-04-27</span><span class="kw">methylation</span></div>
+  <div class="ab">Psoriasis and psoriatic arthritis (PsA) are systemic immune-mediated diseases, but the features that distinguish cutaneous-dominant psoriasis from musculoskeletal involvement remain unclear. We analyzed four core public cross-sectional datasets…</div>
+  <div class="doi"><a href="https://doi.org/10.20944/preprints202604.1871.v1" target="_blank" rel="noopener">10.20944/preprints202604.1871.v1</a></div>
+</article>
+</div>
+<div id="empty" class="empty" style="display:none">No papers match the current filters.</div>
+
+<footer>
+  Generated 2026-05-06 08:59 KST · Source: <a href="https://europepmc.org" target="_blank">Europe PMC</a> ·
+  Window: <code>CREATION_DATE = 2026-05-05</code> ·
+  <a href="https://europepmc.org/Help#searchcommands" target="_blank">EPMC search syntax</a>
+</footer>
+</div>
+<script>
+(function() {
+  var state = { keyword: 'all', source: 'all', q: '' };
+  function apply() {
+    var q = state.q.toLowerCase();
+    document.querySelectorAll('.paper').forEach(function(el) {
+      var kws = (el.dataset.keywords || '').split('|');
+      var src = el.dataset.source || '';
+      var hay = (el.dataset.search || '').toLowerCase();
+      var ok = true;
+      if (state.keyword !== 'all' && kws.indexOf(state.keyword) === -1) ok = false;
+      if (state.source !== 'all' && src !== state.source) ok = false;
+      if (q && hay.indexOf(q) === -1) ok = false;
+      el.classList.toggle('hidden', !ok);
+    });
+    var visible = document.querySelectorAll('.paper:not(.hidden)').length;
+    document.getElementById('empty').style.display = visible ? 'none' : 'block';
+    document.getElementById('visibleCount').textContent = visible;
+  }
+  document.querySelectorAll('.chip[data-filter]').forEach(function(chip) {
+    chip.addEventListener('click', function() {
+      var dim = chip.dataset.filter;
+      var val = chip.dataset.value;
+      state[dim] = val;
+      document.querySelectorAll('.chip[data-filter="' + dim + '"]').forEach(function(c) { c.classList.remove('active'); });
+      chip.classList.add('active');
+      apply();
+    });
+  });
+  var search = document.getElementById('search');
+  if (search) search.addEventListener('input', function(e) { state.q = e.target.value; apply(); });
+  apply();
+})();
+</script>
+</body>
+</html>

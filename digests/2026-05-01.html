@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Paper Digest — 2026-05-01</title>
+<style>
+:root {
+  --bg: #fafaf7; --fg: #1c1c1a; --muted: #6b6b66; --accent: #b85c00;
+  --card: #ffffff; --border: #e5e3dc; --chip: #f0ede4;
+  --chip-active: #b85c00; --chip-active-fg: #ffffff;
+  --hi-bg: #fff4e6; --hi-border: #f0c388; --hi-tag: #8a4b00;
+}
+* { box-sizing: border-box; }
+html, body { margin:0; padding:0; background: var(--bg); color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  font-size: 15px; line-height: 1.6; }
+.wrap { max-width: 920px; margin: 0 auto; padding: 28px 20px 80px; }
+header h1 { margin: 4px 0 4px; font-size: 26px; letter-spacing: -0.01em; }
+header .meta { color: var(--muted); font-size: 13px; }
+
+.daynav { display:flex; align-items:center; justify-content:space-between; gap: 6px;
+  background: var(--card); border:1px solid var(--border); border-radius: 10px;
+  padding: 8px 12px; margin: 6px 0 18px; font-size: 13px; }
+.daynav a, .daynav span { color: var(--accent); text-decoration:none; padding: 6px 10px; border-radius: 6px; }
+.daynav a:hover { background: var(--chip); text-decoration:none; }
+.daynav .center { display:flex; gap:4px; flex-wrap:wrap; align-items:center; }
+.daynav .center a, .daynav .center span { color: var(--fg); font-variant-numeric: tabular-nums; }
+.daynav .center .today { background: var(--accent); color: #fff; font-weight: 600; }
+.daynav .center .empty { color: var(--muted); }
+.daynav .home { color: var(--muted); }
+.daynav .disabled { color: #c5c2b9; cursor: default; }
+
+.summary { background: var(--card); border:1px solid var(--border); border-radius: 10px; padding: 14px 18px; margin: 12px 0 18px; }
+.summary h2 { margin: 0 0 10px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
+.summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px 24px; }
+.summary-grid .col h3 { margin: 0 0 4px; font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+.summary-grid .col ul { margin:0; padding:0; list-style: none; font-size: 13px; }
+.summary-grid .col li { display:flex; justify-content:space-between; gap: 8px; padding: 1px 0; border-bottom: 1px dashed var(--border); }
+.summary-grid .col li:last-child { border-bottom: 0; }
+
+.filters { display:flex; flex-wrap:wrap; gap:6px; margin: 0 0 8px; }
+.filter-row { display:flex; gap:12px; align-items:baseline; flex-wrap:wrap; margin-bottom: 6px; }
+.filter-row .lbl { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; min-width: 64px; }
+.chip { display:inline-flex; align-items:center; padding: 3px 9px; border-radius: 999px; background: var(--chip); border: 1px solid var(--border); font-size: 12px; cursor:pointer; user-select:none; transition: all 0.12s; }
+.chip:hover { border-color: var(--accent); }
+.chip.active { background: var(--chip-active); color: var(--chip-active-fg); border-color: var(--chip-active); }
+.chip .count { opacity: 0.6; margin-left: 5px; font-variant-numeric: tabular-nums; }
+.chip.pinned { background: #fff0d6; border-color:#f0c388; color:#8a4b00; }
+.chip.pinned.active { background: var(--accent); color:#fff; }
+
+.search-box { width:100%; margin: 8px 0 18px; }
+.search-box input { width:100%; padding: 9px 13px; border:1px solid var(--border); border-radius: 8px; font-size: 14px; background: var(--card); }
+
+.papers { display:flex; flex-direction:column; gap: 12px; }
+.paper { background: var(--card); border:1px solid var(--border); border-radius: 10px; padding: 14px 18px; transition: border-color 0.12s; }
+.paper:hover { border-color: var(--accent); }
+.paper.hidden { display:none; }
+.paper.hi { border-color: var(--hi-border); background: var(--hi-bg); }
+.paper h3 { margin: 0 0 4px; font-size: 16px; line-height: 1.35; font-weight: 600; }
+.paper h3 a { color: var(--fg); text-decoration:none; }
+.paper h3 a:hover { color: var(--accent); text-decoration: underline; }
+.paper .if-tag { display:inline-block; margin-left:6px; padding:1px 7px; border-radius:4px; background:#fff0d6; color:#8a4b00; font-size:11px; font-weight:600; vertical-align: middle; letter-spacing: 0.02em; }
+.paper.hi .if-tag { background:#b85c00; color:#fff; }
+.paper .by { font-size: 12px; color: var(--muted); margin: 0 0 4px; }
+.paper .meta { font-size: 11px; color: var(--muted); margin: 0 0 8px; display:flex; flex-wrap:wrap; gap: 4px 12px; align-items:center; }
+.paper .meta .src { display:inline-block; padding: 1px 7px; border-radius: 4px; background: var(--chip); font-weight:600; letter-spacing: 0.02em; font-size: 10px; }
+.paper .meta .src.PPR { background:#fff3df; color:#8a4b00; }
+.paper .meta .src.MED { background:#e3eef6; color:#1f4e75; }
+.paper .meta .src.PMC { background:#e3f4e6; color:#2a6b35; }
+.paper .meta .kw { display:inline-block; padding:0 6px; background: var(--chip); border-radius:4px; font-size:10px; }
+.paper .meta .pinned-tag { background:#fff0d6; color:#8a4b00; font-weight:600; }
+.paper .doi a { color: var(--muted); font-size: 11px; text-decoration:none; }
+
+/* Korean summary */
+.ksum { background: #fffefa; border:1px solid #efe9d8; border-radius: 8px; padding: 10px 14px; margin: 8px 0 4px; font-size: 14px; line-height: 1.65; color: #2c2c28; }
+.paper.hi .ksum { background: #fffaf2; border-color: #efd9b8; }
+.ksum .label { display:inline-block; font-size: 10px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.06em; margin-right: 6px; vertical-align: 2px; }
+.ksum-struct { display:flex; flex-direction:column; gap: 6px; }
+.ksum-struct .line { display:flex; gap: 8px; }
+.ksum-struct .line .lbl { flex: 0 0 56px; font-size: 11px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.04em; padding-top: 3px; }
+.ksum-struct .line .body { flex: 1 1 auto; }
+.ksum-struct ul { margin:2px 0 0; padding-left: 18px; }
+.ksum-struct ul li { margin: 0; }
+
+.empty { background: var(--card); border:1px dashed var(--border); border-radius: 10px; padding: 30px; text-align:center; color: var(--muted); }
+footer { margin-top: 50px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 11px; color: var(--muted); }
+footer a { color: var(--muted); }
+
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #181815; --fg:#e8e6df; --muted:#8a8780; --card:#232320; --border:#353330; --chip:#2a2825; --accent:#f29349;
+          --hi-bg:#2c2418; --hi-border:#5a4818; --hi-tag:#f0c388; }
+  .ksum { background:#1f1f1c; border-color:#3a3833; color:#e0ddd2; }
+  .paper.hi .ksum { background:#2a2419; border-color:#4a3e22; }
+  .paper.hi .if-tag { background:#f29349; color:#181815; }
+  .paper .meta .src.PPR { background:#3a2a13; color:#f0c388; }
+  .paper .meta .src.MED { background:#1a2a3a; color:#93c0e8; }
+  .paper .meta .src.PMC { background:#1d3322; color:#8fd29a; }
+  .chip.pinned { background:#3a2a13; border-color:#5a4818; color:#f0c388; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="daynav">
+  <a href="2026-04-30.html">← 2026-04-30</a>
+  <div class="center"><a class="" href="2026-04-29.html">4/29</a><a class="" href="2026-04-30.html">4/30</a><a class="today" href="2026-05-01.html">5/1</a><a class="" href="2026-05-02.html">5/2</a><a class="" href="2026-05-03.html">5/3</a><a class="" href="2026-05-04.html">5/4</a><a class="" href="2026-05-05.html">5/5</a></div>
+  <a href="2026-05-02.html">2026-05-02 →</a>
+</nav>
+<div style="text-align:right;margin:-12px 0 14px"><a class="home" href="../index.html" style="color:var(--muted);font-size:12px;text-decoration:none">📚 전체 목록 보기</a></div>
+<header>
+  <h1>Paper Digest</h1>
+  <div class="meta">2026년 05월 01일 (Fri) · Europe PMC · <b>29</b>편 / IF≥10 <b>4</b>편</div>
+</header>
+<section class="summary">
+  <h2>Summary</h2>
+  <div class="summary-grid">
+    <div class="col"><h3>Source</h3><ul><li><span>PubMed</span><b>29</b></li></ul></div>
+    <div class="col"><h3>Top journals</h3><ul><li><span>Scientific data</span><b>3</b></li><li><span>BMC cancer</span><b>1</b></li><li><span>BMC pulmonary medicine</span><b>1</b></li><li><span>Algorithms in bioinformatics : ... International Workshop, WABI ..., proceedings. WABI (Workshop)</span><b>1</b></li><li><span>Communications medicine</span><b>1</b></li><li><span>Frontiers in physiology</span><b>1</b></li><li><span>Alzheimer&#x27;s &amp; dementia : the journal of the Alzheimer&#x27;s Association</span><b>1</b></li><li><span>Frontiers in psychology</span><b>1</b></li></ul></div>
+    <div class="col"><h3>Keyword</h3><ul><li><span>Somatic mosaicism</span><b>0</b></li><li><span>mosaic</span><b>3</b></li><li><span>mosaic variant</span><b>0</b></li><li><span>methylation</span><b>22</b></li><li><span>PacBio</span><b>4</b></li></ul></div>
+    <div class="col"><h3>📌 Pinned</h3><ul><li><span>📌 Cell</span><b>0</b></li><li><span>📌 Nature</span><b>0</b></li><li><span>📌 Science</span><b>0</b></li></ul></div>
+  </div>
+</section>
+<div class="filter-row"><div class="lbl">Keyword</div><div class="filters"><span class="chip active" data-filter="keyword" data-value="all">전체 <span class="count" id="visibleCount">29</span></span><span class="chip" data-filter="keyword" data-value="Somatic mosaicism">Somatic mosaicism<span class="count">0</span></span><span class="chip" data-filter="keyword" data-value="mosaic">mosaic<span class="count">3</span></span><span class="chip" data-filter="keyword" data-value="mosaic variant">mosaic variant<span class="count">0</span></span><span class="chip" data-filter="keyword" data-value="methylation">methylation<span class="count">22</span></span><span class="chip" data-filter="keyword" data-value="PacBio">PacBio<span class="count">4</span></span><span class="chip" data-filter="keyword" data-value="__hi__">⭐ IF≥10<span class="count">4</span></span></div></div>
+<div class="filter-row"><div class="lbl">Source</div><div class="filters"><span class="chip active" data-filter="source" data-value="all">전체</span><span class="chip" data-filter="source" data-value="MED">PubMed<span class="count">29</span></span></div></div>
+<div class="search-box"><input id="search" type="search" placeholder="제목·저자·저널·초록·요약 검색…"></div>
+<div class="papers">
+<article class="paper hi" data-keywords="methylation|__hi__" data-source="MED" data-search="The application of low-carbohydrate diet in autoimmune diseases: Mechanisms, evidence, and prospects for clinical translation. Emerging evidence suggests that low-carbohydrate diet (LCD) may exert beneficial effects across multiple autoimmune diseases (AIDs), yet their underlying mechanisms remain insufficiently elucidated an Lu MF, Qi XY, Cheng JW, Wang MY, Liu SY, Zhang Y, Jiang XJ, Yun Y, Su QY, He PF, Zhang SX, Cheng T. Autoimmunity reviews methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42061668" target="_blank" rel="noopener">The application of low-carbohydrate diet in autoimmune diseases: Mechanisms, evidence, and prospects for clinical translation.</a><span class="if-tag">IF=13.8</span></h3>
+  <div class="by">Lu MF, Qi XY, Cheng JW, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Autoimmunity reviews</span><span>2026-04-28</span><span class="kw">methylation</span></div>
+  <div class="ksum">
+<div class="ksum-struct">
+  <div class="line"><div class="lbl">배경</div><div class="body">저탄수화물 식이(LCD)가 다양한 자가면역질환에 유익할 수 있다는 증거가 등장하지만 기전과 임상 근거는 아직 부족하다.</div></div>
+  <div class="line"><div class="lbl">결과</div><div class="body"><ul><li>LCD는 면역세포 에너지 대사를 해당과정에서 지방산 산화·케톤 활용으로 전환해 NF-κB·NLRP3 인플라마솜 등 염증 경로를 조절한다.</li><li>장내 미생물 및 대사물 재구성을 통해 장벽 무결성과 전신 면역 반응에 영향을 준다.</li><li>히스톤 탈아세틸화 억제와 DNA 메틸화 등 후성유전 조절을 통해 조절 T세포 정체성과 항염 유전자 발현을 안정화한다.</li><li>1형 당뇨, 건선, 다발성 경화증에서는 긍정적 임상 결과가 있으나 SLE·류마티스·IBD 근거는 빈약·이질적이다.</li><li>최적 식이 패턴은 질환별로 다르고 LCD가 모든 식이를 능가하지는 않는다.</li></ul></div></div>
+  <div class="line"><div class="lbl">결론</div><div class="body">LCD의 자가면역 효과는 기전적으로 그럴듯하지만 영양 결핍·장기 안전성·개인차·RCT 부족이 임상 적용의 한계로 남아 있다.</div></div>
+  <div class="line"><div class="lbl">의의</div><div class="body">다중오믹스·정밀영양·질환특이적 프레임워크를 통합해 표준화된 LCD 프로토콜을 수립할 필요성을 제시한다.</div></div>
+</div></div>
+  <div class="doi"><a href="https://doi.org/10.1016/j.autrev.2026.104071" target="_blank" rel="noopener">10.1016/j.autrev.2026.104071</a></div>
+</article><article class="paper hi" data-keywords="methylation|__hi__" data-source="MED" data-search="Development and validation of MethylCog, a blood DNA methylation proxy for cognition. &lt;h4&gt;Introduction&lt;/h4&gt;Heterogeneity in cognitive ability increases with age and predicts mild cognitive impairment (MCI) and dementia, but scalable blood-based biomarkers are lacking. We developed and  O&#x27;Shea DM, Wang L, Lukacsovich D, Dhanekula D, Zhang W, Galvin C, Joshi M, Besser L, Rundek T, Galvin JE. Alzheimer&#x27;s &amp; dementia : the journal of the Alzheimer&#x27;s Association methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42062774" target="_blank" rel="noopener">Development and validation of MethylCog, a blood DNA methylation proxy for cognition.</a><span class="if-tag">IF=13.0</span></h3>
+  <div class="by">O&#x27;Shea DM, Wang L, Lukacsovich D, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Alzheimer&#x27;s &amp; dementia : the journal of the Alzheimer&#x27;s Association</span><span>2026-05-01</span><span class="kw">methylation</span></div>
+  <div class="ksum">
+<div class="ksum-struct">
+  <div class="line"><div class="lbl">배경</div><div class="body">노화에 따른 인지능력 이질성은 MCI·치매를 예측하지만, 확장 가능한 혈액 기반 인지 바이오마커는 부족하다.</div></div>
+  <div class="line"><div class="lbl">결과</div><div class="body"><ul><li>인구 기반 코호트(n=2,069)에서 PCA로 도출한 일반 인지능력 g에 elastic net을 적용해 DNA 메틸화 마커 MethylCog를 개발하고 외부 코호트(n=112)에서 검증했다.</li><li>29개 CpG로 구성된 MethylCog는 검증 세트 R²=0.17, 외부 R²=0.13으로 연령·성별을 넘어 분산의 약 11%를 추가 설명했다.</li><li>MethylCog는 MCI 식별 능력을 ΔAUC 0.03–0.07만큼 향상시켰고 GrimAge보다 우수했으나 인지 선별검사를 능가하지는 못했다.</li><li>AD 혈장 바이오마커 및 MRI 지표와의 유의한 연관은 관찰되지 않았다.</li></ul></div></div>
+  <div class="line"><div class="lbl">결론</div><div class="body">간결한 DNA 메틸화 점수만으로 개인 인지능력 차이를 지수화할 수 있음을 처음으로 입증했다.</div></div>
+  <div class="line"><div class="lbl">의의</div><div class="body">직접 인지 검사가 어려운 임상·역학 환경에서 활용 가능한 혈액 기반 대안 마커가 될 수 있다.</div></div>
+</div></div>
+  <div class="doi"><a href="https://doi.org/10.1002/alz.71421" target="_blank" rel="noopener">10.1002/alz.71421</a></div>
+</article><article class="paper hi" data-keywords="methylation|__hi__" data-source="MED" data-search="The role of microRNAs in executive functions: a comprehensive review and bioinformatics analysis of human and animal studies. Executive functions (EFs) are meta-cognitive abilities that orchestrate goal-directed behavior (i.e., set-shifting, working memory, and inhibitory control). Despite their strong genetic composition, t Navarro-Flores A, Krüger DM, Kaurani L, Fischer A, Schulze TG, Heilbronner U. Molecular psychiatry methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42062542" target="_blank" rel="noopener">The role of microRNAs in executive functions: a comprehensive review and bioinformatics analysis of human and animal studies.</a><span class="if-tag">IF=11.0</span></h3>
+  <div class="by">Navarro-Flores A, Krüger DM, Kaurani L, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Molecular psychiatry</span><span>2026-05-01</span><span class="kw">methylation</span></div>
+  <div class="ksum">
+<div class="ksum-struct">
+  <div class="line"><div class="lbl">배경</div><div class="body">집행기능(EF)은 목표지향 행동을 조정하는 메타인지 능력으로, 유전·환경·노화·정신질환의 영향을 받지만 microRNA의 역할은 명확치 않았다.</div></div>
+  <div class="line"><div class="lbl">결과</div><div class="body"><ul><li>4개 데이터베이스의 인간·동물 연구 46건(인간 23, 동물 22, 양쪽 1)을 시작 시점부터 2023년 10월까지 체계적으로 검색했다.</li><li>MIR137 변이는 EF 저하와, MIR885 메틸화는 EF 향상과 연관되었으며 microRNA 생합성 효소 변이도 EF에 영향을 주었다.</li><li>인간에서 일관되게 EF와 연관된 microRNA로 miR-148a-3p 등이 보고되었다.</li><li>후보 microRNA의 mRNA 표적에 대한 생물정보학 분석과 비뚤림 위험 평가를 함께 수행했다.</li></ul></div></div>
+  <div class="line"><div class="lbl">결론</div><div class="body">microRNA 조절 이상이 정상 신경 발달·기능을 방해해 EF 변동에 기여함을 종합적으로 정리했다.</div></div>
+  <div class="line"><div class="lbl">의의</div><div class="body">EF 변화의 분자 기반 이해와 신경정신질환 바이오마커·치료 표적 개발의 단서를 제공한다.</div></div>
+</div></div>
+  <div class="doi"><a href="https://doi.org/10.1038/s41380-026-03623-2" target="_blank" rel="noopener">10.1038/s41380-026-03623-2</a></div>
+</article><article class="paper hi" data-keywords="methylation|__hi__" data-source="MED" data-search="Integrative multi-omics profiling reveals distinct evolutionary and immunogenic features of brain oligometastasis in lung adenocarcinoma. &lt;h4&gt;Background&lt;/h4&gt;Emerging evidence has demonstrated that lung cancer patients with brain oligometastases (oligo-BMs) could benefit from local radical therapies. Despite rapid advancements in the tre Liao R, Yu Q, Huang Y, He H, Song M, Gao X, Shen L, Tao Y, Li L, Xiao G, Kong R, Wang C, Huang S, Zhang X, Xu Z, Zhou R, Yang Z, Peng Y. Genome medicine methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42063110" target="_blank" rel="noopener">Integrative multi-omics profiling reveals distinct evolutionary and immunogenic features of brain oligometastasis in lung adenocarcinoma.</a><span class="if-tag">IF=10.4</span></h3>
+  <div class="by">Liao R, Yu Q, Huang Y, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Genome medicine</span><span>2026-04-30</span><span class="kw">methylation</span></div>
+  <div class="ksum">
+<div class="ksum-struct">
+  <div class="line"><div class="lbl">배경</div><div class="body">폐선암 뇌 oligometastasis(oligo-BM) 환자가 국소 치료의 이득을 받지만, 중추신경계 oligometastatic 표현형의 분자 결정 인자는 불명확했다.</div></div>
+  <div class="line"><div class="lbl">결과</div><div class="body"><ul><li>폐선암-oligo-BM 페어 20쌍에 1021-패널 시퀀싱·전사체·DNA 메틸화·다중 IHC를 수행했다.</li><li>원발과 oligo-BM 사이 종양간 이질성은 두드러졌으나 종양내 이질성은 보존되었으며, 다클론 시딩과 평행 진행 패턴이 관찰되었다.</li><li>oligo-BM은 면역원성 세포사멸 시그니처 약화, 면역활성 경로 하향, 활성 B/NK/Th1 세포 침윤 감소로 더 면역억제적이었다.</li><li>기능 영역 메틸화는 PT와 oligo-BM 간 높게 일치했고, NLGN1 유전자체의 과메틸화가 전사 상승과 기계적으로 연관되어 잠재 조절자로 동정되었다.</li><li>NLGN1은 BM에서 PT 및 두개외 전이보다 특이적으로 과발현되어 진행 단계와 불량 예후와 연관되었고, in vivo에서도 BM 형성을 촉진했다.</li></ul></div></div>
+  <div class="line"><div class="lbl">결론</div><div class="body">뇌 oligometastasis는 면역억제 환경과 NLGN1 상향이라는 독특한 분자 특성을 보인다.</div></div>
+  <div class="line"><div class="lbl">의의</div><div class="body">NLGN1 표적 치료가 폐선암 뇌전이 관리의 새로운 정밀치료 전략으로 발전할 수 있다.</div></div>
+</div></div>
+  <div class="doi"><a href="https://doi.org/10.1186/s13073-026-01664-4" target="_blank" rel="noopener">10.1186/s13073-026-01664-4</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Controlled Placement of Trivalent Heteroatoms in MFI Zeolite Frameworks Using Structure-Directing Agents. MFI zeolites contain distinct confining pore environments, either smaller (∼0.55 nm) channels or larger (∼0.70 nm) intersections. The substitution of trivalent heteroatoms generates Brønsted acid site Norfleet AT, Bekele BT, Sullivan C, Hibbitts D, Gounder R. JACS Au methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42063844" target="_blank" rel="noopener">Controlled Placement of Trivalent Heteroatoms in MFI Zeolite Frameworks Using Structure-Directing Agents.</a><span class="if-tag">IF=8.5</span></h3>
+  <div class="by">Norfleet AT, Bekele BT, Sullivan C, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>JACS Au</span><span>2026-04-06</span><span class="kw">methylation</span></div>
+  <div class="ksum"><span class="label">한글 요약</span>MFI 제올라이트 골격 내 3가 헤테로원자(B/Al/Ga)의 위치를 구조유도제로 제어하는 합성 전략을 제시했다. 채널·교차점에 따른 산점 강도와 환경 차이가 촉매 선택성을 결정하므로, 이 방법은 정밀 촉매 설계에 활용 가능하다.</div>
+  <div class="doi"><a href="https://doi.org/10.1021/jacsau.6c00222" target="_blank" rel="noopener">10.1021/jacsau.6c00222</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Chronic lymphocytic leukemia with &amp;lt;i&amp;gt;IGH&amp;lt;/i&amp;gt;::&amp;lt;i&amp;gt;BCL3&amp;lt;/i&amp;gt;-translocation is characterized by a homogeneous and distinct genetic and epigenetic landscape. Approximately 1% of chronic lymphocytic leukemia (CLL) cases harbor a translocation juxtaposing the &lt;i&gt;immunoglobulin heavy chain&lt;/i&gt; (&lt;i&gt;IGH&lt;/i&gt;) and &lt;i&gt;B-cell lymphoma 3&lt;/i&gt; (&lt;i&gt;BCL3&lt;/i&gt;) loci. Aimi Drewes C, López C, Martinez-Manjón JE, Okeke N, Jebaraj B, Bens S, Brändl B, Dyer MJS, Eichhorst B, Fischer A, Fischer K, Robrecht S, Hallek M, Glaser S, Hillebrecht S, Jayne S, Kretzmer H, Mottok A, Müller FJ, Schneider C, Ammerpohl O, Del Val C, Stilgenbauer S, Tausch E, Siebert R. HemaSphere methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42064384" target="_blank" rel="noopener">Chronic lymphocytic leukemia with &amp;lt;i&amp;gt;IGH&amp;lt;/i&amp;gt;::&amp;lt;i&amp;gt;BCL3&amp;lt;/i&amp;gt;-translocation is characterized by a homogeneous and distinct genetic and epigenetic landscape.</a><span class="if-tag">IF=7.6</span></h3>
+  <div class="by">Drewes C, López C, Martinez-Manjón JE, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>HemaSphere</span><span>2026-04-29</span><span class="kw">methylation</span></div>
+  <div class="ksum"><span class="label">한글 요약</span>IGH::BCL3 전위를 가진 만성림프구성백혈병(CLL) 84명을 FISH·전장유전체·메틸롬으로 종합 분석했다. 이 아형은 균질하고 독특한 분자 프로파일(특이 메틸화·돌연변이 패턴)을 보여 분류 및 예후 예측에 활용 가능한 표적 정보를 제공한다.</div>
+  <div class="doi"><a href="https://doi.org/10.1002/hem3.70354" target="_blank" rel="noopener">10.1002/hem3.70354</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Adapting clinical chemistry plasma as a source for liquid biopsies. Circulating cell-free DNA (cfDNA) is valuable for molecular testing, but typically requires specialized collection tubes or immediate processing. We investigated whether residual plasma from heparin s Ding SC, Yu J, Liao T, Ahmann L, Yao Y, Ho C, Wang L, Pinsky BA, Gu W. eLife methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42065375" target="_blank" rel="noopener">Adapting clinical chemistry plasma as a source for liquid biopsies.</a><span class="if-tag">IF=6.4</span></h3>
+  <div class="by">Ding SC, Yu J, Liao T, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>eLife</span><span>2026-05-01</span><span class="kw">methylation</span></div>
+  <div class="ksum"><span class="label">한글 요약</span>임상화학용 헤파린 분리관 잔여 혈장이 cfDNA 추출원으로 활용 가능한지 평가했다. 헤파린 잔여 혈장에서도 분자 검사 가능한 cfDNA를 회수할 수 있어, 별도 채혈 없이 일상 검사 잔여물에서 액체생검을 수행하는 실용적 경로를 제공한다.</div>
+  <div class="doi"><a href="https://doi.org/10.7554/elife.108708" target="_blank" rel="noopener">10.7554/elife.108708</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="CircRPPH1 promotes hepatocellular carcinoma progression through inhibiting PPARα transcription and accelerating its ubiquitination and degradation. &lt;h4&gt;Background&lt;/h4&gt;Hepatocellular carcinoma (HCC) is a prominent cause of cancer-related mortality globally. It is urgently necessary to elucidate the pathogenesis of HCC and develop novel therapeutic Ru W, Lu Y, Gan L, Yao S, Wan H, Nie F, Di S, Guo Y, Huang Q, Yin S, Ning J, Yang F, Qin W, Wen W. Cellular and molecular life sciences : CMLS methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42062600" target="_blank" rel="noopener">CircRPPH1 promotes hepatocellular carcinoma progression through inhibiting PPARα transcription and accelerating its ubiquitination and degradation.</a><span class="if-tag">IF=6.0</span></h3>
+  <div class="by">Ru W, Lu Y, Gan L, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Cellular and molecular life sciences : CMLS</span><span>2026-04-30</span><span class="kw">methylation</span></div>
+  <div class="ksum"><span class="label">한글 요약</span>간세포암(HCC)에서 환형 RNA CircRPPH1이 PPARα 전사를 억제하고 ubiquitination을 가속해 단백질 분해를 촉진함으로써 종양 진행을 유도함을 규명했다. CircRPPH1-PPARα 축이 HCC 진단·치료의 새 표적 후보로 부상한다.</div>
+  <div class="doi"><a href="https://doi.org/10.1007/s00018-026-06211-3" target="_blank" rel="noopener">10.1007/s00018-026-06211-3</a></div>
+</article><article class="paper" data-keywords="PacBio" data-source="MED" data-search="Chromosome-level genome assembly of two Chinese wild boars (Sus scrofa). The wild boar (Sus scrofa) is a widely distributed native wildlife species in China, where it plays an important role in diverse ecosystems. Current research on wild boars primarily focused on their g Wang S, Tu Z, Li L, Qiu Y, Deng S, Huang L, Cao Z, Wang T, Xu Y, Peng P, Zhang S, Cai G, Huang S, Zhang Z, Zheng E, Li Z, Yang J, Chen J, Wu Z, Liu L. Scientific data PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42062312" target="_blank" rel="noopener">Chromosome-level genome assembly of two Chinese wild boars (Sus scrofa).</a><span class="if-tag">IF=5.8</span></h3>
+  <div class="by">Wang S, Tu Z, Li L, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Scientific data</span><span>2026-04-30</span><span class="kw">PacBio</span></div>
+  <div class="ksum"><span class="label">한글 요약</span>중국 두 지역 야생멧돼지(Sus scrofa)의 염색체 수준 게놈 어셈블리를 처음 보고했다. 두 야생멧돼지 게놈은 가축 돼지와의 비교 유전체학, 적응 형질, 보존 유전체 연구의 새 참조가 된다.</div>
+  <div class="doi"><a href="https://doi.org/10.1038/s41597-026-07336-7" target="_blank" rel="noopener">10.1038/s41597-026-07336-7</a></div>
+</article><article class="paper" data-keywords="PacBio" data-source="MED" data-search="Haplotype-resolved chromosome-level genome assembly of Schizothorax davidi. Schizothorax davidi, a cold-water fish endemic to the Qinghai-Tibetan Plateau (QTP), represents an important economic resource in the upper Yangtze River. Regarded as a promising model for studying hi Xie C, Li Y, Zhou Y, Cui Y, Wang H, Xu L, Liu H. Scientific data PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42062310" target="_blank" rel="noopener">Haplotype-resolved chromosome-level genome assembly of Schizothorax davidi.</a><span class="if-tag">IF=5.8</span></h3>
+  <div class="by">Xie C, Li Y, Zhou Y, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Scientific data</span><span>2026-04-30</span><span class="kw">PacBio</span></div>
+  <div class="ksum"><span class="label">한글 요약</span>고원 고도 적응과 다배수체 진화 모델인 Schizothorax davidi의 haplotype 분해 염색체 수준 게놈(4n=98)을 PacBio·Hi-C로 어셈블했다. 어류 다배수체와 고도 적응 연구를 위한 핵심 참조 자원으로 활용된다.</div>
+  <div class="doi"><a href="https://doi.org/10.1038/s41597-026-07328-7" target="_blank" rel="noopener">10.1038/s41597-026-07328-7</a></div>
+</article><article class="paper" data-keywords="PacBio" data-source="MED" data-search="Telomere-to-telomere genome assembly of the wood tiger moth Arctia plantaginis. The wood tiger moth, Arctia plantaginis, is an important model organism for the study of polymorphism in warning colour. One major colour locus has been identified, but studying its association with o Koch EL, Warren IA, Brien MN, Mappes J, Jiggins CD. Scientific data PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42062315" target="_blank" rel="noopener">Telomere-to-telomere genome assembly of the wood tiger moth Arctia plantaginis.</a><span class="if-tag">IF=5.8</span></h3>
+  <div class="by">Koch EL, Warren IA, Brien MN, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Scientific data</span><span>2026-04-30</span><span class="kw">PacBio</span></div>
+  <div class="ksum"><span class="label">한글 요약</span>경고색 다형성 모델인 wood tiger moth Arctia plantaginis의 telomere-to-telomere(T2T) 게놈을 조립해 기존 1,000+ 스캐폴드 어셈블리를 대체했다. 색깔 좌위와 다른 형질·선택 시그니처 분석에 정확한 참조를 제공한다.</div>
+  <div class="doi"><a href="https://doi.org/10.1038/s41597-026-07316-x" target="_blank" rel="noopener">10.1038/s41597-026-07316-x</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Genetic variants of &amp;lt;i&amp;gt;CD160&amp;lt;/i&amp;gt;, &amp;lt;i&amp;gt;MERTK&amp;lt;/i&amp;gt;, and &amp;lt;i&amp;gt;IL15&amp;lt;/i&amp;gt; in natural killer cell-related pathway predict gastric cancer survival. &lt;h4&gt;Background&lt;/h4&gt;Natural killer (NK) cells play a pivotal role in anti-tumor immunity; however, the prognostic significance of genetic variants in NK cell-related genes in gastric cancer (GC) remain Zeng G, Lu G, Hu B, Xu M, Li G, Wang M, Qiu L, Zhang R, Cheng L, Xu W, Liu X, Jin G, Liu H, Wei Q. Frontiers in immunology methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42064062" target="_blank" rel="noopener">Genetic variants of &amp;lt;i&amp;gt;CD160&amp;lt;/i&amp;gt;, &amp;lt;i&amp;gt;MERTK&amp;lt;/i&amp;gt;, and &amp;lt;i&amp;gt;IL15&amp;lt;/i&amp;gt; in natural killer cell-related pathway predict gastric cancer survival.</a><span class="if-tag">IF=5.7</span></h3>
+  <div class="by">Zeng G, Lu G, Hu B, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Frontiers in immunology</span><span>2026-04-15</span><span class="kw">methylation</span></div>
+  <div class="ksum"><span class="label">한글 요약</span>한국인 위암 환자 2,200여 명에서 NK 세포 관련 151 유전자의 12,476 SNP를 평가해 CD160·MERTK·IL15 변이가 전체 생존과 연관됨을 확인했다. NK 세포 면역의 유전 다형성이 위암 예후 분류와 면역치료 반응 예측의 후보 마커가 될 수 있음을 시사한다.</div>
+  <div class="doi"><a href="https://doi.org/10.3389/fimmu.2026.1765825" target="_blank" rel="noopener">10.3389/fimmu.2026.1765825</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Inflammatory protein epigenetic scores (EpiScores) and cognitive function in the longitudinal Swedish adoption/twin study of aging (SATSA). Protein epigenetic scores (EpiScores) are DNA methylation (DNAm)-based proxies for circulating protein levels and may provide insights into inflammation-cognition relationships. Although some EpiScore Ishihara K, Hägg S, Lopes De Oliveira T. GeroScience methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42062706" target="_blank" rel="noopener">Inflammatory protein epigenetic scores (EpiScores) and cognitive function in the longitudinal Swedish adoption/twin study of aging (SATSA).</a><span class="if-tag">IF=5.6</span></h3>
+  <div class="by">Ishihara K, Hägg S, Lopes De Oliveira T.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>GeroScience</span><span>2026-04-30</span><span class="kw">methylation</span></div>
+  <div class="ksum"><span class="label">한글 요약</span>DNA 메틸화 기반 단백질 EpiScores와 인지 기능의 관계를 SATSA 종단 코호트에서 분석했다. 일부 염증 단백 EpiScores가 인지 영역별로 차별적 연관을 보여, 후성유전 단백 프록시가 인지 노화 모니터링 도구로 활용될 가능성을 제시한다.</div>
+  <div class="doi"><a href="https://doi.org/10.1007/s11357-026-02274-z" target="_blank" rel="noopener">10.1007/s11357-026-02274-z</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Peripheral blood mononuclear cell DNA methylation signatures guide surgical decision-making in indeterminate pulmonary nodules. &lt;h4&gt;Background&lt;/h4&gt;Distinguishing malignant from benign pulmonary nodules remained a significant clinical challenge. Given the involvement of DNA methylation in anti-tumor immunity, we aimed to invest Yin H, Zhang N, Qiu L, Zhang J, Ding J, Xu J, Huang Z, Yuan X. Communications medicine methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42062546" target="_blank" rel="noopener">Peripheral blood mononuclear cell DNA methylation signatures guide surgical decision-making in indeterminate pulmonary nodules.</a><span class="if-tag">IF=5.4</span></h3>
+  <div class="by">Yin H, Zhang N, Qiu L, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Communications medicine</span><span>2026-04-30</span><span class="kw">methylation</span></div>
+  <div class="ksum"><span class="label">한글 요약</span>불확정 폐결절 분류를 위해 말초혈액 단핵세포(PBMC)의 전장 DNA 메틸화 시그니처를 비침습 바이오마커로 평가했다. PBMC 메틸화 프로파일이 양성·악성 결절을 분별해 수술 결정 지원의 새로운 비침습 도구가 될 수 있음을 보였다.</div>
+  <div class="doi"><a href="https://doi.org/10.1038/s43856-026-01616-4" target="_blank" rel="noopener">10.1038/s43856-026-01616-4</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="CCR1 as a potential regulator of neutrophil-mediated pathogenesis in post-acute ischemic stroke: a multi-omics Mendelian randomization. &lt;h4&gt;Background&lt;/h4&gt;The genetic and immunological mechanisms underlying post-acute ischemic stroke (IS) remain incompletely understood, particularly those involving neutrophil-mediated inflammation. Th Zhang X, Xiang X, Li R, Huang J, Yang Y, Yao H, Ren X, Hu L, Song Y, Jin L. Clinical epigenetics methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42062857" target="_blank" rel="noopener">CCR1 as a potential regulator of neutrophil-mediated pathogenesis in post-acute ischemic stroke: a multi-omics Mendelian randomization.</a><span class="if-tag">IF=5.3</span></h3>
+  <div class="by">Zhang X, Xiang X, Li R, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Clinical epigenetics</span><span>2026-04-30</span><span class="kw">methylation</span></div>
+  <div class="ksum"><span class="label">한글 요약</span>다중오믹스 멘델리안 무작위화로 후급성 허혈성 뇌졸중 후 호중구 매개 염증의 상류 조절자로 CCR1을 동정했다. CCR1 표적이 뇌졸중 후 신경염증 완화의 잠재적 치료 전략이 될 수 있음을 시사한다.</div>
+  <div class="doi"><a href="https://doi.org/10.1186/s13148-026-02132-x" target="_blank" rel="noopener">10.1186/s13148-026-02132-x</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="KDM1A regulates nephron progenitor programs and is associated with human kidney disease risk. &lt;h4&gt;Background&lt;/h4&gt;Genome-wide association studies (GWAS) have identified numerous loci associated with kidney function, but linking non-coding variants to causal effector genes remains challenging. B Kolligundla LP, Mukhi D, Levinsohn J, Bergerson A, Hou Y, Liu H, Capell BC, Susztak K. Nephrology, dialysis, transplantation : official publication of the European Dialysis and Transplant Association - European Renal Association methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42065705" target="_blank" rel="noopener">KDM1A regulates nephron progenitor programs and is associated with human kidney disease risk.</a><span class="if-tag">IF=4.8</span></h3>
+  <div class="by">Kolligundla LP, Mukhi D, Levinsohn J, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Nephrology, dialysis, transplantation : official publication of the European Dialysis and Transplant Association - European Renal Association</span><span>2026-05-01</span><span class="kw">methylation</span></div>
+  <div class="ksum"><span class="label">한글 요약</span>227만 명 GWAS의 fine-mapping을 신장 발현·후성유전 데이터와 통합해 신장기능 좌위에서 KDM1A를 우선 동정했다. KDM1A는 nephron progenitor 프로그램을 조절하며 인간 신장질환 위험과 인과적으로 연관되어 새로운 치료 표적이 될 수 있다.</div>
+  <div class="doi"><a href="https://doi.org/10.1093/ndt/gfag073" target="_blank" rel="noopener">10.1093/ndt/gfag073</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Cocaine remodels m&amp;lt;sup&amp;gt;6&amp;lt;/sup&amp;gt;A RNA-dependent signaling to drive locomotor plasticity in &amp;lt;i&amp;gt;Drosophila melanogaster&amp;lt;/i&amp;gt;. N&lt;sup&gt;6&lt;/sup&gt;-methyladenosine (m&lt;sup&gt;6&lt;/sup&gt;A) is a dynamic RNA modification that regulates RNA stability, processing, and translation and is increasingly recognized as a key modulator of neuronal pla Filošević Vujnović A, Milotić N, Samardžija B, Rubinić M, Andretić Waldowski R, Soldano A. Frontiers in cellular neuroscience methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42063981" target="_blank" rel="noopener">Cocaine remodels m&amp;lt;sup&amp;gt;6&amp;lt;/sup&amp;gt;A RNA-dependent signaling to drive locomotor plasticity in &amp;lt;i&amp;gt;Drosophila melanogaster&amp;lt;/i&amp;gt;.</a><span class="if-tag">IF=4.2</span></h3>
+  <div class="by">Filošević Vujnović A, Milotić N, Samardžija B, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Frontiers in cellular neuroscience</span><span>2026-04-15</span><span class="kw">methylation</span></div>
+  <div class="ksum"><span class="label">한글 요약</span>초파리에서 코카인 흡입이 운동 감작과 m6A RNA 의존 신호망을 재편함을 발견했다. coding·noncoding RNA 전반에 걸친 m6A 변형 변화가 정신자극제 반응의 신경 가소성 기전임을 보여, 약물 의존성의 후성전사체 모델을 제시한다.</div>
+  <div class="doi"><a href="https://doi.org/10.3389/fncel.2026.1810118" target="_blank" rel="noopener">10.3389/fncel.2026.1810118</a></div>
+</article><article class="paper" data-keywords="PacBio" data-source="MED" data-search="De novo chromosome-level genome assembly and annotation of the Muscovy duck (Cairina moschata). The Muscovy duck (Cairina moschata) is an excellent lean-type poultry species characterized by large body weight, rapid growth, high lean meat yield, good liver production performance, and high feed c Ju X, Wang Z, Xu H, Tan L, Cai D, Zhu W, Guo L, Ji C, Nie Q, Han W. Poultry science PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42061252" target="_blank" rel="noopener">De novo chromosome-level genome assembly and annotation of the Muscovy duck (Cairina moschata).</a><span class="if-tag">IF=4.2</span></h3>
+  <div class="by">Ju X, Wang Z, Xu H, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Poultry science</span><span>2026-04-16</span><span class="kw">PacBio</span></div>
+  <div class="ksum"><span class="label">한글 요약</span>산업적으로 중요한 머스코비 오리(Cairina moschata)의 de novo 염색체 수준 게놈 어셈블리·주석을 PacBio·Hi-C로 생성했다. 본 자원은 머스코비 오리의 형질·생산 형질 GWAS 및 가금 육종에 핵심 참조 데이터로 활용된다.</div>
+  <div class="doi"><a href="https://doi.org/10.1016/j.psj.2026.106973" target="_blank" rel="noopener">10.1016/j.psj.2026.106973</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Elucidation of the &amp;lt;i&amp;gt;ty-5&amp;lt;/i&amp;gt; resistance network in tomato against tomato yellow leaf curl virus reveals the involvement of AP2/ERF gene. &lt;h4&gt;Introduction&lt;/h4&gt;Tomato yellow leaf curl virus (TYLCV, &lt;i&gt;Begomovirus coheni&lt;/i&gt;), a whitefly-transmitted begomovirus, causes serious economic losses to tomato crops globally. Over the past three  Padmanabhan C, Ma Q, Shamimuzzaman M, Stewart KS, Wilson JR, Hasegawa DK, Shekasteband R, Hutton SF, Scott JW, Simmons AM, Fei Z, Ling KS. Frontiers in plant science methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42064299" target="_blank" rel="noopener">Elucidation of the &amp;lt;i&amp;gt;ty-5&amp;lt;/i&amp;gt; resistance network in tomato against tomato yellow leaf curl virus reveals the involvement of AP2/ERF gene.</a><span class="if-tag">IF=4.1</span></h3>
+  <div class="by">Padmanabhan C, Ma Q, Shamimuzzaman M, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Frontiers in plant science</span><span>2026-04-15</span><span class="kw">methylation</span></div>
+  <div class="ksum"><span class="label">한글 요약</span>토마토 황화엽권바이러스(TYLCV)에 대한 ty-5 열성 저항성 메커니즘을 분석해 AP2 등 전사인자 네트워크의 관여를 발견했다. 본 결과는 토마토 TYLCV 내성 품종 육종을 위한 분자 마커 개발에 활용된다.</div>
+  <div class="doi"><a href="https://doi.org/10.3389/fpls.2026.1788099" target="_blank" rel="noopener">10.3389/fpls.2026.1788099</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="ACTB hypermethylation in blood is a potential biomarker as predictor to the risk of coronary heart disease. Potential biomarkers that can assess the risk of coronary heart disease (CHD) and facilitate its preclinical detection are urgently needed. We aimed to explore the association between blood-based ACTB Jin J, Wang F, Li M, Fan Y, Liu Y, Xu H, Chen C, Wei L, Liu F, Shen C, Yang R. Scientific reports methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42062398" target="_blank" rel="noopener">ACTB hypermethylation in blood is a potential biomarker as predictor to the risk of coronary heart disease.</a><span class="if-tag">IF=3.8</span></h3>
+  <div class="by">Jin J, Wang F, Li M, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Scientific reports</span><span>2026-04-30</span><span class="kw">methylation</span></div>
+  <div class="ksum"><span class="label">한글 요약</span>중첩 사례-대조군 설계로 혈액 ACTB 메틸화와 향후 관상동맥 질환(CHD) 위험의 연관을 질량분석으로 평가했다. ACTB 과메틸화는 CHD 위험 상승과 유의하게 연관되어 비침습 예측 바이오마커 후보로의 가능성을 제시한다.</div>
+  <div class="doi"><a href="https://doi.org/10.1038/s41598-026-49875-4" target="_blank" rel="noopener">10.1038/s41598-026-49875-4</a></div>
+</article><article class="paper" data-keywords="mosaic" data-source="MED" data-search="Beyond tumors: uninvolved breast tissue of breast cancer patients with adverse prognoses is enriched for pathogenic PIK3CA and TP53 post-zygotic variants. &lt;h4&gt;Background&lt;/h4&gt;Histologically normal mammary tissue from breast cancer patients can harbor significant genetic alterations that could precede visible tumor development and influence disease progre Andreou M, Chojnowska K, Filipowicz N, Horbacz M, Madanecki P, Duzowska K, Ławrynowicz U, Davies H, Bruhn-Olszewska B, Koszyński M, Drężek-Chyła K, Jaśkiewicz M, Jąkalski M, Kostecka A, Drzewiecka-Kłysz M, Nowikiewicz M, Las-Jankowska M, Bała D, Hoffman J, Śrutek E, Jankowski M, Jankau J, Hodorowicz-Zaniewska D, Szpor J, Szylberg Ł, Zegarski W, Nowikiewicz T, Buckley PG, Tiemann-Boege I, Mieczkowski J, Koczkowska M, Dumanski JP, Piotrowski A. BMC cancer mosaic ">
+  <h3><a href="https://europepmc.org/abstract/MED/42063004" target="_blank" rel="noopener">Beyond tumors: uninvolved breast tissue of breast cancer patients with adverse prognoses is enriched for pathogenic PIK3CA and TP53 post-zygotic variants.</a><span class="if-tag">IF=3.4</span></h3>
+  <div class="by">Andreou M, Chojnowska K, Filipowicz N, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>BMC cancer</span><span>2026-04-30</span><span class="kw">mosaic</span></div>
+  <div class="ksum"><span class="label">한글 요약</span>유방암 환자 77명의 종양 비포함 정상조직에서 PIK3CA·TP53 등 후수정 모자이시즘 변이가 풍부함을 전엑솜 시퀀싱으로 확인했다. 정상 조직의 발암 변이 풍부도가 예후 불량과 연관되어 유방암 발달 이전 단계의 분자적 기반을 제시한다.</div>
+  <div class="doi"><a href="https://doi.org/10.1186/s12885-026-16086-z" target="_blank" rel="noopener">10.1186/s12885-026-16086-z</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Epigenome-wide exploratory study of blood DNA methylation and markers of physical performance indicates subtle differences across levels of cardiovascular fitness. &lt;h4&gt;Introduction&lt;/h4&gt;Exercise is known to exert systemic effects associated with improved cardiovascular fitness and epigenetic modifications. However, the relationships between systemic epigenetic ma Torma F, Santos E, Jókai M, Bábszky Z, Bábszky G, Mozaffaritabar S, Herai RH, Pinho RA, Higuchi M, Gu Y, Radák Z. Frontiers in physiology methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42064556" target="_blank" rel="noopener">Epigenome-wide exploratory study of blood DNA methylation and markers of physical performance indicates subtle differences across levels of cardiovascular fitness.</a><span class="if-tag">IF=3.4</span></h3>
+  <div class="by">Torma F, Santos E, Jókai M, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Frontiers in physiology</span><span>2026-04-15</span><span class="kw">methylation</span></div>
+  <div class="ksum"><span class="label">한글 요약</span>운동량과 혈액 DNA 메틸화의 EPIC 어레이 EWAS 탐색 연구로 신체 수행 지표와의 미묘한 차이를 분석했다. 일부 CpG 위치에서 유의한 메틸화 차이가 관찰되어 운동의 systemic 후성유전 영향에 대한 후속 연구의 기반을 제공한다.</div>
+  <div class="doi"><a href="https://doi.org/10.3389/fphys.2026.1713760" target="_blank" rel="noopener">10.3389/fphys.2026.1713760</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Neuroblastoma cell growth and survival promoted by DNMT3B and its inhibition demonstrates anti-tumor effects. &lt;h4&gt;Background&lt;/h4&gt;Neuroblastoma is one of the most common childhood tumors. As tumor suppressor genes are frequently silenced via promoter hypermethylation in cancers, targeting DNA methylation has b Izumi K, Aoki H, Toriuchi K, Miyajima C, Sanda T, Takeshita S, Kakita H, Inoue Y, Iida S, Yamada Y, Aoyama M. Pediatric research methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42062521" target="_blank" rel="noopener">Neuroblastoma cell growth and survival promoted by DNMT3B and its inhibition demonstrates anti-tumor effects.</a><span class="if-tag">IF=3.1</span></h3>
+  <div class="by">Izumi K, Aoki H, Toriuchi K, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Pediatric research</span><span>2026-04-30</span><span class="kw">methylation</span></div>
+  <div class="ksum"><span class="label">한글 요약</span>신경아세포종에서 DNMT3B가 종양 성장과 생존을 촉진하며 DNMT3B 억제가 종양세포 사멸·성장 억제를 유도함을 in vitro·in vivo로 입증했다. DNMT3B 특이 억제제가 기존 비특이적 DNMT 저해제의 한계를 보완하는 신경아세포종 치료 전략이 될 수 있다.</div>
+  <div class="doi"><a href="https://doi.org/10.1038/s41390-026-04943-3" target="_blank" rel="noopener">10.1038/s41390-026-04943-3</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Spermatogenic timing, dose, and route of administration as determinants of paternal transmission of developmental neurotoxicity. Growing evidence challenges the long-standing assumption that the paternal germline is insulated from environmental perturbation and identifies preconception paternal exposure as an underrecognized pa Rimawi I, Yanai J. Neurotoxicology and teratology methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42061688" target="_blank" rel="noopener">Spermatogenic timing, dose, and route of administration as determinants of paternal transmission of developmental neurotoxicity.</a><span class="if-tag">IF=2.7</span></h3>
+  <div class="by">Rimawi I, Yanai J.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Neurotoxicology and teratology</span><span>2026-04-28</span><span class="kw">methylation</span></div>
+  <div class="ksum"><span class="label">한글 요약</span>코카인·니코틴·에탄올·모르핀·카나비노이드 등 부친 노출이 자손 발달 신경독성에 어떻게 전달되는지를 정자 형성 시기·용량·투여경로 관점에서 정리한 리뷰다. 부계 생식세포는 환경 노출에 노출되며 후성유전적 정보 전달이 자손에 영향을 줄 수 있음을 강조한다.</div>
+  <div class="doi"><a href="https://doi.org/10.1016/j.ntt.2026.107605" target="_blank" rel="noopener">10.1016/j.ntt.2026.107605</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Exploring the relationship between &amp;lt;i&amp;gt;OXTR&amp;lt;/i&amp;gt; DNA methylation and temperament in children with neurodevelopmental disabilities. &lt;h4&gt;Introduction&lt;/h4&gt;Oxytocin plays a crucial role in socio-emotional development. DNA methylation (DNAm) of the oxytocin receptor gene (&lt;i&gt;OXTR&lt;/i&gt;) has been associated with socioemotional functionin Mascheroni E, Butti N, Mambretti F, Cordolcini L, Castagna A, Maucci V, Citterio A, Bettinelli A, Montirosso R. Frontiers in psychology methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42063891" target="_blank" rel="noopener">Exploring the relationship between &amp;lt;i&amp;gt;OXTR&amp;lt;/i&amp;gt; DNA methylation and temperament in children with neurodevelopmental disabilities.</a><span class="if-tag">IF=2.6</span></h3>
+  <div class="by">Mascheroni E, Butti N, Mambretti F, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Frontiers in psychology</span><span>2026-04-15</span><span class="kw">methylation</span></div>
+  <div class="ksum"><span class="label">한글 요약</span>신경발달장애 아동에서 옥시토신 수용체(OXTR) 유전자의 13개 CpG 부위 DNA 메틸화와 기질 특성의 관계를 분석했다. OXTR 메틸화 수준이 사회·정서적 기질과 연관되어 옥시토신계 후성유전 조절이 NDD 아동의 행동 표현형에 영향을 줄 가능성을 시사한다.</div>
+  <div class="doi"><a href="https://doi.org/10.3389/fpsyg.2026.1763938" target="_blank" rel="noopener">10.3389/fpsyg.2026.1763938</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="&amp;lt;i&amp;gt;CDCA7&amp;lt;/i&amp;gt; Promotes Proliferation and Suppresses Apoptosis in Gastric Cancer via HELLS-Mediated Chromatin Remodeling. &lt;h4&gt;Background&lt;/h4&gt;In various tumor types, cell division cycle-associated 7 (&lt;i&gt;CDCA7&lt;/i&gt;) is involved in chromatin remodeling and DNA methylation. However, its biological functions and regulatory mec Jiang J, Li YR, Wang X, Li J, Ye F, Wang J, Li H, Feng L. Oncology research methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42065057" target="_blank" rel="noopener">&amp;lt;i&amp;gt;CDCA7&amp;lt;/i&amp;gt; Promotes Proliferation and Suppresses Apoptosis in Gastric Cancer via HELLS-Mediated Chromatin Remodeling.</a><span class="if-tag">IF=2.5</span></h3>
+  <div class="by">Jiang J, Li YR, Wang X, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Oncology research</span><span>2026-04-22</span><span class="kw">methylation</span></div>
+  <div class="ksum"><span class="label">한글 요약</span>위암에서 CDCA7이 HELLS 매개 chromatin remodeling을 통해 증식을 촉진하고 세포자살을 억제함을 규명했다. CDCA7-HELLS 축이 위암 진행의 후성유전 조절자이자 잠재 치료 표적임을 시사한다.</div>
+  <div class="doi"><a href="https://doi.org/10.32604/or.2026.076051" target="_blank" rel="noopener">10.32604/or.2026.076051</a></div>
+</article><article class="paper" data-keywords="mosaic" data-source="MED" data-search="Patterns of bronchoalveolar lavage in fibrotic and non-fibrotic interstitial lung diseases - a multicenter analysis. &lt;h4&gt;Background&lt;/h4&gt;Bronchoalveolar lavage (BAL) cellular analysis is recommended as part of the diagnostic workup of interstitial lung diseases (ILD) when diagnosis is unclear. In recent years, ILD ha Gershman E, Freund O, Wand O, Schneer S, Bloch J, Hershko T, Kleinhendler E, Cohn-Schwartz D, Hadad Y, Aviram G, Adir Y, Shitrit D, Bar-Shai A, Unterman A. BMC pulmonary medicine mosaic ">
+  <h3><a href="https://europepmc.org/abstract/MED/42063008" target="_blank" rel="noopener">Patterns of bronchoalveolar lavage in fibrotic and non-fibrotic interstitial lung diseases - a multicenter analysis.</a><span class="if-tag">IF=2.5</span></h3>
+  <div class="by">Gershman E, Freund O, Wand O, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>BMC pulmonary medicine</span><span>2026-04-30</span><span class="kw">mosaic</span></div>
+  <div class="ksum"><span class="label">한글 요약</span>다기관 자료를 사용해 섬유화·비섬유화 간질성 폐질환(ILD)의 BAL 세포 프로파일을 비교했다. 섬유화 ILD에서는 호중구 우세, 비섬유화에서는 림프구 우세 패턴이 두드러져 BAL이 ILD 분류 보조 지표로 활용될 수 있음을 시사한다.</div>
+  <div class="doi"><a href="https://doi.org/10.1186/s12890-026-04321-z" target="_blank" rel="noopener">10.1186/s12890-026-04321-z</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Multimodal techniques for maximal safe resection of IDH-mutant low-grade glioma involving corpus callosum, a retrospective study and prognosis analysis. &lt;h4&gt;Background&lt;/h4&gt;The IDH-mutant low-grade glioma (LGG) involving corpus callosum (ccLGG) is a rare type of LGG which has a poorer prognosis. To evaluate the efficacy of multimodal techniques (compri Cui M, Zhang M, Zhou C, Sun G, Zhang J. Chinese neurosurgical journal methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42063089" target="_blank" rel="noopener">Multimodal techniques for maximal safe resection of IDH-mutant low-grade glioma involving corpus callosum, a retrospective study and prognosis analysis.</a><span class="if-tag">IF=1.7</span></h3>
+  <div class="by">Cui M, Zhang M, Zhou C, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Chinese neurosurgical journal</span><span>2026-05-01</span><span class="kw">methylation</span></div>
+  <div class="ksum"><span class="label">한글 요약</span>뇌량을 침범한 IDH-돌연변이 저등급 신경아교종(ccLGG)에서 신경항법·intra-op MRI·신경모니터링을 결합한 다중모달 절제술이 신경항법 단독 대비 안전하고 광범위한 절제와 양호한 예후를 보임을 후향 분석으로 확인했다. ccLGG 수술 표준화에 임상적 근거를 제공한다.</div>
+  <div class="doi"><a href="https://doi.org/10.1186/s41016-026-00432-y" target="_blank" rel="noopener">10.1186/s41016-026-00432-y</a></div>
+</article><article class="paper" data-keywords="mosaic" data-source="MED" data-search="Haplotype Threading Using the Positional Burrows-Wheeler Transform. In the classic model of population genetics, one haplotype (query) is considered as a mosaic copy of segments from a number of haplotypes in a panel, or threading the haplotype through the panel. The  Sanaullah A, Zhi D, Zhang S. Algorithms in bioinformatics : ... International Workshop, WABI ..., proceedings. WABI (Workshop) mosaic ">
+  <h3><a href="https://europepmc.org/abstract/MED/42063413" target="_blank" rel="noopener">Haplotype Threading Using the Positional Burrows-Wheeler Transform.</a></h3>
+  <div class="by">Sanaullah A, Zhi D, Zhang S.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Algorithms in bioinformatics : ... International Workshop, WABI ..., proceedings. WABI (Workshop)</span><span>2022-08-01</span><span class="kw">mosaic</span></div>
+  <div class="ksum"><span class="label">한글 요약</span>PBWT(positional Burrows-Wheeler transform)를 활용해 Li-Stephens HMM 기반 haplotype threading의 시간 복잡도를 바이오뱅크 규모에서 효율화하는 알고리즘을 제시했다. 본 방법은 대규모 패널 매핑·imputation·계통 분석을 가속하는 토대를 제공한다.</div>
+  <div class="doi"><a href="https://doi.org/10.4230/lipics.wabi.2022.4" target="_blank" rel="noopener">10.4230/lipics.wabi.2022.4</a></div>
+</article>
+</div>
+<div id="empty" class="empty" style="display:none">조건에 맞는 논문이 없습니다.</div>
+<footer>
+  Generated 2026-05-05 11:34 KST · <a href="https://europepmc.org" target="_blank">Europe PMC</a> ·
+  IF: JCR 2024 (curated) · 한글 요약은 abstract 기반.
+</footer>
+</div>
+<script>
+(function() {
+  var state = { keyword: 'all', source: 'all', q: '' };
+  function apply() {
+    var q = state.q.toLowerCase();
+    document.querySelectorAll('.paper').forEach(function(el) {
+      var kws = (el.dataset.keywords || '').split('|');
+      var src = el.dataset.source || '';
+      var hay = (el.dataset.search || '').toLowerCase();
+      var ok = true;
+      if (state.keyword !== 'all' && kws.indexOf(state.keyword) === -1) ok = false;
+      if (state.source !== 'all' && src !== state.source) ok = false;
+      if (q && hay.indexOf(q) === -1) ok = false;
+      el.classList.toggle('hidden', !ok);
+    });
+    var visible = document.querySelectorAll('.paper:not(.hidden)').length;
+    var emptyEl = document.getElementById('empty');
+    if (emptyEl) emptyEl.style.display = visible ? 'none' : 'block';
+    var vc = document.getElementById('visibleCount');
+    if (vc) vc.textContent = visible;
+  }
+  document.querySelectorAll('.chip[data-filter]').forEach(function(chip) {
+    chip.addEventListener('click', function() {
+      var dim = chip.dataset.filter;
+      state[dim] = chip.dataset.value;
+      document.querySelectorAll('.chip[data-filter="' + dim + '"]').forEach(function(c) { c.classList.remove('active'); });
+      chip.classList.add('active');
+      apply();
+    });
+  });
+  var search = document.getElementById('search');
+  if (search) search.addEventListener('input', function(e) { state.q = e.target.value; apply(); });
+  apply();
+  // Keyboard navigation: ← / → between days
+  document.addEventListener('keydown', function(e) {
+    if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) return;
+    if (e.key === 'ArrowLeft') {
+      var p = document.querySelector('.daynav > a:first-child'); if (p && p.href) location.href = p.href;
+    } else if (e.key === 'ArrowRight') {
+      var n = document.querySelector('.daynav > a:last-child'); if (n && n.href) location.href = n.href;
+    }
+  });
+})();
+</script>
+</body></html>

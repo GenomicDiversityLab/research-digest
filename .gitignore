@@ -29,3 +29,6 @@ build_weekly.py
 *.key
 .env
 .env.*
+.pat
+.github_pat
+_setup_github.sh

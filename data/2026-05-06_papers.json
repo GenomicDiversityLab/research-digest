@@ -1,0 +1,710 @@
+[
+  {
+    "id": "PPR1185205",
+    "source": "PPR",
+    "doi": "10.21203/rs.3.rs-9246643/v1",
+    "title": "Karyotype-Specific Cardiovascular Disease in Turner Syndrome: Insights from Transthoracic Echocardiography",
+    "authorString": "Huang Y, Luo S, Qi Y, Qin S, Yue C, Lu Q, Lash GE, Li L.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Huang Y",
+          "firstName": "Yinchun",
+          "lastName": "Huang",
+          "initials": "Y"
+        },
+        {
+          "fullName": "Luo S",
+          "firstName": "Song",
+          "lastName": "Luo",
+          "initials": "S"
+        },
+        {
+          "fullName": "Qi Y",
+          "firstName": "Yiying",
+          "lastName": "Qi",
+          "initials": "Y"
+        },
+        {
+          "fullName": "Qin S",
+          "firstName": "Shuang",
+          "lastName": "Qin",
+          "initials": "S"
+        },
+        {
+          "fullName": "Yue C",
+          "firstName": "Chaomin",
+          "lastName": "Yue",
+          "initials": "C"
+        },
+        {
+          "fullName": "Lu Q",
+          "firstName": "Qinsheng",
+          "lastName": "Lu",
+          "initials": "Q"
+        },
+        {
+          "fullName": "Lash GE",
+          "firstName": "Gendie",
+          "lastName": "Lash",
+          "initials": "GE"
+        },
+        {
+          "fullName": "Li L",
+          "firstName": "Li",
+          "lastName": "Li",
+          "initials": "L"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "<title>Abstract</title>  <p>  Background:​​  As the only survivable sex chromosome monosomy, Turner syndrome (TS) demonstrates a certain association with cardiovascular disease (CVD), which severely impacts patients' quality of life. While the CVD phenotype and prognosis differ among TS patients suffering from specific karyotypes, these discrepancies remain inadequately studied. <h4>Objective:</h4> ​​  This study was predominantly intended to assess the association between baseline metabolic characteristics and the incidence rate of CVD in TS patients with different karyotypes identified by transthoracic echocardiography (TTE). <h4>Methods:</h4> ​​  We conducted a retrospective longitudinal cohort study of 289 TS patients and 289 strictly matched non-TS patients at Guangzhou Women's and Children's Medical Center between October 2016 and October 2023. Participants were stratified by karyotype: 45, X monosomy (n = 149) and mosaic karyotypes (n = 140). <h4>Results:</h4> ​​  Patients suffering from the 45, X karyotype demonstrated an incidence of CVD tremendously higher than those with mosaic karyotypes. 45, X cohort (n = 149) in comparison with the mosaic karyotype group (n = 140): SBP (89.7 ± 14.1 mmHg vs. 93.3 ± 13.1 mmHg,  <italic>P</italic>   = 0.026).hypercholesterolemia (34.2% vs. 11.4%;  <italic>p</italic>   < 0.001), elevated LDL cholesterol (34.9% vs. 22.9%;  <italic>p</italic>   = 0.002), and insulin resistance (37.6% vs. 19.3%;  <italic>p</italic>   < 0.001). In contrast, the mosaic karyotype group exhibited a tremendously higher prevalence of low estradiol levels (39.3% vs. 26.8%;  <italic>p</italic>   < 0.001). TTE assessment identified a statistically significant disparity in left ventricular end-diastolic dimension (LVDD) between the 45, X group and mosaic karyotype patients (  <italic>p</italic>   < 0.05). <h4>Conclusions:</h4> Patients suffering from the 45, X karyotype exhibited a strikingly higher incidence of dyslipidemia and insulin resistance. These individuals demonstrated notably impaired left ventricular diastolic function. It is imperative to better the cardiovascular risk management strategy of TS by implementing personalized intervention measures for this high-risk subgroup.  </p>",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "Research Square",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.21203/rs.3.rs-9246643/v1"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "versionList": {
+      "version": [
+        {
+          "id": "PPR1185205",
+          "source": "PPR",
+          "firstPublishDate": "2026-05-04",
+          "versionNumber": 1,
+          "pubTypeList": {
+            "pubType": [
+              "preprint"
+            ]
+          },
+          "hasEvaluations": "N"
+        }
+      ]
+    },
+    "versionNumber": 1,
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-06",
+    "firstIndexDate": "2026-05-06",
+    "firstPublicationDate": "2026-05-04",
+    "matched_keywords": [
+      "mosaic"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1185306",
+    "source": "PPR",
+    "doi": "10.21203/rs.3.rs-8634923/v1",
+    "title": "Application and value of multi-technique integration in the prenatal diagnosis of mosaicism derived of ICSI blastocyst",
+    "authorString": "Huang Y, Zhang S, Zou P, Huang L, Li X, Wang H.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Huang Y",
+          "firstName": "Yun",
+          "lastName": "Huang",
+          "initials": "Y"
+        },
+        {
+          "fullName": "Zhang S",
+          "firstName": "Shuping",
+          "lastName": "Zhang",
+          "initials": "S"
+        },
+        {
+          "fullName": "Zou P",
+          "firstName": "Peng",
+          "lastName": "Zou",
+          "initials": "P"
+        },
+        {
+          "fullName": "Huang L",
+          "firstName": "Limin",
+          "lastName": "Huang",
+          "initials": "L"
+        },
+        {
+          "fullName": "Li X",
+          "firstName": "Xiaofeng",
+          "lastName": "Li",
+          "initials": "X"
+        },
+        {
+          "fullName": "Wang H",
+          "firstName": "He",
+          "lastName": "Wang",
+          "initials": "H"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "<title>Abstract</title>  <p>  <bold>Background.</bold>  To investigate the antenatal diagnosis of a pregnant fetus after intracytoplasmic sperm injection (ICSI) and blastocyst transplantation. By integrating multiple technologies, we clarified the specific characteristics of the 20p mosaic duplication, evaluated its pathogenicity and clinical significance, and provided evidence for prenatal genetic counseling.  <bold>Methods.</bold>  Amniocentesis was performed on a pregnant woman identified as high-risk by non-invasive prenatal testing (NIPT) suggesting a 15q26.3 deletion.Fetal amniotic fluid exfoliative cells were analyzed using an integrated approach combining G-banding karyotyping, chromosomal microarray analysis (CMA), and fluorescence in situ hybridization (FISH).  <bold>Results.</bold>  NIPT showed a 3.04 Mb deletion at 15q26.3.CMA showed a 20.51 Mb mosaic duplication in the 20p13p11.23 region (approximately 50% mosaicism),while G-banding karyotype analysis showed no abnormality in amniotic fluid cells.Mid-term FISH analysis of amniotic fluid cells in our hospital showed a der(15)t(15;20)(qter;p13) mosaicism, meaning that a portion of the 20p13 segment was translocated to the end of chromosome 15. FISH analysis from outer hospital indicated that 49% of cells carried a 20p13 duplication signal. Both parents had normal peripheral blood karyotypes.  <bold>Conclusion.</bold>  This case is a complex chromosomal rearrangement in the early cleavage stage of ICSI blastocyst transfer. The high proportion of 20p13p11.23 mosaic duplication has potential serious pathogenicity, and the risk of poor prognosis in continued pregnancy is high. Termination of pregnancy is a reasonable decision. This study highlights the core value of multi-technology integration in the prenatal diagnosis of complex chromosomal abnormalities after ICSI. At the same time, it is suggested that couples with abnormal sperm parameters such as male UU infection, abnormal sperm morphology, or a history of repeated fertilization/implantation failure should be alert to the risk of mosaic chromosomal abnormalities. Strengthening preimplantation genetic testing (PGT) protocols before assisted reproduction is recommended, providing a reference for optimizing prenatal diagnosis strategies in ICSI-assisted pregnancies.  </p>",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "Research Square",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.21203/rs.3.rs-8634923/v1"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "versionList": {
+      "version": [
+        {
+          "id": "PPR1185306",
+          "source": "PPR",
+          "firstPublishDate": "2026-05-04",
+          "versionNumber": 1,
+          "pubTypeList": {
+            "pubType": [
+              "preprint"
+            ]
+          },
+          "hasEvaluations": "N"
+        }
+      ]
+    },
+    "versionNumber": 1,
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-06",
+    "firstIndexDate": "2026-05-06",
+    "firstPublicationDate": "2026-05-04",
+    "matched_keywords": [
+      "mosaic"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1185386",
+    "source": "PPR",
+    "doi": "10.21203/rs.3.rs-9130224/v1",
+    "title": "Cervical detection of STIC-associated TUBB6 methylation in high-grade serous ovarian carcinoma compared with benign ovarian tumors",
+    "authorString": "Su K, Wen K, Chen L, Wang H, Weng Y, Su P, Lai H.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Su K",
+          "firstName": "Kuo-Min",
+          "lastName": "Su",
+          "initials": "K"
+        },
+        {
+          "fullName": "Wen K",
+          "firstName": "Kuo-Chang",
+          "lastName": "Wen",
+          "initials": "K"
+        },
+        {
+          "fullName": "Chen L",
+          "firstName": "Lin-Yu",
+          "lastName": "Chen",
+          "initials": "L"
+        },
+        {
+          "fullName": "Wang H",
+          "firstName": "Hui-Chen",
+          "lastName": "Wang",
+          "initials": "H"
+        },
+        {
+          "fullName": "Weng Y",
+          "firstName": "Yu-Chun",
+          "lastName": "Weng",
+          "initials": "Y"
+        },
+        {
+          "fullName": "Su P",
+          "firstName": "Po-Hsuan",
+          "lastName": "Su",
+          "initials": "P"
+        },
+        {
+          "fullName": "Lai H",
+          "firstName": "Hung-Cheng",
+          "lastName": "Lai",
+          "initials": "H"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "<title>Abstract</title>  <p>  Background:  High-grade serous ovarian carcinoma (HGSOC) is the most lethal subtype of ovarian cancer and is increasingly recognized to originate from serous tubal intraepithelial carcinoma (STIC) in the fallopian tube epithelium. DNA methylation alterations occur early in serous tumorigenesis and may provide potential biomarkers for disease detection. However, whether STIC-associated methylation signals can be detected using minimally invasive cervical specimens remains unclear. This study investigated the detectability of STIC-related methylation markers in cervical scrapings from patients with HGSOC. <h4>Methods:</h4> In this retrospective case–control study, cervical swab samples from 185 women were analyzed, including 83 patients with HGSOC and 102 patients with benign ovarian tumors. Candidate loci previously identified from genome-wide methylation analyses of STIC lesions (  <italic>c17orf64</italic>  ,  <italic>IRX2</italic>  , and  <italic>TUBB6</italic>  ) were evaluated in the pilot study using quantitative methylation-specific polymerase chain reaction. Methylation levels were compared between malignant and benign groups, and diagnostic performance was assessed using receiver operating characteristic analysis. <h4>Results:</h4> Among the three candidate loci,  <italic>TUBB6</italic>  methylation was consistently detectable in cervical scrapings and was significantly elevated in patients with HGSOC compared with benign controls. TUBB6 methylation levels were independent of tumor stage, suggesting that the alteration occurs early during serous tumorigenesis. In benign samples, TUBB6 methylation increased with age, consistent with age-related epigenetic drift, whereas in malignant samples, methylation was elevated independent of age, indicating tumor-associated epigenetic remodeling. The  <italic>TUBB6</italic>  -only model yielded an area under the curve of 0.75. When combined with serum CA125, the discriminatory performance improved. <h4>Conclusions:</h4> <italic>TUBB6</italic>  methylation can be detected in cervical scrapings and reflects molecular alterations associated with STIC-related serous ovarian tumorigenesis. These findings demonstrate that STIC-associated methylation signals can be detected in cervical specimens and highlight the potential of cervical-based sampling for studying molecular alterations associated with HGSOC. Further validation studies are warranted to evaluate its potential role in ovarian cancer detection strategies.  </p>",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "Research Square",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.21203/rs.3.rs-9130224/v1"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "versionList": {
+      "version": [
+        {
+          "id": "PPR1185386",
+          "source": "PPR",
+          "firstPublishDate": "2026-05-04",
+          "versionNumber": 1,
+          "pubTypeList": {
+            "pubType": [
+              "preprint"
+            ]
+          },
+          "hasEvaluations": "N"
+        }
+      ]
+    },
+    "versionNumber": 1,
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-06",
+    "firstIndexDate": "2026-05-06",
+    "firstPublicationDate": "2026-05-04",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1184604",
+    "source": "PPR",
+    "doi": "10.21203/rs.3.rs-8865869/v1",
+    "title": "Conditioning chemotherapy exposure is associated with epigenetic modifications in Clostridioides difficile isolates from stem cell transplant recipients",
+    "authorString": "Ng J, Trannguyen J, Wilkinson R, Conard F, Fehrenback S, Ebersole B, Ghosh D, APEWOKIN S.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Ng J",
+          "firstName": "Jacob",
+          "lastName": "Ng",
+          "initials": "J"
+        },
+        {
+          "fullName": "Trannguyen J",
+          "firstName": "Jennifer",
+          "lastName": "Trannguyen",
+          "initials": "J"
+        },
+        {
+          "fullName": "Wilkinson R",
+          "firstName": "Racheal",
+          "lastName": "Wilkinson",
+          "initials": "R"
+        },
+        {
+          "fullName": "Conard F",
+          "firstName": "Fritz",
+          "lastName": "Conard",
+          "initials": "F"
+        },
+        {
+          "fullName": "Fehrenback S",
+          "firstName": "Sam",
+          "lastName": "Fehrenback",
+          "initials": "S"
+        },
+        {
+          "fullName": "Ebersole B",
+          "firstName": "Bailey",
+          "lastName": "Ebersole",
+          "initials": "B"
+        },
+        {
+          "fullName": "Ghosh D",
+          "firstName": "Debajyoti",
+          "lastName": "Ghosh",
+          "initials": "D"
+        },
+        {
+          "fullName": "APEWOKIN S",
+          "firstName": "SENU",
+          "lastName": "APEWOKIN",
+          "initials": "S"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "<title>Abstract</title>  <p>  <italic>Clostridioides difficile</italic>  is a highly methylated organism within the gut microbiome that is responsible for  <italic>Clostridioides difficile</italic>  infection (CDI), a common disease that is mediated by toxins production from the bacterium.  <italic>C. difficile</italic>  infection is ten times more common in chemotherapy patients than the average patient, but the reasons for this disparity are unclear. Conditioning chemotherapy (CC), an integral part of cancer treatments, has the ability to induce methylation changes in many cell types. We posit that CC induces methylation changes within  <italic>C. difficile</italic>  that may promote toxin production and consequently CDI. To test our hypothesis, we sought to identify the epigenetic changes, particularly methylation changes, within  <italic>C. difficile</italic>  isolates before and after chemotherapy and within isolates that express toxin and isolates that do not. After stool sampling, we isolated  <italic>C. difficile</italic>  by culture then sequenced and created a hybrid assembly of each isolate using nanopore long read sequencing and Illumina short read sequencing. Bioinformatics tools such as Dorado and Samtools were used to basecall and determine methylation states, while Unicycler was used for genome assembly. Methylartist was then used for data visualization. Genome-wide methylation profiling revealed distinct epigenetic signatures in  <italic>Clostridioides difficile</italic>  associated with toxin expression and chemotherapy exposure. Whole-genome 6mA analysis demonstrated significant differences between toxin-positive and toxin-negative isolates, with prominent methylation changes in  <italic>tcdA</italic>  and  <italic>tcdE</italic>  , while selected sporulation genes were unmethylated in toxin-negative strains. Chemotherapy was associated with a significant shift in global 6mA methylation patterns. Targeted 5mC analysis of the pathogenicity locus revealed reduced methylation around  <italic>tcdB</italic>  and across multiple toxin genes following chemotherapy, whereas sporulation genes remained unaffected. These findings suggest chemotherapy-associated epigenetic remodeling of toxin-associated loci in  <italic>C. difficile</italic>  .  </p>",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "Research Square",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.21203/rs.3.rs-8865869/v1"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "versionList": {
+      "version": [
+        {
+          "id": "PPR1184604",
+          "source": "PPR",
+          "firstPublishDate": "2026-05-05",
+          "versionNumber": 1,
+          "pubTypeList": {
+            "pubType": [
+              "preprint"
+            ]
+          },
+          "hasEvaluations": "N"
+        }
+      ]
+    },
+    "versionNumber": 1,
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-06",
+    "firstIndexDate": "2026-05-06",
+    "firstPublicationDate": "2026-05-05",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1185274",
+    "source": "PPR",
+    "doi": "10.21203/rs.3.rs-9400608/v1",
+    "title": "Premature Epigenetic Aging, Deviations from Normative Brain Development, and Cognitive Performance in Young Adulthood",
+    "authorString": "Mareckova K, Pelant L, Marecek R, Pacinkova A, Klánová J, Nikolova Y.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Mareckova K",
+          "firstName": "Klara",
+          "lastName": "Mareckova",
+          "initials": "K"
+        },
+        {
+          "fullName": "Pelant L",
+          "firstName": "Lukas",
+          "lastName": "Pelant",
+          "initials": "L"
+        },
+        {
+          "fullName": "Marecek R",
+          "firstName": "Radek",
+          "lastName": "Marecek",
+          "initials": "R"
+        },
+        {
+          "fullName": "Pacinkova A",
+          "firstName": "Anna",
+          "lastName": "Pacinkova",
+          "initials": "A"
+        },
+        {
+          "fullName": "Klánová J",
+          "firstName": "Jana",
+          "lastName": "Klánová",
+          "initials": "J"
+        },
+        {
+          "fullName": "Nikolova Y",
+          "firstName": "Yuliya",
+          "lastName": "Nikolova",
+          "initials": "Y"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "<title>Abstract</title>  <p>Premature epigenetic aging has been linked to poorer cognitive performance, but the neuroanatomical pathways underlying this association remain unclear. Therefore, we tested whether premature epigenetic aging predicts deviations from normative brain development and cognition in young adulthood. We followed 254 young adults from the ELSPAC prenatal birth cohort. Epigenetic aging was estimated using Horvath’s DNA methylation clock, CheekAge, and AltumAge. Structural MRI was processed with FreeSurfer to derive cortical thickness and surface area in 68 Desikan–Killiany regions and subcortical volumes in 14 Aseg regions. CentileBrain normative models trained on 37,407 MRI scans from individuals aged 3–90 years were used to quantify age- and sex-specific deviations from normative brain development. Cognitive performance was assessed using the WAIS-IV. Premature epigenetic aging estimated using Horvath’s clock was associated with more negative deviations from normative volume of the putamen and caudate, but not with other subcortical volumes, cortical thickness, or surface area. In women, this premature epigenetic aging was also associated with lower full-scale IQ and performance IQ, and moderated mediation analyses indicated that the deviations in putamen volume mediated the relationship between premature epigenetic aging and cognitive performance. In men, the relationship between premature epigenetic aging and cognitive performance was quadratic (U-shaped). No similar effects were observed when using CheekAge or AltumAge.Premature epigenetic aging estimated using Horvath’s clock and the associated deviations in development of the dorsal striatum in young adulthood may represent an early marker of poorer cognitive performance long before clinical symptoms might emerge.</p>",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "Research Square",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.21203/rs.3.rs-9400608/v1"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "versionList": {
+      "version": [
+        {
+          "id": "PPR1185274",
+          "source": "PPR",
+          "firstPublishDate": "2026-05-04",
+          "versionNumber": 1,
+          "pubTypeList": {
+            "pubType": [
+              "preprint"
+            ]
+          },
+          "hasEvaluations": "N"
+        }
+      ]
+    },
+    "versionNumber": 1,
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-06",
+    "firstIndexDate": "2026-05-06",
+    "firstPublicationDate": "2026-05-04",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1185341",
+    "source": "PPR",
+    "doi": "10.21203/rs.3.rs-9409121/v1",
+    "title": "Modified Azacitidine plus Cytarabine versus Traditional Cytarabine in Patients with Newly Diagnosed Acute Myeloid Leukemia: A Retrospective and Propensity Score Matched Analysis",
+    "authorString": "Li Z, Liu J, Hong J, Xie D, Jiang Y, Gao T, Jin R, Hong M, Wu Q.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Li Z",
+          "firstName": "Zixuan",
+          "lastName": "Li",
+          "initials": "Z"
+        },
+        {
+          "fullName": "Liu J",
+          "firstName": "Jingdi",
+          "lastName": "Liu",
+          "initials": "J"
+        },
+        {
+          "fullName": "Hong J",
+          "firstName": "Jiaxin",
+          "lastName": "Hong",
+          "initials": "J"
+        },
+        {
+          "fullName": "Xie D",
+          "firstName": "Dairong",
+          "lastName": "Xie",
+          "initials": "D"
+        },
+        {
+          "fullName": "Jiang Y",
+          "firstName": "Yuting",
+          "lastName": "Jiang",
+          "initials": "Y"
+        },
+        {
+          "fullName": "Gao T",
+          "firstName": "Tianran",
+          "lastName": "Gao",
+          "initials": "T"
+        },
+        {
+          "fullName": "Jin R",
+          "firstName": "Ruofeng",
+          "lastName": "Jin",
+          "initials": "R"
+        },
+        {
+          "fullName": "Hong M",
+          "firstName": "Mei",
+          "lastName": "Hong",
+          "initials": "M"
+        },
+        {
+          "fullName": "Wu Q",
+          "firstName": "Qiuling",
+          "lastName": "Wu",
+          "initials": "Q"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "<title>Abstract</title>  <p>  <bold>Background</bold>  Azacitidine (AZA) is a hypomethylating agent with well-known antileukemic activity. The addition of AZA to intermediate-dose Cytarabine (IDAra-c) plus idarubicin (Ida) or etoposide (Eto) in consolidation may improve outcomes in acute myeloid leukemia (AML) patients and reduce side effect.  <bold>Methods</bold>  We retrospectively evaluated whether adding AZA to IDAra-c plus Ida or Eto during consolidation could improve outcomes and reduce toxicity in newly diagnosed AML patients who achieved complete remission (CR) or partial remission (PR) after induction therapy. Propensity score matching was performed between patients in AZA+ IDAra-c + Ida/Eto and patients received IDAra-c as consolidation in the corresponding period at a 1:1 ratio according to age at diagnosis, sex, Eastern Cooperative Oncology Group performance status, European Leukemia Net 2022 risk stratification and induction therapy classification.  <bold>Results</bold>  Fifty patients treated with AZA+IDAra-c + Ida/Eto were matched with 50 patients receiving IDAra-c alone. AZA+ IDAra-c + Ida/Eto was associated with longer overall survival (OS, 90.0% vs. 53.4%,  <italic>p</italic>   = 0.0006) and event free survival (EFS, 81.7% vs. 45.9%,  <italic>p</italic>   = 0.0021) at 40 months. Subgroups analysis implied patients who ≦ 40 years, achieved MRD negative after induction therapy, diagnosed as adverse risk or patients carried methylation associated mutations may have potential beneficial survival choosing AZA+ IDAra-c + Ida/Eto as consolidation treatment. Myelosuppression was present in both groups, but the cells affected were different.  <bold>Conclusion</bold>  In conclusion, AZA+IDAra-c + Ida/Eto consolidation was associated with improved long-term survival and comparable toxicity versus IDAra-c alone in newly diagnosed AML.  </p>",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "Research Square",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.21203/rs.3.rs-9409121/v1"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "versionList": {
+      "version": [
+        {
+          "id": "PPR1185341",
+          "source": "PPR",
+          "firstPublishDate": "2026-05-04",
+          "versionNumber": 1,
+          "pubTypeList": {
+            "pubType": [
+              "preprint"
+            ]
+          },
+          "hasEvaluations": "N"
+        }
+      ]
+    },
+    "versionNumber": 1,
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-06",
+    "firstIndexDate": "2026-05-06",
+    "firstPublicationDate": "2026-05-04",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  }
+]

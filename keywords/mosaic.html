@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>mosaic — Research Digest</title>
+<style>:root {
+  color-scheme: light dark;
+  --bg: #fafaf7; --fg: #1c1c1a; --muted: #6b6b66; --soft: #4a4a45;
+  --accent: #b85c00; --accent-soft: #fef3e6;
+  --card: #ffffff; --border: #e5e3dc; --chip: #f0ede4;
+  --shadow: 0 1px 2px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.04);
+  --radius: 12px;
+}
+* { box-sizing: border-box; }
+html, body { margin:0; padding:0; background:var(--bg); color:var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+    "Apple SD Gothic Neo", "Malgun Gothic", "Pretendard", sans-serif;
+  font-size: 15px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+.wrap { max-width: 920px; margin: 0 auto; padding: 28px 20px 80px; }
+a { color: var(--accent); }
+header.hero { display:flex; align-items:flex-end; justify-content:space-between; gap:16px;
+  padding: 12px 0 8px; border-bottom: 1px solid var(--border); margin-bottom: 24px; }
+header.hero h1 { margin: 0 0 2px; font-size: 26px; letter-spacing: -0.02em; font-weight: 700; }
+header.hero .meta { color: var(--muted); font-size: 13px; }
+header.hero .home-link { font-size: 13px; color: var(--muted); text-decoration: none; }
+header.hero .home-link:hover { color: var(--accent); }
+
+/* Day tabs (daily detail pages) */
+.daynav { display:flex; align-items:center; flex-wrap: wrap; gap: 10px;
+  background: var(--card); border:1px solid var(--border); border-radius: var(--radius);
+  padding: 10px 14px; margin-bottom: 18px; font-size: 13px; box-shadow: var(--shadow); }
+.daynav .arrow, .daynav .home { color: var(--muted); text-decoration:none; padding: 4px 8px;
+  border-radius: 6px; }
+.daynav .arrow:hover, .daynav .home:hover { background: var(--chip); color: var(--accent); }
+.daynav .arrow.disabled { opacity: 0.35; cursor: default; }
+.daynav .center { display:flex; gap:4px; flex-wrap:wrap; }
+.daynav .center a, .daynav .center span { color: var(--fg); text-decoration:none;
+  padding: 4px 9px; border-radius: 6px; font-variant-numeric: tabular-nums; }
+.daynav .center a:hover { background: var(--chip); }
+.daynav .center .today { background: var(--accent); color:#fff; font-weight:600; }
+.daynav .center .empty { color: var(--muted); }
+
+/* Summary card */
+.summary { background:var(--card); border:1px solid var(--border); border-radius:var(--radius);
+  padding: 16px 20px; margin: 0 0 22px; box-shadow: var(--shadow); }
+.summary h2 { margin:0 0 10px; font-size:11px; text-transform:uppercase; letter-spacing:0.08em; color:var(--muted); font-weight:600; }
+.summary-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px 28px; }
+.summary-grid .col h3 { margin:0 0 6px; font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.06em; font-weight:600; }
+.summary-grid .col ul { margin:0; padding:0; list-style:none; font-size:13px; }
+.summary-grid .col li { display:flex; justify-content:space-between; gap:8px; padding:2px 0;
+  border-bottom: 1px dashed var(--border); }
+.summary-grid .col li:last-child { border-bottom: 0; }
+.summary-grid .col li b { font-weight:600; font-variant-numeric: tabular-nums; }
+
+/* Filter chips */
+.filter-row { display:flex; gap:14px; align-items:baseline; flex-wrap:wrap; margin-bottom: 8px; }
+.filter-row .lbl { font-size:10px; color:var(--muted); text-transform:uppercase; letter-spacing:0.08em;
+  font-weight:600; min-width:64px; padding-top: 4px; }
+.filters { display:flex; flex-wrap:wrap; gap:6px; }
+.chip { display:inline-flex; align-items:center; padding: 4px 11px; border-radius: 999px;
+  background: var(--chip); border:1px solid var(--border); font-size:12px;
+  cursor:pointer; user-select:none; transition: all 0.12s; text-decoration:none; color: inherit; }
+.chip:hover { border-color: var(--accent); }
+.chip.active { background: var(--accent); color:#fff; border-color: var(--accent); }
+.chip .count { opacity: 0.65; margin-left: 6px; font-variant-numeric: tabular-nums; font-size: 11px; }
+.chip.active .count { opacity: 0.95; }
+
+/* Per-keyword color chips (kw-* class injected per page) */
+.chip.kw-somatic-mosaicism, .tag.kw-somatic-mosaicism { background: #ede9fe; color: #5b21b6; border-color: #ede9fe; }
+.chip.kw-somatic-mosaicism:hover { filter: brightness(0.95); border-color: #5b21b6; }
+.chip.kw-somatic-mosaicism.active { background: #5b21b6; color: #fff; border-color: #5b21b6; }
+@media (prefers-color-scheme: dark) {
+  .chip.kw-somatic-mosaicism, .tag.kw-somatic-mosaicism { background: #3b1d6b; color: #c4b5fd; border-color: #3b1d6b; }
+  .chip.kw-somatic-mosaicism.active { background: #c4b5fd; color: #181815; border-color: #c4b5fd; }
+}
+.chip.kw-mosaic, .tag.kw-mosaic { background: #ffedd5; color: #9a3412; border-color: #ffedd5; }
+.chip.kw-mosaic:hover { filter: brightness(0.95); border-color: #9a3412; }
+.chip.kw-mosaic.active { background: #9a3412; color: #fff; border-color: #9a3412; }
+@media (prefers-color-scheme: dark) {
+  .chip.kw-mosaic, .tag.kw-mosaic { background: #3a2210; color: #fdba74; border-color: #3a2210; }
+  .chip.kw-mosaic.active { background: #fdba74; color: #181815; border-color: #fdba74; }
+}
+.chip.kw-mosaic-variant, .tag.kw-mosaic-variant { background: #fce7f3; color: #9d174d; border-color: #fce7f3; }
+.chip.kw-mosaic-variant:hover { filter: brightness(0.95); border-color: #9d174d; }
+.chip.kw-mosaic-variant.active { background: #9d174d; color: #fff; border-color: #9d174d; }
+@media (prefers-color-scheme: dark) {
+  .chip.kw-mosaic-variant, .tag.kw-mosaic-variant { background: #3a1626; color: #f9a8d4; border-color: #3a1626; }
+  .chip.kw-mosaic-variant.active { background: #f9a8d4; color: #181815; border-color: #f9a8d4; }
+}
+.chip.kw-methylation, .tag.kw-methylation { background: #dbeafe; color: #1e3a8a; border-color: #dbeafe; }
+.chip.kw-methylation:hover { filter: brightness(0.95); border-color: #1e3a8a; }
+.chip.kw-methylation.active { background: #1e3a8a; color: #fff; border-color: #1e3a8a; }
+@media (prefers-color-scheme: dark) {
+  .chip.kw-methylation, .tag.kw-methylation { background: #10204a; color: #93c5fd; border-color: #10204a; }
+  .chip.kw-methylation.active { background: #93c5fd; color: #181815; border-color: #93c5fd; }
+}
+.chip.kw-pacbio, .tag.kw-pacbio { background: #d1fae5; color: #065f46; border-color: #d1fae5; }
+.chip.kw-pacbio:hover { filter: brightness(0.95); border-color: #065f46; }
+.chip.kw-pacbio.active { background: #065f46; color: #fff; border-color: #065f46; }
+@media (prefers-color-scheme: dark) {
+  .chip.kw-pacbio, .tag.kw-pacbio { background: #0c2a23; color: #86efac; border-color: #0c2a23; }
+  .chip.kw-pacbio.active { background: #86efac; color: #181815; border-color: #86efac; }
+}
+.chip.pinned, .tag.pinned { background: #fef3c7; color: #854d0e; border-color: #fef3c7; font-weight: 600; }
+.chip.pinned:hover { filter: brightness(0.95); border-color: #854d0e; }
+.chip.pinned.active { background: #854d0e; color: #fff; border-color: #854d0e; }
+@media (prefers-color-scheme: dark) {
+  .chip.pinned, .tag.pinned { background: #3a2d0d; color: #fde68a; border-color: #3a2d0d; }
+  .chip.pinned.active { background: #fde68a; color: #181815; border-color: #fde68a; }
+}
+
+.search-box { width:100%; margin: 8px 0 18px; }
+.search-box input { width:100%; padding: 10px 14px; border:1px solid var(--border); border-radius: 8px;
+  font-size: 14px; background: var(--card); color: var(--fg); transition: border-color 0.12s; }
+.search-box input:focus { outline: none; border-color: var(--accent); }
+
+.papers { display:flex; flex-direction:column; gap: 12px; }
+.paper { background:var(--card); border:1px solid var(--border); border-radius: var(--radius);
+  padding: 16px 20px; transition: border-color 0.12s, box-shadow 0.12s; box-shadow: var(--shadow); }
+.paper:hover { border-color: var(--accent); box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 6px 18px rgba(184,92,0,0.10); }
+.paper.hidden { display:none; }
+.paper.hi { border-color: #f0c388; background: linear-gradient(0deg, var(--accent-soft), var(--card) 70%); }
+.paper h3 { margin: 0 0 6px; font-size: 16px; line-height: 1.4; font-weight: 600; }
+.paper h3 a { color: var(--fg); text-decoration: none; }
+.paper h3 a:hover { color: var(--accent); }
+.paper .if-tag { display:inline-block; margin-left: 6px; padding: 1px 7px; border-radius: 4px;
+  background: #fff3df; color: #8a4b00; font-size: 11px; font-weight: 700; vertical-align: 2px;
+  letter-spacing: 0.02em; }
+.paper.hi .if-tag { background: var(--accent); color: #fff; }
+.paper .by { font-size: 12px; color: var(--muted); margin: 0 0 6px; }
+.paper .meta { font-size: 11px; color: var(--muted); margin: 0 0 8px; display: flex;
+  flex-wrap: wrap; gap: 4px 10px; align-items: center; }
+.paper .meta .src { display:inline-block; padding: 1px 7px; border-radius: 4px; font-weight: 700;
+  letter-spacing: 0.02em; font-size: 10px; background: var(--chip); }
+.paper .meta .src.PPR { background:#fff3df; color:#8a4b00; }
+.paper .meta .src.MED { background:#e3eef6; color:#1f4e75; }
+.paper .meta .src.PMC { background:#e3f4e6; color:#2a6b35; }
+.paper .meta .date { font-variant-numeric: tabular-nums; }
+.tag { display:inline-block; padding: 1px 7px; border-radius: 999px; font-size: 11px;
+  background: var(--chip); border: 1px solid var(--border); text-decoration: none;
+  font-weight: 500; transition: all 0.12s; }
+.tag:hover { filter: brightness(0.95); }
+.paper .ksum { background: #fffefa; border:1px solid #efe9d8; border-radius: 8px; padding: 10px 14px;
+  margin: 8px 0 4px; font-size: 14px; line-height: 1.7; color: #2c2c28; }
+.paper.hi .ksum { background: #fffaf2; border-color: #efd9b8; }
+.paper .ksum .label { display:inline-block; font-size: 10px; font-weight: 700; color: var(--accent);
+  text-transform: uppercase; letter-spacing: 0.06em; margin-right: 6px; vertical-align: 2px; }
+.paper .ksum-struct { display: flex; flex-direction: column; gap: 8px; }
+.paper .ksum-struct .line { display: flex; gap: 10px; }
+.paper .ksum-struct .lbl { flex: 0 0 56px; font-size: 11px; font-weight: 700; color: var(--accent);
+  text-transform: uppercase; letter-spacing: 0.04em; padding-top: 3px; }
+.paper .ksum-struct .body { flex: 1 1 auto; }
+.paper .ksum-struct ul { margin: 2px 0 0; padding-left: 18px; }
+.paper .doi a { color: var(--muted); font-size: 11px; text-decoration: none; }
+.paper .doi a:hover { color: var(--accent); }
+.paper .ab { font-size: 13px; color: var(--soft); margin: 6px 0 0; }
+
+/* date headers used on per-keyword pages */
+.date-head { display:flex; align-items:baseline; gap: 12px; margin: 26px 0 8px;
+  padding-bottom: 6px; border-bottom: 1px dashed var(--border); }
+.date-head h2 { margin: 0; font-size: 14px; font-weight: 700; letter-spacing: -0.01em; }
+.date-head .day-meta { font-size: 12px; color: var(--muted); }
+
+/* index page */
+.kw-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 10px; margin: 14px 0 28px; }
+.kw-card { display:block; padding: 14px 16px; border-radius: var(--radius); background: var(--card);
+  border:1px solid var(--border); text-decoration: none; color: var(--fg); transition: all 0.12s;
+  box-shadow: var(--shadow); }
+.kw-card:hover { border-color: var(--accent); transform: translateY(-1px); box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 8px 22px rgba(184,92,0,0.10); }
+.kw-card .name { display:flex; align-items:center; gap: 8px; font-weight: 700; font-size: 15px;
+  margin-bottom: 4px; }
+.kw-card .swatch { width: 10px; height: 10px; border-radius: 999px; }
+.kw-card .stats { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.kw-card .recent { margin-top: 6px; font-size: 11px; color: var(--muted); }
+
+/* day list */
+.daylist { display: flex; flex-direction: column; gap: 8px; margin-top: 6px; }
+.daylist .row { display:grid; grid-template-columns: 110px 200px 1fr; gap: 14px;
+  align-items: baseline; padding: 12px 16px; border:1px solid var(--border); border-radius: var(--radius);
+  background: var(--card); text-decoration:none; color: var(--fg); transition: border-color 0.12s; }
+.daylist .row:hover { border-color: var(--accent); }
+.daylist .d { font-variant-numeric: tabular-nums; font-weight: 600; }
+.daylist .n { font-variant-numeric: tabular-nums; font-size: 14px; }
+.daylist .hi-pill { display:inline-block; margin-left: 6px; padding: 1px 7px; border-radius: 999px;
+  background:#fff0d6; color:#8a4b00; font-size: 11px; font-weight: 600; }
+.daylist .info { display:flex; flex-direction: column; gap: 2px; color: var(--muted); font-size: 12px; }
+
+.empty { background: var(--card); border:1px dashed var(--border); border-radius: var(--radius);
+  padding: 30px; text-align: center; color: var(--muted); }
+.section-h { margin: 30px 0 8px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em;
+  color: var(--muted); font-weight: 700; }
+footer { margin-top: 60px; padding-top: 16px; border-top: 1px solid var(--border);
+  font-size: 11px; color: var(--muted); }
+footer a { color: var(--muted); }
+
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#181815; --fg:#e8e6df; --muted:#8a8780; --soft:#bbbab2; --card:#232320;
+    --border:#353330; --chip:#2a2825; --accent:#f29349; --accent-soft:#2a2014;
+    --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 4px 12px rgba(0,0,0,0.3); }
+  .paper .meta .src.PPR { background:#3a2a13; color:#f0c388; }
+  .paper .meta .src.MED { background:#1a2a3a; color:#93c0e8; }
+  .paper .meta .src.PMC { background:#1d3322; color:#8fd29a; }
+  .paper .ksum { background:#1f1f1c; border-color:#3a3833; color: #e0ddd2; }
+  .paper.hi .ksum { background:#2a2419; border-color:#4a3e22; }
+  .paper.hi { background: linear-gradient(0deg, #2a2014, var(--card) 70%); }
+  .daylist .hi-pill { background:#3a2a13; color:#f0c388; }
+}</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="daynav">
+  <a class="home" href="../index.html">📚 인덱스</a>
+  <div class="center"><a class="chip kw-somatic-mosaicism" href="somatic-mosaicism.html">Somatic mosaicism</a><a class="chip kw-mosaic active" href="mosaic.html">mosaic</a><a class="chip kw-mosaic-variant" href="mosaic-variant.html">mosaic variant</a><a class="chip kw-methylation" href="methylation.html">methylation</a><a class="chip kw-pacbio" href="pacbio.html">PacBio</a></div>
+</nav>
+<header class="hero">
+  <div>
+    <h1><span class="tag kw-mosaic" style="font-size:18px;padding:4px 12px;border-radius:8px;font-weight:700">mosaic</span> 키워드</h1>
+    <div class="meta">총 <b>19</b>편 · IF≥10 <b>0</b>편 · 최신순</div>
+  </div>
+</header>
+<div class="search-box"><input id="search" type="search" placeholder="제목·저자·저널·초록·요약 검색…"></div>
+<div class="date-head"><h2>2026년 05월 06일 (Wed)</h2><span class="day-meta">2편 · <a href="../digests/2026-05-06.html">하루 전체 보기 →</a></span></div><div class="papers"><article class="paper" data-keywords="mosaic" data-source="PPR" data-search="Karyotype-Specific Cardiovascular Disease in Turner Syndrome: Insights from Transthoracic Echocardiography Abstract Background:​​ As the only survivable sex chromosome monosomy, Turner syndrome (TS) demonstrates a certain association with cardiovascular disease (CVD), which severely impacts patients&#x27; quality of life. While the CVD phenotype and prognosis differ among TS patients suffering from specific k Huang Y, Luo S, Qi Y, Qin S, Yue C, Lu Q, Lash GE, Li L.  mosaic ">
+  <h3><a href="https://europepmc.org/abstract/PPR/PPR1185205" target="_blank" rel="noopener">Karyotype-Specific Cardiovascular Disease in Turner Syndrome: Insights from Transthoracic Echocardiography</a></h3>
+  <div class="by">Huang Y, Luo S, Qi Y, et al.</div>
+  <div class="meta"><span class="src PPR">Preprint</span><span class="date">2026-05-04</span><a class="tag kw-mosaic" href="mosaic.html">mosaic</a></div>
+  <div class="ab">Abstract Background:​​ As the only survivable sex chromosome monosomy, Turner syndrome (TS) demonstrates a certain association with cardiovascular disease (CVD), which severely impacts patients&#x27; quality of life. While the CVD phenotype and prognosis differ among TS patients suffe…</div>
+  <div class="doi"><a href="https://doi.org/10.21203/rs.3.rs-9246643/v1" target="_blank" rel="noopener">10.21203/rs.3.rs-9246643/v1</a></div>
+</article><article class="paper" data-keywords="mosaic" data-source="PPR" data-search="Application and value of multi-technique integration in the prenatal diagnosis of mosaicism derived of ICSI blastocyst Abstract Background. To investigate the antenatal diagnosis of a pregnant fetus after intracytoplasmic sperm injection (ICSI) and blastocyst transplantation. By integrating multiple technologies, we clarified the specific characteristics of the 20p mosaic duplication, evaluated its pathogenicity and Huang Y, Zhang S, Zou P, Huang L, Li X, Wang H.  mosaic ">
+  <h3><a href="https://europepmc.org/abstract/PPR/PPR1185306" target="_blank" rel="noopener">Application and value of multi-technique integration in the prenatal diagnosis of mosaicism derived of ICSI blastocyst</a></h3>
+  <div class="by">Huang Y, Zhang S, Zou P, et al.</div>
+  <div class="meta"><span class="src PPR">Preprint</span><span class="date">2026-05-04</span><a class="tag kw-mosaic" href="mosaic.html">mosaic</a></div>
+  <div class="ab">Abstract Background. To investigate the antenatal diagnosis of a pregnant fetus after intracytoplasmic sperm injection (ICSI) and blastocyst transplantation. By integrating multiple technologies, we clarified the specific characteristics of the 20p mosaic duplication, evaluated i…</div>
+  <div class="doi"><a href="https://doi.org/10.21203/rs.3.rs-8634923/v1" target="_blank" rel="noopener">10.21203/rs.3.rs-8634923/v1</a></div>
+</article></div><div class="date-head"><h2>2026년 05월 04일 (Mon)</h2><span class="day-meta">1편 · <a href="../digests/2026-05-04.html">하루 전체 보기 →</a></span></div><div class="papers"><article class="paper" data-keywords="mosaic" data-source="PPR" data-search="Genomic and Functional Characterization of a Cross-Genus Temperate Bacteriophage vB_SU_S_SVV09 Infecting Staphylococcus and Proteus Species Abstract Bacteriophages are typically characterized by narrow host specificity; however, increasing evidence indicates the existence of phages with broader host ranges. In the present study, bacteriophage vB_SU_S_SVV09 was evaluated for its bacteriolytic activity, growth kinetics, and genomic charac K.S LS, Guha PK, Vallabhaneni S, C GP, Vaishnavi R, Pallem R, M KV, D VL, D VRP.  mosaic ">
+  <h3><a href="https://europepmc.org/abstract/PPR/PPR1183750" target="_blank" rel="noopener">Genomic and Functional Characterization of a Cross-Genus Temperate Bacteriophage vB_SU_S_SVV09 Infecting Staphylococcus and Proteus Species</a></h3>
+  <div class="by">K.S LS, Guha PK, Vallabhaneni S, et al.</div>
+  <div class="meta"><span class="src PPR">Preprint</span><span class="date">2026-04-29</span><a class="tag kw-mosaic" href="mosaic.html">mosaic</a></div>
+  <div class="ksum"><span class="label">한글 요약</span>Staphylococcus와 Proteus를 모두 감염시키는 광범위 기주 박테리오파지 vB_SU_S_SVV09를 게놈·기능적으로 특성화했다. 기존 대비 넓은 host range가 임상 다균주 감염에 대한 파지치료의 후보가 될 수 있음을 시사한다.</div>
+  <div class="doi"><a href="https://doi.org/10.21203/rs.3.rs-9460104/v1" target="_blank" rel="noopener">10.21203/rs.3.rs-9460104/v1</a></div>
+</article></div><div class="date-head"><h2>2026년 05월 02일 (Sat)</h2><span class="day-meta">8편 · <a href="../digests/2026-05-02.html">하루 전체 보기 →</a></span></div><div class="papers"><article class="paper" data-keywords="mosaic" data-source="MED" data-search="Experimental host range and pathogenicity on maize of maize striate mosaic virus transmitted by the corn leafhopper.  Maize striate mosaic virus (MSMV, species Mastrevirus striatis) is an emergent mastrevirus (Geminiviridae) in South America, transmitted by the corn leafhopper Dalbulus maidis. MSMV symptoms in maize (Zea mays) include mottling with mild chlorotic streaks, but the extent of its damage and host range Vilanova ES, Lopes JRS. Plant disease mosaic ">
+  <h3><a href="https://europepmc.org/abstract/MED/42067981" target="_blank" rel="noopener">Experimental host range and pathogenicity on maize of maize striate mosaic virus transmitted by the corn leafhopper. </a><span class="if-tag">IF=4.4</span></h3>
+  <div class="by">Vilanova ES, Lopes JRS.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Plant disease</span><span class="date">2026-05-01</span><a class="tag kw-mosaic" href="mosaic.html">mosaic</a></div>
+  <div class="ksum"><span class="label">한글 요약</span>남미 신흥 mastrevirus인 maize striate mosaic virus(MSMV)의 leafhopper 매개 옥수수 병원성과 17종 작물 기주 범위를 온실 실험으로 평가했다. MSMV의 옥수수 외 기주 가능성과 잠재 피해 규모가 확인되어 작물 검역·방제 전략 수립의 근거를 제공한다.</div>
+  <div class="doi"><a href="https://doi.org/10.1094/pdis-11-25-2340-re" target="_blank" rel="noopener">10.1094/pdis-11-25-2340-re</a></div>
+</article><article class="paper" data-keywords="mosaic" data-source="MED" data-search="Engineering the 3&#x27;-UTR of Tobacco Vein Mottling Virus to Confer Cross-Protection Against Potyviruses.  Tobacco vein mosaic virus (TVMV) is a member of the family Potyviridae. We explored if engineering the 3&#x27; noncoding RNA would alter viral infection symptoms and viral infectivity of TVMVwt, which could be used for cross-protection. We engineered an infectious clone of TVMV mutant virus pLX-TVMV58 (T Wang H, Sun Z, Zhang B, Wu Z, Xu J, Zhao M. Molecular plant pathology mosaic ">
+  <h3><a href="https://europepmc.org/abstract/MED/42068042" target="_blank" rel="noopener">Engineering the 3&#x27;-UTR of Tobacco Vein Mottling Virus to Confer Cross-Protection Against Potyviruses. </a><span class="if-tag">IF=4.8</span></h3>
+  <div class="by">Wang H, Sun Z, Zhang B, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Molecular plant pathology</span><span class="date">2026-05-01</span><a class="tag kw-mosaic" href="mosaic.html">mosaic</a></div>
+  <div class="ksum"><span class="label">한글 요약</span>Tobacco vein mottling virus(TVMV)의 3&#x27; 비번역영역(UTR)에 58 nt의 &#x27;AT&#x27; 단편을 삽입한 변이주 TVMV58을 제작해 잠두 등에서 cross-protection 효과를 평가했다. 약독화된 변이주가 야생주 감염을 차단해 potyviruses에 대한 교차 방어용 백신 후보로 활용 가능성을 보였다.</div>
+  <div class="doi"><a href="https://doi.org/10.1111/mpp.70268" target="_blank" rel="noopener">10.1111/mpp.70268</a></div>
+</article><article class="paper" data-keywords="mosaic" data-source="PPR" data-search="System understanding shapes insights for eco-design: a comparison of four temporal perspectives Abstract Purpose: LCA that supports eco-design is inherently future-oriented. Various recommendations have been made to systematically address future change with prospective LCA. However, in a changing world, a steady-state approach to LCA can fall short. Time-explicit LCA enables certain departures Arblaster T, Guinée J, Rocha CFB, Burzic I, Pretschuh C, Sánchez FP, Thonemann N.  mosaic ">
+  <h3><a href="https://europepmc.org/abstract/PPR/PPR1183496" target="_blank" rel="noopener">System understanding shapes insights for eco-design: a comparison of four temporal perspectives</a></h3>
+  <div class="by">Arblaster T, Guinée J, Rocha CFB, et al.</div>
+  <div class="meta"><span class="src PPR">Preprint</span><span class="date">2026-04-29</span><a class="tag kw-mosaic" href="mosaic.html">mosaic</a></div>
+  <div class="ksum"><span class="label">한글 요약</span>에코디자인 지원을 위한 LCA가 미래 변화를 어떻게 다뤄야 할지를 4가지 시간 관점(steady-state, prospective, time-explicit, integrated)에서 비교한 방법론 연구다. 각 관점이 시스템 이해와 데이터 수요·통찰력 측면에서 상호 보완적임을 보여 LCA 시간 모델 선택의 가이드라인을 제시한다.</div>
+  <div class="doi"><a href="https://doi.org/10.21203/rs.3.rs-9554797/v1" target="_blank" rel="noopener">10.21203/rs.3.rs-9554797/v1</a></div>
+</article><article class="paper" data-keywords="mosaic" data-source="MED" data-search="Spatiotemporal DUX4 toxicity in FSHD: from epigenetic derepression to biomarker-driven targeted therapies.  Facioscapulohumeral muscular dystrophy (FSHD) is a gain-of-function genetic disorder caused by the loss of repressive epigenetic marks at the D4Z4 macrosatellite repeat array on chromosome 4q35. This epigenetic relaxation, when combined with a permissive 4q distal haplotype, defines the FSHD-permiss Mariot V, Bloch RJ, Badiani R, Bugiardini E, Dumonceaux J. Neuromuscular disorders : NMD mosaic ">
+  <h3><a href="https://europepmc.org/abstract/MED/42066431" target="_blank" rel="noopener">Spatiotemporal DUX4 toxicity in FSHD: from epigenetic derepression to biomarker-driven targeted therapies. </a><span class="if-tag">IF=2.5</span></h3>
+  <div class="by">Mariot V, Bloch RJ, Badiani R, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Neuromuscular disorders : NMD</span><span class="date">2026-03-31</span><a class="tag kw-mosaic" href="mosaic.html">mosaic</a></div>
+  <div class="ksum"><span class="label">한글 요약</span>FSHD는 4q35 D4Z4 반복서열의 후성유전 억제 해제와 4q distal permissive haplotype의 결합으로 발생해 골격근에 DUX4가 비정상 발현되는 gain-of-function 질환이다. DUX4 독성 시공간 패턴, 후성유전 derepression 기전, 바이오마커 기반 표적 치료 전략(ASOs, p38 inhibitors 등)을 정리한 리뷰다.</div>
+  <div class="doi"><a href="https://doi.org/10.1016/j.nmd.2026.106420" target="_blank" rel="noopener">10.1016/j.nmd.2026.106420</a></div>
+</article><article class="paper" data-keywords="mosaic" data-source="MED" data-search="Understanding mosaicism: A primer for clinicians.  Genetic mosaicism refers to the presence of two or more genetically distinct cell populations derived from a single zygote, resulting from post-zygotic genetic or epigenetic variation. This phenomenon contributes to diverse clinical presentations across a broad range of disorders and holds significa Tinkle MB, Daack-Hirsch S. Journal of the American Association of Nurse Practitioners mosaic ">
+  <h3><a href="https://europepmc.org/abstract/MED/42066039" target="_blank" rel="noopener">Understanding mosaicism: A primer for clinicians. </a><span class="if-tag">IF=1.4</span></h3>
+  <div class="by">Tinkle MB, Daack-Hirsch S.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Journal of the American Association of Nurse Practitioners</span><span class="date">2026-05-01</span><a class="tag kw-mosaic" href="mosaic.html">mosaic</a></div>
+  <div class="ksum"><span class="label">한글 요약</span>발생 후 모자이시즘이 임상 진단·유전 상담·치료에 미치는 영향을 임상의를 위해 정리한 입문용 리뷰다. 검출 기술(딥 시퀀싱·장읽기), 검출 한계, 친자/생식세포 모자이시즘의 위험 평가 원칙을 종합한다.</div>
+  <div class="doi"><a href="https://doi.org/10.1097/jxx.0000000000001286" target="_blank" rel="noopener">10.1097/jxx.0000000000001286</a></div>
+</article><article class="paper" data-keywords="mosaic" data-source="MED" data-search="Mitochondrial Activity Localization in the Skeletal Muscle and Its Individual Fibers Across Tetrapods.  Mitochondria exhibit a complex spatially organized distribution within muscle, tailored to the energy requirements of ATPases and contractile filaments, which exhibit precise intracellular positioning. Mitochondrial distribution varies across longitudinal and transverse axes as well as based on fibe Senapati U, Rout S, Pani S, Sahu B, Swalsingh G, Pani P, Pati B, Rout PK, Mohapatra RK, Mishra S, Bal NC. Biology of the cell mosaic ">
+  <h3><a href="https://europepmc.org/abstract/MED/42068032" target="_blank" rel="noopener">Mitochondrial Activity Localization in the Skeletal Muscle and Its Individual Fibers Across Tetrapods. </a><span class="if-tag">IF=2.4</span></h3>
+  <div class="by">Senapati U, Rout S, Pani S, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Biology of the cell</span><span class="date">2026-05-01</span><a class="tag kw-mosaic" href="mosaic.html">mosaic</a></div>
+  <div class="ksum"><span class="label">한글 요약</span>사지동물 골격근의 미토콘드리아 활성 분포가 종·근섬유·축에 따라 어떻게 다른지 비교 분석했다. 미토콘드리아 분포가 ATPase·수축필라멘트의 위치와 정밀하게 연동되어 근섬유의 에너지 수요를 충족하는 진화적 적응을 보여준다.</div>
+  <div class="doi"><a href="https://doi.org/10.1111/boc.70066" target="_blank" rel="noopener">10.1111/boc.70066</a></div>
+</article><article class="paper" data-keywords="mosaic" data-source="MED" data-search="Differentiation of Fat-Poor Renal Angiomyolipoma From Clear Cell Renal Cell Carcinoma: Diagnostic Performance of a Novel Type of Color Contrast Enhanced Ultrasound.  The similar imaging characteristics of renal angiomyolipoma without visible fat (RAML.wvf) and clear cell renal cell carcinoma (ccRCC) are notable. Color Parameter Imaging (CPI) has emerged as an advanced contrast-enhanced ultrasound (CEUS) analysis tool that quantifies temporal perfusion dynamics.  Du Y, Wang X, Jiang B, Song L, Luo Y, Li Q. Cancer medicine mosaic ">
+  <h3><a href="https://europepmc.org/abstract/MED/42068102" target="_blank" rel="noopener">Differentiation of Fat-Poor Renal Angiomyolipoma From Clear Cell Renal Cell Carcinoma: Diagnostic Performance of a Novel Type of Color Contrast Enhanced Ultrasound. </a><span class="if-tag">IF=2.9</span></h3>
+  <div class="by">Du Y, Wang X, Jiang B, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Cancer medicine</span><span class="date">2026-05-01</span><a class="tag kw-mosaic" href="mosaic.html">mosaic</a></div>
+  <div class="ksum"><span class="label">한글 요약</span>지방이 적은 신장 angiomyolipoma(RAML.wvf)와 clear cell RCC를 감별하기 위해 새로운 Color Parameter Imaging(CPI) CEUS 기법의 진단 능력을 평가했다. CPI의 시간적 관류 패턴 정량 분석이 두 질환 감별에 유의한 진단 성능을 보였다.</div>
+  <div class="doi"><a href="https://doi.org/10.1002/cam4.71878" target="_blank" rel="noopener">10.1002/cam4.71878</a></div>
+</article><article class="paper" data-keywords="mosaic" data-source="PPR" data-search="Sexually dimorphic organization of extracellular matrix and perineuronal nets in the prairie vole (Microtus ochrogaster) social brain Abstract The extracellular matrix (ECM) is a fundamental component of the central nervous system that shapes neuronal communication, synaptic stability, and plasticity. Among its specialized forms, perineuronal nets (PNN) provide structural support and contribute to the regulation of circuit dynamic Castro AE, Uriarte N, Camacho FJ, Paredes RG, Portillo W, Nogueira J.  mosaic ">
+  <h3><a href="https://europepmc.org/abstract/PPR/PPR1183438" target="_blank" rel="noopener">Sexually dimorphic organization of extracellular matrix and perineuronal nets in the prairie vole (Microtus ochrogaster) social brain</a></h3>
+  <div class="by">Castro AE, Uriarte N, Camacho FJ, et al.</div>
+  <div class="meta"><span class="src PPR">Preprint</span><span class="date">2026-04-29</span><a class="tag kw-mosaic" href="mosaic.html">mosaic</a></div>
+  <div class="ksum"><span class="label">한글 요약</span>초원밭쥐(prairie vole) 사회 뇌의 ECM과 perineuronal nets(PNN) 분포가 성에 따라 다른지 매핑한 첫 비교 연구다. 사회행동 관련 뇌영역에서 PNN 밀도와 분포의 성적 이형이 확인되어, ECM이 사회행동 신경회로의 성차에 기여할 수 있음을 시사한다.</div>
+  <div class="doi"><a href="https://doi.org/10.21203/rs.3.rs-9476005/v1" target="_blank" rel="noopener">10.21203/rs.3.rs-9476005/v1</a></div>
+</article></div><div class="date-head"><h2>2026년 05월 01일 (Fri)</h2><span class="day-meta">3편 · <a href="../digests/2026-05-01.html">하루 전체 보기 →</a></span></div><div class="papers"><article class="paper" data-keywords="mosaic" data-source="MED" data-search="Beyond tumors: uninvolved breast tissue of breast cancer patients with adverse prognoses is enriched for pathogenic PIK3CA and TP53 post-zygotic variants. Background Histologically normal mammary tissue from breast cancer patients can harbor significant genetic alterations that could precede visible tumor development and influence disease progression. Methods Whole-exome sequencing was performed on 408 samples from 77 breast cancer patients with poor  Andreou M, Chojnowska K, Filipowicz N, Horbacz M, Madanecki P, Duzowska K, Ławrynowicz U, Davies H, Bruhn-Olszewska B, Koszyński M, Drężek-Chyła K, Jaśkiewicz M, Jąkalski M, Kostecka A, Drzewiecka-Kłysz M, Nowikiewicz M, Las-Jankowska M, Bała D, Hoffman J, Śrutek E, Jankowski M, Jankau J, Hodorowicz-Zaniewska D, Szpor J, Szylberg Ł, Zegarski W, Nowikiewicz T, Buckley PG, Tiemann-Boege I, Mieczkowski J, Koczkowska M, Dumanski JP, Piotrowski A. BMC cancer mosaic ">
+  <h3><a href="https://europepmc.org/abstract/MED/42063004" target="_blank" rel="noopener">Beyond tumors: uninvolved breast tissue of breast cancer patients with adverse prognoses is enriched for pathogenic PIK3CA and TP53 post-zygotic variants.</a><span class="if-tag">IF=3.4</span></h3>
+  <div class="by">Andreou M, Chojnowska K, Filipowicz N, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>BMC cancer</span><span class="date">2026-04-30</span><a class="tag kw-mosaic" href="mosaic.html">mosaic</a></div>
+  <div class="ksum"><span class="label">한글 요약</span>유방암 환자 77명의 종양 비포함 정상조직에서 PIK3CA·TP53 등 후수정 모자이시즘 변이가 풍부함을 전엑솜 시퀀싱으로 확인했다. 정상 조직의 발암 변이 풍부도가 예후 불량과 연관되어 유방암 발달 이전 단계의 분자적 기반을 제시한다.</div>
+  <div class="doi"><a href="https://doi.org/10.1186/s12885-026-16086-z" target="_blank" rel="noopener">10.1186/s12885-026-16086-z</a></div>
+</article><article class="paper" data-keywords="mosaic" data-source="MED" data-search="Patterns of bronchoalveolar lavage in fibrotic and non-fibrotic interstitial lung diseases - a multicenter analysis. Background Bronchoalveolar lavage (BAL) cellular analysis is recommended as part of the diagnostic workup of interstitial lung diseases (ILD) when diagnosis is unclear. In recent years, ILD have been classified based on the presence or absence of fibrosis. The objective of this study was to compare  Gershman E, Freund O, Wand O, Schneer S, Bloch J, Hershko T, Kleinhendler E, Cohn-Schwartz D, Hadad Y, Aviram G, Adir Y, Shitrit D, Bar-Shai A, Unterman A. BMC pulmonary medicine mosaic ">
+  <h3><a href="https://europepmc.org/abstract/MED/42063008" target="_blank" rel="noopener">Patterns of bronchoalveolar lavage in fibrotic and non-fibrotic interstitial lung diseases - a multicenter analysis.</a><span class="if-tag">IF=2.5</span></h3>
+  <div class="by">Gershman E, Freund O, Wand O, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>BMC pulmonary medicine</span><span class="date">2026-04-30</span><a class="tag kw-mosaic" href="mosaic.html">mosaic</a></div>
+  <div class="ksum"><span class="label">한글 요약</span>다기관 자료를 사용해 섬유화·비섬유화 간질성 폐질환(ILD)의 BAL 세포 프로파일을 비교했다. 섬유화 ILD에서는 호중구 우세, 비섬유화에서는 림프구 우세 패턴이 두드러져 BAL이 ILD 분류 보조 지표로 활용될 수 있음을 시사한다.</div>
+  <div class="doi"><a href="https://doi.org/10.1186/s12890-026-04321-z" target="_blank" rel="noopener">10.1186/s12890-026-04321-z</a></div>
+</article><article class="paper" data-keywords="mosaic" data-source="MED" data-search="Haplotype Threading Using the Positional Burrows-Wheeler Transform. In the classic model of population genetics, one haplotype (query) is considered as a mosaic copy of segments from a number of haplotypes in a panel, or threading the haplotype through the panel. The Li and Stephens model parameterized this problem using a hidden Markov model (HMM). However, HMM alg Sanaullah A, Zhi D, Zhang S. Algorithms in bioinformatics : ... International Workshop, WABI ..., proceedings. WABI (Workshop) mosaic ">
+  <h3><a href="https://europepmc.org/abstract/MED/42063413" target="_blank" rel="noopener">Haplotype Threading Using the Positional Burrows-Wheeler Transform.</a></h3>
+  <div class="by">Sanaullah A, Zhi D, Zhang S.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Algorithms in bioinformatics : ... International Workshop, WABI ..., proceedings. WABI (Workshop)</span><span class="date">2022-08-01</span><a class="tag kw-mosaic" href="mosaic.html">mosaic</a></div>
+  <div class="ksum"><span class="label">한글 요약</span>PBWT(positional Burrows-Wheeler transform)를 활용해 Li-Stephens HMM 기반 haplotype threading의 시간 복잡도를 바이오뱅크 규모에서 효율화하는 알고리즘을 제시했다. 본 방법은 대규모 패널 매핑·imputation·계통 분석을 가속하는 토대를 제공한다.</div>
+  <div class="doi"><a href="https://doi.org/10.4230/lipics.wabi.2022.4" target="_blank" rel="noopener">10.4230/lipics.wabi.2022.4</a></div>
+</article></div><div class="date-head"><h2>2026년 04월 30일 (Thu)</h2><span class="day-meta">4편 · <a href="../digests/2026-04-30.html">하루 전체 보기 →</a></span></div><div class="papers"><article class="paper" data-keywords="mosaic" data-source="MED" data-search="Constitutive, Mosaic Expression of TIE2 p.L914F During Mouse Development Causes Venous Malformation. The hyperactivating p.L914F mutation in TIE2, a receptor tyrosine kinase essential for vascular development and function, drives sporadic venous malformation (VM). While germline or early developmental expression of this mutation is thought to be lethal, mosaic or somatic expression is expected to r Bischoff LJ, Sherpa C, Schrenk S, Boscolo E. FASEB journal : official publication of the Federation of American Societies for Experimental Biology mosaic ">
+  <h3><a href="https://europepmc.org/abstract/MED/42059767" target="_blank" rel="noopener">Constitutive, Mosaic Expression of TIE2 p.L914F During Mouse Development Causes Venous Malformation.</a><span class="if-tag">IF=4.4</span></h3>
+  <div class="by">Bischoff LJ, Sherpa C, Schrenk S, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>FASEB journal : official publication of the Federation of American Societies for Experimental Biology</span><span class="date">2026-05-01</span><a class="tag kw-mosaic" href="mosaic.html">mosaic</a></div>
+  <div class="ksum"><span class="label">한글 요약</span>TIE2 p.L914F 활성 돌연변이는 정맥기형(VM)을 유발하지만 발달기 모자이시즘 표현형의 직접 입증은 없었다. 본 연구는 마우스 발달기에 본 돌연변이를 모자이시즘 형태로 발현시켜 정맥기형 표현형을 실험적으로 재현해, VM의 체세포 모자이시즘 병인을 인 vivo로 확인했다.</div>
+  <div class="doi"><a href="https://doi.org/10.1096/fj.202600444r" target="_blank" rel="noopener">10.1096/fj.202600444r</a></div>
+</article><article class="paper" data-keywords="mosaic" data-source="MED" data-search="Targeted knockout of a host peroxisomal peptidase confers field resistance to maize lethal necrosis. Maize lethal necrosis (MLN) is a severe disease caused by the combined infection of maize chlorotic mottle virus (MCMV) and a potyvirus, most often sugarcane mosaic virus (SCMV). This disease seriously threatens food security across sub-Saharan Africa (SSA). We investigated a major-effect quantitati Jung M, Wen Z, Humbert S, Lu F, DeLeon A, Marshall L, Hastings C, Cartwright H, Thilges K, Wang N, Breckenridge K, Wu E, Ryan L, Fengler K, Simcox K, Thatcher S, Llaca V, Woollums G, Sander J, Xu D, Beatty M, Brink K, Fedorova M, Jones M, Ohlson E, Suresh LM, Beyene Y, Olsen M, Ogugo V, Alakonya A, Murithi A, Mugo S, Karanja J, Boddupalli P, Pixley K, Albertsen M, Jones T, Meeley R, Gutterson N, Mazur B, Dhugga KS. Proceedings of the National Academy of Sciences of the United States of America mosaic ">
+  <h3><a href="https://europepmc.org/abstract/MED/42060714" target="_blank" rel="noopener">Targeted knockout of a host peroxisomal peptidase confers field resistance to maize lethal necrosis.</a><span class="if-tag">IF=9.4</span></h3>
+  <div class="by">Jung M, Wen Z, Humbert S, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Proceedings of the National Academy of Sciences of the United States of America</span><span class="date">2026-04-30</span><a class="tag kw-mosaic" href="mosaic.html">mosaic</a></div>
+  <div class="ksum"><span class="label">한글 요약</span>MCMV와 SCMV 공동 감염으로 발생하는 maize lethal necrosis(MLN)에 대한 6번 염색체 주효 QTL을 분석해 host peroxisomal peptidase가 관여함을 동정했다. 이 펩티다제를 표적 녹아웃하면 사하라 이남 아프리카 옥수수 품종에 야외 저항성을 부여할 수 있어, 식량 안보를 위협하는 MLN에 대한 새 분자육종 표적을 제시한다.</div>
+  <div class="doi"><a href="https://doi.org/10.1073/pnas.2535202123" target="_blank" rel="noopener">10.1073/pnas.2535202123</a></div>
+</article><article class="paper" data-keywords="mosaic" data-source="MED" data-search="Drug-Induced Blaschkitis Associated With Dipeptidyl Peptidase-4 Inhibitor: A Case Report and Review of the Literature. Blaschkitis is an acquired Blaschko-linear inflammatory dermatosis similar to classic lichen striatus. Although the pathomechanisms have not yet been fully elucidated, it has been reported that some cases were triggered by viral infections, vaccines, or drugs. We recently encountered a patient who d Suzaki Y, Aoyama Y. The Journal of dermatology mosaic ">
+  <h3><a href="https://europepmc.org/abstract/MED/42050881" target="_blank" rel="noopener">Drug-Induced Blaschkitis Associated With Dipeptidyl Peptidase-4 Inhibitor: A Case Report and Review of the Literature.</a></h3>
+  <div class="by">Suzaki Y, Aoyama Y.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>The Journal of dermatology</span><span class="date">2026-04-28</span><a class="tag kw-mosaic" href="mosaic.html">mosaic</a></div>
+  <div class="ksum"><span class="label">한글 요약</span>DPP-4 저해제 복용 후 다발성 홍반성 구진성 플라크가 Blaschko 라인을 따라 발생한 약물유발 Blaschkitis 1례를 보고했다. 이전 문헌과 비교해 약물 유발 Blaschkitis는 체세포 모자이시즘 영역의 후성유전 변화 또는 면역 반응이 임상적으로 노출되는 기전을 시사하며 임상의의 인지 제고를 강조한다.</div>
+  <div class="doi"><a href="https://doi.org/10.1111/1346-8138.70296" target="_blank" rel="noopener">10.1111/1346-8138.70296</a></div>
+</article><article class="paper" data-keywords="mosaic" data-source="MED" data-search="Decentralized nanopore genomics reveals diverse &amp;lt;i&amp;gt;Klebsiella pneumoniae&amp;lt;/i&amp;gt; and no evidence of patient-patient transmission in a New Zealand hospital. Klebsiella pneumoniae is a leading cause of healthcare-associated infections worldwide, yet its population structure and transmission dynamics remain largely uncharacterized in New Zealand hospitals. We conducted a 15-month prospective genomic surveillance pilot at Wellington Regional Hospital, embe White RT, Bakker S, Burton M, Dyet K, Elvy J, Eustace A, Griffith MP, Hutton S, Lees J, Raabe NJ, Su B, Tiong A, Winter DJ, Wyres KL, Bloomfield M. Microbial genomics mosaic ">
+  <h3><a href="https://europepmc.org/abstract/MED/42059884" target="_blank" rel="noopener">Decentralized nanopore genomics reveals diverse &amp;lt;i&amp;gt;Klebsiella pneumoniae&amp;lt;/i&amp;gt; and no evidence of patient-patient transmission in a New Zealand hospital.</a><span class="if-tag">IF=3.5</span></h3>
+  <div class="by">White RT, Bakker S, Burton M, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Microbial genomics</span><span class="date">2026-04-01</span><a class="tag kw-mosaic" href="mosaic.html">mosaic</a></div>
+  <div class="ksum"><span class="label">한글 요약</span>뉴질랜드 Wellington Regional Hospital에서 15개월 동안 진단검사실에 ONT MinION을 통합한 K. pneumoniae 분산형 게놈 감시 파일럿을 수행했다. 다양한 균주가 분리되었으나 환자 간 전파 증거는 발견되지 않아, 분산형 나노포어 감시가 지역 병원 단위에서 실시간 역학 정보를 제공할 수 있음을 보였다.</div>
+  <div class="doi"><a href="https://doi.org/10.1099/mgen.0.001700" target="_blank" rel="noopener">10.1099/mgen.0.001700</a></div>
+</article></div><div class="date-head"><h2>2026년 04월 29일 (Wed)</h2><span class="day-meta">1편 · <a href="../digests/2026-04-29.html">하루 전체 보기 →</a></span></div><div class="papers"><article class="paper" data-keywords="mosaic|pacbio" data-source="MED" data-search="Sensitivity of HiFi long-read genome sequencing for difficult-to-detect pathogenic variants when applied to real-world clinical laboratory samples. Leveraging new sequencing and omic technologies to enhance the detection of pathogenic variants in known disease genes is a key step toward increasing the likelihood of a precise genetic diagnosis for affected individuals. Short-read sequencing is widely used in clinical laboratories for multi-gene  Devaney JM, Chong JX, Lopes PC, Noya J, Berlyoung AS, Yusuff S, Lynch S, Brandon R, Hruska KS, Lochovsky L, Spangler J, McWalter K, Nykamp K, Poll SR, Stergachis AB, Greally J, Kruszka P, Dolzhenko E, Chen X, Robertson AV, Rowell WJ, Lake JA, Carroll A, Kueffner R, Eberle MA, Facio FM, Bamshad MJ, Johnson B. American journal of human genetics mosaic PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42049032" target="_blank" rel="noopener">Sensitivity of HiFi long-read genome sequencing for difficult-to-detect pathogenic variants when applied to real-world clinical laboratory samples.</a><span class="if-tag">IF=9.0</span></h3>
+  <div class="by">Devaney JM, Chong JX, Lopes PC, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>American journal of human genetics</span><span class="date">2026-04-27</span><a class="tag kw-mosaic" href="mosaic.html">mosaic</a><a class="tag kw-pacbio" href="pacbio.html">PacBio</a></div>
+  <div class="ksum"><span class="label">한글 요약</span>단읽기 시퀀싱이 검출에 약한 병원성 변이(VDD)의 임상 진단을 보강하기 위해 PacBio HiFi 장읽기 게놈 시퀀싱을 191명 prober에 적용했다. 자동 파이프라인이 481개 질병 원인 변이 중 479개(99.6%)를 검출했고, 미검출 두 건은 모자이시즘 비율이 낮은 trisomy 18(23%)과 5,594 bp 결실(13%)이었다.</div>
+  <div class="doi"><a href="https://doi.org/10.1016/j.ajhg.2026.04.001" target="_blank" rel="noopener">10.1016/j.ajhg.2026.04.001</a></div>
+</article></div>
+<footer>
+  Generated 2026-05-07 10:06 KST · <a href="https://europepmc.org" target="_blank">Europe PMC</a> · IF: JCR 2024 (curated)
+</footer>
+</div>
+<script>
+(function() {
+  var search = document.getElementById('search');
+  if (!search) return;
+  search.addEventListener('input', function(e) {
+    var q = e.target.value.toLowerCase();
+    document.querySelectorAll('.paper').forEach(function(el) {
+      var hay = (el.dataset.search || '').toLowerCase();
+      el.classList.toggle('hidden', q && hay.indexOf(q) === -1);
+    });
+  });
+})();
+</script>
+</body></html>

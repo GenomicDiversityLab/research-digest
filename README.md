@@ -2,7 +2,7 @@
 
 매일 아침 8시 (KST, 월–금) Europe PMC에서 키워드(Somatic mosaicism, mosaic, mosaic variant, methylation, PacBio) + 핀 저널(Cell/Nature/Science) 신규 논문을 가져와 한 페이지짜리 HTML 다이제스트를 만든다. 월요일은 지난 금/토/일 3일치를 함께 처리한다.
 
-**Live site:** <https://yoojinha.github.io/research-digest/>
+**Live site:** <https://genomicdiversitylab.github.io/research-digest/>
 
 ## 디렉터리
 

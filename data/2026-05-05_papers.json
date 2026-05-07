@@ -1,0 +1,187 @@
+[
+  {
+    "id": "PPR1184372",
+    "source": "PPR",
+    "doi": "10.21203/rs.3.rs-9393929/v1",
+    "title": "DNA methylation variability defines a fundamental dimension of tumor epigenomes linked to genomic instability, tumor aggressiveness, and clinical outcomes",
+    "authorString": "Bukovec D, Gjorgjioski B, Misheva MS, Kungulovski G.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Bukovec D",
+          "firstName": "Djansel",
+          "lastName": "Bukovec",
+          "initials": "D"
+        },
+        {
+          "fullName": "Gjorgjioski B",
+          "firstName": "Blagojche",
+          "lastName": "Gjorgjioski",
+          "initials": "B"
+        },
+        {
+          "fullName": "Misheva MS",
+          "firstName": "Monika Simjanoska",
+          "lastName": "Misheva",
+          "initials": "MS"
+        },
+        {
+          "fullName": "Kungulovski G",
+          "firstName": "Goran",
+          "lastName": "Kungulovski",
+          "initials": "G"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "<title>Abstract</title>  <p>Background  Tumors exhibit substantial cellular and molecular diversity driven by genetic and epigenetic mechanisms. Large-scale profiling efforts have established aberrant DNA methylation as a universal hallmark of cancer. Beyond changes in mean methylation levels, tumor tissues exhibit elevated DNA methylation variability at specific genomic regions within and across tumors. This constitutes a fundamental dimension of cancer epigenomes, reflecting disrupted maintenance of epigenomic states and stochastic drift, which may enable adaptation to the microenvironment, phenotypic plasticity, invasion, disease progression, and treatment resistance. However, the genome-wide organization and functional consequences of DNA methylation variability across cancer types remain incompletely understood. Methods  We analyzed paired tumor–normal DNA methylation profiles across 16 cancer types to systematically quantify DNA methylation variability. Pan-cancer DNA methylation variability was consistently observed using complementary statistical approaches and multiple modes of data representation. We identified cancer-specific and pan-cancer differentially variable regions and evaluated their associations with genomic features, transcriptional and chromatin regulators, and biological processes. Variability was quantified using three measures per sample: the proportion of intermediately methylated sites (PIM), genome-wide Shannon entropy, and a DNA methylation–based stemness index. Associations with genomic instability, tumor biological features, and clinical outcomes were subsequently assessed. Results  Tumor samples consistently exhibited higher DNA methylation variability than matched normal tissues, reflected by increased dispersion and wider interquartile ranges. Pan-cancer variably methylated regions were depleted in promoters and enriched in open sea regions, in heterochromatic H3K27me3-decorated PRC2-repressed domains, and at enhancers. They preferentially contained motifs for transcription factors involved in developmental regulation. Elevated DNA methylation variability, captured by higher PIM, entropy, and stemness scores, was associated with increased genomic instability manifested by higher aneuploidy, increased DNA break points, a greater fraction of the genome altered, and increased tumor mutational burden, as well as with aggressive tumor features such as lymph node involvement, post-therapy neoplasm events, and elevated hypoxia scores. Importantly, tumors with high DNA methylation variability exhibited significantly worse overall, progression-free, and disease-free survival. Conclusions  DNA methylation variability is a pervasive and clinically relevant feature of tumor epigenomes, reflecting epigenetic and genetic instability, expanded regulatory plasticity, and tumor aggressiveness.</p>",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "Research Square",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.21203/rs.3.rs-9393929/v1"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "Y",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "versionList": {
+      "version": [
+        {
+          "id": "PPR1184372",
+          "source": "PPR",
+          "firstPublishDate": "2026-04-30",
+          "versionNumber": 1,
+          "pubTypeList": {
+            "pubType": [
+              "preprint"
+            ]
+          },
+          "hasEvaluations": "N"
+        }
+      ]
+    },
+    "versionNumber": 1,
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-05",
+    "firstIndexDate": "2026-05-05",
+    "firstPublicationDate": "2026-04-30",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1184034",
+    "source": "PPR",
+    "doi": "10.20944/preprints202604.1871.v1",
+    "title": "A Systemic Immune-State Axis Distinguishes Psoriatic Arthritis from Psoriasis",
+    "authorString": "Lee YK, Seong H.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Lee YK",
+          "firstName": "Yoon Kyeong",
+          "lastName": "Lee",
+          "initials": "YK"
+        },
+        {
+          "fullName": "Seong H",
+          "firstName": "Hyun-A",
+          "lastName": "Seong",
+          "initials": "H"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "Psoriasis and psoriatic arthritis (PsA) are systemic immune-mediated diseases, but the features that distinguish cutaneous-dominant psoriasis from musculoskeletal involvement remain unclear. We analyzed four core public cross-sectional datasets spanning whole-blood methylation, PBMC single-cell RNA sequencing summarized at the subject level, skin RNA sequencing, and purified CD4+ T-cell methylation, and used two additional public skin cohorts for external contextual checks to define an inflammatory disease axis (DIR) and a contrast-resolved systemic-state coordinate (CRS) representing additional systemic immune-state variation associated with PsA. In whole-blood methylation, DIR primarily separated healthy controls from psoriasis, whereas CRS separated psoriasis from PsA with minimal correlation to DIR. In PBMC single-cell data, CRS was higher in PsA and in the source-defined PSX subgroup (joint pain without CASPAR-classified PsA) than in PsO. Cell-type-resolved analyses localized CRS-related shifts to CD8 naive T cells, NK cells, CD14 monocytes, and regulatory T cells and identified multicompartment pathway-state remodeling along the CRS continuum. In contrast, skin RNA sequencing mainly captured lesional inflammatory burden and showed only limited additional PsA-related separation within the same tissue state. These findings support a model in which PsA is distinguished from psoriasis by an additional systemic immune-state axis rather than by skin inflammatory burden alone.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "Preprints.org",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.20944/preprints202604.1871.v1"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "Y",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "license": "cc by",
+    "versionList": {
+      "version": [
+        {
+          "id": "PPR1184034",
+          "source": "PPR",
+          "firstPublishDate": "2026-04-27",
+          "versionNumber": 1,
+          "pubTypeList": {
+            "pubType": [
+              "preprint"
+            ]
+          },
+          "hasEvaluations": "N"
+        }
+      ]
+    },
+    "versionNumber": 1,
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-05",
+    "firstIndexDate": "2026-05-05",
+    "firstPublicationDate": "2026-04-27",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  }
+]

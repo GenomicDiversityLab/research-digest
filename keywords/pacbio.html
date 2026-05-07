@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PacBio — Research Digest</title>
+<style>:root {
+  color-scheme: light dark;
+  --bg: #fafaf7; --fg: #1c1c1a; --muted: #6b6b66; --soft: #4a4a45;
+  --accent: #b85c00; --accent-soft: #fef3e6;
+  --card: #ffffff; --border: #e5e3dc; --chip: #f0ede4;
+  --shadow: 0 1px 2px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.04);
+  --radius: 12px;
+}
+* { box-sizing: border-box; }
+html, body { margin:0; padding:0; background:var(--bg); color:var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+    "Apple SD Gothic Neo", "Malgun Gothic", "Pretendard", sans-serif;
+  font-size: 15px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+.wrap { max-width: 920px; margin: 0 auto; padding: 28px 20px 80px; }
+a { color: var(--accent); }
+header.hero { display:flex; align-items:flex-end; justify-content:space-between; gap:16px;
+  padding: 12px 0 8px; border-bottom: 1px solid var(--border); margin-bottom: 24px; }
+header.hero h1 { margin: 0 0 2px; font-size: 26px; letter-spacing: -0.02em; font-weight: 700; }
+header.hero .meta { color: var(--muted); font-size: 13px; }
+header.hero .home-link { font-size: 13px; color: var(--muted); text-decoration: none; }
+header.hero .home-link:hover { color: var(--accent); }
+
+/* Day tabs (daily detail pages) */
+.daynav { display:flex; align-items:center; flex-wrap: wrap; gap: 10px;
+  background: var(--card); border:1px solid var(--border); border-radius: var(--radius);
+  padding: 10px 14px; margin-bottom: 18px; font-size: 13px; box-shadow: var(--shadow); }
+.daynav .arrow, .daynav .home { color: var(--muted); text-decoration:none; padding: 4px 8px;
+  border-radius: 6px; }
+.daynav .arrow:hover, .daynav .home:hover { background: var(--chip); color: var(--accent); }
+.daynav .arrow.disabled { opacity: 0.35; cursor: default; }
+.daynav .center { display:flex; gap:4px; flex-wrap:wrap; }
+.daynav .center a, .daynav .center span { color: var(--fg); text-decoration:none;
+  padding: 4px 9px; border-radius: 6px; font-variant-numeric: tabular-nums; }
+.daynav .center a:hover { background: var(--chip); }
+.daynav .center .today { background: var(--accent); color:#fff; font-weight:600; }
+.daynav .center .empty { color: var(--muted); }
+
+/* Summary card */
+.summary { background:var(--card); border:1px solid var(--border); border-radius:var(--radius);
+  padding: 16px 20px; margin: 0 0 22px; box-shadow: var(--shadow); }
+.summary h2 { margin:0 0 10px; font-size:11px; text-transform:uppercase; letter-spacing:0.08em; color:var(--muted); font-weight:600; }
+.summary-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px 28px; }
+.summary-grid .col h3 { margin:0 0 6px; font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.06em; font-weight:600; }
+.summary-grid .col ul { margin:0; padding:0; list-style:none; font-size:13px; }
+.summary-grid .col li { display:flex; justify-content:space-between; gap:8px; padding:2px 0;
+  border-bottom: 1px dashed var(--border); }
+.summary-grid .col li:last-child { border-bottom: 0; }
+.summary-grid .col li b { font-weight:600; font-variant-numeric: tabular-nums; }
+
+/* Filter chips */
+.filter-row { display:flex; gap:14px; align-items:baseline; flex-wrap:wrap; margin-bottom: 8px; }
+.filter-row .lbl { font-size:10px; color:var(--muted); text-transform:uppercase; letter-spacing:0.08em;
+  font-weight:600; min-width:64px; padding-top: 4px; }
+.filters { display:flex; flex-wrap:wrap; gap:6px; }
+.chip { display:inline-flex; align-items:center; padding: 4px 11px; border-radius: 999px;
+  background: var(--chip); border:1px solid var(--border); font-size:12px;
+  cursor:pointer; user-select:none; transition: all 0.12s; text-decoration:none; color: inherit; }
+.chip:hover { border-color: var(--accent); }
+.chip.active { background: var(--accent); color:#fff; border-color: var(--accent); }
+.chip .count { opacity: 0.65; margin-left: 6px; font-variant-numeric: tabular-nums; font-size: 11px; }
+.chip.active .count { opacity: 0.95; }
+
+/* Per-keyword color chips (kw-* class injected per page) */
+.chip.kw-somatic-mosaicism, .tag.kw-somatic-mosaicism { background: #ede9fe; color: #5b21b6; border-color: #ede9fe; }
+.chip.kw-somatic-mosaicism:hover { filter: brightness(0.95); border-color: #5b21b6; }
+.chip.kw-somatic-mosaicism.active { background: #5b21b6; color: #fff; border-color: #5b21b6; }
+@media (prefers-color-scheme: dark) {
+  .chip.kw-somatic-mosaicism, .tag.kw-somatic-mosaicism { background: #3b1d6b; color: #c4b5fd; border-color: #3b1d6b; }
+  .chip.kw-somatic-mosaicism.active { background: #c4b5fd; color: #181815; border-color: #c4b5fd; }
+}
+.chip.kw-mosaic, .tag.kw-mosaic { background: #ffedd5; color: #9a3412; border-color: #ffedd5; }
+.chip.kw-mosaic:hover { filter: brightness(0.95); border-color: #9a3412; }
+.chip.kw-mosaic.active { background: #9a3412; color: #fff; border-color: #9a3412; }
+@media (prefers-color-scheme: dark) {
+  .chip.kw-mosaic, .tag.kw-mosaic { background: #3a2210; color: #fdba74; border-color: #3a2210; }
+  .chip.kw-mosaic.active { background: #fdba74; color: #181815; border-color: #fdba74; }
+}
+.chip.kw-mosaic-variant, .tag.kw-mosaic-variant { background: #fce7f3; color: #9d174d; border-color: #fce7f3; }
+.chip.kw-mosaic-variant:hover { filter: brightness(0.95); border-color: #9d174d; }
+.chip.kw-mosaic-variant.active { background: #9d174d; color: #fff; border-color: #9d174d; }
+@media (prefers-color-scheme: dark) {
+  .chip.kw-mosaic-variant, .tag.kw-mosaic-variant { background: #3a1626; color: #f9a8d4; border-color: #3a1626; }
+  .chip.kw-mosaic-variant.active { background: #f9a8d4; color: #181815; border-color: #f9a8d4; }
+}
+.chip.kw-methylation, .tag.kw-methylation { background: #dbeafe; color: #1e3a8a; border-color: #dbeafe; }
+.chip.kw-methylation:hover { filter: brightness(0.95); border-color: #1e3a8a; }
+.chip.kw-methylation.active { background: #1e3a8a; color: #fff; border-color: #1e3a8a; }
+@media (prefers-color-scheme: dark) {
+  .chip.kw-methylation, .tag.kw-methylation { background: #10204a; color: #93c5fd; border-color: #10204a; }
+  .chip.kw-methylation.active { background: #93c5fd; color: #181815; border-color: #93c5fd; }
+}
+.chip.kw-pacbio, .tag.kw-pacbio { background: #d1fae5; color: #065f46; border-color: #d1fae5; }
+.chip.kw-pacbio:hover { filter: brightness(0.95); border-color: #065f46; }
+.chip.kw-pacbio.active { background: #065f46; color: #fff; border-color: #065f46; }
+@media (prefers-color-scheme: dark) {
+  .chip.kw-pacbio, .tag.kw-pacbio { background: #0c2a23; color: #86efac; border-color: #0c2a23; }
+  .chip.kw-pacbio.active { background: #86efac; color: #181815; border-color: #86efac; }
+}
+.chip.pinned, .tag.pinned { background: #fef3c7; color: #854d0e; border-color: #fef3c7; font-weight: 600; }
+.chip.pinned:hover { filter: brightness(0.95); border-color: #854d0e; }
+.chip.pinned.active { background: #854d0e; color: #fff; border-color: #854d0e; }
+@media (prefers-color-scheme: dark) {
+  .chip.pinned, .tag.pinned { background: #3a2d0d; color: #fde68a; border-color: #3a2d0d; }
+  .chip.pinned.active { background: #fde68a; color: #181815; border-color: #fde68a; }
+}
+
+.search-box { width:100%; margin: 8px 0 18px; }
+.search-box input { width:100%; padding: 10px 14px; border:1px solid var(--border); border-radius: 8px;
+  font-size: 14px; background: var(--card); color: var(--fg); transition: border-color 0.12s; }
+.search-box input:focus { outline: none; border-color: var(--accent); }
+
+.papers { display:flex; flex-direction:column; gap: 12px; }
+.paper { background:var(--card); border:1px solid var(--border); border-radius: var(--radius);
+  padding: 16px 20px; transition: border-color 0.12s, box-shadow 0.12s; box-shadow: var(--shadow); }
+.paper:hover { border-color: var(--accent); box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 6px 18px rgba(184,92,0,0.10); }
+.paper.hidden { display:none; }
+.paper.hi { border-color: #f0c388; background: linear-gradient(0deg, var(--accent-soft), var(--card) 70%); }
+.paper h3 { margin: 0 0 6px; font-size: 16px; line-height: 1.4; font-weight: 600; }
+.paper h3 a { color: var(--fg); text-decoration: none; }
+.paper h3 a:hover { color: var(--accent); }
+.paper .if-tag { display:inline-block; margin-left: 6px; padding: 1px 7px; border-radius: 4px;
+  background: #fff3df; color: #8a4b00; font-size: 11px; font-weight: 700; vertical-align: 2px;
+  letter-spacing: 0.02em; }
+.paper.hi .if-tag { background: var(--accent); color: #fff; }
+.paper .by { font-size: 12px; color: var(--muted); margin: 0 0 6px; }
+.paper .meta { font-size: 11px; color: var(--muted); margin: 0 0 8px; display: flex;
+  flex-wrap: wrap; gap: 4px 10px; align-items: center; }
+.paper .meta .src { display:inline-block; padding: 1px 7px; border-radius: 4px; font-weight: 700;
+  letter-spacing: 0.02em; font-size: 10px; background: var(--chip); }
+.paper .meta .src.PPR { background:#fff3df; color:#8a4b00; }
+.paper .meta .src.MED { background:#e3eef6; color:#1f4e75; }
+.paper .meta .src.PMC { background:#e3f4e6; color:#2a6b35; }
+.paper .meta .date { font-variant-numeric: tabular-nums; }
+.tag { display:inline-block; padding: 1px 7px; border-radius: 999px; font-size: 11px;
+  background: var(--chip); border: 1px solid var(--border); text-decoration: none;
+  font-weight: 500; transition: all 0.12s; }
+.tag:hover { filter: brightness(0.95); }
+.paper .ksum { background: #fffefa; border:1px solid #efe9d8; border-radius: 8px; padding: 10px 14px;
+  margin: 8px 0 4px; font-size: 14px; line-height: 1.7; color: #2c2c28; }
+.paper.hi .ksum { background: #fffaf2; border-color: #efd9b8; }
+.paper .ksum .label { display:inline-block; font-size: 10px; font-weight: 700; color: var(--accent);
+  text-transform: uppercase; letter-spacing: 0.06em; margin-right: 6px; vertical-align: 2px; }
+.paper .ksum-struct { display: flex; flex-direction: column; gap: 8px; }
+.paper .ksum-struct .line { display: flex; gap: 10px; }
+.paper .ksum-struct .lbl { flex: 0 0 56px; font-size: 11px; font-weight: 700; color: var(--accent);
+  text-transform: uppercase; letter-spacing: 0.04em; padding-top: 3px; }
+.paper .ksum-struct .body { flex: 1 1 auto; }
+.paper .ksum-struct ul { margin: 2px 0 0; padding-left: 18px; }
+.paper .doi a { color: var(--muted); font-size: 11px; text-decoration: none; }
+.paper .doi a:hover { color: var(--accent); }
+.paper .ab { font-size: 13px; color: var(--soft); margin: 6px 0 0; }
+
+/* date headers used on per-keyword pages */
+.date-head { display:flex; align-items:baseline; gap: 12px; margin: 26px 0 8px;
+  padding-bottom: 6px; border-bottom: 1px dashed var(--border); }
+.date-head h2 { margin: 0; font-size: 14px; font-weight: 700; letter-spacing: -0.01em; }
+.date-head .day-meta { font-size: 12px; color: var(--muted); }
+
+/* index page */
+.kw-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 10px; margin: 14px 0 28px; }
+.kw-card { display:block; padding: 14px 16px; border-radius: var(--radius); background: var(--card);
+  border:1px solid var(--border); text-decoration: none; color: var(--fg); transition: all 0.12s;
+  box-shadow: var(--shadow); }
+.kw-card:hover { border-color: var(--accent); transform: translateY(-1px); box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 8px 22px rgba(184,92,0,0.10); }
+.kw-card .name { display:flex; align-items:center; gap: 8px; font-weight: 700; font-size: 15px;
+  margin-bottom: 4px; }
+.kw-card .swatch { width: 10px; height: 10px; border-radius: 999px; }
+.kw-card .stats { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.kw-card .recent { margin-top: 6px; font-size: 11px; color: var(--muted); }
+
+/* day list */
+.daylist { display: flex; flex-direction: column; gap: 8px; margin-top: 6px; }
+.daylist .row { display:grid; grid-template-columns: 110px 200px 1fr; gap: 14px;
+  align-items: baseline; padding: 12px 16px; border:1px solid var(--border); border-radius: var(--radius);
+  background: var(--card); text-decoration:none; color: var(--fg); transition: border-color 0.12s; }
+.daylist .row:hover { border-color: var(--accent); }
+.daylist .d { font-variant-numeric: tabular-nums; font-weight: 600; }
+.daylist .n { font-variant-numeric: tabular-nums; font-size: 14px; }
+.daylist .hi-pill { display:inline-block; margin-left: 6px; padding: 1px 7px; border-radius: 999px;
+  background:#fff0d6; color:#8a4b00; font-size: 11px; font-weight: 600; }
+.daylist .info { display:flex; flex-direction: column; gap: 2px; color: var(--muted); font-size: 12px; }
+
+.empty { background: var(--card); border:1px dashed var(--border); border-radius: var(--radius);
+  padding: 30px; text-align: center; color: var(--muted); }
+.section-h { margin: 30px 0 8px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em;
+  color: var(--muted); font-weight: 700; }
+footer { margin-top: 60px; padding-top: 16px; border-top: 1px solid var(--border);
+  font-size: 11px; color: var(--muted); }
+footer a { color: var(--muted); }
+
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#181815; --fg:#e8e6df; --muted:#8a8780; --soft:#bbbab2; --card:#232320;
+    --border:#353330; --chip:#2a2825; --accent:#f29349; --accent-soft:#2a2014;
+    --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 4px 12px rgba(0,0,0,0.3); }
+  .paper .meta .src.PPR { background:#3a2a13; color:#f0c388; }
+  .paper .meta .src.MED { background:#1a2a3a; color:#93c0e8; }
+  .paper .meta .src.PMC { background:#1d3322; color:#8fd29a; }
+  .paper .ksum { background:#1f1f1c; border-color:#3a3833; color: #e0ddd2; }
+  .paper.hi .ksum { background:#2a2419; border-color:#4a3e22; }
+  .paper.hi { background: linear-gradient(0deg, #2a2014, var(--card) 70%); }
+  .daylist .hi-pill { background:#3a2a13; color:#f0c388; }
+}</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="daynav">
+  <a class="home" href="../index.html">📚 인덱스</a>
+  <div class="center"><a class="chip kw-somatic-mosaicism" href="somatic-mosaicism.html">Somatic mosaicism</a><a class="chip kw-mosaic" href="mosaic.html">mosaic</a><a class="chip kw-mosaic-variant" href="mosaic-variant.html">mosaic variant</a><a class="chip kw-methylation" href="methylation.html">methylation</a><a class="chip kw-pacbio active" href="pacbio.html">PacBio</a></div>
+</nav>
+<header class="hero">
+  <div>
+    <h1><span class="tag kw-pacbio" style="font-size:18px;padding:4px 12px;border-radius:8px;font-weight:700">PacBio</span> 키워드</h1>
+    <div class="meta">총 <b>16</b>편 · IF≥10 <b>1</b>편 · 최신순</div>
+  </div>
+</header>
+<div class="search-box"><input id="search" type="search" placeholder="제목·저자·저널·초록·요약 검색…"></div>
+<div class="date-head"><h2>2026년 05월 01일 (Fri)</h2><span class="day-meta">4편 · <a href="../digests/2026-05-01.html">하루 전체 보기 →</a></span></div><div class="papers"><article class="paper" data-keywords="pacbio" data-source="MED" data-search="Haplotype-resolved chromosome-level genome assembly of Schizothorax davidi. Schizothorax davidi, a cold-water fish endemic to the Qinghai-Tibetan Plateau (QTP), represents an important economic resource in the upper Yangtze River. Regarded as a promising model for studying high-altitude adaptation and polyploidization, this species has still lacked a reference genome. Here, Xie C, Li Y, Zhou Y, Cui Y, Wang H, Xu L, Liu H. Scientific data PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42062310" target="_blank" rel="noopener">Haplotype-resolved chromosome-level genome assembly of Schizothorax davidi.</a><span class="if-tag">IF=5.8</span></h3>
+  <div class="by">Xie C, Li Y, Zhou Y, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Scientific data</span><span class="date">2026-04-30</span><a class="tag kw-pacbio" href="pacbio.html">PacBio</a></div>
+  <div class="ksum"><span class="label">한글 요약</span>고원 고도 적응과 다배수체 진화 모델인 Schizothorax davidi의 haplotype 분해 염색체 수준 게놈(4n=98)을 PacBio·Hi-C로 어셈블했다. 어류 다배수체와 고도 적응 연구를 위한 핵심 참조 자원으로 활용된다.</div>
+  <div class="doi"><a href="https://doi.org/10.1038/s41597-026-07328-7" target="_blank" rel="noopener">10.1038/s41597-026-07328-7</a></div>
+</article><article class="paper" data-keywords="pacbio" data-source="MED" data-search="Telomere-to-telomere genome assembly of the wood tiger moth Arctia plantaginis. The wood tiger moth, Arctia plantaginis, is an important model organism for the study of polymorphism in warning colour. One major colour locus has been identified, but studying its association with other traits as well as signatures of selection has been limited by the lack of a contiguous referenc Koch EL, Warren IA, Brien MN, Mappes J, Jiggins CD. Scientific data PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42062315" target="_blank" rel="noopener">Telomere-to-telomere genome assembly of the wood tiger moth Arctia plantaginis.</a><span class="if-tag">IF=5.8</span></h3>
+  <div class="by">Koch EL, Warren IA, Brien MN, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Scientific data</span><span class="date">2026-04-30</span><a class="tag kw-pacbio" href="pacbio.html">PacBio</a></div>
+  <div class="ksum"><span class="label">한글 요약</span>경고색 다형성 모델인 wood tiger moth Arctia plantaginis의 telomere-to-telomere(T2T) 게놈을 조립해 기존 1,000+ 스캐폴드 어셈블리를 대체했다. 색깔 좌위와 다른 형질·선택 시그니처 분석에 정확한 참조를 제공한다.</div>
+  <div class="doi"><a href="https://doi.org/10.1038/s41597-026-07316-x" target="_blank" rel="noopener">10.1038/s41597-026-07316-x</a></div>
+</article><article class="paper" data-keywords="pacbio" data-source="MED" data-search="Chromosome-level genome assembly of two Chinese wild boars (Sus scrofa). The wild boar (Sus scrofa) is a widely distributed native wildlife species in China, where it plays an important role in diverse ecosystems. Current research on wild boars primarily focused on their geographical distribution, epidemiological investigation, and genetic relationship with domesticated  Wang S, Tu Z, Li L, Qiu Y, Deng S, Huang L, Cao Z, Wang T, Xu Y, Peng P, Zhang S, Cai G, Huang S, Zhang Z, Zheng E, Li Z, Yang J, Chen J, Wu Z, Liu L. Scientific data PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42062312" target="_blank" rel="noopener">Chromosome-level genome assembly of two Chinese wild boars (Sus scrofa).</a><span class="if-tag">IF=5.8</span></h3>
+  <div class="by">Wang S, Tu Z, Li L, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Scientific data</span><span class="date">2026-04-30</span><a class="tag kw-pacbio" href="pacbio.html">PacBio</a></div>
+  <div class="ksum"><span class="label">한글 요약</span>중국 두 지역 야생멧돼지(Sus scrofa)의 염색체 수준 게놈 어셈블리를 처음 보고했다. 두 야생멧돼지 게놈은 가축 돼지와의 비교 유전체학, 적응 형질, 보존 유전체 연구의 새 참조가 된다.</div>
+  <div class="doi"><a href="https://doi.org/10.1038/s41597-026-07336-7" target="_blank" rel="noopener">10.1038/s41597-026-07336-7</a></div>
+</article><article class="paper" data-keywords="pacbio" data-source="MED" data-search="De novo chromosome-level genome assembly and annotation of the Muscovy duck (Cairina moschata). The Muscovy duck (Cairina moschata) is an excellent lean-type poultry species characterized by large body weight, rapid growth, high lean meat yield, good liver production performance, and high feed conversion efficiency. It plays an important role in modern poultry industry. However, the quality of Ju X, Wang Z, Xu H, Tan L, Cai D, Zhu W, Guo L, Ji C, Nie Q, Han W. Poultry science PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42061252" target="_blank" rel="noopener">De novo chromosome-level genome assembly and annotation of the Muscovy duck (Cairina moschata).</a><span class="if-tag">IF=4.2</span></h3>
+  <div class="by">Ju X, Wang Z, Xu H, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Poultry science</span><span class="date">2026-04-16</span><a class="tag kw-pacbio" href="pacbio.html">PacBio</a></div>
+  <div class="ksum"><span class="label">한글 요약</span>산업적으로 중요한 머스코비 오리(Cairina moschata)의 de novo 염색체 수준 게놈 어셈블리·주석을 PacBio·Hi-C로 생성했다. 본 자원은 머스코비 오리의 형질·생산 형질 GWAS 및 가금 육종에 핵심 참조 데이터로 활용된다.</div>
+  <div class="doi"><a href="https://doi.org/10.1016/j.psj.2026.106973" target="_blank" rel="noopener">10.1016/j.psj.2026.106973</a></div>
+</article></div><div class="date-head"><h2>2026년 04월 30일 (Thu)</h2><span class="day-meta">11편 · <a href="../digests/2026-04-30.html">하루 전체 보기 →</a></span></div><div class="papers"><article class="paper" data-keywords="pacbio" data-source="MED" data-search="Methylome profiles to investigate gene regulation mediated by phase-variable DNA methyltransferases in serogroup B &amp;lt;i&amp;gt;Neisseria meningitidis&amp;lt;/i&amp;gt;. Neisseria meningitidis serogroup B is a major cause of meningitis and septicemia. Here, we report PacBio HiFi single-molecule real-time (SMRT) methylomics data sets for strains MC58, B6116/77, and M0579. These strains encode the phase-variable DNA methyltransferases ModA11, ModA12, and ModD1, respec Ascari A, Blakeway LV, Bentley SR, Jennings MP, Seib KL. Microbiology resource announcements PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42053516" target="_blank" rel="noopener">Methylome profiles to investigate gene regulation mediated by phase-variable DNA methyltransferases in serogroup B &amp;lt;i&amp;gt;Neisseria meningitidis&amp;lt;/i&amp;gt;.</a><span class="if-tag">IF=0.7</span></h3>
+  <div class="by">Ascari A, Blakeway LV, Bentley SR, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Microbiology resource announcements</span><span class="date">2026-04-29</span><a class="tag kw-pacbio" href="pacbio.html">PacBio</a></div>
+  <div class="ksum"><span class="label">한글 요약</span>PacBio HiFi SMRT 메틸로믹스로 N. meningitidis serogroup B 균주(MC58, B6116/77, M0579)의 phase-variable DNA 메틸트랜스퍼라제(ModA11/A12/D1)에 의한 메틸롬 프로파일을 보고했다. 본 데이터는 phasevarion을 통한 병원성 조절 연구의 자원이 된다.</div>
+  <div class="doi"><a href="https://doi.org/10.1128/mra.00164-26" target="_blank" rel="noopener">10.1128/mra.00164-26</a></div>
+</article><article class="paper" data-keywords="pacbio" data-source="MED" data-search="Discovery of the Novel HLA-DRB3*01:01:25 Allele Using PacBio Sequencing. HLA-DRB3*01:01:25 differs from DRB3*01:01:02:08 by one nucleotide substitution in exon 2, and intronic changes. Song W, Yu W, Bai S, Zhou S, Liang X. HLA PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42059311" target="_blank" rel="noopener">Discovery of the Novel HLA-DRB3*01:01:25 Allele Using PacBio Sequencing.</a><span class="if-tag">IF=2.6</span></h3>
+  <div class="by">Song W, Yu W, Bai S, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>HLA</span><span class="date">2026-04-01</span><a class="tag kw-pacbio" href="pacbio.html">PacBio</a></div>
+  <div class="ksum"><span class="label">한글 요약</span>PacBio 시퀀싱으로 신규 HLA-DRB3*01:01:25 대립유전자를 발견해 보고했다. 기존 DRB3*01:01:02:08 대비 엑손 2의 단일염기 치환과 인트론 변이를 동반한다.</div>
+  <div class="doi"><a href="https://doi.org/10.1111/tan.70729" target="_blank" rel="noopener">10.1111/tan.70729</a></div>
+</article><article class="paper" data-keywords="pacbio" data-source="MED" data-search="Chromosome level genome assembly of the tea ash wood moth, Agriophara rhombata. Agriophara rhombata Meyr. also known as the tea ash wood moth, is one of the most destructive pests that cause leaf damage to tea plants. We generated the first high-quality chromosome-level genome assembly of A. rhombata using the PacBio sequencing and Hi-C scafolding. The total length is 473.36 Mb Qu H, Chen Q, Chen L, Long L, Chen L, Li Z, Long Y. Scientific data PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42056129" target="_blank" rel="noopener">Chromosome level genome assembly of the tea ash wood moth, Agriophara rhombata.</a><span class="if-tag">IF=5.8</span></h3>
+  <div class="by">Qu H, Chen Q, Chen L, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Scientific data</span><span class="date">2026-04-29</span><a class="tag kw-pacbio" href="pacbio.html">PacBio</a></div>
+  <div class="ksum"><span class="label">한글 요약</span>차나무 해충 Agriophara rhombata의 첫 염색체 수준 게놈을 PacBio·Hi-C로 조립해 473 Mb·25염색체 어셈블리를 제시했다. 본 자원은 차밭 해충 방제와 곤충 비교게놈학 연구의 기반이 된다.</div>
+  <div class="doi"><a href="https://doi.org/10.1038/s41597-026-07351-8" target="_blank" rel="noopener">10.1038/s41597-026-07351-8</a></div>
+</article><article class="paper" data-keywords="pacbio" data-source="MED" data-search="Diploid chromosome-level genome assembly of the Amazonian endemic morning glory Ipomoea cavalcantei D.F. Austin. The Carajás morning glory (Ipomoea cavalcantei D.F. Austin) is a plant species endemic to ironstone outcrops in the eastern Amazon, Brazil. Here, we present a chromosome-level reference genome combining PacBio HiFi and HiC sequencing data for this species. Our high-quality assembly of 1.02 Gb consis Canesin LEC, Villaça ST, Magalhães L, Batista CEA, Lima JS, Aleixo A, Tavares VDC, Vidal AF, Carvalho CDS. Scientific data PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42056111" target="_blank" rel="noopener">Diploid chromosome-level genome assembly of the Amazonian endemic morning glory Ipomoea cavalcantei D.F. Austin.</a><span class="if-tag">IF=5.8</span></h3>
+  <div class="by">Canesin LEC, Villaça ST, Magalhães L, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Scientific data</span><span class="date">2026-04-29</span><a class="tag kw-pacbio" href="pacbio.html">PacBio</a></div>
+  <div class="ksum"><span class="label">한글 요약</span>동부 아마존 철광석 노두 고유종 Ipomoea cavalcantei의 1.02 Gb 디플로이드 염색체 수준 참조 게놈을 PacBio HiFi와 Hi-C로 조립해 제시했다. 멸종위기 식물의 보존 유전체학과 적응 형질 연구를 위한 자원으로 가치가 있다.</div>
+  <div class="doi"><a href="https://doi.org/10.1038/s41597-026-07258-4" target="_blank" rel="noopener">10.1038/s41597-026-07258-4</a></div>
+</article><article class="paper" data-keywords="pacbio" data-source="MED" data-search="A telomere-to-telomere reference genome for Stemona tuberosa. Stemona tuberosa is a medicinally important species, however, a complete telomere-to-telomere (T2T) genome assembly has remained unavailable. Here, we present the first T2T genome assembly for S. tuberosa, generated by integrating PacBio HiFi, ultra-long Oxford Nanopore, Illumina, and Hi-C sequencin Wei X, Tang D, Peng Y, Huang B, Zhu Y, Liang Z, Hu Y. Scientific data PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42049773" target="_blank" rel="noopener">A telomere-to-telomere reference genome for Stemona tuberosa.</a><span class="if-tag">IF=5.8</span></h3>
+  <div class="by">Wei X, Tang D, Peng Y, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Scientific data</span><span class="date">2026-04-28</span><a class="tag kw-pacbio" href="pacbio.html">PacBio</a></div>
+  <div class="ksum"><span class="label">한글 요약</span>약용식물 Stemona tuberosa의 첫 telomere-to-telomere(T2T) 게놈 어셈블리를 PacBio HiFi·ONT·Illumina·Hi-C 통합으로 생성해 두 haplotype을 모두 분해했다. 약용 활성 천연물 생합성 경로 연구와 약용식물 보존 육종에 핵심 자원이 된다.</div>
+  <div class="doi"><a href="https://doi.org/10.1038/s41597-026-07266-4" target="_blank" rel="noopener">10.1038/s41597-026-07266-4</a></div>
+</article><article class="paper" data-keywords="pacbio" data-source="MED" data-search="The first chromosomal level genome assembly and annotation of Pareuchiloglanis anteanalis. Pareuchiloglanis anteanalis belonging to the genus Pareuchiloglanis, within the family Sisoridae (order Siluriformes), is a group of small benthic-dwelling freshwater fishes adapted to alpine canyon environments characterized by steep slopes, rapid currents, and marked seasonal fluctuations in water Li W, Yu D, Que Y, Tian H, Dong W, Wang E, Xu N, Shao K, Zhu B, Hu X. Scientific data PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42056141" target="_blank" rel="noopener">The first chromosomal level genome assembly and annotation of Pareuchiloglanis anteanalis.</a><span class="if-tag">IF=5.8</span></h3>
+  <div class="by">Li W, Yu D, Que Y, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Scientific data</span><span class="date">2026-04-29</span><a class="tag kw-pacbio" href="pacbio.html">PacBio</a></div>
+  <div class="ksum"><span class="label">한글 요약</span>고산지대 협곡 환경에 적응한 저서성 담수어 Pareuchiloglanis anteanalis의 첫 염색체 수준 게놈 어셈블리·주석을 PacBio·Hi-C로 수행했다. 이 자원은 어류의 알파인 환경 적응 유전적 기반 연구와 보존 유전체학에 활용될 수 있다.</div>
+  <div class="doi"><a href="https://doi.org/10.1038/s41597-026-07346-5" target="_blank" rel="noopener">10.1038/s41597-026-07346-5</a></div>
+</article><article class="paper" data-keywords="pacbio" data-source="MED" data-search="The complete chloroplast genome sequence of &amp;lt;i&amp;gt;Lophophora diffusa&amp;lt;/i&amp;gt;. Lophophora diffusa is a psychoactive plant of Cactaceae, morphologically similar to the mescaline-rich Lophophora williamsii but with a distinct alkaloid profile, posing significant challenges for law enforcement. Here, we sequenced the complete chloroplast genome of L. diffusa using PacBio high-thr Zhang T, Li N, Cui Z, Wang Y, Liu X. Mitochondrial DNA. Part B, Resources PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42051936" target="_blank" rel="noopener">The complete chloroplast genome sequence of &amp;lt;i&amp;gt;Lophophora diffusa&amp;lt;/i&amp;gt;.</a><span class="if-tag">IF=0.4</span></h3>
+  <div class="by">Zhang T, Li N, Cui Z, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Mitochondrial DNA. Part B, Resources</span><span class="date">2026-04-24</span><a class="tag kw-pacbio" href="pacbio.html">PacBio</a></div>
+  <div class="ksum"><span class="label">한글 요약</span>환각 식물 Lophophora diffusa의 완전한 엽록체 게놈(115,689 bp)을 PacBio로 시퀀싱했다. mescaline 풍부 L. williamsii와 형태가 유사하지만 알칼로이드 프로파일이 다른 본 종의 분자 식별 마커를 제공해 법집행에서의 종 동정 문제를 해결할 수 있다.</div>
+  <div class="doi"><a href="https://doi.org/10.1080/23802359.2026.2658959" target="_blank" rel="noopener">10.1080/23802359.2026.2658959</a></div>
+</article><article class="paper hi" data-keywords="pacbio|__hi__" data-source="MED" data-search="Haplotype-resolved genome assemblies of BJ and IMR-90 human fibroblast cell lines reveal extensive structural variation and enable reanalysis of historical sequencing data. We present chromosome-level, phased diploid genome assemblies of two widely used human fibroblast cell lines: BJ (46,XY) and IMR-90 (46,XX). Using Oxford Nanopore, PacBio HiFi, and Hi-C sequencing data, we generated assemblies spanning 5.9 and 6.0 Gbp with diploid quality values exceeding QV 60. To  Ranallo-Benavidez TR, Hao Y, Volpe E, Jehangir M, Fukushima N, Stephens ZD, Mbegbu O, Ungaro MT, Reiman R, Molnar J, Murphy D, Paredes DM, Wong S, Karaniuk K, Buchholtz S, Kocher JP, Keats J, Machiela MJ, Kolmogorov M, Paten B, Giunta S, Barthel FP. Nucleic acids research PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42049241" target="_blank" rel="noopener">Haplotype-resolved genome assemblies of BJ and IMR-90 human fibroblast cell lines reveal extensive structural variation and enable reanalysis of historical sequencing data.</a><span class="if-tag">IF=16.6</span></h3>
+  <div class="by">Ranallo-Benavidez TR, Hao Y, Volpe E, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Nucleic acids research</span><span class="date">2026-04-01</span><a class="tag kw-pacbio" href="pacbio.html">PacBio</a></div>
+  <div class="ksum"><div class="ksum-struct">
+  <div class="line"><div class="lbl">배경</div><div class="body">널리 사용되는 인간 섬유아세포주 BJ와 IMR-90의 페어드 디플로이드 게놈 어셈블리는 부재해, 기존 시퀀싱 데이터 해석에 한계가 있었다.</div></div>
+  <div class="line"><div class="lbl">결과</div><div class="body"><ul><li>Oxford Nanopore, PacBio HiFi, Hi-C 데이터로 5.9 및 6.0 Gbp의 염색체 수준 위상 디플로이드 어셈블리를 QV 60 이상으로 생성했다.</li><li>구조 무결성 검증을 위한 alignment-free k-mer 기반 도구 KaryoScope를 개발해 컴퓨팅 카리오그램을 생성했다.</li><li>T2T-CHM13v2.0 대비 5만 개 이상의 구조변이를 확인했고 대부분 이형접합·세포주 특이적이었다.</li><li>BJ에서 16p11.2 좌위에 1 Mbp 동형접합 중복을 새롭게 발견해 정상 카리오타입 세포주에도 임상 의미 있는 미세 재배열이 존재함을 입증했다.</li><li>디플로이드 어셈블리에 단읽기·RNA-seq·ChIP-seq 매핑 시 read 정렬과 23–28% read의 haplotype phasing이 향상되었다.</li></ul></div></div>
+  <div class="line"><div class="lbl">결론</div><div class="body">두 세포주의 디플로이드 참조 게놈과 검증 도구를 공개 자원으로 제공한다.</div></div>
+  <div class="line"><div class="lbl">의의</div><div class="body">기존 시퀀싱 데이터의 재분석과 정밀 변이·발현 연구의 표준을 한 단계 끌어올린다.</div></div>
+</div></div>
+  <div class="doi"><a href="https://doi.org/10.1093/nar/gkag333" target="_blank" rel="noopener">10.1093/nar/gkag333</a></div>
+</article><article class="paper" data-keywords="pacbio" data-source="MED" data-search="Comparative Genomics of Transisthmian Damselfishes (Abudefduf saxatilis and A. troschelii). The uplift of the Central American Isthmus (CAI) represents a natural laboratory for the study of allopatric speciation in marine organisms. Several geminate species pairs of both vertebrates and invertebrates formed following the uplift of the CAI, including damselfishes of the Pomacentridae family Tracy CB, Arias CF, Tysall E, Hoeppner MP, McMillan OW, Puebla O, Bernal MA. Genome biology and evolution PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42060844" target="_blank" rel="noopener">Comparative Genomics of Transisthmian Damselfishes (Abudefduf saxatilis and A. troschelii).</a><span class="if-tag">IF=3.4</span></h3>
+  <div class="by">Tracy CB, Arias CF, Tysall E, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Genome biology and evolution</span><span class="date">2026-04-30</span><a class="tag kw-pacbio" href="pacbio.html">PacBio</a></div>
+  <div class="ksum"><span class="label">한글 요약</span>중앙아메리카 지협(CAI) 융기 후 형성된 자매종 Abudefduf saxatilis와 A. troschelii damselfish의 비교 게놈 분석을 수행했다. 두 종 사이의 게놈 분기 패턴은 해양 생물 동소적 종분화의 분자적 단서를 제공한다.</div>
+  <div class="doi"><a href="https://doi.org/10.1093/gbe/evag111" target="_blank" rel="noopener">10.1093/gbe/evag111</a></div>
+</article><article class="paper" data-keywords="pacbio" data-source="MED" data-search="A chromosome-level genome assembly of &amp;lt;i&amp;gt;Rhizopus stolonifer&amp;lt;/i&amp;gt; associated with passion fruit flower rot. Flower rot of passion fruit, caused by Rhizopus stolonifer , is an emerging disease that threatens commercial cultivation by reducing yield and fruit quality. Here, we present a chromosome-level genome assembly of R. stolonifer isolate PRFJ02, generated using PacBio HiFi sequencing combined with Hi- Sun J, Chen G, Gardiner DM, Morrison S, Zhang X, Aitken EAB, Yang L, Chen A. Frontiers in microbiology PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42052389" target="_blank" rel="noopener">A chromosome-level genome assembly of &amp;lt;i&amp;gt;Rhizopus stolonifer&amp;lt;/i&amp;gt; associated with passion fruit flower rot.</a><span class="if-tag">IF=4.0</span></h3>
+  <div class="by">Sun J, Chen G, Gardiner DM, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Frontiers in microbiology</span><span class="date">2026-04-13</span><a class="tag kw-pacbio" href="pacbio.html">PacBio</a></div>
+  <div class="ksum"><span class="label">한글 요약</span>용과(passion fruit) 꽃 부패병원균 Rhizopus stolonifer 분리주 PRFJ02의 염색체 수준 게놈을 PacBio HiFi와 Hi-C로 48.2 Mb 규모로 어셈블했다. 본 자원은 병원성 인자·진화 연구와 작물 보호 전략 개발에 활용될 수 있다.</div>
+  <div class="doi"><a href="https://doi.org/10.3389/fmicb.2026.1757919" target="_blank" rel="noopener">10.3389/fmicb.2026.1757919</a></div>
+</article><article class="paper" data-keywords="pacbio" data-source="MED" data-search="Diagnostic utility of clinical genome reanalysis in rare pediatric disorders using long-read sequencing. Over half of presumed genetic disease cases remain undiagnosed following short-read exome (SR-ES) or genome sequencing (SR-GS). Long-read genome sequencing (LR-GS) shows promise for uncovering etiologies missed by SR genetic testing, particularly structural variants (SVs). However, SV interpretation Werren EA, Vats P, Rech GE, Peracchio M, King C, Charnysh EJ, Gorham RD, Audano PA, Robinson PN, Kelly MA, Matson AP, Adams MD, Kalsner L. HGG advances PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42050932" target="_blank" rel="noopener">Diagnostic utility of clinical genome reanalysis in rare pediatric disorders using long-read sequencing.</a><span class="if-tag">IF=3.0</span></h3>
+  <div class="by">Werren EA, Vats P, Rech GE, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>HGG advances</span><span class="date">2026-04-27</span><a class="tag kw-pacbio" href="pacbio.html">PacBio</a></div>
+  <div class="ksum"><span class="label">한글 요약</span>단읽기 외/전장유전체로 진단되지 않은 희귀 소아 질환에 대해 장읽기 게놈 시퀀싱(LR-GS) 기반 임상 재분석의 진단 효용을 평가했다. 구조변이를 포함한 다수 신규 진단을 확인해 LR-GS가 short-read 진단 미해결 사례의 임상 재분석에 유용함을 보였다.</div>
+  <div class="doi"><a href="https://doi.org/10.1016/j.xhgg.2026.100620" target="_blank" rel="noopener">10.1016/j.xhgg.2026.100620</a></div>
+</article></div><div class="date-head"><h2>2026년 04월 29일 (Wed)</h2><span class="day-meta">1편 · <a href="../digests/2026-04-29.html">하루 전체 보기 →</a></span></div><div class="papers"><article class="paper" data-keywords="mosaic|pacbio" data-source="MED" data-search="Sensitivity of HiFi long-read genome sequencing for difficult-to-detect pathogenic variants when applied to real-world clinical laboratory samples. Leveraging new sequencing and omic technologies to enhance the detection of pathogenic variants in known disease genes is a key step toward increasing the likelihood of a precise genetic diagnosis for affected individuals. Short-read sequencing is widely used in clinical laboratories for multi-gene  Devaney JM, Chong JX, Lopes PC, Noya J, Berlyoung AS, Yusuff S, Lynch S, Brandon R, Hruska KS, Lochovsky L, Spangler J, McWalter K, Nykamp K, Poll SR, Stergachis AB, Greally J, Kruszka P, Dolzhenko E, Chen X, Robertson AV, Rowell WJ, Lake JA, Carroll A, Kueffner R, Eberle MA, Facio FM, Bamshad MJ, Johnson B. American journal of human genetics mosaic PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42049032" target="_blank" rel="noopener">Sensitivity of HiFi long-read genome sequencing for difficult-to-detect pathogenic variants when applied to real-world clinical laboratory samples.</a><span class="if-tag">IF=9.0</span></h3>
+  <div class="by">Devaney JM, Chong JX, Lopes PC, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>American journal of human genetics</span><span class="date">2026-04-27</span><a class="tag kw-mosaic" href="mosaic.html">mosaic</a><a class="tag kw-pacbio" href="pacbio.html">PacBio</a></div>
+  <div class="ksum"><span class="label">한글 요약</span>단읽기 시퀀싱이 검출에 약한 병원성 변이(VDD)의 임상 진단을 보강하기 위해 PacBio HiFi 장읽기 게놈 시퀀싱을 191명 prober에 적용했다. 자동 파이프라인이 481개 질병 원인 변이 중 479개(99.6%)를 검출했고, 미검출 두 건은 모자이시즘 비율이 낮은 trisomy 18(23%)과 5,594 bp 결실(13%)이었다.</div>
+  <div class="doi"><a href="https://doi.org/10.1016/j.ajhg.2026.04.001" target="_blank" rel="noopener">10.1016/j.ajhg.2026.04.001</a></div>
+</article></div>
+<footer>
+  Generated 2026-05-07 10:06 KST · <a href="https://europepmc.org" target="_blank">Europe PMC</a> · IF: JCR 2024 (curated)
+</footer>
+</div>
+<script>
+(function() {
+  var search = document.getElementById('search');
+  if (!search) return;
+  search.addEventListener('input', function(e) {
+    var q = e.target.value.toLowerCase();
+    document.querySelectorAll('.paper').forEach(function(el) {
+      var hay = (el.dataset.search || '').toLowerCase();
+      el.classList.toggle('hidden', q && hay.indexOf(q) === -1);
+    });
+  });
+})();
+</script>
+</body></html>

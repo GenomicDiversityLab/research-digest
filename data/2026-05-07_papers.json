@@ -1,0 +1,437 @@
+[
+  {
+    "id": "PPR1186515",
+    "source": "PPR",
+    "doi": "10.32942/x2pt03",
+    "title": "Status of Large Carnivores and Wild Ungulates in North and South Balaghat Forest Divisions",
+    "authorString": "Gupta D, Saxena H, Bhale S, Gautam A, Biswas S, Chanchani P.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Gupta D",
+          "firstName": "Deepti",
+          "lastName": "Gupta",
+          "initials": "D"
+        },
+        {
+          "fullName": "Saxena H",
+          "firstName": "Harshit",
+          "lastName": "Saxena",
+          "initials": "H"
+        },
+        {
+          "fullName": "Bhale S",
+          "firstName": "Sanket",
+          "lastName": "Bhale",
+          "initials": "S"
+        },
+        {
+          "fullName": "Gautam A",
+          "firstName": "Ankur",
+          "lastName": "Gautam",
+          "initials": "A"
+        },
+        {
+          "fullName": "Biswas S",
+          "firstName": "Suvankar",
+          "lastName": "Biswas",
+          "initials": "S"
+        },
+        {
+          "fullName": "Chanchani P",
+          "firstName": "Pranav",
+          "lastName": "Chanchani",
+          "initials": "P"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "The Balaghat forest circle, comprising the North and South Balaghat Forest Divisions in Madhya Pradesh, forms a vital component of the Central India Landscape. Strategically positioned between the Kanha and Pench Tiger Reserves, the region serves as a critical corridor for tiger (Panthera tigris) dispersal and long term genetic connectivity and therefore contributes significantly to the stability of tiger population across central India. Balaghat represents a mosaic of deciduous forests and agriculture. Its ecological richness is underscored by the presence of diverse flora and fauna, including apex predators such as tigers, leopards (P. pardus), and dholes (Cuon alpinus), as well as several ungulate species. This report aims to provide the density estimates of large carnivores in the South Balaghat division and prey density estimates in the Balaghat circle, along with the status of wildlife. This report also offers management oriented recommendations to support landscape level conservation planning in the region. To assess the large carnivore density and status of wildlife, 71 camera traps were deployed in November 2021 across the Lalbarra and Katangi ranges of South Balaghat, covering an area of 215km² for a period of 25 days. Individual tigers and leopards were identified, and population density was estimated using Spatially Explicit Capture-Recapture (SECR) model in R. Relative Abundance Index (RAI) maps were generated to understand the presence of other wildlife. Additionally, line transect surveys were undertaken in both North and South Balaghat divisions in December 2021 as part of the All-India Tiger Estimation (AITE) 2022 monitoring. A total of 394 transects (788km) in North Balaghat and 517 transects (1,034km) in South Balaghat were surveyed using the distance sampling method to estimate herbivore densities. There were 14 individual tigers and 27 individual leopards photo captured during the survey, with estimated densities of 3.72 ± 1.01 individuals/100km² for tigers and 6.67 ± 2.04 individuals/100km² for leopards. Twenty three mammalian species were photo captured, highlighting Balaghat’s rich biodiversity. Herbivore density analysis indicated higher prey abundance in South Balaghat (125.16 ± 7.79 individuals/km²) compared to North Balaghat (59.06 ± 3.3 individuals/km²). Among ungulates, Axis axis (chital) was the most abundant species, followed by Sus scrofa (wild pig), while Rusa unicolor (sambar) and Bos gaurus (gaur) were recorded at lower densities. The findings reinforce Balaghat’s ecological significance as a functioning tiger habitat and a crucial connectivity link between major protected areas. The area supports substantial mammalian diversity and serves as a stronghold for large carnivores, in spite of being a territorial forest. However, the report also highlights key conservation challenges, including habitat fragmentation from infrastructure development, expansion of mining operations, livestock dependency, and potential human-wildlife conflicts, that needs to be addressed.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "EcoEvoRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.32942/x2pt03"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-07",
+    "firstIndexDate": "2026-05-07",
+    "firstPublicationDate": "2026-05-06",
+    "matched_keywords": [
+      "mosaic"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1185728",
+    "source": "PPR",
+    "doi": "10.20944/preprints202605.0261.v1",
+    "title": "Overcoming Therapeutic Resistance in Head and Neck Squamous Cell Carcinoma (HNSCC)—The Role of Histone Demethylase and Methyltransferase Inhibitors",
+    "authorString": "Adamczuk K, Miziak P, Adamczuk G, Baran M, Nees M, Stepulak A.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Adamczuk K",
+          "firstName": "Kamila",
+          "lastName": "Adamczuk",
+          "initials": "K"
+        },
+        {
+          "fullName": "Miziak P",
+          "firstName": "Paulina",
+          "lastName": "Miziak",
+          "initials": "P"
+        },
+        {
+          "fullName": "Adamczuk G",
+          "firstName": "Grzegorz",
+          "lastName": "Adamczuk",
+          "initials": "G"
+        },
+        {
+          "fullName": "Baran M",
+          "firstName": "Marzena",
+          "lastName": "Baran",
+          "initials": "M"
+        },
+        {
+          "fullName": "Nees M",
+          "firstName": "Matthias",
+          "lastName": "Nees",
+          "initials": "M"
+        },
+        {
+          "fullName": "Stepulak A",
+          "firstName": "Andrzej",
+          "lastName": "Stepulak",
+          "initials": "A"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "Despite advances in multimodal treatment, head and neck squamous cell carcinoma (HNSCC) remains a major clinical problem owing to its high recurrence rate and frequent development of treatment resistance. Abnormal histone modifications, particularly lysine methylation regulated by methyltransferases (KMTs) and demethylases (KDMs), have emerged as key drivers of HNSCC initiation, progression, and cellular plasticity. This review aims to comprehensively evaluate the role of selected KMTs and KDMs in HNSCC biology, with a focus on their contribution to resistance to immunotherapy, radiotherapy, and cytotoxic chemotherapy. We summarize and critically analyze preclinical and clinical studies investigating histone methylation dynamics in HNSCC, with particular emphasis on enzymes such as KMT2C/D, EZH2, NSD1/NSD2, SMYD3, G9a/EHMT2, LSD1, KDM2A/B, KDM3, KDM4, KDM5, KDM6, KDM7, and KDM8. Particular attention is given to pharmacological approaches targeting these proteins: we discuss smallmolecule inhibitors of EZH2, LSD1, KDM4/5/6, and other KMT/KDMs that are currently in preclinical development or earlyphase clinical trials, and we highlight completed and ongoing studies testing EZH1/2 inhibitors and epigenetic combinations in patients with recurrent and metastatic HNSCC. Deregulation of specific KMTs and KDMs reshapes histone methylation at key residues, thereby controlling cell cycle progression, epithelial-mesenchymal transition (EMT), stem cell phenotypes, DNA damage responses, and interactions with the immune system in HNSCC. Targeting disrupted histone methylation pathways may partially reverse epigenetic reprogramming of HNSCC cells and represents a promising strategy to improve treatment efficacy in advanced disease. We also summarize preclinical evidence and limited clinical data on targeting histone methylation in HNSCC and discuss therapeutic implications.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "Preprints.org",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.20944/preprints202605.0261.v1"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "versionList": {
+      "version": [
+        {
+          "id": "PPR1185728",
+          "source": "PPR",
+          "firstPublishDate": "2026-05-05",
+          "versionNumber": 1,
+          "pubTypeList": {
+            "pubType": [
+              "preprint"
+            ]
+          },
+          "hasEvaluations": "N"
+        }
+      ]
+    },
+    "versionNumber": 1,
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-07",
+    "firstIndexDate": "2026-05-07",
+    "firstPublicationDate": "2026-05-05",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1185932",
+    "source": "PPR",
+    "doi": "10.20944/preprints202604.2208.v1",
+    "title": "Flavonoid O-Methyltransferases in <em>Eucalyptus</em> – Biosynthesis of Alpinetin via a Methylated Chalcone Precursor",
+    "authorString": "Zhu L, Garcia-Gimenez G, Humphries J, Stewart AW, Williams SJ, Goodger JQ.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Zhu L",
+          "firstName": "Liyuan",
+          "lastName": "Zhu",
+          "initials": "L"
+        },
+        {
+          "fullName": "Garcia-Gimenez G",
+          "firstName": "Guillermo",
+          "lastName": "Garcia-Gimenez",
+          "initials": "G"
+        },
+        {
+          "fullName": "Humphries J",
+          "firstName": "John",
+          "lastName": "Humphries",
+          "initials": "J"
+        },
+        {
+          "fullName": "Stewart AW",
+          "firstName": "Adam W.E.",
+          "lastName": "Stewart",
+          "initials": "AW"
+        },
+        {
+          "fullName": "Williams SJ",
+          "firstName": "Spencer",
+          "lastName": "Williams",
+          "initials": "SJ"
+        },
+        {
+          "fullName": "Goodger JQ",
+          "firstName": "Jason Q.D.",
+          "lastName": "Goodger",
+          "initials": "JQ"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "Methylated flavonoids are abundant phytochemicals in Eucalyptus and are of interest be-cause methylation can alter flavonoid diversity, bioactivity and stability. The enzymes re-sponsible for flavonoid methylation in eucalypts are largely uncharacterised. We used comparative leaf transcriptomics of two species with contrasting flavanone profiles, together with protein-structure-guided candidate selection, to identify prospective O-methyltransferases (OMTs) involved in methylated flavonoid biosynthesis. Five candidate OMTs from E. eugenioides were cloned, heterologously expressed and assayed against a panel of flavonoids and a chalcone precursor. The enzymes showed distinct substrate preferences and regioselectivities. EeOMT1 acted as a broad 7-O-methyltransferase, whereas EeOMT3–EeOMT5 preferentially methylated B and C-ring hydroxyl groups, with differing capacities for sequential methylations at different sites. EeOMT2 was of particu-lar interest because it effectively methylated pinocembrin chalcone to alpinetin chalcone, while only weakly converting pinocembrin to alpinetin. Expression–metabolite analyses across E. eugenioides genotypes supported roles relating to in planta accumulation of 5-O- and 7-O-methylated flavanones, for EeOMT2 and EeOMT1, respectively. These findings support a revised model in which alpinetin biosynthesis proceeds, at least in part, through methylation of a chalcone precursor before flavanone formation. This provides a foundation for elucidating flavonoid methylation pathways and for engineering tailored methylated flavonoids for industrial applications.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "Preprints.org",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.20944/preprints202604.2208.v1"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "versionList": {
+      "version": [
+        {
+          "id": "PPR1185932",
+          "source": "PPR",
+          "firstPublishDate": "2026-05-01",
+          "versionNumber": 1,
+          "pubTypeList": {
+            "pubType": [
+              "preprint"
+            ]
+          },
+          "hasEvaluations": "N"
+        }
+      ]
+    },
+    "versionNumber": 1,
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-07",
+    "firstIndexDate": "2026-05-07",
+    "firstPublicationDate": "2026-05-01",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1186243",
+    "source": "PPR",
+    "doi": "10.21203/rs.3.rs-8863642/v1",
+    "title": "First identification of HHV-6 in mesenchymal stromal cells raises safety considerations for cell therapy",
+    "authorString": "Xu C, Zhang L, Li L, Wu X, Zhao X, Xie S, Meng S, Zhang K.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Xu C",
+          "firstName": "Chongfeng",
+          "lastName": "Xu",
+          "initials": "C"
+        },
+        {
+          "fullName": "Zhang L",
+          "firstName": "Lixia",
+          "lastName": "Zhang",
+          "initials": "L"
+        },
+        {
+          "fullName": "Li L",
+          "firstName": "Lifeng",
+          "lastName": "Li",
+          "initials": "L"
+        },
+        {
+          "fullName": "Wu X",
+          "firstName": "Xueling",
+          "lastName": "Wu",
+          "initials": "X"
+        },
+        {
+          "fullName": "Zhao X",
+          "firstName": "Xiang",
+          "lastName": "Zhao",
+          "initials": "X"
+        },
+        {
+          "fullName": "Xie S",
+          "firstName": "Shumei",
+          "lastName": "Xie",
+          "initials": "S"
+        },
+        {
+          "fullName": "Meng S",
+          "firstName": "Shufang",
+          "lastName": "Meng",
+          "initials": "S"
+        },
+        {
+          "fullName": "Zhang K",
+          "firstName": "Kehua",
+          "lastName": "Zhang",
+          "initials": "K"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "<title>Abstract</title>  <p>Background:  Mesenchymal stem/stromal cells (MSCs) are increasingly applied in the treatment of graft-versus-host disease, autoimmune disorders, and severe inflammatory conditions, frequently in patients with impaired immune function, where viral safety is a critical concern. Human herpesvirus 6 (HHV-6) is distinctive in that it is widespread in the general population and has been implicated in disorders that overlap with common MSC therapeutic indications, where immunosuppression or inflammation may facilitate HHV6 reactivation. Yet, its presence in MSC products has not been reported. <h4>Methods:</h4> Clinical-grade MSC batches were initially screened for HHV6 by qPCR. The positive sample was further analyzed by metagenomic next-generation sequencing (mNGS). Viral load was quantified by droplet digital PCR (ddPCR), and its integration sites was investigated with PacBio HiFi long-reads sequencing.. <h4>Results:</h4> HHV-6 DNA was detected in an umbilical cord–derived MSC batch (MSC-1090) at passages 3, 5, and 10. mNGS identified 100–144 HHV-6B–specific reads, covering 16.44–18.89% of the viral genome, without detectable viral RNA. ddPCR demonstrated approximately one copy of HHV-6 DNA per cell across passages, indicating stable persistence. Long-read sequencing and genomic alignment suggested integration of HHV-6B into the telomeric region of chromosome 19. Conclusions  This study reports the first detection of HHV-6B DNA in a clinical-grade MSC product, revealing a previously unrecognized gap in risk-based viral safety assessment and suggesting that HHV-6 may warrant consideration in MSC quality control strategies.</p>",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "Research Square",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.21203/rs.3.rs-8863642/v1"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "versionList": {
+      "version": [
+        {
+          "id": "PPR1186243",
+          "source": "PPR",
+          "firstPublishDate": "2026-05-06",
+          "versionNumber": 1,
+          "pubTypeList": {
+            "pubType": [
+              "preprint"
+            ]
+          },
+          "hasEvaluations": "N"
+        }
+      ]
+    },
+    "versionNumber": 1,
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-07",
+    "firstIndexDate": "2026-05-07",
+    "firstPublicationDate": "2026-05-06",
+    "matched_keywords": [
+      "PacBio"
+    ],
+    "matched_journals": []
+  }
+]

@@ -1,0 +1,252 @@
+[
+  {
+    "id": "PPR1187450",
+    "source": "PPR",
+    "doi": "10.20944/preprints202605.0428.v1",
+    "title": "Integrative Epigenomics: Bioinformatics Strategies for Multi-Omics Data Analysis in Health and Disease",
+    "authorString": "Baruri S, Batra L, Adhikari S, El-Baz A.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Baruri S",
+          "firstName": "Shikhi",
+          "lastName": "Baruri",
+          "initials": "S"
+        },
+        {
+          "fullName": "Batra L",
+          "firstName": "Lalit",
+          "lastName": "Batra",
+          "initials": "L"
+        },
+        {
+          "fullName": "Adhikari S",
+          "firstName": "Sohome",
+          "lastName": "Adhikari",
+          "initials": "S"
+        },
+        {
+          "fullName": "El-Baz A",
+          "firstName": "Ayman",
+          "lastName": "El-Baz",
+          "initials": "A"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "<h4>Background: </h4> Epigenomics has emerged as an essential technique of modern molecular biology, providing a critical layer of gene regulation. DNA methylation, histone modi-fications and alterations to the chromatin accessibility of DNA have been widely associated with complex diseases including cancer. The most recent developments in high-throughput sequencing technology have made it possible to profile epigenetic landscapes genomically on a large scale. However, these techniques often mask endogenous cellular heterogeneity essential for understanding complex disease stages. <h4>Objective:</h4> The purpose of the review is to assemble accessible tools and algorithms to conduct an Epigenomic study in the field of biomedical research, from bulk tissue analysis to the high-resolution frontier of single-cell epigenomics. <h4>Methods:</h4> We performed a comparative analysis of common methods used to analyze DNA methylation, chromatin immunoprecipitation, sequencing analysis and chromatin accessibility profiling. We described the standardized bioinformatics tools and pipelines required to transform raw sequencing data into mechanistic biological understanding, highlight-ing the role of quality control, peak calling, and differential analysis. Furthermore, we explore the integration of epigenomic with other \"omics\" layers through advanced computational frameworks, including machine learning and network-based modeling. <h4>Results:</h4> These advanced multi-omics techniques demonstrate efficient clinical utility by enabling biomarker discovery, disease subtyping, and the identification of novel therapeutic targets. <h4>Conclusions:</h4> Despite challenges with data complexity, the fusion of Artificial Intelligence (AI) and single-cell technologies will speed up the transition toward precision medicine. This review serves as a blueprint for providing the technical and computational complexities of epigenomics to uncover the mechanisms controlling human health and disease.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "Preprints.org",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.20944/preprints202605.0428.v1"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "versionList": {
+      "version": [
+        {
+          "id": "PPR1187450",
+          "source": "PPR",
+          "firstPublishDate": "2026-05-07",
+          "versionNumber": 1,
+          "pubTypeList": {
+            "pubType": [
+              "preprint"
+            ]
+          },
+          "hasEvaluations": "N"
+        }
+      ]
+    },
+    "versionNumber": 1,
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-10",
+    "firstIndexDate": "2026-05-10",
+    "firstPublicationDate": "2026-05-07",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1187619",
+    "source": "PPR",
+    "doi": "10.21203/rs.3.rs-9452128/v1",
+    "title": "Time-dependent prognostic value of automated Ki67 assessment and its integration with molecular risk profiling in WHO grade 2 meningioma",
+    "authorString": "Voßbeck L, Ehret F, Perez E, Radbruch H, Hain EG, Schmid S, Onken J, Bohn M, Salman N, Schweizer L, Capper D, Armbrust M, Kaul D.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Voßbeck L",
+          "firstName": "Luisa",
+          "lastName": "Voßbeck",
+          "initials": "L"
+        },
+        {
+          "fullName": "Ehret F",
+          "firstName": "Felix",
+          "lastName": "Ehret",
+          "initials": "F"
+        },
+        {
+          "fullName": "Perez E",
+          "firstName": "Eilis",
+          "lastName": "Perez",
+          "initials": "E"
+        },
+        {
+          "fullName": "Radbruch H",
+          "firstName": "Helena",
+          "lastName": "Radbruch",
+          "initials": "H"
+        },
+        {
+          "fullName": "Hain EG",
+          "firstName": "Elisabeth",
+          "lastName": "Hain",
+          "initials": "EG"
+        },
+        {
+          "fullName": "Schmid S",
+          "firstName": "Simone",
+          "lastName": "Schmid",
+          "initials": "S"
+        },
+        {
+          "fullName": "Onken J",
+          "firstName": "Julia",
+          "lastName": "Onken",
+          "initials": "J"
+        },
+        {
+          "fullName": "Bohn M",
+          "firstName": "Merten",
+          "lastName": "Bohn",
+          "initials": "M"
+        },
+        {
+          "fullName": "Salman N",
+          "firstName": "Nabiha",
+          "lastName": "Salman",
+          "initials": "N"
+        },
+        {
+          "fullName": "Schweizer L",
+          "firstName": "Leonille",
+          "lastName": "Schweizer",
+          "initials": "L"
+        },
+        {
+          "fullName": "Capper D",
+          "firstName": "David",
+          "lastName": "Capper",
+          "initials": "D"
+        },
+        {
+          "fullName": "Armbrust M",
+          "firstName": "Moritz",
+          "lastName": "Armbrust",
+          "initials": "M"
+        },
+        {
+          "fullName": "Kaul D",
+          "firstName": "David",
+          "lastName": "Kaul",
+          "initials": "D"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "<title>Abstract</title>  <p>  WHO grade 2 meningiomas exhibit highly heterogeneous clinical courses. While the Ki67 proliferation index is a standard biomarker, its prognostic utility remains limited by methodological inconsistency and potential time-dependent dynamics. We evaluated an automated, artifact-adjusted Ki67 assessment and its integration with molecular risk profiling. 98 WHO grade 2 meningiomas (WHO 2021) were analyzed using an automated QuPath pipeline incorporating the HistoART deep-learning framework for artifact exclusion. Molecular risk was defined by methylation and copy number profiling to calculate the integrated molecular-morphologic risk score by Maas et al. We employed extended Cox models to account for proportional hazards violations. Automated Ki67 values were significantly lower than routine pathological estimates (median 3.23% vs. 10%;  <italic>p</italic>   < 0.001) and correlated modestly with integrated risk scores (ρ = 0.26,  <italic>p</italic>   = 0.009). We identified a biphasic risk pattern: within the first 38 postoperative months, an automated Ki67 > 3.62% was a strong independent predictor for local recurrence (HR 5.06,  <italic>p</italic>   < 0.001) and progression-free survival (HR 4.15,  <italic>p</italic>   = 0.002), remaining significant alongside subtotal resection and the integrated risk group. Beyond 38 months, prognostic impact attenuated. Ki67 and the integrated molecular risk score contributed independently in multivariable models, suggesting complementary biological dimensions. Automated, artifact-adjusted Ki67 quantification provides time-dependent, independent prognostic information in WHO grade 2 meningioma, complementary to molecular risk stratification. It may serve as a cost-effective surveillance marker – both as an adjunct to molecular profiling and as a standalone tool where molecular testing is unavailable.  </p>",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "Research Square",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.21203/rs.3.rs-9452128/v1"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "versionList": {
+      "version": [
+        {
+          "id": "PPR1187619",
+          "source": "PPR",
+          "firstPublishDate": "2026-05-09",
+          "versionNumber": 1,
+          "pubTypeList": {
+            "pubType": [
+              "preprint"
+            ]
+          },
+          "hasEvaluations": "N"
+        }
+      ]
+    },
+    "versionNumber": 1,
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-10",
+    "firstIndexDate": "2026-05-10",
+    "firstPublicationDate": "2026-05-09",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  }
+]

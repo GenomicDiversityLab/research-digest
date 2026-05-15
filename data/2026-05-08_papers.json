@@ -1,0 +1,352 @@
+[
+  {
+    "id": "PPR1186609",
+    "source": "PPR",
+    "doi": "10.20944/preprints202605.0280.v1",
+    "title": "Whole-Genome Sequencing–Based Characterization of HIV-1 in a Tertiary-Care Hospital in Mexico: Drug-Resistance Mutations and Genetic Diversity",
+    "authorString": "García-Moncada E, Cortés-Malagón EM, Pineda-Migranas JA, Ruiz Santana M, Cortés-Ortíz IA, Escutia Domínguez JF, Bravata-Alcántara DA, Acosta-Altamirano G, Razo-González SD, Castillo Mendez MA, Sierra-Martínez M, Bravata-Alcántara JC.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "García-Moncada E",
+          "firstName": "Eduardo",
+          "lastName": "García-Moncada",
+          "initials": "E"
+        },
+        {
+          "fullName": "Cortés-Malagón EM",
+          "firstName": "Enoc Mariano",
+          "lastName": "Cortés-Malagón",
+          "initials": "EM"
+        },
+        {
+          "fullName": "Pineda-Migranas JA",
+          "firstName": "Jesús Alejandro",
+          "lastName": "Pineda-Migranas",
+          "initials": "JA"
+        },
+        {
+          "fullName": "Ruiz Santana M",
+          "firstName": "Montserrat",
+          "lastName": "Ruiz Santana",
+          "initials": "M"
+        },
+        {
+          "fullName": "Cortés-Ortíz IA",
+          "firstName": "Iliana Alejandra",
+          "lastName": "Cortés-Ortíz",
+          "initials": "IA"
+        },
+        {
+          "fullName": "Escutia Domínguez JF",
+          "firstName": "José Francisco",
+          "lastName": "Escutia Domínguez",
+          "initials": "JF"
+        },
+        {
+          "fullName": "Bravata-Alcántara DA",
+          "firstName": "Daniel Agustín",
+          "lastName": "Bravata-Alcántara",
+          "initials": "DA"
+        },
+        {
+          "fullName": "Acosta-Altamirano G",
+          "firstName": "Gustavo",
+          "lastName": "Acosta-Altamirano",
+          "initials": "G"
+        },
+        {
+          "fullName": "Razo-González SD",
+          "firstName": "Saúl David",
+          "lastName": "Razo-González",
+          "initials": "SD"
+        },
+        {
+          "fullName": "Castillo Mendez MA",
+          "firstName": "Manuel Alberto",
+          "lastName": "Castillo Mendez",
+          "initials": "MA"
+        },
+        {
+          "fullName": "Sierra-Martínez M",
+          "firstName": "Mónica",
+          "lastName": "Sierra-Martínez",
+          "initials": "M"
+        },
+        {
+          "fullName": "Bravata-Alcántara JC",
+          "firstName": "Juan Carlos",
+          "lastName": "Bravata-Alcántara",
+          "initials": "JC"
+        }
+      ]
+    },
+    "authorIdList": {
+      "authorId": [
+        {
+          "type": "ORCID",
+          "value": "0009-0004-8954-3243"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "Human immunodeficiency virus type 1 exhibits extensive genetic diversity, which has important implications for transmission dynamics, disease progression, and the effectiveness of antiretroviral therapy. In Mexico, molecular surveillance has largely relied on partial pol gene sequencing, limiting the detection of recombination events and resistance mutations outside canonical regions. In this study, we performed near-full-length whole-genome sequencing of HIV-1 from 40 treatment-naïve adults receiving care at a tertiary-care hospital in Mexico to characterize drug-resistance mutations, viral genetic diversity, and recombinant forms. Viral RNA was extracted from plasma and sequenced on an Illumina platform, followed by bioinformatic processing and interpretation using the DeepChek pipeline for subtype classification, recombinant profiling, and identification of drug-resistance mutations. Drug-resistance mutations were identified in 6/40 (15.0%) participants. NNRTI-associated DRMs were identified in 2/40 patients (5.0%), whereas NRTI- and protease inhibitor-associated DRMs were each identified in 1/40 patient (2.5%). In addition, accessory INSTI-associated substitutions were detected in 2/40 patients (5.0%). No statistically significant differences were observed between patients with and without DRMs with respect to age, sex, or plasma viral load. Furthermore, DRMs were distributed across all recombinant categories, with no significant association between recombinant profile and DRM presence (p = 0.97). Non-B subtypes and recombinant forms predominated (82.5%), while subtype B accounted for 17.5% of cases. Extensive intergenic recombination was observed, with discordant subtype assignments across gag, pol, and env regions, consistent with mosaic viral genomes. Multiple circulating recombinant forms, including CRF03_AB, CRF07_BC, CRF28_BF, and CRF39_BF, were identified, alongside a predominance of BF-related recombinants. In addition, several unique recombinant forms with complex mosaic structures were detected, reflecting ongoing recombination and viral evolution. These findings highlight the high genetic complexity of HIV-1 in this population, characterized by a predominance of recombinant forms and extensive genomic mosaicism. The detection of DRMs across diverse genetic backgrounds supports the value of baseline resistance testing and suggests that broader genomic surveillance may improve HIV-1 molecular epidemiology monitoring in Mexico.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "Preprints.org",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.20944/preprints202605.0280.v1"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "versionList": {
+      "version": [
+        {
+          "id": "PPR1186609",
+          "source": "PPR",
+          "firstPublishDate": "2026-05-06",
+          "versionNumber": 1,
+          "pubTypeList": {
+            "pubType": [
+              "preprint"
+            ]
+          },
+          "hasEvaluations": "N"
+        }
+      ]
+    },
+    "versionNumber": 1,
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-08",
+    "firstIndexDate": "2026-05-08",
+    "firstPublicationDate": "2026-05-06",
+    "matched_keywords": [
+      "mosaic"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1186883",
+    "source": "PPR",
+    "doi": "10.21203/rs.3.rs-9477401/v1",
+    "title": "EvoPlantMeth: an interpretable deep learning framework reveals DNA methylation evolution and functional elements in plants",
+    "authorString": "Liu Q, Wang Z, Cheng X, Chen Q, Zhang Z, He H.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Liu Q",
+          "firstName": "Qikun",
+          "lastName": "Liu",
+          "initials": "Q"
+        },
+        {
+          "fullName": "Wang Z",
+          "firstName": "Zejia",
+          "lastName": "Wang",
+          "initials": "Z"
+        },
+        {
+          "fullName": "Cheng X",
+          "firstName": "Xuanzhi",
+          "lastName": "Cheng",
+          "initials": "X"
+        },
+        {
+          "fullName": "Chen Q",
+          "firstName": "Qi",
+          "lastName": "Chen",
+          "initials": "Q"
+        },
+        {
+          "fullName": "Zhang Z",
+          "firstName": "Zhiqiang",
+          "lastName": "Zhang",
+          "initials": "Z"
+        },
+        {
+          "fullName": "He H",
+          "firstName": "Hang",
+          "lastName": "He",
+          "initials": "H"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "<title>Abstract</title>  <p>  DNA methylation is a fundamental epigenetic modification in plants. While deep learning has improved epigenomic predictions, current models lack a broad evolutionary perspective and struggle to capture plant-specific sequence patterns and contextual dependencies. To address this, we assembled a phylogenetically curated DNA methylation atlas across 94 plant species and developed EvoPlantMeth, an interpretable deep learning framework trained on over 1.82 billion tokens. By integrating local DNA sequences with both the methylation status and physical distance of adjacent cytosines, EvoPlantMeth achieves high cross-species generalizability and reliably predicts continuous methylation levels across all sequence contexts. Using gradient-based methods, we interpreted the model’s learned features to uncover key epigenetic determinants. Specifically, we identified distinct local sequence preferences and quantified the influence range of neighboring methylation. Crucially, we established a framework to screen functional regulatory elements by integrating two quantitative parameters: epigenetic plasticity, which uses predictive variance to capture dynamic variation, and regulatory impact, which employs gradient sensitivity to measure influence on neighboring methylation states. Applying this approach to alfalfa (  <italic>Medicago sativa</italic>  ), we successfully identified functional epigenetic loci governing regenerative capacity. Ultimately, EvoPlantMeth provides a computational framework for characterizing DNA methylation across diverse species, offering insights into plant epigenetic evolution.  </p>",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "Research Square",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.21203/rs.3.rs-9477401/v1"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "versionList": {
+      "version": [
+        {
+          "id": "PPR1186883",
+          "source": "PPR",
+          "firstPublishDate": "2026-05-07",
+          "versionNumber": 1,
+          "pubTypeList": {
+            "pubType": [
+              "preprint"
+            ]
+          },
+          "hasEvaluations": "N"
+        }
+      ]
+    },
+    "versionNumber": 1,
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-08",
+    "firstIndexDate": "2026-05-08",
+    "firstPublicationDate": "2026-05-07",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1186593",
+    "source": "PPR",
+    "doi": "10.20944/preprints202605.0366.v1",
+    "title": "World Models for Biomedicine: A Steerability Framework",
+    "authorString": "Xiong J.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Xiong J",
+          "firstName": "Jianghui",
+          "lastName": "Xiong",
+          "initials": "J"
+        }
+      ]
+    },
+    "dataLinksTagsList": {
+      "dataLinkstag": [
+        "altmetrics"
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "Recent medical world-model rubrics have mainly described a linear progression from representation and forecasting to action-conditioned simulation, counterfactual evaluation, and planning/control. This Perspective starts from a different goal: biomedical world models should not merely predict likely trajectories, but help make biological trajectories steerable. Steerability requires five linked functions: defining state, measuring state, specifying intervention-induced state movement, simulating alternative transitions, and inspecting deviations. We therefore propose the Deductively Constrained Capomics World Model, a closed-loop architecture organized around five corresponding constraint checkpoints: CP1 state representation, CP2 intrinsic-capability quantification, CP3 intervention-response semantics, CP4 counterfactual transition, and CP5 quality-control feedback. The framework shifts biomedical world modeling from a “what-if” simulator toward a quality-controlled “why-not” steering system, in which failed or unexpected transitions can be traced to state measurement, intervention specification, module response, state transition, or downstream phenotypic propagation. Within this architecture, module-level intrinsic capability (mIC) provides the proposed state variable, and Capomics provides its measurement framework. In the current prototype, DNA methylation is used to estimate module-level mIC values and assemble them into an mIC vector, while other omics and physiological readouts may be incorporated in future implementations. The accompanying depression case study illustrates how the cycle can be instantiated as a thought experiment for state-matched intervention reasoning and deviation inspection. The framework does not claim validated treatment planning or guaranteed efficacy; it is intended as a hypothesis-generating scaffold for biomedical world models, longitudinal intervention studies, and future biomedical applications.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "Preprints.org",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.20944/preprints202605.0366.v1"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "Y",
+    "license": "cc by",
+    "versionList": {
+      "version": [
+        {
+          "id": "PPR1186593",
+          "source": "PPR",
+          "firstPublishDate": "2026-05-07",
+          "versionNumber": 1,
+          "pubTypeList": {
+            "pubType": [
+              "preprint"
+            ]
+          },
+          "hasEvaluations": "N"
+        }
+      ]
+    },
+    "versionNumber": 1,
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-08",
+    "firstIndexDate": "2026-05-08",
+    "firstPublicationDate": "2026-05-07",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  }
+]

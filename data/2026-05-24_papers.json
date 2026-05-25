@@ -1,0 +1,2808 @@
+[
+  {
+    "id": "PPR1237346",
+    "source": "PPR",
+    "doi": "10.64898/2026.05.22.727136",
+    "title": "Extracellular vesicles associate with infectious geminiviral particles in the apoplast of infected plants.",
+    "authorString": "Morales-Martinez P, Cana-Quijada P, Koch BL, Marulanda-Pulgarin J, Lozano-Duran R, Innes RW, Bejarano E, Castillo AG.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Morales-Martinez P",
+          "firstName": "Pablo",
+          "lastName": "Morales-Martinez",
+          "initials": "P"
+        },
+        {
+          "fullName": "Cana-Quijada P",
+          "firstName": "Pepe",
+          "lastName": "Cana-Quijada",
+          "initials": "P"
+        },
+        {
+          "fullName": "Koch BL",
+          "firstName": "Benjamin Levy",
+          "lastName": "Koch",
+          "initials": "BL"
+        },
+        {
+          "fullName": "Marulanda-Pulgarin J",
+          "firstName": "Jeronimo",
+          "lastName": "Marulanda-Pulgarin",
+          "initials": "J"
+        },
+        {
+          "fullName": "Lozano-Duran R",
+          "firstName": "Rosa",
+          "lastName": "Lozano-Duran",
+          "initials": "R"
+        },
+        {
+          "fullName": "Innes RW",
+          "firstName": "Roger",
+          "lastName": "Innes",
+          "initials": "RW"
+        },
+        {
+          "fullName": "Bejarano E",
+          "firstName": "Eduardo",
+          "lastName": "Bejarano",
+          "initials": "E"
+        },
+        {
+          "fullName": "Castillo AG",
+          "firstName": "Araceli",
+          "lastName": "Castillo",
+          "initials": "AG"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "Plant viruses have evolved diverse strategies to facilitate their movement and survival within the host. Among them, geminiviruses co-opt host cellular machinery to replicate and disseminate. Traditionally, viral propagation has been associated with intercellular symplastic trafficking mediated by plasmodesmata and viral movement proteins. However, recent evidence demonstrated that the plant RNA virus turnip mosaic virus (TuMV) components are associated with extracellular vesicles (EVs). EVs are membrane-bound structures secreted to the extracellular space to potentially mediate several plant-pathogen interactions such as cross-kingdom RNA interference or the delivery of stress response proteins. In animals, EVs facilitate viral transmission both within the host and across species, but knowledge about their potential roles in plant viral infection is scarce. In this study, we demonstrate that EVs isolated from geminivirus-infected plants contain complete viral genomes and both capsid and viral movement proteins. Furthermore, these EV fractions were demonstrated to be infectious when mechanically inoculated onto naÏve plants. This discovery suggests that EVs may serve as alternative carriers for geminivirus components, enabling long-range transport or potentially modulating host immune responses, and highlights geminiviral capacity to transverse membrane boundaries, essential for circulative arbovirus propagation in their insect vectors.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.05.22.727136"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-24",
+    "firstIndexDate": "2026-05-24",
+    "firstPublicationDate": "2026-05-23",
+    "matched_keywords": [
+      "mosaic"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42176353",
+    "source": "MED",
+    "pmid": "42176353",
+    "doi": "10.1021/acssynbio.5c00910",
+    "title": "Receptor-Guided AAV Tropism Engineering via MATCH. ",
+    "authorString": "Graham N, Kumar S, Rainaldi J, Yang S, Portell A, Santoso B, Mali P.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Graham N",
+          "firstName": "Nolan",
+          "lastName": "Graham",
+          "initials": "N",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0009-0009-4566-842X"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Bioengineering, University of California San Diego, La Jolla, California 92093, United States."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Kumar S",
+          "firstName": "Satheesh",
+          "lastName": "Kumar",
+          "initials": "S",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Bioengineering, University of California San Diego, La Jolla, California 92093, United States."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Rainaldi J",
+          "firstName": "Joseph",
+          "lastName": "Rainaldi",
+          "initials": "J",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Bioengineering, University of California San Diego, La Jolla, California 92093, United States."
+              },
+              {
+                "affiliation": "Biomedical Sciences Program, University of California San Diego, La Jolla, California 92093, United States."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Yang S",
+          "firstName": "Seoin",
+          "lastName": "Yang",
+          "initials": "S",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "School of Biological Sciences, University of California San Diego, La Jolla, California 92093, United States."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Portell A",
+          "firstName": "Andrew",
+          "lastName": "Portell",
+          "initials": "A",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Bioengineering, University of California San Diego, La Jolla, California 92093, United States."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Santoso B",
+          "firstName": "Billy",
+          "lastName": "Santoso",
+          "initials": "B",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "School of Biological Sciences, University of California San Diego, La Jolla, California 92093, United States."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Mali P",
+          "firstName": "Prashant",
+          "lastName": "Mali",
+          "initials": "P",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0002-3383-1287"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Bioengineering, University of California San Diego, La Jolla, California 92093, United States."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "authorIdList": {
+      "authorId": [
+        {
+          "type": "ORCID",
+          "value": "0000-0002-3383-1287"
+        },
+        {
+          "type": "ORCID",
+          "value": "0009-0009-4566-842X"
+        }
+      ]
+    },
+    "journalInfo": {
+      "journalIssueId": 4188048,
+      "dateOfPublication": "2026 May",
+      "monthOfPublication": 5,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-05-01",
+      "journal": {
+        "title": "ACS synthetic biology",
+        "medlineAbbreviation": "ACS Synth Biol",
+        "isoabbreviation": "ACS Synth Biol",
+        "issn": "2161-5063",
+        "essn": "2161-5063",
+        "nlmid": "101575075"
+      }
+    },
+    "pubYear": "2026",
+    "abstractText": "Precise control over viral tropism remains a major challenge in the development of gene delivery technologies. We present MATCH (Modulation of AAV Tropism through Conjugation to Homing proteins), a modular biochemical method that enables programmable, receptor-guided retargeting of adeno-associated viruses (AAVs) through site-specific covalent protein conjugation. By incorporating a SpyTag peptide motif into selected AAV capsid loops, MATCH allows one-step, stoichiometrically defined attachment of recombinant SpyCatcher-linked targeting proteins to the viral surface. Using mosaic AAV-DJ and AAV9 capsids with controlled SpyTag incorporation, we achieve efficient assembly and tunable ligand display. MATCH-AAVs conjugated to an anti-CD3 single-chain antibody efficiently activate and transduce resting human T cells within mixed PBMC populations in vitro, achieving transduction levels of up to ∼58% of the total PBMCs. Conjugation to transferrin receptor (TfR1)-binding proteins yielded enhanced brain transduction in vivo, with murine TfR1-targeted MATCH-AAV9 exhibiting up to an 88-fold increase in brain expression relative to wild-type AAV9. Human TfR1-targeted vectors similarly enabled robust, receptor-dependent transduction both in vitro and in humanized mouse models. Both TfR1-targeted vectors enabled widespread transduction of the parenchyma, consistent with TfR1-mediated crossing of the blood-brain barrier. Finally, we establish a streamlined one-pot \"Mix-and-MATCH\" production strategy in which capsid and targeting ligands are coexpressed during vector generation, yielding functional, targeted AAVs at titers comparable to conventional production. This simple and generalizable synthetic-biology approach provides a versatile toolkit for rational AAV tropism engineering, offering a scalable route to custom vector design for research and therapeutic applications.",
+    "affiliation": "Department of Bioengineering, University of California San Diego, La Jolla, California 92093, United States.",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Journal Article"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1021/acssynbio.5c00910"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-23",
+    "firstIndexDate": "2026-05-24",
+    "dateOfRevision": "2026-05-23",
+    "electronicPublicationDate": "2026-05-23",
+    "firstPublicationDate": "2026-05-23",
+    "matched_keywords": [
+      "mosaic"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1237532",
+    "source": "PPR",
+    "doi": "10.64898/2026.05.21.726978",
+    "title": "SnoRNA Expression and RNA 2′-O-Methylation in  <i>Drosophila melanogaster</i>  S2 Cells",
+    "authorString": "Ye X, Liu Y, Olson S, Zhan L, Carmichael GG, Graveley B.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Ye X",
+          "firstName": "Xuan",
+          "lastName": "Ye",
+          "initials": "X"
+        },
+        {
+          "fullName": "Liu Y",
+          "firstName": "Yaling",
+          "lastName": "Liu",
+          "initials": "Y"
+        },
+        {
+          "fullName": "Olson S",
+          "firstName": "Sara",
+          "lastName": "Olson",
+          "initials": "S"
+        },
+        {
+          "fullName": "Zhan L",
+          "firstName": "Lijun",
+          "lastName": "Zhan",
+          "initials": "L"
+        },
+        {
+          "fullName": "Carmichael GG",
+          "firstName": "Gordon",
+          "lastName": "Carmichael",
+          "initials": "GG"
+        },
+        {
+          "fullName": "Graveley B",
+          "firstName": "Brenton",
+          "lastName": "Graveley",
+          "initials": "B"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "Small nucleolar RNAs (snoRNAs) are a class of non-coding RNAs that play critical roles in guiding 2′-O-methylation (Nm) and pseudouridylation modifications of RNAs. In  Drosophila melanogaster , snoRNAs undergo dynamic changes in expression during development. In this study, we identified 239 snoRNAs that are robustly expressed in  Drosophila S2 cells, representing 87% of all annotated  Drosophila snoRNAs. Given that box C/D snoRNAs guide site-specific 2′-O-methylation (Nm) of RNA, we next characterized the Nm landscape of S2 cells using RibOxi-seq2, a high-throughput approach capable of detecting Nm modifications with single-nucleotide resolution. RibOxi-seq2 revealed 17 Nm sites in 18S rRNA with a 94% concordance to previously reported RiboMeth-Seq data. In 28S rRNA, 30 Nm sites were identified, corresponding to an 71.4% overlap with established references. Additionally, we detected both a known Nm site (Gm74) and a novel site (Um66) in 5.8S rRNA, further validating the sensitivity and specificity of the approach. RibOxi-seq2 further identified Nm sites in small nuclear RNAs (snRNAs), expanding the annotation of modified non-coding RNAs. Additionally, the method revealed Nm modifications within internal regions of mRNAs. In total, we detected Nm modifications in 2,057 unique mRNAs, underscoring the widespread presence of this epitranscriptomic modification in coding transcripts. Strikingly, although we could not identify any snoRNAs predicted to guide the mRNA 2′-O-methylation modifications by canonical mechanisms, we identified strong consensus sequences surrounding many of these mRNA sites. Together, our findings not only expand the known landscape of Nm-modified RNAs but also highlight the robustness of RibOxi-seq2 for transcriptome-wide RNA modification profiling. Collectively, this study presents a comprehensive atlas of snoRNA expression and 2′-O-methylation sites in  Drosophila S2 cells, offering valuable insights into the epitranscriptomic landscape orchestrated by snoRNAs.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.05.21.726978"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-24",
+    "firstIndexDate": "2026-05-24",
+    "firstPublicationDate": "2026-05-22",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42177276",
+    "source": "MED",
+    "pmid": "42177276",
+    "doi": "10.1038/s41598-026-54670-2",
+    "title": "The implications of TMSB4X in TIM3 hypermethylation and CD8<sup>+</sup> T cell exhaustion in diffuse large B-cell lymphoma. ",
+    "authorString": "Yang Y, Qin Z, Liu X, Yang H, Wang X, Mai C, Jian S, Zhu Q.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Yang Y",
+          "firstName": "Yiming",
+          "lastName": "Yang",
+          "initials": "Y",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pathology, Affiliated Hospital of North Sichuan Medical College, No. 1 Maoyuan Nan road, Nanchong, 637000, Sichuan, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Qin Z",
+          "firstName": "Zujun",
+          "lastName": "Qin",
+          "initials": "Z",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pathology, Affiliated Hospital of North Sichuan Medical College, No. 1 Maoyuan Nan road, Nanchong, 637000, Sichuan, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Liu X",
+          "firstName": "Xin",
+          "lastName": "Liu",
+          "initials": "X",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pathology, Affiliated Hospital of North Sichuan Medical College, No. 1 Maoyuan Nan road, Nanchong, 637000, Sichuan, China."
+              },
+              {
+                "affiliation": "Institute of Basic Medicine, North Sichuan Medical College, Nanchong, 637000, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Yang H",
+          "firstName": "Huimin",
+          "lastName": "Yang",
+          "initials": "H",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pathology, Affiliated Hospital of North Sichuan Medical College, No. 1 Maoyuan Nan road, Nanchong, 637000, Sichuan, China."
+              },
+              {
+                "affiliation": "Institute of Basic Medicine, North Sichuan Medical College, Nanchong, 637000, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Wang X",
+          "firstName": "Xiaolin",
+          "lastName": "Wang",
+          "initials": "X",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pathology, Affiliated Hospital of North Sichuan Medical College, No. 1 Maoyuan Nan road, Nanchong, 637000, Sichuan, China."
+              },
+              {
+                "affiliation": "Institute of Basic Medicine, North Sichuan Medical College, Nanchong, 637000, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Mai C",
+          "firstName": "Chao",
+          "lastName": "Mai",
+          "initials": "C",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Emergency, Affiliated Hospital of North Sichuan Medical College, Nanchong, 637000, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Jian S",
+          "firstName": "Shunhai",
+          "lastName": "Jian",
+          "initials": "S",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pathology, Affiliated Hospital of North Sichuan Medical College, No. 1 Maoyuan Nan road, Nanchong, 637000, Sichuan, China."
+              },
+              {
+                "affiliation": "Institute of Basic Medicine, North Sichuan Medical College, Nanchong, 637000, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zhu Q",
+          "firstName": "Qiqi",
+          "lastName": "Zhu",
+          "initials": "Q",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pathology, Affiliated Hospital of North Sichuan Medical College, No. 1 Maoyuan Nan road, Nanchong, 637000, Sichuan, China. 359059927@qq.com."
+              },
+              {
+                "affiliation": "Institute of Basic Medicine, North Sichuan Medical College, Nanchong, 637000, China. 359059927@qq.com."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "journalIssueId": 4184498,
+      "dateOfPublication": "2026 May",
+      "monthOfPublication": 5,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-05-01",
+      "journal": {
+        "title": "Scientific reports",
+        "medlineAbbreviation": "Sci Rep",
+        "essn": "2045-2322",
+        "issn": "2045-2322",
+        "isoabbreviation": "Sci Rep",
+        "nlmid": "101563288"
+      }
+    },
+    "pubYear": "2026",
+    "abstractText": "Epigenetic modifications of immune checkpoints (IC) are crucial for immune checkpoint blockade (ICB) efficacy. TIM3 accelerates CD8+ T cell exhaustion in diffuse large B-cell lymphoma (DLBCL), yet its epigenetic regulation remains unclear. We analyzed CD8+ T cell localization and TIM3 expression using single-cell RNA sequencing (scRNA-seq) and immunofluorescence. DNA methylation analysis evaluated the epigenetic status of typical IC genes across TIM3 expression groups. Integrating genetic mutation, DNA methylation, scRNA-seq, and bulk RNA sequencing data identified a hub gene for TIM3 regulation. The biological and clinical significance of this hub gene, including impacts on immune activity, tumor microenvironment composition, clinicopathological features, prognosis, ICB response, and potential therapeutic options, was comprehensively investigated using scRNA-seq, bulk RNA sequencing data, and immunohistochemistry. Differentially methylated positions were identified in key exhaustion signature genes (TIM3, PD1, CTLA4, LAG3, STAT1) between TIM3-high and TIM3-low groups. Hypermethylation of TIM3's 3'UTR region correlated with transcriptional upregulation, suggesting positive regulation through TMSB4X loss, frequently altered by somatic mutation. Decreased TMSB4X expression is associated with epigenetic dysregulation, impaired immune function, aggressive clinicopathological features, poor prognosis, and inferior chemotherapy response. Patients with low TMSB4X may benefit from ICB therapy and certain epigenetic-targeting agents. TMSB4X links mutation and epigenetics in TIM3-induced CD8+ T cell exhaustion, providing a prognostic biomarker and potential therapeutic strategies for DLBCL.",
+    "affiliation": "Department of Pathology, Affiliated Hospital of North Sichuan Medical College, No. 1 Maoyuan Nan road, Nanchong, 637000, Sichuan, China.",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Journal Article"
+      ]
+    },
+    "grantsList": {
+      "grant": [
+        {
+          "grantId": "CBY23-QDA10",
+          "agency": "Scientific Research Startup Foundation for Doctor, North Sichuan Medical College",
+          "orderIn": 0
+        },
+        {
+          "grantId": "2025ZNSFSC1697",
+          "agency": "Sichuan Science and Technology Program",
+          "orderIn": 0
+        },
+        {
+          "grantId": "CBY23-QNA35",
+          "agency": "Scientific Research and Development Fund Project, North Sichuan Medical College",
+          "orderIn": 0
+        }
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1038/s41598-026-54670-2"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-23",
+    "firstIndexDate": "2026-05-24",
+    "dateOfRevision": "2026-05-23",
+    "electronicPublicationDate": "2026-05-23",
+    "firstPublicationDate": "2026-05-23",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42176292",
+    "source": "MED",
+    "pmid": "42176292",
+    "doi": "10.1159/000552709",
+    "title": "Epigenetic Reactivation of SOCS-3 and Inhibition of ERK1/2 Underlie Thymoquinone-Induced Apoptosis in a Chronic Myeloid Leukemia Xenograft Model. ",
+    "authorString": "Al-Rawashde FA, Alqaraleh M, Hasan D, Elsayed A, Amiludin NAAM, Al-Suede FSR, Al-Jamal HAN.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Al-Rawashde FA",
+          "firstName": "Futoon Abedrabbu",
+          "lastName": "Al-Rawashde",
+          "initials": "FA"
+        },
+        {
+          "fullName": "Alqaraleh M",
+          "firstName": "Moath",
+          "lastName": "Alqaraleh",
+          "initials": "M"
+        },
+        {
+          "fullName": "Hasan D",
+          "firstName": "Diya",
+          "lastName": "Hasan",
+          "initials": "D"
+        },
+        {
+          "fullName": "Elsayed A",
+          "firstName": "Abdullrahman",
+          "lastName": "Elsayed",
+          "initials": "A"
+        },
+        {
+          "fullName": "Amiludin NAAM",
+          "firstName": "Nur Anis Ashiela Mohd",
+          "lastName": "Amiludin",
+          "initials": "NAAM"
+        },
+        {
+          "fullName": "Al-Suede FSR",
+          "firstName": "Fouad Saleih Resq",
+          "lastName": "Al-Suede",
+          "initials": "FSR"
+        },
+        {
+          "fullName": "Al-Jamal HAN",
+          "firstName": "Hamid Ali Nagi",
+          "lastName": "Al-Jamal",
+          "initials": "HAN"
+        }
+      ]
+    },
+    "journalInfo": {
+      "journalIssueId": 4188042,
+      "dateOfPublication": "2026 May",
+      "monthOfPublication": 5,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-05-01",
+      "journal": {
+        "title": "Medical principles and practice : international journal of the Kuwait University, Health Science Centre",
+        "medlineAbbreviation": "Med Princ Pract",
+        "essn": "1423-0151",
+        "issn": "1011-7571",
+        "isoabbreviation": "Med Princ Pract",
+        "nlmid": "8901334"
+      }
+    },
+    "pubYear": "2026",
+    "pageInfo": "1-27",
+    "abstractText": "Aberrant DNA methylation of tumor suppressor genes (TSGs) plays a critical role in chronic myeloid leukemia (CML) pathogenesis. SOCS-3, a TSG, regulates various proliferative pathways, including MAPK signaling. Enhancing expression of TSGs through demethylation provides a potential target for cancer treatment. One of Nigella Sativa's main ingredients, thymoquinone (TQ), has proven anticancer properties. However, the mechanisms driving TQ's antileukemic influences were not entirely clarified. This research aimed to assess TQ's abilities to demethylate and re-express SOCS-3 in CML mice model. A nude mouse model of CML was established, and the apoptotic influence of TQ was identified. TQ's impact on the target gene expressions was examined using RT-qPCR, and SOCS-3 methylation was assessed by pyrosequencing. TQ's effects on ERK1/2 phosphorylation were assessed using Jess Simple Western analysis. Molecular docking of TQ's interaction with the anti-apoptotic proteins. TQ exerted a marked hypomethylating influence on SOCS-3 and reduced ERK1/2 phosphorylation level in K562-xenograft tumours. TQ also significantly upregulated Caspase-3, Caspase-9, Bim, Bax, Bak, PUMA, and Bmf and downregulated BCL-2, BCL-w, BCL-xL, MCL-1, BFL-1, Survivin, and XIAP in K562 cells. TQ also exhibited marked inhibitory properties on BFL-1, BCL-xL, MCL-1, and BCL-2. This led to growth inhibition and apoptosis of K562-tumor xenograft. These results indicate that TQ enhances CML cells' apoptosis by hypomethylating and re-expressing SOCS-3, inhibiting ERK1/2 and modulating the apoptosis-regulator gene expression and by showing consistent interaction with most of anti-apoptotic proteins, enhancing its potential as a scaffold for designing novel inhibitors to combat CML cells.",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Journal Article"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1159/000552709"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-23",
+    "firstIndexDate": "2026-05-24",
+    "dateOfRevision": "2026-05-23",
+    "electronicPublicationDate": "2026-05-23",
+    "firstPublicationDate": "2026-05-23",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1237428",
+    "source": "PPR",
+    "doi": "10.64898/2026.05.22.727156",
+    "title": "Promiscuous RNA binding by WDR5 remodels the KMT2A (MLL1) histone methyltransferase complex to an inactive state",
+    "authorString": "Kainth AS, Sirjoosingh P, Werner M, Gupta A, Koide A, Koide S, Ruthenburg AJ.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Kainth AS",
+          "firstName": "Amoldeep",
+          "lastName": "Kainth",
+          "initials": "AS"
+        },
+        {
+          "fullName": "Sirjoosingh P",
+          "firstName": "Pallavi",
+          "lastName": "Sirjoosingh",
+          "initials": "P"
+        },
+        {
+          "fullName": "Werner M",
+          "firstName": "Michael",
+          "lastName": "Werner",
+          "initials": "M"
+        },
+        {
+          "fullName": "Gupta A",
+          "firstName": "Ankit",
+          "lastName": "Gupta",
+          "initials": "A"
+        },
+        {
+          "fullName": "Koide A",
+          "firstName": "Akiko",
+          "lastName": "Koide",
+          "initials": "A"
+        },
+        {
+          "fullName": "Koide S",
+          "firstName": "Shohei",
+          "lastName": "Koide",
+          "initials": "S"
+        },
+        {
+          "fullName": "Ruthenburg AJ",
+          "firstName": "Alexander",
+          "lastName": "Ruthenburg",
+          "initials": "AJ"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "Chromatin-modifying complexes are critical in gene regulation, yet their proposed interactions with RNA remain poorly understood. Here, we show that WDR5, an essential subunit of the MLL1 (KMT2A) histone methyltransferase complex, binds RNA with high affinity but without sequence specificity. Using a stringent approach, we demonstrate that WDR5 directly engages a diverse pool of RNAs in cells, predominantly as a function of RNA abundance rather than specific motifs. Equilibrium binding assays further show that RNA length, rather than sequence, dictates WDR5 affinity. We map multiple RNA-binding regions on WDR5, some of which overlap with surfaces used in MLL1 complex subunit interfaces. Strikingly, we find that RNA binding disrupts the MLL1 complex by competitively displacing WDR5 from these critical protein-protein interactions, leading to a marked inhibition of MLL1 catalytic activity. This regulatory mechanism provides a layer of control over histone methylation, potentially integrating transcriptional activity with chromatin state.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.05.22.727156"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-24",
+    "firstIndexDate": "2026-05-24",
+    "firstPublicationDate": "2026-05-22",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1237408",
+    "source": "PPR",
+    "doi": "10.64898/2026.05.21.726589",
+    "title": "Pervasive co-option of prokaryotic adenine methyltransferases by eukaryotic retrotransposons",
+    "authorString": "Fernandez-Moreno M, Romero Charria P, Xu L, Loria-Vinueza B, Irimia M, Maeso I, de Mendoza A.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Fernandez-Moreno M",
+          "firstName": "Manuel",
+          "lastName": "Fernandez-Moreno",
+          "initials": "M"
+        },
+        {
+          "fullName": "Romero Charria P",
+          "firstName": "Pedro",
+          "lastName": "Romero Charria",
+          "initials": "P"
+        },
+        {
+          "fullName": "Xu L",
+          "firstName": "Lan",
+          "lastName": "Xu",
+          "initials": "L"
+        },
+        {
+          "fullName": "Loria-Vinueza B",
+          "firstName": "Beatriz",
+          "lastName": "Loria-Vinueza",
+          "initials": "B"
+        },
+        {
+          "fullName": "Irimia M",
+          "firstName": "Manuel",
+          "lastName": "Irimia",
+          "initials": "M"
+        },
+        {
+          "fullName": "Maeso I",
+          "firstName": "Ignacio",
+          "lastName": "Maeso",
+          "initials": "I"
+        },
+        {
+          "fullName": "de Mendoza A",
+          "firstName": "Alex",
+          "lastName": "de Mendoza",
+          "initials": "A"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "Cytosine DNA methylation is broadly associated with transposable element silencing across eukaryotes, whereas 6-methyladenine (6mA) in unicellular eukaryotes is linked to actively transcribed chromatin. How transposable elements adapt to these contrasting epigenetic environments remains largely unexplored. Here we identify widely distributed eukaryotic retrotransposons encoding prokaryotic-like DNA adenine methyltransferases (DAMs). Phylogenetic analyses indicate a single ancestral acquisition from prokaryotes followed by recurrent transfers between retrotransposon classes across diverse eukaryotes. DAM-carrying LTR elements are preferentially found in species encoding AMT1, the main eukaryotic 6mA methyltransferase, and show elevated 6mA levels relative to other LTR retrotransposons in multiple lineages, accompanied by increased transcription. We further identify retrotransposons combining adenine and cytosine methyltransferases with chromodomains, indicating the assembly of unexpectedly complex epigenetic toolkits within single retrotransposon units. These findings suggest that retrotransposons have repeatedly co-opted prokaryotic-like methyltransferases to exploit host 6mA-associated chromatin, highlighting adaptation to host epigenetic landscapes as a major driver of transposable element evolution.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.05.21.726589"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-24",
+    "firstIndexDate": "2026-05-24",
+    "firstPublicationDate": "2026-05-22",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42177806",
+    "source": "MED",
+    "pmid": "42177806",
+    "doi": "10.1080/15592294.2026.2676911",
+    "title": "The epigenetic archaeology of human-dog companionship. ",
+    "authorString": "Faraji J, Metz GAS.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Faraji J",
+          "firstName": "Jamshid",
+          "lastName": "Faraji",
+          "initials": "J",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0002-1726-5836"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Canadian Centre for Behavioural Neuroscience, Department of Neuroscience, University of Lethbridge, Lethbridge, AB, Canada."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Metz GAS",
+          "firstName": "Gerlinde A S",
+          "lastName": "Metz",
+          "initials": "GAS",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Canadian Centre for Behavioural Neuroscience, Department of Neuroscience, University of Lethbridge, Lethbridge, AB, Canada."
+              },
+              {
+                "affiliation": "Southern Alberta Genome Sciences Centre, University of Lethbridge, Lethbridge, AB, Canada."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "authorIdList": {
+      "authorId": [
+        {
+          "type": "ORCID",
+          "value": "0000-0002-1726-5836"
+        }
+      ]
+    },
+    "journalInfo": {
+      "issue": "1",
+      "volume": "21",
+      "journalIssueId": 4076954,
+      "dateOfPublication": "2026 Dec",
+      "monthOfPublication": 12,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-12-01",
+      "journal": {
+        "title": "Epigenetics",
+        "medlineAbbreviation": "Epigenetics",
+        "essn": "1559-2308",
+        "issn": "1559-2294",
+        "isoabbreviation": "Epigenetics",
+        "nlmid": "101265293"
+      }
+    },
+    "pubYear": "2026",
+    "pageInfo": "2676911",
+    "abstractText": "Humans have coexisted with dogs for at least 20,000 years, yet the biological consequences of long-term human-dog co-residence remain poorly understood. We propose that sustained exposure to dogs may have contributed to context-dependent variation in human stress regulation, immune function, and socio-emotional neurobiology through environmentally responsive epigenetic mechanisms. Here, we define an epigenetic imprint as detectable differences in gene-regulatory marks, including DNA methylation at environmentally sensitive loci, consistent with developmental plasticity and early-life environmental calibration rather than germline inheritance. In this Commentary, we integrate evidence from genomics, neuroscience, microbiome research, evolutionary anthropology, and palaeoepigenetics to examine whether multispecies living environments may represent an under-recognised biological exposure shaping human regulatory biology. We further outline a framework to test whether archaeologically inferred dog co-residence is associated with epigenetic and regulatory signatures in ancient human populations while accounting for major ecological and demographic confounds. Overall, we argue that human-dog cohabitation provides a plausible and testable model for investigating how long-term social and ecological relationships may influence stress and immune regulation across populations.",
+    "affiliation": "Canadian Centre for Behavioural Neuroscience, Department of Neuroscience, University of Lethbridge, Lethbridge, AB, Canada.",
+    "publicationStatus": "ppublish",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Review",
+        "Journal Article"
+      ]
+    },
+    "meshHeadingList": {
+      "meshHeading": [
+        {
+          "majorTopic_YN": "N",
+          "descriptorName": "Animals"
+        },
+        {
+          "majorTopic_YN": "N",
+          "descriptorName": "Dogs"
+        },
+        {
+          "majorTopic_YN": "N",
+          "descriptorName": "Humans"
+        },
+        {
+          "majorTopic_YN": "N",
+          "descriptorName": "DNA Methylation"
+        },
+        {
+          "majorTopic_YN": "Y",
+          "descriptorName": "Epigenesis, Genetic"
+        },
+        {
+          "majorTopic_YN": "N",
+          "descriptorName": "Archaeology"
+        },
+        {
+          "majorTopic_YN": "Y",
+          "descriptorName": "Human-Animal Bond"
+        }
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1080/15592294.2026.2676911"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCompletion": "2026-05-24",
+    "dateOfCreation": "2026-05-24",
+    "firstIndexDate": "2026-05-24",
+    "dateOfRevision": "2026-05-24",
+    "electronicPublicationDate": "2026-05-24",
+    "firstPublicationDate": "2026-05-24",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42176859",
+    "source": "MED",
+    "pmid": "42176859",
+    "doi": "10.1016/j.bbr.2026.116293",
+    "title": "Overexpression of hippocampal METTL3 mitigates chronic social isolation-induced abnormal behaviour in mice via modulation of mitochondrial-related proteins. ",
+    "authorString": "Chen J, Li Y, Huo X, Xie J, Cao W, Niu L, Zhou C, Zuo L, Xu Y.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Chen J",
+          "firstName": "Jie",
+          "lastName": "Chen",
+          "initials": "J",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Clinical Anatomy & Reproductive Medicine Application Institute, Hengyang Medical School, University of South China, Hengyang, Hunan 421001, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Li Y",
+          "firstName": "Yujia",
+          "lastName": "Li",
+          "initials": "Y",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Institute of Neuroscience, Hengyang Medical School, University of South China, Hengyang 421001, Hunan, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Huo X",
+          "firstName": "Xiaofei",
+          "lastName": "Huo",
+          "initials": "X",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Clinical Anatomy & Reproductive Medicine Application Institute, Hengyang Medical School, University of South China, Hengyang, Hunan 421001, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Xie J",
+          "firstName": "Jialing",
+          "lastName": "Xie",
+          "initials": "J",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Institute of Neuroscience, Hengyang Medical School, University of South China, Hengyang 421001, Hunan, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Cao W",
+          "firstName": "Wenyu",
+          "lastName": "Cao",
+          "initials": "W",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Clinical Anatomy & Reproductive Medicine Application Institute, Hengyang Medical School, University of South China, Hengyang, Hunan 421001, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Niu L",
+          "firstName": "Lei",
+          "lastName": "Niu",
+          "initials": "L",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Liuyang Traditional Chinese Medicine Hospital, 410300, Liuyang, Hunan, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zhou C",
+          "firstName": "Cuilan",
+          "lastName": "Zhou",
+          "initials": "C",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Clinical Anatomy & Reproductive Medicine Application Institute, Hengyang Medical School, University of South China, Hengyang, Hunan 421001, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zuo L",
+          "firstName": "Lielian",
+          "lastName": "Zuo",
+          "initials": "L",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Institute of Neuroscience, Hengyang Medical School, University of South China, Hengyang 421001, Hunan, China. Electronic address: 799515733@qq.com."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Xu Y",
+          "firstName": "Yang",
+          "lastName": "Xu",
+          "initials": "Y",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Institute of Neuroscience, Hengyang Medical School, University of South China, Hengyang 421001, Hunan, China. Electronic address: xuyang21170@163.com."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "journalIssueId": 4189567,
+      "dateOfPublication": "2026 May",
+      "monthOfPublication": 5,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-05-01",
+      "journal": {
+        "title": "Behavioural brain research",
+        "medlineAbbreviation": "Behav Brain Res",
+        "essn": "1872-7549",
+        "issn": "0166-4328",
+        "isoabbreviation": "Behav Brain Res",
+        "nlmid": "8004872"
+      }
+    },
+    "pubYear": "2026",
+    "pageInfo": "116293",
+    "abstractText": "Social interaction is critical for emotional and cognitive development, however, social isolation (SI) could lead to cognitive impairment, anxiety-like and depression-like behaviors, but the mechanism underlying these alterations remains poorly understand. Although the contribution of the N6-methyladenosine (m6A) in the regulation of neural plasticity and behavior has been addressed, there is a gap in our understanding of m6A in brain mitochondria function and SI induced abnormal behavior. Here, we investigated the role of the hippocampal METTL3 in regulating SI induced neural dysfunction, focusing on mitochondrial homeostasis and neuroinflammation. Using a chronic SI mouse model, we show that hippocampal overexpression of METTL3, a key m6A methyltransferase, ameliorates depression-like behavior and cognitive deficits. Consistently, administration of MP3C, a METTL3 agonist, also reversed SI-induced behavioral abnormalities in mice. Mechanistically, METTL3 overexpression had no effect on mitochondrial quantity, but normalized mitochondrial dynamics by reducing PGC1α and OPA1, thereby alleviating the neuroinflammation induced by SI, as indicated by decreased expression of pro-inflammatory cytokines (COX2, iNOS, and IL-1β) in the hippocampus. These findings establish a critical role for the METTL3-m6A pathway in modulating mitochondrial dynamics to regulate neuroinflammation, linking epigenetic regulation of RNA methylation to SI induced behavioral and cognitive abnormalities. This research also offers novel insights into potential therapeutic role of the METTL3-m6A pathway in regulating mitochondrial dynamics that involves in neuroinflammation.",
+    "affiliation": "Clinical Anatomy & Reproductive Medicine Application Institute, Hengyang Medical School, University of South China, Hengyang, Hunan 421001, China.",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Journal Article"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1016/j.bbr.2026.116293"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-23",
+    "firstIndexDate": "2026-05-24",
+    "dateOfRevision": "2026-05-23",
+    "electronicPublicationDate": "2026-05-22",
+    "firstPublicationDate": "2026-05-22",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42177092",
+    "source": "MED",
+    "pmid": "42177092",
+    "doi": "10.1016/bs.aivir.2026.03.002",
+    "title": "Transcriptional regulation of human endogenous retroviruses in cancer. ",
+    "authorString": "Kogut S, Padilla-Gálvez M, Blanco-Melo D.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Kogut S",
+          "firstName": "Sophie",
+          "lastName": "Kogut",
+          "initials": "S",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Vaccine and Infectious Disease Division, Fred Hutchinson Cancer Center, Seattle, WA, United States."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Padilla-Gálvez M",
+          "firstName": "Mónica",
+          "lastName": "Padilla-Gálvez",
+          "initials": "M",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Vaccine and Infectious Disease Division, Fred Hutchinson Cancer Center, Seattle, WA, United States."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Blanco-Melo D",
+          "firstName": "Daniel",
+          "lastName": "Blanco-Melo",
+          "initials": "D",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Vaccine and Infectious Disease Division, Fred Hutchinson Cancer Center, Seattle, WA, United States; Herbold Computational Biology Program, Public Health Sciences Division, Fred Hutchinson Cancer Center, Seattle, WA, United States; Department of Global Health, University of Washington School of Medicine, Seattle, WA, United States; Department of Microbiology, University of Washington School of Medicine, Seattle, WA, United States. Electronic address: dblancom@fredhutch.org."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "volume": "124",
+      "journalIssueId": 4200696,
+      "dateOfPublication": "2026 ",
+      "monthOfPublication": 0,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-01-01",
+      "journal": {
+        "title": "Advances in virus research",
+        "medlineAbbreviation": "Adv Virus Res",
+        "essn": "1557-8399",
+        "issn": "0065-3527",
+        "isoabbreviation": "Adv Virus Res",
+        "nlmid": "0370441"
+      }
+    },
+    "pubYear": "2026",
+    "pageInfo": "61-95",
+    "abstractText": "Human endogenous retroviruses (HERVs) provide a direct record of the millions of years of co-evolution between humans and viruses. Yet, due to their repetitive nature and former reputation as \"junk DNA,\" a full characterization of the functional roles and transcriptional regulation of HERVs remains to be achieved. As sequencing technologies improve, better resolution data regarding HERV expression and regulation has become attainable, and there is mounting evidence of aberrant HERV expression in various human diseases, particularly cancer. However, the perturbations to the transcriptional regulatory processes that govern these endogenized retroviral elements in cancer remain unclear. In this review, we will summarize the state of our understanding of the various mechanisms that control HERV expression in cancer, focusing primarily on aberrant methylation and KRAB-domain containing zinc finger proteins (KZFPs), among others. Many of these regulatory mechanisms are employed in stem cells to regulate pluripotency and differentiation and are also deployed in a subpopulation of cancer cells with high self-renewal and proliferation capacity, called cancer stem cells. While the expression of specific HERVs in cancer could be beneficial, deleterious, or neutral, the potential to use HERVs as biomarkers or immune adjuvants to enhance immunotherapies against cancer is promising. The implications of shared transcriptional mechanisms across cancer and stem cells will expose new areas to intervene with cancer treatments, ushering in a new era of HERV-based cancer therapeutics and diagnostics.",
+    "affiliation": "Vaccine and Infectious Disease Division, Fred Hutchinson Cancer Center, Seattle, WA, United States.",
+    "publicationStatus": "ppublish",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Review",
+        "Journal Article"
+      ]
+    },
+    "meshHeadingList": {
+      "meshHeading": [
+        {
+          "majorTopic_YN": "N",
+          "descriptorName": "Humans"
+        },
+        {
+          "majorTopic_YN": "Y",
+          "descriptorName": "Endogenous Retroviruses",
+          "meshQualifierList": {
+            "meshQualifier": [
+              {
+                "abbreviation": "GE",
+                "qualifierName": "genetics",
+                "majorTopic_YN": "N"
+              }
+            ]
+          }
+        },
+        {
+          "majorTopic_YN": "Y",
+          "descriptorName": "Neoplasms",
+          "meshQualifierList": {
+            "meshQualifier": [
+              {
+                "abbreviation": "GE",
+                "qualifierName": "genetics",
+                "majorTopic_YN": "N"
+              },
+              {
+                "abbreviation": "TH",
+                "qualifierName": "therapy",
+                "majorTopic_YN": "N"
+              },
+              {
+                "abbreviation": "VI",
+                "qualifierName": "virology",
+                "majorTopic_YN": "N"
+              }
+            ]
+          }
+        },
+        {
+          "majorTopic_YN": "Y",
+          "descriptorName": "Transcription, Genetic"
+        },
+        {
+          "majorTopic_YN": "Y",
+          "descriptorName": "Gene Expression Regulation, Neoplastic"
+        },
+        {
+          "majorTopic_YN": "Y",
+          "descriptorName": "Gene Expression Regulation, Viral"
+        },
+        {
+          "majorTopic_YN": "N",
+          "descriptorName": "Neoplastic Stem Cells",
+          "meshQualifierList": {
+            "meshQualifier": [
+              {
+                "abbreviation": "VI",
+                "qualifierName": "virology",
+                "majorTopic_YN": "N"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1016/bs.aivir.2026.03.002"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCompletion": "2026-05-23",
+    "dateOfCreation": "2026-05-23",
+    "firstIndexDate": "2026-05-24",
+    "dateOfRevision": "2026-05-23",
+    "electronicPublicationDate": "2026-04-08",
+    "firstPublicationDate": "2026-04-08",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42176922",
+    "source": "MED",
+    "pmid": "42176922",
+    "doi": "10.1016/j.ijbiomac.2026.152667",
+    "title": "Relative ordered structure evaluation of water-extracted polysaccharides from Morchella sextelata: Geographical origins and compositional elements. ",
+    "authorString": "Lei N, Song Q, Wang J, Li Y, Zou Q, He W, Song X, Yin J.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Lei N",
+          "firstName": "Ningyu",
+          "lastName": "Lei",
+          "initials": "N",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory of Food Science and Resources, China-Canada Joint Lab of Food Science and Technology (Nanchang), Nanchang University, Nanchang, Jiangxi Province, 330047, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Song Q",
+          "firstName": "Qingyu",
+          "lastName": "Song",
+          "initials": "Q",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory of Food Science and Resources, China-Canada Joint Lab of Food Science and Technology (Nanchang), Nanchang University, Nanchang, Jiangxi Province, 330047, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Wang J",
+          "firstName": "Jinling",
+          "lastName": "Wang",
+          "initials": "J",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory of Food Science and Resources, China-Canada Joint Lab of Food Science and Technology (Nanchang), Nanchang University, Nanchang, Jiangxi Province, 330047, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Li Y",
+          "firstName": "Yuhao",
+          "lastName": "Li",
+          "initials": "Y",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory of Food Science and Resources, China-Canada Joint Lab of Food Science and Technology (Nanchang), Nanchang University, Nanchang, Jiangxi Province, 330047, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zou Q",
+          "firstName": "Qianqian",
+          "lastName": "Zou",
+          "initials": "Q",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory of Food Science and Resources, China-Canada Joint Lab of Food Science and Technology (Nanchang), Nanchang University, Nanchang, Jiangxi Province, 330047, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "He W",
+          "firstName": "Weiwei",
+          "lastName": "He",
+          "initials": "W",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory of Food Science and Resources, China-Canada Joint Lab of Food Science and Technology (Nanchang), Nanchang University, Nanchang, Jiangxi Province, 330047, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Song X",
+          "firstName": "Xiaoxiao",
+          "lastName": "Song",
+          "initials": "X",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory of Food Science and Resources, China-Canada Joint Lab of Food Science and Technology (Nanchang), Nanchang University, Nanchang, Jiangxi Province, 330047, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Yin J",
+          "firstName": "Junyi",
+          "lastName": "Yin",
+          "initials": "J",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory of Food Science and Resources, China-Canada Joint Lab of Food Science and Technology (Nanchang), Nanchang University, Nanchang, Jiangxi Province, 330047, China. Electronic address: yinjy@ncu.edu.cn."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "journalIssueId": 4188518,
+      "dateOfPublication": "2026 May",
+      "monthOfPublication": 5,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-05-01",
+      "journal": {
+        "title": "International journal of biological macromolecules",
+        "medlineAbbreviation": "Int J Biol Macromol",
+        "essn": "1879-0003",
+        "issn": "0141-8130",
+        "isoabbreviation": "Int J Biol Macromol",
+        "nlmid": "7909578"
+      }
+    },
+    "pubYear": "2026",
+    "pageInfo": "152667",
+    "abstractText": "Polysaccharides derived from Morchella fruiting bodies exhibit multiple pharmacological activities, which are closely associated with their structural features. In this study, polysaccharides were extracted by hot water from Morchella sextelata cultivated in five geographical origins (Sichuan, Yunnan, Shaanxi, Guizhou and Fujian Provinces) across China. Structural characteristics of homogeneous components were analyzed using Fourier transform infrared spectroscopy, monosaccharide composition, methylation analysis and 1H nuclear magnetic resonance spectra, with structural features further elucidated by chemometrics. It was found that polysaccharides from five geographic origins were consistently separated into three conserved subtypes: glucans, heteroglucans and galactomannans. The main observed difference lay not in these fundamental categories, but in the relative distribution and fine structural proportions (e.g., molar ratios, branching density) among origins. Specifically, glucans featured a → 4)-α-Glcp-(1 → linked backbone branched at O-6 position. Heteroglucan exhibited a composite backbone architecture primarily comprising →4)-α-Glcp-(1→, →2)-α-Manp-(1→, →6)-α-Galp-(1→, →4,6)-α-Glcp-(1 → and →2,6)-α-Manp-(1 → residues. The galactomannan was primarily constituted by →2)-α-Manp-(1 → and →6)-α-Galp-(1 → residues, with specific side chains. These polysaccharides can be classified into distinct subtypes based on their monosaccharide composition and glycosidic linkage patterns. This classification has demonstrated the validity of the \"relative ordered structure\" theory for water-extracted polysaccharides from M. sextelata and simplified the inherent complexity of polysaccharide structures, thereby significantly advancing our understanding of their regularity governing.",
+    "affiliation": "State Key Laboratory of Food Science and Resources, China-Canada Joint Lab of Food Science and Technology (Nanchang), Nanchang University, Nanchang, Jiangxi Province, 330047, China.",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Journal Article"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1016/j.ijbiomac.2026.152667"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-23",
+    "firstIndexDate": "2026-05-24",
+    "dateOfRevision": "2026-05-23",
+    "electronicPublicationDate": "2026-05-22",
+    "firstPublicationDate": "2026-05-22",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42176235",
+    "source": "MED",
+    "pmid": "42176235",
+    "doi": "10.1007/s10120-026-01743-w",
+    "title": "Circulating tumor DNA-guided response evaluation in patients with previously treated gastroesophageal adenocarcinoma. ",
+    "authorString": "Iden CR, Øgaard N, Mustafa SM, Elle IC, Yilmaz M, Nordsmark M, Henriksen T, Kruse T, Thomassen M, Pfeiffer P, Andersen CL, Bæksgaard L, Qvortrup C, Mau-Sørensen M.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Iden CR",
+          "firstName": "Cecilie Riis",
+          "lastName": "Iden",
+          "initials": "CR",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Oncology, Copenhagen University Hospital, Rigshospitalet, Blegdamsvej 9, 2100, København Ø, Denmark."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Øgaard N",
+          "firstName": "Nadia",
+          "lastName": "Øgaard",
+          "initials": "N",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Molecular Medicine, Aarhus University Hospital, Aarhus,Palle Juul-Jensens Boulevard 99, 8200 , Aarhus N, Denmark."
+              },
+              {
+                "affiliation": "Department of Clinical Medicine, Faculty of Health, Aarhus University, Palle Juul-Jensens Boulevard 11, 8200 , Aarhus N, Denmark."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Mustafa SM",
+          "firstName": "Salah Mohammad",
+          "lastName": "Mustafa",
+          "initials": "SM",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Molecular Medicine, Aarhus University Hospital, Aarhus,Palle Juul-Jensens Boulevard 99, 8200 , Aarhus N, Denmark."
+              },
+              {
+                "affiliation": "Department of Clinical Medicine, Faculty of Health, Aarhus University, Palle Juul-Jensens Boulevard 11, 8200 , Aarhus N, Denmark."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Elle IC",
+          "firstName": "Ida Coordt",
+          "lastName": "Elle",
+          "initials": "IC",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Clinical Genetics, Odense University Hospital, J. B. Winsløws Vej 4, 5000, Odense C, Denmark."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Yilmaz M",
+          "firstName": "Mette",
+          "lastName": "Yilmaz",
+          "initials": "M",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Oncology, University Hospital of Aalborg, Hobrovej 18-22, 9000 , Aalborg, Denmark."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Nordsmark M",
+          "firstName": "Marianne",
+          "lastName": "Nordsmark",
+          "initials": "M",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Oncology, Aarhus University Hospital, Palle Juul-Jensens Boulevard 99, 8200, Aarhus, Denmark."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Henriksen T",
+          "firstName": "Tenna",
+          "lastName": "Henriksen",
+          "initials": "T",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Molecular Medicine, Aarhus University Hospital, Aarhus,Palle Juul-Jensens Boulevard 99, 8200 , Aarhus N, Denmark."
+              },
+              {
+                "affiliation": "Department of Clinical Medicine, Faculty of Health, Aarhus University, Palle Juul-Jensens Boulevard 11, 8200 , Aarhus N, Denmark."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Kruse T",
+          "firstName": "Torben",
+          "lastName": "Kruse",
+          "initials": "T",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Clinical Genetics, Odense University Hospital, J. B. Winsløws Vej 4, 5000, Odense C, Denmark."
+              },
+              {
+                "affiliation": "Clinical Genome Center, Department of Clinical Research, University of Southern Denmark, Odense, Denmark."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Thomassen M",
+          "firstName": "Mads",
+          "lastName": "Thomassen",
+          "initials": "M",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Clinical Genetics, Odense University Hospital, J. B. Winsløws Vej 4, 5000, Odense C, Denmark."
+              },
+              {
+                "affiliation": "Clinical Genome Center, Department of Clinical Research, University of Southern Denmark, Odense, Denmark."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Pfeiffer P",
+          "firstName": "Per",
+          "lastName": "Pfeiffer",
+          "initials": "P",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Oncology, Odense University Hospital, J. B. Winsløws Vej 4, 5000, Odense C, Denmark."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Andersen CL",
+          "firstName": "Claus Lindbjerg",
+          "lastName": "Andersen",
+          "initials": "CL",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Molecular Medicine, Aarhus University Hospital, Aarhus,Palle Juul-Jensens Boulevard 99, 8200 , Aarhus N, Denmark."
+              },
+              {
+                "affiliation": "Department of Clinical Medicine, Faculty of Health, Aarhus University, Palle Juul-Jensens Boulevard 11, 8200 , Aarhus N, Denmark."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Bæksgaard L",
+          "firstName": "Lene",
+          "lastName": "Bæksgaard",
+          "initials": "L",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Oncology, Copenhagen University Hospital, Rigshospitalet, Blegdamsvej 9, 2100, København Ø, Denmark."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Qvortrup C",
+          "firstName": "Camilla",
+          "lastName": "Qvortrup",
+          "initials": "C",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Oncology, Copenhagen University Hospital, Rigshospitalet, Blegdamsvej 9, 2100, København Ø, Denmark."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Mau-Sørensen M",
+          "firstName": "Morten",
+          "lastName": "Mau-Sørensen",
+          "initials": "M",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0003-2235-1250"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Oncology, Copenhagen University Hospital, Rigshospitalet, Blegdamsvej 9, 2100, København Ø, Denmark. mms@rh.regionh.dk."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "authorIdList": {
+      "authorId": [
+        {
+          "type": "ORCID",
+          "value": "0000-0003-2235-1250"
+        }
+      ]
+    },
+    "journalInfo": {
+      "journalIssueId": 4187999,
+      "dateOfPublication": "2026 May",
+      "monthOfPublication": 5,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-05-01",
+      "journal": {
+        "title": "Gastric cancer : official journal of the International Gastric Cancer Association and the Japanese Gastric Cancer Association",
+        "medlineAbbreviation": "Gastric Cancer",
+        "essn": "1436-3305",
+        "issn": "1436-3291",
+        "isoabbreviation": "Gastric Cancer",
+        "nlmid": "100886238"
+      }
+    },
+    "pubYear": "2026",
+    "abstractText": "Systemic treatment offers only modest survival benefits in previously treated metastatic gastroesophageal adenocarcinoma (GEA). Treatment monitoring using imaging-based response assessments are often delayed and imprecise, highlighting the need for biomarkers to guide early treatment decisions. We evaluated the value of circulating tumor DNA (ctDNA) for prognosis, patient selection, and on-treatment monitoring in patients with previously treated GEA. This retrospective study aimed to investigate whether baseline ctDNA levels and early ctDNA changes assessed by ctDNA-RECIST were associated with survival outcomes in a randomized Phase 2 trial comparing trifluridine-tipiracil plus bevacizumab or trifluridine-tipiracil alone. Plasma samples were collected at baseline and during treatment (weeks 4 and 8). ctDNA was quantified by a tumor-agnostic methylation-specific digital droplet PCR (ddPCR) assay. Plasma samples were available in 86 patients out of a total of 103 patients included in the trial. Patients with the highest baseline ctDNA levels (top 20%, n = 18) had significantly shorter progression-free survival (PFS; median 1.8 vs. 4.6 months; HR 2.2, p = 0.005) and overall survival (OS; median 5.5 vs. 9.9 months; HR 2.2, p = 0.004) compared to those with lower levels. Early progression by ctDNA at four weeks (HR 2.4, p = 0.003) and at eight weeks by radiological assessment (HR 2.9, p = 0.001) were both associated with inferior OS. ctDNA is a strong prognostic biomarker in refractory GEA. High baseline levels and early increases identify patients unlikely to benefit from treatment. Prospective validation is needed, but ctDNA monitoring may enable earlier therapeutic decision-making in clinical practice.",
+    "affiliation": "Department of Oncology, Copenhagen University Hospital, Rigshospitalet, Blegdamsvej 9, 2100, København Ø, Denmark.",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Journal Article"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1007/s10120-026-01743-w"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "Y",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-23",
+    "firstIndexDate": "2026-05-24",
+    "dateOfRevision": "2026-05-23",
+    "electronicPublicationDate": "2026-05-23",
+    "firstPublicationDate": "2026-05-23",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42177705",
+    "source": "MED",
+    "pmid": "42177705",
+    "doi": "10.1007/s12672-026-05217-4",
+    "title": "Identification of MARCKSL1 as an independent prognostic biomarker and analysis of its potential regulatory network in hepatocellular carcinoma.",
+    "authorString": "Li H, Zhang W, Zhao J, Ke T, Shen P, Lin T, Zhan N, Zhan Y, Yang X.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Li H",
+          "firstName": "Hui",
+          "lastName": "Li",
+          "initials": "H",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Hepatopancreatobiliary Surgery, the First Affiliated Hospital of Shenzhen University, Shenzhen, 518035, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zhang W",
+          "firstName": "Wentao",
+          "lastName": "Zhang",
+          "initials": "W",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Hepatopancreatobiliary Surgery, the First Affiliated Hospital of Shenzhen University, Shenzhen, 518035, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zhao J",
+          "firstName": "Jiawen",
+          "lastName": "Zhao",
+          "initials": "J",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Hepatopancreatobiliary Surgery, the First Affiliated Hospital of Shenzhen University, Shenzhen, 518035, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Ke T",
+          "firstName": "Tianhui",
+          "lastName": "Ke",
+          "initials": "T",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Hepatopancreatobiliary Surgery, the First Affiliated Hospital of Shenzhen University, Shenzhen, 518035, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Shen P",
+          "firstName": "Peng",
+          "lastName": "Shen",
+          "initials": "P",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Hepatopancreatobiliary Surgery, the First Affiliated Hospital of Shenzhen University, Shenzhen, 518035, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Lin T",
+          "firstName": "Tian",
+          "lastName": "Lin",
+          "initials": "T",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Hepatopancreatobiliary Surgery, the First Affiliated Hospital of Shenzhen University, Shenzhen, 518035, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zhan N",
+          "firstName": "Naiyang",
+          "lastName": "Zhan",
+          "initials": "N",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Hepatopancreatobiliary Surgery, the First Affiliated Hospital of Shenzhen University, Shenzhen, 518035, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zhan Y",
+          "firstName": "Yongqiang",
+          "lastName": "Zhan",
+          "initials": "Y",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Hepatopancreatobiliary Surgery, the First Affiliated Hospital of Shenzhen University, Shenzhen, 518035, China. yzhan@email.szu.edu.cn."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Yang X",
+          "firstName": "Xinping",
+          "lastName": "Yang",
+          "initials": "X",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Anesthetics, The First Affiliated Hospital of Shenzhen University, Shenzhen, 518035, China. xinpingy@126.com."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "journalIssueId": 4187410,
+      "dateOfPublication": "2026 May",
+      "monthOfPublication": 5,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-05-01",
+      "journal": {
+        "title": "Discover oncology",
+        "medlineAbbreviation": "Discov Oncol",
+        "essn": "2730-6011",
+        "issn": "2730-6011",
+        "isoabbreviation": "Discov Oncol",
+        "nlmid": "101775142"
+      }
+    },
+    "pubYear": "2026",
+    "abstractText": "Hepatocellular carcinoma (HCC) represents a major contributor to cancer-associated mortality globally. Due to the frequently asymptomatic early course and high proportion of late-stage detection, patient outcomes remain unsatisfactory, underscoring the demand for innovative diagnostic markers and treatment approaches. This study was dedicated to characterizing expression profiles and evaluating the prognostic value of myristoylated alanine-rich C kinase substrate-like 1 (MARCKSL1) in HCC. Through integrated analysis of data from the TCGA-LIHC and GSE14520 cohorts alongside in vitro validation, we comprehensively assessed MARCKSL1 expression patterns and their links with clinicopathological parameters. Public cohort analyses showed that MARCKSL1 was significantly upregulated in HCC tissues, and qRT-PCR analysis further supported elevated MARCKSL1 expression in selected HCC cell lines. This upregulated MARCKSL1 expression showed a positive correlation with various poor prognostic clinical factors, namely advanced tumor stage, higher histological grade, and elevated alpha-fetoprotein (AFP) concentration. Moreover, elevated MARCKSL1 expression was linked to reduced overall survival (OS) and disease-specific survival (DSS). A prognostic model built on these observations demonstrated reliable performance in predicting patient survival. Functional annotation analyses implicated MARCKSL1 in essential processes including cell cycle control, and its expression showed a significant association with immune cell infiltration, indicating a potential connection to the tumor immune landscape. Additionally, MARCKSL1 expression correlated with m⁶A methylation markers, suggesting its potential implication in the correlative networks of these epigenetic pathways during HCC development. We also established a predictive competing endogenous RNA (ceRNA) network, identifying key long non-coding RNAs (lncRNAs) that may co-regulate MARCKSL1 via specific microRNAs. Preliminary in vitro assessment supported increased MARCKSL1 transcript expression in selected HCC cell lines. In summary, MARCKSL1 is overexpressed in HCC and closely tied to aggressive clinicopathological traits and inferior prognosis, offering new insights into the evaluation of candidate prognostic biomarkers for HCC.",
+    "affiliation": "Department of Hepatopancreatobiliary Surgery, the First Affiliated Hospital of Shenzhen University, Shenzhen, 518035, China.",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "Journal Article"
+      ]
+    },
+    "grantsList": {
+      "grant": [
+        {
+          "grantId": "JCYJ20230807115306013",
+          "agency": "Science, Technology and Innovation Commission of Shenzhen Municipality",
+          "orderIn": 0
+        }
+      ]
+    },
+    "keywordList": {
+      "keyword": [
+        "HCC",
+        "Dss",
+        "Os",
+        "Marcksl1"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1007/s12672-026-05217-4"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-24",
+    "firstIndexDate": "2026-05-24",
+    "dateOfRevision": "2026-05-24",
+    "electronicPublicationDate": "2026-05-24",
+    "firstPublicationDate": "2026-05-24",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42177729",
+    "source": "MED",
+    "pmid": "42177729",
+    "doi": "10.1186/s13568-026-02078-6",
+    "title": "Exploratory gut microbiota-host interaction in parkinson's disease: integrative multi-omics analysis of metabolic and epigenetic pathways.",
+    "authorString": "Li G, Ye X, Zhou T, Zhou Z, Min Y, Song H, Liu X.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Li G",
+          "firstName": "Guangli",
+          "lastName": "Li",
+          "initials": "G",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Postgraduate training base at Shanghai Gongli hospital, Ningxia medical university, Shanghai, 200135, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Ye X",
+          "firstName": "Xiaoping",
+          "lastName": "Ye",
+          "initials": "X",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Shanghai DIAN Medical Laboratory Co., Ltd, Shanghai, 200433, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zhou T",
+          "firstName": "Tao",
+          "lastName": "Zhou",
+          "initials": "T",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Shanghai DIAN Medical Laboratory Co., Ltd, Shanghai, 200433, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zhou Z",
+          "firstName": "Zhiyou",
+          "lastName": "Zhou",
+          "initials": "Z",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Shanghai DIAN Medical Laboratory Co., Ltd, Shanghai, 200433, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Min Y",
+          "firstName": "Yijia",
+          "lastName": "Min",
+          "initials": "Y",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Shanghai DIAN Medical Laboratory Co., Ltd, Shanghai, 200433, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Song H",
+          "firstName": "Hui",
+          "lastName": "Song",
+          "initials": "H",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Clinical Laboratory, Gongli Hospital of Shanghai Pudong New Area, Shanghai University of Medicine & Health Sciences, Shanghai, 200135, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Liu X",
+          "firstName": "Xinghui",
+          "lastName": "Liu",
+          "initials": "X",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Clinical Laboratory, Gongli Hospital of Shanghai Pudong New Area, Shanghai University of Medicine & Health Sciences, Shanghai, 200135, China. syliuxh@163.com."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "journalIssueId": 4188004,
+      "dateOfPublication": "2026 May",
+      "monthOfPublication": 5,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-05-01",
+      "journal": {
+        "title": "AMB Express",
+        "medlineAbbreviation": "AMB Express",
+        "essn": "2191-0855",
+        "issn": "2191-0855",
+        "isoabbreviation": "AMB Express",
+        "nlmid": "101561785"
+      }
+    },
+    "pubYear": "2026",
+    "abstractText": "Mounting evidence has associated gut microbial composition and systemic metabolic profiles with Parkinson's disease (PD), yet causal pathways and molecular mechanisms remain unclear. We employed a systematic two-stage analytical framework integrating multiple Mendelian randomization (MR) approaches, transcriptome and epigenome-wide regulatory analyses, and colocalization analysis to genetically dissect the microbiota-host regulatory network implicated in PD susceptibility. Initially, two-sample MR was performed using gut microbiota data from the MiBioGen consortium, followed by an independent replication MR analysis using mbQTL data from the Dutch Microbiome Project (DMP). The two-step MR approach was employed to identify potential mediation of blood metabolites. Summary data-based MR (SMR) methods were also used to pinpoint key blood metabolic genes and regulatory regions associated with PD risk, with the combination of PD GWAS data, blood expression quantitative trait loci (eQTLs), and DNA methylation quantitative trait loci (mQTLs). Colocalization analyses were performed to explore interactions between host metabolic gene expression and the gut microbiota using blood expression quantitative trait loci (eQTLs) and fecal microbial quantitative trait loci (mbQTLs). Our multi-stage analyses identified five microbial taxa with nominal positive associations with Parkinson's disease (PD), including class Clostridia, order Bacillales, and genera Clostridium sensu stricto 1, Dorea, and Lachnospiraceae UCG001. By contrast, three additional microbial genera (Butyricimonas, Defluviitaleaceae UCG011 and Marvinbryantia) exhibited nominal protective correlations with PD. Cross-cohort analyses further indicated a shared correlation pattern along the Clostridia-Clostridiales-Clostridiaceae/Lachnospiraceae taxonomics potentially linking to PD risk across both discovery and validation cohorts. Mediation analyses indicated that betaine may mediate the Lachnospiraceae UCG001-PD associations, while androstenediol monosulfate may serve as a mediator linking Clostridium sensu stricto 1 to PD. SMR analysis highlights genes like SH2B1, JUP, as key host metabolic genes with potential causal relevance to PD, with colocalization indicating genetic overlaps supporting their potential involvement in gene-microbiota interactions. These findings deepen our understanding of gut-brain axis dysregulation in PD and may provide novel insights for future mechanistic validation and targeted preventive or therapeutic investigations.",
+    "affiliation": "Postgraduate training base at Shanghai Gongli hospital, Ningxia medical university, Shanghai, 200135, China.",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "Journal Article"
+      ]
+    },
+    "grantsList": {
+      "grant": [
+        {
+          "grantId": "PWZxq2022-08",
+          "agency": "the Key Disciplines Group Construction Project of Pudong Health Bureau of Shanghai",
+          "orderIn": 0
+        }
+      ]
+    },
+    "keywordList": {
+      "keyword": [
+        "Metabolism",
+        "Parkinson’s Disease",
+        "Gut Microbiota",
+        "Mendelian Randomization",
+        "Sh2b1",
+        "Jup"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1186/s13568-026-02078-6"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-24",
+    "firstIndexDate": "2026-05-24",
+    "dateOfRevision": "2026-05-24",
+    "electronicPublicationDate": "2026-05-24",
+    "firstPublicationDate": "2026-05-24",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42176809",
+    "source": "MED",
+    "pmid": "42176809",
+    "doi": "10.1016/j.arr.2026.103184",
+    "title": "Aging as the Degradation of Conjunctive Coupling: A Triadic Framework S = F × E × N for Biological Senescence. ",
+    "authorString": "Farreny H.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Farreny H",
+          "firstName": "Henri",
+          "lastName": "Farreny",
+          "initials": "H",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Independent Researcher, Toulouse, France. Electronic address: tsa31.contact@gmail.com."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "journalIssueId": 4188560,
+      "dateOfPublication": "2026 May",
+      "monthOfPublication": 5,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-05-01",
+      "journal": {
+        "title": "Ageing research reviews",
+        "medlineAbbreviation": "Ageing Res Rev",
+        "essn": "1872-9649",
+        "issn": "1568-1637",
+        "isoabbreviation": "Ageing Res Rev",
+        "nlmid": "101128963"
+      }
+    },
+    "pubYear": "2026",
+    "pageInfo": "103184",
+    "abstractText": "Despite the landmark identification of twelve hallmarks of aging (López-Otín et al., 2023), geroscience lacks a formal account of why these hallmarks interact and amplify each other, why mono-target interventions show systematically limited efficacy, and what determines the threshold at which compensatory mechanisms fail. A recent extension of the hallmarks framework has further integrated psychosocial and social determinants of aging (López-Otín & Kroemer, 2025; Kroemer et al., 2025), reinforcing the need for an architectural account that can accommodate both molecular and environmental modulators within a single formal structure. The hallmarks framework, in its current form, remains descriptively comprehensive but architecturally silent: it documents what accumulates without specifying why the regulatory system that normally contains these accumulations progressively loses coherence. This article proposes a minimal architectural framework - S = F × E × N - in which F designates the flux of biological signals (genomic, epigenetic, metabolic, intercellular), E the executive and energetic machinery (mitochondrial function, proteostasis, autophagy), and N the normative epigenetic constraint (chromatin architecture, DNA methylation landscape, cell identity program). The × operator denotes conjunctive necessity: stable organized biological state S exists only when F, E, and N are simultaneously coupled and functional. The central contribution is a specific architectural claim: aging is not primarily the degradation of F, E, or N individually, but the progressive erosion of the × operator - the conjunctive coupling that maintains their coherent interaction. Within this framework, N occupies a structurally asymmetric position: as the normative anchor that governs the F→E transaction, N erosion is sufficient to collapse × even when F and E remain intact. This asymmetry - not N-primacy as an independent thesis - explains why Yang et al. (2023) found that epigenetic information loss alone reproduces full aging phenotypes and that OSK-mediated N restoration reverses them. The pathological unit remains ×; N is the component through which × is most vulnerable to disruption and most tractable for therapeutic intervention. Formalized within Partial Information Decomposition theory as the synergistic information I_synergistic(F,E,N), × erosion is in principle computable on multi-omic data using established PID estimators and is directly falsifiable. The framework predicts why hallmarks accelerate each other (conjunctive failure propagates across components), why mono-target interventions fail (restoring one component does not restore the coupling), and why combined N+E interventions should produce superadditive healthspan effects. Three priority testable predictions and a CouplingIndex measurement pipeline are derived.",
+    "affiliation": "Independent Researcher, Toulouse, France. Electronic address: tsa31.contact@gmail.com.",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Review",
+        "Journal Article"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1016/j.arr.2026.103184"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-23",
+    "firstIndexDate": "2026-05-24",
+    "dateOfRevision": "2026-05-23",
+    "electronicPublicationDate": "2026-05-22",
+    "firstPublicationDate": "2026-05-22",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42176323",
+    "source": "MED",
+    "pmid": "42176323",
+    "doi": "10.1093/plphys/kiag290",
+    "title": "Multi-omics analyses reveal epigenetic regulation of anthocyanin biosynthesis in Disanthus cercidifolius subsp. longipes. ",
+    "authorString": "Zhang Y, Yang E, Qiu X, Hu Y, Shi Y, Zha M, Gao P, Feng C.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Zhang Y",
+          "firstName": "Yi",
+          "lastName": "Zhang",
+          "initials": "Y",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0003-2871-8033"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Jiangxi Provincial Key Laboratory of ex situ Plant Conservation and Utilization, Lushan Botanical Garden, Chinese Academy of Sciences, Jiujiang 332900, China."
+              },
+              {
+                "affiliation": "Jiangxi Provincial Key Laboratory of Plant Germplasm Resources Innovation and Genetic Improvement, Lushan Botanical Garden, Chinese Academy of Sciences, Jiujiang 332900, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Yang E",
+          "firstName": "Endian",
+          "lastName": "Yang",
+          "initials": "E",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0009-0002-9014-5416"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Jiangxi Provincial Key Laboratory of ex situ Plant Conservation and Utilization, Lushan Botanical Garden, Chinese Academy of Sciences, Jiujiang 332900, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Qiu X",
+          "firstName": "Xue",
+          "lastName": "Qiu",
+          "initials": "X",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0009-0004-2321-3014"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Jiangxi Provincial Key Laboratory of ex situ Plant Conservation and Utilization, Lushan Botanical Garden, Chinese Academy of Sciences, Jiujiang 332900, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Hu Y",
+          "firstName": "Yufang",
+          "lastName": "Hu",
+          "initials": "Y",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0001-9979-0361"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Jiangxi Provincial Key Laboratory of ex situ Plant Conservation and Utilization, Lushan Botanical Garden, Chinese Academy of Sciences, Jiujiang 332900, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Shi Y",
+          "firstName": "Yong",
+          "lastName": "Shi",
+          "initials": "Y",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0001-8719-7667"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Jiangxi Provincial Key Laboratory of ex situ Plant Conservation and Utilization, Lushan Botanical Garden, Chinese Academy of Sciences, Jiujiang 332900, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zha M",
+          "firstName": "Minjun",
+          "lastName": "Zha",
+          "initials": "M",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0002-5156-3466"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Jiangxi Provincial Key Laboratory of Plant Germplasm Resources Innovation and Genetic Improvement, Lushan Botanical Garden, Chinese Academy of Sciences, Jiujiang 332900, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Gao P",
+          "firstName": "Puxin",
+          "lastName": "Gao",
+          "initials": "P",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0003-3513-4300"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Jiangxi Provincial Key Laboratory of Plant Germplasm Resources Innovation and Genetic Improvement, Lushan Botanical Garden, Chinese Academy of Sciences, Jiujiang 332900, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Feng C",
+          "firstName": "Chen",
+          "lastName": "Feng",
+          "initials": "C",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0003-1144-0047"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Jiangxi Provincial Key Laboratory of ex situ Plant Conservation and Utilization, Lushan Botanical Garden, Chinese Academy of Sciences, Jiujiang 332900, China."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "authorIdList": {
+      "authorId": [
+        {
+          "type": "ORCID",
+          "value": "0000-0001-8719-7667"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0001-9979-0361"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0002-5156-3466"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0003-1144-0047"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0003-2871-8033"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0003-3513-4300"
+        },
+        {
+          "type": "ORCID",
+          "value": "0009-0002-9014-5416"
+        },
+        {
+          "type": "ORCID",
+          "value": "0009-0004-2321-3014"
+        }
+      ]
+    },
+    "journalInfo": {
+      "journalIssueId": 4190573,
+      "dateOfPublication": "2026 May",
+      "monthOfPublication": 5,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-05-01",
+      "journal": {
+        "title": "Plant physiology",
+        "medlineAbbreviation": "Plant Physiol",
+        "essn": "1532-2548",
+        "issn": "0032-0889",
+        "isoabbreviation": "Plant Physiol",
+        "nlmid": "0401224"
+      }
+    },
+    "pubYear": "2026",
+    "pageInfo": "kiag290",
+    "abstractText": "Disanthus cercidifolius subsp. longipes (DCL), a rare and endangered species endemic to southern China, possesses remarkable ornamental value and thus warrants enhanced conservation and utilization. However, the lack of a reference genome has hindered research progress. Here, we report a high-quality, chromosome-scale genome assembly of DCL using PacBio HiFi and Hi-C technologies, yielding a 1.05 Gb genome with a contig N50 of 121 Mb and anchoring 99.98% of sequences to eight chromosomes. Gene family analysis revealed that expanded gene families are mainly related to flavonoid biosynthesis and glycosyltransferase activity. DCL underwent only the whole-genome triplication event shared by core eudicots. Integrating ATAC-seq and ChIP-seq datasets, we generated a comprehensive epigenomic landscape comprising 45,359 accessible chromatin regions (ACRs). Highly expressed genes were consistently associated with a greater number of ACRs, a trend evident across both whole-genome duplication-derived gene pairs and tandem duplicates. Gene expression analysis indicated that H3K27ac, H3K9ac, and H3K4me3 may serve as critical histone marks for active regulatory elements. We further elucidated the epigenetic regulation of anthocyanin biosynthesis, mapping a molecular regulatory network. A key enhancer was involved in transcriptional regulation of Dcl09116 (chalcone isomerase) through recruitment of specific transcription factors. Collectively, this study provides comprehensive genomic and epigenomic resources for DCL, facilitating genetic improvement of its ornamental traits and advancing conservation efforts.",
+    "affiliation": "Jiangxi Provincial Key Laboratory of ex situ Plant Conservation and Utilization, Lushan Botanical Garden, Chinese Academy of Sciences, Jiujiang 332900, China.",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Journal Article"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1093/plphys/kiag290"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-23",
+    "firstIndexDate": "2026-05-24",
+    "dateOfRevision": "2026-05-23",
+    "electronicPublicationDate": "2026-05-23",
+    "firstPublicationDate": "2026-05-23",
+    "matched_keywords": [
+      "PacBio"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1237284",
+    "source": "PPR",
+    "doi": "10.21203/rs.3.rs-9282981/v1",
+    "title": "A Telomere-to-Telomere Genome of Talaromyces marneffei B33c Reveals Chromosomal Architecture and Cross-Border Connectivity",
+    "authorString": "Zhou X, Zheng Y, Jiang Z, Karki S, Pan K, Zheng D, Li X, Huang L, Liu G, Ling J, Tsui CKM, Cao C.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Zhou X",
+          "firstName": "Xinyu",
+          "lastName": "Zhou",
+          "initials": "X"
+        },
+        {
+          "fullName": "Zheng Y",
+          "firstName": "Yanqing",
+          "lastName": "Zheng",
+          "initials": "Y"
+        },
+        {
+          "fullName": "Jiang Z",
+          "firstName": "Zhiwen",
+          "lastName": "Jiang",
+          "initials": "Z"
+        },
+        {
+          "fullName": "Karki S",
+          "firstName": "Saroj",
+          "lastName": "Karki",
+          "initials": "S"
+        },
+        {
+          "fullName": "Pan K",
+          "firstName": "Kaisu",
+          "lastName": "Pan",
+          "initials": "K"
+        },
+        {
+          "fullName": "Zheng D",
+          "firstName": "Dongyan",
+          "lastName": "Zheng",
+          "initials": "D"
+        },
+        {
+          "fullName": "Li X",
+          "firstName": "Xiuying",
+          "lastName": "Li",
+          "initials": "X"
+        },
+        {
+          "fullName": "Huang L",
+          "firstName": "Lan",
+          "lastName": "Huang",
+          "initials": "L"
+        },
+        {
+          "fullName": "Liu G",
+          "firstName": "Guoqun",
+          "lastName": "Liu",
+          "initials": "G"
+        },
+        {
+          "fullName": "Ling J",
+          "firstName": "JinJin",
+          "lastName": "Ling",
+          "initials": "J"
+        },
+        {
+          "fullName": "Tsui CKM",
+          "firstName": "Clement",
+          "lastName": "Tsui",
+          "initials": "CKM"
+        },
+        {
+          "fullName": "Cao C",
+          "firstName": "Cunwei",
+          "lastName": "Cao",
+          "initials": "C"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "<title>Abstract</title>  <p>  Background  <italic>Talaromyces marneffei</italic>  is a thermally dimorphic fungal pathogen endemic to Southeast Asia and southern China. However, fragmented reference genomes have limited detailed investigations of its chromosomal architecture, structural variation, and evolutionary history. Methods  We integrated PacBio HiFi, Oxford Nanopore, and Hi-C sequencing data to generate a telomere-to-telomere (T2T), gap-free genome assembly of strain B33c, a landmark clinical isolate collected in 1984. Comparative genomic, phylogenomic, and orthogroup analyses were then performed to characterize chromosomal features, evolutionary relationships, and gene-content variation. Results  The 28.1-Mb assembly resolved all eight chromosomes and enabled comprehensive delineation of inferred centromeric domains and telomere-proximal regions. Complete telomeric repeats were identified at both ends of every chromosome, and chromosome-scale Hi-C contact maps supported a gap-free, chromosome-complete reference. Using 3,314 single-copy orthologs, we reconstructed a time-calibrated phylogeny that revealed a deep intraspecific split at approximately 6.8 Mya, separating  <italic>T. marneffei</italic>  into two major lineages. B33c clustered closely with Vietnamese isolates and showed shallow divergence (~ 0.3–0.4 Mya), suggesting cross-border genetic connectivity between northern Vietnam and southern China. Comparative genomics demonstrated broadly conserved macrosynteny, with localized repeat-associated structural variation showing a recurrent chromosome-biased distribution. Orthogroup profiling further supported a “conserved core–flexible periphery” genomic strategy, with marked accessory-genome differences between the environmental isolate ATCC 18224 and the clinical isolate B33c. Conclusion  This T2T, gap-free genome of  <italic>T. marneffei</italic>  B33c provides a high-quality chromosomal reference for investigating structural plasticity, phylogeography, and pathogenic evolution in this neglected tropical pathogen.  </p>",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "Research Square",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.21203/rs.3.rs-9282981/v1"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "versionList": {
+      "version": [
+        {
+          "id": "PPR1237284",
+          "source": "PPR",
+          "firstPublishDate": "2026-05-23",
+          "versionNumber": 1,
+          "pubTypeList": {
+            "pubType": [
+              "preprint"
+            ]
+          },
+          "hasEvaluations": "N"
+        }
+      ]
+    },
+    "versionNumber": 1,
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-24",
+    "firstIndexDate": "2026-05-24",
+    "firstPublicationDate": "2026-05-23",
+    "matched_keywords": [
+      "PacBio"
+    ],
+    "matched_journals": []
+  }
+]

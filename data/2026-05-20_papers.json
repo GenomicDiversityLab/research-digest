@@ -1,0 +1,1152 @@
+[
+  {
+    "id": "PPR1233271",
+    "source": "PPR",
+    "doi": "10.20944/preprints202605.1096.v1",
+    "title": "Improving Convection‐Allowing Ensemble Forecasts by Assimilating Radar Reflectivity and FY Satellite TBB/Total Cloud Water Through Stepwise Cloud‐Analysis Initialization: A Remote Sensing Case Study",
+    "authorString": "Deng G, Zhi X, Zhu L, Zhou Y, Chen F, Wu K, Chen J, Li H, Wang J, Yue J, Xu Z.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Deng G",
+          "firstName": "Guo",
+          "lastName": "Deng",
+          "initials": "G"
+        },
+        {
+          "fullName": "Zhi X",
+          "firstName": "Xiefei",
+          "lastName": "Zhi",
+          "initials": "X"
+        },
+        {
+          "fullName": "Zhu L",
+          "firstName": "Lijuan",
+          "lastName": "Zhu",
+          "initials": "L"
+        },
+        {
+          "fullName": "Zhou Y",
+          "firstName": "Yushu",
+          "lastName": "Zhou",
+          "initials": "Y"
+        },
+        {
+          "fullName": "Chen F",
+          "firstName": "Fajing",
+          "lastName": "Chen",
+          "initials": "F"
+        },
+        {
+          "fullName": "Wu K",
+          "firstName": "Kaiyan",
+          "lastName": "Wu",
+          "initials": "K"
+        },
+        {
+          "fullName": "Chen J",
+          "firstName": "Jing",
+          "lastName": "Chen",
+          "initials": "J"
+        },
+        {
+          "fullName": "Li H",
+          "firstName": "Hongqi",
+          "lastName": "Li",
+          "initials": "H"
+        },
+        {
+          "fullName": "Wang J",
+          "firstName": "Jingzhuo",
+          "lastName": "Wang",
+          "initials": "J"
+        },
+        {
+          "fullName": "Yue J",
+          "firstName": "Jian",
+          "lastName": "Yue",
+          "initials": "J"
+        },
+        {
+          "fullName": "Xu Z",
+          "firstName": "Zhizhen",
+          "lastName": "Xu",
+          "initials": "Z"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "The &quot;spin-up&quot; problem—where convection-permitting models require hours to develop realistic clouds from large-scale initial fields—critically limits short-term severe weather forecasting. Cloud analysis offers a potential solution by directly incorporating hydrome-teor information from remote sensing observations. In this study, we leverage multi-source remote sensing data, including three-dimensional mosaic radar reflectivity, hourly aver-aged FY-2G satellite black-body temperature (TBB), and FY-2G total cloud water products, within a stepwise cloud-analysis initialization scheme. The scheme is implemented in a convective-scale ensemble forecasting system (CMA-Meso, 3 km resolution) for a heavy rainfall event. For each ensemble member, three-dimensional hydrometeor increments are independently generated from these remote sensing retrievals and gradually introduced over the first ten time steps, ensuring smooth coordination with the model&#039;s dynam-ic-thermal framework. Results demonstrate that the remote sensing-driven cloud analysis substantially enhances ensemble system performance across multiple dimensions: (i) spin-up time is significant-ly reduced, with precipitation forecasts exhibiting reasonable structure from the initial forecast hour; (ii) deterministic forecast accuracy improves systematically, with reduced RMSE for geopotential height, temperature, and wind fields across all levels; (iii) proba-bilistic forecasting skill is enhanced, evidenced by improved CRPS and AROC for surface elements and precipitation thresholds; (iv) ensemble reliability is optimized, with spread better matching forecast errors. Mechanistic analysis reveals that these improvements stem from physically coordinated hydrometeor-latent heat initial perturbations and sub-sequent cloud-radiation feedbacks that continuously regulate thermal-dynamic structures. This study establishes that assimilating diverse remote sensing data via cloud analysis is an effective approach for addressing spin-up challenges in convective-scale ensemble prediction.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "Preprints.org",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.20944/preprints202605.1096.v1"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-20",
+    "firstIndexDate": "2026-05-20",
+    "firstPublicationDate": "2026-05-18",
+    "matched_keywords": [
+      "mosaic"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1233808",
+    "source": "PPR",
+    "doi": "10.64898/2026.05.17.722103",
+    "title": "Aortic valve stenosis promotes pathological shear stress-dependent epigenomic dysregulation in circulating T cells.",
+    "authorString": "Zhang Y, Kleiner JL, Zheng J, Splettstoesser F, Zimmer S, Coburn M, Weisheit C, Frede S, Pepin ME.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Zhang Y",
+          "firstName": "Yunyang",
+          "lastName": "Zhang",
+          "initials": "Y"
+        },
+        {
+          "fullName": "Kleiner JL",
+          "firstName": "Jan Lucas",
+          "lastName": "Kleiner",
+          "initials": "JL"
+        },
+        {
+          "fullName": "Zheng J",
+          "firstName": "Jimmy",
+          "lastName": "Zheng",
+          "initials": "J"
+        },
+        {
+          "fullName": "Splettstoesser F",
+          "firstName": "Frank",
+          "lastName": "Splettstoesser",
+          "initials": "F"
+        },
+        {
+          "fullName": "Zimmer S",
+          "firstName": "Sebastian",
+          "lastName": "Zimmer",
+          "initials": "S"
+        },
+        {
+          "fullName": "Coburn M",
+          "firstName": "Mark",
+          "lastName": "Coburn",
+          "initials": "M"
+        },
+        {
+          "fullName": "Weisheit C",
+          "firstName": "Christina",
+          "lastName": "Weisheit",
+          "initials": "C"
+        },
+        {
+          "fullName": "Frede S",
+          "firstName": "Stilla",
+          "lastName": "Frede",
+          "initials": "S"
+        },
+        {
+          "fullName": "Pepin ME",
+          "firstName": "Mark Emile",
+          "lastName": "Pepin",
+          "initials": "ME"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "<h4>Background: </h4> Calcific aortic valve stenosis (AVS) is the most prevalent valvular heart disease in Western adults, yet no disease-modifying therapy exists. High shear stress (HSS) generated by progressive valvular obstruction drives endothelial injury and immune-mediated inflammation, but the contribution of circulating T cells to AVS pathogenesis remains poorly defined. Objectives. We tested whether chronic HSS corresponds with epigenomic reprogramming of peripheral T cells proportionate with hemodynamic severity to yield a clinically informative proxy of disease. Methods. A prospective cohort of 70 participants was recruited for peripheral blood sampling, including 34 with severe symptomatic AVS (aortic valve area <1.0 cm2, mean gradient > 40 mmHg) scheduled for transcatheter aortic valve implantation and 36 age- and sex-matched controls. Peripheral T cells were isolated and profiled by genome-wide CpG methylation (Illumina MethylationEPIC) and RNA-sequencing. To test whether HSS directly activates inflammatory signaling, Jurkat T cells were exposed to 20 dyn/cm2 HSS via parallel-plate microfluidic chamber and concomitant CD3/CD28 stimulation, followed by assessment of NFAT nuclear translocation and NFAT target gene expression. Results. Unsupervised clustering of the 5,000 most-variable CpG loci resolved an epigenomic axis segregating AVS from control T cells (PC1 = 15.8% variance; P = 3.9x10-6). Multivariable-adjusted analysis identified 3,950 differentially methylated positions (1,889 hyper-, 2,061 hypo-methylated), enriched in promoter-associated CpG islands implicating aortic valve morphogenesis and immune adhesion pathways. Multi-omics factor analysis isolated a latent factor that independently associated with AVS (FDR = 1.8x10-3; AUC = 0.79), enriched for chemokine receptor binding and TNF-family signaling, and correlated with canonical HSS-responsive transcripts, consistent with a T cell-mediated shear stress activation. An 18-CpG elastic-net methylation risk score discriminated AVS from controls (AUC = 0.89) and independently predicted hemodynamic severity (P = 0.008). HSS augmented NFAT nuclear translocation in CD3/CD28-activated Jurkat T cells and induced NFAT-responsive inflammatory transcripts. Conclusions. Severe AVS is associated with promoter-enriched epigenomic remodeling of circulating T cells that converges on hemodynamic stress-dependent inflammatory programs. An 18-CpG methylation risk score outperforms clinical covariates and tracks hemodynamic severity, establishing peripheral T cell DNA methylation as a molecular corollary of AVS.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.05.17.722103"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-20",
+    "firstIndexDate": "2026-05-20",
+    "firstPublicationDate": "2026-05-19",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PMC13173222",
+    "source": "PMC",
+    "pmcid": "PMC13173222",
+    "fullTextIdList": {
+      "fullTextId": [
+        "PMC13173222"
+      ]
+    },
+    "title": "432 Early attachment calibrates stress biology signatures in salivary DNA methylation aging",
+    "authorString": "Nguyen V.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Nguyen V",
+          "firstName": "Victoria",
+          "lastName": "Nguyen",
+          "initials": "V",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Columbia University"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "issue": "Suppl 1",
+      "volume": "10",
+      "journalIssueId": 4195611,
+      "dateOfPublication": " ",
+      "monthOfPublication": 0,
+      "yearOfPublication": 0,
+      "journal": {
+        "title": "Journal of clinical and translational science",
+        "medlineAbbreviation": "J Clin Transl Sci",
+        "isoabbreviation": "J Clin Transl Sci",
+        "essn": "2059-8661",
+        "issn": "2059-8661",
+        "nlmid": "101689953"
+      }
+    },
+    "pageInfo": "137-137",
+    "language": "eng",
+    "pubModel": "Undetermined",
+    "pubTypeList": {
+      "pubType": [
+        "Abstract"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13173222/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13173222/pdf/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13173222"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13173222?pdf=render"
+        }
+      ]
+    },
+    "isOpenAccess": "Y",
+    "inEPMC": "Y",
+    "inPMC": "Y",
+    "hasPDF": "Y",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "license": "cc by-nc-nd",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-20",
+    "firstIndexDate": "2026-05-20",
+    "fullTextReceivedDate": "2026-05-20",
+    "dateOfRevision": "2026-05-20",
+    "firstPublicationDate": "2026-05-20",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PMC13172962",
+    "source": "PMC",
+    "pmcid": "PMC13172962",
+    "fullTextIdList": {
+      "fullTextId": [
+        "PMC13172962"
+      ]
+    },
+    "title": "38 Salivary DNA methylation signatures as potential biomarkers for chronic painful temporomandibular disorders: A pilot study",
+    "authorString": "Gao Q, Lee S, MacLean A, Hayes R, Bertogliat M, Kaimal S, Darrow D, Nixdorf D, Stone L.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Gao Q",
+          "firstName": "Qiman",
+          "lastName": "Gao",
+          "initials": "Q",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "School of Dentistry, Department of Diagnostic and Biological Sciences"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Lee S",
+          "firstName": "Seunghwan",
+          "lastName": "Lee",
+          "initials": "S",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Medical School, Department of Anesthesiology"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "MacLean A",
+          "firstName": "Alison",
+          "lastName": "MacLean",
+          "initials": "A",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Medical School, Department of Anesthesiology"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Hayes R",
+          "firstName": "Rebecca",
+          "lastName": "Hayes",
+          "initials": "R",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Medical School, Department of Neurosurgery"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Bertogliat M",
+          "firstName": "Mario",
+          "lastName": "Bertogliat",
+          "initials": "M",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "School of Medicine; University of Minnesota, Minneapolis, MN, USA"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Kaimal S",
+          "firstName": "Shanti",
+          "lastName": "Kaimal",
+          "initials": "S",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "School of Dentistry, Department of Diagnostic and Biological Sciences"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Darrow D",
+          "firstName": "David",
+          "lastName": "Darrow",
+          "initials": "D",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Medical School, Department of Neurosurgery"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Nixdorf D",
+          "firstName": "Donald R.",
+          "lastName": "Nixdorf",
+          "initials": "D",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "School of Dentistry, Department of Diagnostic and Biological Sciences"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Stone L",
+          "firstName": "Laura",
+          "lastName": "Stone",
+          "initials": "L",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Medical School, Department of Anesthesiology"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "issue": "Suppl 1",
+      "volume": "10",
+      "journalIssueId": 4195481,
+      "dateOfPublication": " ",
+      "monthOfPublication": 0,
+      "yearOfPublication": 0,
+      "journal": {
+        "title": "Journal of clinical and translational science",
+        "medlineAbbreviation": "J Clin Transl Sci",
+        "isoabbreviation": "J Clin Transl Sci",
+        "essn": "2059-8661",
+        "issn": "2059-8661",
+        "nlmid": "101689953"
+      }
+    },
+    "pageInfo": "11-11",
+    "language": "eng",
+    "pubModel": "Undetermined",
+    "pubTypeList": {
+      "pubType": [
+        "Abstract"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13172962/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13172962/pdf/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13172962"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13172962?pdf=render"
+        }
+      ]
+    },
+    "isOpenAccess": "Y",
+    "inEPMC": "Y",
+    "inPMC": "Y",
+    "hasPDF": "Y",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "license": "cc by-nc-nd",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-20",
+    "firstIndexDate": "2026-05-20",
+    "fullTextReceivedDate": "2026-05-20",
+    "dateOfRevision": "2026-05-20",
+    "firstPublicationDate": "2026-05-20",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PMC13180532",
+    "source": "PMC",
+    "pmcid": "PMC13180532",
+    "fullTextIdList": {
+      "fullTextId": [
+        "PMC13180532"
+      ]
+    },
+    "title": "m6A RNA methylation in sepsis-induced cardiomyopathy: direct cardiac mechanisms, emerging therapeutic targets, and translational gaps",
+    "authorString": "Zhang F, Zhang L, Wang Y.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Zhang F",
+          "firstName": "Fengmei",
+          "lastName": "Zhang",
+          "initials": "F",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Cardiovascular Surgery, West China Hospital, Sichuan University/West China School of Nursing, Sichuan University , ,"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zhang L",
+          "firstName": "Lijun",
+          "lastName": "Zhang",
+          "initials": "L",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Cardiovascular Surgery, West China Hospital, Sichuan University/West China School of Nursing, Sichuan University , ,"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Wang Y",
+          "firstName": "Yuhan",
+          "lastName": "Wang",
+          "initials": "Y",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Cardiovascular Surgery, West China Hospital, Sichuan University/West China School of Nursing, Sichuan University , ,"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "volume": "13",
+      "journalIssueId": 4195988,
+      "dateOfPublication": " ",
+      "monthOfPublication": 0,
+      "yearOfPublication": 0,
+      "journal": {
+        "title": "Frontiers in medicine",
+        "medlineAbbreviation": "Front Med (Lausanne)",
+        "isoabbreviation": "Front Med (Lausanne)",
+        "essn": "2296-858X",
+        "issn": "2296-858X",
+        "nlmid": "101648047"
+      }
+    },
+    "language": "eng",
+    "pubModel": "Undetermined",
+    "pubTypeList": {
+      "pubType": [
+        "review-article",
+        "Review",
+        "Journal Article"
+      ]
+    },
+    "keywordList": {
+      "keyword": [
+        "Apoptosis",
+        "Pyroptosis",
+        "Mettl3",
+        "Fto",
+        "N6-methyladenosine",
+        "Ferroptosis",
+        "Sepsis-induced Cardiomyopathy",
+        "Epitranscriptomics"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13180532/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13180532/pdf/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13180532"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13180532?pdf=render"
+        }
+      ]
+    },
+    "isOpenAccess": "Y",
+    "inEPMC": "Y",
+    "inPMC": "Y",
+    "hasPDF": "Y",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "license": "cc by",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-20",
+    "firstIndexDate": "2026-05-20",
+    "fullTextReceivedDate": "2026-05-20",
+    "dateOfRevision": "2026-05-20",
+    "firstPublicationDate": "2026-05-20",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1233423",
+    "source": "PPR",
+    "doi": "10.21203/rs.3.rs-9479527/v1",
+    "title": "N6-methyladenosine Modification of CRLF1 Boosts Cardiac Fibroblasts Pyroptosis and Induces Fibrosis",
+    "authorString": "Zhao J, Tao H, Zhou Z, Yang Y, Song K, Lin L, Liu Z, Liu Z, Sun X, Zhu C, Tu B, Shi Y.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Zhao J",
+          "firstName": "Jian-Yuan",
+          "lastName": "Zhao",
+          "initials": "J"
+        },
+        {
+          "fullName": "Tao H",
+          "firstName": "Hui",
+          "lastName": "Tao",
+          "initials": "H"
+        },
+        {
+          "fullName": "Zhou Z",
+          "firstName": "Ze-Yu",
+          "lastName": "Zhou",
+          "initials": "Z"
+        },
+        {
+          "fullName": "Yang Y",
+          "firstName": "Yuan-Xin",
+          "lastName": "Yang",
+          "initials": "Y"
+        },
+        {
+          "fullName": "Song K",
+          "firstName": "Kai",
+          "lastName": "Song",
+          "initials": "K"
+        },
+        {
+          "fullName": "Lin L",
+          "firstName": "Li-Chan",
+          "lastName": "Lin",
+          "initials": "L"
+        },
+        {
+          "fullName": "Liu Z",
+          "firstName": "Zhi-Yan",
+          "lastName": "Liu",
+          "initials": "Z"
+        },
+        {
+          "fullName": "Liu Z",
+          "firstName": "Zhen-Yu",
+          "lastName": "Liu",
+          "initials": "Z"
+        },
+        {
+          "fullName": "Sun X",
+          "firstName": "Xin",
+          "lastName": "Sun",
+          "initials": "X"
+        },
+        {
+          "fullName": "Zhu C",
+          "firstName": "Chuanying",
+          "lastName": "Zhu",
+          "initials": "C"
+        },
+        {
+          "fullName": "Tu B",
+          "firstName": "Bin",
+          "lastName": "Tu",
+          "initials": "B"
+        },
+        {
+          "fullName": "Shi Y",
+          "firstName": "Yan",
+          "lastName": "Shi",
+          "initials": "Y"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "<title>Abstract</title>  <p>Background  Excessive pyroptosis is implicated in cardiac fibrosis and atrial fibrillation (AF), yet the underlying epitranscriptomic mechanisms remain poorly understood. Cytokine receptor-like factor 1 (CRLF1) has been associated with inflammatory injury and fibrosis, but its role and regulation in the heart are unclear. Objectives  This study aimed to investigate the role of CRLF1 in cardiac fibroblast pyroptosis and fibrosis, and to determine whether its expression is regulated by N6-methyladenosine (m6A) RNA modification. Methods  We analyzed human AF tissue samples, mouse models of cardiac fibrosis (isoprenaline-induced and LPS/Nigericin-induced), and primary cardiac fibroblasts. Techniques included fibroblast-specific CRLF1 knockout, proteomics, western blotting, flow cytometry, scanning electron microscopy, m6A dot blot, MeRIP-qPCR, and RNA immunoprecipitation. Results  CRLF1 was significantly upregulated in human AF tissues and mouse fibrotic hearts, specifically within cardiac fibroblasts. CRLF1 promoted pyroptosis via the palmitoyl acyltransferase DHHC7 and guanylate-binding protein 9 (GBP9), enhancing GSDMD cleavage. Furthermore, CRLF1 upregulation was mediated by increased m6A methylation on its mRNA, driven by reduced ALKBH5 expression. This m6A modification enhanced CRLF1 translation in a YTHDF1-dependent manner. Fibroblast-specific knockout of either CRLF1 or YTHDF1 ameliorated cardiac fibrosis and improved heart function in mice. Conclusions  Our findings reveal a novel epitranscriptomic pathway wherein ALKBH5 downregulation leads to m6A-YTHDF1-mediated upregulation of CRLF1, which promotes cardiac fibroblast pyroptosis and fibrosis. Targeting this CRLF1-centric axis may offer a new therapeutic strategy for AF and cardiac fibrosis.</p>",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "Research Square",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.21203/rs.3.rs-9479527/v1"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-20",
+    "firstIndexDate": "2026-05-20",
+    "firstPublicationDate": "2026-05-19",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PMC13154246",
+    "source": "PMC",
+    "pmcid": "PMC13154246",
+    "fullTextIdList": {
+      "fullTextId": [
+        "PMC13154246"
+      ]
+    },
+    "title": "Decoding the Methylome: Insights into the Epigenetic Regulation of Polycystic Ovarian Syndrome through Mitochondrial DNA Methylation",
+    "authorString": "Kolasseri A, Tamizhselvi R, Jayanthi S.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Kolasseri A",
+          "firstName": "Aparna Eledath",
+          "lastName": "Kolasseri",
+          "initials": "A",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "School of Biosciences and Technology , Vellore Institute of Technology , Vellore 632014 ,  ,"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Tamizhselvi R",
+          "firstName": "Ramasamy",
+          "lastName": "Tamizhselvi",
+          "initials": "R",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "School of Biosciences and Technology , Vellore Institute of Technology , Vellore 632014 ,  ,"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Jayanthi S",
+          "firstName": "Sivaraman",
+          "lastName": "Jayanthi",
+          "initials": "S",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "School of Biosciences and Technology , Vellore Institute of Technology , Vellore 632014 ,  ,"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "issue": "6",
+      "volume": "26",
+      "journalIssueId": 4195879,
+      "dateOfPublication": "2025 Jan",
+      "monthOfPublication": 1,
+      "yearOfPublication": 2025,
+      "printPublicationDate": "2025-01-01",
+      "journal": {
+        "title": "Current genomics",
+        "medlineAbbreviation": "Curr Genomics",
+        "isoabbreviation": "Curr Genomics",
+        "essn": "1875-5488",
+        "issn": "1389-2029",
+        "nlmid": "100960527"
+      }
+    },
+    "pubYear": "2025",
+    "pageInfo": "422-433",
+    "language": "eng",
+    "pubModel": "Undetermined",
+    "pubTypeList": {
+      "pubType": [
+        "review-article",
+        "Review",
+        "Journal Article"
+      ]
+    },
+    "keywordList": {
+      "keyword": [
+        "Artificial intelligence",
+        "Epigenetics",
+        "PCOS",
+        "Machine Learning",
+        "Bisulfite Sequencing",
+        "Mitochondrial Dna Methylation"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13154246/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13154246/pdf/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13154246"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13154246?pdf=render"
+        }
+      ]
+    },
+    "isOpenAccess": "Y",
+    "inEPMC": "Y",
+    "inPMC": "Y",
+    "hasPDF": "Y",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "license": "cc by",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-20",
+    "firstIndexDate": "2026-05-20",
+    "fullTextReceivedDate": "2026-05-20",
+    "dateOfRevision": "2026-05-20",
+    "electronicPublicationDate": "2025-01-01",
+    "firstPublicationDate": "2025-01-01",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1233154",
+    "source": "PPR",
+    "doi": "10.12688/f1000research.177569.1",
+    "title": "The complete and annotated mitochondrial genome of Hemileia vastatrix Race I, causal agent of coffee leaf rust",
+    "authorString": "Marín-Ramírez GA, Maldonado CE, Padilla Hurtado BE, Brommonschenkel SH.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Marín-Ramírez GA",
+          "firstName": "Gustavo",
+          "lastName": "Marín-Ramírez",
+          "initials": "GA"
+        },
+        {
+          "fullName": "Maldonado CE",
+          "firstName": "Carlos",
+          "lastName": "Maldonado",
+          "initials": "CE"
+        },
+        {
+          "fullName": "Padilla Hurtado BE",
+          "firstName": "Beatriz",
+          "lastName": "Padilla Hurtado",
+          "initials": "BE"
+        },
+        {
+          "fullName": "Brommonschenkel SH",
+          "firstName": "Sergio",
+          "lastName": "Brommonschenkel",
+          "initials": "SH"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "Hemileia vastatrix is the fungal pathogen responsible for coffee leaf rust (CLR), the most economically important disease of  Coffea arabica worldwide. Recently, the nuclear genome of this fungus was completely deciphered. However, the mitochondrial genome of  H. vastatrix has remained undercharacterized. Here, we present the complete, circularized mitochondrial genome of  H. vastatrix Race I (isolate HvRI), assembled using a hybrid approach combining PacBio HiFi long reads and BGIseq short reads. The genome is 173,525 bp in length with a GC content of 33.1% and encodes 41 functional genes, including 15 protein-coding genes, 2 rRNAs, and 24 tRNAs. The assembly reveals significant structural complexity, driven by intron expansion in the  cox1 and  cob genes. Notably, the  atp8 gene contains a group II intron, rare for this locus, whose internal open reading frame displays evidence of pseudogenization via internal stop codons.. We also characterized a putative replication initiation zone (~1.2 kb) defined by a poly-G homopolymer and conserved regulatory motifs. The mitogenome of the HvRI isolate does not contain  cob mutations that lead to amino acid substitutions G143A and F129L associated with the quinone outside inhibitor (QoI) fungicide resistance. This high-quality mitogenome is an important resource for comparative mitogenomics, population diversity studies, and the molecular surveillance of QoI fungicide resistance.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "F1000Res",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.12688/f1000research.177569.1"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-20",
+    "firstIndexDate": "2026-05-20",
+    "firstPublicationDate": "2026-05-19",
+    "matched_keywords": [
+      "PacBio"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1233131",
+    "source": "PPR",
+    "doi": "10.1101/2025.09.19.677272",
+    "title": "Genome misassembly detection using Stash: A data structure based on stochastic tile hashing",
+    "authorString": "Sarvar A, Coombe L, Birol I.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Sarvar A",
+          "firstName": "Armaghan",
+          "lastName": "Sarvar",
+          "initials": "A"
+        },
+        {
+          "fullName": "Coombe L",
+          "firstName": "Lauren",
+          "lastName": "Coombe",
+          "initials": "L"
+        },
+        {
+          "fullName": "Birol I",
+          "firstName": "Inanc",
+          "lastName": "Birol",
+          "initials": "I"
+        }
+      ]
+    },
+    "pubYear": "2025",
+    "abstractText": "Motivation: Analyzing large data from high-throughput sequencing technologies presents significant challenges in terms of memory and computational requirements. It is crucial to develop efficient data structures and computational methods that handle sequencing information. These challenges impact bioinformatics studies, including de novo genome assembly which serves as the foundation of genomics. Issues like read errors or limitations of heuristic decisions in assembly algorithms lead to genome misassemblies and inaccurate genomic representations, compromising the quality of downstream analyses. Hence, de novo assemblies can benefit from misassembly detection and correction, to produce a more optimal assembly. <h4>Results:</h4> We present Stash, a novel hash-based data structure designed for storing and querying large sequencing data. For an input sequence, Stash uses sliding windows of spaced seed patterns to extract and hash k-mers. The hash values combined with the sequence ID determine the value stored in Stash. A filled Stash can be used to query whether two genomic regions are covered by the same set of reads. This can be used in genome misassembly detection. We demonstrate the effectiveness of Stash in detecting misassemblies in human genome assemblies generated by Flye and Shasta, using Pacbio HiFi reads from the human cell line NA24385. We observed that scaffolding Stash-cut assemblies reduces 7.6% and 3.4% of misassemblies in the Flye and Shasta assemblies, respectively. This is accomplished in 310 minutes utilizing 8 GB of memory. Stash is comparable to alternative long read misassembly correction methods and can result in superior assemblies compared to the baseline.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2025
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1101/2025.09.19.677272"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-20",
+    "firstIndexDate": "2026-05-20",
+    "firstPublicationDate": "2025-09-21",
+    "matched_keywords": [
+      "PacBio"
+    ],
+    "matched_journals": []
+  }
+]

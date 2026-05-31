@@ -1,0 +1,4130 @@
+[
+  {
+    "id": "PPR1239008",
+    "source": "PPR",
+    "doi": "10.21203/rs.3.rs-9802259/v1",
+    "title": "High-efficiency base editing enables multiplex inactivation of retroviral and immunologic barriers in porcine xenotransplantation",
+    "authorString": "Park K, Waters J, Simpson S, Yeddula SGR, Scimeca E, Murugesan R, Borges A, Sher L, Telugu BP.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Park K",
+          "firstName": "Ki-Eun",
+          "lastName": "Park",
+          "initials": "K"
+        },
+        {
+          "fullName": "Waters J",
+          "firstName": "Jerel",
+          "lastName": "Waters",
+          "initials": "J"
+        },
+        {
+          "fullName": "Simpson S",
+          "firstName": "Sean",
+          "lastName": "Simpson",
+          "initials": "S"
+        },
+        {
+          "fullName": "Yeddula SGR",
+          "firstName": "Sai Gowtham Reddy",
+          "lastName": "Yeddula",
+          "initials": "SGR"
+        },
+        {
+          "fullName": "Scimeca E",
+          "firstName": "Erin",
+          "lastName": "Scimeca",
+          "initials": "E"
+        },
+        {
+          "fullName": "Murugesan R",
+          "firstName": "Raju",
+          "lastName": "Murugesan",
+          "initials": "R"
+        },
+        {
+          "fullName": "Borges A",
+          "firstName": "Alexandria",
+          "lastName": "Borges",
+          "initials": "A"
+        },
+        {
+          "fullName": "Sher L",
+          "firstName": "Linda",
+          "lastName": "Sher",
+          "initials": "L"
+        },
+        {
+          "fullName": "Telugu BP",
+          "firstName": "Bhanu",
+          "lastName": "Telugu",
+          "initials": "BP"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "<title>Abstract</title>  <p>Genetically engineered pigs are promising donors for xenotransplantation; however, scalable genetic engineering strategies that overcome zoonotic and xenogeneic barriers remain challenging. Here, we combined cytosine base editing in zygotes with fetal prescreening and cloning to generate non-mosaic pigs with inactivation of up to 43 PERV copies and multiplex inactivation of 5 genes in a single generation. This platform, therefore, represents a major advance in large-scalegenetic engineering and xenotransplantation.</p>",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "Research Square",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.21203/rs.3.rs-9802259/v1"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "versionList": {
+      "version": [
+        {
+          "id": "PPR1239008",
+          "source": "PPR",
+          "firstPublishDate": "2026-05-26",
+          "versionNumber": 1,
+          "pubTypeList": {
+            "pubType": [
+              "preprint"
+            ]
+          },
+          "hasEvaluations": "N"
+        }
+      ]
+    },
+    "versionNumber": 1,
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-27",
+    "firstIndexDate": "2026-05-27",
+    "firstPublicationDate": "2026-05-26",
+    "matched_keywords": [
+      "mosaic"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PMC13211345",
+    "source": "PMC",
+    "pmcid": "PMC13211345",
+    "fullTextIdList": {
+      "fullTextId": [
+        "PMC13211345"
+      ]
+    },
+    "title": "Polymorphisms for Defence and Virulence in the Arabidopsis thaliana–Cucumber mosaic virus Interaction Are Expressed in the Host’s Native Habitat",
+    "journalInfo": {
+      "issue": "5",
+      "volume": "18",
+      "journalIssueId": 4201709,
+      "dateOfPublication": "2026 Apr",
+      "monthOfPublication": 4,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-04-01",
+      "journal": {
+        "title": "Viruses",
+        "medlineAbbreviation": "Viruses",
+        "isoabbreviation": "Viruses",
+        "essn": "1999-4915",
+        "nlmid": "101509722",
+        "issn": "1999-4915"
+      }
+    },
+    "pubYear": "2026",
+    "language": "eng",
+    "pubModel": "Undetermined",
+    "pubTypeList": {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    },
+    "grantsList": {
+      "grant": [
+        {
+          "grantId": "PRE2019-090617",
+          "agency": "Formación de Personal Investigador",
+          "orderIn": 0
+        },
+        {
+          "grantId": "PID2021-124671OB-I00",
+          "agency": "Agencia Nacional de Investigación, Spain",
+          "orderIn": 0
+        }
+      ]
+    },
+    "keywordList": {
+      "keyword": [
+        "Resistance",
+        "Tolerance",
+        "Arabidopsis thaliana",
+        "Virulence",
+        "Cucumber mosaic virus",
+        "field conditions",
+        "Plant–virus Interaction",
+        "Native Habitat"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13211345/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13211345/pdf/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13211345"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13211345?pdf=render"
+        }
+      ]
+    },
+    "isOpenAccess": "Y",
+    "inEPMC": "Y",
+    "inPMC": "Y",
+    "hasPDF": "Y",
+    "hasBook": "N",
+    "hasSuppl": "Y",
+    "citedByCount": 0,
+    "hasData": "Y",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "license": "cc by",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-27",
+    "firstIndexDate": "2026-05-27",
+    "fullTextReceivedDate": "2026-05-27",
+    "dateOfRevision": "2026-05-27",
+    "electronicPublicationDate": "2026-04-23",
+    "firstPublicationDate": "2026-04-23",
+    "matched_keywords": [
+      "mosaic"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PMC13211540",
+    "source": "PMC",
+    "pmcid": "PMC13211540",
+    "fullTextIdList": {
+      "fullTextId": [
+        "PMC13211540"
+      ]
+    },
+    "title": "The Melon Sterol Transporter Niemann-Pick C1 Protein Is a New Interactor of Cucumber mosaic virus Movement Protein",
+    "authorString": "Real N, Villar I, Liu B, Gajjout M, Hou W, Martín-Hernández A.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Real N",
+          "firstName": "Núria",
+          "lastName": "Real",
+          "initials": "N",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Centre for Research in Agricultural Genomics (CRAG) CSIC-IRTA-UAB-UB, C/Vall Moronta, Edifici CRAG, Bellaterra (Cerdanyola del Vallés), 08193 Barcelona, Spain; (N.R.); (I.V.); (B.L.); (M.G.); (W.H.)"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Villar I",
+          "firstName": "Irene",
+          "lastName": "Villar",
+          "initials": "I",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Centre for Research in Agricultural Genomics (CRAG) CSIC-IRTA-UAB-UB, C/Vall Moronta, Edifici CRAG, Bellaterra (Cerdanyola del Vallés), 08193 Barcelona, Spain; (N.R.); (I.V.); (B.L.); (M.G.); (W.H.)"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Liu B",
+          "firstName": "Bin",
+          "lastName": "Liu",
+          "initials": "B",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Centre for Research in Agricultural Genomics (CRAG) CSIC-IRTA-UAB-UB, C/Vall Moronta, Edifici CRAG, Bellaterra (Cerdanyola del Vallés), 08193 Barcelona, Spain; (N.R.); (I.V.); (B.L.); (M.G.); (W.H.)"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Gajjout M",
+          "firstName": "Manale",
+          "lastName": "Gajjout",
+          "initials": "M",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Centre for Research in Agricultural Genomics (CRAG) CSIC-IRTA-UAB-UB, C/Vall Moronta, Edifici CRAG, Bellaterra (Cerdanyola del Vallés), 08193 Barcelona, Spain; (N.R.); (I.V.); (B.L.); (M.G.); (W.H.)"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Hou W",
+          "firstName": "Weina",
+          "lastName": "Hou",
+          "initials": "W",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Centre for Research in Agricultural Genomics (CRAG) CSIC-IRTA-UAB-UB, C/Vall Moronta, Edifici CRAG, Bellaterra (Cerdanyola del Vallés), 08193 Barcelona, Spain; (N.R.); (I.V.); (B.L.); (M.G.); (W.H.)"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Martín-Hernández A",
+          "firstName": "Ana Montserrat",
+          "lastName": "Martín-Hernández",
+          "initials": "A",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Centre for Research in Agricultural Genomics (CRAG) CSIC-IRTA-UAB-UB, C/Vall Moronta, Edifici CRAG, Bellaterra (Cerdanyola del Vallés), 08193 Barcelona, Spain; (N.R.); (I.V.); (B.L.); (M.G.); (W.H.)"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "issue": "5",
+      "volume": "18",
+      "journalIssueId": 4201729,
+      "dateOfPublication": "2026 May",
+      "monthOfPublication": 5,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-05-01",
+      "journal": {
+        "title": "Viruses",
+        "medlineAbbreviation": "Viruses",
+        "isoabbreviation": "Viruses",
+        "essn": "1999-4915",
+        "nlmid": "101509722",
+        "issn": "1999-4915"
+      }
+    },
+    "pubYear": "2026",
+    "language": "eng",
+    "pubModel": "Undetermined",
+    "pubTypeList": {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    },
+    "grantsList": {
+      "grant": [
+        {
+          "grantId": "CEX2019-000902-S",
+          "agency": "MICIU/AEI/10.13039/501100011033",
+          "orderIn": 0
+        },
+        {
+          "grantId": "PID2021-125998OB-C21",
+          "agency": "MCIN/AEI/10.13039/501100011033",
+          "orderIn": 0
+        },
+        {
+          "grantId": "PID2022-139376OB-C33",
+          "agency": "MCIN/AEI/10.13039/501100011033",
+          "orderIn": 0
+        },
+        {
+          "grantId": " ",
+          "agency": "CERCA Program/Generalitat de Catalunya",
+          "orderIn": 0
+        }
+      ]
+    },
+    "keywordList": {
+      "keyword": [
+        "Cucumber mosaic virus",
+        "Movement protein",
+        "Virus infection",
+        "Melon",
+        "Niemann-pick C1",
+        "Interactor Domain"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13211540/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13211540/pdf/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13211540"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13211540?pdf=render"
+        }
+      ]
+    },
+    "isOpenAccess": "Y",
+    "inEPMC": "Y",
+    "inPMC": "Y",
+    "hasPDF": "Y",
+    "hasBook": "N",
+    "hasSuppl": "Y",
+    "citedByCount": 0,
+    "hasData": "Y",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "license": "cc by",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-27",
+    "firstIndexDate": "2026-05-27",
+    "fullTextReceivedDate": "2026-05-27",
+    "dateOfRevision": "2026-05-27",
+    "electronicPublicationDate": "2026-05-01",
+    "firstPublicationDate": "2026-05-01",
+    "matched_keywords": [
+      "mosaic"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1239327",
+    "source": "PPR",
+    "doi": "10.64898/2026.05.23.727376",
+    "title": "A billion-year-old bacterial machinery replicates plastid DNA and supports kleptoplastidy",
+    "authorString": "Antoine T, Burki F, Archibald JM, Pelletier E, Delmont TO.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Antoine T",
+          "firstName": "Thibault",
+          "lastName": "Antoine",
+          "initials": "T"
+        },
+        {
+          "fullName": "Burki F",
+          "firstName": "Fabien",
+          "lastName": "Burki",
+          "initials": "F"
+        },
+        {
+          "fullName": "Archibald JM",
+          "firstName": "John",
+          "lastName": "Archibald",
+          "initials": "JM"
+        },
+        {
+          "fullName": "Pelletier E",
+          "firstName": "Eric",
+          "lastName": "Pelletier",
+          "initials": "E"
+        },
+        {
+          "fullName": "Delmont TO",
+          "firstName": "Tom",
+          "lastName": "Delmont",
+          "initials": "TO"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "The endosymbiotic evolution of plastids and mitochondria was central to the origin and success of eukaryotes. One of the most prominent molecular machineries thought to have disappeared early in eukaryote evolution is the multi-subunit bacterial DNA polymerase III (DNApol-III), which is the principal enzyme complex supporting DNA replication in bacteria. Here, we combined worldwide metagenomics and cultivation to characterise the mosaic genomic landscape of abundant phytoplankton lineages of Teleaulax (Cryptophyceae), which contain an endosymbiotically-derived nucleomorph genome. Unexpectedly, the nuclear, plastid and nucleomorph genomes of Teleaulax contain ubiquitously expressed genes for plastid-targeted DNApol-III subunits. These genes shed light on the functioning of Teleaulax genomes when sequestered by the ciliate Mesodinium during its kleptoplastidic photosynthetic activity. In particular, the alpha subunit gene (encoding the polymerase activity), which resides in the nucleomorph genome, is continuously expressed in Mesodinium in controlled laboratory experiments. This provides a mechanistic explanation for the replication of Teleaulax plastid genomes weeks after the nuclear genome is lost. Beyond Teleaulax and close relatives, we also identified genes encoding plastid-targeted DNApol-III subunits (including alpha) in nuclear genomes of unicellular and multicellular lineages of Archaeplastida that form, along with those of Cryptophyceae, monophyletic clades firmly positioned within Cyanobacteria. Together, our results reveal a previously overlooked retention of bacterial DNA replication machinery from plastid primary endosymbiosis in Archaeplastida, its acquisition by Cryptophyceae during secondary endosymbiosis, and its direct role in contemporary plankton as a facilitator of kleptoplastidic photosynthetic activity by heterotrophic ciliates.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.05.23.727376"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-27",
+    "firstIndexDate": "2026-05-27",
+    "firstPublicationDate": "2026-05-25",
+    "matched_keywords": [
+      "mosaic"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1239238",
+    "source": "PPR",
+    "doi": "10.64898/2026.05.21.726996",
+    "title": "Multi-omics data of a weedy coral species from Ulithi Atoll (Micronesia) to investigate the impact of human disturbance on coral health and resilience",
+    "authorString": "Chille EE, Panayotakis GM, Stephens TG, Paddack M, Crane NL, Bernardi G, Rulmal J, Bhattacharya D.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Chille EE",
+          "firstName": "Erin",
+          "lastName": "Chille",
+          "initials": "EE"
+        },
+        {
+          "fullName": "Panayotakis GM",
+          "firstName": "Gabriella",
+          "lastName": "Panayotakis",
+          "initials": "GM"
+        },
+        {
+          "fullName": "Stephens TG",
+          "firstName": "Timothy",
+          "lastName": "Stephens",
+          "initials": "TG"
+        },
+        {
+          "fullName": "Paddack M",
+          "firstName": "Michelle",
+          "lastName": "Paddack",
+          "initials": "M"
+        },
+        {
+          "fullName": "Crane NL",
+          "firstName": "Nicole",
+          "lastName": "Crane",
+          "initials": "NL"
+        },
+        {
+          "fullName": "Bernardi G",
+          "firstName": "Giacomo",
+          "lastName": "Bernardi",
+          "initials": "G"
+        },
+        {
+          "fullName": "Rulmal J",
+          "firstName": "John",
+          "lastName": "Rulmal",
+          "initials": "J"
+        },
+        {
+          "fullName": "Bhattacharya D",
+          "firstName": "Debashish",
+          "lastName": "Bhattacharya",
+          "initials": "D"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "<h4>Background: </h4> Coral reefs are among the most biodiverse ecosystems on Earth yet face an increasing risk of collapse under climate change and intensifying anthropogenic pressures. Although there is strong evidence that stressors such as overfishing, sedimentation, and wastewater runoff can drive shifts in coral community structure, few studies have investigated the molecular mechanisms underlying these shifts. Integrating data across multiple layers of biological organization, from the genome to the proteome and metabolome, offers a powerful approach to understanding how coral physiology and resilience are impacted by human activities. <h4>Findings:</h4> Here, we present high-coverage whole genome sequencing (Montipora only) together with untargeted metabolomic and proteomic datasets from three coral genera (Acropora, Pocillopora, and Montipora) that inhabit Ulithi Atoll, Yap State, FSM. Ulithi Atoll is an ideal system for investigating how anthropogenic pressures influence coral molecular ecology and adaptation, with extensive historical ecological data available through the long-term research program of the One People One Reef collaborative to connect multi-omics data with macroecological trends. Following data cleaning and quality control, all datasets exhibited minimal technical variation among samples, providing a comprehensive baseline for future research on coral resilience across a mosaic of natural and anthropogenic stressors. <h4>Conclusions:</h4> These data provide a resource for examining how anthropogenic pressures influence coral physiology and resilience across environmental gradients. They also allow the identification of biomarkers of chronic stress that may inform the development of point-of-care diagnostic tools for coral health and contribute to evidence-based reef conservation and management strategies.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.05.21.726996"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-27",
+    "firstIndexDate": "2026-05-27",
+    "firstPublicationDate": "2026-05-26",
+    "matched_keywords": [
+      "mosaic"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1239318",
+    "source": "PPR",
+    "doi": "10.64898/2026.05.22.727230",
+    "title": "Diversifying stocking practices within rangelands supports diverse plant-pollinator communities and interactions",
+    "authorString": "Pearson AE, Russo L, Neff JL, Duffee B, Martinez J, McKinnis A, Medina N, Moore J, Phillips EW, Lichtenberg EM.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Pearson AE",
+          "firstName": "Avery",
+          "lastName": "Pearson",
+          "initials": "AE"
+        },
+        {
+          "fullName": "Russo L",
+          "firstName": "Laura",
+          "lastName": "Russo",
+          "initials": "L"
+        },
+        {
+          "fullName": "Neff JL",
+          "firstName": "John",
+          "lastName": "Neff",
+          "initials": "JL"
+        },
+        {
+          "fullName": "Duffee B",
+          "firstName": "Braeden",
+          "lastName": "Duffee",
+          "initials": "B"
+        },
+        {
+          "fullName": "Martinez J",
+          "firstName": "Jada",
+          "lastName": "Martinez",
+          "initials": "J"
+        },
+        {
+          "fullName": "McKinnis A",
+          "firstName": "Aidan",
+          "lastName": "McKinnis",
+          "initials": "A"
+        },
+        {
+          "fullName": "Medina N",
+          "firstName": "Nick",
+          "lastName": "Medina",
+          "initials": "N"
+        },
+        {
+          "fullName": "Moore J",
+          "firstName": "Julian",
+          "lastName": "Moore",
+          "initials": "J"
+        },
+        {
+          "fullName": "Phillips EW",
+          "firstName": "Ethan",
+          "lastName": "Phillips",
+          "initials": "EW"
+        },
+        {
+          "fullName": "Lichtenberg EM",
+          "firstName": "Elinor",
+          "lastName": "Lichtenberg",
+          "initials": "EM"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "Understanding how management alters species' biodiversity and interactions is critical for sustainable agriculture. This can be especially important for rangelands, grasslands used for livestock grazing that cover 30% of land worldwide. In rangelands, ranchers need to maximize livestock production while supporting healthy ecosystems. Grazing management can alter the impact of livestock by varying grazing timing and intensity, but its ecological impacts remain poorly understood. One critical function that may be supported in these systems is pollination; how rangeland management may alter this ecosystem service is unknown. We investigated how rotational stocking, where livestock are rotated among pastures, affected plant and pollinator communities and plant-pollinator interactions using working ranches in the Southern Great Plains. Sites were managed through continuous stocking or rotation with low or high frequency. We found that high-frequency livestock rotation supported greater flower abundance, and consequently greater pollinator abundance. Pollinator orders varied in their responses to management with Hymenoptera directly responding to management, and Coleoptera and Lepidoptera responding indirectly via changes in flower abundance. Community-level changes produced more specialized interaction networks that likely support more stable communities and higher interaction diversity. These community changes, and resulting species turnover, led to high interaction turnover across rangeland sites. This suggests that a mosaic of management strategies likely diversifies habitat and helps support plant and pollinator biodiversity at the landscape scale. This study demonstrates that rangelands can support plants, pollinators, and their interactions, particularly when managed with high-frequency rotational stocking.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.05.22.727230"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-27",
+    "firstIndexDate": "2026-05-27",
+    "firstPublicationDate": "2026-05-25",
+    "matched_keywords": [
+      "mosaic"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1238851",
+    "source": "PPR",
+    "doi": "10.21203/rs.3.rs-9722327/v1",
+    "title": "Multiscale landscape context and management gradients shape functional guilds and co-occurrence patterns of Diptera in tropical regenerative agroecosystems",
+    "authorString": "Efrata E, Ulinnuha U, Azhari AA, Pradiefta MR, Sataral M.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Efrata E",
+          "firstName": "Enriski",
+          "lastName": "Efrata",
+          "initials": "E"
+        },
+        {
+          "fullName": "Ulinnuha U",
+          "firstName": "Ulfa",
+          "lastName": "Ulinnuha",
+          "initials": "U"
+        },
+        {
+          "fullName": "Azhari AA",
+          "firstName": "Ahmad Alwi",
+          "lastName": "Azhari",
+          "initials": "AA"
+        },
+        {
+          "fullName": "Pradiefta MR",
+          "firstName": "Muhammad Rafii",
+          "lastName": "Pradiefta",
+          "initials": "MR"
+        },
+        {
+          "fullName": "Sataral M",
+          "firstName": "Mihwan",
+          "lastName": "Sataral",
+          "initials": "M"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "<title>Abstract</title>  <p>Tropical agroecosystems transitioning toward regenerative practices require biodiversity assessments that evaluate not only abundance but also changes in community composition, functional guild responses, landscape effects and community reorganization. This study aimed to analyze how gradients in the adoption of regenerative management shape Diptera communities at the plot and landscape scales in Bogor Regency, West Java, Indonesia. Sampling was conducted synchronously across 20 plots during November 2024, approximately two years after the intervention. Diptera were collected using malaise traps, pitfall traps and Berlese funnels, then identified to the morphospecies level and grouped into functional guilds. Data were analyzed using Bray-Curtis-based ordination, beta diversity decomposition, guild contrast models, landscape variable assessments at radii of 250, 500 and 1000 m, and co-occurrence network analysis. The results indicate that management did not result in a clear separation of Diptera community composition at the plot level, but was associated with increased morphospecies richness and changes in community internal heterogeneity. Differences among management categories were primarily reflected in the total dissimilarity, while nestedness remained low. Parasitoids exhibited the strongest response to intervention intensity, whereas pollinators and pests showed more varied response patterns. The influence of landscape variables was most evident at the 250–500 m scale, primarily through agricultural cover, habitat edges and landscape heterogeneity. In addition, plots with higher intervention levels exhibited larger and more modular co-occurrence networks. Overall, this study demonstrated that the transformation of regenerative agroecosystems is primarily associated with multidimensional ecological reorganization. These findings underscore the importance of integrating plot-level management with landscape mosaic management to enhance biodiversity and ecosystem functions in tropical agricultural landscapes.</p>",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "Research Square",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.21203/rs.3.rs-9722327/v1"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "versionList": {
+      "version": [
+        {
+          "id": "PPR1238851",
+          "source": "PPR",
+          "firstPublishDate": "2026-05-26",
+          "versionNumber": 1,
+          "pubTypeList": {
+            "pubType": [
+              "preprint"
+            ]
+          },
+          "hasEvaluations": "N"
+        }
+      ]
+    },
+    "versionNumber": 1,
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-27",
+    "firstIndexDate": "2026-05-27",
+    "firstPublicationDate": "2026-05-26",
+    "matched_keywords": [
+      "mosaic"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1239326",
+    "source": "PPR",
+    "doi": "10.64898/2026.05.23.720832",
+    "title": "Growth rate dependent DNA methylation patterns along bacterial chromosomes",
+    "authorString": "Mall A, Abbaspour MH, Mathes DJ, Udekwu KI, Marx CJ.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Mall A",
+          "firstName": "Akshat",
+          "lastName": "Mall",
+          "initials": "A"
+        },
+        {
+          "fullName": "Abbaspour MH",
+          "firstName": "Mohammad",
+          "lastName": "Abbaspour",
+          "initials": "MH"
+        },
+        {
+          "fullName": "Mathes DJ",
+          "firstName": "Dawson",
+          "lastName": "Mathes",
+          "initials": "DJ"
+        },
+        {
+          "fullName": "Udekwu KI",
+          "firstName": "Klas",
+          "lastName": "Udekwu",
+          "initials": "KI"
+        },
+        {
+          "fullName": "Marx CJ",
+          "firstName": "Christopher",
+          "lastName": "Marx",
+          "initials": "CJ"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "DNA methylation plays critical roles in gene regulation in bacteria, from regulating essential processes like the cell cycle to phenotypes of practical interest like pathogenicity and motility. Synthetic manipulation of global methylation levels has broad impacts on cellular physiology, changing expression patterns of hundreds of genes. However, whether or how environmental variation in natural settings similarly impacts DNA methylation patterns has been unclear. In this work, using the alphaproteobacteria Methylobacterium extorquens and Caulobacter crescentus as model systems, we discover the methylome is highly fluid in response to environmental variation, with different environments leading to distinct patterns of increased or decreased methylation levels along the chromosome. Despite a heterogeneous effect of different environments on methylation patterns, we find a general principle where the dependence of methylation states on position in the genome decreases in proportion to growth rate. A simple model that considers the methylation state through different phases of the cell cycle as a function of distance from an origin provides a framework to interpret the effects of different stressors upon the observed environmental responsiveness of the methylation patterns. Our work highlights how sequencing data alone can shed light on important aspects of microbial physiology.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.05.23.720832"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-27",
+    "firstIndexDate": "2026-05-27",
+    "firstPublicationDate": "2026-05-25",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1239183",
+    "source": "PPR",
+    "doi": "10.64898/2026.05.22.727067",
+    "title": "Dual histone methylation reader ZCWPW2 links histone methylation to initiation of meiotic recombination",
+    "authorString": "Yuan S, Wang S, Bao Z, Wang Z, Shangguan K, Yan Y, Shi Y, Feng X, Huang C, Fang M, Zhao H, Zhao S, Liu H, Chen Z, Huang T.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Yuan S",
+          "firstName": "Shenli",
+          "lastName": "Yuan",
+          "initials": "S"
+        },
+        {
+          "fullName": "Wang S",
+          "firstName": "Shiyu",
+          "lastName": "Wang",
+          "initials": "S"
+        },
+        {
+          "fullName": "Bao Z",
+          "firstName": "Ziyou",
+          "lastName": "Bao",
+          "initials": "Z"
+        },
+        {
+          "fullName": "Wang Z",
+          "firstName": "Ziqi",
+          "lastName": "Wang",
+          "initials": "Z"
+        },
+        {
+          "fullName": "Shangguan K",
+          "firstName": "Kang",
+          "lastName": "Shangguan",
+          "initials": "K"
+        },
+        {
+          "fullName": "Yan Y",
+          "firstName": "Yelian",
+          "lastName": "Yan",
+          "initials": "Y"
+        },
+        {
+          "fullName": "Shi Y",
+          "firstName": "Yajun",
+          "lastName": "Shi",
+          "initials": "Y"
+        },
+        {
+          "fullName": "Feng X",
+          "firstName": "Xu",
+          "lastName": "Feng",
+          "initials": "X"
+        },
+        {
+          "fullName": "Huang C",
+          "firstName": "Chengqi",
+          "lastName": "Huang",
+          "initials": "C"
+        },
+        {
+          "fullName": "Fang M",
+          "firstName": "Mengrui",
+          "lastName": "Fang",
+          "initials": "M"
+        },
+        {
+          "fullName": "Zhao H",
+          "firstName": "Han",
+          "lastName": "Zhao",
+          "initials": "H"
+        },
+        {
+          "fullName": "Zhao S",
+          "firstName": "Shigang",
+          "lastName": "Zhao",
+          "initials": "S"
+        },
+        {
+          "fullName": "Liu H",
+          "firstName": "Hongbin",
+          "lastName": "Liu",
+          "initials": "H"
+        },
+        {
+          "fullName": "Chen Z",
+          "firstName": "Zi-Jiang",
+          "lastName": "Chen",
+          "initials": "Z"
+        },
+        {
+          "fullName": "Huang T",
+          "firstName": "Tao",
+          "lastName": "Huang",
+          "initials": "T"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "Meiotic homologous recombination initiates with the formation of programmed DNA double-strand breaks (DSBs) by complexes comprising SPO11 and accessory proteins at discrete sites called recombination hotspots. In mammals, PRDM9-dependent H3K4me3 and H3K36me3 define recombination hotspots, but how these epigenetic characteristics determine the physiological DSB formation remains unknown. Here we show that dual histone methylation reader ZCWPW2 can recognize H3K4me3 and H3K36me3 marks in testis. The binding activity of ZCWPW2 to histone methylation is dependent on PRDM9 function. Moreover, we find the epigenetic writer-reader axis PRDM9-ZCWPW2 is essential for DSB formation at meiotic recombination hotspots, which may be partly explained by the finding that ZCWPW2 can physically interact with HORMAD1, IHO1, MEI4, and REC114. Finally, the absence of ZCWPW2 leads to disrupted chromosomal synapsis and recombination, thereby obstructing meiotic progression. Taken together, our findings provide new insights into how histone modifications and their associated regulatory proteins collectively regulate meiotic homologous recombination initiation.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.05.22.727067"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-27",
+    "firstIndexDate": "2026-05-27",
+    "firstPublicationDate": "2026-05-26",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1239263",
+    "source": "PPR",
+    "doi": "10.64898/2026.05.21.726956",
+    "title": "Breast cancer cohort study identifies an effective, non-invasive, breath-based diagnostic linked to cellular environment-dependent, novel methylation metabolisms",
+    "authorString": "Issitt T, Harmens A, Mason AS, Turvill J, Piper J, Sweeney ST, Brackenbury WJ, Redeker KR.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Issitt T",
+          "firstName": "Theo",
+          "lastName": "Issitt",
+          "initials": "T"
+        },
+        {
+          "fullName": "Harmens A",
+          "firstName": "Amy",
+          "lastName": "Harmens",
+          "initials": "A"
+        },
+        {
+          "fullName": "Mason AS",
+          "firstName": "Andrew",
+          "lastName": "Mason",
+          "initials": "AS"
+        },
+        {
+          "fullName": "Turvill J",
+          "firstName": "James",
+          "lastName": "Turvill",
+          "initials": "J"
+        },
+        {
+          "fullName": "Piper J",
+          "firstName": "Jenny",
+          "lastName": "Piper",
+          "initials": "J"
+        },
+        {
+          "fullName": "Sweeney ST",
+          "firstName": "Sean",
+          "lastName": "Sweeney",
+          "initials": "ST"
+        },
+        {
+          "fullName": "Brackenbury WJ",
+          "firstName": "William",
+          "lastName": "Brackenbury",
+          "initials": "WJ"
+        },
+        {
+          "fullName": "Redeker KR",
+          "firstName": "Kelly",
+          "lastName": "Redeker",
+          "initials": "KR"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "Volatile organic compounds (VOCs) demonstrate promise as non-invasive diagnostic tools. However, lack of mechanistically linked VOCs with biomarker discovery platforms limit delivery to the clinic. In this cohort-based study, we observed significant alterations of chloride-containing volatile fluxes, inclusive of methyl chloride (MeCl), in the breath of cancer patients that are consistent with our newly described metabolic model, derived through in vitro cellular assays and in vivo mice models. The diagnostic accuracy of this cohort study (60 patients) is equivalent to mammogram approaches. This newly identified and novel metabolism along with associated diagnostic biomarkers were initially identified through headspace studies of breast cancer cell lines which were deprived of serum, glucose or oxygen, similar to cellular conditions in tumors. In these cellular assays MeCl was consistently informative of cellular stress. Under resource limited conditions cellular production of MeCl was significantly reduced, and in several cases, cellular metabolism shifted to consumption. We present a new push-pull model in which cellular production of MeCl is linked to cellular methylation potential and methyl-transferase activity while consumption of MeCl is associated with methionine generation. Neither consumption nor production metabolisms have been described or quantified in humans or human tissues previously. The cellular headspace-derived model was tested using xenograft tumour bearing mice, which demonstrated reduced MeCl production, consistent with this model This work therefore presents a potentially powerful breath biomarker for cancer that translates from cellular and mice models through to human subjects.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.05.21.726956"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-27",
+    "firstIndexDate": "2026-05-27",
+    "firstPublicationDate": "2026-05-26",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1238915",
+    "source": "PPR",
+    "doi": "10.21203/rs.3.rs-9662268/v1",
+    "title": "Ligand-Independent Activation of Hedgehog Signaling in Diffuse Large B-Cell Lymphoma: Role of PTCH1 Promoter Hypermethylation",
+    "authorString": "Kong D, Zou R, Gao X, Bai J, Ping N, Li J, Zhu Q, Zhang X, Jin Z, Wu D, Qu C.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Kong D",
+          "firstName": "Danqing",
+          "lastName": "Kong",
+          "initials": "D"
+        },
+        {
+          "fullName": "Zou R",
+          "firstName": "Rui",
+          "lastName": "Zou",
+          "initials": "R"
+        },
+        {
+          "fullName": "Gao X",
+          "firstName": "Xin",
+          "lastName": "Gao",
+          "initials": "X"
+        },
+        {
+          "fullName": "Bai J",
+          "firstName": "Jie",
+          "lastName": "Bai",
+          "initials": "J"
+        },
+        {
+          "fullName": "Ping N",
+          "firstName": "Nana",
+          "lastName": "Ping",
+          "initials": "N"
+        },
+        {
+          "fullName": "Li J",
+          "firstName": "Junhong",
+          "lastName": "Li",
+          "initials": "J"
+        },
+        {
+          "fullName": "Zhu Q",
+          "firstName": "Qian",
+          "lastName": "Zhu",
+          "initials": "Q"
+        },
+        {
+          "fullName": "Zhang X",
+          "firstName": "Xiao",
+          "lastName": "Zhang",
+          "initials": "X"
+        },
+        {
+          "fullName": "Jin Z",
+          "firstName": "Zhengming",
+          "lastName": "Jin",
+          "initials": "Z"
+        },
+        {
+          "fullName": "Wu D",
+          "firstName": "Depei",
+          "lastName": "Wu",
+          "initials": "D"
+        },
+        {
+          "fullName": "Qu C",
+          "firstName": "Changju",
+          "lastName": "Qu",
+          "initials": "C"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "<title>Abstract</title>  <p>  Background  Hedgehog (HH) signaling is aberrantly activated in diffuse large B-cell lymphoma (DLBCL) and contributes to tumor proliferation and drug resistance. However, ligand-independent activation mechanisms, including gene mutations and epigenetic modifications, remain poorly defined. Methods  We performed targeted sequencing of 475 lymphoma-related genes in 106 DLBCL patients and conducted genome-wide methylation profiling by circulating cell-free DNA reduced representation bisulfite sequencing (cfDNA-RBS). Promoter methylation and gene expression were validated by amplicon bisulfite sequencing (ampBS) and real-time quantitative PCR(RT-qPCR) in 35 DLBCL tissue samples. Functional effects of the hypomethylating agent azacitidine (AZA) on  <italic>PTCH1</italic>  and downstream HH signaling in DLBCL were assessed  <italic>in vitro</italic>  . Results  <italic>PTCH1</italic>  mutations were rare (2.8%) and not associated with adverse outcomes. Hypermethylation of the  <italic>PTCH1</italic>  -T1 (targeting CpG156 island) was identified in DLBCL tissues and cell lines, correlating with reduced  <italic>PTCH1</italic>  expression and increased HH pathway activity (  <italic>r</italic>  = -0.469 and 0.531, respectively; both  <italic>P</italic>   < 0.01). AZA treatment reduced  <italic>PTCH1</italic>  -T1 methylation, restored  <italic>PTCH1</italic>  expression, suppressed  <italic>GLI1</italic>  , and inhibited downstream nuclear factor kappa B (NF-κB) and protein kinase B (PKB/AKT) signaling. Conclusions  Hypermethylation of  <italic>PTCH1</italic>  promoter represents a key ligand-independent epigenetic mechanism driving HH pathway activation in DLBCL. These findings provide a rationale for targeting DNA methylation as a precision therapeutic strategy.  </p>",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "Research Square",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.21203/rs.3.rs-9662268/v1"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "versionList": {
+      "version": [
+        {
+          "id": "PPR1238915",
+          "source": "PPR",
+          "firstPublishDate": "2026-05-26",
+          "versionNumber": 1,
+          "pubTypeList": {
+            "pubType": [
+              "preprint"
+            ]
+          },
+          "hasEvaluations": "N"
+        }
+      ]
+    },
+    "versionNumber": 1,
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-27",
+    "firstIndexDate": "2026-05-27",
+    "firstPublicationDate": "2026-05-26",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PMC13205079",
+    "source": "PMC",
+    "pmcid": "PMC13205079",
+    "fullTextIdList": {
+      "fullTextId": [
+        "PMC13205079"
+      ]
+    },
+    "title": "DNA Methylation Dynamics in Development and Disease: Insights from Zebrafish Models",
+    "authorString": "Lai G, Yan Y, Sengupta M, Xu T.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Lai G",
+          "firstName": "Gan-Qiang",
+          "lastName": "Lai",
+          "initials": "G",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Edward A. Doisy Department of Biochemistry and Molecular Biology, Saint Louis University School of Medicine, St. Louis, MO 63104, USA; (G.-Q.L.); (Y.Y.)"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Yan Y",
+          "firstName": "Yan",
+          "lastName": "Yan",
+          "initials": "Y",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Edward A. Doisy Department of Biochemistry and Molecular Biology, Saint Louis University School of Medicine, St. Louis, MO 63104, USA; (G.-Q.L.); (Y.Y.)"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Sengupta M",
+          "firstName": "Mohini",
+          "lastName": "Sengupta",
+          "initials": "M",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Biology, Saint Louis University, St. Louis, MO 63103, USA;"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Xu T",
+          "firstName": "Ting-Hai",
+          "lastName": "Xu",
+          "initials": "T",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Edward A. Doisy Department of Biochemistry and Molecular Biology, Saint Louis University School of Medicine, St. Louis, MO 63104, USA; (G.-Q.L.); (Y.Y.)"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "issue": "5",
+      "volume": "14",
+      "journalIssueId": 4197026,
+      "dateOfPublication": "2026 May",
+      "monthOfPublication": 5,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-05-01",
+      "journal": {
+        "title": "Biomedicines",
+        "medlineAbbreviation": "Biomedicines",
+        "isoabbreviation": "Biomedicines",
+        "essn": "2227-9059",
+        "nlmid": "101691304",
+        "issn": "2227-9059"
+      }
+    },
+    "pubYear": "2026",
+    "language": "eng",
+    "pubModel": "Undetermined",
+    "pubTypeList": {
+      "pubType": [
+        "review-article",
+        "Review",
+        "Journal Article"
+      ]
+    },
+    "keywordList": {
+      "keyword": [
+        "DNA methylation",
+        "Zebrafish",
+        "Disease model",
+        "DNA methyltransferase",
+        "drug discovery"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13205079/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13205079/pdf/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13205079"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13205079?pdf=render"
+        }
+      ]
+    },
+    "isOpenAccess": "Y",
+    "inEPMC": "Y",
+    "inPMC": "Y",
+    "hasPDF": "Y",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "license": "cc by",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-27",
+    "firstIndexDate": "2026-05-27",
+    "fullTextReceivedDate": "2026-05-27",
+    "dateOfRevision": "2026-05-27",
+    "electronicPublicationDate": "2026-05-01",
+    "firstPublicationDate": "2026-05-01",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PMC13207980",
+    "source": "PMC",
+    "pmcid": "PMC13207980",
+    "fullTextIdList": {
+      "fullTextId": [
+        "PMC13207980"
+      ]
+    },
+    "title": "Variations in DNA Methylation Are Landmarks of Freshwater Adaptation in Three-Spined Sticklebacks",
+    "authorString": "Starshin A, Mazur A, Mugue N, Kaplun D, Golden A, Khrameeva E, Prokhortchouk E.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Starshin A",
+          "firstName": "Alexey",
+          "lastName": "Starshin",
+          "initials": "A",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Institute of Bioengineering, Federal Research Center of Biotechnology, 117312 Moscow, Russia; (A.S.); (A.M.)"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Mazur A",
+          "firstName": "Alexandr",
+          "lastName": "Mazur",
+          "initials": "A",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Institute of Bioengineering, Federal Research Center of Biotechnology, 117312 Moscow, Russia; (A.S.); (A.M.)"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Mugue N",
+          "firstName": "Nikolai",
+          "lastName": "Mugue",
+          "initials": "N",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Koltzov Institute of Developmental Biology RAS, 119334 Moscow, Russia"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Kaplun D",
+          "firstName": "Daria",
+          "lastName": "Kaplun",
+          "initials": "D",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Scientific Center of Genetics and Life Sciences, Sirius University of Science and Technology, 354340 Sochi, Russia"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Golden A",
+          "firstName": "Artemiy",
+          "lastName": "Golden",
+          "initials": "A",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Center for Bio- and Medical Technologies, The Territory of the Skolkovo Innovation Center, 121205 Moscow, Russia"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Khrameeva E",
+          "firstName": "Ekaterina",
+          "lastName": "Khrameeva",
+          "initials": "E",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Center for Bio- and Medical Technologies, The Territory of the Skolkovo Innovation Center, 121205 Moscow, Russia"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Prokhortchouk E",
+          "firstName": "Egor",
+          "lastName": "Prokhortchouk",
+          "initials": "E",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Institute of Bioengineering, Federal Research Center of Biotechnology, 117312 Moscow, Russia; (A.S.); (A.M.)"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "issue": "10",
+      "volume": "27",
+      "journalIssueId": 4192896,
+      "dateOfPublication": "2026 May",
+      "monthOfPublication": 5,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-05-01",
+      "journal": {
+        "title": "International journal of molecular sciences",
+        "medlineAbbreviation": "Int J Mol Sci",
+        "isoabbreviation": "Int J Mol Sci",
+        "essn": "1422-0067",
+        "nlmid": "101092791",
+        "issn": "1422-0067"
+      }
+    },
+    "pubYear": "2026",
+    "language": "eng",
+    "pubModel": "Undetermined",
+    "pubTypeList": {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    },
+    "keywordList": {
+      "keyword": [
+        "Adaptation",
+        "Epigenetic Variation",
+        "Sticklebacks",
+        "Dna Methylation Entropy"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13207980/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13207980/pdf/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13207980"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13207980?pdf=render"
+        }
+      ]
+    },
+    "isOpenAccess": "Y",
+    "inEPMC": "Y",
+    "inPMC": "Y",
+    "hasPDF": "Y",
+    "hasBook": "N",
+    "hasSuppl": "Y",
+    "citedByCount": 0,
+    "hasData": "Y",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "license": "cc by",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-27",
+    "firstIndexDate": "2026-05-27",
+    "fullTextReceivedDate": "2026-05-27",
+    "dateOfRevision": "2026-05-27",
+    "electronicPublicationDate": "2026-05-01",
+    "firstPublicationDate": "2026-05-01",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1238897",
+    "source": "PPR",
+    "doi": "10.21203/rs.3.rs-9673555/v1",
+    "title": "The ZBTB24–CDCA7–HELLS Epigenetic Axis Drives DNMT-Dependent Silencing of μ- Opioid Receptors in Neuropathic Allodynia-like Behavior in Rats",
+    "authorString": "Hsieh M, Lai C, Lin T, Wang H, Cheng J, Yeh C, Hsu C, Li C, Chou D, Peng H.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Hsieh M",
+          "firstName": "Ming-Chun",
+          "lastName": "Hsieh",
+          "initials": "M"
+        },
+        {
+          "fullName": "Lai C",
+          "firstName": "Cheng-Yuan",
+          "lastName": "Lai",
+          "initials": "C"
+        },
+        {
+          "fullName": "Lin T",
+          "firstName": "Tzer-Bin",
+          "lastName": "Lin",
+          "initials": "T"
+        },
+        {
+          "fullName": "Wang H",
+          "firstName": "Hsueh-Hsiao",
+          "lastName": "Wang",
+          "initials": "H"
+        },
+        {
+          "fullName": "Cheng J",
+          "firstName": "Jen-Kun",
+          "lastName": "Cheng",
+          "initials": "J"
+        },
+        {
+          "fullName": "Yeh C",
+          "firstName": "Chou-Ming",
+          "lastName": "Yeh",
+          "initials": "C"
+        },
+        {
+          "fullName": "Hsu C",
+          "firstName": "Chieh-Chien",
+          "lastName": "Hsu",
+          "initials": "C"
+        },
+        {
+          "fullName": "Li C",
+          "firstName": "Cai-Ti",
+          "lastName": "Li",
+          "initials": "C"
+        },
+        {
+          "fullName": "Chou D",
+          "firstName": "Dylan",
+          "lastName": "Chou",
+          "initials": "D"
+        },
+        {
+          "fullName": "Peng H",
+          "firstName": "Hsien-Yu",
+          "lastName": "Peng",
+          "initials": "H"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "<title>Abstract</title>  <p>Introduction:  DNA methylation–mediated epigenetic regulation has emerged as a key contributor to the development of neuropathic pain. Cell Division Cycle Associated 7 (CDCA7), a zinc-finger protein, is known to participate in the regulation of DNA methylation, chromatin organization, and transcriptional repression. While dysregulated DNA methylation has been implicated in neuropathic pain, the specific role of CDCA7 in this process remains unclear. Objectives  We proposed that CDCA7 contributes to neuropathic pain by facilitating DNA methyltransferase (DNMT)-mediated repression of the µ-opioid receptor in the spinal dorsal horn. Methods  A rat model of neuropathic pain was established using spinal nerve ligation (SNL) in Sprague–Dawley rats. Pain-related behaviors, including mechanical sensitivity and burrowing performance, were evaluated. The expression and spatial distribution of target mRNAs and proteins were analyzed using quantitative PCR, Western blotting, and immunofluorescence staining. Functional involvement was further investigated through intrathecal delivery of gene-specific siRNAs. In addition, chromatin immunoprecipitation coupled with qPCR was performed to examine protein association with the µ-opioid receptor promoter. Results  SNL led to an upregulation of CDCA7 in dorsal horn neurons, which coincided with the development of pain hypersensitivity. Suppression of CDCA7 expression reduced allodynia and reinstated µ-opioid receptor levels. Furthermore, SNL enhanced the recruitment of CDCA7 and DNMTs to the µ-opioid receptor promoter, leading to transcriptional repression. Silencing HELLS produced comparable effects, suggesting a functional interaction between CDCA7 and HELLS. Mechanistically, ZBTB24 acted upstream to facilitate the assembly of the CDCA7–HELLS–DNMT complex at the promoter region. Knockdown of ZBTB24 mitigated both molecular alterations and behavioral abnormalities induced by SNL. Conclusions  These findings demonstrate that the ZBTB24–CDCA7–HELLS signaling axis contributes to neuropathic pain by promoting DNMT-dependent transcriptional repression of the µ-opioid receptor in the spinal dorsal horn. This study uncovers a novel epigenetic regulatory mechanism and highlights a potential target for therapeutic intervention in neuropathic pain.</p>",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "Research Square",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.21203/rs.3.rs-9673555/v1"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "versionList": {
+      "version": [
+        {
+          "id": "PPR1238897",
+          "source": "PPR",
+          "firstPublishDate": "2026-05-26",
+          "versionNumber": 1,
+          "pubTypeList": {
+            "pubType": [
+              "preprint"
+            ]
+          },
+          "hasEvaluations": "N"
+        }
+      ]
+    },
+    "versionNumber": 1,
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-27",
+    "firstIndexDate": "2026-05-27",
+    "firstPublicationDate": "2026-05-26",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PMC13199325",
+    "source": "PMC",
+    "pmcid": "PMC13199325",
+    "fullTextIdList": {
+      "fullTextId": [
+        "PMC13199325"
+      ]
+    },
+    "title": "Methylation-centric epigenetic regulation in dilated cardiomyopathy: mechanisms, metabolic interplay, and translational potential",
+    "authorString": "Wang Y, Zhang Y, Mao Z, Xu Z.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Wang Y",
+          "firstName": "Yilingrui",
+          "lastName": "Wang",
+          "initials": "Y",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Cardiothoracic Surgery, The Affiliated Huaian No.1 People’s Hospital of Nanjing Medical University , , ,"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zhang Y",
+          "firstName": "Yang",
+          "lastName": "Zhang",
+          "initials": "Y",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Anesthesiology, The Affiliated Huaian No.1 People’s Hospital of Nanjing Medical University , , ,"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Mao Z",
+          "firstName": "Zun",
+          "lastName": "Mao",
+          "initials": "Z",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Anhui Key Laboratory of Infection and Immunity, Department of Pathology, Center for Innovation in Basic Medical Sciences, Bengbu Medical University , , ,"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Xu Z",
+          "firstName": "Zhiwei",
+          "lastName": "Xu",
+          "initials": "Z",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Cardiothoracic Surgery, The Affiliated Huaian No.1 People’s Hospital of Nanjing Medical University , , ,"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "volume": "13",
+      "journalIssueId": 4201717,
+      "dateOfPublication": " ",
+      "monthOfPublication": 0,
+      "yearOfPublication": 0,
+      "journal": {
+        "title": "Frontiers in cardiovascular medicine",
+        "medlineAbbreviation": "Front Cardiovasc Med",
+        "isoabbreviation": "Front Cardiovasc Med",
+        "essn": "2297-055X",
+        "nlmid": "101653388",
+        "issn": "2297-055X"
+      }
+    },
+    "language": "eng",
+    "pubModel": "Undetermined",
+    "pubTypeList": {
+      "pubType": [
+        "review-article",
+        "Review",
+        "Journal Article"
+      ]
+    },
+    "keywordList": {
+      "keyword": [
+        "DNA methylation",
+        "Dilated cardiomyopathy",
+        "Metabolic regulation",
+        "therapeutic target",
+        "Epigenetics",
+        "histone methylation",
+        "M6a"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13199325/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13199325/pdf/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13199325"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13199325?pdf=render"
+        }
+      ]
+    },
+    "isOpenAccess": "Y",
+    "inEPMC": "Y",
+    "inPMC": "Y",
+    "hasPDF": "Y",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "license": "cc by",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-27",
+    "firstIndexDate": "2026-05-27",
+    "fullTextReceivedDate": "2026-05-27",
+    "dateOfRevision": "2026-05-27",
+    "firstPublicationDate": "2026-05-27",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PMC13204808",
+    "source": "PMC",
+    "pmcid": "PMC13204808",
+    "fullTextIdList": {
+      "fullTextId": [
+        "PMC13204808"
+      ]
+    },
+    "title": "P16 DNA Methylation Coupled with Somatic Copy Number Variations in the Development of Gastric Carcinomas",
+    "journalInfo": {
+      "issue": "10",
+      "volume": "18",
+      "journalIssueId": 4192041,
+      "dateOfPublication": "2026 May",
+      "monthOfPublication": 5,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-05-01",
+      "journal": {
+        "title": "Cancers",
+        "medlineAbbreviation": "Cancers (Basel)",
+        "isoabbreviation": "Cancers (Basel)",
+        "essn": "2072-6694",
+        "nlmid": "101526829",
+        "issn": "2072-6694"
+      }
+    },
+    "pubYear": "2026",
+    "language": "eng",
+    "pubModel": "Undetermined",
+    "pubTypeList": {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    },
+    "keywordList": {
+      "keyword": [
+        "DNA methylation",
+        "p16",
+        "Gastric cancer",
+        "Metastasis",
+        "Cdkn2a",
+        "Somatic Copy Number Variation (Scnv)"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13204808/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13204808/pdf/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13204808"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13204808?pdf=render"
+        }
+      ]
+    },
+    "isOpenAccess": "Y",
+    "inEPMC": "Y",
+    "inPMC": "Y",
+    "hasPDF": "Y",
+    "hasBook": "N",
+    "hasSuppl": "Y",
+    "citedByCount": 0,
+    "hasData": "Y",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "license": "cc by",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-27",
+    "firstIndexDate": "2026-05-27",
+    "fullTextReceivedDate": "2026-05-27",
+    "dateOfRevision": "2026-05-27",
+    "electronicPublicationDate": "2026-05-01",
+    "firstPublicationDate": "2026-05-01",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PMC13210806",
+    "source": "PMC",
+    "pmcid": "PMC13210806",
+    "fullTextIdList": {
+      "fullTextId": [
+        "PMC13210806"
+      ]
+    },
+    "title": "Genome-Wide DNA Methylation Analysis of the Toxicological Responses to Foliar Cerium Application in Soybean",
+    "authorString": "Guo C, Sun L.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Guo C",
+          "firstName": "Cheng",
+          "lastName": "Guo",
+          "initials": "C",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "School of Environmental Art and Design, Wuxi Vocational Institute of Arts & Technology, Wuxi 214206, China;"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Sun L",
+          "firstName": "Lizong",
+          "lastName": "Sun",
+          "initials": "L",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Key Laboratory of Ecological Restoration of Regional Contaminated Environment, Ministry of Education, College of Environment, Shenyang University, Shenyang 110044, China"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "issue": "5",
+      "volume": "14",
+      "journalIssueId": 4201781,
+      "dateOfPublication": "2026 Apr",
+      "monthOfPublication": 4,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-04-01",
+      "journal": {
+        "title": "Toxics",
+        "medlineAbbreviation": "Toxics",
+        "isoabbreviation": "Toxics",
+        "essn": "2305-6304",
+        "nlmid": "101639637",
+        "issn": "2305-6304"
+      }
+    },
+    "pubYear": "2026",
+    "language": "eng",
+    "pubModel": "Undetermined",
+    "pubTypeList": {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    },
+    "grantsList": {
+      "grant": [
+        {
+          "grantId": "572024xn06",
+          "agency": "College Research Project",
+          "orderIn": 0
+        }
+      ]
+    },
+    "keywordList": {
+      "keyword": [
+        "Cerium",
+        "DNA methylation",
+        "Toxicological mechanism",
+        "Foliar Application"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13210806/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13210806/pdf/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13210806"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13210806?pdf=render"
+        }
+      ]
+    },
+    "isOpenAccess": "Y",
+    "inEPMC": "Y",
+    "inPMC": "Y",
+    "hasPDF": "Y",
+    "hasBook": "N",
+    "hasSuppl": "Y",
+    "citedByCount": 0,
+    "hasData": "Y",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "license": "cc by",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-27",
+    "firstIndexDate": "2026-05-27",
+    "fullTextReceivedDate": "2026-05-27",
+    "dateOfRevision": "2026-05-27",
+    "electronicPublicationDate": "2026-04-25",
+    "firstPublicationDate": "2026-04-25",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PMC13204258",
+    "source": "PMC",
+    "pmcid": "PMC13204258",
+    "fullTextIdList": {
+      "fullTextId": [
+        "PMC13204258"
+      ]
+    },
+    "title": "Can DNA Methylation in Peritumoral and Contralateral Breast Tissue Predict Recurrence or Second Breast Cancers?",
+    "journalInfo": {
+      "issue": "5",
+      "volume": "48",
+      "journalIssueId": 4201793,
+      "dateOfPublication": "2026 Apr",
+      "monthOfPublication": 4,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-04-01",
+      "journal": {
+        "title": "Current issues in molecular biology",
+        "medlineAbbreviation": "Curr Issues Mol Biol",
+        "isoabbreviation": "Curr Issues Mol Biol",
+        "essn": "1467-3045",
+        "nlmid": "100931761",
+        "issn": "1467-3037"
+      }
+    },
+    "pubYear": "2026",
+    "language": "eng",
+    "pubModel": "Undetermined",
+    "pubTypeList": {
+      "pubType": [
+        "Other"
+      ]
+    },
+    "keywordList": {
+      "keyword": [
+        "DNA methylation",
+        "Breast cancer",
+        "Tumor Microenvironment",
+        "Field Cancerization",
+        "Predictive Factors Of Local Recurrence",
+        "Risk Of Contralateral Breast Cancer"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13204258/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13204258/pdf/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13204258"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13204258?pdf=render"
+        }
+      ]
+    },
+    "isOpenAccess": "Y",
+    "inEPMC": "Y",
+    "inPMC": "Y",
+    "hasPDF": "Y",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "license": "cc by",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-27",
+    "firstIndexDate": "2026-05-27",
+    "fullTextReceivedDate": "2026-05-27",
+    "dateOfRevision": "2026-05-27",
+    "electronicPublicationDate": "2026-04-30",
+    "firstPublicationDate": "2026-04-30",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PMC13203767",
+    "source": "PMC",
+    "pmcid": "PMC13203767",
+    "fullTextIdList": {
+      "fullTextId": [
+        "PMC13203767"
+      ]
+    },
+    "title": "Validation of Multi-Target Stool DNA Methylation Test for Colorectal Cancer Detection: A Preliminary Analysis",
+    "authorString": "Abdul Rahman K, Mohammad Azmi N, Abdullah Suhaimi S, Mohd Azman Z, Raduan F, Muhammad Nawawi K, Shah S, Tan G, Wong Y, Abdul Raub S.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Abdul Rahman K",
+          "firstName": "Khairul Anwar",
+          "lastName": "Abdul Rahman",
+          "initials": "K",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Surgery, Faculty of Medicine, Hospital Canselor Tuanku Muhriz, Universiti Kebangsaan Malaysia, Kuala Lumpur 56000, Malaysia; (Z.A.M.A.); (F.R.)"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Mohammad Azmi N",
+          "firstName": "Nabil",
+          "lastName": "Mohammad Azmi",
+          "initials": "N",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Surgery, Faculty of Medicine, Hospital Canselor Tuanku Muhriz, Universiti Kebangsaan Malaysia, Kuala Lumpur 56000, Malaysia; (Z.A.M.A.); (F.R.)"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Abdullah Suhaimi S",
+          "firstName": "Shahrun Niza",
+          "lastName": "Abdullah Suhaimi",
+          "initials": "S",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Surgery, Faculty of Medicine, Hospital Canselor Tuanku Muhriz, Universiti Kebangsaan Malaysia, Kuala Lumpur 56000, Malaysia; (Z.A.M.A.); (F.R.)"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Mohd Azman Z",
+          "firstName": "Zairul Azwan",
+          "lastName": "Mohd Azman",
+          "initials": "Z",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Surgery, Faculty of Medicine, Hospital Canselor Tuanku Muhriz, Universiti Kebangsaan Malaysia, Kuala Lumpur 56000, Malaysia; (Z.A.M.A.); (F.R.)"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Raduan F",
+          "firstName": "Farhana",
+          "lastName": "Raduan",
+          "initials": "F",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Surgery, Faculty of Medicine, Hospital Canselor Tuanku Muhriz, Universiti Kebangsaan Malaysia, Kuala Lumpur 56000, Malaysia; (Z.A.M.A.); (F.R.)"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Muhammad Nawawi K",
+          "firstName": "Khairul Najmi",
+          "lastName": "Muhammad Nawawi",
+          "initials": "K",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Medicine, Faculty of Medicine, Hospital Canselor Tuanku Muhriz, Universiti Kebangsaan Malaysia, Kuala Lumpur 56000, Malaysia;"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Shah S",
+          "firstName": "Shamsul Azhar",
+          "lastName": "Shah",
+          "initials": "S",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Public Health, Faculty of Medicine, Hospital Canselor Tuanku Muhriz, Universiti Kebangsaan Malaysia, Kuala Lumpur 56000, Malaysia;"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Tan G",
+          "firstName": "Geok Chin",
+          "lastName": "Tan",
+          "initials": "G",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pathology, Faculty of Medicine, Hospital Canselor Tuanku Muhriz, Universiti Kebangsaan Malaysia, Kuala Lumpur 56000, Malaysia; (G.C.T.); (Y.P.W.)"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Wong Y",
+          "firstName": "Yin Ping",
+          "lastName": "Wong",
+          "initials": "Y",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pathology, Faculty of Medicine, Hospital Canselor Tuanku Muhriz, Universiti Kebangsaan Malaysia, Kuala Lumpur 56000, Malaysia; (G.C.T.); (Y.P.W.)"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Abdul Raub S",
+          "firstName": "Sayyidi Hamzi",
+          "lastName": "Abdul Raub",
+          "initials": "S",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Cytogenetics & Molecular Diagnostic Laboratory, Premier Intergrated Labs, Kuala Lumpur 59100, Malaysia;"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "issue": "5",
+      "volume": "14",
+      "journalIssueId": 4190591,
+      "dateOfPublication": "2026 Apr",
+      "monthOfPublication": 4,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-04-01",
+      "journal": {
+        "title": "Biomedicines",
+        "medlineAbbreviation": "Biomedicines",
+        "isoabbreviation": "Biomedicines",
+        "essn": "2227-9059",
+        "nlmid": "101691304",
+        "issn": "2227-9059"
+      }
+    },
+    "pubYear": "2026",
+    "language": "eng",
+    "pubModel": "Undetermined",
+    "pubTypeList": {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    },
+    "grantsList": {
+      "grant": [
+        {
+          "grantId": " ",
+          "agency": "Yaneng BIOsciences (Shenzhen) Co., Ltd.",
+          "orderIn": 0
+        }
+      ]
+    },
+    "keywordList": {
+      "keyword": [
+        "Screening test",
+        "Colorectal Cancer",
+        "Early Detection",
+        "Diagnostic Accuracy",
+        "Stool Dna Methylation"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13203767/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13203767/pdf/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13203767"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13203767?pdf=render"
+        }
+      ]
+    },
+    "isOpenAccess": "Y",
+    "inEPMC": "Y",
+    "inPMC": "Y",
+    "hasPDF": "Y",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "license": "cc by",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-27",
+    "firstIndexDate": "2026-05-27",
+    "fullTextReceivedDate": "2026-05-27",
+    "dateOfRevision": "2026-05-27",
+    "electronicPublicationDate": "2026-04-27",
+    "firstPublicationDate": "2026-04-27",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PMC13207739",
+    "source": "PMC",
+    "pmcid": "PMC13207739",
+    "fullTextIdList": {
+      "fullTextId": [
+        "PMC13207739"
+      ]
+    },
+    "title": "Glatiramer Acetate Therapy Induces DNA Methylation Changes in Immune Cells of Multiple Sclerosis Patients: A Pilot Study",
+    "authorString": "Kiselev I, Kulakova O, Baturina O, Kabilov M, Boyko A, Favorova O.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Kiselev I",
+          "firstName": "Ivan",
+          "lastName": "Kiselev",
+          "initials": "I",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Laboratory of Medical Genomics, Pirogov Russian National Research Medical University, 117997 Moscow, Russia (O.F.)"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Kulakova O",
+          "firstName": "Olga",
+          "lastName": "Kulakova",
+          "initials": "O",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Laboratory of Medical Genomics, Pirogov Russian National Research Medical University, 117997 Moscow, Russia (O.F.)"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Baturina O",
+          "firstName": "Olga",
+          "lastName": "Baturina",
+          "initials": "O",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Genomics Core Facility, Institute of Chemical Biology and Fundamental Medicine, 630090 Novosibirsk, Russia (M.K.)"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Kabilov M",
+          "firstName": "Marsel",
+          "lastName": "Kabilov",
+          "initials": "M",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Genomics Core Facility, Institute of Chemical Biology and Fundamental Medicine, 630090 Novosibirsk, Russia (M.K.)"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Boyko A",
+          "firstName": "Alexey",
+          "lastName": "Boyko",
+          "initials": "A",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Laboratory of Medical Genomics, Pirogov Russian National Research Medical University, 117997 Moscow, Russia (O.F.)"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Favorova O",
+          "firstName": "Olga",
+          "lastName": "Favorova",
+          "initials": "O",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Laboratory of Medical Genomics, Pirogov Russian National Research Medical University, 117997 Moscow, Russia (O.F.)"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "issue": "10",
+      "volume": "27",
+      "journalIssueId": 4192896,
+      "dateOfPublication": "2026 May",
+      "monthOfPublication": 5,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-05-01",
+      "journal": {
+        "title": "International journal of molecular sciences",
+        "medlineAbbreviation": "Int J Mol Sci",
+        "isoabbreviation": "Int J Mol Sci",
+        "essn": "1422-0067",
+        "nlmid": "101092791",
+        "issn": "1422-0067"
+      }
+    },
+    "pubYear": "2026",
+    "language": "eng",
+    "pubModel": "Undetermined",
+    "pubTypeList": {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    },
+    "keywordList": {
+      "keyword": [
+        "DNA methylation",
+        "Multiple sclerosis",
+        "Peripheral blood mononuclear cells",
+        "Glatiramer Acetate",
+        "Disease-modifying Therapy",
+        "Epigenome-wide Association Study"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13207739/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13207739/pdf/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13207739"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13207739?pdf=render"
+        }
+      ]
+    },
+    "isOpenAccess": "Y",
+    "inEPMC": "Y",
+    "inPMC": "Y",
+    "hasPDF": "Y",
+    "hasBook": "N",
+    "hasSuppl": "Y",
+    "citedByCount": 0,
+    "hasData": "Y",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "license": "cc by",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-27",
+    "firstIndexDate": "2026-05-27",
+    "fullTextReceivedDate": "2026-05-27",
+    "dateOfRevision": "2026-05-27",
+    "electronicPublicationDate": "2026-05-01",
+    "firstPublicationDate": "2026-05-01",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PMC13207400",
+    "source": "PMC",
+    "pmcid": "PMC13207400",
+    "fullTextIdList": {
+      "fullTextId": [
+        "PMC13207400"
+      ]
+    },
+    "title": "Integrative sRNA, DNA Methylation, and Transcriptomics Reveals Dynamic Epigenetic Reprogramming of Meloidogyne javanica-Induced Galls in Arabidopsis",
+    "authorString": "Domínguez-Figueroa J, Silva A, Abril-Urias P, Müller S, Ladera-Carmona M, Schäfer P, Baca-González V, Caro E, Escobar C.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Domínguez-Figueroa J",
+          "firstName": "Jose",
+          "lastName": "Domínguez-Figueroa",
+          "initials": "J",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Facultad de Ciencias Ambientales y Bioquímica, Universidad de Castilla-La Mancha, E-45071 Toledo, Spain;"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Silva A",
+          "firstName": "Ana Cláudia",
+          "lastName": "Silva",
+          "initials": "A",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Fundación FUNDECYT (Fundación para el Desarrollo de la Ciencia y la Tecnología)—Parque Científico y Tecnológico de Extremadura, Avda. de Elvas s/n, 06006 Badajoz, Spain"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Abril-Urias P",
+          "firstName": "Patricia",
+          "lastName": "Abril-Urias",
+          "initials": "P",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Facultad de Ciencias Ambientales y Bioquímica, Universidad de Castilla-La Mancha, E-45071 Toledo, Spain;"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Müller S",
+          "firstName": "Sebastian Y.",
+          "lastName": "Müller",
+          "initials": "S",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Alva Genomics GmbH, Hans-Knöll-Str. 6, 07745 Jena, Germany;"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Ladera-Carmona M",
+          "firstName": "Maria Jose",
+          "lastName": "Ladera-Carmona",
+          "initials": "M",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Institute of Phytopathology, Centre for BioSystems, Land Use and Nutrition, Justus Liebig University, Heinrich-Buff-Ring 26, 35392 Giessen, Germany; (M.J.L.-C.); (P.S.)"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Schäfer P",
+          "firstName": "Patrick",
+          "lastName": "Schäfer",
+          "initials": "P",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Institute of Phytopathology, Centre for BioSystems, Land Use and Nutrition, Justus Liebig University, Heinrich-Buff-Ring 26, 35392 Giessen, Germany; (M.J.L.-C.); (P.S.)"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Baca-González V",
+          "firstName": "Victoria",
+          "lastName": "Baca-González",
+          "initials": "V",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Centro de Biotecnología y Genómica de Plantas (CBGP), Universidad Politécnica de Madrid and Instituto Nacional de Investigación y Tecnología Agraria y Alimentaria-Consejo Superior de Investigaciones Científicas (UPM-INIA/CSIC), Campus de Montegancedo, 28223 Madrid, Spain; (V.B.-G.); (E.C.)"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Caro E",
+          "firstName": "Elena",
+          "lastName": "Caro",
+          "initials": "E",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Centro de Biotecnología y Genómica de Plantas (CBGP), Universidad Politécnica de Madrid and Instituto Nacional de Investigación y Tecnología Agraria y Alimentaria-Consejo Superior de Investigaciones Científicas (UPM-INIA/CSIC), Campus de Montegancedo, 28223 Madrid, Spain; (V.B.-G.); (E.C.)"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Escobar C",
+          "firstName": "Carolina",
+          "lastName": "Escobar",
+          "initials": "C",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Facultad de Ciencias Ambientales y Bioquímica, Universidad de Castilla-La Mancha, E-45071 Toledo, Spain;"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "issue": "10",
+      "volume": "27",
+      "journalIssueId": 4192896,
+      "dateOfPublication": "2026 May",
+      "monthOfPublication": 5,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-05-01",
+      "journal": {
+        "title": "International journal of molecular sciences",
+        "medlineAbbreviation": "Int J Mol Sci",
+        "isoabbreviation": "Int J Mol Sci",
+        "essn": "1422-0067",
+        "nlmid": "101092791",
+        "issn": "1422-0067"
+      }
+    },
+    "pubYear": "2026",
+    "language": "eng",
+    "pubModel": "Undetermined",
+    "pubTypeList": {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    },
+    "grantsList": {
+      "grant": [
+        {
+          "grantId": "SBPLY/21/180501/000033",
+          "agency": "Castilla-La Mancha Government and the UE FEDER",
+          "orderIn": 0
+        },
+        {
+          "grantId": "RED2024-153709-T",
+          "agency": "FEDER, UE",
+          "orderIn": 0
+        },
+        {
+          "grantId": "SBPLY/24/180225/000017",
+          "agency": "Castilla-La Mancha Government and the UE FEDER",
+          "orderIn": 0
+        },
+        {
+          "grantId": "PID2022-138989OB-I00",
+          "agency": "FEDER, UE",
+          "orderIn": 0
+        },
+        {
+          "grantId": " ",
+          "agency": "MICIU/AEI/10.13039/501100011033",
+          "orderIn": 0
+        },
+        {
+          "grantId": "101083727",
+          "agency": "EU HORIZON-RIA, HORIZON-CL6-202 FARM2FORK 02-two-stage",
+          "orderIn": 0
+        }
+      ]
+    },
+    "keywordList": {
+      "keyword": [
+        "DNA methylation",
+        "miRNAs",
+        "root-knot nematodes",
+        "Transcriptomics",
+        "Srnas",
+        "Rasirnas"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13207400/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13207400/pdf/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13207400"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13207400?pdf=render"
+        }
+      ]
+    },
+    "isOpenAccess": "Y",
+    "inEPMC": "Y",
+    "inPMC": "Y",
+    "hasPDF": "Y",
+    "hasBook": "N",
+    "hasSuppl": "Y",
+    "citedByCount": 0,
+    "hasData": "Y",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "license": "cc by",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-27",
+    "firstIndexDate": "2026-05-27",
+    "fullTextReceivedDate": "2026-05-27",
+    "dateOfRevision": "2026-05-27",
+    "electronicPublicationDate": "2026-05-01",
+    "firstPublicationDate": "2026-05-01",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PMC13207186",
+    "source": "PMC",
+    "pmcid": "PMC13207186",
+    "fullTextIdList": {
+      "fullTextId": [
+        "PMC13207186"
+      ]
+    },
+    "title": "Genome-Wide DNA Methylation Profiling of Peripheral Blood Mononuclear Cells Reveals Epigenetic Signatures in Autism Spectrum Disorder",
+    "authorString": "Saeliw T, Yuwattana W, Poolcharoen C, van Erp M, Kanlayaprasit S, Vanwong N, Hu V, Trairatvorakul P, Chonchaiya W, Sarachana T.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Saeliw T",
+          "firstName": "Thanit",
+          "lastName": "Saeliw",
+          "initials": "T",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Chulalongkorn Autism Research and Innovation Center of Excellence (ChulaACE), Department of Clinical Chemistry, Faculty of Allied Health Sciences, Chulalongkorn University, Bangkok 10330, Thailand; (T.S.); (N.V.)"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Yuwattana W",
+          "firstName": "Wasana",
+          "lastName": "Yuwattana",
+          "initials": "W",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "The Ph.D. Program in Clinical Biochemistry and Molecular Medicine, Department of Clinical Chemistry, Faculty of Allied Health Sciences, Chulalongkorn University, Bangkok 10330, Thailand; (W.Y.); (M.L.v.E.)"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Poolcharoen C",
+          "firstName": "Chayanit",
+          "lastName": "Poolcharoen",
+          "initials": "C",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "The M.Sc. Program in Clinical Biochemistry and Molecular Medicine, Department of Clinical Chemistry, Faculty of Allied Health Sciences, Chulalongkorn University, Bangkok 10330, Thailand;"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "van Erp M",
+          "firstName": "Marlieke Lisanne",
+          "lastName": "van Erp",
+          "initials": "M",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "The Ph.D. Program in Clinical Biochemistry and Molecular Medicine, Department of Clinical Chemistry, Faculty of Allied Health Sciences, Chulalongkorn University, Bangkok 10330, Thailand; (W.Y.); (M.L.v.E.)"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Kanlayaprasit S",
+          "firstName": "Songphon",
+          "lastName": "Kanlayaprasit",
+          "initials": "S",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Center of Excellence for Medical Genomics, Department of Pediatrics, Faculty of Medicine, Chulalongkorn University, Bangkok 10330, Thailand;"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Vanwong N",
+          "firstName": "Natchaya",
+          "lastName": "Vanwong",
+          "initials": "N",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Chulalongkorn Autism Research and Innovation Center of Excellence (ChulaACE), Department of Clinical Chemistry, Faculty of Allied Health Sciences, Chulalongkorn University, Bangkok 10330, Thailand; (T.S.); (N.V.)"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Hu V",
+          "firstName": "Valerie W.",
+          "lastName": "Hu",
+          "initials": "V",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Biochemistry and Molecular Medicine, School of Medicine and Health Sciences, The George Washington University, Washington, DC 20037, USA;"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Trairatvorakul P",
+          "firstName": "Pon",
+          "lastName": "Trairatvorakul",
+          "initials": "P",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Center of Excellence for Maximizing Children’s Developmental Potential, Division of Growth and Development, Department of Pediatrics, Faculty of Medicine, Chulalongkorn University, Bangkok 10330, Thailand; (P.T.); (W.C.)"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Chonchaiya W",
+          "firstName": "Weerasak",
+          "lastName": "Chonchaiya",
+          "initials": "W",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Center of Excellence for Maximizing Children’s Developmental Potential, Division of Growth and Development, Department of Pediatrics, Faculty of Medicine, Chulalongkorn University, Bangkok 10330, Thailand; (P.T.); (W.C.)"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Sarachana T",
+          "firstName": "Tewarit",
+          "lastName": "Sarachana",
+          "initials": "T",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Chulalongkorn Autism Research and Innovation Center of Excellence (ChulaACE), Department of Clinical Chemistry, Faculty of Allied Health Sciences, Chulalongkorn University, Bangkok 10330, Thailand; (T.S.); (N.V.)"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "issue": "10",
+      "volume": "27",
+      "journalIssueId": 4192896,
+      "dateOfPublication": "2026 May",
+      "monthOfPublication": 5,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-05-01",
+      "journal": {
+        "title": "International journal of molecular sciences",
+        "medlineAbbreviation": "Int J Mol Sci",
+        "isoabbreviation": "Int J Mol Sci",
+        "essn": "1422-0067",
+        "nlmid": "101092791",
+        "issn": "1422-0067"
+      }
+    },
+    "pubYear": "2026",
+    "language": "eng",
+    "pubModel": "Undetermined",
+    "pubTypeList": {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    },
+    "keywordList": {
+      "keyword": [
+        "DNA methylation",
+        "Heterogeneity",
+        "Epigenetics",
+        "Autism Spectrum Disorder",
+        "Differentially Methylated Regions",
+        "Differentially Methylated Positions"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13207186/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13207186/pdf/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13207186"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13207186?pdf=render"
+        }
+      ]
+    },
+    "isOpenAccess": "Y",
+    "inEPMC": "Y",
+    "inPMC": "Y",
+    "hasPDF": "Y",
+    "hasBook": "N",
+    "hasSuppl": "Y",
+    "citedByCount": 0,
+    "hasData": "Y",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "license": "cc by",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-27",
+    "firstIndexDate": "2026-05-27",
+    "fullTextReceivedDate": "2026-05-27",
+    "dateOfRevision": "2026-05-27",
+    "electronicPublicationDate": "2026-05-01",
+    "firstPublicationDate": "2026-05-01",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PMC13199913",
+    "source": "PMC",
+    "pmcid": "PMC13199913",
+    "fullTextIdList": {
+      "fullTextId": [
+        "PMC13199913"
+      ]
+    },
+    "title": "DNA methylation mediates the multiple sclerosis onset risk associated with HHV-6 DNA positivity",
+    "journalInfo": {
+      "issue": "1",
+      "volume": "12",
+      "journalIssueId": 4123751,
+      "dateOfPublication": "2026 Jan",
+      "monthOfPublication": 1,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-01-01",
+      "journal": {
+        "title": "Environmental epigenetics",
+        "medlineAbbreviation": "Environ Epigenet",
+        "isoabbreviation": "Environ Epigenet",
+        "essn": "2058-5888",
+        "nlmid": "101675941",
+        "issn": "2058-5888"
+      }
+    },
+    "pubYear": "2026",
+    "language": "eng",
+    "pubModel": "Undetermined",
+    "pubTypeList": {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    },
+    "keywordList": {
+      "keyword": [
+        "DNA methylation",
+        "Multiple sclerosis",
+        "Mediation",
+        "Case–control",
+        "Human Herpesvirus-6"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13199913/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13199913/pdf/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13199913"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13199913?pdf=render"
+        }
+      ]
+    },
+    "isOpenAccess": "Y",
+    "inEPMC": "Y",
+    "inPMC": "Y",
+    "hasPDF": "Y",
+    "hasBook": "N",
+    "hasSuppl": "Y",
+    "citedByCount": 0,
+    "hasData": "Y",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "license": "cc by",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-27",
+    "firstIndexDate": "2026-05-27",
+    "fullTextReceivedDate": "2026-05-27",
+    "dateOfRevision": "2026-05-27",
+    "electronicPublicationDate": "2026-01-01",
+    "firstPublicationDate": "2026-01-01",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PMC13204873",
+    "source": "PMC",
+    "pmcid": "PMC13204873",
+    "fullTextIdList": {
+      "fullTextId": [
+        "PMC13204873"
+      ]
+    },
+    "title": "Expression and Promoter Methylation of the Genes Encoding the Mitochondrial and Cytosolic Forms of Fumarase in Sunflower (Helianthus annuus L.) Leaves Depending on Light Regime and Salinity",
+    "authorString": "Sazonova O, Fedorin D, Eprintsev A, Igamberdiev A.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Sazonova O",
+          "firstName": "Oksana V.",
+          "lastName": "Sazonova",
+          "initials": "O",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Biochemistry and Cell Physiology, Voronezh State University, 394018 Voronezh, Russia; (O.V.S.); (D.N.F.); (A.T.E.)"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Fedorin D",
+          "firstName": "Dmitry N.",
+          "lastName": "Fedorin",
+          "initials": "D",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Biochemistry and Cell Physiology, Voronezh State University, 394018 Voronezh, Russia; (O.V.S.); (D.N.F.); (A.T.E.)"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Eprintsev A",
+          "firstName": "Alexander T.",
+          "lastName": "Eprintsev",
+          "initials": "A",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Biochemistry and Cell Physiology, Voronezh State University, 394018 Voronezh, Russia; (O.V.S.); (D.N.F.); (A.T.E.)"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Igamberdiev A",
+          "firstName": "Abir U.",
+          "lastName": "Igamberdiev",
+          "initials": "A",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Biology, Memorial University of Newfoundland, 45 Arctic Avenue, St. John’s, NL A1C 5S7, Canada"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "issue": "5",
+      "volume": "48",
+      "journalIssueId": 4201836,
+      "dateOfPublication": "2026 May",
+      "monthOfPublication": 5,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-05-01",
+      "journal": {
+        "title": "Current issues in molecular biology",
+        "medlineAbbreviation": "Curr Issues Mol Biol",
+        "isoabbreviation": "Curr Issues Mol Biol",
+        "essn": "1467-3045",
+        "nlmid": "100931761",
+        "issn": "1467-3037"
+      }
+    },
+    "pubYear": "2026",
+    "language": "eng",
+    "pubModel": "Undetermined",
+    "pubTypeList": {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    },
+    "keywordList": {
+      "keyword": [
+        "DNA methylation",
+        "Salt stress",
+        "Fumarase",
+        "Tricarboxylic acid cycle",
+        "phytochrome",
+        "Sunflower (Helianthus Annuus L.)"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13204873/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13204873/pdf/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13204873"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13204873?pdf=render"
+        }
+      ]
+    },
+    "isOpenAccess": "Y",
+    "inEPMC": "Y",
+    "inPMC": "Y",
+    "hasPDF": "Y",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "license": "cc by",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-27",
+    "firstIndexDate": "2026-05-27",
+    "fullTextReceivedDate": "2026-05-27",
+    "dateOfRevision": "2026-05-27",
+    "electronicPublicationDate": "2026-05-01",
+    "firstPublicationDate": "2026-05-01",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PMC13206426",
+    "source": "PMC",
+    "pmcid": "PMC13206426",
+    "fullTextIdList": {
+      "fullTextId": [
+        "PMC13206426"
+      ]
+    },
+    "title": "Longitudinal Blood Epigenetic Aging, DNA Methylation-Predicted Protein, and Estimated Leukocyte Proportion Trends in Two Astronauts from the Axiom Space Mission 1: An Exploratory Analysis",
+    "authorString": "Nwanaji-Enwerem J, Khodasevich D, Blakley J, Galazka J, Cardenas A.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Nwanaji-Enwerem J",
+          "firstName": "Jamaji C.",
+          "lastName": "Nwanaji-Enwerem",
+          "initials": "J",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Emergency Medicine, Center for Health Justice, Center of Excellence in Environmental Toxicology, Perelman School of Medicine, University of Pennsylvania, Ground Ravdin, HUP, 3400 Spruce Street, Philadelphia, PA 19104, USA"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Khodasevich D",
+          "firstName": "Dennis",
+          "lastName": "Khodasevich",
+          "initials": "D",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Epidemiology and Population Health, Stanford University, Palo Alto, CA 94305, USA"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Blakley J",
+          "firstName": "Jermaine",
+          "lastName": "Blakley",
+          "initials": "J",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "College of Medicine, Howard University, Washington, DC 20059, USA"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Galazka J",
+          "firstName": "Jonathan M.",
+          "lastName": "Galazka",
+          "initials": "J",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Space Biosciences Division, NASA Ames Research Center, Moffett Field, CA 94035, USA"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Cardenas A",
+          "firstName": "Andres",
+          "lastName": "Cardenas",
+          "initials": "A",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Epidemiology and Population Health, Stanford University, Palo Alto, CA 94305, USA"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "issue": "5",
+      "volume": "17",
+      "journalIssueId": 4201798,
+      "dateOfPublication": "2026 May",
+      "monthOfPublication": 5,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-05-01",
+      "journal": {
+        "title": "Genes",
+        "medlineAbbreviation": "Genes (Basel)",
+        "isoabbreviation": "Genes (Basel)",
+        "essn": "2073-4425",
+        "nlmid": "101551097",
+        "issn": "2073-4425"
+      }
+    },
+    "pubYear": "2026",
+    "language": "eng",
+    "pubModel": "Undetermined",
+    "pubTypeList": {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    },
+    "keywordList": {
+      "keyword": [
+        "DNA methylation",
+        "Microgravity",
+        "Proteomic Signatures",
+        "Immune Cell Dynamics"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13206426/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13206426/pdf/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13206426"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13206426?pdf=render"
+        }
+      ]
+    },
+    "isOpenAccess": "Y",
+    "inEPMC": "Y",
+    "inPMC": "Y",
+    "hasPDF": "Y",
+    "hasBook": "N",
+    "hasSuppl": "Y",
+    "citedByCount": 0,
+    "hasData": "Y",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "license": "cc by",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-27",
+    "firstIndexDate": "2026-05-27",
+    "fullTextReceivedDate": "2026-05-27",
+    "dateOfRevision": "2026-05-27",
+    "electronicPublicationDate": "2026-05-01",
+    "firstPublicationDate": "2026-05-01",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PMC13201941",
+    "source": "PMC",
+    "pmcid": "PMC13201941",
+    "fullTextIdList": {
+      "fullTextId": [
+        "PMC13201941"
+      ]
+    },
+    "title": "Integrated Computational Profiling Links Position-specific O-Methylation to Spontaneous Complexation and Improved Binding in Flavonoid–HER2 Systems",
+    "authorString": "Akinnusi P, Olubode S, Okai D, Akinbami O, Oyerinde D, Akinnusi A.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Akinnusi P",
+          "firstName": "Precious A.",
+          "lastName": "Akinnusi",
+          "initials": "P",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Biochemistry, , Akungba-Akoko, Nigeria"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Olubode S",
+          "firstName": "Samuel O.",
+          "lastName": "Olubode",
+          "initials": "S",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Biochemistry, , Akungba-Akoko, Nigeria"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Okai D",
+          "firstName": "David N. A.",
+          "lastName": "Okai",
+          "initials": "D",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Chemistry, , Cape Coast, Ghana"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Akinbami O",
+          "firstName": "Oluwatobi I.",
+          "lastName": "Akinbami",
+          "initials": "O",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Biochemistry, , Oye-Ekiti, Nigeria"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Oyerinde D",
+          "firstName": "David O.",
+          "lastName": "Oyerinde",
+          "initials": "D",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Biochemistry, , Oye-Ekiti, Nigeria"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Akinnusi A",
+          "firstName": "Ayomide J.",
+          "lastName": "Akinnusi",
+          "initials": "A",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Biochemistry, , Akungba-Akoko, Nigeria"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "volume": "20",
+      "journalIssueId": 4095156,
+      "dateOfPublication": "2026 Jan",
+      "monthOfPublication": 1,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-01-01",
+      "journal": {
+        "title": "Bioinformatics and biology insights",
+        "medlineAbbreviation": "Bioinform Biol Insights",
+        "isoabbreviation": "Bioinform Biol Insights",
+        "essn": "1177-9322",
+        "nlmid": "101467187",
+        "issn": "1177-9322"
+      }
+    },
+    "pubYear": "2026",
+    "language": "eng",
+    "pubModel": "Undetermined",
+    "pubTypeList": {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    },
+    "keywordList": {
+      "keyword": [
+        "Molecular dynamics simulation",
+        "Molecular docking",
+        "Anticancer activity",
+        "DFT",
+        "Her2",
+        "O-methylated Flavonoids"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13201941/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13201941/pdf/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13201941"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13201941?pdf=render"
+        }
+      ]
+    },
+    "isOpenAccess": "Y",
+    "inEPMC": "Y",
+    "inPMC": "Y",
+    "hasPDF": "Y",
+    "hasBook": "N",
+    "hasSuppl": "Y",
+    "citedByCount": 0,
+    "hasData": "Y",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "license": "cc by-nc",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-27",
+    "firstIndexDate": "2026-05-27",
+    "fullTextReceivedDate": "2026-05-27",
+    "dateOfRevision": "2026-05-27",
+    "electronicPublicationDate": "2026-01-01",
+    "firstPublicationDate": "2026-01-01",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1239350",
+    "source": "PPR",
+    "doi": "10.64898/2026.05.23.727428",
+    "title": "RNase 4 improves bottom-up modification mapping of E. coli total tRNAs using HILIC-MS/MS",
+    "authorString": "Simcox KM, Zamecnik M, Kennedy RT, Koutmou KS.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Simcox KM",
+          "firstName": "Kaley",
+          "lastName": "Simcox",
+          "initials": "KM"
+        },
+        {
+          "fullName": "Zamecnik M",
+          "firstName": "Maddy",
+          "lastName": "Zamecnik",
+          "initials": "M"
+        },
+        {
+          "fullName": "Kennedy RT",
+          "firstName": "Robert",
+          "lastName": "Kennedy",
+          "initials": "RT"
+        },
+        {
+          "fullName": "Koutmou KS",
+          "firstName": "Kristin",
+          "lastName": "Koutmou",
+          "initials": "KS"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "The structural and functional diversity of RNAs is expanded by the post-transcriptional incorporation of nucleoside variants. Emblematic of this, tRNAs contain extensive modifications that ensure their function during protein synthesis. Mass spectrometry has long been the field standard for identifying specific sites of chemical modifications on RNA. Nonetheless, mass spectrometry-based mapping approaches are not widely implemented. This is partially due to technical challenges associated with current methodologies including the limited diversity of available RNases, complexity of RNA mixtures, and conventional use ion-pairing reagents that require dedicated instrumentation. Here, we present a bottom-up liquid chromatography-tandem mass spectrometry (LC-MS/MS) workflow employing hydrophilic interaction liquid chromatography (HILIC) without ion-pairing reagents to globally map E. coli tRNA modifications. We implement orthogonal digestions using RNase 4 and a folded digestion scheme with RNase T1 to generate uniquely mappable oligonucleotides compatible with HILIC-MS/MS analysis and achieve 75-100% sequence coverage for most tRNA isoacceptors. HILIC-MS/MS matches the performance of traditional ion-pairing reverse-phased LC-MS/MS. This level of coverage allowed us to discover a new site of methylation (Gm17) in tRNAGly, and confirm the presence of an s4U8 modification predicted in tRNAArg. Furthermore, by applying this method to E. coli lacking the m⁵U54 methyltransferase (trmA) we confirmed the established dependence of acp3U47 insertion on m5U54 in tRNAPhe. Our findings show that RNase 4 improves bottom-up tRNA sequencing, enabling high-quality E. coli tRNA analysis without ion-pairing reagents.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.05.23.727428"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-27",
+    "firstIndexDate": "2026-05-27",
+    "firstPublicationDate": "2026-05-25",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1238803",
+    "source": "PPR",
+    "doi": "10.21203/rs.3.rs-9454375/v1",
+    "title": "High ABCE1 levels predict a poor prognosis in thyroid cancer patients",
+    "authorString": "Chen H, Lee C, Hsu H.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Chen H",
+          "firstName": "Han-Kun",
+          "lastName": "Chen",
+          "initials": "H"
+        },
+        {
+          "fullName": "Lee C",
+          "firstName": "Cheng-Han",
+          "lastName": "Lee",
+          "initials": "C"
+        },
+        {
+          "fullName": "Hsu H",
+          "firstName": "Hui-Ping",
+          "lastName": "Hsu",
+          "initials": "H"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "<title>Abstract</title>  <p>  Background  Incidence of thyroid cancer increases, and the ATP-binding cassette subfamily E member 1 (ABCE1) regulates a broad range of biological functions without being well studied in thyroid cancer. This study aims to investigate the expression profile and clinical significance of ABCE1 in thyroid cancer across various histological subtypes and genetic backgrounds. Methods  Data were integrated from multiple cohorts, including the Human Protein Atlas, the NCBI GEO (GSE27155) dataset, TCGA-THCA (via UCSC Xena), Kaplan-Meier Plotter, DNA Methylation Interactive Visualization Database (DNMIVD), and fresh cancer samples. We analyzed immunohistochemical staining, mRNA expression, and Western blotting, and compared them with the clinical outcomes of patients. Patient stratification into high or low ABCE1 groups was based on median expression levels. Results  Our results showed  <italic>ABCE1</italic>  mRNA was observed in anaplastic thyroid carcinoma, while increased ABCE1 protein levels were detected in medullary thyroid carcinoma. Elevated  <italic>ABCE1</italic>  mRNA levels were positively correlated with advanced nodal stage. ABCE1 protein exhibited cytoplasmic and membranous localization in thyroid tissues. Clinically, strong ABCE1 immunoreactivity was significantly correlated with worse overall survival in patients with thyroid cancer. Furthermore, ABCE1 expression varied significantly with the tumor's genetic landscape; tumors harboring  <italic>RET/PTC1</italic>  rearrangements or  <italic>PAX8-PPARG</italic>  translocations showed lower  <italic>ABCE1</italic>  levels compared to wild-type cases. Conclusions  These findings suggest that ABCE1 plays a complex, context-dependent role in thyroid cancer progression and may serve as a potential therapeutic biomarker.  </p>",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "Research Square",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.21203/rs.3.rs-9454375/v1"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "versionList": {
+      "version": [
+        {
+          "id": "PPR1238803",
+          "source": "PPR",
+          "firstPublishDate": "2026-05-26",
+          "versionNumber": 1,
+          "pubTypeList": {
+            "pubType": [
+              "preprint"
+            ]
+          },
+          "hasEvaluations": "N"
+        }
+      ]
+    },
+    "versionNumber": 1,
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-05-27",
+    "firstIndexDate": "2026-05-27",
+    "firstPublicationDate": "2026-05-26",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  }
+]

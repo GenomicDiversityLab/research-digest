@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Paper Digest — 2026-05-27</title>
+<style>:root {
+  color-scheme: light dark;
+  --bg: #fafaf7; --fg: #1c1c1a; --muted: #6b6b66; --soft: #4a4a45;
+  --accent: #b85c00; --accent-soft: #fef3e6;
+  --card: #ffffff; --border: #e5e3dc; --chip: #f0ede4;
+  --shadow: 0 1px 2px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.04);
+  --radius: 12px;
+}
+* { box-sizing: border-box; }
+html, body { margin:0; padding:0; background:var(--bg); color:var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+    "Apple SD Gothic Neo", "Malgun Gothic", "Pretendard", sans-serif;
+  font-size: 15px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+.wrap { max-width: 920px; margin: 0 auto; padding: 28px 20px 80px; }
+a { color: var(--accent); }
+header.hero { display:flex; align-items:flex-end; justify-content:space-between; gap:16px;
+  padding: 12px 0 8px; border-bottom: 1px solid var(--border); margin-bottom: 24px; }
+header.hero h1 { margin: 0 0 2px; font-size: 26px; letter-spacing: -0.02em; font-weight: 700; }
+header.hero .meta { color: var(--muted); font-size: 13px; }
+header.hero .home-link { font-size: 13px; color: var(--muted); text-decoration: none; }
+header.hero .home-link:hover { color: var(--accent); }
+
+/* Day tabs (daily detail pages) */
+.daynav { display:flex; align-items:center; flex-wrap: wrap; gap: 10px;
+  background: var(--card); border:1px solid var(--border); border-radius: var(--radius);
+  padding: 10px 14px; margin-bottom: 18px; font-size: 13px; box-shadow: var(--shadow); }
+.daynav .arrow, .daynav .home { color: var(--muted); text-decoration:none; padding: 4px 8px;
+  border-radius: 6px; }
+.daynav .arrow:hover, .daynav .home:hover { background: var(--chip); color: var(--accent); }
+.daynav .arrow.disabled { opacity: 0.35; cursor: default; }
+.daynav .center { display:flex; gap:4px; flex-wrap:wrap; }
+.daynav .center a, .daynav .center span { color: var(--fg); text-decoration:none;
+  padding: 4px 9px; border-radius: 6px; font-variant-numeric: tabular-nums; }
+.daynav .center a:hover { background: var(--chip); }
+.daynav .center .today { background: var(--accent); color:#fff; font-weight:600; }
+.daynav .center .empty { color: var(--muted); }
+
+/* Summary card */
+.summary { background:var(--card); border:1px solid var(--border); border-radius:var(--radius);
+  padding: 16px 20px; margin: 0 0 22px; box-shadow: var(--shadow); }
+.summary h2 { margin:0 0 10px; font-size:11px; text-transform:uppercase; letter-spacing:0.08em; color:var(--muted); font-weight:600; }
+.summary-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px 28px; }
+.summary-grid .col h3 { margin:0 0 6px; font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.06em; font-weight:600; }
+.summary-grid .col ul { margin:0; padding:0; list-style:none; font-size:13px; }
+.summary-grid .col li { display:flex; justify-content:space-between; gap:8px; padding:2px 0;
+  border-bottom: 1px dashed var(--border); }
+.summary-grid .col li:last-child { border-bottom: 0; }
+.summary-grid .col li b { font-weight:600; font-variant-numeric: tabular-nums; }
+
+/* Filter chips */
+.filter-row { display:flex; gap:14px; align-items:baseline; flex-wrap:wrap; margin-bottom: 8px; }
+.filter-row .lbl { font-size:10px; color:var(--muted); text-transform:uppercase; letter-spacing:0.08em;
+  font-weight:600; min-width:64px; padding-top: 4px; }
+.filters { display:flex; flex-wrap:wrap; gap:6px; }
+.chip { display:inline-flex; align-items:center; padding: 4px 11px; border-radius: 999px;
+  background: var(--chip); border:1px solid var(--border); font-size:12px;
+  cursor:pointer; user-select:none; transition: all 0.12s; text-decoration:none; color: inherit; }
+.chip:hover { border-color: var(--accent); }
+.chip.active { background: var(--accent); color:#fff; border-color: var(--accent); }
+.chip .count { opacity: 0.65; margin-left: 6px; font-variant-numeric: tabular-nums; font-size: 11px; }
+.chip.active .count { opacity: 0.95; }
+
+/* Per-keyword color chips (kw-* class injected per page) */
+.chip.kw-somatic-mosaicism, .tag.kw-somatic-mosaicism { background: #ede9fe; color: #5b21b6; border-color: #ede9fe; }
+.chip.kw-somatic-mosaicism:hover { filter: brightness(0.95); border-color: #5b21b6; }
+.chip.kw-somatic-mosaicism.active { background: #5b21b6; color: #fff; border-color: #5b21b6; }
+@media (prefers-color-scheme: dark) {
+  .chip.kw-somatic-mosaicism, .tag.kw-somatic-mosaicism { background: #3b1d6b; color: #c4b5fd; border-color: #3b1d6b; }
+  .chip.kw-somatic-mosaicism.active { background: #c4b5fd; color: #181815; border-color: #c4b5fd; }
+}
+.chip.kw-mosaic, .tag.kw-mosaic { background: #ffedd5; color: #9a3412; border-color: #ffedd5; }
+.chip.kw-mosaic:hover { filter: brightness(0.95); border-color: #9a3412; }
+.chip.kw-mosaic.active { background: #9a3412; color: #fff; border-color: #9a3412; }
+@media (prefers-color-scheme: dark) {
+  .chip.kw-mosaic, .tag.kw-mosaic { background: #3a2210; color: #fdba74; border-color: #3a2210; }
+  .chip.kw-mosaic.active { background: #fdba74; color: #181815; border-color: #fdba74; }
+}
+.chip.kw-mosaic-variant, .tag.kw-mosaic-variant { background: #fce7f3; color: #9d174d; border-color: #fce7f3; }
+.chip.kw-mosaic-variant:hover { filter: brightness(0.95); border-color: #9d174d; }
+.chip.kw-mosaic-variant.active { background: #9d174d; color: #fff; border-color: #9d174d; }
+@media (prefers-color-scheme: dark) {
+  .chip.kw-mosaic-variant, .tag.kw-mosaic-variant { background: #3a1626; color: #f9a8d4; border-color: #3a1626; }
+  .chip.kw-mosaic-variant.active { background: #f9a8d4; color: #181815; border-color: #f9a8d4; }
+}
+.chip.kw-methylation, .tag.kw-methylation { background: #dbeafe; color: #1e3a8a; border-color: #dbeafe; }
+.chip.kw-methylation:hover { filter: brightness(0.95); border-color: #1e3a8a; }
+.chip.kw-methylation.active { background: #1e3a8a; color: #fff; border-color: #1e3a8a; }
+@media (prefers-color-scheme: dark) {
+  .chip.kw-methylation, .tag.kw-methylation { background: #10204a; color: #93c5fd; border-color: #10204a; }
+  .chip.kw-methylation.active { background: #93c5fd; color: #181815; border-color: #93c5fd; }
+}
+.chip.kw-pacbio, .tag.kw-pacbio { background: #d1fae5; color: #065f46; border-color: #d1fae5; }
+.chip.kw-pacbio:hover { filter: brightness(0.95); border-color: #065f46; }
+.chip.kw-pacbio.active { background: #065f46; color: #fff; border-color: #065f46; }
+@media (prefers-color-scheme: dark) {
+  .chip.kw-pacbio, .tag.kw-pacbio { background: #0c2a23; color: #86efac; border-color: #0c2a23; }
+  .chip.kw-pacbio.active { background: #86efac; color: #181815; border-color: #86efac; }
+}
+.chip.pinned, .tag.pinned { background: #fef3c7; color: #854d0e; border-color: #fef3c7; font-weight: 600; }
+.chip.pinned:hover { filter: brightness(0.95); border-color: #854d0e; }
+.chip.pinned.active { background: #854d0e; color: #fff; border-color: #854d0e; }
+@media (prefers-color-scheme: dark) {
+  .chip.pinned, .tag.pinned { background: #3a2d0d; color: #fde68a; border-color: #3a2d0d; }
+  .chip.pinned.active { background: #fde68a; color: #181815; border-color: #fde68a; }
+}
+
+.search-box { width:100%; margin: 8px 0 18px; }
+.search-box input { width:100%; padding: 10px 14px; border:1px solid var(--border); border-radius: 8px;
+  font-size: 14px; background: var(--card); color: var(--fg); transition: border-color 0.12s; }
+.search-box input:focus { outline: none; border-color: var(--accent); }
+
+.papers { display:flex; flex-direction:column; gap: 12px; }
+.paper { background:var(--card); border:1px solid var(--border); border-radius: var(--radius);
+  padding: 16px 20px; transition: border-color 0.12s, box-shadow 0.12s; box-shadow: var(--shadow); }
+.paper:hover { border-color: var(--accent); box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 6px 18px rgba(184,92,0,0.10); }
+.paper.hidden { display:none; }
+.paper.hi { border-color: #f0c388; background: linear-gradient(0deg, var(--accent-soft), var(--card) 70%); }
+.paper h3 { margin: 0 0 6px; font-size: 16px; line-height: 1.4; font-weight: 600; }
+.paper h3 a { color: var(--fg); text-decoration: none; }
+.paper h3 a:hover { color: var(--accent); }
+.paper .if-tag { display:inline-block; margin-left: 6px; padding: 1px 7px; border-radius: 4px;
+  background: #fff3df; color: #8a4b00; font-size: 11px; font-weight: 700; vertical-align: 2px;
+  letter-spacing: 0.02em; }
+.paper.hi .if-tag { background: var(--accent); color: #fff; }
+.paper .by { font-size: 12px; color: var(--muted); margin: 0 0 6px; }
+.paper .meta { font-size: 11px; color: var(--muted); margin: 0 0 8px; display: flex;
+  flex-wrap: wrap; gap: 4px 10px; align-items: center; }
+.paper .meta .src { display:inline-block; padding: 1px 7px; border-radius: 4px; font-weight: 700;
+  letter-spacing: 0.02em; font-size: 10px; background: var(--chip); }
+.paper .meta .src.PPR { background:#fff3df; color:#8a4b00; }
+.paper .meta .src.MED { background:#e3eef6; color:#1f4e75; }
+.paper .meta .src.PMC { background:#e3f4e6; color:#2a6b35; }
+.paper .meta .date { font-variant-numeric: tabular-nums; }
+.tag { display:inline-block; padding: 1px 7px; border-radius: 999px; font-size: 11px;
+  background: var(--chip); border: 1px solid var(--border); text-decoration: none;
+  font-weight: 500; transition: all 0.12s; }
+.tag:hover { filter: brightness(0.95); }
+.paper .ksum { background: #fffefa; border:1px solid #efe9d8; border-radius: 8px; padding: 10px 14px;
+  margin: 8px 0 4px; font-size: 14px; line-height: 1.7; color: #2c2c28; }
+.paper.hi .ksum { background: #fffaf2; border-color: #efd9b8; }
+.paper .ksum .label { display:inline-block; font-size: 10px; font-weight: 700; color: var(--accent);
+  text-transform: uppercase; letter-spacing: 0.06em; margin-right: 6px; vertical-align: 2px; }
+.paper .ksum-struct { display: flex; flex-direction: column; gap: 8px; }
+.paper .ksum-struct .line { display: flex; gap: 10px; }
+.paper .ksum-struct .lbl { flex: 0 0 56px; font-size: 11px; font-weight: 700; color: var(--accent);
+  text-transform: uppercase; letter-spacing: 0.04em; padding-top: 3px; }
+.paper .ksum-struct .body { flex: 1 1 auto; }
+.paper .ksum-struct ul { margin: 2px 0 0; padding-left: 18px; }
+.paper .doi a { color: var(--muted); font-size: 11px; text-decoration: none; }
+.paper .doi a:hover { color: var(--accent); }
+.paper .ab { font-size: 13px; color: var(--soft); margin: 6px 0 0; }
+
+/* date headers used on per-keyword pages */
+.date-head { display:flex; align-items:baseline; gap: 12px; margin: 26px 0 8px;
+  padding-bottom: 6px; border-bottom: 1px dashed var(--border); }
+.date-head h2 { margin: 0; font-size: 14px; font-weight: 700; letter-spacing: -0.01em; }
+.date-head .day-meta { font-size: 12px; color: var(--muted); }
+
+/* index page */
+.kw-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 10px; margin: 14px 0 28px; }
+.kw-card { display:block; padding: 14px 16px; border-radius: var(--radius); background: var(--card);
+  border:1px solid var(--border); text-decoration: none; color: var(--fg); transition: all 0.12s;
+  box-shadow: var(--shadow); }
+.kw-card:hover { border-color: var(--accent); transform: translateY(-1px); box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 8px 22px rgba(184,92,0,0.10); }
+.kw-card .name { display:flex; align-items:center; gap: 8px; font-weight: 700; font-size: 15px;
+  margin-bottom: 4px; }
+.kw-card .swatch { width: 10px; height: 10px; border-radius: 999px; }
+.kw-card .stats { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.kw-card .recent { margin-top: 6px; font-size: 11px; color: var(--muted); }
+
+/* day list */
+.daylist { display: flex; flex-direction: column; gap: 8px; margin-top: 6px; }
+.daylist .row { display:grid; grid-template-columns: 110px 200px 1fr; gap: 14px;
+  align-items: baseline; padding: 12px 16px; border:1px solid var(--border); border-radius: var(--radius);
+  background: var(--card); text-decoration:none; color: var(--fg); transition: border-color 0.12s; }
+.daylist .row:hover { border-color: var(--accent); }
+.daylist .d { font-variant-numeric: tabular-nums; font-weight: 600; }
+.daylist .n { font-variant-numeric: tabular-nums; font-size: 14px; }
+.daylist .hi-pill { display:inline-block; margin-left: 6px; padding: 1px 7px; border-radius: 999px;
+  background:#fff0d6; color:#8a4b00; font-size: 11px; font-weight: 600; }
+.daylist .info { display:flex; flex-direction: column; gap: 2px; color: var(--muted); font-size: 12px; }
+
+.empty { background: var(--card); border:1px dashed var(--border); border-radius: var(--radius);
+  padding: 30px; text-align: center; color: var(--muted); }
+.section-h { margin: 30px 0 8px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em;
+  color: var(--muted); font-weight: 700; }
+footer { margin-top: 60px; padding-top: 16px; border-top: 1px solid var(--border);
+  font-size: 11px; color: var(--muted); }
+footer a { color: var(--muted); }
+
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#181815; --fg:#e8e6df; --muted:#8a8780; --soft:#bbbab2; --card:#232320;
+    --border:#353330; --chip:#2a2825; --accent:#f29349; --accent-soft:#2a2014;
+    --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 4px 12px rgba(0,0,0,0.3); }
+  .paper .meta .src.PPR { background:#3a2a13; color:#f0c388; }
+  .paper .meta .src.MED { background:#1a2a3a; color:#93c0e8; }
+  .paper .meta .src.PMC { background:#1d3322; color:#8fd29a; }
+  .paper .ksum { background:#1f1f1c; border-color:#3a3833; color: #e0ddd2; }
+  .paper.hi .ksum { background:#2a2419; border-color:#4a3e22; }
+  .paper.hi { background: linear-gradient(0deg, #2a2014, var(--card) 70%); }
+  .daylist .hi-pill { background:#3a2a13; color:#f0c388; }
+}</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="daynav"><a class="arrow" href="2026-05-26.html">← 2026-05-26</a><a class="home" href="../index.html">📚 인덱스</a><div class="center"><a class="" href="2026-04-29.html">4/29</a><a class="" href="2026-04-30.html">4/30</a><a class="" href="2026-05-01.html">5/1</a><a class="" href="2026-05-02.html">5/2</a><a class="" href="2026-05-03.html">5/3</a><a class="" href="2026-05-04.html">5/4</a><a class="" href="2026-05-05.html">5/5</a><a class="" href="2026-05-06.html">5/6</a><a class="" href="2026-05-07.html">5/7</a><a class="" href="2026-05-08.html">5/8</a><a class="" href="2026-05-09.html">5/9</a><a class="" href="2026-05-10.html">5/10</a><a class="" href="2026-05-11.html">5/11</a><a class="" href="2026-05-12.html">5/12</a><a class="" href="2026-05-13.html">5/13</a><a class="" href="2026-05-14.html">5/14</a><a class="" href="2026-05-15.html">5/15</a><a class="" href="2026-05-16.html">5/16</a><a class="" href="2026-05-17.html">5/17</a><a class="" href="2026-05-18.html">5/18</a><a class="" href="2026-05-19.html">5/19</a><a class="" href="2026-05-20.html">5/20</a><a class="" href="2026-05-21.html">5/21</a><a class="" href="2026-05-22.html">5/22</a><a class="" href="2026-05-23.html">5/23</a><a class="" href="2026-05-24.html">5/24</a><a class="" href="2026-05-25.html">5/25</a><a class="" href="2026-05-26.html">5/26</a><a class="today" href="2026-05-27.html">5/27</a><a class="" href="2026-05-28.html">5/28</a><a class="" href="2026-05-29.html">5/29</a><a class="" href="2026-05-30.html">5/30</a><a class="" href="2026-05-31.html">5/31</a></div><a class="arrow" href="2026-05-28.html">2026-05-28 →</a></nav>
+<header class="hero">
+  <div>
+    <h1>📄 Paper Digest</h1>
+    <div class="meta">2026년 05월 27일 (Wed) · Europe PMC · <b>28</b>편 · IF≥10 <b>0</b>편</div>
+  </div>
+</header>
+<section class="summary">
+  <h2>Summary</h2>
+  <div class="summary-grid">
+    <div class="col"><h3>Source</h3><ul><li><span>PMC</span><b>16</b></li><li><span>Preprint</span><b>12</b></li></ul></div>
+    <div class="col"><h3>Top journals</h3><ul><li><span>(unspecified)</span><b>12</b></li><li><span>International journal of molecular sciences</span><b>4</b></li><li><span>Viruses</span><b>2</b></li><li><span>Biomedicines</span><b>2</b></li><li><span>Current issues in molecular biology</span><b>2</b></li><li><span>Frontiers in cardiovascular medicine</span><b>1</b></li><li><span>Cancers</span><b>1</b></li><li><span>Toxics</span><b>1</b></li></ul></div>
+    <div class="col"><h3>Keyword</h3><ul><li><span>Somatic mosaicism</span><b>0</b></li><li><span>mosaic</span><b>7</b></li><li><span>mosaic variant</span><b>0</b></li><li><span>methylation</span><b>21</b></li><li><span>PacBio</span><b>0</b></li></ul></div>
+    <div class="col"><h3>📌 Pinned</h3><ul><li><span>📌 Cell</span><b>0</b></li><li><span>📌 Nature</span><b>0</b></li><li><span>📌 Science</span><b>0</b></li></ul></div>
+  </div>
+</section>
+
+<div class="filter-row"><div class="lbl">Keyword</div><div class="filters"><span class="chip active" data-filter="keyword" data-value="all">전체 <span class="count" id="visibleCount">28</span></span><span class="chip kw-somatic-mosaicism" data-filter="keyword" data-value="somatic-mosaicism">Somatic mosaicism<span class="count">0</span></span><span class="chip kw-mosaic" data-filter="keyword" data-value="mosaic">mosaic<span class="count">7</span></span><span class="chip kw-mosaic-variant" data-filter="keyword" data-value="mosaic-variant">mosaic variant<span class="count">0</span></span><span class="chip kw-methylation" data-filter="keyword" data-value="methylation">methylation<span class="count">21</span></span><span class="chip kw-pacbio" data-filter="keyword" data-value="pacbio">PacBio<span class="count">0</span></span></div></div>
+<div class="filter-row"><div class="lbl">Source</div><div class="filters"><span class="chip active" data-filter="source" data-value="all">전체</span><span class="chip" data-filter="source" data-value="PMC">PMC<span class="count">16</span></span><span class="chip" data-filter="source" data-value="PPR">Preprint<span class="count">12</span></span></div></div>
+<div class="search-box"><input id="search" type="search" placeholder="제목·저자·저널·초록·요약 검색…"></div>
+<div class="papers"><article class="paper" data-keywords="mosaic" data-source="PPR" data-search="A billion-year-old bacterial machinery replicates plastid DNA and supports kleptoplastidy The endosymbiotic evolution of plastids and mitochondria was central to the origin and success of eukaryotes. One of the most prominent molecular machineries thought to have disappeared early in eukaryote evolution is the multi-subunit bacterial DNA polymerase III (DNApol-III), which is the principa Antoine T, Burki F, Archibald JM, Pelletier E, Delmont TO.  mosaic ">
+  <h3><a href="https://europepmc.org/abstract/PPR/PPR1239327" target="_blank" rel="noopener">A billion-year-old bacterial machinery replicates plastid DNA and supports kleptoplastidy</a></h3>
+  <div class="by">Antoine T, Burki F, Archibald JM, et al.</div>
+  <div class="meta"><span class="src PPR">Preprint</span><span class="date">2026-05-25</span><a class="tag kw-mosaic" href="../keywords/mosaic.html">mosaic</a></div>
+  <div class="ab">The endosymbiotic evolution of plastids and mitochondria was central to the origin and success of eukaryotes. One of the most prominent molecular machineries thought to have disappeared early in eukaryote evolution is the multi-subunit bacterial DNA polymerase III (DNApol-III), w…</div>
+  <div class="doi"><a href="https://doi.org/10.64898/2026.05.23.727376" target="_blank" rel="noopener">10.64898/2026.05.23.727376</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="PPR" data-search="Breast cancer cohort study identifies an effective, non-invasive, breath-based diagnostic linked to cellular environment-dependent, novel methylation metabolisms Volatile organic compounds (VOCs) demonstrate promise as non-invasive diagnostic tools. However, lack of mechanistically linked VOCs with biomarker discovery platforms limit delivery to the clinic. In this cohort-based study, we observed significant alterations of chloride-containing volatile fluxes Issitt T, Harmens A, Mason AS, Turvill J, Piper J, Sweeney ST, Brackenbury WJ, Redeker KR.  methylation ">
+  <h3><a href="https://europepmc.org/abstract/PPR/PPR1239263" target="_blank" rel="noopener">Breast cancer cohort study identifies an effective, non-invasive, breath-based diagnostic linked to cellular environment-dependent, novel methylation metabolisms</a></h3>
+  <div class="by">Issitt T, Harmens A, Mason AS, et al.</div>
+  <div class="meta"><span class="src PPR">Preprint</span><span class="date">2026-05-26</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Volatile organic compounds (VOCs) demonstrate promise as non-invasive diagnostic tools. However, lack of mechanistically linked VOCs with biomarker discovery platforms limit delivery to the clinic. In this cohort-based study, we observed significant alterations of chloride-contai…</div>
+  <div class="doi"><a href="https://doi.org/10.64898/2026.05.21.726956" target="_blank" rel="noopener">10.64898/2026.05.21.726956</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="PMC" data-search="Can DNA Methylation in Peritumoral and Contralateral Breast Tissue Predict Recurrence or Second Breast Cancers?   Current issues in molecular biology methylation ">
+  <h3><a href="https://europepmc.org/abstract/PMC/PMC13204258" target="_blank" rel="noopener">Can DNA Methylation in Peritumoral and Contralateral Breast Tissue Predict Recurrence or Second Breast Cancers?</a></h3>
+  
+  <div class="meta"><span class="src PMC">PMC</span><span>Current issues in molecular biology</span><span class="date">2026-04-30</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  
+  
+</article><article class="paper" data-keywords="methylation" data-source="PMC" data-search="DNA Methylation Dynamics in Development and Disease: Insights from Zebrafish Models  Lai G, Yan Y, Sengupta M, Xu T. Biomedicines methylation ">
+  <h3><a href="https://europepmc.org/abstract/PMC/PMC13205079" target="_blank" rel="noopener">DNA Methylation Dynamics in Development and Disease: Insights from Zebrafish Models</a></h3>
+  <div class="by">Lai G, Yan Y, Sengupta M, et al.</div>
+  <div class="meta"><span class="src PMC">PMC</span><span>Biomedicines</span><span class="date">2026-05-01</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  
+  
+</article><article class="paper" data-keywords="methylation" data-source="PMC" data-search="DNA methylation mediates the multiple sclerosis onset risk associated with HHV-6 DNA positivity   Environmental epigenetics methylation ">
+  <h3><a href="https://europepmc.org/abstract/PMC/PMC13199913" target="_blank" rel="noopener">DNA methylation mediates the multiple sclerosis onset risk associated with HHV-6 DNA positivity</a></h3>
+  
+  <div class="meta"><span class="src PMC">PMC</span><span>Environmental epigenetics</span><span class="date">2026-01-01</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  
+  
+</article><article class="paper" data-keywords="mosaic" data-source="PPR" data-search="Diversifying stocking practices within rangelands supports diverse plant-pollinator communities and interactions Understanding how management alters species&#x27; biodiversity and interactions is critical for sustainable agriculture. This can be especially important for rangelands, grasslands used for livestock grazing that cover 30% of land worldwide. In rangelands, ranchers need to maximize livestock production w Pearson AE, Russo L, Neff JL, Duffee B, Martinez J, McKinnis A, Medina N, Moore J, Phillips EW, Lichtenberg EM.  mosaic ">
+  <h3><a href="https://europepmc.org/abstract/PPR/PPR1239318" target="_blank" rel="noopener">Diversifying stocking practices within rangelands supports diverse plant-pollinator communities and interactions</a></h3>
+  <div class="by">Pearson AE, Russo L, Neff JL, et al.</div>
+  <div class="meta"><span class="src PPR">Preprint</span><span class="date">2026-05-25</span><a class="tag kw-mosaic" href="../keywords/mosaic.html">mosaic</a></div>
+  <div class="ab">Understanding how management alters species&#x27; biodiversity and interactions is critical for sustainable agriculture. This can be especially important for rangelands, grasslands used for livestock grazing that cover 30% of land worldwide. In rangelands, ranchers need to maximize li…</div>
+  <div class="doi"><a href="https://doi.org/10.64898/2026.05.22.727230" target="_blank" rel="noopener">10.64898/2026.05.22.727230</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="PPR" data-search="Dual histone methylation reader ZCWPW2 links histone methylation to initiation of meiotic recombination Meiotic homologous recombination initiates with the formation of programmed DNA double-strand breaks (DSBs) by complexes comprising SPO11 and accessory proteins at discrete sites called recombination hotspots. In mammals, PRDM9-dependent H3K4me3 and H3K36me3 define recombination hotspots, but how th Yuan S, Wang S, Bao Z, Wang Z, Shangguan K, Yan Y, Shi Y, Feng X, Huang C, Fang M, Zhao H, Zhao S, Liu H, Chen Z, Huang T.  methylation ">
+  <h3><a href="https://europepmc.org/abstract/PPR/PPR1239183" target="_blank" rel="noopener">Dual histone methylation reader ZCWPW2 links histone methylation to initiation of meiotic recombination</a></h3>
+  <div class="by">Yuan S, Wang S, Bao Z, et al.</div>
+  <div class="meta"><span class="src PPR">Preprint</span><span class="date">2026-05-26</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Meiotic homologous recombination initiates with the formation of programmed DNA double-strand breaks (DSBs) by complexes comprising SPO11 and accessory proteins at discrete sites called recombination hotspots. In mammals, PRDM9-dependent H3K4me3 and H3K36me3 define recombination …</div>
+  <div class="doi"><a href="https://doi.org/10.64898/2026.05.22.727067" target="_blank" rel="noopener">10.64898/2026.05.22.727067</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="PMC" data-search="Expression and Promoter Methylation of the Genes Encoding the Mitochondrial and Cytosolic Forms of Fumarase in Sunflower (Helianthus annuus L.) Leaves Depending on Light Regime and Salinity  Sazonova O, Fedorin D, Eprintsev A, Igamberdiev A. Current issues in molecular biology methylation ">
+  <h3><a href="https://europepmc.org/abstract/PMC/PMC13204873" target="_blank" rel="noopener">Expression and Promoter Methylation of the Genes Encoding the Mitochondrial and Cytosolic Forms of Fumarase in Sunflower (Helianthus annuus L.) Leaves Depending on Light Regime and Salinity</a></h3>
+  <div class="by">Sazonova O, Fedorin D, Eprintsev A, et al.</div>
+  <div class="meta"><span class="src PMC">PMC</span><span>Current issues in molecular biology</span><span class="date">2026-05-01</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  
+  
+</article><article class="paper" data-keywords="methylation" data-source="PMC" data-search="Genome-Wide DNA Methylation Analysis of the Toxicological Responses to Foliar Cerium Application in Soybean  Guo C, Sun L. Toxics methylation ">
+  <h3><a href="https://europepmc.org/abstract/PMC/PMC13210806" target="_blank" rel="noopener">Genome-Wide DNA Methylation Analysis of the Toxicological Responses to Foliar Cerium Application in Soybean</a></h3>
+  <div class="by">Guo C, Sun L.</div>
+  <div class="meta"><span class="src PMC">PMC</span><span>Toxics</span><span class="date">2026-04-25</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  
+  
+</article><article class="paper" data-keywords="methylation" data-source="PMC" data-search="Genome-Wide DNA Methylation Profiling of Peripheral Blood Mononuclear Cells Reveals Epigenetic Signatures in Autism Spectrum Disorder  Saeliw T, Yuwattana W, Poolcharoen C, van Erp M, Kanlayaprasit S, Vanwong N, Hu V, Trairatvorakul P, Chonchaiya W, Sarachana T. International journal of molecular sciences methylation ">
+  <h3><a href="https://europepmc.org/abstract/PMC/PMC13207186" target="_blank" rel="noopener">Genome-Wide DNA Methylation Profiling of Peripheral Blood Mononuclear Cells Reveals Epigenetic Signatures in Autism Spectrum Disorder</a></h3>
+  <div class="by">Saeliw T, Yuwattana W, Poolcharoen C, et al.</div>
+  <div class="meta"><span class="src PMC">PMC</span><span>International journal of molecular sciences</span><span class="date">2026-05-01</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  
+  
+</article><article class="paper" data-keywords="methylation" data-source="PMC" data-search="Glatiramer Acetate Therapy Induces DNA Methylation Changes in Immune Cells of Multiple Sclerosis Patients: A Pilot Study  Kiselev I, Kulakova O, Baturina O, Kabilov M, Boyko A, Favorova O. International journal of molecular sciences methylation ">
+  <h3><a href="https://europepmc.org/abstract/PMC/PMC13207739" target="_blank" rel="noopener">Glatiramer Acetate Therapy Induces DNA Methylation Changes in Immune Cells of Multiple Sclerosis Patients: A Pilot Study</a></h3>
+  <div class="by">Kiselev I, Kulakova O, Baturina O, et al.</div>
+  <div class="meta"><span class="src PMC">PMC</span><span>International journal of molecular sciences</span><span class="date">2026-05-01</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  
+  
+</article><article class="paper" data-keywords="methylation" data-source="PPR" data-search="Growth rate dependent DNA methylation patterns along bacterial chromosomes DNA methylation plays critical roles in gene regulation in bacteria, from regulating essential processes like the cell cycle to phenotypes of practical interest like pathogenicity and motility. Synthetic manipulation of global methylation levels has broad impacts on cellular physiology, changing exp Mall A, Abbaspour MH, Mathes DJ, Udekwu KI, Marx CJ.  methylation ">
+  <h3><a href="https://europepmc.org/abstract/PPR/PPR1239326" target="_blank" rel="noopener">Growth rate dependent DNA methylation patterns along bacterial chromosomes</a></h3>
+  <div class="by">Mall A, Abbaspour MH, Mathes DJ, et al.</div>
+  <div class="meta"><span class="src PPR">Preprint</span><span class="date">2026-05-25</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">DNA methylation plays critical roles in gene regulation in bacteria, from regulating essential processes like the cell cycle to phenotypes of practical interest like pathogenicity and motility. Synthetic manipulation of global methylation levels has broad impacts on cellular phys…</div>
+  <div class="doi"><a href="https://doi.org/10.64898/2026.05.23.720832" target="_blank" rel="noopener">10.64898/2026.05.23.720832</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="PPR" data-search="High ABCE1 levels predict a poor prognosis in thyroid cancer patients Abstract Background Incidence of thyroid cancer increases, and the ATP-binding cassette subfamily E member 1 (ABCE1) regulates a broad range of biological functions without being well studied in thyroid cancer. This study aims to investigate the expression profile and clinical significance of ABCE1  Chen H, Lee C, Hsu H.  methylation ">
+  <h3><a href="https://europepmc.org/abstract/PPR/PPR1238803" target="_blank" rel="noopener">High ABCE1 levels predict a poor prognosis in thyroid cancer patients</a></h3>
+  <div class="by">Chen H, Lee C, Hsu H.</div>
+  <div class="meta"><span class="src PPR">Preprint</span><span class="date">2026-05-26</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Abstract Background Incidence of thyroid cancer increases, and the ATP-binding cassette subfamily E member 1 (ABCE1) regulates a broad range of biological functions without being well studied in thyroid cancer. This study aims to investigate the expression profile and clinical si…</div>
+  <div class="doi"><a href="https://doi.org/10.21203/rs.3.rs-9454375/v1" target="_blank" rel="noopener">10.21203/rs.3.rs-9454375/v1</a></div>
+</article><article class="paper" data-keywords="mosaic" data-source="PPR" data-search="High-efficiency base editing enables multiplex inactivation of retroviral and immunologic barriers in porcine xenotransplantation Abstract Genetically engineered pigs are promising donors for xenotransplantation; however, scalable genetic engineering strategies that overcome zoonotic and xenogeneic barriers remain challenging. Here, we combined cytosine base editing in zygotes with fetal prescreening and cloning to generate no Park K, Waters J, Simpson S, Yeddula SGR, Scimeca E, Murugesan R, Borges A, Sher L, Telugu BP.  mosaic ">
+  <h3><a href="https://europepmc.org/abstract/PPR/PPR1239008" target="_blank" rel="noopener">High-efficiency base editing enables multiplex inactivation of retroviral and immunologic barriers in porcine xenotransplantation</a></h3>
+  <div class="by">Park K, Waters J, Simpson S, et al.</div>
+  <div class="meta"><span class="src PPR">Preprint</span><span class="date">2026-05-26</span><a class="tag kw-mosaic" href="../keywords/mosaic.html">mosaic</a></div>
+  <div class="ab">Abstract Genetically engineered pigs are promising donors for xenotransplantation; however, scalable genetic engineering strategies that overcome zoonotic and xenogeneic barriers remain challenging. Here, we combined cytosine base editing in zygotes with fetal prescreening and cl…</div>
+  <div class="doi"><a href="https://doi.org/10.21203/rs.3.rs-9802259/v1" target="_blank" rel="noopener">10.21203/rs.3.rs-9802259/v1</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="PMC" data-search="Integrated Computational Profiling Links Position-specific O-Methylation to Spontaneous Complexation and Improved Binding in Flavonoid–HER2 Systems  Akinnusi P, Olubode S, Okai D, Akinbami O, Oyerinde D, Akinnusi A. Bioinformatics and biology insights methylation ">
+  <h3><a href="https://europepmc.org/abstract/PMC/PMC13201941" target="_blank" rel="noopener">Integrated Computational Profiling Links Position-specific O-Methylation to Spontaneous Complexation and Improved Binding in Flavonoid–HER2 Systems</a></h3>
+  <div class="by">Akinnusi P, Olubode S, Okai D, et al.</div>
+  <div class="meta"><span class="src PMC">PMC</span><span>Bioinformatics and biology insights</span><span class="date">2026-01-01</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  
+  
+</article><article class="paper" data-keywords="methylation" data-source="PMC" data-search="Integrative sRNA, DNA Methylation, and Transcriptomics Reveals Dynamic Epigenetic Reprogramming of Meloidogyne javanica-Induced Galls in Arabidopsis  Domínguez-Figueroa J, Silva A, Abril-Urias P, Müller S, Ladera-Carmona M, Schäfer P, Baca-González V, Caro E, Escobar C. International journal of molecular sciences methylation ">
+  <h3><a href="https://europepmc.org/abstract/PMC/PMC13207400" target="_blank" rel="noopener">Integrative sRNA, DNA Methylation, and Transcriptomics Reveals Dynamic Epigenetic Reprogramming of Meloidogyne javanica-Induced Galls in Arabidopsis</a></h3>
+  <div class="by">Domínguez-Figueroa J, Silva A, Abril-Urias P, et al.</div>
+  <div class="meta"><span class="src PMC">PMC</span><span>International journal of molecular sciences</span><span class="date">2026-05-01</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  
+  
+</article><article class="paper" data-keywords="methylation" data-source="PPR" data-search="Ligand-Independent Activation of Hedgehog Signaling in Diffuse Large B-Cell Lymphoma: Role of PTCH1 Promoter Hypermethylation Abstract Background Hedgehog (HH) signaling is aberrantly activated in diffuse large B-cell lymphoma (DLBCL) and contributes to tumor proliferation and drug resistance. However, ligand-independent activation mechanisms, including gene mutations and epigenetic modifications, remain poorly defined. Me Kong D, Zou R, Gao X, Bai J, Ping N, Li J, Zhu Q, Zhang X, Jin Z, Wu D, Qu C.  methylation ">
+  <h3><a href="https://europepmc.org/abstract/PPR/PPR1238915" target="_blank" rel="noopener">Ligand-Independent Activation of Hedgehog Signaling in Diffuse Large B-Cell Lymphoma: Role of PTCH1 Promoter Hypermethylation</a></h3>
+  <div class="by">Kong D, Zou R, Gao X, et al.</div>
+  <div class="meta"><span class="src PPR">Preprint</span><span class="date">2026-05-26</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Abstract Background Hedgehog (HH) signaling is aberrantly activated in diffuse large B-cell lymphoma (DLBCL) and contributes to tumor proliferation and drug resistance. However, ligand-independent activation mechanisms, including gene mutations and epigenetic modifications, remai…</div>
+  <div class="doi"><a href="https://doi.org/10.21203/rs.3.rs-9662268/v1" target="_blank" rel="noopener">10.21203/rs.3.rs-9662268/v1</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="PMC" data-search="Longitudinal Blood Epigenetic Aging, DNA Methylation-Predicted Protein, and Estimated Leukocyte Proportion Trends in Two Astronauts from the Axiom Space Mission 1: An Exploratory Analysis  Nwanaji-Enwerem J, Khodasevich D, Blakley J, Galazka J, Cardenas A. Genes methylation ">
+  <h3><a href="https://europepmc.org/abstract/PMC/PMC13206426" target="_blank" rel="noopener">Longitudinal Blood Epigenetic Aging, DNA Methylation-Predicted Protein, and Estimated Leukocyte Proportion Trends in Two Astronauts from the Axiom Space Mission 1: An Exploratory Analysis</a></h3>
+  <div class="by">Nwanaji-Enwerem J, Khodasevich D, Blakley J, et al.</div>
+  <div class="meta"><span class="src PMC">PMC</span><span>Genes</span><span class="date">2026-05-01</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  
+  
+</article><article class="paper" data-keywords="methylation" data-source="PMC" data-search="Methylation-centric epigenetic regulation in dilated cardiomyopathy: mechanisms, metabolic interplay, and translational potential  Wang Y, Zhang Y, Mao Z, Xu Z. Frontiers in cardiovascular medicine methylation ">
+  <h3><a href="https://europepmc.org/abstract/PMC/PMC13199325" target="_blank" rel="noopener">Methylation-centric epigenetic regulation in dilated cardiomyopathy: mechanisms, metabolic interplay, and translational potential</a></h3>
+  <div class="by">Wang Y, Zhang Y, Mao Z, et al.</div>
+  <div class="meta"><span class="src PMC">PMC</span><span>Frontiers in cardiovascular medicine</span><span class="date">2026-05-27</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  
+  
+</article><article class="paper" data-keywords="mosaic" data-source="PPR" data-search="Multi-omics data of a weedy coral species from Ulithi Atoll (Micronesia) to investigate the impact of human disturbance on coral health and resilience Background: Coral reefs are among the most biodiverse ecosystems on Earth yet face an increasing risk of collapse under climate change and intensifying anthropogenic pressures. Although there is strong evidence that stressors such as overfishing, sedimentation, and wastewater runoff can drive shifts Chille EE, Panayotakis GM, Stephens TG, Paddack M, Crane NL, Bernardi G, Rulmal J, Bhattacharya D.  mosaic ">
+  <h3><a href="https://europepmc.org/abstract/PPR/PPR1239238" target="_blank" rel="noopener">Multi-omics data of a weedy coral species from Ulithi Atoll (Micronesia) to investigate the impact of human disturbance on coral health and resilience</a></h3>
+  <div class="by">Chille EE, Panayotakis GM, Stephens TG, et al.</div>
+  <div class="meta"><span class="src PPR">Preprint</span><span class="date">2026-05-26</span><a class="tag kw-mosaic" href="../keywords/mosaic.html">mosaic</a></div>
+  <div class="ab">Background: Coral reefs are among the most biodiverse ecosystems on Earth yet face an increasing risk of collapse under climate change and intensifying anthropogenic pressures. Although there is strong evidence that stressors such as overfishing, sedimentation, and wastewater run…</div>
+  <div class="doi"><a href="https://doi.org/10.64898/2026.05.21.726996" target="_blank" rel="noopener">10.64898/2026.05.21.726996</a></div>
+</article><article class="paper" data-keywords="mosaic" data-source="PPR" data-search="Multiscale landscape context and management gradients shape functional guilds and co-occurrence patterns of Diptera in tropical regenerative agroecosystems Abstract Tropical agroecosystems transitioning toward regenerative practices require biodiversity assessments that evaluate not only abundance but also changes in community composition, functional guild responses, landscape effects and community reorganization. This study aimed to analyze how gradie Efrata E, Ulinnuha U, Azhari AA, Pradiefta MR, Sataral M.  mosaic ">
+  <h3><a href="https://europepmc.org/abstract/PPR/PPR1238851" target="_blank" rel="noopener">Multiscale landscape context and management gradients shape functional guilds and co-occurrence patterns of Diptera in tropical regenerative agroecosystems</a></h3>
+  <div class="by">Efrata E, Ulinnuha U, Azhari AA, et al.</div>
+  <div class="meta"><span class="src PPR">Preprint</span><span class="date">2026-05-26</span><a class="tag kw-mosaic" href="../keywords/mosaic.html">mosaic</a></div>
+  <div class="ab">Abstract Tropical agroecosystems transitioning toward regenerative practices require biodiversity assessments that evaluate not only abundance but also changes in community composition, functional guild responses, landscape effects and community reorganization. This study aimed t…</div>
+  <div class="doi"><a href="https://doi.org/10.21203/rs.3.rs-9722327/v1" target="_blank" rel="noopener">10.21203/rs.3.rs-9722327/v1</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="PMC" data-search="P16 DNA Methylation Coupled with Somatic Copy Number Variations in the Development of Gastric Carcinomas   Cancers methylation ">
+  <h3><a href="https://europepmc.org/abstract/PMC/PMC13204808" target="_blank" rel="noopener">P16 DNA Methylation Coupled with Somatic Copy Number Variations in the Development of Gastric Carcinomas</a></h3>
+  
+  <div class="meta"><span class="src PMC">PMC</span><span>Cancers</span><span class="date">2026-05-01</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  
+  
+</article><article class="paper" data-keywords="mosaic" data-source="PMC" data-search="Polymorphisms for Defence and Virulence in the Arabidopsis thaliana–Cucumber mosaic virus Interaction Are Expressed in the Host’s Native Habitat   Viruses mosaic ">
+  <h3><a href="https://europepmc.org/abstract/PMC/PMC13211345" target="_blank" rel="noopener">Polymorphisms for Defence and Virulence in the Arabidopsis thaliana–Cucumber mosaic virus Interaction Are Expressed in the Host’s Native Habitat</a></h3>
+  
+  <div class="meta"><span class="src PMC">PMC</span><span>Viruses</span><span class="date">2026-04-23</span><a class="tag kw-mosaic" href="../keywords/mosaic.html">mosaic</a></div>
+  
+  
+</article><article class="paper" data-keywords="methylation" data-source="PPR" data-search="RNase 4 improves bottom-up modification mapping of E. coli total tRNAs using HILIC-MS/MS The structural and functional diversity of RNAs is expanded by the post-transcriptional incorporation of nucleoside variants. Emblematic of this, tRNAs contain extensive modifications that ensure their function during protein synthesis. Mass spectrometry has long been the field standard for identify Simcox KM, Zamecnik M, Kennedy RT, Koutmou KS.  methylation ">
+  <h3><a href="https://europepmc.org/abstract/PPR/PPR1239350" target="_blank" rel="noopener">RNase 4 improves bottom-up modification mapping of E. coli total tRNAs using HILIC-MS/MS</a></h3>
+  <div class="by">Simcox KM, Zamecnik M, Kennedy RT, et al.</div>
+  <div class="meta"><span class="src PPR">Preprint</span><span class="date">2026-05-25</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">The structural and functional diversity of RNAs is expanded by the post-transcriptional incorporation of nucleoside variants. Emblematic of this, tRNAs contain extensive modifications that ensure their function during protein synthesis. Mass spectrometry has long been the field s…</div>
+  <div class="doi"><a href="https://doi.org/10.64898/2026.05.23.727428" target="_blank" rel="noopener">10.64898/2026.05.23.727428</a></div>
+</article><article class="paper" data-keywords="mosaic" data-source="PMC" data-search="The Melon Sterol Transporter Niemann-Pick C1 Protein Is a New Interactor of Cucumber mosaic virus Movement Protein  Real N, Villar I, Liu B, Gajjout M, Hou W, Martín-Hernández A. Viruses mosaic ">
+  <h3><a href="https://europepmc.org/abstract/PMC/PMC13211540" target="_blank" rel="noopener">The Melon Sterol Transporter Niemann-Pick C1 Protein Is a New Interactor of Cucumber mosaic virus Movement Protein</a></h3>
+  <div class="by">Real N, Villar I, Liu B, et al.</div>
+  <div class="meta"><span class="src PMC">PMC</span><span>Viruses</span><span class="date">2026-05-01</span><a class="tag kw-mosaic" href="../keywords/mosaic.html">mosaic</a></div>
+  
+  
+</article><article class="paper" data-keywords="methylation" data-source="PPR" data-search="The ZBTB24–CDCA7–HELLS Epigenetic Axis Drives DNMT-Dependent Silencing of μ- Opioid Receptors in Neuropathic Allodynia-like Behavior in Rats Abstract Introduction: DNA methylation–mediated epigenetic regulation has emerged as a key contributor to the development of neuropathic pain. Cell Division Cycle Associated 7 (CDCA7), a zinc-finger protein, is known to participate in the regulation of DNA methylation, chromatin organization, and tr Hsieh M, Lai C, Lin T, Wang H, Cheng J, Yeh C, Hsu C, Li C, Chou D, Peng H.  methylation ">
+  <h3><a href="https://europepmc.org/abstract/PPR/PPR1238897" target="_blank" rel="noopener">The ZBTB24–CDCA7–HELLS Epigenetic Axis Drives DNMT-Dependent Silencing of μ- Opioid Receptors in Neuropathic Allodynia-like Behavior in Rats</a></h3>
+  <div class="by">Hsieh M, Lai C, Lin T, et al.</div>
+  <div class="meta"><span class="src PPR">Preprint</span><span class="date">2026-05-26</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Abstract Introduction: DNA methylation–mediated epigenetic regulation has emerged as a key contributor to the development of neuropathic pain. Cell Division Cycle Associated 7 (CDCA7), a zinc-finger protein, is known to participate in the regulation of DNA methylation, chromatin …</div>
+  <div class="doi"><a href="https://doi.org/10.21203/rs.3.rs-9673555/v1" target="_blank" rel="noopener">10.21203/rs.3.rs-9673555/v1</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="PMC" data-search="Validation of Multi-Target Stool DNA Methylation Test for Colorectal Cancer Detection: A Preliminary Analysis  Abdul Rahman K, Mohammad Azmi N, Abdullah Suhaimi S, Mohd Azman Z, Raduan F, Muhammad Nawawi K, Shah S, Tan G, Wong Y, Abdul Raub S. Biomedicines methylation ">
+  <h3><a href="https://europepmc.org/abstract/PMC/PMC13203767" target="_blank" rel="noopener">Validation of Multi-Target Stool DNA Methylation Test for Colorectal Cancer Detection: A Preliminary Analysis</a></h3>
+  <div class="by">Abdul Rahman K, Mohammad Azmi N, Abdullah Suhaimi S, et al.</div>
+  <div class="meta"><span class="src PMC">PMC</span><span>Biomedicines</span><span class="date">2026-04-27</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  
+  
+</article><article class="paper" data-keywords="methylation" data-source="PMC" data-search="Variations in DNA Methylation Are Landmarks of Freshwater Adaptation in Three-Spined Sticklebacks  Starshin A, Mazur A, Mugue N, Kaplun D, Golden A, Khrameeva E, Prokhortchouk E. International journal of molecular sciences methylation ">
+  <h3><a href="https://europepmc.org/abstract/PMC/PMC13207980" target="_blank" rel="noopener">Variations in DNA Methylation Are Landmarks of Freshwater Adaptation in Three-Spined Sticklebacks</a></h3>
+  <div class="by">Starshin A, Mazur A, Mugue N, et al.</div>
+  <div class="meta"><span class="src PMC">PMC</span><span>International journal of molecular sciences</span><span class="date">2026-05-01</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  
+  
+</article></div>
+<div id="empty" class="empty" style="display:none">조건에 맞는 논문이 없습니다.</div>
+<footer>
+  Generated 2026-06-01 08:01 KST · <a href="https://europepmc.org" target="_blank">Europe PMC</a> · IF: JCR 2024 (curated)
+</footer>
+</div>
+<script>
+(function() {
+  var state = { keyword: 'all', source: 'all', q: '' };
+  function apply() {
+    var q = state.q.toLowerCase();
+    document.querySelectorAll('.paper').forEach(function(el) {
+      var kws = (el.dataset.keywords || '').split('|');
+      var src = el.dataset.source || '';
+      var hay = (el.dataset.search || '').toLowerCase();
+      var ok = true;
+      if (state.keyword !== 'all' && kws.indexOf(state.keyword) === -1) ok = false;
+      if (state.source !== 'all' && src !== state.source) ok = false;
+      if (q && hay.indexOf(q) === -1) ok = false;
+      el.classList.toggle('hidden', !ok);
+    });
+    var visible = document.querySelectorAll('.paper:not(.hidden)').length;
+    var em = document.getElementById('empty'); if (em) em.style.display = visible ? 'none' : 'block';
+    var vc = document.getElementById('visibleCount'); if (vc) vc.textContent = visible;
+  }
+  document.querySelectorAll('.chip[data-filter]').forEach(function(chip) {
+    chip.addEventListener('click', function() {
+      var dim = chip.dataset.filter;
+      state[dim] = chip.dataset.value;
+      document.querySelectorAll('.chip[data-filter="' + dim + '"]').forEach(function(c) { c.classList.remove('active'); });
+      chip.classList.add('active'); apply();
+    });
+  });
+  var search = document.getElementById('search');
+  if (search) search.addEventListener('input', function(e) { state.q = e.target.value; apply(); });
+  apply();
+  document.addEventListener('keydown', function(e) {
+    if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) return;
+    if (e.key === 'ArrowLeft') { var p = document.querySelector('.daynav .arrow:not(.disabled):first-of-type'); if (p && p.href) location.href = p.href; }
+    else if (e.key === 'ArrowRight') { var nodes = document.querySelectorAll('.daynav .arrow:not(.disabled)'); var n = nodes[nodes.length-1]; if (n && n.href) location.href = n.href; }
+  });
+})();
+</script>
+</body></html>

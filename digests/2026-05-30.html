@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Paper Digest — 2026-05-30</title>
+<style>:root {
+  color-scheme: light dark;
+  --bg: #fafaf7; --fg: #1c1c1a; --muted: #6b6b66; --soft: #4a4a45;
+  --accent: #b85c00; --accent-soft: #fef3e6;
+  --card: #ffffff; --border: #e5e3dc; --chip: #f0ede4;
+  --shadow: 0 1px 2px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.04);
+  --radius: 12px;
+}
+* { box-sizing: border-box; }
+html, body { margin:0; padding:0; background:var(--bg); color:var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+    "Apple SD Gothic Neo", "Malgun Gothic", "Pretendard", sans-serif;
+  font-size: 15px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+.wrap { max-width: 920px; margin: 0 auto; padding: 28px 20px 80px; }
+a { color: var(--accent); }
+header.hero { display:flex; align-items:flex-end; justify-content:space-between; gap:16px;
+  padding: 12px 0 8px; border-bottom: 1px solid var(--border); margin-bottom: 24px; }
+header.hero h1 { margin: 0 0 2px; font-size: 26px; letter-spacing: -0.02em; font-weight: 700; }
+header.hero .meta { color: var(--muted); font-size: 13px; }
+header.hero .home-link { font-size: 13px; color: var(--muted); text-decoration: none; }
+header.hero .home-link:hover { color: var(--accent); }
+
+/* Day tabs (daily detail pages) */
+.daynav { display:flex; align-items:center; flex-wrap: wrap; gap: 10px;
+  background: var(--card); border:1px solid var(--border); border-radius: var(--radius);
+  padding: 10px 14px; margin-bottom: 18px; font-size: 13px; box-shadow: var(--shadow); }
+.daynav .arrow, .daynav .home { color: var(--muted); text-decoration:none; padding: 4px 8px;
+  border-radius: 6px; }
+.daynav .arrow:hover, .daynav .home:hover { background: var(--chip); color: var(--accent); }
+.daynav .arrow.disabled { opacity: 0.35; cursor: default; }
+.daynav .center { display:flex; gap:4px; flex-wrap:wrap; }
+.daynav .center a, .daynav .center span { color: var(--fg); text-decoration:none;
+  padding: 4px 9px; border-radius: 6px; font-variant-numeric: tabular-nums; }
+.daynav .center a:hover { background: var(--chip); }
+.daynav .center .today { background: var(--accent); color:#fff; font-weight:600; }
+.daynav .center .empty { color: var(--muted); }
+
+/* Summary card */
+.summary { background:var(--card); border:1px solid var(--border); border-radius:var(--radius);
+  padding: 16px 20px; margin: 0 0 22px; box-shadow: var(--shadow); }
+.summary h2 { margin:0 0 10px; font-size:11px; text-transform:uppercase; letter-spacing:0.08em; color:var(--muted); font-weight:600; }
+.summary-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px 28px; }
+.summary-grid .col h3 { margin:0 0 6px; font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.06em; font-weight:600; }
+.summary-grid .col ul { margin:0; padding:0; list-style:none; font-size:13px; }
+.summary-grid .col li { display:flex; justify-content:space-between; gap:8px; padding:2px 0;
+  border-bottom: 1px dashed var(--border); }
+.summary-grid .col li:last-child { border-bottom: 0; }
+.summary-grid .col li b { font-weight:600; font-variant-numeric: tabular-nums; }
+
+/* Filter chips */
+.filter-row { display:flex; gap:14px; align-items:baseline; flex-wrap:wrap; margin-bottom: 8px; }
+.filter-row .lbl { font-size:10px; color:var(--muted); text-transform:uppercase; letter-spacing:0.08em;
+  font-weight:600; min-width:64px; padding-top: 4px; }
+.filters { display:flex; flex-wrap:wrap; gap:6px; }
+.chip { display:inline-flex; align-items:center; padding: 4px 11px; border-radius: 999px;
+  background: var(--chip); border:1px solid var(--border); font-size:12px;
+  cursor:pointer; user-select:none; transition: all 0.12s; text-decoration:none; color: inherit; }
+.chip:hover { border-color: var(--accent); }
+.chip.active { background: var(--accent); color:#fff; border-color: var(--accent); }
+.chip .count { opacity: 0.65; margin-left: 6px; font-variant-numeric: tabular-nums; font-size: 11px; }
+.chip.active .count { opacity: 0.95; }
+
+/* Per-keyword color chips (kw-* class injected per page) */
+.chip.kw-somatic-mosaicism, .tag.kw-somatic-mosaicism { background: #ede9fe; color: #5b21b6; border-color: #ede9fe; }
+.chip.kw-somatic-mosaicism:hover { filter: brightness(0.95); border-color: #5b21b6; }
+.chip.kw-somatic-mosaicism.active { background: #5b21b6; color: #fff; border-color: #5b21b6; }
+@media (prefers-color-scheme: dark) {
+  .chip.kw-somatic-mosaicism, .tag.kw-somatic-mosaicism { background: #3b1d6b; color: #c4b5fd; border-color: #3b1d6b; }
+  .chip.kw-somatic-mosaicism.active { background: #c4b5fd; color: #181815; border-color: #c4b5fd; }
+}
+.chip.kw-mosaic, .tag.kw-mosaic { background: #ffedd5; color: #9a3412; border-color: #ffedd5; }
+.chip.kw-mosaic:hover { filter: brightness(0.95); border-color: #9a3412; }
+.chip.kw-mosaic.active { background: #9a3412; color: #fff; border-color: #9a3412; }
+@media (prefers-color-scheme: dark) {
+  .chip.kw-mosaic, .tag.kw-mosaic { background: #3a2210; color: #fdba74; border-color: #3a2210; }
+  .chip.kw-mosaic.active { background: #fdba74; color: #181815; border-color: #fdba74; }
+}
+.chip.kw-mosaic-variant, .tag.kw-mosaic-variant { background: #fce7f3; color: #9d174d; border-color: #fce7f3; }
+.chip.kw-mosaic-variant:hover { filter: brightness(0.95); border-color: #9d174d; }
+.chip.kw-mosaic-variant.active { background: #9d174d; color: #fff; border-color: #9d174d; }
+@media (prefers-color-scheme: dark) {
+  .chip.kw-mosaic-variant, .tag.kw-mosaic-variant { background: #3a1626; color: #f9a8d4; border-color: #3a1626; }
+  .chip.kw-mosaic-variant.active { background: #f9a8d4; color: #181815; border-color: #f9a8d4; }
+}
+.chip.kw-methylation, .tag.kw-methylation { background: #dbeafe; color: #1e3a8a; border-color: #dbeafe; }
+.chip.kw-methylation:hover { filter: brightness(0.95); border-color: #1e3a8a; }
+.chip.kw-methylation.active { background: #1e3a8a; color: #fff; border-color: #1e3a8a; }
+@media (prefers-color-scheme: dark) {
+  .chip.kw-methylation, .tag.kw-methylation { background: #10204a; color: #93c5fd; border-color: #10204a; }
+  .chip.kw-methylation.active { background: #93c5fd; color: #181815; border-color: #93c5fd; }
+}
+.chip.kw-pacbio, .tag.kw-pacbio { background: #d1fae5; color: #065f46; border-color: #d1fae5; }
+.chip.kw-pacbio:hover { filter: brightness(0.95); border-color: #065f46; }
+.chip.kw-pacbio.active { background: #065f46; color: #fff; border-color: #065f46; }
+@media (prefers-color-scheme: dark) {
+  .chip.kw-pacbio, .tag.kw-pacbio { background: #0c2a23; color: #86efac; border-color: #0c2a23; }
+  .chip.kw-pacbio.active { background: #86efac; color: #181815; border-color: #86efac; }
+}
+.chip.pinned, .tag.pinned { background: #fef3c7; color: #854d0e; border-color: #fef3c7; font-weight: 600; }
+.chip.pinned:hover { filter: brightness(0.95); border-color: #854d0e; }
+.chip.pinned.active { background: #854d0e; color: #fff; border-color: #854d0e; }
+@media (prefers-color-scheme: dark) {
+  .chip.pinned, .tag.pinned { background: #3a2d0d; color: #fde68a; border-color: #3a2d0d; }
+  .chip.pinned.active { background: #fde68a; color: #181815; border-color: #fde68a; }
+}
+
+.search-box { width:100%; margin: 8px 0 18px; }
+.search-box input { width:100%; padding: 10px 14px; border:1px solid var(--border); border-radius: 8px;
+  font-size: 14px; background: var(--card); color: var(--fg); transition: border-color 0.12s; }
+.search-box input:focus { outline: none; border-color: var(--accent); }
+
+.papers { display:flex; flex-direction:column; gap: 12px; }
+.paper { background:var(--card); border:1px solid var(--border); border-radius: var(--radius);
+  padding: 16px 20px; transition: border-color 0.12s, box-shadow 0.12s; box-shadow: var(--shadow); }
+.paper:hover { border-color: var(--accent); box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 6px 18px rgba(184,92,0,0.10); }
+.paper.hidden { display:none; }
+.paper.hi { border-color: #f0c388; background: linear-gradient(0deg, var(--accent-soft), var(--card) 70%); }
+.paper h3 { margin: 0 0 6px; font-size: 16px; line-height: 1.4; font-weight: 600; }
+.paper h3 a { color: var(--fg); text-decoration: none; }
+.paper h3 a:hover { color: var(--accent); }
+.paper .if-tag { display:inline-block; margin-left: 6px; padding: 1px 7px; border-radius: 4px;
+  background: #fff3df; color: #8a4b00; font-size: 11px; font-weight: 700; vertical-align: 2px;
+  letter-spacing: 0.02em; }
+.paper.hi .if-tag { background: var(--accent); color: #fff; }
+.paper .by { font-size: 12px; color: var(--muted); margin: 0 0 6px; }
+.paper .meta { font-size: 11px; color: var(--muted); margin: 0 0 8px; display: flex;
+  flex-wrap: wrap; gap: 4px 10px; align-items: center; }
+.paper .meta .src { display:inline-block; padding: 1px 7px; border-radius: 4px; font-weight: 700;
+  letter-spacing: 0.02em; font-size: 10px; background: var(--chip); }
+.paper .meta .src.PPR { background:#fff3df; color:#8a4b00; }
+.paper .meta .src.MED { background:#e3eef6; color:#1f4e75; }
+.paper .meta .src.PMC { background:#e3f4e6; color:#2a6b35; }
+.paper .meta .date { font-variant-numeric: tabular-nums; }
+.tag { display:inline-block; padding: 1px 7px; border-radius: 999px; font-size: 11px;
+  background: var(--chip); border: 1px solid var(--border); text-decoration: none;
+  font-weight: 500; transition: all 0.12s; }
+.tag:hover { filter: brightness(0.95); }
+.paper .ksum { background: #fffefa; border:1px solid #efe9d8; border-radius: 8px; padding: 10px 14px;
+  margin: 8px 0 4px; font-size: 14px; line-height: 1.7; color: #2c2c28; }
+.paper.hi .ksum { background: #fffaf2; border-color: #efd9b8; }
+.paper .ksum .label { display:inline-block; font-size: 10px; font-weight: 700; color: var(--accent);
+  text-transform: uppercase; letter-spacing: 0.06em; margin-right: 6px; vertical-align: 2px; }
+.paper .ksum-struct { display: flex; flex-direction: column; gap: 8px; }
+.paper .ksum-struct .line { display: flex; gap: 10px; }
+.paper .ksum-struct .lbl { flex: 0 0 56px; font-size: 11px; font-weight: 700; color: var(--accent);
+  text-transform: uppercase; letter-spacing: 0.04em; padding-top: 3px; }
+.paper .ksum-struct .body { flex: 1 1 auto; }
+.paper .ksum-struct ul { margin: 2px 0 0; padding-left: 18px; }
+.paper .doi a { color: var(--muted); font-size: 11px; text-decoration: none; }
+.paper .doi a:hover { color: var(--accent); }
+.paper .ab { font-size: 13px; color: var(--soft); margin: 6px 0 0; }
+
+/* date headers used on per-keyword pages */
+.date-head { display:flex; align-items:baseline; gap: 12px; margin: 26px 0 8px;
+  padding-bottom: 6px; border-bottom: 1px dashed var(--border); }
+.date-head h2 { margin: 0; font-size: 14px; font-weight: 700; letter-spacing: -0.01em; }
+.date-head .day-meta { font-size: 12px; color: var(--muted); }
+
+/* index page */
+.kw-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 10px; margin: 14px 0 28px; }
+.kw-card { display:block; padding: 14px 16px; border-radius: var(--radius); background: var(--card);
+  border:1px solid var(--border); text-decoration: none; color: var(--fg); transition: all 0.12s;
+  box-shadow: var(--shadow); }
+.kw-card:hover { border-color: var(--accent); transform: translateY(-1px); box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 8px 22px rgba(184,92,0,0.10); }
+.kw-card .name { display:flex; align-items:center; gap: 8px; font-weight: 700; font-size: 15px;
+  margin-bottom: 4px; }
+.kw-card .swatch { width: 10px; height: 10px; border-radius: 999px; }
+.kw-card .stats { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.kw-card .recent { margin-top: 6px; font-size: 11px; color: var(--muted); }
+
+/* day list */
+.daylist { display: flex; flex-direction: column; gap: 8px; margin-top: 6px; }
+.daylist .row { display:grid; grid-template-columns: 110px 200px 1fr; gap: 14px;
+  align-items: baseline; padding: 12px 16px; border:1px solid var(--border); border-radius: var(--radius);
+  background: var(--card); text-decoration:none; color: var(--fg); transition: border-color 0.12s; }
+.daylist .row:hover { border-color: var(--accent); }
+.daylist .d { font-variant-numeric: tabular-nums; font-weight: 600; }
+.daylist .n { font-variant-numeric: tabular-nums; font-size: 14px; }
+.daylist .hi-pill { display:inline-block; margin-left: 6px; padding: 1px 7px; border-radius: 999px;
+  background:#fff0d6; color:#8a4b00; font-size: 11px; font-weight: 600; }
+.daylist .info { display:flex; flex-direction: column; gap: 2px; color: var(--muted); font-size: 12px; }
+
+.empty { background: var(--card); border:1px dashed var(--border); border-radius: var(--radius);
+  padding: 30px; text-align: center; color: var(--muted); }
+.section-h { margin: 30px 0 8px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em;
+  color: var(--muted); font-weight: 700; }
+footer { margin-top: 60px; padding-top: 16px; border-top: 1px solid var(--border);
+  font-size: 11px; color: var(--muted); }
+footer a { color: var(--muted); }
+
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#181815; --fg:#e8e6df; --muted:#8a8780; --soft:#bbbab2; --card:#232320;
+    --border:#353330; --chip:#2a2825; --accent:#f29349; --accent-soft:#2a2014;
+    --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 4px 12px rgba(0,0,0,0.3); }
+  .paper .meta .src.PPR { background:#3a2a13; color:#f0c388; }
+  .paper .meta .src.MED { background:#1a2a3a; color:#93c0e8; }
+  .paper .meta .src.PMC { background:#1d3322; color:#8fd29a; }
+  .paper .ksum { background:#1f1f1c; border-color:#3a3833; color: #e0ddd2; }
+  .paper.hi .ksum { background:#2a2419; border-color:#4a3e22; }
+  .paper.hi { background: linear-gradient(0deg, #2a2014, var(--card) 70%); }
+  .daylist .hi-pill { background:#3a2a13; color:#f0c388; }
+}</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="daynav"><a class="arrow" href="2026-05-29.html">← 2026-05-29</a><a class="home" href="../index.html">📚 인덱스</a><div class="center"><a class="" href="2026-04-29.html">4/29</a><a class="" href="2026-04-30.html">4/30</a><a class="" href="2026-05-01.html">5/1</a><a class="" href="2026-05-02.html">5/2</a><a class="" href="2026-05-03.html">5/3</a><a class="" href="2026-05-04.html">5/4</a><a class="" href="2026-05-05.html">5/5</a><a class="" href="2026-05-06.html">5/6</a><a class="" href="2026-05-07.html">5/7</a><a class="" href="2026-05-08.html">5/8</a><a class="" href="2026-05-09.html">5/9</a><a class="" href="2026-05-10.html">5/10</a><a class="" href="2026-05-11.html">5/11</a><a class="" href="2026-05-12.html">5/12</a><a class="" href="2026-05-13.html">5/13</a><a class="" href="2026-05-14.html">5/14</a><a class="" href="2026-05-15.html">5/15</a><a class="" href="2026-05-16.html">5/16</a><a class="" href="2026-05-17.html">5/17</a><a class="" href="2026-05-18.html">5/18</a><a class="" href="2026-05-19.html">5/19</a><a class="" href="2026-05-20.html">5/20</a><a class="" href="2026-05-21.html">5/21</a><a class="" href="2026-05-22.html">5/22</a><a class="" href="2026-05-23.html">5/23</a><a class="" href="2026-05-24.html">5/24</a><a class="" href="2026-05-25.html">5/25</a><a class="" href="2026-05-26.html">5/26</a><a class="" href="2026-05-27.html">5/27</a><a class="" href="2026-05-28.html">5/28</a><a class="" href="2026-05-29.html">5/29</a><a class="today" href="2026-05-30.html">5/30</a><a class="" href="2026-05-31.html">5/31</a></div><a class="arrow" href="2026-05-31.html">2026-05-31 →</a></nav>
+<header class="hero">
+  <div>
+    <h1>📄 Paper Digest</h1>
+    <div class="meta">2026년 05월 30일 (Sat) · Europe PMC · <b>20</b>편 · IF≥10 <b>6</b>편</div>
+  </div>
+</header>
+<section class="summary">
+  <h2>Summary</h2>
+  <div class="summary-grid">
+    <div class="col"><h3>Source</h3><ul><li><span>PubMed</span><b>20</b></li></ul></div>
+    <div class="col"><h3>Top journals</h3><ul><li><span>Nature</span><b>4</b></li><li><span>Clinical epigenetics</span><b>2</b></li><li><span>Bioinformatics (Oxford, England)</span><b>1</b></li><li><span>Journal of bioenergetics and biomembranes</span><b>1</b></li><li><span>Chinese medicine</span><b>1</b></li><li><span>Journal of neuroinflammation</span><b>1</b></li><li><span>Nature communications</span><b>1</b></li><li><span>BMC cancer</span><b>1</b></li></ul></div>
+    <div class="col"><h3>Keyword</h3><ul><li><span>Somatic mosaicism</span><b>0</b></li><li><span>mosaic</span><b>0</b></li><li><span>mosaic variant</span><b>0</b></li><li><span>methylation</span><b>12</b></li><li><span>PacBio</span><b>4</b></li></ul></div>
+    <div class="col"><h3>📌 Pinned</h3><ul><li><span>📌 Cell</span><b>0</b></li><li><span>📌 Nature</span><b>4</b></li><li><span>📌 Science</span><b>0</b></li></ul></div>
+  </div>
+</section>
+
+<div class="filter-row"><div class="lbl">Keyword</div><div class="filters"><span class="chip active" data-filter="keyword" data-value="all">전체 <span class="count" id="visibleCount">20</span></span><span class="chip kw-somatic-mosaicism" data-filter="keyword" data-value="somatic-mosaicism">Somatic mosaicism<span class="count">0</span></span><span class="chip kw-mosaic" data-filter="keyword" data-value="mosaic">mosaic<span class="count">0</span></span><span class="chip kw-mosaic-variant" data-filter="keyword" data-value="mosaic-variant">mosaic variant<span class="count">0</span></span><span class="chip kw-methylation" data-filter="keyword" data-value="methylation">methylation<span class="count">12</span></span><span class="chip kw-pacbio" data-filter="keyword" data-value="pacbio">PacBio<span class="count">4</span></span><span class="chip pinned" data-filter="keyword" data-value="__pinned__">📌 Pinned<span class="count">4</span></span><span class="chip" data-filter="keyword" data-value="__hi__">⭐ IF≥10<span class="count">6</span></span></div></div>
+<div class="filter-row"><div class="lbl">Source</div><div class="filters"><span class="chip active" data-filter="source" data-value="all">전체</span><span class="chip" data-filter="source" data-value="MED">PubMed<span class="count">20</span></span></div></div>
+<div class="search-box"><input id="search" type="search" placeholder="제목·저자·저널·초록·요약 검색…"></div>
+<div class="papers"><article class="paper hi" data-keywords="__pinned__|__hi__" data-source="MED" data-search="Daily briefing: The known protein universe just got a lot bigger.   Smith J. Nature  Nature">
+  <h3><a href="https://europepmc.org/abstract/MED/42209761" target="_blank" rel="noopener">Daily briefing: The known protein universe just got a lot bigger. </a><span class="if-tag">IF=50.5</span></h3>
+  <div class="by">Smith J.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Nature</span><span class="date">2026-05-27</span><span class="tag pinned">📌 Nature</span></div>
+  
+  <div class="doi"><a href="https://doi.org/10.1038/d41586-026-01713-3" target="_blank" rel="noopener">10.1038/d41586-026-01713-3</a></div>
+</article><article class="paper hi" data-keywords="__pinned__|__hi__" data-source="MED" data-search="Exclusive: NSF puts new research grants to top universities on hold.   Garisto D. Nature  Nature">
+  <h3><a href="https://europepmc.org/abstract/MED/42209759" target="_blank" rel="noopener">Exclusive: NSF puts new research grants to top universities on hold. </a><span class="if-tag">IF=50.5</span></h3>
+  <div class="by">Garisto D.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Nature</span><span class="date">2026-05-27</span><span class="tag pinned">📌 Nature</span></div>
+  
+  <div class="doi"><a href="https://doi.org/10.1038/d41586-026-01667-6" target="_blank" rel="noopener">10.1038/d41586-026-01667-6</a></div>
+</article><article class="paper hi" data-keywords="__pinned__|__hi__" data-source="MED" data-search="Gene therapies to fix failing hearts gain steam after years in the doldrums.   Chen E. Nature  Nature">
+  <h3><a href="https://europepmc.org/abstract/MED/42209762" target="_blank" rel="noopener">Gene therapies to fix failing hearts gain steam after years in the doldrums. </a><span class="if-tag">IF=50.5</span></h3>
+  <div class="by">Chen E.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Nature</span><span class="date">2026-05-28</span><span class="tag pinned">📌 Nature</span></div>
+  
+  <div class="doi"><a href="https://doi.org/10.1038/d41586-026-01598-2" target="_blank" rel="noopener">10.1038/d41586-026-01598-2</a></div>
+</article><article class="paper hi" data-keywords="__pinned__|__hi__" data-source="MED" data-search="Share the highs and lows of your career in science: take Nature&#x27;s global survey.   Nordling L. Nature  Nature">
+  <h3><a href="https://europepmc.org/abstract/MED/42209760" target="_blank" rel="noopener">Share the highs and lows of your career in science: take Nature&#x27;s global survey. </a><span class="if-tag">IF=50.5</span></h3>
+  <div class="by">Nordling L.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Nature</span><span class="date">2026-05-28</span><span class="tag pinned">📌 Nature</span></div>
+  
+  <div class="doi"><a href="https://doi.org/10.1038/d41586-026-01589-3" target="_blank" rel="noopener">10.1038/d41586-026-01589-3</a></div>
+</article><article class="paper hi" data-keywords="methylation|__hi__" data-source="MED" data-search="ToxiTaRGET: a multi-omics database for toxicant-responsive molecular targets.  Environmental toxicant exposures can induce widespread alterations in both the transcriptome and epigenome of mammals, and directly contribute to the increased risk of various diseases, including cardiovascular disorders, cancer, and neurological disorders. To evaluate how early-life toxicants produ Kumar R, Fu T, Kuntala PK, Miao B, Fu S, Li D, TaRGET II Consortium, Tyson FL, Bartolomei MS, Walker CL, Wang T, Zhang BA. Nature communications methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42209488" target="_blank" rel="noopener">ToxiTaRGET: a multi-omics database for toxicant-responsive molecular targets. </a><span class="if-tag">IF=14.7</span></h3>
+  <div class="by">Kumar R, Fu T, Kuntala PK, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Nature communications</span><span class="date">2026-05-29</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Environmental toxicant exposures can induce widespread alterations in both the transcriptome and epigenome of mammals, and directly contribute to the increased risk of various diseases, including cardiovascular disorders, cancer, and neurological disorders. To evaluate how early-…</div>
+  <div class="doi"><a href="https://doi.org/10.1038/s41467-026-73695-9" target="_blank" rel="noopener">10.1038/s41467-026-73695-9</a></div>
+</article><article class="paper hi" data-keywords="methylation|__hi__" data-source="MED" data-search="Epigenetic indicators of body mass predict survival outcomes in colorectal cancer patients: patient cohort analysis.  The prognostic relevance of body mass index (BMI) in colorectal cancer (CRC) remains controversial, partly due to disease-related weight loss. DNA methylation (DNAm)-based BMI scores may be a more stable prognostic indicator than a single BMI measurement. This study evaluated the associations betwee Yuan T, Mandic M, Li X, Bewerunge-Hudler M, Brenner H, Hoffmeister M. Genome medicine methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42210398" target="_blank" rel="noopener">Epigenetic indicators of body mass predict survival outcomes in colorectal cancer patients: patient cohort analysis. </a><span class="if-tag">IF=10.4</span></h3>
+  <div class="by">Yuan T, Mandic M, Li X, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Genome medicine</span><span class="date">2026-05-28</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">The prognostic relevance of body mass index (BMI) in colorectal cancer (CRC) remains controversial, partly due to disease-related weight loss. DNA methylation (DNAm)-based BMI scores may be a more stable prognostic indicator than a single BMI measurement. This study evaluated the…</div>
+  <div class="doi"><a href="https://doi.org/10.1186/s13073-026-01678-y" target="_blank" rel="noopener">10.1186/s13073-026-01678-y</a></div>
+</article><article class="paper" data-keywords="pacbio" data-source="MED" data-search="Chromosome-level genome assembly and annotation of the porcupine fish (Diodon hystrix).  The porcupinefish (Diodon hystrix), a coral reef teleost, is widely distributed in tropical/subtropical waters of the Pacific, Atlantic, Indian Oceans, and Mediterranean Sea. It shares easily recognizable features with pufferfish, such as body inflation and spines. Additionally, its culinary value m Ma J, Cao L, Yue Y, Wu Y, Lu Y, Chen P, Tang L, Liu J, Huang H. Scientific data PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42209527" target="_blank" rel="noopener">Chromosome-level genome assembly and annotation of the porcupine fish (Diodon hystrix). </a><span class="if-tag">IF=5.8</span></h3>
+  <div class="by">Ma J, Cao L, Yue Y, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Scientific data</span><span class="date">2026-05-28</span><a class="tag kw-pacbio" href="../keywords/pacbio.html">PacBio</a></div>
+  <div class="ab">The porcupinefish (Diodon hystrix), a coral reef teleost, is widely distributed in tropical/subtropical waters of the Pacific, Atlantic, Indian Oceans, and Mediterranean Sea. It shares easily recognizable features with pufferfish, such as body inflation and spines. Additionally, …</div>
+  <div class="doi"><a href="https://doi.org/10.1038/s41597-026-07390-1" target="_blank" rel="noopener">10.1038/s41597-026-07390-1</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Exercise-specific epigenetic effects on cardiovascular health.  Exercise is widely prescribed to prevent cardiovascular disease, which encompasses a heterogeneous spectrum of disorders involving vascular dysfunction, myocardial injury and remodeling, inflammation, and electrophysiological disturbances; however, its benefits are not uniformly dose-dependent. Whil Huang Y, Yang Z, Chu Z, Zhang Z, Huang X, Zheng C, Chen Y, Pu J. Clinical epigenetics methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42210422" target="_blank" rel="noopener">Exercise-specific epigenetic effects on cardiovascular health. </a><span class="if-tag">IF=5.3</span></h3>
+  <div class="by">Huang Y, Yang Z, Chu Z, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Clinical epigenetics</span><span class="date">2026-05-28</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Exercise is widely prescribed to prevent cardiovascular disease, which encompasses a heterogeneous spectrum of disorders involving vascular dysfunction, myocardial injury and remodeling, inflammation, and electrophysiological disturbances; however, its benefits are not uniformly …</div>
+  <div class="doi"><a href="https://doi.org/10.1186/s13148-026-02169-y" target="_blank" rel="noopener">10.1186/s13148-026-02169-y</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Predictive epigenetic biomarkers of successful weight-loss intervention in pre-pubertal children with obesity.  Childhood obesity represents a major public health challenge, increasing long-term risks such as type 2 diabetes and cardiovascular disease. Lifestyle interventions in prepubertal children are often more effective, but individual responses can vary, highlighting the need for predictive biomarkers to Palmieri F, Castellano-Escuder P, Parra-Vargas M, Leal-Witt MJ, Krauel MR, Lerin C, Perera A, Jiménez-Chillarón JC. Clinical epigenetics methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42210364" target="_blank" rel="noopener">Predictive epigenetic biomarkers of successful weight-loss intervention in pre-pubertal children with obesity. </a><span class="if-tag">IF=5.3</span></h3>
+  <div class="by">Palmieri F, Castellano-Escuder P, Parra-Vargas M, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Clinical epigenetics</span><span class="date">2026-05-29</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Childhood obesity represents a major public health challenge, increasing long-term risks such as type 2 diabetes and cardiovascular disease. Lifestyle interventions in prepubertal children are often more effective, but individual responses can vary, highlighting the need for pred…</div>
+  <div class="doi"><a href="https://doi.org/10.1186/s13148-026-02104-1" target="_blank" rel="noopener">10.1186/s13148-026-02104-1</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="MethyNano: supervised contrastive pretraining enables robust and generalizable methylation detection from nanopore sequencing.  5-Methylcytosine (5mC) plays an important role in gene regulation and development. Although nanopore sequencing has enabled direct detection of 5mC, existing methods still face several limitations, including poor generalization across species and sequence contexts (CpG/CHG/CHH), as well as suboptima Yan J, Chen Y, Gong Y, Zhang C, Yang J. Bioinformatics (Oxford, England) methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42209437" target="_blank" rel="noopener">MethyNano: supervised contrastive pretraining enables robust and generalizable methylation detection from nanopore sequencing. </a><span class="if-tag">IF=4.4</span></h3>
+  <div class="by">Yan J, Chen Y, Gong Y, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Bioinformatics (Oxford, England)</span><span class="date">2026-05-28</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">5-Methylcytosine (5mC) plays an important role in gene regulation and development. Although nanopore sequencing has enabled direct detection of 5mC, existing methods still face several limitations, including poor generalization across species and sequence contexts (CpG/CHG/CHH), …</div>
+  <div class="doi"><a href="https://doi.org/10.1093/bioinformatics/btag348" target="_blank" rel="noopener">10.1093/bioinformatics/btag348</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Eosinophil counts as a prognostic marker in glioblastoma: a retrospective cohort study.  Glioblastoma is a highly aggressive primary brain malignancy characterized by poor median survival despite trimodal therapy. While established prognostic factors exist, significant heterogeneity in patient outcomes persist. This study aims to evaluate whether white-cell differentials predict oncolog Giannaris E, Sedor G, Spina CS, Hsieh K, Elliston C, Cheng SK, Iwamoto FM, McKhann GM, Sisti MB, Bruce JN, Wang TJC, Gallitto M. BMC cancer methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42210179" target="_blank" rel="noopener">Eosinophil counts as a prognostic marker in glioblastoma: a retrospective cohort study. </a><span class="if-tag">IF=3.4</span></h3>
+  <div class="by">Giannaris E, Sedor G, Spina CS, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>BMC cancer</span><span class="date">2026-05-28</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Glioblastoma is a highly aggressive primary brain malignancy characterized by poor median survival despite trimodal therapy. While established prognostic factors exist, significant heterogeneity in patient outcomes persist. This study aims to evaluate whether white-cell different…</div>
+  <div class="doi"><a href="https://doi.org/10.1186/s12885-026-16242-5" target="_blank" rel="noopener">10.1186/s12885-026-16242-5</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="CCNA2, MAD2L1, AURKA, and PTTG1 promote proliferation and migration in hepatocellular carcinoma.  Liver hepatocellular carcinoma (LIHC) is a leading cause of cancer-related mortality worldwide, with limited therapeutic options and poor prognosis, particularly at advanced stages. Identifying key molecular drivers involved in LIHC progression is critical for improving diagnosis and treatment strat Jinli W, Shiping H. BMC gastroenterology methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42210102" target="_blank" rel="noopener">CCNA2, MAD2L1, AURKA, and PTTG1 promote proliferation and migration in hepatocellular carcinoma. </a></h3>
+  <div class="by">Jinli W, Shiping H.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>BMC gastroenterology</span><span class="date">2026-05-28</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Liver hepatocellular carcinoma (LIHC) is a leading cause of cancer-related mortality worldwide, with limited therapeutic options and poor prognosis, particularly at advanced stages. Identifying key molecular drivers involved in LIHC progression is critical for improving diagnosis…</div>
+  <div class="doi"><a href="https://doi.org/10.1186/s12876-026-04845-y" target="_blank" rel="noopener">10.1186/s12876-026-04845-y</a></div>
+</article><article class="paper" data-keywords="pacbio" data-source="MED" data-search="Characterization of the mitochondrial genome of the aquatic vegetable Eleocharis dulcis (Burm. f.) Trin. ex Hensch.: the first representative of genus Eleocharis with evolutionary insights in Cyperaceae.  Eleocharis dulcis (Burm. f.) Trin. ex Hensch., commonly known as water chestnut, is an economically important aquatic vegetable crop with high nutritional and medical value, whose underground corms are suitable for both fresh consumption (as a food) and cooking (as a vegetable). Although, the nuclea Sheng W, Kuang Q. BMC plant biology PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42210117" target="_blank" rel="noopener">Characterization of the mitochondrial genome of the aquatic vegetable Eleocharis dulcis (Burm. f.) Trin. ex Hensch.: the first representative of genus Eleocharis with evolutionary insights in Cyperaceae. </a></h3>
+  <div class="by">Sheng W, Kuang Q.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>BMC plant biology</span><span class="date">2026-05-28</span><a class="tag kw-pacbio" href="../keywords/pacbio.html">PacBio</a></div>
+  <div class="ab">Eleocharis dulcis (Burm. f.) Trin. ex Hensch., commonly known as water chestnut, is an economically important aquatic vegetable crop with high nutritional and medical value, whose underground corms are suitable for both fresh consumption (as a food) and cooking (as a vegetable). …</div>
+  <div class="doi"><a href="https://doi.org/10.1186/s12870-026-09085-6" target="_blank" rel="noopener">10.1186/s12870-026-09085-6</a></div>
+</article><article class="paper" data-keywords="pacbio" data-source="MED" data-search="Complete genome sequence of Streptococcus sp. strain KHUD_013 isolated from the human buccal mucosa.  The genus Streptococcus constitutes a major component of the human oral microbiome and exhibits substantial genomic diversity at the species level. However, complete and high-quality reference genomes remain limited for many closely related oral streptococci, constraining accurate comparative and ta Ku D, Yang SB, Kwack KH, Jang EY, Jun SK, Moon JH, Lee JH. BMC genomic data PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42210074" target="_blank" rel="noopener">Complete genome sequence of Streptococcus sp. strain KHUD_013 isolated from the human buccal mucosa. </a></h3>
+  <div class="by">Ku D, Yang SB, Kwack KH, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>BMC genomic data</span><span class="date">2026-05-28</span><a class="tag kw-pacbio" href="../keywords/pacbio.html">PacBio</a></div>
+  <div class="ab">The genus Streptococcus constitutes a major component of the human oral microbiome and exhibits substantial genomic diversity at the species level. However, complete and high-quality reference genomes remain limited for many closely related oral streptococci, constraining accurat…</div>
+  <div class="doi"><a href="https://doi.org/10.1186/s12863-026-01438-2" target="_blank" rel="noopener">10.1186/s12863-026-01438-2</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Epigenetic brain reprogramming rejuvenates neuro-immune circuits to reverse Alzheimer&#x27;s disease pathology and systemic bone loss.  Alzheimer&#x27;s disease (AD) is characterized by progressive neurodegeneration, neuroinflammation, and systemic comorbidities, yet disease-modifying therapies remain elusive. Here, we show that partial epigenetic reprogramming via brain-restricted expression of Oct4, Sox2, and Klf4 (OSK) restores neuron Wan MD, Liu XX, Wan TF, Liu YW, Jiang YL, Zou JT, Jiao B, Liu QQ, Jin L, Duan R, Wang Z, Hong CG, Wang X, Hu XY, Liao XX, Cao J, Shen L, Xie H, Wang ZX. Journal of neuroinflammation methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42210397" target="_blank" rel="noopener">Epigenetic brain reprogramming rejuvenates neuro-immune circuits to reverse Alzheimer&#x27;s disease pathology and systemic bone loss. </a></h3>
+  <div class="by">Wan MD, Liu XX, Wan TF, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Journal of neuroinflammation</span><span class="date">2026-05-28</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Alzheimer&#x27;s disease (AD) is characterized by progressive neurodegeneration, neuroinflammation, and systemic comorbidities, yet disease-modifying therapies remain elusive. Here, we show that partial epigenetic reprogramming via brain-restricted expression of Oct4, Sox2, and Klf4 (…</div>
+  <div class="doi"><a href="https://doi.org/10.1186/s12974-026-03854-8" target="_blank" rel="noopener">10.1186/s12974-026-03854-8</a></div>
+</article><article class="paper" data-keywords="pacbio" data-source="MED" data-search="Haplotype-phased genomes of the barley leaf rust pathogen reveal evidence of repeat element expansion and somatic hybridization.  Barley leaf rust disease, caused by Puccinia hordei, leads to substantial yield losses and diminished malting quality of barley across temperate growing regions worldwide. To address the paucity of high-resolution genomic resources for this pathogen, we generated haplotype-phased, chromosome-scale a Spanner R, Nazareno ES, Henningsen EC, Feist A, Matny O, Moscou MJ, Rouse MN, Kianian SF, Mangelson H, Langford K, Liachko I, Lubega J, Kanyuka K, Sperschneider J, Dodds PN, Figueroa M, Steffenson BJ. G3 (Bethesda, Md.) PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42210017" target="_blank" rel="noopener">Haplotype-phased genomes of the barley leaf rust pathogen reveal evidence of repeat element expansion and somatic hybridization. </a></h3>
+  <div class="by">Spanner R, Nazareno ES, Henningsen EC, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>G3 (Bethesda, Md.)</span><span class="date">2026-05-28</span><a class="tag kw-pacbio" href="../keywords/pacbio.html">PacBio</a></div>
+  <div class="ab">Barley leaf rust disease, caused by Puccinia hordei, leads to substantial yield losses and diminished malting quality of barley across temperate growing regions worldwide. To address the paucity of high-resolution genomic resources for this pathogen, we generated haplotype-phased…</div>
+  <div class="doi"><a href="https://doi.org/10.1093/g3journal/jkag137" target="_blank" rel="noopener">10.1093/g3journal/jkag137</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Identification of Lynch syndrome among people newly diagnosed with endometrial cancer: a prospective audit.  Since 2020, the UK National Institute for Health and Care Excellence (NICE) recommends screening for Lynch syndrome in all people newly diagnosed with endometrial cancer. Screening involves tumour testing for loss of the mismatch repair (MMR) proteins using immunohistochemistry (IHC), MLH1 methylati Johnson JE, Milliken S, Bolton J, Evans DG, Lalloo F, Davidson EJ. Journal of medical genetics methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42209212" target="_blank" rel="noopener">Identification of Lynch syndrome among people newly diagnosed with endometrial cancer: a prospective audit. </a></h3>
+  <div class="by">Johnson JE, Milliken S, Bolton J, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Journal of medical genetics</span><span class="date">2026-05-28</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Since 2020, the UK National Institute for Health and Care Excellence (NICE) recommends screening for Lynch syndrome in all people newly diagnosed with endometrial cancer. Screening involves tumour testing for loss of the mismatch repair (MMR) proteins using immunohistochemistry (…</div>
+  <div class="doi"><a href="https://doi.org/10.1136/jmg-2026-111578" target="_blank" rel="noopener">10.1136/jmg-2026-111578</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="METTL3-catalyzed m6A modification of NSUN4 mediates m5C modification of SLC2A3 mRNA to regulate PDGF-BB-induced proliferation, hyaluronan production and glycolysis in human orbital fibroblasts.  Thyroid eye disease (TED) is the most common extra-thyroidal complication of Graves&#x27; disease, but its molecular pathogenesis is not fully understood. This study explored the mechanism associated with methyltransferase like 3 (METTL3), NOP2/Sun RNA methyltransferase 4 (NSUN4), and solute carrier fami Liu SY, Wang H, Liu BZ, Jia L, Wang T, Zhou LF, Xu XL, Hou BH, Yang B, Sun LS, Pang H. Journal of bioenergetics and biomembranes methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42209904" target="_blank" rel="noopener">METTL3-catalyzed m6A modification of NSUN4 mediates m5C modification of SLC2A3 mRNA to regulate PDGF-BB-induced proliferation, hyaluronan production and glycolysis in human orbital fibroblasts. </a></h3>
+  <div class="by">Liu SY, Wang H, Liu BZ, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Journal of bioenergetics and biomembranes</span><span class="date">2026-05-16</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Thyroid eye disease (TED) is the most common extra-thyroidal complication of Graves&#x27; disease, but its molecular pathogenesis is not fully understood. This study explored the mechanism associated with methyltransferase like 3 (METTL3), NOP2/Sun RNA methyltransferase 4 (NSUN4), and…</div>
+  <div class="doi"><a href="https://doi.org/10.1007/s10863-026-10110-4" target="_blank" rel="noopener">10.1007/s10863-026-10110-4</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Predicting progression-free survival in glioblastoma with neuroimaging and machine learning.  Glioblastoma (GBM) is the most prevalent and aggressive form of malignant glioma. Reliable estimation of progression-free survival (PFS) prior to medical intervention could strengthen clinical decision-making and improve patient care. Here, we utilize machine learning (ML) to predict PFS in GBM pati Hickman-Chow DA, Luckett PH, Olufawo M, Dierker D, Shimony JS, Leuthardt EC. Journal of neuro-oncology methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42209729" target="_blank" rel="noopener">Predicting progression-free survival in glioblastoma with neuroimaging and machine learning. </a></h3>
+  <div class="by">Hickman-Chow DA, Luckett PH, Olufawo M, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Journal of neuro-oncology</span><span class="date">2026-05-28</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Glioblastoma (GBM) is the most prevalent and aggressive form of malignant glioma. Reliable estimation of progression-free survival (PFS) prior to medical intervention could strengthen clinical decision-making and improve patient care. Here, we utilize machine learning (ML) to pre…</div>
+  <div class="doi"><a href="https://doi.org/10.1007/s11060-026-05650-z" target="_blank" rel="noopener">10.1007/s11060-026-05650-z</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Why the same herb is not the same medicine: plant epigenetic and metabolic plasticity as a missing variable in Chinese medicine.  Traditional Chinese medicine (TCM) standardization is largely based on chemical equivalence, yet achieving reproducible therapeutic efficacy remains challenging. This limitation reflects an implicit assumption that medicinal plants are chemically static materials, overlooking their nature as dynamic Hyun TK. Chinese medicine methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42210371" target="_blank" rel="noopener">Why the same herb is not the same medicine: plant epigenetic and metabolic plasticity as a missing variable in Chinese medicine. </a></h3>
+  <div class="by">Hyun TK.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Chinese medicine</span><span class="date">2026-05-29</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Traditional Chinese medicine (TCM) standardization is largely based on chemical equivalence, yet achieving reproducible therapeutic efficacy remains challenging. This limitation reflects an implicit assumption that medicinal plants are chemically static materials, overlooking the…</div>
+  <div class="doi"><a href="https://doi.org/10.1186/s13020-026-01434-9" target="_blank" rel="noopener">10.1186/s13020-026-01434-9</a></div>
+</article></div>
+<div id="empty" class="empty" style="display:none">조건에 맞는 논문이 없습니다.</div>
+<footer>
+  Generated 2026-06-01 08:01 KST · <a href="https://europepmc.org" target="_blank">Europe PMC</a> · IF: JCR 2024 (curated)
+</footer>
+</div>
+<script>
+(function() {
+  var state = { keyword: 'all', source: 'all', q: '' };
+  function apply() {
+    var q = state.q.toLowerCase();
+    document.querySelectorAll('.paper').forEach(function(el) {
+      var kws = (el.dataset.keywords || '').split('|');
+      var src = el.dataset.source || '';
+      var hay = (el.dataset.search || '').toLowerCase();
+      var ok = true;
+      if (state.keyword !== 'all' && kws.indexOf(state.keyword) === -1) ok = false;
+      if (state.source !== 'all' && src !== state.source) ok = false;
+      if (q && hay.indexOf(q) === -1) ok = false;
+      el.classList.toggle('hidden', !ok);
+    });
+    var visible = document.querySelectorAll('.paper:not(.hidden)').length;
+    var em = document.getElementById('empty'); if (em) em.style.display = visible ? 'none' : 'block';
+    var vc = document.getElementById('visibleCount'); if (vc) vc.textContent = visible;
+  }
+  document.querySelectorAll('.chip[data-filter]').forEach(function(chip) {
+    chip.addEventListener('click', function() {
+      var dim = chip.dataset.filter;
+      state[dim] = chip.dataset.value;
+      document.querySelectorAll('.chip[data-filter="' + dim + '"]').forEach(function(c) { c.classList.remove('active'); });
+      chip.classList.add('active'); apply();
+    });
+  });
+  var search = document.getElementById('search');
+  if (search) search.addEventListener('input', function(e) { state.q = e.target.value; apply(); });
+  apply();
+  document.addEventListener('keydown', function(e) {
+    if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) return;
+    if (e.key === 'ArrowLeft') { var p = document.querySelector('.daynav .arrow:not(.disabled):first-of-type'); if (p && p.href) location.href = p.href; }
+    else if (e.key === 'ArrowRight') { var nodes = document.querySelectorAll('.daynav .arrow:not(.disabled)'); var n = nodes[nodes.length-1]; if (n && n.href) location.href = n.href; }
+  });
+})();
+</script>
+</body></html>

@@ -1,0 +1,4728 @@
+[
+  {
+    "id": "42250889",
+    "source": "MED",
+    "pmid": "42250889",
+    "doi": "10.1053/j.gastro.2026.05.020",
+    "title": "PRDM9 Deficiency Drives Mosaic Promoter Deletions in Sporadic Hirschsprung Disease and Supports Blood-based Molecular Stratification. ",
+    "authorString": "Zhu Y, Zuo X, Song K, Yao Y, Huang L, He Q, Liu Z, Zheng Y, Xie X, Zhao X, He Y, Zhong W, Hu T, Liu Z, Chen J, Huang S, Lai X, Xu X, Zhong W, Zeng J, Zhou W, Xia H, Zhang Y.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Zhu Y",
+          "firstName": "Yun",
+          "lastName": "Zhu",
+          "initials": "Y",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pediatric Surgery, Clinical and Research Center for Hirschsprung Disease, Guangdong Provincial Key Laboratory of Research in Structural Birth Defect Disease, Guangdong Provincial Children's Medical Research Center, Guangzhou Institute of Pediatrics, Guangzhou Women and Children's Medical Center, Guangzhou Medical University; Guangzhou, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zuo X",
+          "firstName": "Xiaoyu",
+          "lastName": "Zuo",
+          "initials": "X",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pediatric Surgery, Clinical and Research Center for Hirschsprung Disease, Guangdong Provincial Key Laboratory of Research in Structural Birth Defect Disease, Guangdong Provincial Children's Medical Research Center, Guangzhou Institute of Pediatrics, Guangzhou Women and Children's Medical Center, Guangzhou Medical University; Guangzhou, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Song K",
+          "firstName": "Kai",
+          "lastName": "Song",
+          "initials": "K",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pediatric Surgery, Clinical and Research Center for Hirschsprung Disease, Guangdong Provincial Key Laboratory of Research in Structural Birth Defect Disease, Guangdong Provincial Children's Medical Research Center, Guangzhou Institute of Pediatrics, Guangzhou Women and Children's Medical Center, Guangzhou Medical University; Guangzhou, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Yao Y",
+          "firstName": "Yongxuan",
+          "lastName": "Yao",
+          "initials": "Y",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pediatric Surgery, Clinical and Research Center for Hirschsprung Disease, Guangdong Provincial Key Laboratory of Research in Structural Birth Defect Disease, Guangdong Provincial Children's Medical Research Center, Guangzhou Institute of Pediatrics, Guangzhou Women and Children's Medical Center, Guangzhou Medical University; Guangzhou, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Huang L",
+          "firstName": "Lihua",
+          "lastName": "Huang",
+          "initials": "L",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pediatric Surgery, Clinical and Research Center for Hirschsprung Disease, Guangdong Provincial Key Laboratory of Research in Structural Birth Defect Disease, Guangdong Provincial Children's Medical Research Center, Guangzhou Institute of Pediatrics, Guangzhou Women and Children's Medical Center, Guangzhou Medical University; Guangzhou, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "He Q",
+          "firstName": "Qiuming",
+          "lastName": "He",
+          "initials": "Q",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pediatric Surgery, Clinical and Research Center for Hirschsprung Disease, Guangdong Provincial Key Laboratory of Research in Structural Birth Defect Disease, Guangdong Provincial Children's Medical Research Center, Guangzhou Institute of Pediatrics, Guangzhou Women and Children's Medical Center, Guangzhou Medical University; Guangzhou, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Liu Z",
+          "firstName": "Zipeng",
+          "lastName": "Liu",
+          "initials": "Z",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pediatric Surgery, Clinical and Research Center for Hirschsprung Disease, Guangdong Provincial Key Laboratory of Research in Structural Birth Defect Disease, Guangdong Provincial Children's Medical Research Center, Guangzhou Institute of Pediatrics, Guangzhou Women and Children's Medical Center, Guangzhou Medical University; Guangzhou, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zheng Y",
+          "firstName": "Yi",
+          "lastName": "Zheng",
+          "initials": "Y",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pediatric Surgery, Clinical and Research Center for Hirschsprung Disease, Guangdong Provincial Key Laboratory of Research in Structural Birth Defect Disease, Guangdong Provincial Children's Medical Research Center, Guangzhou Institute of Pediatrics, Guangzhou Women and Children's Medical Center, Guangzhou Medical University; Guangzhou, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Xie X",
+          "firstName": "Xiaoli",
+          "lastName": "Xie",
+          "initials": "X",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pediatric Surgery, Clinical and Research Center for Hirschsprung Disease, Guangdong Provincial Key Laboratory of Research in Structural Birth Defect Disease, Guangdong Provincial Children's Medical Research Center, Guangzhou Institute of Pediatrics, Guangzhou Women and Children's Medical Center, Guangzhou Medical University; Guangzhou, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zhao X",
+          "firstName": "Xinying",
+          "lastName": "Zhao",
+          "initials": "X",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pediatric Surgery, Clinical and Research Center for Hirschsprung Disease, Guangdong Provincial Key Laboratory of Research in Structural Birth Defect Disease, Guangdong Provincial Children's Medical Research Center, Guangzhou Institute of Pediatrics, Guangzhou Women and Children's Medical Center, Guangzhou Medical University; Guangzhou, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "He Y",
+          "firstName": "Ye",
+          "lastName": "He",
+          "initials": "Y",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pediatric Surgery, Clinical and Research Center for Hirschsprung Disease, Guangdong Provincial Key Laboratory of Research in Structural Birth Defect Disease, Guangdong Provincial Children's Medical Research Center, Guangzhou Institute of Pediatrics, Guangzhou Women and Children's Medical Center, Guangzhou Medical University; Guangzhou, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zhong W",
+          "firstName": "Weiyong",
+          "lastName": "Zhong",
+          "initials": "W",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pediatric Surgery, Clinical and Research Center for Hirschsprung Disease, Guangdong Provincial Key Laboratory of Research in Structural Birth Defect Disease, Guangdong Provincial Children's Medical Research Center, Guangzhou Institute of Pediatrics, Guangzhou Women and Children's Medical Center, Guangzhou Medical University; Guangzhou, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Hu T",
+          "firstName": "Tuqun",
+          "lastName": "Hu",
+          "initials": "T",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pediatric Surgery, Clinical and Research Center for Hirschsprung Disease, Guangdong Provincial Key Laboratory of Research in Structural Birth Defect Disease, Guangdong Provincial Children's Medical Research Center, Guangzhou Institute of Pediatrics, Guangzhou Women and Children's Medical Center, Guangzhou Medical University; Guangzhou, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Liu Z",
+          "firstName": "Zhihai",
+          "lastName": "Liu",
+          "initials": "Z",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pediatric Surgery, Clinical and Research Center for Hirschsprung Disease, Guangdong Provincial Key Laboratory of Research in Structural Birth Defect Disease, Guangdong Provincial Children's Medical Research Center, Guangzhou Institute of Pediatrics, Guangzhou Women and Children's Medical Center, Guangzhou Medical University; Guangzhou, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Chen J",
+          "firstName": "Jiazhang",
+          "lastName": "Chen",
+          "initials": "J",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pediatric Surgery, Clinical and Research Center for Hirschsprung Disease, Guangdong Provincial Key Laboratory of Research in Structural Birth Defect Disease, Guangdong Provincial Children's Medical Research Center, Guangzhou Institute of Pediatrics, Guangzhou Women and Children's Medical Center, Guangzhou Medical University; Guangzhou, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Huang S",
+          "firstName": "Shenwei",
+          "lastName": "Huang",
+          "initials": "S",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pediatric Surgery, Clinical and Research Center for Hirschsprung Disease, Guangdong Provincial Key Laboratory of Research in Structural Birth Defect Disease, Guangdong Provincial Children's Medical Research Center, Guangzhou Institute of Pediatrics, Guangzhou Women and Children's Medical Center, Guangzhou Medical University; Guangzhou, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Lai X",
+          "firstName": "Xingqiang",
+          "lastName": "Lai",
+          "initials": "X",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Maternal-Fetal Medicine Institute, Department of Obstetrics and Gynaecology, Shenzhen Baoan Women's and Children's Hospital, Shenzhen, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Xu X",
+          "firstName": "Xiaogang",
+          "lastName": "Xu",
+          "initials": "X",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pediatric Surgery, Clinical and Research Center for Hirschsprung Disease, Guangdong Provincial Key Laboratory of Research in Structural Birth Defect Disease, Guangdong Provincial Children's Medical Research Center, Guangzhou Institute of Pediatrics, Guangzhou Women and Children's Medical Center, Guangzhou Medical University; Guangzhou, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zhong W",
+          "firstName": "Wei",
+          "lastName": "Zhong",
+          "initials": "W",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pediatric Surgery, Clinical and Research Center for Hirschsprung Disease, Guangdong Provincial Key Laboratory of Research in Structural Birth Defect Disease, Guangdong Provincial Children's Medical Research Center, Guangzhou Institute of Pediatrics, Guangzhou Women and Children's Medical Center, Guangzhou Medical University; Guangzhou, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zeng J",
+          "firstName": "Jixiao",
+          "lastName": "Zeng",
+          "initials": "J",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pediatric Surgery, Clinical and Research Center for Hirschsprung Disease, Guangdong Provincial Key Laboratory of Research in Structural Birth Defect Disease, Guangdong Provincial Children's Medical Research Center, Guangzhou Institute of Pediatrics, Guangzhou Women and Children's Medical Center, Guangzhou Medical University; Guangzhou, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zhou W",
+          "firstName": "Wenhao",
+          "lastName": "Zhou",
+          "initials": "W",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Molecular Medical Center, Guangzhou Women and Children's Medical Center, Guangzhou Medical University, Guangzhou, China; Division of Neonatology and Center for Newborn Care, Guangzhou Women and Children's Medical Center, Guangzhou Medical University, Guangzhou, China. Electronic address: zhouwenhao@gwcmc.org."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Xia H",
+          "firstName": "Huimin",
+          "lastName": "Xia",
+          "initials": "H",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pediatric Surgery, Clinical and Research Center for Hirschsprung Disease, Guangdong Provincial Key Laboratory of Research in Structural Birth Defect Disease, Guangdong Provincial Children's Medical Research Center, Guangzhou Institute of Pediatrics, Guangzhou Women and Children's Medical Center, Guangzhou Medical University; Guangzhou, China. Electronic address: huiminxia@gwcmc.org."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zhang Y",
+          "firstName": "Yan",
+          "lastName": "Zhang",
+          "initials": "Y",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pediatric Surgery, Clinical and Research Center for Hirschsprung Disease, Guangdong Provincial Key Laboratory of Research in Structural Birth Defect Disease, Guangdong Provincial Children's Medical Research Center, Guangzhou Institute of Pediatrics, Guangzhou Women and Children's Medical Center, Guangzhou Medical University; Guangzhou, China; The Third Affiliated Hospital of Zhengzhou University; Zhengzhou, 450052, China. Electronic address: yannizy@gwcmc.org."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "journalIssueId": 4208383,
+      "dateOfPublication": "2026 Jun",
+      "monthOfPublication": 6,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-06-01",
+      "journal": {
+        "title": "Gastroenterology",
+        "medlineAbbreviation": "Gastroenterology",
+        "essn": "1528-0012",
+        "isoabbreviation": "Gastroenterology",
+        "issn": "0016-5085",
+        "nlmid": "0374630"
+      }
+    },
+    "pubYear": "2026",
+    "pageInfo": "S0016-5085(26)06943-X",
+    "abstractText": "Hirschsprung disease (HSCR) is a congenital enteric neuropathy with distal aganglionosis and dysmotility. Germline mutations explain many familial cases, but most sporadic cases lack a molecular explanation. We sought non-canonical mechanisms and blood-accessible biomarkers. We performed RNA-sequencing (RNA-seq) on paired aganglionic and ganglionic colon biopsies from 103 sporadic HSCR patients, with control colons (n = 22). Blood whole-genome sequencing (WGS) was available for 41 RNA-seq-profiled patients. We assessed PRDM9 in patient tissues, perturbed prdm9 in zebrafish and mice, and performed mechanistic profiling in PRDM9-knockout hiPSC-derived enteric neural crest cells (ENCCs). Mosaic promoter deletions (MPDs) were called from colon WGS (n = 30; matched blood n = 27) and summarized as a blood MPD score in blood WGS cohorts (discovery: 89 HSCR/43 controls; validation: 165 HSCR/42 controls), alone and combined with polygenic risk score (PRS). A predominant subgroup (79.6%, 82/103) showed coordinated repression of neurogenesis programs. Promoter motif enrichment implicated PRDM9, which we localized to normal ENS but found downregulated in aganglionic tissue with promoter hypermethylation. Prdm9 perturbation reduced HuC/D-positive differentiated enteric neurons and impaired motility in zebrafish and mice. In ENCCs, PRDM9 loss redistributed DNA double-strand breaks toward promoters and enhancers, generated MPDs at neurogenesis loci, and correlated with transcriptional repression and impaired neuronal differentiation. Blood MPD score discriminated HSCR from controls in a discovery cohort (AUROC 0.78) and an independent validation cohort (AUROC 0.82), and improved with PRS (AUROC 0.89 and 0.91, respectively). PRDM9 deficiency links ectopic DNA breaks to MPDs and impaired enteric neuronal differentiation in a predominant molecular subgroup within sporadic HSCR, and enables complementary, noninvasive molecular stratification.",
+    "affiliation": "Department of Pediatric Surgery, Clinical and Research Center for Hirschsprung Disease, Guangdong Provincial Key Laboratory of Research in Structural Birth Defect Disease, Guangdong Provincial Children's Medical Research Center, Guangzhou Institute of Pediatrics, Guangzhou Women and Children's Medical Center, Guangzhou Medical University; Guangzhou, China.",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Journal Article"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1053/j.gastro.2026.05.020"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-06",
+    "firstIndexDate": "2026-06-07",
+    "dateOfRevision": "2026-06-06",
+    "electronicPublicationDate": "2026-06-05",
+    "firstPublicationDate": "2026-06-05",
+    "matched_keywords": [
+      "mosaic"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42251418",
+    "source": "MED",
+    "pmid": "42251418",
+    "doi": "10.1186/s12967-026-08396-4",
+    "title": "Long-read sequencing technologies and bioinformatics: a new perspective for decoding DNA methylation modifications. ",
+    "authorString": "Hou H, Zhang Y, Ma Y, Han Y, Li J, Zhang R.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Hou H",
+          "firstName": "Hanjing",
+          "lastName": "Hou",
+          "initials": "H",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "National Center for Clinical Laboratories, Institute of Geriatric Medicine, Chinese Academy of Medical Sciences, Beijing Hospital/National Center of Gerontology, Beijing, P. R. China."
+              },
+              {
+                "affiliation": "National Center for Clinical Laboratories, Chinese Academy of Medical Sciences & Peking Union Medical College, Beijing, P. R. China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zhang Y",
+          "firstName": "Yuanfeng",
+          "lastName": "Zhang",
+          "initials": "Y",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "National Center for Clinical Laboratories, Institute of Geriatric Medicine, Chinese Academy of Medical Sciences, Beijing Hospital/National Center of Gerontology, Beijing, P. R. China."
+              },
+              {
+                "affiliation": "National Center for Clinical Laboratories, Chinese Academy of Medical Sciences & Peking Union Medical College, Beijing, P. R. China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Ma Y",
+          "firstName": "Yu",
+          "lastName": "Ma",
+          "initials": "Y",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "National Center for Clinical Laboratories, Institute of Geriatric Medicine, Chinese Academy of Medical Sciences, Beijing Hospital/National Center of Gerontology, Beijing, P. R. China."
+              },
+              {
+                "affiliation": "National Center for Clinical Laboratories, Chinese Academy of Medical Sciences & Peking Union Medical College, Beijing, P. R. China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Han Y",
+          "firstName": "Yanxi",
+          "lastName": "Han",
+          "initials": "Y",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "National Center for Clinical Laboratories, Institute of Geriatric Medicine, Chinese Academy of Medical Sciences, Beijing Hospital/National Center of Gerontology, Beijing, P. R. China."
+              },
+              {
+                "affiliation": "National Center for Clinical Laboratories, Chinese Academy of Medical Sciences & Peking Union Medical College, Beijing, P. R. China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Li J",
+          "firstName": "Jinming",
+          "lastName": "Li",
+          "initials": "J",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "National Center for Clinical Laboratories, Institute of Geriatric Medicine, Chinese Academy of Medical Sciences, Beijing Hospital/National Center of Gerontology, Beijing, P. R. China. jmli@nccl.org.cn."
+              },
+              {
+                "affiliation": "National Center for Clinical Laboratories, Chinese Academy of Medical Sciences & Peking Union Medical College, Beijing, P. R. China. jmli@nccl.org.cn."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zhang R",
+          "firstName": "Rui",
+          "lastName": "Zhang",
+          "initials": "R",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0003-4660-2042"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "National Center for Clinical Laboratories, Institute of Geriatric Medicine, Chinese Academy of Medical Sciences, Beijing Hospital/National Center of Gerontology, Beijing, P. R. China. ruizhang@nccl.org.cn."
+              },
+              {
+                "affiliation": "National Center for Clinical Laboratories, Chinese Academy of Medical Sciences & Peking Union Medical College, Beijing, P. R. China. ruizhang@nccl.org.cn."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "authorIdList": {
+      "authorId": [
+        {
+          "type": "ORCID",
+          "value": "0000-0003-4660-2042"
+        }
+      ]
+    },
+    "journalInfo": {
+      "journalIssueId": 4204940,
+      "dateOfPublication": "2026 Jun",
+      "monthOfPublication": 6,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-06-01",
+      "journal": {
+        "title": "Journal of translational medicine",
+        "medlineAbbreviation": "J Transl Med",
+        "isoabbreviation": "J Transl Med",
+        "essn": "1479-5876",
+        "issn": "1479-5876",
+        "nlmid": "101190741"
+      }
+    },
+    "pubYear": "2026",
+    "abstractText": "DNA methylation is a crucial epigenetic regulatory mechanism in eukaryotes, and its dysregulation is closely associated with numerous diseases. Recent advances in long-read sequencing (LRS) have transformed the ability to comprehensively characterize the methylation modifications in DNA, including the technically difficult genomic regions. However, the translation of this technological potential into reliable biological insights relies heavily on accurate computational analysis of raw signal data. Currently, a growing number of bioinformatic tools have emerged, demonstrating superior performance in LRS-based methylation detection. Our review first briefly describes the detection principles and technological improvement of LRS, and then provides a comprehensive overview of the existing LRS-based methylation detection tools and related benchmarking studies. We further explore the applications in biomedical research, the current challenges, and the future perspective of LRS-based methylation detection. By highlighting the research progress and key issues in the field, this review aims to provide researchers with an essential framework to advance the further development and application of LRS-based methylation detection.",
+    "affiliation": "National Center for Clinical Laboratories, Institute of Geriatric Medicine, Chinese Academy of Medical Sciences, Beijing Hospital/National Center of Gerontology, Beijing, P. R. China.",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Review",
+        "Journal Article"
+      ]
+    },
+    "grantsList": {
+      "grant": [
+        {
+          "grantId": "2023YFC3402503",
+          "agency": "the National Key R&D Program of China",
+          "orderIn": 0
+        },
+        {
+          "grantId": "L254025",
+          "agency": "Beijing Natural Science Foundation",
+          "orderIn": 0
+        },
+        {
+          "grantId": "2024ZD0533100/2024ZD0533102",
+          "agency": "the Noncommunicable Chronic Diseases-National Science and Technology Major Project",
+          "orderIn": 0
+        }
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1186/s12967-026-08396-4"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-06",
+    "firstIndexDate": "2026-06-07",
+    "dateOfRevision": "2026-06-06",
+    "electronicPublicationDate": "2026-06-06",
+    "firstPublicationDate": "2026-06-06",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1247306",
+    "source": "PPR",
+    "doi": "10.64898/2026.06.04.730177",
+    "title": "Multiple approaches for CRISPR-based targeting of DNA methylation to promoters of bacterial and viral susceptibility genes in cassava",
+    "authorString": "Gilbert KB, Lin ZD, Veley KM, Stanton MK, Yoder M, Norton J, Feng S, He Y, Hernandez GL, Jensen G, Wozniak E, Ke K, Wages SAM, Jacobsen SE, Carrington JC, Bart RS.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Gilbert KB",
+          "firstName": "Kerrigan",
+          "lastName": "Gilbert",
+          "initials": "KB"
+        },
+        {
+          "fullName": "Lin ZD",
+          "firstName": "Zuh-Jyh Daniel",
+          "lastName": "Lin",
+          "initials": "ZD"
+        },
+        {
+          "fullName": "Veley KM",
+          "firstName": "Kira",
+          "lastName": "Veley",
+          "initials": "KM"
+        },
+        {
+          "fullName": "Stanton MK",
+          "firstName": "Myia",
+          "lastName": "Stanton",
+          "initials": "MK"
+        },
+        {
+          "fullName": "Yoder M",
+          "firstName": "Marisa",
+          "lastName": "Yoder",
+          "initials": "M"
+        },
+        {
+          "fullName": "Norton J",
+          "firstName": "Joanna",
+          "lastName": "Norton",
+          "initials": "J"
+        },
+        {
+          "fullName": "Feng S",
+          "firstName": "Suhua",
+          "lastName": "Feng",
+          "initials": "S"
+        },
+        {
+          "fullName": "He Y",
+          "firstName": "Yan",
+          "lastName": "He",
+          "initials": "Y"
+        },
+        {
+          "fullName": "Hernandez GL",
+          "firstName": "Gabriela",
+          "lastName": "Hernandez",
+          "initials": "GL"
+        },
+        {
+          "fullName": "Jensen G",
+          "firstName": "Greg",
+          "lastName": "Jensen",
+          "initials": "G"
+        },
+        {
+          "fullName": "Wozniak E",
+          "firstName": "Emma",
+          "lastName": "Wozniak",
+          "initials": "E"
+        },
+        {
+          "fullName": "Ke K",
+          "firstName": "Ke",
+          "lastName": "Ke",
+          "initials": "K"
+        },
+        {
+          "fullName": "Wages SAM",
+          "firstName": "Sharon",
+          "lastName": "Wages",
+          "initials": "SAM"
+        },
+        {
+          "fullName": "Jacobsen SE",
+          "firstName": "Steven",
+          "lastName": "Jacobsen",
+          "initials": "SE"
+        },
+        {
+          "fullName": "Carrington JC",
+          "firstName": "James",
+          "lastName": "Carrington",
+          "initials": "JC"
+        },
+        {
+          "fullName": "Bart RS",
+          "firstName": "Rebecca",
+          "lastName": "Bart",
+          "initials": "RS"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "Targeted epigenetic modifications of specific gene regulatory regions have the potential to confer beneficial traits for crop improvement. Two recently developed CRISPR/Cas9-based epigenome editing tools were tested in transgenic cassava to target cytosine methylation to the promoter region of MeSWEET10a, a necessary gene for infection by the Cassava bacterial blight pathogen, Xanthomonas phaseoli pv. manihotis. The two systems leverage unique methyltransferases, and each induced distinct DNA methylation profiles at the targeted site, decreased effector-triggered MeSWEET10a expression, and attenuated water-soaking symptoms in inoculated leaves. Further, DNA methylation was simultaneously targeted, in addition to MeSWEET10a, to two susceptibility genes for Cassava brown streak virus. Relative levels of de novo DNA methylation at the three loci were inversely correlated with DNA methylation-antagonizing H3K4me3 marks. Finally, an initial assessment of DNA methylation after one generation indicated specific inheritance of CpG methylation that was unstable in the absence of the methyltransferase systems.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.06.04.730177"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-07",
+    "firstIndexDate": "2026-06-07",
+    "firstPublicationDate": "2026-06-06",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42251373",
+    "source": "MED",
+    "pmid": "42251373",
+    "doi": "10.1186/s12916-026-04973-y",
+    "title": "Blood-based DNA methylation marker model for short-term and long-term lung cancer risk prediction. ",
+    "authorString": "Bhardwaj M, Sun YQ, Frick C, Schöttker B, Røe OD, Holleczek B, Mai XM, Brenner H.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Bhardwaj M",
+          "firstName": "Megha",
+          "lastName": "Bhardwaj",
+          "initials": "M",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Clinical Epidemiology of Early Cancer Detection, German Cancer Research Center (DKFZ), Heidelberg, Germany. megha.bhardwaj@dkfz-heidelberg.de."
+              },
+              {
+                "affiliation": "German Cancer Consortium (DKTK), German Cancer Research Center (DKFZ), Heidelberg, Germany. megha.bhardwaj@dkfz-heidelberg.de."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Sun YQ",
+          "firstName": "Yi-Qian",
+          "lastName": "Sun",
+          "initials": "YQ",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Clinical and Molecular Medicine, Norwegian University of Science and Technology, Trondheim, Norway."
+              },
+              {
+                "affiliation": "Department of Pathology, Clinic of Laboratory Medicine, St Olav's University Hospital, Trondheim, Norway."
+              },
+              {
+                "affiliation": "Center for Oral Health Services and Research Mid-Norway (TkMidt), Trondheim, Norway."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Frick C",
+          "firstName": "Clara",
+          "lastName": "Frick",
+          "initials": "C",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Clinical Epidemiology of Early Cancer Detection, German Cancer Research Center (DKFZ), Heidelberg, Germany."
+              },
+              {
+                "affiliation": "Heidelberg Medical Faculty, Heidelberg University, Heidelberg, Germany."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Schöttker B",
+          "firstName": "Ben",
+          "lastName": "Schöttker",
+          "initials": "B",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Clinical Epidemiology of Early Cancer Detection, German Cancer Research Center (DKFZ), Heidelberg, Germany."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Røe OD",
+          "firstName": "Oluf Dimitri",
+          "lastName": "Røe",
+          "initials": "OD",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Clinical and Molecular Medicine, Norwegian University of Science and Technology, Trondheim, Norway."
+              },
+              {
+                "affiliation": "Cancer Clinic, Sykehuset Levanger, Levanger, Norway."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Holleczek B",
+          "firstName": "Bernd",
+          "lastName": "Holleczek",
+          "initials": "B",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Saarland Cancer Registry, Saarbrücken, Germany."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Mai XM",
+          "firstName": "Xiao-Mei",
+          "lastName": "Mai",
+          "initials": "XM",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Public Health and Nursing, Norwegian University of Science and Technology, Trondheim, Norway."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Brenner H",
+          "firstName": "Hermann",
+          "lastName": "Brenner",
+          "initials": "H",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Cancer Prevention Graduate School, German Cancer Research Center (DKFZ), Heidelberg, Germany."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "journalIssueId": 4203815,
+      "dateOfPublication": "2026 Jun",
+      "monthOfPublication": 6,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-06-01",
+      "journal": {
+        "title": "BMC medicine",
+        "medlineAbbreviation": "BMC Med",
+        "isoabbreviation": "BMC Med",
+        "essn": "1741-7015",
+        "issn": "1741-7015",
+        "nlmid": "101190723"
+      }
+    },
+    "pubYear": "2026",
+    "abstractText": "Screening heavy smokers with low-dose computed tomography (LDCT) has been shown to reduce lung cancer (LC) mortality, however, identifying the specific high-risk population that benefits most, a critical requirement for implementing effective and cost-efficient screening, remains challenging. We developed and validated a blood-based DNA methylation marker model (BBDMM) for all participants, including both ever and never smokers, using the LC risk-informative CpG sites from epigenome-wide association studies (EWAS). The model was developed and internally validated in 2,459 participants from ESTHER, a population-based cohort from Germany. Subsequently, BBDMM was externally validated in exactly same 233 participants drawn from the Norwegian HUNT2 and HUNT3 cohorts with long- and short-term follow-ups and cases identified up to 18 and 6.7 years before LC diagnosis, respectively. The BBDMM predicted LC incidence with an area under the curve (AUC) of 0.84 [95% confidence interval (95% CI), 0.80-0.87] in the derivation set. In the independent external validation sets, AUCs of 0.85 (95% CI, 0.80-0.90) and 0.85 (95% CI, 0.80-0.90) were observed in HUNT2 and HUNT3, respectively. The BBDMM identified future lung cancer cases with promising potential and the model discrimination was highly stable at different time points. These markers may contribute to the evolution of a blood-based test for predicting LC risk.",
+    "affiliation": "Clinical Epidemiology of Early Cancer Detection, German Cancer Research Center (DKFZ), Heidelberg, Germany. megha.bhardwaj@dkfz-heidelberg.de.",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Journal Article"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1186/s12916-026-04973-y"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-06",
+    "firstIndexDate": "2026-06-07",
+    "dateOfRevision": "2026-06-06",
+    "electronicPublicationDate": "2026-06-06",
+    "firstPublicationDate": "2026-06-06",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42251386",
+    "source": "MED",
+    "pmid": "42251386",
+    "doi": "10.1186/s13148-026-02171-4",
+    "title": "Identification of macrophage polarization-related genes for esophageal cancer risk: a multi-omics Mendelian randomization analysis. ",
+    "authorString": "Shi M, Zhou R, Yu B, Yu F, Gao J.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Shi M",
+          "firstName": "Mumu",
+          "lastName": "Shi",
+          "initials": "M",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pathology, Science and Education Department of Yangchun People's Hospital, Yangchun, 529699, China. 1016691459@qq.com."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zhou R",
+          "firstName": "Renshi",
+          "lastName": "Zhou",
+          "initials": "R",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Orthopedics Yangchun People's Hospital, Yangchun, 529699, China. Ycywk7768000@163.com."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Yu B",
+          "firstName": "Bo",
+          "lastName": "Yu",
+          "initials": "B",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Oncology Department of Yangchun People's Hospital, Yangchun, 529699, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Yu F",
+          "firstName": "Futian",
+          "lastName": "Yu",
+          "initials": "F",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Thoracic Surgery Department, Yangchun People's Hospital, Yangchun, 529699, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Gao J",
+          "firstName": "Jinghai",
+          "lastName": "Gao",
+          "initials": "J",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Imaging Department, Yangchun People's Hospital, Yangchun, 529699, China."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "journalIssueId": 4209844,
+      "dateOfPublication": "2026 Jun",
+      "monthOfPublication": 6,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-06-01",
+      "journal": {
+        "title": "Clinical epigenetics",
+        "medlineAbbreviation": "Clin Epigenetics",
+        "isoabbreviation": "Clin Epigenetics",
+        "essn": "1868-7083",
+        "issn": "1868-7083",
+        "nlmid": "101516977"
+      }
+    },
+    "pubYear": "2026",
+    "abstractText": "This study aims to identify macrophage polarization (MP)-related genes implicated in esophageal cancer (EC) by integrating methylation quantitative trait loci (mQTL), expression QTL (eQTL), and protein QTL (pQTL) data with EC genome-wide association study (GWAS) data. GWAS data were obtained from the UK Biobank for discovery and the FinnGen R10 release for validation. Blood-based mQTL, eQTL, and pQTL summary data were sourced from large European cohorts. Summary Data-based Mendelian Randomization (SMR) analysis assessed the associations between MP-related gene methylation, expression, protein abundance, and EC risk. Colocalization analysis identified shared causal variants. SMR and colocalization analysis identified 54 methylation loci, seven genes, and one protein associated with EC risk. Based on multi-omics integration and tiered evidence, LEP was classified as tier 1 due to its significant negative association in integrated mQTL-eQTL data. LEP (cg13454199) methylation showed a positive association with EC risk, while LEP expression was negatively associated, indicating that increased LEP methylation may downregulate its expression, potentially raising EC risk. INPP5D and PGF were tier 2 genes due to their associations with EC risk at both methylation and expression levels, with strong colocalization (PPH4 > 0.5). Tier 3 genes SPP1 and USP18 were associated with EC risk at single regulatory levels (protein and methylation, respectively) in the discovery cohort, with colocalization evidence and validation in an independent dataset, respectively. We identified LEP, INPP5D, PGF, SPP1, and USP18 as key MP-related genes associated with EC risk, providing potential therapeutic targets for EC. Not applicable.",
+    "affiliation": "Department of Pathology, Science and Education Department of Yangchun People's Hospital, Yangchun, 529699, China. 1016691459@qq.com.",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Journal Article"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1186/s13148-026-02171-4"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-06",
+    "firstIndexDate": "2026-06-07",
+    "dateOfRevision": "2026-06-06",
+    "electronicPublicationDate": "2026-06-06",
+    "firstPublicationDate": "2026-06-06",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42249983",
+    "source": "MED",
+    "pmid": "42249983",
+    "doi": "10.1007/s11033-026-12094-1",
+    "title": "APC Promoter 1 A hypermethylation correlates with High-Risk Human Papillomavirus infection in invasive breast cancer.",
+    "authorString": "Sakhi Z, Mharrach I, Elghazali K, Tadlaoui KA, Benhessou M, Amine A, Ennaji MM.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Sakhi Z",
+          "firstName": "Zineb",
+          "lastName": "Sakhi",
+          "initials": "Z",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Laboratory of Biotechnology, Agri-Food, Materials and Environment, Departement of Biology, Faculty of Science and Techniques-Mohammedia, University Hassan II of Casablanca, Mohammedia, 20650, Morocco."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Mharrach I",
+          "firstName": "Imane",
+          "lastName": "Mharrach",
+          "initials": "I",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Laboratory of Biotechnology, Agri-Food, Materials and Environment, Departement of Biology, Faculty of Science and Techniques-Mohammedia, University Hassan II of Casablanca, Mohammedia, 20650, Morocco."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Elghazali K",
+          "firstName": "Khaoula",
+          "lastName": "Elghazali",
+          "initials": "K",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Laboratory of Biotechnology, Agri-Food, Materials and Environment, Departement of Biology, Faculty of Science and Techniques-Mohammedia, University Hassan II of Casablanca, Mohammedia, 20650, Morocco."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Tadlaoui KA",
+          "firstName": "Kaoutar Anouar",
+          "lastName": "Tadlaoui",
+          "initials": "KA",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Laboratory of Biotechnology, Agri-Food, Materials and Environment, Departement of Biology, Faculty of Science and Techniques-Mohammedia, University Hassan II of Casablanca, Mohammedia, 20650, Morocco."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Benhessou M",
+          "firstName": "Mustapha",
+          "lastName": "Benhessou",
+          "initials": "M",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Faculty of Medicine and Pharmacy of Casablanca, University Hassan II of Casablanca, Casablanca, Morocco."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Amine A",
+          "firstName": "Abdessamad",
+          "lastName": "Amine",
+          "initials": "A",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Laboratory of Biotechnology, Agri-Food, Materials and Environment, Departement of Biology, Faculty of Science and Techniques-Mohammedia, University Hassan II of Casablanca, Mohammedia, 20650, Morocco."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Ennaji MM",
+          "firstName": "Moulay Mustapha",
+          "lastName": "Ennaji",
+          "initials": "MM",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Laboratory of Biotechnology, Agri-Food, Materials and Environment, Departement of Biology, Faculty of Science and Techniques-Mohammedia, University Hassan II of Casablanca, Mohammedia, 20650, Morocco. m.ennaji@yahoo.fr."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "issue": "1",
+      "volume": "53",
+      "journalIssueId": 4204403,
+      "dateOfPublication": "2026 Jun",
+      "monthOfPublication": 6,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-06-01",
+      "journal": {
+        "title": "Molecular biology reports",
+        "medlineAbbreviation": "Mol Biol Rep",
+        "isoabbreviation": "Mol Biol Rep",
+        "essn": "1573-4978",
+        "issn": "0301-4851",
+        "nlmid": "0403234"
+      }
+    },
+    "pubYear": "2026",
+    "pageInfo": "902",
+    "abstractText": "<h4>Background</h4>The tumor suppressor gene APC plays a critical role in regulating β-catenin degradation and maintaining cellular homeostasis. Promoter 1 A hypermethylation of APC has been reported as a frequent epigenetic alteration in several malignancies, including breast cancer. Although high-risk Human papillomavirus (HR-HPV) infection has been increasingly detected in breast cancer, its potential association with epigenetic alterations remains unclear. This study aimed to investigate the association between APC promoter 1 A hypermethylation, HR-HPV infection, and clinicopathological characteristics in breast cancer.<h4>Methods</h4>A total of 144 fresh breast tissue samples were analyzed, including 96 breast cancer cases and 48 control tissues. APC promoter 1 A methylation status was determined using methylation-specific PCR (MSP). HPV detection and genotyping were performed by nested PCR followed by Sanger sequencing. Associations between methylation status, HPV infection, and clinicopathological parameters were assessed using Chi-squared or Fisher's exact test, as appropriate, and logistic regression analysis.<h4>Results</h4>HPV DNA was detected in 54.2% of breast tumors compared to 4.2% of controls (p < 0.001). APC promoter 1 A hypermethylation was observed in 58.3% of tumors versus 8.3% of controls (p < 0.001). APC methylation was significantly associated with histological grade (p = 0.009) with a higher prevalence observed in grade I-II tumors (69.0%) compared to grade III tumors (42.1%). And with advanced tumor stage (p = 0.039). Among HPV-positive tumors, 73.1% exhibited APC methylation, including 79.4% of HPV16-positive and 83.3% of HPV45-positive cases (OR = 20.56; p = 0.009).<h4>Conclusion</h4>These findings demonstrate a significant association between HR-HPV infection and APC promoter 1 A hypermethylation in invasive breast cancer. This study provides novel molecular evidence from a North African population and highlighting a potential relationship between viral DNA detection and epigenetic alterations in breast tumors. However, further functional studies are required to clarify the biological significance and underlying mechanisms of this association.",
+    "affiliation": "Laboratory of Biotechnology, Agri-Food, Materials and Environment, Departement of Biology, Faculty of Science and Techniques-Mohammedia, University Hassan II of Casablanca, Mohammedia, 20650, Morocco.",
+    "publicationStatus": "epublish",
+    "language": "eng",
+    "pubModel": "Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "Journal Article"
+      ]
+    },
+    "keywordList": {
+      "keyword": [
+        "Breast cancer",
+        "APC",
+        "Human papillomavirus",
+        "Epigenetics",
+        "Dnmt1",
+        "Hr-hpv"
+      ]
+    },
+    "subsetList": {
+      "subset": [
+        {
+          "code": "IM",
+          "name": "Index Medicus"
+        }
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1007/s11033-026-12094-1"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "Y",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-06",
+    "firstIndexDate": "2026-06-07",
+    "dateOfRevision": "2026-06-06",
+    "electronicPublicationDate": "2026-06-06",
+    "firstPublicationDate": "2026-06-06",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42250422",
+    "source": "MED",
+    "pmid": "42250422",
+    "doi": "10.1016/j.watres.2026.126218",
+    "title": "Stage-resolved non-target reactomics and toxicity screening across a full-scale WWTP. ",
+    "authorString": "Yan X, Ji M, Lou J, Shi X, Feng S, Ying M, Zhu F, Wu G, Zhang XX.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Yan X",
+          "firstName": "Xu",
+          "lastName": "Yan",
+          "initials": "X",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory of Pollution Control and Resource Reuse, School of the Environment, Nanjing University, Nanjing 210023, Jiangsu, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Ji M",
+          "firstName": "MinXin",
+          "lastName": "Ji",
+          "initials": "M",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory of Pollution Control and Resource Reuse, School of the Environment, Nanjing University, Nanjing 210023, Jiangsu, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Lou J",
+          "firstName": "JingYa",
+          "lastName": "Lou",
+          "initials": "J",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory of Pollution Control and Resource Reuse, School of the Environment, Nanjing University, Nanjing 210023, Jiangsu, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Shi X",
+          "firstName": "XiaoPing",
+          "lastName": "Shi",
+          "initials": "X",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory of Pollution Control and Resource Reuse, School of the Environment, Nanjing University, Nanjing 210023, Jiangsu, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Feng S",
+          "firstName": "Shuyang",
+          "lastName": "Feng",
+          "initials": "S",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory of Pollution Control and Resource Reuse, School of the Environment, Nanjing University, Nanjing 210023, Jiangsu, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Ying M",
+          "firstName": "Ming",
+          "lastName": "Ying",
+          "initials": "M",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory of Pollution Control and Resource Reuse, School of the Environment, Nanjing University, Nanjing 210023, Jiangsu, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zhu F",
+          "firstName": "Feng",
+          "lastName": "Zhu",
+          "initials": "F",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory of Pollution Control and Resource Reuse, School of the Environment, Nanjing University, Nanjing 210023, Jiangsu, China; Jiangsu Province Center for Disease Control and Prevention, Nanjing 210009, Jiangsu, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Wu G",
+          "firstName": "Gang",
+          "lastName": "Wu",
+          "initials": "G",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory of Pollution Control and Resource Reuse, School of the Environment, Nanjing University, Nanjing 210023, Jiangsu, China. Electronic address: wug@nju.edu.cn."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zhang XX",
+          "firstName": "Xu-Xiang",
+          "lastName": "Zhang",
+          "initials": "XX",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory of Pollution Control and Resource Reuse, School of the Environment, Nanjing University, Nanjing 210023, Jiangsu, China. Electronic address: zhangxx@nju.edu.cn."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "volume": "303",
+      "journalIssueId": 4208883,
+      "dateOfPublication": "2026 Jun",
+      "monthOfPublication": 6,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-06-01",
+      "journal": {
+        "title": "Water research",
+        "medlineAbbreviation": "Water Res",
+        "isoabbreviation": "Water Res",
+        "essn": "1879-2448",
+        "issn": "0043-1354",
+        "nlmid": "0105072"
+      }
+    },
+    "pubYear": "2026",
+    "pageInfo": "126218",
+    "abstractText": "Understanding how complex organic contaminant mixtures change in composition, structure, and transformation behavior across wastewater treatment plants (WWTPs) is essential for improving pollutant control. However, stage-resolved knowledge of these processes remains limited. Here, we integrated non-targeted screening, paired mass distance (PMD) reactomics, CANOPUS-based structural annotation, and MS2Tox-based toxicity prediction to characterize compositional changes, dominant transformation behaviors, and toxicity implications throughout a full-scale anaerobic-anoxic-oxic (A/A/O) treatment and disinfection process through wastewater sampling in a WWTP. Across the treatments, chemical features progressively shifted toward lower molecular weight and higher hydrophilicity. Structural classification revealed the common pollutants (organic acids and derivatives, benzenoids, lipids and lipid-like molecules) and specific pollutants present in each unit. Reactomics revealed that methylation and dehydrogenation/oxidation were the most frequent transformation types, and each unit exhibited several distinct reaction types (e.g., stage-specific alkylation/dealkylation reactions during disinfection). Further correlating structure and reaction types reveal that pollutant transformations in wastewater are characterized by small mass shifts and generally retained the structural category of the reactant. Subsequently, toxicity prediction results suggested that most compounds exhibited no (65%) to low (31.6%) toxicity in WWTP. Biological treatment was associated with more predicted detoxification events, whereas chlorination disinfection showed more predicted toxicity-increase events that were frequently associated with alkylation-/methylation-related PMD signals. This study provides a stage-resolved interpretation of contaminant transformation across WWTP treatment units by linking feature attenuation, structural redistribution, PMD-derived reaction signatures, and MS2Tox-predicted toxicity shifts.",
+    "affiliation": "State Key Laboratory of Pollution Control and Resource Reuse, School of the Environment, Nanjing University, Nanjing 210023, Jiangsu, China.",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Journal Article"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1016/j.watres.2026.126218"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-06",
+    "firstIndexDate": "2026-06-07",
+    "dateOfRevision": "2026-06-06",
+    "electronicPublicationDate": "2026-06-02",
+    "firstPublicationDate": "2026-06-02",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42251214",
+    "source": "MED",
+    "pmid": "42251214",
+    "doi": "10.1245/s10434-026-19972-9",
+    "title": "Editorial Expression of Concern: Frequent Deletion and Methylation in SH3GL2 and CDKN2A Loci are Associated with Early- and Late-Onset Breast Carcinoma. ",
+    "authorString": "Sinha S, Chunder N, Mukherjee N, Alam N, Roy A, Roychoudhury S, Panda CK.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Sinha S",
+          "firstName": "Satyabrata",
+          "lastName": "Sinha",
+          "initials": "S",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Oncogene Regulation, Chittaranjan National Cancer Institute, 37, S.P. Mukherjee Road, Kolkata, 700026, India."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Chunder N",
+          "firstName": "Neelanjana",
+          "lastName": "Chunder",
+          "initials": "N",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pathology, The Joseph Stokes, Jr. Research Institute, The Children's Hospital of Philadelphia, Philadelphia, PA, 19104, USA."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Mukherjee N",
+          "firstName": "Nupur",
+          "lastName": "Mukherjee",
+          "initials": "N",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Oncogene Regulation, Chittaranjan National Cancer Institute, 37, S.P. Mukherjee Road, Kolkata, 700026, India."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Alam N",
+          "firstName": "Neyaz",
+          "lastName": "Alam",
+          "initials": "N",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Surgical Oncology, Chittaranjan National Cancer Institute, Kolkata, India."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Roy A",
+          "firstName": "Anup",
+          "lastName": "Roy",
+          "initials": "A",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pathology, Medical College, Kolkata, India."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Roychoudhury S",
+          "firstName": "Susanta",
+          "lastName": "Roychoudhury",
+          "initials": "S",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Molecular and Human Genetics Division, Indian Institute of Chemical Biology, Kolkata, India."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Panda CK",
+          "firstName": "Chinmay Kumar",
+          "lastName": "Panda",
+          "initials": "CK",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Oncogene Regulation, Chittaranjan National Cancer Institute, 37, S.P. Mukherjee Road, Kolkata, 700026, India. ckpanda.cnci@gmail.com."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "journalIssueId": 4204421,
+      "dateOfPublication": "2026 Jun",
+      "monthOfPublication": 6,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-06-01",
+      "journal": {
+        "title": "Annals of surgical oncology",
+        "medlineAbbreviation": "Ann Surg Oncol",
+        "isoabbreviation": "Ann Surg Oncol",
+        "essn": "1534-4681",
+        "issn": "1068-9265",
+        "nlmid": "9420840"
+      }
+    },
+    "pubYear": "2026",
+    "affiliation": "Department of Oncogene Regulation, Chittaranjan National Cancer Institute, 37, S.P. Mukherjee Road, Kolkata, 700026, India.",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Expression of Concern"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1245/s10434-026-19972-9"
+        }
+      ]
+    },
+    "commentCorrectionList": {
+      "commentCorrection": [
+        {
+          "id": "18239974",
+          "source": "MED",
+          "reference": "Ann Surg Oncol. 2008 Apr;15(4):1070-80. doi: 10.1245/s10434-007-9790-0.",
+          "type": "ExpressionOfConcernFor",
+          "orderIn": 1
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "Y",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-06",
+    "firstIndexDate": "2026-06-07",
+    "dateOfRevision": "2026-06-06",
+    "electronicPublicationDate": "2026-06-06",
+    "firstPublicationDate": "2026-06-06",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42249986",
+    "source": "MED",
+    "pmid": "42249986",
+    "doi": "10.1007/s00234-026-04053-1",
+    "title": "Integrated CT-PET radiogenomics and graph-based multi-task learning for preoperative prediction of key glioma molecular markers.",
+    "authorString": "Abdallah A, Altuwayjiri B, Albloshi AMK, Althbiti A, Mahbub AA, Alawad WM, Alazzam MB.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Abdallah A",
+          "firstName": "Aisha",
+          "lastName": "Abdallah",
+          "initials": "A",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Health Information Management and Technology (HIMT), College of medical and applied sciences, University of Hafr Al-Batin, Hafar Al-Batin, Saudi Arabia."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Altuwayjiri B",
+          "firstName": "Basmah",
+          "lastName": "Altuwayjiri",
+          "initials": "B",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Diagnostic Radiology, University of Tabuk, Tabuk, Saudi Arabia."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Albloshi AMK",
+          "firstName": "Abdullah M K",
+          "lastName": "Albloshi",
+          "initials": "AMK",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Faculty of Medicine, Al Baha University, Al Bahah, Saudi Arabia."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Althbiti A",
+          "firstName": "Ashrf",
+          "lastName": "Althbiti",
+          "initials": "A",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Information Technology, College of Computers and Information Technology, Taif University, Taif, Saudi Arabia."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Mahbub AA",
+          "firstName": "Amani A",
+          "lastName": "Mahbub",
+          "initials": "AA",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Clinical Laboratory Sciences, Faculty of Applied Medical Sciences, Umm al-Qura University, Makkah al Mukarramah, Saudi Arabia."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Alawad WM",
+          "firstName": "Wedad M",
+          "lastName": "Alawad",
+          "initials": "WM",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Information Technology, College of Computer, Qassim University, Buraidah, Saudi Arabia."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Alazzam MB",
+          "firstName": "Malik Bader",
+          "lastName": "Alazzam",
+          "initials": "MB",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Faculty of Information Technology, Jadara University, Irbid, Jordan. malikbaderphd@gmail.com."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "journalIssueId": 4204330,
+      "dateOfPublication": "2026 Jun",
+      "monthOfPublication": 6,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-06-01",
+      "journal": {
+        "title": "Neuroradiology",
+        "medlineAbbreviation": "Neuroradiology",
+        "isoabbreviation": "Neuroradiology",
+        "essn": "1432-1920",
+        "issn": "0028-3940",
+        "nlmid": "1302751"
+      }
+    },
+    "pubYear": "2026",
+    "abstractText": "<h4>Background</h4>The clinical management of glioma is increasingly dependent on the tumor's molecular profile, particularly the mutation status of Isocitrate Dehydrogenase (IDH), the promoter methylation of O-6-Methylguanine-DNA Methyltransferase (MGMT), and the co-deletion of chromosomal arms 1p and 19q. Determining these markers requires invasive tissue sampling. This study aimed to develop and validate a multimodal artificial intelligence (AI) framework for the non-invasive and simultaneous prediction of these three key markers using routine preoperative CT and PET imaging.<h4>Methods</h4>In this multi-center, retrospective study, data from 1,472 glioma patients with confirmed histopathological diagnosis and molecular profiles were collected from four international centers. CT and PET images were fused using a Wavelet Transform. Subsequently, a comprehensive feature set was extracted, including 24 clinical variables, 3,654 radiomics features, and 43,776 deep features. The deep features were extracted from three advanced architectures: EfficientNet-B7, Swin Transformer, and DINOv3. The Boruta algorithm was used for dimensionality reduction and optimal feature selection. Finally, a Multi-Task Learning model based on a Graph Neural Network (GNN) was designed for the simultaneous prediction of IDH, MGMT, and 1p/19q status. The model's performance was evaluated using 5-fold cross-validation on the training dataset (n = 1,158) and finally validated on a completely independent external test set (n = 314).<h4>Results</h4>The proposed multi-task GNN model is expected to achieve outstanding performance on the external test set: predicting IDH mutation status with an Area Under the Curve (AUC) exceeding 0.96, MGMT methylation with an AUC above 0.93, and 1p/19q co-deletion with an AUC greater than 0.95. This integrated approach is anticipated to significantly outperform models that predict each marker individually. Interpretability analysis using SHAP will reveal the combined role of clinical features (e.g., age), radiomics features (e.g., texture matrices), and deep features (e.g., abstract patterns from DINOv3) in predicting each molecular marker.<h4>Conclusion</h4>This study introduces a powerful and integrated AI framework capable of predicting the vital molecular profile of glioma with very high accuracy and non-invasively. This tool has the potential to transform diagnostics in neuro-oncology and facilitate personalized therapeutic decision-making before surgery.",
+    "affiliation": "Department of Health Information Management and Technology (HIMT), College of medical and applied sciences, University of Hafr Al-Batin, Hafar Al-Batin, Saudi Arabia.",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "Journal Article"
+      ]
+    },
+    "keywordList": {
+      "keyword": [
+        "Glioma",
+        "Multimodal imaging",
+        "Molecular Profile",
+        "Multi-task Learning",
+        "Deep Learning",
+        "Radiomics",
+        "Graph Neural Network – Gnn"
+      ]
+    },
+    "subsetList": {
+      "subset": [
+        {
+          "code": "IM",
+          "name": "Index Medicus"
+        }
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1007/s00234-026-04053-1"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "Y",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-06",
+    "firstIndexDate": "2026-06-07",
+    "dateOfRevision": "2026-06-06",
+    "electronicPublicationDate": "2026-06-06",
+    "firstPublicationDate": "2026-06-06",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1247373",
+    "source": "PPR",
+    "doi": "10.64898/2026.06.04.729841",
+    "title": "Disrupting IFIT1-STAT2 viral evasion synergy yields live-attenuated flavivirus with enhanced immune priming",
+    "authorString": "Suphatrakul A, Chantima W, Posiri P, Srisuk N, Nantachokechawapan R, Panyain N, Rotchanapreeda T, Onnome S, Thanatummatis B, Sittisombut N, Keelapang P, Screaton G, Mongkolsapaya J, Dejnirattisai W, Siridechadilok B.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Suphatrakul A",
+          "firstName": "Amporn",
+          "lastName": "Suphatrakul",
+          "initials": "A"
+        },
+        {
+          "fullName": "Chantima W",
+          "firstName": "Warangkana",
+          "lastName": "Chantima",
+          "initials": "W"
+        },
+        {
+          "fullName": "Posiri P",
+          "firstName": "Pratsaneeyaporn",
+          "lastName": "Posiri",
+          "initials": "P"
+        },
+        {
+          "fullName": "Srisuk N",
+          "firstName": "Nittaya",
+          "lastName": "Srisuk",
+          "initials": "N"
+        },
+        {
+          "fullName": "Nantachokechawapan R",
+          "firstName": "Rapirat",
+          "lastName": "Nantachokechawapan",
+          "initials": "R"
+        },
+        {
+          "fullName": "Panyain N",
+          "firstName": "Nattawadee",
+          "lastName": "Panyain",
+          "initials": "N"
+        },
+        {
+          "fullName": "Rotchanapreeda T",
+          "firstName": "Tiwa",
+          "lastName": "Rotchanapreeda",
+          "initials": "T"
+        },
+        {
+          "fullName": "Onnome S",
+          "firstName": "Suppachoke",
+          "lastName": "Onnome",
+          "initials": "S"
+        },
+        {
+          "fullName": "Thanatummatis B",
+          "firstName": "Benyapa",
+          "lastName": "Thanatummatis",
+          "initials": "B"
+        },
+        {
+          "fullName": "Sittisombut N",
+          "firstName": "Nopporn",
+          "lastName": "Sittisombut",
+          "initials": "N"
+        },
+        {
+          "fullName": "Keelapang P",
+          "firstName": "Poonsook",
+          "lastName": "Keelapang",
+          "initials": "P"
+        },
+        {
+          "fullName": "Screaton G",
+          "firstName": "Gavin",
+          "lastName": "Screaton",
+          "initials": "G"
+        },
+        {
+          "fullName": "Mongkolsapaya J",
+          "firstName": "Juthathip",
+          "lastName": "Mongkolsapaya",
+          "initials": "J"
+        },
+        {
+          "fullName": "Dejnirattisai W",
+          "firstName": "Wanwisa",
+          "lastName": "Dejnirattisai",
+          "initials": "W"
+        },
+        {
+          "fullName": "Siridechadilok B",
+          "firstName": "Bunpote",
+          "lastName": "Siridechadilok",
+          "initials": "B"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "Diverse human viruses deploy a common immune-evasion strategy: viral 2'-O-methylation coupled with STAT2 antagonism. Yet the importance of this coupling and whether targeting the coupled functions offers benefits in vaccine development, remains unknown. Using deep mutational scanning of the dengue NS5 protein, we discovered that the two immune-evasion functions work synergistically to cripple interferon signaling. Disrupting this synergy exposes a reciprocal regulatory relationship between the host proteins IFIT1 and STAT2 that controls both viral restriction and immune cell activation. Dengue viruses with mutations that disrupt the synergy are potently attenuated yet trigger antigen-presenting cell activation that exceeds a licensed dengue vaccine benchmark. Our results establish a generalizable principle: targeting synergies between viral immune evasion mechanisms can simultaneously achieve maximal viral attenuation and innate immune priming. This work provides a rational design framework for developing high-performance vaccines against many human viruses that exploit the IFIT1-STAT2 axis.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.06.04.729841"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-07",
+    "firstIndexDate": "2026-06-07",
+    "firstPublicationDate": "2026-06-05",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42251361",
+    "source": "MED",
+    "pmid": "42251361",
+    "doi": "10.1186/s12967-026-08390-w",
+    "title": "NSUN2/m5C/TPI1 axis promotes glycolysis and immune evasion in breast cancer. ",
+    "authorString": "Song X, Li Q, Xiao Z, Luo H, Li X.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Song X",
+          "firstName": "Xinming",
+          "lastName": "Song",
+          "initials": "X",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Head and Neck Oncology, Affiliated Hospital of Guangdong Medical University, Zhanjiang, Guangdong, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Li Q",
+          "firstName": "Qihang",
+          "lastName": "Li",
+          "initials": "Q",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Head and Neck Oncology, Affiliated Hospital of Guangdong Medical University, Zhanjiang, Guangdong, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Xiao Z",
+          "firstName": "Ziteng",
+          "lastName": "Xiao",
+          "initials": "Z",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Head and Neck Oncology, Affiliated Hospital of Guangdong Medical University, Zhanjiang, Guangdong, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Luo H",
+          "firstName": "Haiqing",
+          "lastName": "Luo",
+          "initials": "H",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Head and Neck Oncology, Affiliated Hospital of Guangdong Medical University, Zhanjiang, Guangdong, China. SongGDMU@cqu-edu.cn."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Li X",
+          "firstName": "Xiangyong",
+          "lastName": "Li",
+          "initials": "X",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Guangdong Medical University, Zhanjiang, Guangdong, China. LiGDMU@cqu-edu.cn."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "journalIssueId": 4204940,
+      "dateOfPublication": "2026 Jun",
+      "monthOfPublication": 6,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-06-01",
+      "journal": {
+        "title": "Journal of translational medicine",
+        "medlineAbbreviation": "J Transl Med",
+        "isoabbreviation": "J Transl Med",
+        "essn": "1479-5876",
+        "issn": "1479-5876",
+        "nlmid": "101190741"
+      }
+    },
+    "pubYear": "2026",
+    "abstractText": "Aerobic glycolysis and immune evasion drive tumor development. 5-methylcytosine (m5C) methyltransferase NSUN2 acts as an oncogene in breast cancer (BC), but the molecular mechanisms remain incompletely elucidated. This study aimed to investigate the role of NSUN2 in BC and the underlying mechanisms. In vitro experiments were conducted to determine cell proliferation, glycolysis, and immune evasion. Tumor growth was evaluated using a tumor-bearing mouse model. The interplay among NSUN2, YBX1, and TPI1 was evaluated by RNA immunoprecipitation, methylated RNA immunoprecipitation, and dual-luciferase reporter assay. The results showed that NSUN2 and TPI1 were highly expressed in BC cells. NSUN2 knockdown inhibited BC cell proliferation, glycolysis, and immune evasion, which was reversed by TPI1 overexpression. NSUN2 enhanced TPI1 stability by facilitating the m5C modification, which was recognized by YBX1. Moreover, overexpression of TPI1 reversed the inhibition of tumor growth, glycolysis, and immune cell infiltration induced by NSUN2 silencing in vivo. In conclusion, NSUN2 accelerates the progression of BC by promoting glycolysis and immune evasion. Mechanistically, NSUN2 promotes m5C methylation of TPI1 in a YBX1-dependent manner, which is associated with increased PD-L1 expression and immune-evasive phenotypes. These findings suggest that NSUN2 may be an effective therapeutic target for BC.",
+    "affiliation": "Department of Head and Neck Oncology, Affiliated Hospital of Guangdong Medical University, Zhanjiang, Guangdong, China.",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Journal Article"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1186/s12967-026-08390-w"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-06",
+    "firstIndexDate": "2026-06-07",
+    "dateOfRevision": "2026-06-06",
+    "electronicPublicationDate": "2026-06-06",
+    "firstPublicationDate": "2026-06-06",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42251462",
+    "source": "MED",
+    "pmid": "42251462",
+    "doi": "10.1186/s13148-026-02158-1",
+    "title": "Epigenetic vulnerability in endocrine disruption: bridging mechanisms, models, and environmental inequities. ",
+    "authorString": "Lizcano F, Ramírez-Bohorquez MC, Ballesteros-Garcia MC, Vargas V, Cardenas S.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Lizcano F",
+          "firstName": "Fernando",
+          "lastName": "Lizcano",
+          "initials": "F",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Center of Biomedical Investigation (CIBUS), Universidad de La Sabana, Km 7 Autopista Norte de Bogotá, Chía, 250008, Colombia. Fernando.lizcano@unisabana.edu.co."
+              },
+              {
+                "affiliation": "Endocrinology, Fundación CardioInfantil-Instituto de Cardiología, Bogotá, Colombia. Fernando.lizcano@unisabana.edu.co."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Ramírez-Bohorquez MC",
+          "firstName": "María Camila",
+          "lastName": "Ramírez-Bohorquez",
+          "initials": "MC",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department Internal Medicine, Fundación CardioInfantil-Instituto de Cardiología, Bogotá, Colombia."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Ballesteros-Garcia MC",
+          "firstName": "María Camila",
+          "lastName": "Ballesteros-Garcia",
+          "initials": "MC",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department Internal Medicine, Fundación CardioInfantil-Instituto de Cardiología, Bogotá, Colombia."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Vargas V",
+          "firstName": "Valentina",
+          "lastName": "Vargas",
+          "initials": "V",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department Internal Medicine, School of Medicine, Universidad de La Sabana, Chía, Colombia."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Cardenas S",
+          "firstName": "Sebastián",
+          "lastName": "Cardenas",
+          "initials": "S",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department Internal Medicine, School of Medicine, Universidad de La Sabana, Chía, Colombia."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "journalIssueId": 4209844,
+      "dateOfPublication": "2026 Jun",
+      "monthOfPublication": 6,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-06-01",
+      "journal": {
+        "title": "Clinical epigenetics",
+        "medlineAbbreviation": "Clin Epigenetics",
+        "isoabbreviation": "Clin Epigenetics",
+        "essn": "1868-7083",
+        "issn": "1868-7083",
+        "nlmid": "101516977"
+      }
+    },
+    "pubYear": "2026",
+    "abstractText": "This narrative mini-review examines how endocrine-disrupting chemicals (EDCs) induce persistent epigenetic alterations that shape endocrine, metabolic, and developmental trajectories across the lifespan. It addresses the emerging gap in integrating mechanistic epigenetic evidence with population-level vulnerability, particularly in underrepresented regions such as Latin America. These effects are especially critical during sensitive windows-including fetal development, childhood, and puberty-when DNA methylation, histone modifications, and non-coding RNA networks establish long-term molecular programming. While animal models have provided key mechanistic insights, their translational limitations highlight the need for human-relevant systems capable of capturing endocrine-specific and epigenetic endpoints under environmentally realistic conditions. We propose that epigenetic programming represents a central biological interface linking EDC exposure to context-dependent vulnerability. New Approach Methodologies (NAMs)-including organoids, micro-physiological systems, and computational models-offer a translational bridge aligned with Adverse Outcome Pathway frameworks. Importantly, susceptibility to endocrine disruption is shaped not only by biological factors but also by environmental, nutritional, and socioeconomic determinants. Evidence from Latin American populations-including altitude gradients, nutritional transitions, and structural inequalities-illustrates how these contextual factors interact with epigenetic mechanisms to influence metabolic and endocrine outcomes. This integrative perspective supports the development of more equitable and context-sensitive approaches to endocrine toxicology.",
+    "affiliation": "Center of Biomedical Investigation (CIBUS), Universidad de La Sabana, Km 7 Autopista Norte de Bogotá, Chía, 250008, Colombia. Fernando.lizcano@unisabana.edu.co.",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Review",
+        "Journal Article"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1186/s13148-026-02158-1"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-06",
+    "firstIndexDate": "2026-06-07",
+    "dateOfRevision": "2026-06-06",
+    "electronicPublicationDate": "2026-06-06",
+    "firstPublicationDate": "2026-06-06",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42251238",
+    "source": "MED",
+    "pmid": "42251238",
+    "doi": "10.1007/s40199-026-00614-0",
+    "title": "ALKBH5 promotes the progression of cisplatin-resistant oral squamous cell carcinoma by regulating FOXA1 expression via m<sup>6</sup>A RNA methylation : Funding. ",
+    "authorString": "Wang Y, Yang HX, Gu YJ, Tian M, Geng QF.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Wang Y",
+          "firstName": "Ying",
+          "lastName": "Wang",
+          "initials": "Y",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "The Fifth Outpatient Department, Nanjing Stomatological Hospital, Affiliated Hospital of Medical School, Institute of Stomatology, Nanjing University, Nanjing, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Yang HX",
+          "firstName": "Hui-Xin",
+          "lastName": "Yang",
+          "initials": "HX",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "The Fifth Outpatient Department, Nanjing Stomatological Hospital, Affiliated Hospital of Medical School, Institute of Stomatology, Nanjing University, Nanjing, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Gu YJ",
+          "firstName": "Yu-Jia",
+          "lastName": "Gu",
+          "initials": "YJ",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "The Fifth Outpatient Department, Nanjing Stomatological Hospital, Affiliated Hospital of Medical School, Institute of Stomatology, Nanjing University, Nanjing, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Tian M",
+          "firstName": "Mei",
+          "lastName": "Tian",
+          "initials": "M",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "The Fifth Outpatient Department, Nanjing Stomatological Hospital, Affiliated Hospital of Medical School, Institute of Stomatology, Nanjing University, Nanjing, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Geng QF",
+          "firstName": "Qi-Feng",
+          "lastName": "Geng",
+          "initials": "QF",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "The Fifth Outpatient Department, Nanjing Stomatological Hospital, Affiliated Hospital of Medical School, Institute of Stomatology, Nanjing University, Nanjing, China. qifeng_Geng@163.com."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "issue": "2",
+      "volume": "34",
+      "journalIssueId": 4210722,
+      "dateOfPublication": "2026 Jun",
+      "monthOfPublication": 6,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-06-01",
+      "journal": {
+        "title": "Daru : journal of Faculty of Pharmacy, Tehran University of Medical Sciences",
+        "medlineAbbreviation": "Daru",
+        "isoabbreviation": "Daru",
+        "essn": "2008-2231",
+        "issn": "1560-8115",
+        "nlmid": "101125969"
+      }
+    },
+    "pubYear": "2026",
+    "pageInfo": "31",
+    "abstractText": "Oral squamous cell carcinoma (OSCC) accounts for the vast majority of oral cancer cases. Accumulating evidence has implicated both AlkB homolog 5 (ALKBH5) and forkhead box protein A1 (FOXA1) in the emergence of cisplatin resistance in OSCC. This study aimed to define their functional roles and elucidate the underlying molecular mechanisms. The expression of ALKBH5, FOXA1, and YTHDF2 was assessed by qPCR and Western blot. Cisplatin-resistant cell lines (H357 CisR and SCC4 CisR) were established via stepwise dose escalation. To investigate key functional phenotypes, a series of assays were employed: CCK-8 for viability, colony formation for proliferation, and Transwell for migration and invasion. Bioinformatics (SRAMP, RM2Target) predicted m⁶A sites on FOXA1 and its binding with ALKBH5, which were validated by MeRIP-qPCR and RIP. FOXA1 mRNA stability was measured by actinomycin D assay. ALKBH5 and FOXA1 were upregulated in cisplatin-resistant OSCC, with FOXA1 essential for maintaining oncogenic phenotypes. Bioinformatic and biochemical analyses confirmed FOXA1 as a direct target of ALKBH5. ALKBH5 demethylates FOXA1 mRNA, stabilizing its transcript and enhancing its expression by inhibiting YTHDF2-mediated degradation. Functionally, ALKBH5 overexpression reversed the tumor-suppressive effects of FOXA1 knockdown. Our study demonstrates that ALKBH5 promotes cisplatin resistance in OSCC through m6A-dependent demethylation of FOXA1 transcripts, highlighting the ALKBH5-FOXA1 axis as a promising therapeutic target for overcoming this resistance.",
+    "affiliation": "The Fifth Outpatient Department, Nanjing Stomatological Hospital, Affiliated Hospital of Medical School, Institute of Stomatology, Nanjing University, Nanjing, China.",
+    "publicationStatus": "epublish",
+    "language": "eng",
+    "pubModel": "Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Journal Article"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1007/s40199-026-00614-0"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "Y",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-06",
+    "firstIndexDate": "2026-06-07",
+    "dateOfRevision": "2026-06-06",
+    "electronicPublicationDate": "2026-06-06",
+    "firstPublicationDate": "2026-06-06",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1247258",
+    "source": "PPR",
+    "doi": "10.64898/2026.06.04.730043",
+    "title": "An inflammatory gene set driven epigenetic clock tracks down disease progression and rejuvenation",
+    "authorString": "Sandor P, Kerepesi C, Castro JP.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Sandor P",
+          "firstName": "Peter",
+          "lastName": "Sandor",
+          "initials": "P"
+        },
+        {
+          "fullName": "Kerepesi C",
+          "firstName": "Csaba",
+          "lastName": "Kerepesi",
+          "initials": "C"
+        },
+        {
+          "fullName": "Castro JP",
+          "firstName": "Jose Pedro",
+          "lastName": "Castro",
+          "initials": "JP"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "Chronic, low-level inflammation, characterized by elevated pro-inflammatory programs, including epigenetic changes, in the absence of infection, is a major driver of aging and age-related diseases. On the other side of the spectrum, aging interventions work, at least in part, by decreasing inflammation. However, the molecular connection between epigenetic aging and inflammatory profiles in chronic diseases and rejuvenation has not been established yet. This study aimed to investigate the role of a newly described inflammatory signature gene set (ISig) in aging, previously associated with accelerated aging, in the progression of chronic diseases and rejuvenation. To achieve this, we developed inflammation-derived epigenetic aging clocks using ElasticNet regression models trained on CpG sites from ISig promoter regions. The newly developed inflammation aging clocks were validated on healthy samples and tested for their capacity to detect accelerated aging in diseased samples and rejuvenation during cellular reprogramming. The data demonstrate that the ISig inflammatory clocks accurately predict age, detect rejuvenation, and identify accelerated aging in disease contexts. Furthermore, we have demonstrated that it is possible to use a curated inflammatory gene-set with biological relevance to estimate biological age acceleration. We also developed a web application, the GeneClock Studio (available at https://ilab.sztaki.hu/geneclockstudio/), that allows researchers to apply the inflammatory aging clocks to their own DNA methylation datasets without requiring any programming expertise. Furthermore, the GeneClockStudio supports the training of new aging clocks based on an arbitrarily selected gene set in a similar way as in the case of the ISig inflammatory clocks.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.06.04.730043"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-07",
+    "firstIndexDate": "2026-06-07",
+    "firstPublicationDate": "2026-06-06",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1247318",
+    "source": "PPR",
+    "doi": "10.64898/2026.06.03.729890",
+    "title": "Population-scale Y chromosome assemblies reveal recurrent remodeling within constrained architectures",
+    "authorString": "Hallast P, Rhie A, Loftus M, Mazzetto M, Ebert P, Gao S, Martino GV, Audano PA, Ashraf H, Pal K, Siford R, Ebler J, Koren S, Yoo D, Kim K, Jiang Y, Hansen NF, Hebbar P, Kanno T, Purnoch O, Montano C, Lin J, Oshima KK, Ren L, Guarracino A, Jensen M, Pinto BJ, Porubsky D, Kuziel S, Ni L, Li J, Balachandran P, Yilmaz F, Human Genome Structural Variation Consortium (HGSVC), Human Pangenome Reference Consortium (HPRC), Korbel JO, Paten B, Gerstein M, Makova KD, Shi X, Eichler E, Beck CR, Wilson MR, Konkel MK, Marschall T, Cechova M, Logsdon G, Phillippy AM, Lee C.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Hallast P",
+          "firstName": "Pille",
+          "lastName": "Hallast",
+          "initials": "P"
+        },
+        {
+          "fullName": "Rhie A",
+          "firstName": "Arang",
+          "lastName": "Rhie",
+          "initials": "A"
+        },
+        {
+          "fullName": "Loftus M",
+          "firstName": "Mark",
+          "lastName": "Loftus",
+          "initials": "M"
+        },
+        {
+          "fullName": "Mazzetto M",
+          "firstName": "Mariateresa",
+          "lastName": "Mazzetto",
+          "initials": "M"
+        },
+        {
+          "fullName": "Ebert P",
+          "firstName": "Peter",
+          "lastName": "Ebert",
+          "initials": "P"
+        },
+        {
+          "fullName": "Gao S",
+          "firstName": "Shenghan",
+          "lastName": "Gao",
+          "initials": "S"
+        },
+        {
+          "fullName": "Martino GV",
+          "firstName": "Gianni",
+          "lastName": "Martino",
+          "initials": "GV"
+        },
+        {
+          "fullName": "Audano PA",
+          "firstName": "Peter",
+          "lastName": "Audano",
+          "initials": "PA"
+        },
+        {
+          "fullName": "Ashraf H",
+          "firstName": "Hufsah",
+          "lastName": "Ashraf",
+          "initials": "H"
+        },
+        {
+          "fullName": "Pal K",
+          "firstName": "Karol",
+          "lastName": "Pal",
+          "initials": "K"
+        },
+        {
+          "fullName": "Siford R",
+          "firstName": "Rebecca",
+          "lastName": "Siford",
+          "initials": "R"
+        },
+        {
+          "fullName": "Ebler J",
+          "firstName": "Jana",
+          "lastName": "Ebler",
+          "initials": "J"
+        },
+        {
+          "fullName": "Koren S",
+          "firstName": "Sergey",
+          "lastName": "Koren",
+          "initials": "S"
+        },
+        {
+          "fullName": "Yoo D",
+          "firstName": "DongAhn",
+          "lastName": "Yoo",
+          "initials": "D"
+        },
+        {
+          "fullName": "Kim K",
+          "firstName": "Kwondo",
+          "lastName": "Kim",
+          "initials": "K"
+        },
+        {
+          "fullName": "Jiang Y",
+          "firstName": "Yunzhe",
+          "lastName": "Jiang",
+          "initials": "Y"
+        },
+        {
+          "fullName": "Hansen NF",
+          "firstName": "Nancy",
+          "lastName": "Hansen",
+          "initials": "NF"
+        },
+        {
+          "fullName": "Hebbar P",
+          "firstName": "Prajna",
+          "lastName": "Hebbar",
+          "initials": "P"
+        },
+        {
+          "fullName": "Kanno T",
+          "firstName": "Tomoya",
+          "lastName": "Kanno",
+          "initials": "T"
+        },
+        {
+          "fullName": "Purnoch O",
+          "firstName": "Oliver",
+          "lastName": "Purnoch",
+          "initials": "O"
+        },
+        {
+          "fullName": "Montano C",
+          "firstName": "Caroline",
+          "lastName": "Montano",
+          "initials": "C"
+        },
+        {
+          "fullName": "Lin J",
+          "firstName": "Jiadong",
+          "lastName": "Lin",
+          "initials": "J"
+        },
+        {
+          "fullName": "Oshima KK",
+          "firstName": "Keisuke",
+          "lastName": "Oshima",
+          "initials": "KK"
+        },
+        {
+          "fullName": "Ren L",
+          "firstName": "Luyao",
+          "lastName": "Ren",
+          "initials": "L"
+        },
+        {
+          "fullName": "Guarracino A",
+          "firstName": "Andrea",
+          "lastName": "Guarracino",
+          "initials": "A"
+        },
+        {
+          "fullName": "Jensen M",
+          "firstName": "Matthew",
+          "lastName": "Jensen",
+          "initials": "M"
+        },
+        {
+          "fullName": "Pinto BJ",
+          "firstName": "Brendan",
+          "lastName": "Pinto",
+          "initials": "BJ"
+        },
+        {
+          "fullName": "Porubsky D",
+          "firstName": "David",
+          "lastName": "Porubsky",
+          "initials": "D"
+        },
+        {
+          "fullName": "Kuziel S",
+          "firstName": "Samuel",
+          "lastName": "Kuziel",
+          "initials": "S"
+        },
+        {
+          "fullName": "Ni L",
+          "firstName": "Lingbin",
+          "lastName": "Ni",
+          "initials": "L"
+        },
+        {
+          "fullName": "Li J",
+          "firstName": "Jiaqi",
+          "lastName": "Li",
+          "initials": "J"
+        },
+        {
+          "fullName": "Balachandran P",
+          "firstName": "Parithi",
+          "lastName": "Balachandran",
+          "initials": "P"
+        },
+        {
+          "fullName": "Yilmaz F",
+          "firstName": "Feyza",
+          "lastName": "Yilmaz",
+          "initials": "F"
+        },
+        {
+          "collectiveName": "Human Genome Structural Variation Consortium (HGSVC)"
+        },
+        {
+          "collectiveName": "Human Pangenome Reference Consortium (HPRC)"
+        },
+        {
+          "fullName": "Korbel JO",
+          "firstName": "Jan",
+          "lastName": "Korbel",
+          "initials": "JO"
+        },
+        {
+          "fullName": "Paten B",
+          "firstName": "Benedict",
+          "lastName": "Paten",
+          "initials": "B"
+        },
+        {
+          "fullName": "Gerstein M",
+          "firstName": "Mark",
+          "lastName": "Gerstein",
+          "initials": "M"
+        },
+        {
+          "fullName": "Makova KD",
+          "firstName": "Kateryna",
+          "lastName": "Makova",
+          "initials": "KD"
+        },
+        {
+          "fullName": "Shi X",
+          "firstName": "Xinghua",
+          "lastName": "Shi",
+          "initials": "X"
+        },
+        {
+          "fullName": "Eichler E",
+          "firstName": "Evan",
+          "lastName": "Eichler",
+          "initials": "E"
+        },
+        {
+          "fullName": "Beck CR",
+          "firstName": "Christine",
+          "lastName": "Beck",
+          "initials": "CR"
+        },
+        {
+          "fullName": "Wilson MR",
+          "firstName": "Melissa",
+          "lastName": "Wilson",
+          "initials": "MR"
+        },
+        {
+          "fullName": "Konkel MK",
+          "firstName": "Miriam",
+          "lastName": "Konkel",
+          "initials": "MK"
+        },
+        {
+          "fullName": "Marschall T",
+          "firstName": "Tobias",
+          "lastName": "Marschall",
+          "initials": "T"
+        },
+        {
+          "fullName": "Cechova M",
+          "firstName": "Monika",
+          "lastName": "Cechova",
+          "initials": "M"
+        },
+        {
+          "fullName": "Logsdon G",
+          "firstName": "Glennis",
+          "lastName": "Logsdon",
+          "initials": "G"
+        },
+        {
+          "fullName": "Phillippy AM",
+          "firstName": "Adam",
+          "lastName": "Phillippy",
+          "initials": "AM"
+        },
+        {
+          "fullName": "Lee C",
+          "firstName": "Charles",
+          "lastName": "Lee",
+          "initials": "C"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "The human Y chromosome is among the most structurally dynamic chromosomes in the human genome, yet much of its diversity remains unresolved because of extensive palindromes, ampliconic gene families, satellite-rich heterochromatin and large segmental duplications. What remained unclear was how these diverse forms of variation fit together across the full chromosome, how often similar structures recur in different lineages, and which aspects of organization remain constrained despite rapid sequence turnover. Here, we generated and analyzed 142 nearly complete human Y chromosome assemblies from 17 major haplogroups spanning approximately 180,000 years of evolution, creating a population-scale resource for studying Y chromosome biology and diversity. These assemblies show that structural change on the Y chromosome is recurrent but constrained, even in its most repetitive regions. In the fertility-associated azoospermia factor c (AZFc) region, recurrent inversions, deletions, and complex rearrangements generate a limited repertoire of structural haplotypes. Multicopy ampliconic gene families follow distinct evolutionary paths: DAZ paralogues differ in structural constraint, RBMY evolves within a modular array, and TSPY copy number varies mainly through local expansion and contraction. The centromere and Yq12 heterochromatin vary greatly in size but retain a stable higher-order organization, including a single hypomethylated centromeric core and conserved Yq12 repeat composition and orientation. Methylation across palindromic and ampliconic regions is likewise structured by repeat class, copy order and local architecture. Together, these results provide a population-scale resource for the human Y chromosome and show that its rapid structural evolution is repeatedly funneled into a limited set of architectural outcomes.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.06.03.729890"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-07",
+    "firstIndexDate": "2026-06-07",
+    "firstPublicationDate": "2026-06-06",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42250140",
+    "source": "MED",
+    "pmid": "42250140",
+    "doi": "10.1007/s10147-026-03082-3",
+    "title": "KEAP1 promoter hypermethylation in human cancers: a meta-analysis of case-control studies.",
+    "authorString": "Hasan DA, Almansoori AKK, Tawfeeq AT, Noor DAM.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Hasan DA",
+          "firstName": "Duraid Ali",
+          "lastName": "Hasan",
+          "initials": "DA",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0009-0000-8513-4603"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "School of Pharmaceutical Sciences, Universiti Sains Malaysia, 11700, Gelugor, Penang, Malaysia. duraidali860@student.usm.my."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Almansoori AKK",
+          "firstName": "Ammar Khazaal Kadhim",
+          "lastName": "Almansoori",
+          "initials": "AKK",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Centre for Chemical Biology (CCB), Universiti Sains Malaysia, 11900, Bayan Lepas, Penang, Malaysia."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Tawfeeq AT",
+          "firstName": "Amer Talib",
+          "lastName": "Tawfeeq",
+          "initials": "AT",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Molecular Biology Department, Iraqi Center for Cancer and Medical Genetics Research, Mustansiriyah University, Baghdad, Iraq."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Noor DAM",
+          "firstName": "Dzul Azri Mohamed",
+          "lastName": "Noor",
+          "initials": "DAM",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "School of Pharmaceutical Sciences, Universiti Sains Malaysia, 11700, Gelugor, Penang, Malaysia. dzulazri@usm.my."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "authorIdList": {
+      "authorId": [
+        {
+          "type": "ORCID",
+          "value": "0009-0000-8513-4603"
+        }
+      ]
+    },
+    "journalInfo": {
+      "journalIssueId": 4205549,
+      "dateOfPublication": "2026 Jun",
+      "monthOfPublication": 6,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-06-01",
+      "journal": {
+        "title": "International journal of clinical oncology",
+        "medlineAbbreviation": "Int J Clin Oncol",
+        "isoabbreviation": "Int J Clin Oncol",
+        "essn": "1437-7772",
+        "issn": "1341-9625",
+        "nlmid": "9616295"
+      }
+    },
+    "pubYear": "2026",
+    "abstractText": "<h4>Background</h4>Kelch-like ECH-associated protein 1 (KEAP1) regulates the NRF2 signaling pathway and plays a critical role in oxidative stress response and tumor suppression. Promoter hypermethylation of KEAP1 may contribute to carcinogenesis; however, its association with cancer remains unclear.<h4>Methods</h4>A systematic review and meta-analysis were conducted following PRISMA 2020 guidelines. PubMed, Scopus, Web of Science, and the Cochrane Library were searched up to July 29, 2025. Eligible case-control studies were included. Pooled odds ratios (ORs) were calculated using a random-effects model. Heterogeneity, subgroup effects, publication bias, and robustness were assessed using standard meta-analytic approaches.<h4>Results</h4>Seven studies comprising 407 cancer cases and 158 controls were included. KEAP1 promoter hypermethylation was significantly associated with cancer presence (OR = 13.66; 95% CI 4.89-38.14; p < 0.001), with moderate heterogeneity (I² = 42.1%). Subgroup analyses indicated that heterogeneity was largely explained by cancer type and methylation detection method, with strong associations observed in lung and other cancers but not in colorectal cancer. Studies using qMSP showed more consistent and stronger effects than MSP-based studies. Publication bias was suggested by Egger's test (p = 0.006), and trim-and-fill analysis indicated potential overestimation of the pooled effect. Sensitivity analyses using the Hartung-Knapp-Sidik-Jonkman and GLMM approaches supported the robustness of the findings.<h4>Conclusion</h4>KEAP1 promoter hypermethylation is significantly associated with cancer in case-control studies. Although findings were consistent across multiple analyses, potential bias and limited study numbers warrant cautious interpretation.",
+    "affiliation": "School of Pharmaceutical Sciences, Universiti Sains Malaysia, 11700, Gelugor, Penang, Malaysia. duraidali860@student.usm.my.",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "Review",
+        "Journal Article"
+      ]
+    },
+    "keywordList": {
+      "keyword": [
+        "Cancer",
+        "DNA methylation",
+        "hypermethylation",
+        "NRF2",
+        "Keap1"
+      ]
+    },
+    "subsetList": {
+      "subset": [
+        {
+          "code": "IM",
+          "name": "Index Medicus"
+        }
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1007/s10147-026-03082-3"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "Y",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-06",
+    "firstIndexDate": "2026-06-07",
+    "dateOfRevision": "2026-06-06",
+    "electronicPublicationDate": "2026-06-06",
+    "firstPublicationDate": "2026-06-06",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1247270",
+    "source": "PPR",
+    "doi": "10.64898/2026.06.02.729668",
+    "title": "Demographic history, geographic distance, and landscape features shape the genetic divergence of wild tigers in northeast India",
+    "authorString": "Sagar V, Ghosh T, Vadar K, Mayekar VK, Harihar A, Ramakrishnan U.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Sagar V",
+          "firstName": "Vinay",
+          "lastName": "Sagar",
+          "initials": "V"
+        },
+        {
+          "fullName": "Ghosh T",
+          "firstName": "Tista",
+          "lastName": "Ghosh",
+          "initials": "T"
+        },
+        {
+          "fullName": "Vadar K",
+          "firstName": "Kritagnya",
+          "lastName": "Vadar",
+          "initials": "K"
+        },
+        {
+          "fullName": "Mayekar VK",
+          "firstName": "Vaishnavee Kundan",
+          "lastName": "Mayekar",
+          "initials": "VK"
+        },
+        {
+          "fullName": "Harihar A",
+          "firstName": "Abishek",
+          "lastName": "Harihar",
+          "initials": "A"
+        },
+        {
+          "fullName": "Ramakrishnan U",
+          "firstName": "Uma",
+          "lastName": "Ramakrishnan",
+          "initials": "U"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "Habitat fragmentation creates small, isolated populations that are vulnerable to inbreeding, genetic drift, and a high genetic load. For conservation management, it is essential to distinguish contemporary landscape resistance from historical demographic processes as drivers of these genetic patterns, especially for conservation priority regions such as northeast India, which intersects two major tigers conservation landscapes. We studied the genetic structure and landscape connectivity of tigers across four protected areas in northeast India: Kaziranga, Manas, Orang, and Nameri, using faecal samples. From 741 samples collected over two field seasons, we confirmed 654 as tigers. Using methylation-based enrichment and ddRAD-seq of 176 samples, we generated a high-quality dataset of 3091 SNPs across 44 individuals. Population structure analyses identified three genetically distinct clusters: Kaziranga-Nameri, Manas, and Orang. Isolation-by-distance and landscape resistance explained 13% and 17% of the observed genetic divergence, respectively, with human settlements influencing gene flow. Orang's pronounced divergence from Kaziranga, despite geographic proximity and corridors, suggests a post-bottleneck founder effect, as evidenced by its reduced heterozygosity (Ho = 0.21), nucleotide diversity (π = 0.24), and effective population size (Ne = 1.3). These findings reveal that demographic and genetic recovery can decouple: Orang's population has recently grown, yet genome-wide evidence shows ongoing genetic erosion that monitoring has not detected. Similar patterns have been reported in other Indian tiger populations, indicating that such decoupling may be systemic. Target 4 of the Kunming-Montreal Global Biodiversity Framework requires explicit genetic diversity monitoring; this study demonstrates that non-invasive genomics can operationalise that mandate at a conservation-relevant scale.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.06.02.729668"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-07",
+    "firstIndexDate": "2026-06-07",
+    "firstPublicationDate": "2026-06-06",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42250070",
+    "source": "MED",
+    "pmid": "42250070",
+    "doi": "10.1007/s13770-026-00817-1",
+    "title": "Remote Ischemic Preconditioning Enhances Skin Flap Survival via ZNF667/SDF1-Mediated Endothelial Progenitor Cells Functions for Angiogenesis.",
+    "authorString": "Li Y, Li J, Liang Z, Chen X, Xiong W, Huang Y, Qiu A, Chen Z, Kuang J.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Li Y",
+          "firstName": "Yuanbin",
+          "lastName": "Li",
+          "initials": "Y",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Basic Medicine, Hunan Traditional Chinese Medical College, Zhuzhou, 412012, Hunan, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Li J",
+          "firstName": "Jingzhang",
+          "lastName": "Li",
+          "initials": "J",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Basic Medicine, Hunan Traditional Chinese Medical College, Zhuzhou, 412012, Hunan, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Liang Z",
+          "firstName": "Zhonglei",
+          "lastName": "Liang",
+          "initials": "Z",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Thoracic Surgery, Xiangtan Chinese Medicine Hospital, Xiangtan, 411100, Hunan, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Chen X",
+          "firstName": "Xin",
+          "lastName": "Chen",
+          "initials": "X",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Basic Medicine, Hunan Traditional Chinese Medical College, Zhuzhou, 412012, Hunan, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Xiong W",
+          "firstName": "Wei",
+          "lastName": "Xiong",
+          "initials": "W",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Basic Medicine, Hunan Traditional Chinese Medical College, Zhuzhou, 412012, Hunan, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Huang Y",
+          "firstName": "Yuhui",
+          "lastName": "Huang",
+          "initials": "Y",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Basic Medicine, Hunan Traditional Chinese Medical College, Zhuzhou, 412012, Hunan, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Qiu A",
+          "firstName": "Aizhu",
+          "lastName": "Qiu",
+          "initials": "A",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Basic Medicine, Hunan Traditional Chinese Medical College, Zhuzhou, 412012, Hunan, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Chen Z",
+          "firstName": "Zhuang",
+          "lastName": "Chen",
+          "initials": "Z",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Basic Medicine, Hunan Traditional Chinese Medical College, Zhuzhou, 412012, Hunan, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Kuang J",
+          "firstName": "Jianjun",
+          "lastName": "Kuang",
+          "initials": "J",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Institute of Clinical Pharmacology, Hunan Academy of Traditional Chinese Medicine, Changsha, 410000, Hunan, China. 13786165656@163.com."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "journalIssueId": 4209039,
+      "dateOfPublication": "2026 Jun",
+      "monthOfPublication": 6,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-06-01",
+      "journal": {
+        "title": "Tissue engineering and regenerative medicine",
+        "medlineAbbreviation": "Tissue Eng Regen Med",
+        "isoabbreviation": "Tissue Eng Regen Med",
+        "essn": "2212-5469",
+        "issn": "1738-2696",
+        "nlmid": "101699923"
+      }
+    },
+    "pubYear": "2026",
+    "abstractText": "<h4>Background</h4>Flap transplantation plays a vital role in wound reconstruction. However, the mechanisms by which remote ischemic preconditioning (RIPC) may improve flap survival remain incompletely understood.<h4>Methods</h4>Rats were randomly assigned to three groups: sham, ischemia/reperfusion (I/R), and RIPC + I/R. The I/R model was established by ligating the iliopsoas and thoracodorsal arteries to induce flap ischemia, followed by reperfusion. RIPC was performed via limb clamping. A combination of high-throughput sequencing, functional cellular assays, and live imaging was used to assess gene expression, cellular functions, and flap viability.<h4>Results</h4>RIPC upregulated the expression of ZNF667. This protein acted as a transcriptional repressor of VHL by binding to its promoter region, where it competitively inhibited the recruitment of histone-modifying enzymes, including MLL3/4, SETD1A, and EP300. Consequently, histone methylation and acetylation were reduced, leading to suppressed VHL transcription. The downregulation of VHL diminished the ubiquitination-mediated degradation of hypoxia-inducible factor-1α (HIF-1α), which in turn enhanced the expression of stromal cell-derived factor 1 (SDF1). This signaling cascade promoted the proliferation, migration, differentiation, and tube-forming capacity of endothelial progenitor cells (EPCs). Live imaging confirmed that RIPC stimulated the recruitment of EPCs into the flap tissue, accompanied by increased microvessel density. These effects collectively enhanced angiogenesis and significantly reduced the area of flap necrosis.<h4>Conclusion</h4>RIPC improves flap survival by modulating the ZNF667-VHL-SDF1 axis and augmenting the function of EPCs. These findings not only provide a potential therapeutic strategy for flap transplantation but also advance our understanding of the mechanisms underlying flap survival.",
+    "affiliation": "Department of Basic Medicine, Hunan Traditional Chinese Medical College, Zhuzhou, 412012, Hunan, China.",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "Journal Article"
+      ]
+    },
+    "grantsList": {
+      "grant": [
+        {
+          "grantId": "82200333",
+          "agency": "National Natural Science Foundation of China",
+          "orderIn": 0
+        },
+        {
+          "grantId": "2023JJ60241",
+          "agency": "Natural Science Foundation of Hunan Province",
+          "orderIn": 0
+        },
+        {
+          "grantId": "2022JJ60077",
+          "agency": "Natural Science Foundation of Hunan Province",
+          "orderIn": 0
+        }
+      ]
+    },
+    "keywordList": {
+      "keyword": [
+        "Angiogenesis",
+        "Epcs",
+        "Ripc",
+        "Flap Transplantation",
+        "Znf667"
+      ]
+    },
+    "subsetList": {
+      "subset": [
+        {
+          "code": "IM",
+          "name": "Index Medicus"
+        }
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1007/s13770-026-00817-1"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "Y",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-06",
+    "firstIndexDate": "2026-06-07",
+    "dateOfRevision": "2026-06-06",
+    "electronicPublicationDate": "2026-06-06",
+    "firstPublicationDate": "2026-06-06",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42250049",
+    "source": "MED",
+    "pmid": "42250049",
+    "doi": "10.1007/s11011-026-01873-1",
+    "title": "Omics-driven strategies for identifying biomarkers in Alzheimer's disease.",
+    "authorString": "Khan Y, Rekha A, Ballal S, Maharana L, Maqbool M, Goyal K, Mishra R, Uniyal P, Alam P, Aljarba TM, Gupta G, Hussain MS.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Khan Y",
+          "firstName": "Yumna",
+          "lastName": "Khan",
+          "initials": "Y",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Independent Researcher, Abu Dhabi, United Arab Emirates."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Rekha A",
+          "firstName": "Arcot",
+          "lastName": "Rekha",
+          "initials": "A",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Dr. D.Y. Patil Medical College, Hospital and Research Centre, Dr. D. Y. Patil Vidyapeeth University, Pimpri, Pune, Maharashtra, India."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Ballal S",
+          "firstName": "Suhas",
+          "lastName": "Ballal",
+          "initials": "S",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Chemistry and Biochemistry, School of Sciences, JAIN (Deemed to be University), Bangalore, Karnataka, India."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Maharana L",
+          "firstName": "Laxmidhar",
+          "lastName": "Maharana",
+          "initials": "L",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of General Medicine, IMS & SUM Hospital, Siksha 'O' Anusandhan (Deemed to be University), Bhubaneswar, Odisha, 751030, India."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Maqbool M",
+          "firstName": "Mudasir",
+          "lastName": "Maqbool",
+          "initials": "M",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pharmacology, Government Medical College Baramulla, Jammu, Kashmir, 193103, India."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Goyal K",
+          "firstName": "Kavita",
+          "lastName": "Goyal",
+          "initials": "K",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Sharda University, Greater Noida, Uttar Pradesh, India."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Mishra R",
+          "firstName": "Rakhi",
+          "lastName": "Mishra",
+          "initials": "R",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Noida Institute of Engineering and Technology (Pharmacy Institute), 19 Knowledge Park 2 , Greater Noida, India."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Uniyal P",
+          "firstName": "Prerna",
+          "lastName": "Uniyal",
+          "initials": "P",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Faculty of Pharmacy, Graphic Era Hill University, Clement Town, Dehradun, Uttarakhand, 248002, India."
+              },
+              {
+                "affiliation": "Centre for Promotion of Research, Graphic Era (Deemed to be University), Clement Town, Dehradun, Uttarakhand, 248002, India."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Alam P",
+          "firstName": "Prawez",
+          "lastName": "Alam",
+          "initials": "P",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pharmacognosy, College of Pharmacy, Prince Sattam Bin Abdulaziz University, Al-Kharj, 11942, Saudi Arabia."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Aljarba TM",
+          "firstName": "Tariq Mohammed",
+          "lastName": "Aljarba",
+          "initials": "TM",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pharmacognosy, College of Pharmacy, Prince Sattam Bin Abdulaziz University, Al-Kharj, 11942, Saudi Arabia."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Gupta G",
+          "firstName": "Gaurav",
+          "lastName": "Gupta",
+          "initials": "G",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Centre for Research Impact & Outcome-Chitkara College of Pharmacy, Chitkara University, Rajpura, Punjab, 140401, India."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Hussain MS",
+          "firstName": "Md Sadique",
+          "lastName": "Hussain",
+          "initials": "MS",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Uttaranchal Institute of Pharmaceutical Sciences, Uttaranchal University, Prem Nagar, Dehradun, Uttarakhand, 248007, India. sadiquehussain@uumail.com."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "issue": "1",
+      "volume": "41",
+      "journalIssueId": 4204409,
+      "dateOfPublication": "2026 Jun",
+      "monthOfPublication": 6,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-06-01",
+      "journal": {
+        "title": "Metabolic brain disease",
+        "medlineAbbreviation": "Metab Brain Dis",
+        "isoabbreviation": "Metab Brain Dis",
+        "essn": "1573-7365",
+        "issn": "0885-7490",
+        "nlmid": "8610370"
+      }
+    },
+    "pubYear": "2026",
+    "pageInfo": "128",
+    "abstractText": "Alzheimer's disease (AD) is a progressive neurodegenerative disorder with limited treatment options, mainly due to late diagnosis and partial understanding of its molecular aspects. Traditional biomarker discovery approaches have significantly contributed to AD diagnostics but suffer from limitations. The advent of omics technologies (genomics, epigenomics, transcriptomics, proteomics, and metabolomics) has revolutionized the search for novel biomarkers by enabling comprehensive molecular profiling. Genomic studies have identified risk-associated variants such as APOE4, while epigenomic alterations, including DNA methylation alterations, offer insight into gene regulation in AD. Transcriptomic analyses, particularly single-cell and spatial transcriptomics, have uncovered molecular pathways linked to neuroinflammation and synaptic dysfunction. Proteomic advancements, including mass spectrometry and extracellular vesicle profiling, have identified potential blood- and CSF-based biomarkers for early-stage detection. Metabolomic and lipidomic studies indicate that cerebral glucose hypometabolism, insulin resistance, mitochondrial damage, redox imbalance, and disrupted lipid homeostasis are centra contributors to AD pathogenesis rather than secondary considerations of the disease. These metabolic dysfunctions may precede overt neurodegeneration and influence amyloid processing, tau phosphorylation, neuroinflammatory activation, and synaptic loss, thereby generating clinically informative biomarker signatures in blood and cerebrospinal fluid. Within this metabolism-centered paradigm, integrative multi-omics approaches are particularly valuable because they not only enhance biomarker specificity, but also connect molecular signatures with bioenergetic and immune-mediated mechanisms of disease. Accordingly, integrative multi-omics approaches improve biomarker specificity and predictive power, thereby supporting the development of precision medicine and targeted therapeutic interventions. Nevertheless, important challenges remain, including data integration, reproducibility, and clinical translation.",
+    "affiliation": "Independent Researcher, Abu Dhabi, United Arab Emirates.",
+    "publicationStatus": "epublish",
+    "language": "eng",
+    "pubModel": "Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "Review",
+        "Journal Article"
+      ]
+    },
+    "keywordList": {
+      "keyword": [
+        "Early diagnosis",
+        "Biomarkers",
+        "Translational Research",
+        "Multi-omics Approaches"
+      ]
+    },
+    "subsetList": {
+      "subset": [
+        {
+          "code": "IM",
+          "name": "Index Medicus"
+        }
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1007/s11011-026-01873-1"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "Y",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-06",
+    "firstIndexDate": "2026-06-07",
+    "dateOfRevision": "2026-06-06",
+    "electronicPublicationDate": "2026-06-06",
+    "firstPublicationDate": "2026-06-06",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42250568",
+    "source": "MED",
+    "pmid": "42250568",
+    "doi": "10.1016/j.nutres.2026.05.002",
+    "title": "Choline, a nexus for neurocognitive nutrients: A narrative review. ",
+    "authorString": "Boldon N, Strupp B, Cherrington B, Prather J, Keith JF.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Boldon N",
+          "firstName": "Naomi",
+          "lastName": "Boldon",
+          "initials": "N",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Biomedical Sciences PhD Candidate, University of Wyoming, 1000 E. University Ave., AG 3021, Laramie, WY 82071."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Strupp B",
+          "firstName": "Barbara",
+          "lastName": "Strupp",
+          "initials": "B",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Division of Nutritional Sciences, Cornell University, 102 Savage Hall, Ithaca, NY 14853."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Cherrington B",
+          "firstName": "Brian",
+          "lastName": "Cherrington",
+          "initials": "B",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Zoology and Physiology, University of Wyoming, 1000 E. University Ave., BS 415, Laramie, WY 82071."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Prather J",
+          "firstName": "Jonathan",
+          "lastName": "Prather",
+          "initials": "J",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Zoology and Physiology, University of Wyoming, 1000 E. University Ave., BS 200A, Laramie, WY 82071."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Keith JF",
+          "firstName": "Jill Fabricius",
+          "lastName": "Keith",
+          "initials": "JF",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Family and Consumer Sciences, University of Wyoming, 1000 E. University Ave., AG 251, Laramie, WY 82071. Electronic address: Jkeith5@uwyo.edu."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "volume": "151",
+      "journalIssueId": 4202581,
+      "dateOfPublication": "2026 May",
+      "monthOfPublication": 5,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-05-01",
+      "journal": {
+        "title": "Nutrition research (New York, N.Y.)",
+        "medlineAbbreviation": "Nutr Res",
+        "isoabbreviation": "Nutr Res",
+        "essn": "1879-0739",
+        "issn": "0271-5317",
+        "nlmid": "8303331"
+      }
+    },
+    "pubYear": "2026",
+    "pageInfo": "139-176",
+    "abstractText": "Choline is a critical but often overlooked essential nutrient with a well-characterized biological role in early neurodevelopment and a plausible, though not yet fully established in humans, role in lifelong cognitive function. This narrative review examines the importance of choline, particularly during fetal and neonatal development, and considers biological mechanisms, including epigenetic programming through DNA and histone methylation, that may contribute to its long-term beneficial effects. A structured literature search was conducted using PubMed and Google Scholar, supplemented by reference list review. By synthesizing evidence from animal models and the more limited body of human studies, this review evaluates choline's plausible role in fetal brain development, cognitive function, neuroprotection across the lifespan, and its potential to attenuate neurocognitive impairments associated with various neurological disorders and environmental insults. Although preclinical data are extensive and mechanistically compelling, human trial evidence remains limited in scale and duration, and causal conclusions for most outcomes cannot yet be drawn. Despite these limitations, current intake in the United States and abroad falls consistently short of recommendations, particularly among pregnant women. The findings of this review highlight the need for increased clinical awareness of choline's significance, evaluation of prenatal supplementation protocols, and continued research to inform dietary guidelines, especially during critical periods of development. Future research directions should include large-scale human trials to establish optimal intake across different life stages and to clarify the molecular mechanisms mediating choline's effects. Prioritizing choline in public health and research efforts during pregnancy and early development may offer meaningful opportunities to support neurocognitive outcomes at the population level.",
+    "affiliation": "Biomedical Sciences PhD Candidate, University of Wyoming, 1000 E. University Ave., AG 3021, Laramie, WY 82071.",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Review",
+        "Journal Article"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1016/j.nutres.2026.05.002"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-06",
+    "firstIndexDate": "2026-06-07",
+    "dateOfRevision": "2026-06-06",
+    "electronicPublicationDate": "2026-05-12",
+    "firstPublicationDate": "2026-05-12",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42250080",
+    "source": "MED",
+    "pmid": "42250080",
+    "doi": "10.1007/s12672-026-05372-8",
+    "title": "EGFL6 predicts unfavorable prognosis and serves as a potential indicator in esophageal carcinoma.",
+    "authorString": "Jiang H, Zhu J, Lei Z, Yimamu T, Zhang X, Muhetaer A, Chen H, Aierken A, Abudourousuli A.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Jiang H",
+          "firstName": "Huijuan",
+          "lastName": "Jiang",
+          "initials": "H",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pathology, The First People's Hospital of Kashi Prefecture, Kashi, Xinjiang, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zhu J",
+          "firstName": "Junling",
+          "lastName": "Zhu",
+          "initials": "J",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pathology, The First People's Hospital of Kashi Prefecture, Kashi, Xinjiang, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Lei Z",
+          "firstName": "Zhang",
+          "lastName": "Lei",
+          "initials": "Z",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pathology, The First People's Hospital of Kashi Prefecture, Kashi, Xinjiang, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Yimamu T",
+          "firstName": "Tuxunayi",
+          "lastName": "Yimamu",
+          "initials": "T",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pathology, The First People's Hospital of Kashi Prefecture, Kashi, Xinjiang, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zhang X",
+          "firstName": "Xinhong",
+          "lastName": "Zhang",
+          "initials": "X",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pathology, The First People's Hospital of Kashi Prefecture, Kashi, Xinjiang, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Muhetaer A",
+          "firstName": "Aishanjiang",
+          "lastName": "Muhetaer",
+          "initials": "A",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Thoracic Surgery, The First People's Hospital of Kashi Prefecture, Kashi, Xinjiang, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Chen H",
+          "firstName": "Hailin",
+          "lastName": "Chen",
+          "initials": "H",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Thoracic Surgery, The First People's Hospital of Kashi Prefecture, Kashi, Xinjiang, China. 1307473484@qq.com."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Aierken A",
+          "firstName": "Amanjiang",
+          "lastName": "Aierken",
+          "initials": "A",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Cardiac Surgery, The First People's Hospital of Kashi Prefecture, Kashi,, Xinjiang, China. 124615335@qq.com."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Abudourousuli A",
+          "firstName": "Ainiwaerjiang",
+          "lastName": "Abudourousuli",
+          "initials": "A",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pathology, The First People's Hospital of Kashi Prefecture, Kashi, Xinjiang, China. abudursli@mail2.sysu.edu.cn."
+              },
+              {
+                "affiliation": "Kashi Prefecture Cancer Research Institute, The First People's Hospital of Kashi Prefecture, Kashi, Xinjiang, China. abudursli@mail2.sysu.edu.cn."
+              },
+              {
+                "affiliation": "Institute of Etiology and Metabolic Diseases in Pamir Plateau Area, Kashi University, Kashi, Xinjiang, China. abudursli@mail2.sysu.edu.cn."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "journalIssueId": 4204406,
+      "dateOfPublication": "2026 Jun",
+      "monthOfPublication": 6,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-06-01",
+      "journal": {
+        "title": "Discover oncology",
+        "medlineAbbreviation": "Discov Oncol",
+        "isoabbreviation": "Discov Oncol",
+        "essn": "2730-6011",
+        "issn": "2730-6011",
+        "nlmid": "101775142"
+      }
+    },
+    "pubYear": "2026",
+    "abstractText": "<h4>Background</h4>The EGF-like domain multiple 6 (EGFL6) has been documented as an oncogene across diverse cancer types. Despite its known importance in tumorigenesis, EGFL6's involvement in esophageal carcinoma (ESCA) remains largely unexplored. Herein, we integrated multi-source omics data to characterize EGFL6's expression landscape, biological functions, and immunological implications in ESCA-with a focus on its prognostic value.<h4>Methods</h4>To identify dysregulated basement membrane-related genes (BMRGs) in ESCA, we performed Venn overlap analysis on RNA-seq data from The Cancer Genome Atlas (TCGA), Gene Expression Omnibus (GEO), and a curated BMRG reference list. Weighted gene co-expression analysis (WGCNA) was used to identify EGFL6-related modules and functional enrichment of differentially expressed genes (DEGs) were identified via Gene Ontology (GO), Kyoto Encyclopedia of Genes and Genomes (KEGG), and gene set enrichment analysis (GSEA). EGFL6-specific epigenetic (DNA methylation) and genetic alterations were validated using Methsurv and cBioPortal. Single-sample GSEA (ssGSEA) was applied to explore immune infiltration and its correlation with EGFL6. Prognostic significance of EGFL6 was examined via Kaplan-Meier and receiver operating characteristic (ROC) analyses.<h4>Results</h4>Venn overlap analysis indicated EGFL6 as a significantly overexpressed gene in ESCA that closely correlated with multiple clinical and pathological features. WGCNA and subsequent functional enrichment analysis revealed that EGFL6-related DEGs participate in critical biological processes. Kaplan-Meier analysis demonstrated that increased EGFL6 contributed to reduced disease-specific survival (DSS) and progression-free interval (PFI) in patients with ESCA. In vitro experiments confirmed that EGFL6 promotes ESCA by enhancing cell proliferation, invasion and regulating cell-cycle progression.<h4>Conclusion</h4>EGFL6 is significantly upregulated in ESCA and is related to various clinical factors, immune modulation and reduced prognosis. EGFL6 could be identified as a novel prognostic biomarker and a viable therapeutic target for the development of personalized treatment approaches in ESCA.",
+    "affiliation": "Department of Pathology, The First People's Hospital of Kashi Prefecture, Kashi, Xinjiang, China.",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "Journal Article"
+      ]
+    },
+    "grantsList": {
+      "grant": [
+        {
+          "grantId": "202501011",
+          "agency": "Sponsored by Xinjiang Medical Association Medical research Project Fund",
+          "orderIn": 0
+        },
+        {
+          "grantId": "2023D01F12",
+          "agency": "Sponsored by the Natural Science Foundation of Xinjiang Uygur Autonomous Region",
+          "orderIn": 0
+        },
+        {
+          "grantId": "SKL-HIDCA-2024-KY3",
+          "agency": "The State Key Laboratory of Pathogenesis, Prevention, Treatment of Central Asian High Incidence Diseases and The First People's Hospital of Kashi Prefecture Fund",
+          "orderIn": 0
+        },
+        {
+          "grantId": "2022D01C651",
+          "agency": "Sponsered by the Natural Science Foundation of Xinjiang Uygur Autonomous Region",
+          "orderIn": 0
+        },
+        {
+          "grantId": "YXY2025ZD05",
+          "agency": "Open research grant from the Institute of Etiology and Metabolic Diseases in Pamir Plateau Area, Kashi University",
+          "orderIn": 0
+        }
+      ]
+    },
+    "keywordList": {
+      "keyword": [
+        "Prognosis",
+        "Esophageal carcinoma",
+        "Egfl6",
+        "Basement Membrane-related Genes"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1007/s12672-026-05372-8"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-06",
+    "firstIndexDate": "2026-06-07",
+    "dateOfRevision": "2026-06-06",
+    "electronicPublicationDate": "2026-06-06",
+    "firstPublicationDate": "2026-06-06",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42250605",
+    "source": "MED",
+    "pmid": "42250605",
+    "doi": "10.1016/j.ajcnut.2026.101385",
+    "title": "Low folate status and related polymorphisms are associated with lower sperm quality in healthy men: The Led-Fertyl cross-sectional study. ",
+    "authorString": "Eigbefoh-Addeh A, Salas-Huetos A, Ramos-Rodríguez C, Santos-Calderón LA, Agarwal R, Salas-Salvadó J, Babio N, McCann A, Ueland PM, Murphy MM.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Eigbefoh-Addeh A",
+          "firstName": "Ailende",
+          "lastName": "Eigbefoh-Addeh",
+          "initials": "A",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Unit of Preventive Medicine and Biostatistics, Faculty of Medicine and Health Sciences, Universitat Rovira i Virgili, Reus, Spain; Institut de Recerca Biomèdica Catalunya Sud (IRBCatSud), Reus, Spain; Research Group, Alimentació, Nutrició, Desenvolupament i Salut Mental (ANUT-DSM)."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Salas-Huetos A",
+          "firstName": "Albert",
+          "lastName": "Salas-Huetos",
+          "initials": "A",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Unit of Preventive Medicine and Biostatistics, Faculty of Medicine and Health Sciences, Universitat Rovira i Virgili, Reus, Spain; Institut de Recerca Biomèdica Catalunya Sud (IRBCatSud), Reus, Spain; Research Group, Alimentació, Nutrició, Desenvolupament i Salut Mental (ANUT-DSM); Centro de Investigación Biomédica en Red Fisiopatología de la Obesidad y la Nutrición (CIBEROBN), Institute of Health Carlos III, Madrid, Spain; Department of Nutrition, Harvard T.H. Chan School of Public Health, Harvard University, Boston, MA, USA. Electronic address: albert.salas@urv.cat."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Ramos-Rodríguez C",
+          "firstName": "Carla",
+          "lastName": "Ramos-Rodríguez",
+          "initials": "C",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Unit of Preventive Medicine and Biostatistics, Faculty of Medicine and Health Sciences, Universitat Rovira i Virgili, Reus, Spain; Institut de Recerca Biomèdica Catalunya Sud (IRBCatSud), Reus, Spain; Research Group, Alimentació, Nutrició, Desenvolupament i Salut Mental (ANUT-DSM)."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Santos-Calderón LA",
+          "firstName": "Luis A",
+          "lastName": "Santos-Calderón",
+          "initials": "LA",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Unit of Preventive Medicine and Biostatistics, Faculty of Medicine and Health Sciences, Universitat Rovira i Virgili, Reus, Spain; Institut de Recerca Biomèdica Catalunya Sud (IRBCatSud), Reus, Spain; Research Group, Alimentació, Nutrició, Desenvolupament i Salut Mental (ANUT-DSM)."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Agarwal R",
+          "firstName": "Rashmi",
+          "lastName": "Agarwal",
+          "initials": "R",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Institut de Recerca Biomèdica Catalunya Sud (IRBCatSud), Reus, Spain; Research Group, Alimentació, Nutrició, Desenvolupament i Salut Mental (ANUT-DSM); Centro de Investigación Biomédica en Red Fisiopatología de la Obesidad y la Nutrición (CIBEROBN), Institute of Health Carlos III, Madrid, Spain; Unit of Human Nutrition, Department of Biochemistry & Biotechnology, Faculty of Medicine and Health Sciences, Universitat Rovira i Virgili, Reus, Spain."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Salas-Salvadó J",
+          "firstName": "Jordi",
+          "lastName": "Salas-Salvadó",
+          "initials": "J",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Institut de Recerca Biomèdica Catalunya Sud (IRBCatSud), Reus, Spain; Research Group, Alimentació, Nutrició, Desenvolupament i Salut Mental (ANUT-DSM); Centro de Investigación Biomédica en Red Fisiopatología de la Obesidad y la Nutrición (CIBEROBN), Institute of Health Carlos III, Madrid, Spain; Unit of Human Nutrition, Department of Biochemistry & Biotechnology, Faculty of Medicine and Health Sciences, Universitat Rovira i Virgili, Reus, Spain."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Babio N",
+          "firstName": "Nancy",
+          "lastName": "Babio",
+          "initials": "N",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Institut de Recerca Biomèdica Catalunya Sud (IRBCatSud), Reus, Spain; Research Group, Alimentació, Nutrició, Desenvolupament i Salut Mental (ANUT-DSM); Centro de Investigación Biomédica en Red Fisiopatología de la Obesidad y la Nutrición (CIBEROBN), Institute of Health Carlos III, Madrid, Spain; Unit of Human Nutrition, Department of Biochemistry & Biotechnology, Faculty of Medicine and Health Sciences, Universitat Rovira i Virgili, Reus, Spain."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "McCann A",
+          "firstName": "Adrian",
+          "lastName": "McCann",
+          "initials": "A",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Bevital A/S, Bergen Norway."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Ueland PM",
+          "firstName": "Per M",
+          "lastName": "Ueland",
+          "initials": "PM",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Bevital A/S, Bergen Norway."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Murphy MM",
+          "firstName": "Michelle M",
+          "lastName": "Murphy",
+          "initials": "MM",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Unit of Preventive Medicine and Biostatistics, Faculty of Medicine and Health Sciences, Universitat Rovira i Virgili, Reus, Spain; Institut de Recerca Biomèdica Catalunya Sud (IRBCatSud), Reus, Spain; Research Group, Alimentació, Nutrició, Desenvolupament i Salut Mental (ANUT-DSM); Centro de Investigación Biomédica en Red Fisiopatología de la Obesidad y la Nutrición (CIBEROBN), Institute of Health Carlos III, Madrid, Spain."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "journalIssueId": 4210660,
+      "dateOfPublication": "2026 Jun",
+      "monthOfPublication": 6,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-06-01",
+      "journal": {
+        "title": "The American journal of clinical nutrition",
+        "medlineAbbreviation": "Am J Clin Nutr",
+        "isoabbreviation": "Am J Clin Nutr",
+        "essn": "1938-3207",
+        "issn": "0002-9165",
+        "nlmid": "0376027"
+      }
+    },
+    "pubYear": "2026",
+    "pageInfo": "101385",
+    "abstractText": "Folate-mediated one-carbon metabolism is essential for DNA synthesis, methylation and genomic integrity during spermatogenesis. To study the associations between status in folate, cobalamin, homocysteine, single nucleotide polymorphisms affecting folate-mediated one-carbon metabolism and sperm quality. In this cross-sectional study, 197 healthy men (18-40 years) were recruited between 2021-2023. Plasma folate, red blood cell folate, plasma cobalamin, total homocysteine, and single nucleotide polymorphisms affecting folate and cobalamin status were determined. Sperm quality parameters were assessed by WHO 2010 criteria. Associations between B-vitamin status, genetic polymorphisms, and sperm quality parameters were assessed using multivariable linear and logistic regression analysis. Median (P25, P75) plasma folate was 14.2 nmol/L (11.0, 17.8) and red blood cell folate was 678.2 nmol/L (582.3, 785.0). Deficiency, plasma folate <7 nmol/L and red blood cell folate (<340 nmol/L), occurred in 4.6% (95%CI: 2.4, 8.5) and 2.6% (95%CI: 1.1, 5.8) of participants, respectively. Lowest compared with highest tertile plasma folate (<11.9 vs ≥17.0 nmol/L) and RBCF (<625.0 vs ≥742.1 nmo/L) were associated with lower sperm count (B = -0.428, SE: 0.196 and B = -0.459, SE: 0.183, respectively) and higher odds of altered seminogram (OR = 3.367, 95% CI: 1.379, 8.220 and OR = 2.305, 95% CI: 1.002, 5.306, respectively). Median (P25, P75) plasma cobalamin was 239.1 (203.0, 282.3) pmol/L and plasma total homocysteine was 9.6 μmol/L (7.8, 11.5). Cobalamin deficiency (<148 pmol/L) and plasma total homocysteine >15 μmol/L were observed in 1.5% (95%CI: 0.5, 4.4) 5.6% (95%CI: 3.1, 9.7) of participants, respectively. Neither were associated with sperm quality parameters. The MTHFD1 1958AA compared with GG genotype was associated with reduced progressive motility (B = -7.732%, SE: 3.782), and higher odds of altered seminogram (OR = 4.388, 95%CI: 1.407, 13.687). Low folate status is negatively associated with sperm quality. The MTHFD1 1958 AA genotype may be negatively associated with sperm quality.",
+    "affiliation": "Unit of Preventive Medicine and Biostatistics, Faculty of Medicine and Health Sciences, Universitat Rovira i Virgili, Reus, Spain; Institut de Recerca Biomèdica Catalunya Sud (IRBCatSud), Reus, Spain; Research Group, Alimentació, Nutrició, Desenvolupament i Salut Mental (ANUT-DSM).",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Journal Article"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1016/j.ajcnut.2026.101385"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-06",
+    "firstIndexDate": "2026-06-07",
+    "dateOfRevision": "2026-06-06",
+    "electronicPublicationDate": "2026-06-05",
+    "firstPublicationDate": "2026-06-05",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42251053",
+    "source": "MED",
+    "pmid": "42251053",
+    "doi": "10.1038/s41597-026-07589-2",
+    "title": "High quality genome assemblies of African cattle breeds using PacBio HiFi sequencing. ",
+    "authorString": "Houaga I, Bhati M, Nziku Z, Nguluma A, Msuta G, Ntanganedzeni M, Nesengani LT, Ogugo M, Sagbo DCY, Zorobouragui L, Boco MBY, Djikeng A, Prendergast JGD, Gorjanc G, Becher H.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Houaga I",
+          "firstName": "Isidore",
+          "lastName": "Houaga",
+          "initials": "I",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0003-4128-5551"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "The Roslin Institute, Royal (Dick) School of Veterinary Studies, University of Edinburgh, Easter Bush Campus, Midlothian, EH25 9RG, UK. isidore.houaga@roslin.ed.ac.uk."
+              },
+              {
+                "affiliation": "Centre for Tropical Livestock Genetics and Health, Easter Bush, Midlothian, EH25 9RG, UK. isidore.houaga@roslin.ed.ac.uk."
+              },
+              {
+                "affiliation": "Department of Agriculture and Animal Health, College of Agriculture and Environmental Sciences, The University of South Africa, Cnr Justice Mahomed & Steve Biko Streets, PO Box 392, Pretoria, South Africa. isidore.houaga@roslin.ed.ac.uk."
+              },
+              {
+                "affiliation": "The International Livestock Research Institute, PO Box 30709, Nairobi, Kenya. isidore.houaga@roslin.ed.ac.uk."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Bhati M",
+          "firstName": "Meenu",
+          "lastName": "Bhati",
+          "initials": "M",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "The Roslin Institute, Royal (Dick) School of Veterinary Studies, University of Edinburgh, Easter Bush Campus, Midlothian, EH25 9RG, UK."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Nziku Z",
+          "firstName": "Zabron",
+          "lastName": "Nziku",
+          "initials": "Z",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Tanzania Livestock Research Institute (TALIRI), Dodoma, Tanzania."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Nguluma A",
+          "firstName": "Athumani",
+          "lastName": "Nguluma",
+          "initials": "A",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Animal, Aquaculture, and Range Sciences, Sokoine University of Agriculture, Morogoro, Tanzania."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Msuta G",
+          "firstName": "Gilbert",
+          "lastName": "Msuta",
+          "initials": "G",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Tanzania Livestock Research Institute (TALIRI), Dodoma, Tanzania."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Ntanganedzeni M",
+          "firstName": "Mapholi",
+          "lastName": "Ntanganedzeni",
+          "initials": "M",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0003-4507-6669"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Agriculture and Animal Health, College of Agriculture and Environmental Sciences, The University of South Africa, Cnr Justice Mahomed & Steve Biko Streets, PO Box 392, Pretoria, South Africa."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Nesengani LT",
+          "firstName": "Lucky T",
+          "lastName": "Nesengani",
+          "initials": "LT",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0003-2678-8425"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Agriculture and Animal Health, College of Agriculture and Environmental Sciences, The University of South Africa, Cnr Justice Mahomed & Steve Biko Streets, PO Box 392, Pretoria, South Africa."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Ogugo M",
+          "firstName": "Moses",
+          "lastName": "Ogugo",
+          "initials": "M",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "The International Livestock Research Institute, PO Box 30709, Nairobi, Kenya."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Sagbo DCY",
+          "firstName": "Duhamel C Y",
+          "lastName": "Sagbo",
+          "initials": "DCY",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "African Institute of Data Driven Animal and Plant Breeding and Genetics (DATAGENES-AFRICA), Aplahoue, Benin."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zorobouragui L",
+          "firstName": "Loukaïya",
+          "lastName": "Zorobouragui",
+          "initials": "L",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Laboratory of Ecology, Health and Animal Production (LESPA), Faculty of Agronomy, University of Parakou, Parakou, Benin."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Boco MBY",
+          "firstName": "Mariano B Y",
+          "lastName": "Boco",
+          "initials": "MBY",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Ferme d'Élevage de Samiondji BP: 50 Covè, Covè, Benin."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Djikeng A",
+          "firstName": "Appolinaire",
+          "lastName": "Djikeng",
+          "initials": "A",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Agriculture and Animal Health, College of Agriculture and Environmental Sciences, The University of South Africa, Cnr Justice Mahomed & Steve Biko Streets, PO Box 392, Pretoria, South Africa."
+              },
+              {
+                "affiliation": "The International Livestock Research Institute, PO Box 30709, Nairobi, Kenya."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Prendergast JGD",
+          "firstName": "James G D",
+          "lastName": "Prendergast",
+          "initials": "JGD",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "The Roslin Institute, Royal (Dick) School of Veterinary Studies, University of Edinburgh, Easter Bush Campus, Midlothian, EH25 9RG, UK."
+              },
+              {
+                "affiliation": "Centre for Tropical Livestock Genetics and Health, Easter Bush, Midlothian, EH25 9RG, UK."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Gorjanc G",
+          "firstName": "Gregor",
+          "lastName": "Gorjanc",
+          "initials": "G",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0001-8008-2787"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "The Roslin Institute, Royal (Dick) School of Veterinary Studies, University of Edinburgh, Easter Bush Campus, Midlothian, EH25 9RG, UK."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Becher H",
+          "firstName": "Hannes",
+          "lastName": "Becher",
+          "initials": "H",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "The Roslin Institute, Royal (Dick) School of Veterinary Studies, University of Edinburgh, Easter Bush Campus, Midlothian, EH25 9RG, UK."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "authorIdList": {
+      "authorId": [
+        {
+          "type": "ORCID",
+          "value": "0000-0001-8008-2787"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0003-2678-8425"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0003-4128-5551"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0003-4507-6669"
+        }
+      ]
+    },
+    "journalInfo": {
+      "journalIssueId": 4203757,
+      "dateOfPublication": "2026 Jun",
+      "monthOfPublication": 6,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-06-01",
+      "journal": {
+        "title": "Scientific data",
+        "medlineAbbreviation": "Sci Data",
+        "isoabbreviation": "Sci Data",
+        "essn": "2052-4463",
+        "issn": "2052-4463",
+        "nlmid": "101640192"
+      }
+    },
+    "pubYear": "2026",
+    "abstractText": "Africa has a uniquely rich cattle diversity of ~150 breeds comprising the Bos taurus indicus sub-species, Bos taurus taurus, and their crosses. These represent ~23% of the global cattle population. However, high quality, representative assemblies are limited for African cattle and especially for indicine breeds. Here we built high quality de novo assemblies for five important African indigenous cattle breeds using PacBio HiFi sequencing: Lagune (Bos taurus taurus), Gudali, Iringa Red and Singida White (Bos taurus indicus), and Mpwapwa (Bos taurus taurus x Bos taurus indicus). These new assemblies are the most contiguous and complete African cattle assemblies produced so far, with genome sizes of 3.25-3.36 Gb, contiguity N50s ranging from 83.59 Mb to 97.87 Mb and scaffold N50s from 100.30 Mb to 113.37 Mb. BUSCO genome completeness scores were also higher than 99.68%, indicative of highly contiguous assemblies. These improved and highly contiguous genome assemblies are consequently a valuable resource for future African and global livestock genomic studies.",
+    "affiliation": "The Roslin Institute, Royal (Dick) School of Veterinary Studies, University of Edinburgh, Easter Bush Campus, Midlothian, EH25 9RG, UK. isidore.houaga@roslin.ed.ac.uk.",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Journal Article"
+      ]
+    },
+    "grantsList": {
+      "grant": [
+        {
+          "grantId": "BBS/E/D/30002275, BBS/E/D/10002070, BBS/E/RL/230001A, BBS/E/RL/230001B, and BBS/E/RL/230001C",
+          "agency": "Biotechnology and Biological Sciences Research Council",
+          "orderIn": 0
+        },
+        {
+          "grantId": "INV-040641",
+          "agency": "Bill and Melinda Gates Foundation (Bill & Melinda Gates Foundation)",
+          "orderIn": 0
+        },
+        {
+          "grantId": "UKSBS PR18037",
+          "agency": "RCUK | Natural Environment Research Council (NERC)",
+          "orderIn": 0
+        }
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1038/s41597-026-07589-2"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-06",
+    "firstIndexDate": "2026-06-07",
+    "dateOfRevision": "2026-06-06",
+    "electronicPublicationDate": "2026-06-06",
+    "firstPublicationDate": "2026-06-06",
+    "matched_keywords": [
+      "PacBio"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1247325",
+    "source": "PPR",
+    "doi": "10.64898/2026.06.04.730269",
+    "title": "Genome Assembly of the Green Revolution Wheat Cultivar Pavon 76 Establishes a Reference for CIMMYT-Derived Wheat",
+    "authorString": "Eurmsirilerd E, Resendiz M, Lana G, Li Q, Nawmi F, Chang R, Zhang W, Wu TX, Sun Z, Wang L, Lonardi S, Melonek J, Chater JM, Jia Z.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Eurmsirilerd E",
+          "firstName": "Ethan",
+          "lastName": "Eurmsirilerd",
+          "initials": "E"
+        },
+        {
+          "fullName": "Resendiz M",
+          "firstName": "Mariano",
+          "lastName": "Resendiz",
+          "initials": "M"
+        },
+        {
+          "fullName": "Lana G",
+          "firstName": "Giuseppe",
+          "lastName": "Lana",
+          "initials": "G"
+        },
+        {
+          "fullName": "Li Q",
+          "firstName": "Qing",
+          "lastName": "Li",
+          "initials": "Q"
+        },
+        {
+          "fullName": "Nawmi F",
+          "firstName": "Fatima",
+          "lastName": "Nawmi",
+          "initials": "F"
+        },
+        {
+          "fullName": "Chang R",
+          "firstName": "Rendell",
+          "lastName": "Chang",
+          "initials": "R"
+        },
+        {
+          "fullName": "Zhang W",
+          "firstName": "Wei",
+          "lastName": "Zhang",
+          "initials": "W"
+        },
+        {
+          "fullName": "Wu TX",
+          "firstName": "Timothy",
+          "lastName": "Wu",
+          "initials": "TX"
+        },
+        {
+          "fullName": "Sun Z",
+          "firstName": "Zuoming",
+          "lastName": "Sun",
+          "initials": "Z"
+        },
+        {
+          "fullName": "Wang L",
+          "firstName": "Lili",
+          "lastName": "Wang",
+          "initials": "L"
+        },
+        {
+          "fullName": "Lonardi S",
+          "firstName": "Stefano",
+          "lastName": "Lonardi",
+          "initials": "S"
+        },
+        {
+          "fullName": "Melonek J",
+          "firstName": "Joanna",
+          "lastName": "Melonek",
+          "initials": "J"
+        },
+        {
+          "fullName": "Chater JM",
+          "firstName": "John",
+          "lastName": "Chater",
+          "initials": "JM"
+        },
+        {
+          "fullName": "Jia Z",
+          "firstName": "Zhenyu",
+          "lastName": "Jia",
+          "initials": "Z"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "Common wheat (Triticum aestivum L.) is a cornerstone of global food security. However, the standard reference genome, IWGSC RefSeq v2.1, is derived from wheat cultivar Chinese Spring, a historically important lineage that is not representative of modern cultivated wheat. In contrast, Pavon 76 is a CIMMYT Green Revolution wheat cultivar grown worldwide and is present in the pedigrees of numerous elite wheats, as well as in the genetic background of over 600 cytogenetic stocks used in studies ranging from recombination to male sterility. As no Pavon 76 reference has been reported, interpretation of these Pavon 76-derived stocks has relied on the genetically distant IWGSC RefSeq v2.1. To address this gap, we generated PacBio HiFi reads and Hi-C read pairs to assemble Pavon 76's genome. The final assembly comprises the expected 21 chromosomes, spans 15 Gb, and has an N50 of 710 Mb. Annotation identified 167,201 genes, of which 89.5% were functionally annotated. Comparative sequence and gene synteny analysis between Pavon 76 and IWGSC RefSeq v2.1 revealed significant structural divergence, establishing that IWGSC RefSeq v2.1 is not fully representative of modern wheats. This robust Pavon 76 assembly establishes the first chromosome-scale de novo assembly of a CIMMYT-derived wheat and provides a foundation for future genetic and genomic studies.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.06.04.730269"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-07",
+    "firstIndexDate": "2026-06-07",
+    "firstPublicationDate": "2026-06-05",
+    "matched_keywords": [
+      "PacBio"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1247130",
+    "source": "PPR",
+    "doi": "10.21203/rs.3.rs-9588231/v1",
+    "title": "High-quality de novo genome assembly reveals historic population decline in the critically endangered Pternistis bicalcaratus ayesha",
+    "authorString": "Rana H, Ichen A, Forcina G, Patel K, Dávila JA, Chattopadhyay B, Garg KM.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Rana H",
+          "firstName": "Harshita",
+          "lastName": "Rana",
+          "initials": "H"
+        },
+        {
+          "fullName": "Ichen A",
+          "firstName": "Abdellah",
+          "lastName": "Ichen",
+          "initials": "A"
+        },
+        {
+          "fullName": "Forcina G",
+          "firstName": "Giovanni",
+          "lastName": "Forcina",
+          "initials": "G"
+        },
+        {
+          "fullName": "Patel K",
+          "firstName": "Kirnalee",
+          "lastName": "Patel",
+          "initials": "K"
+        },
+        {
+          "fullName": "Dávila JA",
+          "firstName": "Jose Antonio",
+          "lastName": "Dávila",
+          "initials": "JA"
+        },
+        {
+          "fullName": "Chattopadhyay B",
+          "firstName": "Balaji",
+          "lastName": "Chattopadhyay",
+          "initials": "B"
+        },
+        {
+          "fullName": "Garg KM",
+          "firstName": "Kritika",
+          "lastName": "Garg",
+          "initials": "KM"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "<title>Abstract</title>  <p>  Background  Galliform birds represent one of the most threatened avian groups globally, yet genomic resources are limited for many species. The double-spurred spurfowl (  <italic>Pternistis bicalcaratus)</italic>  is widely distributed in West Africa, but its northern subspecies,  <italic>P. b. ayesha</italic>  , is restricted to northwestern Morocco and is classified as critically endangered. In this study, we describe the first high-quality reference genome for  <italic>P. b. ayesha</italic>  and investigate its evolutionary and demographic history. Results  We generated Illumina short-read and PacBio continuous long-read and high-fidelity sequencing data from an adult male individual. Multiple genome assembly strategies, employing both hybrid and long-read approaches, were employed to obtain the most contiguous genome. The final genome assembly was 1.01 gigabases in size with 599 scaffolds and an N50 of 16.36 megabases, recovering 99 percent of conserved avian single-copy genes. Gene family evolution analyses revealed expansion in families related to cytoskeletal organisation, motor activity, muscle function, and keratinisation, consistent with adaptations observed in ground-dwelling game birds. The historical effective population size was reconstructed using the Pairwise Sequentially Markovian Coalescent model. Demographic reconstruction revealed that the effective population size peaked during MIS-7 and started declining in the Penultimate Glacial Period approximately 190 thousand years ago (kya), followed by a sustained long-term decline through the Late Pleistocene to the Holocene, with no evidence of recovery. Conclusion  These results suggest that prolonged demographic decline is in concordance with the present low population size of  <italic>P. b. ayesha</italic>  . Together with its restricted distribution, it highlights the vulnerability of the subspecies to environmental and anthropogenic pressures. The genomic resource generated here provides a foundation for future population genomic studies and will be valuable for informing conservation strategies for this geographically isolated and threatened subspecies.  </p>",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "Research Square",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.21203/rs.3.rs-9588231/v1"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "versionList": {
+      "version": [
+        {
+          "id": "PPR1247130",
+          "source": "PPR",
+          "firstPublishDate": "2026-06-06",
+          "versionNumber": 1,
+          "pubTypeList": {
+            "pubType": [
+              "preprint"
+            ]
+          },
+          "hasEvaluations": "N"
+        }
+      ]
+    },
+    "versionNumber": 1,
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-07",
+    "firstIndexDate": "2026-06-07",
+    "firstPublicationDate": "2026-06-06",
+    "matched_keywords": [
+      "PacBio"
+    ],
+    "matched_journals": []
+  }
+]

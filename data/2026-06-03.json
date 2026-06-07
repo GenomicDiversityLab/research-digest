@@ -1,0 +1,23 @@
+{
+  "date": "2026-06-03",
+  "total": 103,
+  "by_source": {
+    "MED": 61,
+    "PPR": 42
+  },
+  "by_keyword": {
+    "Somatic mosaicism": 2,
+    "mosaic": 24,
+    "mosaic variant": 1,
+    "methylation": 50,
+    "PacBio": 14
+  },
+  "by_pinned_journal": {
+    "Cell": 2,
+    "Nature": 14,
+    "Science": 0
+  },
+  "pinned_paper_count": 16,
+  "failed": [],
+  "generated_at": "2026-06-04T08:01:49.715190+09:00"
+}

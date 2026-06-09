@@ -1,0 +1,2726 @@
+[
+  {
+    "id": "PMC13240452",
+    "source": "PMC",
+    "pmcid": "PMC13240452",
+    "fullTextIdList": {
+      "fullTextId": [
+        "PMC13240452"
+      ]
+    },
+    "title": "Behavioral Variability of Endangered Northern Pig‐Tailed Macaques in a Degraded Mosaic Habitat in Northeast Bangladesh",
+    "authorString": "Naher H, Akhter T, Ullah A, Siam M, Khan S, Islam M, Simon M, Ruppert N.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Naher H",
+          "firstName": "Habibon",
+          "lastName": "Naher",
+          "initials": "H",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Jagannath University"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Akhter T",
+          "firstName": "Tania",
+          "lastName": "Akhter",
+          "initials": "T",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Jagannath University"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Ullah A",
+          "firstName": "Asad",
+          "lastName": "Ullah",
+          "initials": "A",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Jagannath University"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Siam M",
+          "firstName": "Md. Shahriar",
+          "lastName": "Siam",
+          "initials": "M",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Jagannath University"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Khan S",
+          "firstName": "Shawkat Imam",
+          "lastName": "Khan",
+          "initials": "S",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Bangladesh National Museum"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Islam M",
+          "firstName": "Muhammad Saiful",
+          "lastName": "Islam",
+          "initials": "M",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Jagannath University"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Simon M",
+          "firstName": "Miriam",
+          "lastName": "Simon",
+          "initials": "M",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Behavioural Ecology Research Group, Institute of Biology, University of Leipzig"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Ruppert N",
+          "firstName": "Nadine",
+          "lastName": "Ruppert",
+          "initials": "N",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Chinese Academy of Sciences"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "issue": "5",
+      "volume": "16",
+      "journalIssueId": 4210974,
+      "dateOfPublication": "2026 May",
+      "monthOfPublication": 5,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-05-01",
+      "journal": {
+        "title": "Ecology and evolution",
+        "medlineAbbreviation": "Ecol Evol",
+        "issn": "2045-7758",
+        "nlmid": "101566408",
+        "essn": "2045-7758",
+        "isoabbreviation": "Ecol Evol"
+      }
+    },
+    "pubYear": "2026",
+    "language": "eng",
+    "pubModel": "Undetermined",
+    "pubTypeList": {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    },
+    "keywordList": {
+      "keyword": [
+        "Primates",
+        "Adaptation",
+        "Behavioral Plasticity",
+        "Macaca Leonina",
+        "Plantation Use"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13240452/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13240452/pdf/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13240452"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13240452?pdf=render"
+        }
+      ]
+    },
+    "isOpenAccess": "Y",
+    "inEPMC": "Y",
+    "inPMC": "Y",
+    "hasPDF": "Y",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "license": "cc by",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-08",
+    "firstIndexDate": "2026-06-08",
+    "fullTextReceivedDate": "2026-06-08",
+    "dateOfRevision": "2026-06-08",
+    "electronicPublicationDate": "2026-05-01",
+    "firstPublicationDate": "2026-05-01",
+    "matched_keywords": [
+      "mosaic"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PMC13239700",
+    "source": "PMC",
+    "pmcid": "PMC13239700",
+    "fullTextIdList": {
+      "fullTextId": [
+        "PMC13239700"
+      ]
+    },
+    "title": "Passive Acoustic Monitoring and Deep Learning Reveal a Lag From Rainfall to Gibbon Song Across a Mosaic Forest Landscape",
+    "authorString": "Owens A, Estrada E, Hockings K, Imron M, Mariaty, Sharma M, Maimunah S, Travers‐Cook T, Van Veen F, Erb W.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Owens A",
+          "firstName": "Alasdair F.",
+          "lastName": "Owens",
+          "initials": "A",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "University of Exeter"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Estrada E",
+          "firstName": "Erik",
+          "lastName": "Estrada",
+          "initials": "E",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Yayasan Borneo Nature Indonesia"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Hockings K",
+          "firstName": "Kimberley J.",
+          "lastName": "Hockings",
+          "initials": "K",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "University of Exeter"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Imron M",
+          "firstName": "Muhammed Ali",
+          "lastName": "Imron",
+          "initials": "M",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Universitas Gadjah Mada"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Mariaty",
+          "lastName": "Mariaty",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Universitas Muhammadiyah Palangkaraya"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Sharma M",
+          "firstName": "Manmohan D.",
+          "lastName": "Sharma",
+          "initials": "M",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "University of Exeter"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Maimunah S",
+          "firstName": "Siti",
+          "lastName": "Maimunah",
+          "initials": "S",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Instiper Yogyakarta"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Travers‐Cook T",
+          "firstName": "Tommy J.",
+          "lastName": "Travers‐Cook",
+          "initials": "T",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "University of British Columbia"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Van Veen F",
+          "firstName": "Frank J. F.",
+          "lastName": "Van Veen",
+          "initials": "F",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "University of Exeter"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Erb W",
+          "firstName": "Wendy M.",
+          "lastName": "Erb",
+          "initials": "W",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Cornell University"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "issue": "6",
+      "volume": "16",
+      "journalIssueId": 4210942,
+      "dateOfPublication": "2026 May",
+      "monthOfPublication": 5,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-05-01",
+      "journal": {
+        "title": "Ecology and evolution",
+        "medlineAbbreviation": "Ecol Evol",
+        "issn": "2045-7758",
+        "nlmid": "101566408",
+        "essn": "2045-7758",
+        "isoabbreviation": "Ecol Evol"
+      }
+    },
+    "pubYear": "2026",
+    "language": "eng",
+    "pubModel": "Undetermined",
+    "pubTypeList": {
+      "pubType": [
+        "research-article",
+        "Journal Article"
+      ]
+    },
+    "keywordList": {
+      "keyword": [
+        "Primates",
+        "Bioacoustics",
+        "Endangered species",
+        "Rainfall",
+        "Cnn",
+        "Automated Detection",
+        "Vocal Behaviour"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13239700/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13239700/pdf/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13239700"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13239700?pdf=render"
+        }
+      ]
+    },
+    "isOpenAccess": "Y",
+    "inEPMC": "Y",
+    "inPMC": "Y",
+    "hasPDF": "Y",
+    "hasBook": "N",
+    "hasSuppl": "Y",
+    "citedByCount": 0,
+    "hasData": "Y",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "license": "cc by",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-08",
+    "firstIndexDate": "2026-06-08",
+    "fullTextReceivedDate": "2026-06-08",
+    "dateOfRevision": "2026-06-08",
+    "electronicPublicationDate": "2026-05-27",
+    "firstPublicationDate": "2026-05-27",
+    "matched_keywords": [
+      "mosaic"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42252210",
+    "source": "MED",
+    "pmid": "42252210",
+    "doi": "10.3760/cma.j.cn112151-20260214-00129",
+    "title": "[Role and limitations of genome-wide DNA methylation profiling in the diagnosis of brain tumors]. ",
+    "authorString": "Teng LH, Lu DH.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Teng LH",
+          "firstName": "L H",
+          "lastName": "Teng",
+          "initials": "LH",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pathology, Xuanwu Hospital, Capital Medical University, Beijing 100053, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Lu DH",
+          "firstName": "D H",
+          "lastName": "Lu",
+          "initials": "DH",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pathology, Xuanwu Hospital, Capital Medical University, Beijing 100053, China."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "issue": "6",
+      "volume": "55",
+      "journalIssueId": 4211894,
+      "dateOfPublication": "2026 Jun",
+      "monthOfPublication": 6,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-06-01",
+      "journal": {
+        "title": "Zhonghua bing li xue za zhi = Chinese journal of pathology",
+        "medlineAbbreviation": "Zhonghua Bing Li Xue Za Zhi",
+        "issn": "0529-5807",
+        "nlmid": "0005331",
+        "isoabbreviation": "Zhonghua Bing Li Xue Za Zhi"
+      }
+    },
+    "pubYear": "2026",
+    "pageInfo": "507-510",
+    "abstractText": "Genome-wide DNA methylation profiling, a high-throughput epigenomic technology, systematically examines the methylation status of CpG sites across the genome to generate \"methylation fingerprints\" that reflect cellular origins and developmental states. This technique has emerged as a transformative tool in the diagnosis of central nervous system (CNS) tumors. This article introduces the principles of this technology, along with its significant applications and major limitations in the diagnosis of CNS tumors. It proposes that current pathological diagnosis of CNS tumors should adopt an integrated diagnostic model centered on the pathologist, emphasizing that methylation profiling serves as an adjunctive tool rather than a replacement. Any methylation-derived result must be interpreted within the comprehensive context of clinical, radiological, histopathological, and molecular data. In the future, with advances in explainable artificial intelligence, multi-omics integration, and international standardization efforts, this technology is expected to evolve from a \"revolutionary tool\" into an \"intelligent assistant\" deeply integrated with pathological diagnosis.",
+    "affiliation": "Department of Pathology, Xuanwu Hospital, Capital Medical University, Beijing 100053, China.",
+    "publicationStatus": "ppublish",
+    "language": "chi",
+    "pubModel": "Print",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Journal Article",
+        "English Abstract"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.3760/cma.j.cn112151-20260214-00129"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-07",
+    "firstIndexDate": "2026-06-08",
+    "dateOfRevision": "2026-06-07",
+    "firstPublicationDate": "2026-06-01",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42252934",
+    "source": "MED",
+    "pmid": "42252934",
+    "doi": "10.1093/plcell/koag167",
+    "title": "PRP8 regulates chromatin organization to enforce transcriptional gene silencing independent of DNA methylation. ",
+    "authorString": "Qi L, Zhuo W, Chen G, Qu S, Wang B, Mi Y, Li T, Fan L, Zhou Z, Fan LM, Deng XW, Sun L, Xue Y, Qian W.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Qi L",
+          "firstName": "Lijuan",
+          "lastName": "Qi",
+          "initials": "L",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0002-9846-7420"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "School of Advanced Agricultural Sciences, Peking University, Beijing 100871, China."
+              },
+              {
+                "affiliation": "Key Laboratory of Herbage and Endemic Crop Biology, Ministry of Education, School of Life Sciences, Inner Mongolia University, Hohhot, Inner Mongolia 010070, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zhuo W",
+          "firstName": "Wanqing",
+          "lastName": "Zhuo",
+          "initials": "W",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0001-5272-7242"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory for Gene Function and Modulation Research, School of Life Sciences, Peking University, Beijing 100871, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Chen G",
+          "firstName": "Guanyu",
+          "lastName": "Chen",
+          "initials": "G",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory of Microbial Technology, College of Life Sciences, Nanjing Normal University, Nanjing, 210023, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Qu S",
+          "firstName": "Shaofeng",
+          "lastName": "Qu",
+          "initials": "S",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0003-2960-6199"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "School of Advanced Agricultural Sciences, Peking University, Beijing 100871, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Wang B",
+          "firstName": "Bo",
+          "lastName": "Wang",
+          "initials": "B",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0009-0009-5693-6602"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Key Laboratory of Herbage and Endemic Crop Biology, Ministry of Education, School of Life Sciences, Inner Mongolia University, Hohhot, Inner Mongolia 010070, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Mi Y",
+          "firstName": "Yingjie",
+          "lastName": "Mi",
+          "initials": "Y",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0001-7527-5701"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory of Wheat Improvement, Peking University Institute of Advanced Agricultural Sciences, Shandong Laboratory of Advanced Agricultural Sciences in Weifang, Shandong, 261325, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Li T",
+          "firstName": "Tonghui",
+          "lastName": "Li",
+          "initials": "T",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory of Wheat Improvement, Peking University Institute of Advanced Agricultural Sciences, Shandong Laboratory of Advanced Agricultural Sciences in Weifang, Shandong, 261325, China."
+              },
+              {
+                "affiliation": "School of Plant Sciences and Food Security, Tel Aviv University, Tel Aviv, 69978, Israel."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Fan L",
+          "firstName": "Lingjiao",
+          "lastName": "Fan",
+          "initials": "L",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0009-0009-5184-9390"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Key Laboratory of Herbage and Endemic Crop Biology, Ministry of Education, School of Life Sciences, Inner Mongolia University, Hohhot, Inner Mongolia 010070, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zhou Z",
+          "firstName": "Zhi",
+          "lastName": "Zhou",
+          "initials": "Z",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory of Plant Environmental Resilience, College of Biological Sciences, Frontiers Science Center for Molecular Design Breeding (MOE), China Agricultural University, Beijing, 100193, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Fan LM",
+          "firstName": "Liu-Min",
+          "lastName": "Fan",
+          "initials": "LM",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0003-2155-4427"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory for Gene Function and Modulation Research, School of Life Sciences, Peking University, Beijing 100871, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Deng XW",
+          "firstName": "Xing-Wang",
+          "lastName": "Deng",
+          "initials": "XW",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0001-8709-1467"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "School of Advanced Agricultural Sciences, Peking University, Beijing 100871, China."
+              },
+              {
+                "affiliation": "State Key Laboratory of Wheat Improvement, Peking University Institute of Advanced Agricultural Sciences, Shandong Laboratory of Advanced Agricultural Sciences in Weifang, Shandong, 261325, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Sun L",
+          "firstName": "Linhua",
+          "lastName": "Sun",
+          "initials": "L",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0003-0086-2308"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory of Microbial Technology, College of Life Sciences, Nanjing Normal University, Nanjing, 210023, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Xue Y",
+          "firstName": "Yan",
+          "lastName": "Xue",
+          "initials": "Y",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0003-0871-8853"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory of Wheat Improvement, Peking University Institute of Advanced Agricultural Sciences, Shandong Laboratory of Advanced Agricultural Sciences in Weifang, Shandong, 261325, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Qian W",
+          "firstName": "Weiqiang",
+          "lastName": "Qian",
+          "initials": "W",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0002-3135-6689"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Key Laboratory of Herbage and Endemic Crop Biology, Ministry of Education, School of Life Sciences, Inner Mongolia University, Hohhot, Inner Mongolia 010070, China."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "authorIdList": {
+      "authorId": [
+        {
+          "type": "ORCID",
+          "value": "0000-0001-5272-7242"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0001-7527-5701"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0001-8709-1467"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0002-3135-6689"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0002-9846-7420"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0003-0086-2308"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0003-0871-8853"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0003-2155-4427"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0003-2960-6199"
+        },
+        {
+          "type": "ORCID",
+          "value": "0009-0009-5184-9390"
+        },
+        {
+          "type": "ORCID",
+          "value": "0009-0009-5693-6602"
+        }
+      ]
+    },
+    "journalInfo": {
+      "journalIssueId": 4204794,
+      "dateOfPublication": "2026 Jun",
+      "monthOfPublication": 6,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-06-01",
+      "journal": {
+        "title": "The Plant cell",
+        "medlineAbbreviation": "Plant Cell",
+        "issn": "1040-4651",
+        "nlmid": "9208688",
+        "essn": "1532-298X",
+        "isoabbreviation": "Plant Cell"
+      }
+    },
+    "pubYear": "2026",
+    "pageInfo": "koag167",
+    "abstractText": "Transcriptional gene silencing (TGS) is critical in maintaining genome integrity in plants, during which DNA methylation plays a fundamental role. The establishment and maintenance of DNA methylation are well characterized, while the downstream events mediating transcriptional repression remain poorly understood. In this study, we performed a forward genetic screen for suppressors of hdp1-induced report gene silencing to identify components involved in TGS downstream of DNA methylation and identified PRP8, a well-known component of the spliceosome complex. Through comprehensive genetic analysis coupled with RNA-seq and whole-genome bisulfite sequencing (WBGS), we demonstrated that PRP8 mediated TGS of the transgenes along with a subset of endogenous genes and transposable elements (TEs) in a DNA methylation-independent manner. Through Hi-C analysis, we demonstrated that PRP8 is required for maintaining pericentromeric heterochromatin interactions and higher-order chromatin organization. Further genetic analysis revealed that PRP8 acts synergistically with MORC6, HDA6, MOM1, and NRPE1, suggesting its involvement in a previously uncharacterized TGS pathway. In summary, our findings establish PRP8 as a dual-function factor involved in both splicing and DNA methylation-independent TGS.",
+    "affiliation": "School of Advanced Agricultural Sciences, Peking University, Beijing 100871, China.",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Journal Article"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1093/plcell/koag167"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-08",
+    "firstIndexDate": "2026-06-08",
+    "dateOfRevision": "2026-06-08",
+    "electronicPublicationDate": "2026-06-08",
+    "firstPublicationDate": "2026-06-08",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42252362",
+    "source": "MED",
+    "pmid": "42252362",
+    "doi": "10.1007/s00414-026-03866-2",
+    "title": "Chronological age estimation using CpG methylation signatures in Pakistani population. ",
+    "authorString": "Arshad F, Shahzad M, Javed F, Shehzadi A, Baig IS, Shahid AA, Shafique M.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Arshad F",
+          "firstName": "Fatima",
+          "lastName": "Arshad",
+          "initials": "F",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Forensic DNA Typing Laboratory, National Centre of Excellence in Molecular Biology, University of the Punjab, Lahore, 53700, Pakistan."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Shahzad M",
+          "firstName": "Muhammad",
+          "lastName": "Shahzad",
+          "initials": "M",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Forensic DNA Typing Laboratory, National Centre of Excellence in Molecular Biology, University of the Punjab, Lahore, 53700, Pakistan."
+              },
+              {
+                "affiliation": "Centre for Applied Molecular Biology, University of the Punjab, Lahore, 53700, Pakistan."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Javed F",
+          "firstName": "Faqeeha",
+          "lastName": "Javed",
+          "initials": "F",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Riphah College of Rehabilitation and Allied Health Sciences, Riphah International University, Gulberg 3, Lahore, 54660, Pakistan."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Shehzadi A",
+          "firstName": "Abida",
+          "lastName": "Shehzadi",
+          "initials": "A",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Forensic DNA Typing Laboratory, National Centre of Excellence in Molecular Biology, University of the Punjab, Lahore, 53700, Pakistan."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Baig IS",
+          "firstName": "Ibrahim Salam",
+          "lastName": "Baig",
+          "initials": "IS",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Forensic DNA Typing Laboratory, National Centre of Excellence in Molecular Biology, University of the Punjab, Lahore, 53700, Pakistan."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Shahid AA",
+          "firstName": "Ahmad Ali",
+          "lastName": "Shahid",
+          "initials": "AA",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Forensic DNA Typing Laboratory, National Centre of Excellence in Molecular Biology, University of the Punjab, Lahore, 53700, Pakistan."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Shafique M",
+          "firstName": "Muhammad",
+          "lastName": "Shafique",
+          "initials": "M",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0001-8870-2936"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Forensic DNA Typing Laboratory, National Centre of Excellence in Molecular Biology, University of the Punjab, Lahore, 53700, Pakistan. shafique@cemb.edu.pk."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "authorIdList": {
+      "authorId": [
+        {
+          "type": "ORCID",
+          "value": "0000-0001-8870-2936"
+        }
+      ]
+    },
+    "journalInfo": {
+      "journalIssueId": 4203771,
+      "dateOfPublication": "2026 Jun",
+      "monthOfPublication": 6,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-06-01",
+      "journal": {
+        "title": "International journal of legal medicine",
+        "medlineAbbreviation": "Int J Legal Med",
+        "issn": "0937-9827",
+        "nlmid": "9101456",
+        "essn": "1437-1596",
+        "isoabbreviation": "Int J Legal Med"
+      }
+    },
+    "pubYear": "2026",
+    "abstractText": "The accurate assessment of chronological age through DNA methylation (DNAm) patterns has emerged as a promising forensic-age estimation tool. This study, therefore, assessed seven age-associated CpG sites to develop an epigenetic age-prediction model capable of rendering reliable outputs especially in the Pakistani population, a population group underrepresented in current epigenetic aging studies. A total of seven age-related CpG sites, KLF14 (cg14361627), CCDC102B (cg19283806), TRIM59 (cg07553761), ASPA (cg02228185), C1ORF132 (cg10501210), FHL2 (cg06639320), and ELOVL2 (cg16867657), were selected and analyzed in blood samples of 181 individuals categorized into different age groups (1 to 76 years). A methylation SNaPshot™ multiplex assay was performed, three different age prediction models like stepwise regression, multivariate linear regression (MVLR), and support vector machine (SVM), were established based on the methylation data of SNaPshot™ multiplex assay. The stepwise regression model and multivariate linear regression enabled age prediction, with mean absolute deviations (MADs) = 3.60 and 3.69, respectively, whereas the SVM model enabled age prediction, with MAD = 3.40. An independent set of 53 samples was used to test the performance of the three models, and the prediction MADs for the validation set were 3.92, 3.73 and 3.44 for the stepwise regression, multivariate linear regression and SVM models, respectively. The number of correct predictions for ± 4 years reached high values of 69.81%, 71.69% and 77.35% for the stepwise regression, MVLR and SVM models, respectively. The results revealed that all seven markers were significantly associated with age, but ELOVL2 and FHL2 are reliable candidates for age estimation models in Pakistan due to their robustness and minimal redundancy among evaluated CpG sites. However, CCDC102B (cg19283806) had the lowest association levels, respectively. Prediction accuracy was found to decrease with increasing age, suggesting that environmental and lifestyle factors may play an increasingly important role in determining biological age-especially so in Pakistan where air pollution and other lifestyle indicators may accelerate biological age. These findings further highlight the need to study DNA methylation changes in polluted settings in order to improve age prediction systems and bridge the gap between chronological and biological age. Additional optimization using population samples and various forensic materials such as bloodstains, saliva, and body fluids is required to improve the performance and applicability of the model in real-life forensic situations.",
+    "affiliation": "Forensic DNA Typing Laboratory, National Centre of Excellence in Molecular Biology, University of the Punjab, Lahore, 53700, Pakistan.",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Journal Article"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1007/s00414-026-03866-2"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "Y",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-07",
+    "firstIndexDate": "2026-06-08",
+    "dateOfRevision": "2026-06-07",
+    "electronicPublicationDate": "2026-06-08",
+    "firstPublicationDate": "2026-06-08",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42252094",
+    "source": "MED",
+    "pmid": "42252094",
+    "doi": "10.1093/plcell/koag158",
+    "title": "VIMa and paternal-specifically expressed VIMb are involved in regulating DNA methylation and endosperm development in maize. ",
+    "authorString": "Hong X, Wang Z, Cui Y, Huang L, Zhi X, Yi X, Zhou Y, Song W, Lai J, Liu Q, Chen J.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Hong X",
+          "firstName": "Xiangde",
+          "lastName": "Hong",
+          "initials": "X",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0009-0004-7239-6566"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory of Maize Bio-breeding, Key Laboratory of Maize Biology and Genetic Breeding, Key Laboratory of Genome Editing Research and Application, Ministry of Agriculture and Rural Affairs, National Maize Improvement Center, China Agricultural University, Beijing 100193, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Wang Z",
+          "firstName": "Zijian",
+          "lastName": "Wang",
+          "initials": "Z",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0002-3203-5000"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory of Maize Bio-breeding, Key Laboratory of Maize Biology and Genetic Breeding, Key Laboratory of Genome Editing Research and Application, Ministry of Agriculture and Rural Affairs, National Maize Improvement Center, China Agricultural University, Beijing 100193, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Cui Y",
+          "firstName": "Yang",
+          "lastName": "Cui",
+          "initials": "Y",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory of Maize Bio-breeding, Key Laboratory of Maize Biology and Genetic Breeding, Key Laboratory of Genome Editing Research and Application, Ministry of Agriculture and Rural Affairs, National Maize Improvement Center, China Agricultural University, Beijing 100193, China."
+              },
+              {
+                "affiliation": "Sichuan Academy of Agricultural Sciences Rice and Sorghum Research Institute, Deyang 618000, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Huang L",
+          "firstName": "Liangliang",
+          "lastName": "Huang",
+          "initials": "L",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0009-0004-2965-4531"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory of Maize Bio-breeding, Key Laboratory of Maize Biology and Genetic Breeding, Key Laboratory of Genome Editing Research and Application, Ministry of Agriculture and Rural Affairs, National Maize Improvement Center, China Agricultural University, Beijing 100193, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zhi X",
+          "firstName": "Xianguan",
+          "lastName": "Zhi",
+          "initials": "X",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0009-0002-6933-5119"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory of Maize Bio-breeding, Key Laboratory of Maize Biology and Genetic Breeding, Key Laboratory of Genome Editing Research and Application, Ministry of Agriculture and Rural Affairs, National Maize Improvement Center, China Agricultural University, Beijing 100193, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Yi X",
+          "firstName": "Xin",
+          "lastName": "Yi",
+          "initials": "X",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory of Maize Bio-breeding, Key Laboratory of Maize Biology and Genetic Breeding, Key Laboratory of Genome Editing Research and Application, Ministry of Agriculture and Rural Affairs, National Maize Improvement Center, China Agricultural University, Beijing 100193, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zhou Y",
+          "firstName": "Yueyong",
+          "lastName": "Zhou",
+          "initials": "Y",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory of Maize Bio-breeding, Key Laboratory of Maize Biology and Genetic Breeding, Key Laboratory of Genome Editing Research and Application, Ministry of Agriculture and Rural Affairs, National Maize Improvement Center, China Agricultural University, Beijing 100193, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Song W",
+          "firstName": "Weibin",
+          "lastName": "Song",
+          "initials": "W",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0003-3496-2585"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory of Maize Bio-breeding, Key Laboratory of Maize Biology and Genetic Breeding, Key Laboratory of Genome Editing Research and Application, Ministry of Agriculture and Rural Affairs, National Maize Improvement Center, China Agricultural University, Beijing 100193, China."
+              },
+              {
+                "affiliation": "Frontiers Science Center for Molecular Design Breeding (Ministry of Education), China Agricultural University, Beijing 100193, China."
+              },
+              {
+                "affiliation": "Center for Crop Functional Genomics and Molecular Breeding, China Agricultural University, Beijing 100193, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Lai J",
+          "firstName": "Jinsheng",
+          "lastName": "Lai",
+          "initials": "J",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0001-9202-9641"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory of Maize Bio-breeding, Key Laboratory of Maize Biology and Genetic Breeding, Key Laboratory of Genome Editing Research and Application, Ministry of Agriculture and Rural Affairs, National Maize Improvement Center, China Agricultural University, Beijing 100193, China."
+              },
+              {
+                "affiliation": "Frontiers Science Center for Molecular Design Breeding (Ministry of Education), China Agricultural University, Beijing 100193, China."
+              },
+              {
+                "affiliation": "Center for Crop Functional Genomics and Molecular Breeding, China Agricultural University, Beijing 100193, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Liu Q",
+          "firstName": "Qiujie",
+          "lastName": "Liu",
+          "initials": "Q",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory of Maize Bio-breeding, Key Laboratory of Maize Biology and Genetic Breeding, Key Laboratory of Genome Editing Research and Application, Ministry of Agriculture and Rural Affairs, National Maize Improvement Center, China Agricultural University, Beijing 100193, China."
+              },
+              {
+                "affiliation": "Frontiers Science Center for Molecular Design Breeding (Ministry of Education), China Agricultural University, Beijing 100193, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Chen J",
+          "firstName": "Jian",
+          "lastName": "Chen",
+          "initials": "J",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0002-1764-8394"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory of Maize Bio-breeding, Key Laboratory of Maize Biology and Genetic Breeding, Key Laboratory of Genome Editing Research and Application, Ministry of Agriculture and Rural Affairs, National Maize Improvement Center, China Agricultural University, Beijing 100193, China."
+              },
+              {
+                "affiliation": "Frontiers Science Center for Molecular Design Breeding (Ministry of Education), China Agricultural University, Beijing 100193, China."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "authorIdList": {
+      "authorId": [
+        {
+          "type": "ORCID",
+          "value": "0000-0001-9202-9641"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0002-1764-8394"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0002-3203-5000"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0003-3496-2585"
+        },
+        {
+          "type": "ORCID",
+          "value": "0009-0002-6933-5119"
+        },
+        {
+          "type": "ORCID",
+          "value": "0009-0004-2965-4531"
+        },
+        {
+          "type": "ORCID",
+          "value": "0009-0004-7239-6566"
+        }
+      ]
+    },
+    "journalInfo": {
+      "journalIssueId": 4204794,
+      "dateOfPublication": "2026 Jun",
+      "monthOfPublication": 6,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-06-01",
+      "journal": {
+        "title": "The Plant cell",
+        "medlineAbbreviation": "Plant Cell",
+        "issn": "1040-4651",
+        "nlmid": "9208688",
+        "essn": "1532-298X",
+        "isoabbreviation": "Plant Cell"
+      }
+    },
+    "pubYear": "2026",
+    "pageInfo": "koag158",
+    "abstractText": "Kernel development is a pivotal determinant of grain yield in maize (Zea mays), a cereal crop that is fundamentally important for global food security. Here, we elucidated the essential role of VIM family genes in maize endosperm development by characterizing a miniature seed9 (mn9) mutant, in which the kernel size is reduced. Through map-based cloning, we demonstrated that the mn9 phenotype is caused by the concurrent disruption of two homologous genes, VIMa and VIMb. Notably, VIMa is broadly expressed and follows Mendelian segregation, whereas VIMb is an endosperm-specific imprinted gene with near-exclusive paternal expression. In maize, there exists another broadly expressed non-imprinted VIM family gene, VIMc, which is closest to VIMa in terms of expression pattern and sequence similarity, and we were unable to obtain vima;vimc double mutants. Single mutants of VIMa, VIMb, or VIMc exhibited no visible phenotypes or alterations in DNA methylation levels, whereas simultaneous loss of VIMa and VIMb function induced a reduction in genome-wide CG methylation specifically in the endosperm. In addition, we found that endoreduplication is impaired in vima;vimb mutant endosperm, leading to reduced endosperm cell ploidy, decreased cell size, and consequently diminished kernel weight. In summary, our results reveal that loss of VIMa and VIMb causes endosperm-specific CG hypomethylation, defective endoreduplication and reduced kernel size, and provide a systematic characterization of VIM family functions in maize endosperm development.",
+    "affiliation": "State Key Laboratory of Maize Bio-breeding, Key Laboratory of Maize Biology and Genetic Breeding, Key Laboratory of Genome Editing Research and Application, Ministry of Agriculture and Rural Affairs, National Maize Improvement Center, China Agricultural University, Beijing 100193, China.",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Journal Article"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1093/plcell/koag158"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-07",
+    "firstIndexDate": "2026-06-08",
+    "dateOfRevision": "2026-06-07",
+    "electronicPublicationDate": "2026-06-08",
+    "firstPublicationDate": "2026-06-08",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42252734",
+    "source": "MED",
+    "pmid": "42252734",
+    "doi": "10.1111/jpn.70078",
+    "title": "Dietary L-Tyrosine Sustains Egg Production and Quality by Modulating Promoter CpG Methylation, Gene Expression, and Hormone Profiles in Reproductive Signalling Pathways of Aged Laying Hens. ",
+    "authorString": "İpçak HH.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "İpçak HH",
+          "firstName": "Hasan Hüseyin",
+          "lastName": "İpçak",
+          "initials": "HH",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0002-6807-8870"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Animal Science, Faculty of Agriculture, Dicle University, Diyarbakır, Türkiye."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "authorIdList": {
+      "authorId": [
+        {
+          "type": "ORCID",
+          "value": "0000-0002-6807-8870"
+        }
+      ]
+    },
+    "journalInfo": {
+      "journalIssueId": 4205253,
+      "dateOfPublication": "2026 Jun",
+      "monthOfPublication": 6,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-06-01",
+      "journal": {
+        "title": "Journal of animal physiology and animal nutrition",
+        "medlineAbbreviation": "J Anim Physiol Anim Nutr (Berl)",
+        "issn": "0931-2439",
+        "nlmid": "101126979",
+        "essn": "1439-0396",
+        "isoabbreviation": "J Anim Physiol Anim Nutr (Berl)"
+      }
+    },
+    "pubYear": "2026",
+    "abstractText": "Managing prolactin (PRL)-mediated reproductive suppression is critical for maintaining egg production in commercial laying hens. L-tyrosine (TYR), a precursor of dopamine (DA), may counteract age-related reproductive decline by suppressing PRL, thereby sustaining productivity and egg quality in late-phase laying hens. The present study evaluated the effects of dietary L-tyrosine supplementation on laying performance, egg quality, reproductive hormone profiles, gene expression, and promoter CpG methylation in aged laying hens. A total of 180 Atak-S laying hens (71 weeks old) were randomly assigned to three dietary treatments, each with six replicates of 10 hens, and were fed a basal diet without L-tyrosine (control) or the basal diet supplemented with 0.5 g/kg (TYR0.5) or 1 g/kg (TYR1) L-tyrosine for 12 weeks. Hens in the TYR1 group exhibited higher hen-day egg production, improved feed conversion ratio, and significantly greater eggshell weight, shell thickness, Haugh unit, yolk index, and albumen index than the control group (p < 0.05). Dietary L-tyrosine increased plasma DA and serum estradiol while reducing serum PRL (p < 0.05). L-tyrosine also upregulated the expression of key dopaminergic and reproductive signalling genes, with corresponding promoter hypomethylation (p < 0.05), whereas PRL mRNA expression tended to decrease with concurrent promoter hypermethylation. A significant negative correlation was observed between target gene expression and promoter CpG methylation levels (p < 0.05). These findings indicate that dietary L-tyrosine modulates reproductive hormone profiles and molecular responses within reproductive signalling pathways, resulting in improved laying performance and egg quality. Therefore, L-tyrosine may represent a promising nutritional intervention to sustain reproductive function and productivity in late-phase laying hens.",
+    "affiliation": "Department of Animal Science, Faculty of Agriculture, Dicle University, Diyarbakır, Türkiye.",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Journal Article"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1111/jpn.70078"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-08",
+    "firstIndexDate": "2026-06-08",
+    "dateOfRevision": "2026-06-08",
+    "electronicPublicationDate": "2026-06-07",
+    "firstPublicationDate": "2026-06-07",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42252388",
+    "source": "MED",
+    "pmid": "42252388",
+    "doi": "10.1186/s40364-026-00942-y",
+    "title": "Emerging applications of long-read sequencing in hematological malignancies: highlights from the 2025 ASH annual meeting. ",
+    "authorString": "Liu B, Jiang Y, Zhao B, Zhu HH.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Liu B",
+          "firstName": "Boyan",
+          "lastName": "Liu",
+          "initials": "B",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Hematology, Beijing Chao-Yang Hospital, Capital Medical University, Beijing, 100020, China."
+              },
+              {
+                "affiliation": "Chinese Institute for Medical Research, Capital Medical University, Beijing, 100069, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Jiang Y",
+          "firstName": "Yuan",
+          "lastName": "Jiang",
+          "initials": "Y",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Hematology, Beijing Chao-Yang Hospital, Capital Medical University, Beijing, 100020, China."
+              },
+              {
+                "affiliation": "Chinese Institute for Medical Research, Capital Medical University, Beijing, 100069, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zhao B",
+          "firstName": "Bihuan",
+          "lastName": "Zhao",
+          "initials": "B",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Hematology, Beijing Chao-Yang Hospital, Capital Medical University, Beijing, 100020, China."
+              },
+              {
+                "affiliation": "Chinese Institute for Medical Research, Capital Medical University, Beijing, 100069, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zhu HH",
+          "firstName": "Hong-Hu",
+          "lastName": "Zhu",
+          "initials": "HH",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Hematology, Beijing Chao-Yang Hospital, Capital Medical University, Beijing, 100020, China. zhuhhdoc@163.com."
+              },
+              {
+                "affiliation": "Chinese Institute for Medical Research, Capital Medical University, Beijing, 100069, China. zhuhhdoc@163.com."
+              },
+              {
+                "affiliation": "Institute for Cancer, Chinese Institutes for Medical Research (CIMR), Beijing, 100069, China. zhuhhdoc@163.com."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "issue": "1",
+      "volume": "14",
+      "journalIssueId": 4205006,
+      "dateOfPublication": "2026 Jun",
+      "monthOfPublication": 6,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-06-01",
+      "journal": {
+        "title": "Biomarker research",
+        "medlineAbbreviation": "Biomark Res",
+        "issn": "2050-7771",
+        "nlmid": "101607860",
+        "essn": "2050-7771",
+        "isoabbreviation": "Biomark Res"
+      }
+    },
+    "pubYear": "2026",
+    "pageInfo": "60",
+    "abstractText": "Long-read sequencing (LRS) is rapidly advancing and demonstrates considerable promise in hematological malignancies. At the 2025 ASH meeting, numerous studies highlighted advances in applying LRS across diverse hematological malignancies. Rapid LRS-based whole-genome sequencing and adaptive sampling enable real-time subtype assignment, detection of SNVs, CNVs, and gene fusions, as well as methylation-based classification. By spanning repetitive and structurally complex regions, LRS enhances genetic subtyping and uncovers clinically relevant structural variants often missed by short-read technologies. Full-length and single-cell RNA sequencing further resolve isoforms, splicing programs, and fusion transcripts within their clonal contexts, supporting precision therapy and refined risk stratification. As accuracy improves and costs decline, LRS is poised for broader integration into routine clinical diagnostics.",
+    "affiliation": "Department of Hematology, Beijing Chao-Yang Hospital, Capital Medical University, Beijing, 100020, China.",
+    "publicationStatus": "epublish",
+    "language": "eng",
+    "pubModel": "Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "Letter"
+      ]
+    },
+    "grantsList": {
+      "grant": [
+        {
+          "grantId": "DFL20240301",
+          "agency": "\"Dengfeng\" Talent Training Program of Beijing Hospitals Authority",
+          "orderIn": 0
+        }
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1186/s40364-026-00942-y"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCompletion": "2026-06-07",
+    "dateOfCreation": "2026-06-07",
+    "firstIndexDate": "2026-06-08",
+    "dateOfRevision": "2026-06-07",
+    "electronicPublicationDate": "2026-06-07",
+    "firstPublicationDate": "2026-06-07",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PMC13242847",
+    "source": "PMC",
+    "pmcid": "PMC13242847",
+    "fullTextIdList": {
+      "fullTextId": [
+        "PMC13242847"
+      ]
+    },
+    "title": "Histone Methylation: A Pivotal Epigenetic Driver of the Malignant Transformation of MASLD-HCC",
+    "authorString": "Zhang Y, Chen T, Chang Z, Qi X, Yan R, Zhang H, Guan X, Yan S, Li J, Jiao J.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Zhang Y",
+          "firstName": "Yan",
+          "lastName": "Zhang",
+          "initials": "Y",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Shaanxi University of Chinese Medicine , Xianyang , Shaanxi ,"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Chen T",
+          "firstName": "Tong",
+          "lastName": "Chen",
+          "initials": "T",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Shaanxi University of Chinese Medicine , Xianyang , Shaanxi ,"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Chang Z",
+          "firstName": "Zhanjie",
+          "lastName": "Chang",
+          "initials": "Z",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Departments of Infectious Disease, The Affiliated Hospital of Shaanxi University of Chinese Medicine , Xianyang , Shaanxi ,"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Qi X",
+          "firstName": "Xinlei",
+          "lastName": "Qi",
+          "initials": "X",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Shaanxi University of Chinese Medicine , Xianyang , Shaanxi ,"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Yan R",
+          "firstName": "Ruijuan",
+          "lastName": "Yan",
+          "initials": "R",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Departments of Infectious Disease, The Affiliated Hospital of Shaanxi University of Chinese Medicine , Xianyang , Shaanxi ,"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zhang H",
+          "firstName": "Haibo",
+          "lastName": "Zhang",
+          "initials": "H",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "College of Basic Medicine, Shaanxi University of Chinese Medicine , Xianyang , Shaanxi ,"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Guan X",
+          "firstName": "Xi",
+          "lastName": "Guan",
+          "initials": "X",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Departments of Infectious Disease, The Affiliated Hospital of Shaanxi University of Chinese Medicine , Xianyang , Shaanxi ,"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Yan S",
+          "firstName": "Shuguang",
+          "lastName": "Yan",
+          "initials": "S",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "College of Basic Medicine, Shaanxi University of Chinese Medicine , Xianyang , Shaanxi ,"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Li J",
+          "firstName": "Jingtao",
+          "lastName": "Li",
+          "initials": "J",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Departments of Infectious Disease, The Affiliated Hospital of Shaanxi University of Chinese Medicine , Xianyang , Shaanxi ,"
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Jiao J",
+          "firstName": "Junzhe",
+          "lastName": "Jiao",
+          "initials": "J",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Departments of Infectious Disease, The Affiliated Hospital of Shaanxi University of Chinese Medicine , Xianyang , Shaanxi ,"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "volume": "13",
+      "journalIssueId": 4091899,
+      "dateOfPublication": "2026 Jan",
+      "monthOfPublication": 1,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-01-01",
+      "journal": {
+        "title": "Journal of hepatocellular carcinoma",
+        "medlineAbbreviation": "J Hepatocell Carcinoma",
+        "issn": "2253-5969",
+        "nlmid": "101674775",
+        "essn": "2253-5969",
+        "isoabbreviation": "J Hepatocell Carcinoma"
+      }
+    },
+    "pubYear": "2026",
+    "language": "eng",
+    "pubModel": "Undetermined",
+    "pubTypeList": {
+      "pubType": [
+        "review-article",
+        "Review",
+        "Journal Article"
+      ]
+    },
+    "keywordList": {
+      "keyword": [
+        "HCC",
+        "Epigenetics",
+        "histone methylation",
+        "Mash",
+        "Masld"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13242847/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "PubMedCentral",
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13242847/pdf/?tool=EBI"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "html",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13242847"
+        },
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "pdf",
+          "site": "Europe_PMC",
+          "url": "https://europepmc.org/articles/PMC13242847?pdf=render"
+        }
+      ]
+    },
+    "isOpenAccess": "Y",
+    "inEPMC": "Y",
+    "inPMC": "Y",
+    "hasPDF": "Y",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "license": "cc by-nc",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-08",
+    "firstIndexDate": "2026-06-08",
+    "fullTextReceivedDate": "2026-06-08",
+    "dateOfRevision": "2026-06-08",
+    "electronicPublicationDate": "2026-01-01",
+    "firstPublicationDate": "2026-01-01",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42252213",
+    "source": "MED",
+    "pmid": "42252213",
+    "doi": "10.3760/cma.j.cn112151-20251020-00689",
+    "title": "[Supratentorial papillary glioneuronal tumors: a clinicopathological and genetic analysis of six cases]. ",
+    "authorString": "Duan ZJ, Yang JJ, Feng J, Ma Z, Zhang XF, Hu ZJ, Xiang L, Qi XL.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Duan ZJ",
+          "firstName": "Z J",
+          "lastName": "Duan",
+          "initials": "ZJ",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pathology, Sanbo Brain Institute, Capital Medical University, Beijing 100018, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Yang JJ",
+          "firstName": "J J",
+          "lastName": "Yang",
+          "initials": "JJ",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pathology, Sanbo Brain Institute, Capital Medical University, Beijing 100018, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Feng J",
+          "firstName": "J",
+          "lastName": "Feng",
+          "initials": "J",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pathology, Sanbo Brain Institute, Capital Medical University, Beijing 100018, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Ma Z",
+          "firstName": "Z",
+          "lastName": "Ma",
+          "initials": "Z",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pathology, Sanbo Brain Institute, Capital Medical University, Beijing 100018, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zhang XF",
+          "firstName": "X F",
+          "lastName": "Zhang",
+          "initials": "XF",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Radiology, Sanbo Brain Hospital, Capital Medical University, Beijing 100018, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Hu ZJ",
+          "firstName": "Z J",
+          "lastName": "Hu",
+          "initials": "ZJ",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pathology, Sanbo Brain Institute, Capital Medical University, Beijing 100018, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Xiang L",
+          "firstName": "L",
+          "lastName": "Xiang",
+          "initials": "L",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pathology, Sanbo Brain Institute, Capital Medical University, Beijing 100018, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Qi XL",
+          "firstName": "X L",
+          "lastName": "Qi",
+          "initials": "XL",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pathology, Sanbo Brain Institute, Capital Medical University, Beijing 100018, China."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "issue": "6",
+      "volume": "55",
+      "journalIssueId": 4211894,
+      "dateOfPublication": "2026 Jun",
+      "monthOfPublication": 6,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-06-01",
+      "journal": {
+        "title": "Zhonghua bing li xue za zhi = Chinese journal of pathology",
+        "medlineAbbreviation": "Zhonghua Bing Li Xue Za Zhi",
+        "issn": "0529-5807",
+        "nlmid": "0005331",
+        "isoabbreviation": "Zhonghua Bing Li Xue Za Zhi"
+      }
+    },
+    "pubYear": "2026",
+    "pageInfo": "530-537",
+    "abstractText": "Objective: To investigate the clinicopathological and genetic characteristics of papillary glioneuronal tumor (PGNT) and to reclassify cases according to the integrated pathologic-molecular diagnosis with the 2021 World Health Organization (WHO) classification of tumors of central nervous system (CNS). Methods: Six tumors diagnosed as PGNT at the Sanbo Brain Hospital, Capital Medical University from January 2010 to August 2025 were collected. Their clinical, imaging, histopathological, and molecular data were retrospectively analyzed. Comprehensive profiling was conducted using hematoxylin and eosin staining, immunohistochemistry, targeted next-generation sequencing, RNA sequencing, and DNA methylation analyses. Results: All tumors were located in the supratentorial cerebral hemispheres. Among the 6 patients, there were 4 males and 2 females, aged 17.0 (10.0, 25.5) years old. Histology revealed a characteristic papillary structure. In four cases, focal and sheet-like neurocytic cells were observed in interpapillary regions, meanwhile two cases showed scattered suspicious ganglion or neuronal cells. Mitoses were rare. The case 4 exhibited focal anaplasia features within the tumor. The papillary-forming cells showed diffuse immunoreactivity for GFAP, OLIG2, S-100, and SOX10. Cells in the interpapillary areas exhibited diffuse or partial synaptophysin positivity, with focal and diffuse positivity for NeuN and calretinin in four cases. The Ki-67 proliferation index was mostly<5% (only one case showed a focal increase to 8%). All cases were negative for IDH1-R132H, H3K27M, and BRAF V600E. Cases 3 to 6 harbored SLC44A1::PRKCA fusions. Cases 1 and 2 had KIAA1549::BRAF and STRIP2::BRAF fusions, respectively. Based on the integrated pathologic-molecular diagnosis, the cases 3 to 6 were definitively classified as PGNT, CNS WHO grade 1, while the case 4 showed focal anaplasia. By integrated with DNA methylation profiling, the case 1 and 2 were reclassified as low-grade glioma/low-grade glioneuronal tumor, not elsewhere classified. The 6 patients underwent craniotomy with gross total or subtotal tumor resection. One of them also received local radiotherapy. At the last follow-up (July 2025), all patients were alive without recurrence or progression. The overall survivals were 105, 50, 66, 64, 12, and 6 months, respectively. Conclusions: PGNT is a rare glioneuronal tumor characterized by a biphasic pattern with pseudopapillary glial architectures and interpapillary neuronal components. The presence of focal and sheet-like NeuN-positive neurocytic cells in the interpapillary regions is a significant diagnostic clue for PGNT. Integrated pathologic-molecular analysis is essential for accurately classifying supratentorial papillary glioneuronal tumors. Classic PGNTs are molecularly defined by recurrent PRKCA fusions, while BRAF-altered cases warrant reclassification.",
+    "affiliation": "Department of Pathology, Sanbo Brain Institute, Capital Medical University, Beijing 100018, China.",
+    "publicationStatus": "ppublish",
+    "language": "chi",
+    "pubModel": "Print",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Journal Article",
+        "English Abstract"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.3760/cma.j.cn112151-20251020-00689"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-07",
+    "firstIndexDate": "2026-06-08",
+    "dateOfRevision": "2026-06-07",
+    "firstPublicationDate": "2026-06-01",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42253020",
+    "source": "MED",
+    "pmid": "42253020",
+    "doi": "10.1080/10985549.2026.2674080",
+    "title": "Characterization of the m<sup>6</sup>A Epitranscriptome in Fibroblast Senescence. ",
+    "authorString": "Abdelmohsen K, Banskota N, Rossi M, Pal A, Baranzini M, Prampolini C, Arends EM, De S, Gorospe M.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Abdelmohsen K",
+          "firstName": "Kotb",
+          "lastName": "Abdelmohsen",
+          "initials": "K",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0001-6240-5810"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Laboratory of Genetics and Genomics, National Institute on Aging (NIA) Intramural Research Program (IRP), National Institutes of Health (NIH), Baltimore, Maryland, USA."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Banskota N",
+          "firstName": "Nirad",
+          "lastName": "Banskota",
+          "initials": "N",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Laboratory of Genetics and Genomics, National Institute on Aging (NIA) Intramural Research Program (IRP), National Institutes of Health (NIH), Baltimore, Maryland, USA."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Rossi M",
+          "firstName": "Martina",
+          "lastName": "Rossi",
+          "initials": "M",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Laboratory of Genetics and Genomics, National Institute on Aging (NIA) Intramural Research Program (IRP), National Institutes of Health (NIH), Baltimore, Maryland, USA."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Pal A",
+          "firstName": "Apala",
+          "lastName": "Pal",
+          "initials": "A",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Laboratory of Genetics and Genomics, National Institute on Aging (NIA) Intramural Research Program (IRP), National Institutes of Health (NIH), Baltimore, Maryland, USA."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Baranzini M",
+          "firstName": "Mirko",
+          "lastName": "Baranzini",
+          "initials": "M",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Laboratory of Genetics and Genomics, National Institute on Aging (NIA) Intramural Research Program (IRP), National Institutes of Health (NIH), Baltimore, Maryland, USA."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Prampolini C",
+          "firstName": "Chiara",
+          "lastName": "Prampolini",
+          "initials": "C",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Laboratory of Genetics and Genomics, National Institute on Aging (NIA) Intramural Research Program (IRP), National Institutes of Health (NIH), Baltimore, Maryland, USA."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Arends EM",
+          "firstName": "Ethan M",
+          "lastName": "Arends",
+          "initials": "EM",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Laboratory of Genetics and Genomics, National Institute on Aging (NIA) Intramural Research Program (IRP), National Institutes of Health (NIH), Baltimore, Maryland, USA."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "De S",
+          "firstName": "Supriyo",
+          "lastName": "De",
+          "initials": "S",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Laboratory of Genetics and Genomics, National Institute on Aging (NIA) Intramural Research Program (IRP), National Institutes of Health (NIH), Baltimore, Maryland, USA."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Gorospe M",
+          "firstName": "Myriam",
+          "lastName": "Gorospe",
+          "initials": "M",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0001-5439-3434"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Laboratory of Genetics and Genomics, National Institute on Aging (NIA) Intramural Research Program (IRP), National Institutes of Health (NIH), Baltimore, Maryland, USA."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "authorIdList": {
+      "authorId": [
+        {
+          "type": "ORCID",
+          "value": "0000-0001-5439-3434"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0001-6240-5810"
+        }
+      ]
+    },
+    "journalInfo": {
+      "journalIssueId": 4209634,
+      "dateOfPublication": "2026 Jun",
+      "monthOfPublication": 6,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-06-01",
+      "journal": {
+        "title": "Molecular and cellular biology",
+        "medlineAbbreviation": "Mol Cell Biol",
+        "issn": "0270-7306",
+        "nlmid": "8109087",
+        "essn": "1098-5549",
+        "isoabbreviation": "Mol Cell Biol"
+      }
+    },
+    "pubYear": "2026",
+    "pageInfo": "1-19",
+    "abstractText": "A critical developmental process affecting aging and age-associated disease, cell senescence is characterized by persistent growth arrest and adaptive gene expression patterns. A common RNA modification, N6-methyladenosine (m6A), regulates gene expression profiles but its impact on senescence has not been studied globally. Here, we elucidated the m6A landscape in proliferating and senescent human fibroblasts using epitranscriptomic microarray and m6A-crosslinking and immunoprecipitation followed by sequencing (CLIP-Seq) analyses. Our findings revealed that while global m6A levels remain stable between proliferating and senescent cells, several transcripts display altered methylation patterns, particularly in senescence-associated pathways like cell cycle, DNA repair, and inflammation. We observed that m6A deposition shifted toward 3'-untranslated regions (UTRs) in senescent cells, although the m6A site modified (the DRACH motif) was unchanged, and we found a positive correlation between m6A levels and transcript abundance. Interestingly, m6A was particularly enriched in mRNAs encoding senescence-associated secretory phenotype (SASP) factors, and silencing METTL3, a major m6A methyltransferase, reduced the stability of certain SASP mRNAs such as IL6 mRNA, suggesting a selective function of m6A in fine-tuning the senescent transcriptome. These findings provide insights into the epitranscriptomic regulation of senescence, and highlight m6A as a potential intervention target in age-related conditions influenced by senescent cells.",
+    "affiliation": "Laboratory of Genetics and Genomics, National Institute on Aging (NIA) Intramural Research Program (IRP), National Institutes of Health (NIH), Baltimore, Maryland, USA.",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Journal Article"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1080/10985549.2026.2674080"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-08",
+    "firstIndexDate": "2026-06-08",
+    "dateOfRevision": "2026-06-08",
+    "electronicPublicationDate": "2026-06-08",
+    "firstPublicationDate": "2026-06-08",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1247507",
+    "source": "PPR",
+    "doi": "10.64898/2026.06.04.729731",
+    "title": "Fasting Status and Epigenetic Clock Stability: Implications for Aging Research",
+    "authorString": "Seale KB, Dwaraka VB, Giosan I, Mendez T, Smith R.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Seale KB",
+          "firstName": "Kirsten Blythe",
+          "lastName": "Seale",
+          "initials": "KB"
+        },
+        {
+          "fullName": "Dwaraka VB",
+          "firstName": "Varun",
+          "lastName": "Dwaraka",
+          "initials": "VB"
+        },
+        {
+          "fullName": "Giosan I",
+          "firstName": "Ilinca",
+          "lastName": "Giosan",
+          "initials": "I"
+        },
+        {
+          "fullName": "Mendez T",
+          "firstName": "Tavis",
+          "lastName": "Mendez",
+          "initials": "T"
+        },
+        {
+          "fullName": "Smith R",
+          "firstName": "Ryan",
+          "lastName": "Smith",
+          "initials": "R"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "<h4>Background: </h4> Epigenetic clocks are DNA methylation-based biomarkers increasingly used in aging research and clinical trials. A recent assessment of 18 clocks across multiple short-term perturbations concluded that most demonstrate only moderate biological reliability, raising concerns about their translational utility. However, understanding biological variability requires understanding the construction of each clock: different clocks capture distinct biological properties that respond differently to specific perturbations, and pooling reliability metrics across heterogeneous populations and array platforms may obscure the mechanisms driving variability in each case. <h4>Methods:</h4> We evaluated 24 epigenetic clocks spanning five construction categories - first and second generation classical clocks (eg. Horvath, Hannum, PhenoAge), the PC versions of the classical clocks, SystemsAge organ-system clocks, mortality-trained clocks (GrimAge, PCGrimAge, OMICmAge), pace of aging clocks (DunedinPACE) and the IntrinClock, across three datasets: a within-person paired fasting design (n = 15 pairs), a cross-sectional cohort of fasted vs non-fasted (n = 2,895), and EPICv2custom technical replicates (n = 96 samples from 4 individuals). For each clock, we quantified the acute fasting effect with and without immune cell adjustment, decomposed between-person and within-person variance at successive adjustment levels (Raw, EAA, IAA), and benchmarked biological variability against the technical measurement floor. <h4>Results:</h4> Fasting followed by acute refeeding was associated with group-level shifts of 0.5-3 years in immune-sensitive clocks, while within-person reliability remained high (Raw clock ICC median ~0.96). These observations are compatible because fasting effects are small relative to the age-driven between-person variance that dominates the ICC denominator. The magnitude of the observed shift varied by clock. PC transformations showed larger effects than their classical counterparts in the paired cohort (PC Hannum -2.03 vs. Hannum -1.37 years; PC PhenoAge > PhenoAge; PC Horvath > Horvath), SystemsAge showed the largest effects (1.15-2.9 years younger when fasted), and mortality-trained clocks (GrimAge V1/V2, OMICmAge) and DunedinPACE showed no detectable acute effect (all FDR p > 0.10). Immune cell adjustment attenuated or eliminated the fasting effects in sensitive clocks (PC Hannum 88% attenuation; SystemsAge Blood 99.7%); no clock retained a significant fasting effect after FDR-corrected immune adjustment in either cohort. Within the cross-sectional cohort, a clock's immune content, which is the fraction of its age-independent variance explained by immune cell composition, was correlated with the degree to which immune adjustment attenuated its fasting effect (r = 0.68, p = 0.003). IntrinClock, designed to exclude immune-variable CpGs, showed no fasting effect in either cohort (immune R-squared = 3.2%), serving as a negative control. Technical replicates confirmed near-perfect measurement reproducibility (median Raw ICC > 0.97), establishing that variance in fasting pairs reflects biology, not noise. Immune-adjusted ICCs behaved differently across clocks in ways consistent with their composition: for clocks where fasting generated within-person variance, immune adjustment removed it and ICC increased (SystemsAge EAA 0.768 to IAA 0.913); for clocks unaffected by fasting, immune adjustment removed between-person structure and ICC fell substantially (OMICmAge 0.922 to 0.160), reflecting the estimation cost of fitting many immune cell predictors to stable residuals. Cross-sectional replication (n = 2,895) confirmed immune cell redistribution at scale. Mortality clocks reached significance cross-sectionally despite resistance to acute fasting. <h4>Conclusions:</h4> Acute refeeding after an overnight fast elicits small shifts in some epigenetic clocks, which varied systematically by training category in our data. PC-based clocks, which concentrate correlated CpG variance including that associated with immune cell composition, showed the largest shifts; mortality-trained clocks showed no detectable acute effect. A reliability-only framework that reports ICC without also testing for systematic group-level effects can miss the kind of structured biological variation observed here under fasting. ICC is not a fixed property of a clock, it is shaped by the study design, the population heterogeneity, the perturbation, and the adjustment applied. We recommend that clock reliability be assessed on a perturbation-specific, clock-by-clock basis, with variance decomposition at each adjustment level and explicit benchmarking against technical replicates.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.06.04.729731"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-08",
+    "firstIndexDate": "2026-06-08",
+    "firstPublicationDate": "2026-06-07",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42253138",
+    "source": "MED",
+    "pmid": "42253138",
+    "doi": "10.1111/1758-2229.70374",
+    "title": "Third Generation Genome Sequencing of the Endobacterium Corynebacterium kroppenstedtii subsp. demodicis Reveals Details of Its Microbe-Host-Interaction With the Most Complex Human Commensal, Demodex folliculorum. ",
+    "authorString": "Steegmüller T, Walch S, Gschwendtner S, Klingl A, French LE, Flaig M, Clanner-Engelshofen BM.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Steegmüller T",
+          "firstName": "T",
+          "lastName": "Steegmüller",
+          "initials": "T",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0002-5383-3538"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Dermatology and Allergy, University Hospital, LMU Munich, Munich, Germany."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Walch S",
+          "firstName": "S",
+          "lastName": "Walch",
+          "initials": "S",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0002-5816-8223"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Helmholtz Zentrum München, German Research Center for Environmental Health, Research Unit Comparative Microbiome Analysis, Neuherberg, Germany."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Gschwendtner S",
+          "firstName": "S",
+          "lastName": "Gschwendtner",
+          "initials": "S",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0002-6379-3728"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Helmholtz Zentrum München, German Research Center for Environmental Health, Research Unit Comparative Microbiome Analysis, Neuherberg, Germany."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Klingl A",
+          "firstName": "A",
+          "lastName": "Klingl",
+          "initials": "A",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0001-8414-8317"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Plant Development & Electron Microscopy, Biocenter, Ludwig-Maximilans-Universität München, Planegg-Martinsried, Germany."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "French LE",
+          "firstName": "L E",
+          "lastName": "French",
+          "initials": "LE",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0002-4629-1486"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Dermatology and Allergy, University Hospital, LMU Munich, Munich, Germany."
+              },
+              {
+                "affiliation": "Dr. Philip Frost, Department of Dermatology and Cutaneous Surgery, University of Miami Miller School of Medicine, Miami, Florida, USA."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Flaig M",
+          "firstName": "M",
+          "lastName": "Flaig",
+          "initials": "M",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0009-0003-3487-2691"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Dermatology and Allergy, University Hospital, LMU Munich, Munich, Germany."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Clanner-Engelshofen BM",
+          "firstName": "B M",
+          "lastName": "Clanner-Engelshofen",
+          "initials": "BM",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0001-9863-3380"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Dermatology and Allergy, University Hospital, LMU Munich, Munich, Germany."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "authorIdList": {
+      "authorId": [
+        {
+          "type": "ORCID",
+          "value": "0000-0001-8414-8317"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0001-9863-3380"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0002-4629-1486"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0002-5383-3538"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0002-5816-8223"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0002-6379-3728"
+        },
+        {
+          "type": "ORCID",
+          "value": "0009-0003-3487-2691"
+        }
+      ]
+    },
+    "journalInfo": {
+      "issue": "3",
+      "volume": "18",
+      "journalIssueId": 4186497,
+      "dateOfPublication": "2026 Jun",
+      "monthOfPublication": 6,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-06-01",
+      "journal": {
+        "title": "Environmental microbiology reports",
+        "medlineAbbreviation": "Environ Microbiol Rep",
+        "essn": "1758-2229",
+        "isoabbreviation": "Environ Microbiol Rep",
+        "issn": "1758-2229",
+        "nlmid": "101499207"
+      }
+    },
+    "pubYear": "2026",
+    "pageInfo": "e70374",
+    "abstractText": "Demodex mites inhabit the pilosebaceous unit despite harsh environmental conditions including UV radiation, variable salinity, and cosmetics. Their recently characterized endobacterium may contribute to this resilience. This study aimed to elucidate mechanisms of the microbe-host interaction that help mites withstand environmental stress. The genome of Corynebacterium kroppenstedtii subsp. demodicis was sequenced using PacBio technology and annotated via MicroScope. Metabolic and symbiotic traits were analyzed using KEGG and compared with the Demodex folliculorum secretome from published transcriptome data. The complete 2,456,075 bp genome contains 2034 coding sequences and exhibits reduced variable genes compared to other Corynebacterium species. Primary metabolism comprises an almost complete minimal gene set but lacks two tRNA synthetases and genes for phosphatidylethanolamine and NAD+ biosynthesis. Carbohydrate pathways are incomplete and fatty acid synthase I is absent. Secondary metabolism includes complete mevalonate and β-carotene biosynthetic pathways, while the methylerythritol phosphate pathway is missing. UV protection and oxidative stress tolerance are supported by β-carotene, ClpB, RecN, MsrA, KatA, SodA, and manganese transporter SitB. The secretome contains hydrolases likely aiding mite digestion. These findings provide genomic insights into mite-bacterium symbiosis and follicular adaptation. All functional inferences are based on genomic data and in silico predictions; experimental validation remains to be established.",
+    "affiliation": "Department of Dermatology and Allergy, University Hospital, LMU Munich, Munich, Germany.",
+    "publicationStatus": "ppublish",
+    "language": "eng",
+    "pubModel": "Print",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Journal Article"
+      ]
+    },
+    "grantsList": {
+      "grant": [
+        {
+          "agency": "Medical & Clinician Scientist Program (MCSP) at LMU Munich",
+          "orderIn": 0
+        }
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1111/1758-2229.70374"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-08",
+    "firstIndexDate": "2026-06-08",
+    "dateOfRevision": "2026-06-08",
+    "firstPublicationDate": "2026-06-01",
+    "matched_keywords": [
+      "PacBio"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42252976",
+    "source": "MED",
+    "pmid": "42252976",
+    "doi": "10.71150/jm.2603014",
+    "title": "16S-Pipeline: A comprehensive web-based platform for end-to-end 16S rRNA amplicon sequencing analysis. ",
+    "authorString": "Unno T.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Unno T",
+          "firstName": "Tatsuya",
+          "lastName": "Unno",
+          "initials": "T",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Biological Sciences and Biotechnology, Chungbuk National University, Cheongju 28644, Republic of Korea."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "issue": "5",
+      "volume": "64",
+      "journalIssueId": 4211965,
+      "dateOfPublication": "2026 May",
+      "monthOfPublication": 5,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-05-01",
+      "journal": {
+        "title": "Journal of microbiology (Seoul, Korea)",
+        "medlineAbbreviation": "J Microbiol",
+        "essn": "1976-3794",
+        "isoabbreviation": "J Microbiol",
+        "issn": "1225-8873",
+        "nlmid": "9703165"
+      }
+    },
+    "pubYear": "2026",
+    "pageInfo": "e2603014",
+    "abstractText": "16S rRNA gene amplicon sequencing is the most widely used approach for characterizing microbial communities, yet analyzing such data requires navigating a fragmented landscape of bioinformatics tools with distinct installation requirements, parameter settings, and data formats. Here we present 16S-Pipeline, an open-source, web-based platform that provides a complete workflow from raw FASTQ files to publication-ready statistical analyses. 16S-Pipeline automatically detects sequencing type (paired-end, single-end, long-read), variable region, and sequencing platform (Illumina, PacBio HiFi, Nanopore), then performs quality filtering, primer trimming, amplicon sequence variant (ASV) inference via DADA2, taxonomy assignment against SILVA v138.1, phylogenetic tree construction, and optional functional prediction via PICRUSt2. Downstream analyses include alpha and beta diversity, taxonomic composition visualization, differential abundance testing using five complementary methods (ALDEx2, DESeq2, ANCOM-BC2, LinDA, MaAsLin2) with consensus reporting, and KEGG pathway mapping. Built-in NCBI SRA integration enables downloading public datasets for re-analysis and generates submission metadata spreadsheets for data deposition. The interactive web interface built on FastAPI and Plotly Dash enables researchers to perform complex microbiome analyses without command-line expertise. 16S-Pipeline is freely available at https://github.com/tatsu1207/16S-Pipeline under the MIT License.",
+    "affiliation": "Department of Biological Sciences and Biotechnology, Chungbuk National University, Cheongju 28644, Republic of Korea.",
+    "publicationStatus": "ppublish",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Journal Article"
+      ]
+    },
+    "grantsList": {
+      "grant": [
+        {
+          "grantId": "RS-2025-02633155",
+          "agency": "Rural Development Administration",
+          "orderIn": 0
+        }
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.71150/jm.2603014"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-08",
+    "firstIndexDate": "2026-06-08",
+    "dateOfRevision": "2026-06-08",
+    "electronicPublicationDate": "2026-05-14",
+    "firstPublicationDate": "2026-05-14",
+    "matched_keywords": [
+      "PacBio"
+    ],
+    "matched_journals": []
+  }
+]

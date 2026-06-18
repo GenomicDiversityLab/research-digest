@@ -1,0 +1,1601 @@
+[
+  {
+    "id": "PPR1251595",
+    "source": "PPR",
+    "doi": "10.64898/2026.06.09.730932",
+    "title": "Amino acid repeat mosaics shape protein functional landscape",
+    "authorString": "Singh AK, Babu A, Gopalakrishnan AS, Rachote N, Sharma V, Ganguli S, Kappagantula KS, Ramadasan H, Shukla P, Dhayalan A, Chavali PL, Chavali S.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Singh AK",
+          "firstName": "Anjali Kumari",
+          "lastName": "Singh",
+          "initials": "AK"
+        },
+        {
+          "fullName": "Babu A",
+          "firstName": "Anurag",
+          "lastName": "Babu",
+          "initials": "A"
+        },
+        {
+          "fullName": "Gopalakrishnan AS",
+          "firstName": "Adhithya Subramanian",
+          "lastName": "Gopalakrishnan",
+          "initials": "AS"
+        },
+        {
+          "fullName": "Rachote N",
+          "firstName": "Nagashree",
+          "lastName": "Rachote",
+          "initials": "N"
+        },
+        {
+          "fullName": "Sharma V",
+          "firstName": "Vaidehi",
+          "lastName": "Sharma",
+          "initials": "V"
+        },
+        {
+          "fullName": "Ganguli S",
+          "firstName": "Sourav",
+          "lastName": "Ganguli",
+          "initials": "S"
+        },
+        {
+          "fullName": "Kappagantula KS",
+          "firstName": "Keertana Sai",
+          "lastName": "Kappagantula",
+          "initials": "KS"
+        },
+        {
+          "fullName": "Ramadasan H",
+          "firstName": "Harikrishnan",
+          "lastName": "Ramadasan",
+          "initials": "H"
+        },
+        {
+          "fullName": "Shukla P",
+          "firstName": "Palak",
+          "lastName": "Shukla",
+          "initials": "P"
+        },
+        {
+          "fullName": "Dhayalan A",
+          "firstName": "Arunkumar",
+          "lastName": "Dhayalan",
+          "initials": "A"
+        },
+        {
+          "fullName": "Chavali PL",
+          "firstName": "Pavithra",
+          "lastName": "Chavali",
+          "initials": "PL"
+        },
+        {
+          "fullName": "Chavali S",
+          "firstName": "Sreenivas",
+          "lastName": "Chavali",
+          "initials": "S"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "How combinations of functional units such as repeats and motifs within disordered regions influence protein function remains poorly understood. Here, we investigate how co-occurring amino acid homorepeats of different types within the same protein (HR-mosaics) shape molecular outcomes. Using a novel evolutionary co-occurrence metric, human HR-mosaics were classified as segregated (each HR independently influences distinct outcomes), concerted-disjunct (both HRs jointly shape protein functionality without modulating each other), or concerted-conjunct (both HRs affect functionality through mutual influence). Molecular studies of natural occurring polyGly-polyPro mosaic in DDX17 and chimeric mosaics of polyAla and polyHis, demonstrate that HR-mosaics influence protein abundance, localization, mobility and interaction landscape. Segregated HR-mosaics expand functional space, concerted-disjunct additionally confer biological context, and concerted-conjunct mosaics further enable rheostatic regulation between HRs. These design principles underscore amino acid type, length and relative positioning of HRs as central architects of HR-mosaic functionality, with implications in protein engineering and understanding repeat-associated pathologies.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.06.09.730932"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "Y",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-15",
+    "firstIndexDate": "2026-06-15",
+    "firstPublicationDate": "2026-06-12",
+    "matched_keywords": [
+      "mosaic"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1251624",
+    "source": "PPR",
+    "doi": "10.64898/2026.06.09.731197",
+    "title": "Back to basics: Observed statistics are sufficient to predict drug responses",
+    "authorString": "Svensson V, Khan U, Heydari H, Ubas AA, Thomas N, Merico D, Goodarzi H, Yu J, Alidoust N, Gandhi S.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Svensson V",
+          "firstName": "Valentine",
+          "lastName": "Svensson",
+          "initials": "V"
+        },
+        {
+          "fullName": "Khan U",
+          "firstName": "Umair",
+          "lastName": "Khan",
+          "initials": "U"
+        },
+        {
+          "fullName": "Heydari H",
+          "firstName": "Hamed",
+          "lastName": "Heydari",
+          "initials": "H"
+        },
+        {
+          "fullName": "Ubas AA",
+          "firstName": "Airol",
+          "lastName": "Ubas",
+          "initials": "AA"
+        },
+        {
+          "fullName": "Thomas N",
+          "firstName": "Nicole",
+          "lastName": "Thomas",
+          "initials": "N"
+        },
+        {
+          "fullName": "Merico D",
+          "firstName": "Daniele",
+          "lastName": "Merico",
+          "initials": "D"
+        },
+        {
+          "fullName": "Goodarzi H",
+          "firstName": "Hani",
+          "lastName": "Goodarzi",
+          "initials": "H"
+        },
+        {
+          "fullName": "Yu J",
+          "firstName": "John",
+          "lastName": "Yu",
+          "initials": "J"
+        },
+        {
+          "fullName": "Alidoust N",
+          "firstName": "Nima",
+          "lastName": "Alidoust",
+          "initials": "N"
+        },
+        {
+          "fullName": "Gandhi S",
+          "firstName": "Shreshth",
+          "lastName": "Gandhi",
+          "initials": "S"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "Predicting how cells, tissues, and patients will respond to a drug, cytokine, or genetic perturbation is central to biological and clinical reasoning. The practical goal is to estimate the analysis-ready readouts that support this reasoning: which cellular responses are context-dependent, which perturbations reveal shared or divergent mechanisms, and which observations should become the basis for the next experiment.  Here we introduce Rhaister, a perturbation-response predictor that operates directly on screen-level summary statistics. By measuring just a few perturbations in a new biological context, Rhaister predicts the unmeasured perturbations by learning how response patterns vary across reference contexts. This formulation applies to both fine-grained molecular readouts, such as transcriptional responses from Tahoe-100M or other large perturbation screen, or on phenotypic endpoints. To train and apply Rhaister on phenotypic endpoints we created Emerald Bay, a purpose-built Tahoe dataset that unifies multi-day cancer drug perturbation, pooled Mosaic tumor contexts, and paired transcriptomic response measurements*.  Across these settings, Rhaister matches or exceeds substantially more expensive virtual-cell models, often achieving the highest values possible in evaluation metrics, while training in seconds and running predictions in milliseconds. On Emerald Bay, Rhaister predicts context-specific drug phenotypes from sensitivity measurements alone and improves further when including transcriptomic information. We also introduce Rhaister-O, predicting drug responses in new contexts from baseline expression alone and, to our knowledge, provides the first zero-shot model for this task. Rhaister establishes summary-statistic perturbation modeling as a fast, interpretable framework for predicting biological response across new contexts.  *: https://huggingface.co/collections/tahoebio/rhaister",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.06.09.731197"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-15",
+    "firstIndexDate": "2026-06-15",
+    "firstPublicationDate": "2026-06-12",
+    "matched_keywords": [
+      "mosaic"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1251397",
+    "source": "PPR",
+    "doi": "10.64898/2026.06.11.731518",
+    "title": "A multimodal foundation model linking histopathology and DNA methylation",
+    "authorString": "Wang D, Zhang J, Chen C, Zhang W, Wang S, Meng Y, Sonpavde G, Horbinski C, Tian Y.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Wang D",
+          "firstName": "Dannong",
+          "lastName": "Wang",
+          "initials": "D"
+        },
+        {
+          "fullName": "Zhang J",
+          "firstName": "Jessica",
+          "lastName": "Zhang",
+          "initials": "J"
+        },
+        {
+          "fullName": "Chen C",
+          "firstName": "Chen",
+          "lastName": "Chen",
+          "initials": "C"
+        },
+        {
+          "fullName": "Zhang W",
+          "firstName": "Wei",
+          "lastName": "Zhang",
+          "initials": "W"
+        },
+        {
+          "fullName": "Wang S",
+          "firstName": "Song",
+          "lastName": "Wang",
+          "initials": "S"
+        },
+        {
+          "fullName": "Meng Y",
+          "firstName": "Yanda",
+          "lastName": "Meng",
+          "initials": "Y"
+        },
+        {
+          "fullName": "Sonpavde G",
+          "firstName": "Guru",
+          "lastName": "Sonpavde",
+          "initials": "G"
+        },
+        {
+          "fullName": "Horbinski C",
+          "firstName": "Craig",
+          "lastName": "Horbinski",
+          "initials": "C"
+        },
+        {
+          "fullName": "Tian Y",
+          "firstName": "Yu",
+          "lastName": "Tian",
+          "initials": "Y"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "Hematoxylin and eosin (H\\&E) slides are routinely available in cancer care, but molecular profiling often requires additional tissue processing and turnaround time. We introduce HistoMethyl, a DNA methylation-aware pathology foundation model that aligns whole-slide histopathology with matched genome-scale methylation beta-value profiles during pre-training while requiring only an H\\&E slide at inference. We evaluated HistoMethyl across four task groups: gene mutation prediction, morphology-associated classification, overall survival prediction, and direct DNA methylation beta-value recovery. Evaluation spanned TCGA cross-validation, a disease-held-out lower-grade glioma cohort, and external cohort validation in CPTAC glioblastoma and SurGen rectal adenocarcinoma, totaling 14 cancer cohorts and 81 gene mutation tasks. The best-performing configuration improved mean mutation AUROC by 5.03 percentage points. By converting DNA methylation supervision into an H\\&E-only representation, HistoMethyl could support an early molecular triage layer that helps prioritize cases for confirmatory sequencing, methylation profiling, immunohistochemistry, and molecular tumor board review. These image-only predictions are intended to accelerate downstream molecular testing and tissue allocation while leaving final diagnosis and treatment selection anchored in validated molecular assays.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.06.11.731518"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "Y",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "license": "cc by",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-15",
+    "firstIndexDate": "2026-06-15",
+    "firstPublicationDate": "2026-06-14",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1251461",
+    "source": "PPR",
+    "doi": "10.64898/2026.06.09.26355279",
+    "title": "Population-scale detection of methylation outliers from long-read genome sequencing",
+    "authorString": "Jensen TD, Kaur R, Bonner DE, Nguyen J, Reuter CM, Undiagnosed Diseases Network, Genomics Research to Elucidate the Genetics of Rare Diseases (GREGoR) Consortium, Ashley EA, Bernstein JA, Wheeler MT, Montgomery SB.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Jensen TD",
+          "firstName": "Tanner",
+          "lastName": "Jensen",
+          "initials": "TD"
+        },
+        {
+          "fullName": "Kaur R",
+          "firstName": "Rhina",
+          "lastName": "Kaur",
+          "initials": "R"
+        },
+        {
+          "fullName": "Bonner DE",
+          "firstName": "Devon",
+          "lastName": "Bonner",
+          "initials": "DE"
+        },
+        {
+          "fullName": "Nguyen J",
+          "firstName": "Jon",
+          "lastName": "Nguyen",
+          "initials": "J"
+        },
+        {
+          "fullName": "Reuter CM",
+          "firstName": "Chloe",
+          "lastName": "Reuter",
+          "initials": "CM"
+        },
+        {
+          "collectiveName": "Undiagnosed Diseases Network, Genomics Research to Elucidate the Genetics of Rare Diseases (GREGoR) Consortium"
+        },
+        {
+          "fullName": "Ashley EA",
+          "firstName": "Euan",
+          "lastName": "Ashley",
+          "initials": "EA"
+        },
+        {
+          "fullName": "Bernstein JA",
+          "firstName": "Jonathan",
+          "lastName": "Bernstein",
+          "initials": "JA"
+        },
+        {
+          "fullName": "Wheeler MT",
+          "firstName": "Matthew",
+          "lastName": "Wheeler",
+          "initials": "MT"
+        },
+        {
+          "fullName": "Montgomery SB",
+          "firstName": "Stephen",
+          "lastName": "Montgomery",
+          "initials": "SB"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "<h4>Background</h4>  Aberrant DNA methylation can mediate the functional effects of rare genetic variation and contribute to imprinting disorders, repeat expansion diseases, and other pathogenic regulatory mechanisms. Long-read sequencing technologies now enable genome-wide detection of CpG methylation alongside genetic variation from a single assay. However, methods for systematic identification and interpretation of methylation outliers from long-read sequencing data remain limited. <h4>Methods</h4>  We developed METAFORA, a computational workflow for detecting methylation outlier regions from PacBio and Oxford Nanopore long-read sequencing data. METAFORA constructs population-level methylation references, segments the genome into correlated CpG blocks, infers technical and biological sources of variation through hidden factor estimation, models uncertainty due to variable depth sequencing, and computes covariate-adjusted methylation outlier scores for individual samples. We applied METAFORA across large long-read sequencing cohorts and integrated methylation outliers with multi-omic data. METAFORA is implemented as a snakemake workflow available at  https://github.com/tjense25/METAFORA .  <h4>Results</h4>  METAFORA identified methylation outlier regions associated with rare structural variants, tandem repeat expansions, and imprinting abnormalities. We found outlier regions were enriched for molecular outliers across transcriptomic and chromatin accessibility datasets, supporting their functional relevance in gene regulation. In a representative case, METAFORA identified an imprinting defect affecting the GNAS locus associated with an STX16 deletion. <h4>Conclusions</h4>  METAFORA enables scalable detection and interpretation of methylation outliers from long-read sequencing data and provides a framework for integrating epigenetic outliers with genomic and multi-omic analyses. These approaches may improve interpretation of rare regulatory variation and support discovery of clinically relevant epigenetic abnormalities in genomic medicine.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "medRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.06.09.26355279"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "Y",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-15",
+    "firstIndexDate": "2026-06-15",
+    "firstPublicationDate": "2026-06-11",
+    "matched_keywords": [
+      "methylation",
+      "PacBio"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1251584",
+    "source": "PPR",
+    "doi": "10.64898/2026.06.10.731305",
+    "title": "Tube to Tumour: an integrative epigenomic analysis of DNA methylation in high-grade serous ovarian cancer and precursor serous tubal intraepithelial carcinoma",
+    "authorString": "Jordan A, McCabe A, Rodriguez A, Dean K, Das S, Perry A.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Jordan A",
+          "firstName": "Asia",
+          "lastName": "Jordan",
+          "initials": "A"
+        },
+        {
+          "fullName": "McCabe A",
+          "firstName": "Aideen",
+          "lastName": "McCabe",
+          "initials": "A"
+        },
+        {
+          "fullName": "Rodriguez A",
+          "firstName": "Alejandra",
+          "lastName": "Rodriguez",
+          "initials": "A"
+        },
+        {
+          "fullName": "Dean K",
+          "firstName": "Kellie",
+          "lastName": "Dean",
+          "initials": "K"
+        },
+        {
+          "fullName": "Das S",
+          "firstName": "Sudipto",
+          "lastName": "Das",
+          "initials": "S"
+        },
+        {
+          "fullName": "Perry A",
+          "firstName": "Antoinette",
+          "lastName": "Perry",
+          "initials": "A"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "Serous tubal intraepithelial carcinoma (STIC) is a known precursor of high-grade serous ovarian cancer (HGSOC). Yet, molecular events driving progression from STIC to HGSOC remain poorly defined. Aberrant DNA methylation is a hallmark of cancer, yet its role in early HGSOC remains unclear. We performed a comprehensive meta-analysis of publicly available Illumina Infinium DNA methylation EPIC array datasets assessing 255 samples comprising STIC, HGSOC, and histologically normal fallopian tube tissues. We mapped DNA methylation alterations during early tumorigenesis, identified conserved methylation patterns across STIC and HGSOC, and assessed RNA-sequencing data to define transcriptional consequences within genomic and epigenomic landscapes. STIC and HGSOC exhibited widespread DNA hypomethylation relative to normal tissue, accompanied by focal hypermethylation in CpG islands and 5′ regulatory regions. DNA Hypomethylation intensifies during progression from STIC to HGSOC, particularly in cis-regulatory enhancer domains and intergenic regions. We identified 11,660 CpG sites and 447 genomic regions with conserved DNA methylation patterns across STIC and HGSOC. Within these, 70 genes showed coordinated DNA methylation and expression changes, including TRIM15, NKAPL, and RIPPLY3. These findings reveal that epigenetic remodelling occurs in STIC lesions, prior to malignant transformation. DNA methylation alterations at regulatory regions may drive invasion and offer novel avenues for early detection and targeted intervention.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.06.10.731305"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "Y",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-15",
+    "firstIndexDate": "2026-06-15",
+    "firstPublicationDate": "2026-06-12",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1251568",
+    "source": "PPR",
+    "doi": "10.64898/2026.06.11.26355460",
+    "title": "Deconvolution-based cell-type specific DNA methylation-wide and transcriptome-wide association studies identify risk CpG sites and genes associated with colorectal cancer risk",
+    "authorString": "Li Q, Xu L, Wang J, Li C, Wen W, Shu X, Yang Y, Shu X, Cai Q, Long J, Singh B, Lau KS, Yin Z, Casey G, Song M, Peters U, Zheng W, Guo X.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Li Q",
+          "firstName": "Qing",
+          "lastName": "Li",
+          "initials": "Q"
+        },
+        {
+          "fullName": "Xu L",
+          "firstName": "Lili",
+          "lastName": "Xu",
+          "initials": "L"
+        },
+        {
+          "fullName": "Wang J",
+          "firstName": "Jifeng",
+          "lastName": "Wang",
+          "initials": "J"
+        },
+        {
+          "fullName": "Li C",
+          "firstName": "Chao",
+          "lastName": "Li",
+          "initials": "C"
+        },
+        {
+          "fullName": "Wen W",
+          "firstName": "Wanqing",
+          "lastName": "Wen",
+          "initials": "W"
+        },
+        {
+          "fullName": "Shu X",
+          "firstName": "Xiang",
+          "lastName": "Shu",
+          "initials": "X"
+        },
+        {
+          "fullName": "Yang Y",
+          "firstName": "Yaohua",
+          "lastName": "Yang",
+          "initials": "Y"
+        },
+        {
+          "fullName": "Shu X",
+          "firstName": "Xiao-ou",
+          "lastName": "Shu",
+          "initials": "X"
+        },
+        {
+          "fullName": "Cai Q",
+          "firstName": "Qiuyin",
+          "lastName": "Cai",
+          "initials": "Q"
+        },
+        {
+          "fullName": "Long J",
+          "firstName": "Jirong",
+          "lastName": "Long",
+          "initials": "J"
+        },
+        {
+          "fullName": "Singh B",
+          "firstName": "Bhuminder",
+          "lastName": "Singh",
+          "initials": "B"
+        },
+        {
+          "fullName": "Lau KS",
+          "firstName": "Ken",
+          "lastName": "Lau",
+          "initials": "KS"
+        },
+        {
+          "fullName": "Yin Z",
+          "firstName": "Zhijun",
+          "lastName": "Yin",
+          "initials": "Z"
+        },
+        {
+          "fullName": "Casey G",
+          "firstName": "Graham",
+          "lastName": "Casey",
+          "initials": "G"
+        },
+        {
+          "fullName": "Song M",
+          "firstName": "Mingyang",
+          "lastName": "Song",
+          "initials": "M"
+        },
+        {
+          "fullName": "Peters U",
+          "firstName": "Ulrike",
+          "lastName": "Peters",
+          "initials": "U"
+        },
+        {
+          "fullName": "Zheng W",
+          "firstName": "Wei",
+          "lastName": "Zheng",
+          "initials": "W"
+        },
+        {
+          "fullName": "Guo X",
+          "firstName": "Xingyi",
+          "lastName": "Guo",
+          "initials": "X"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "Bulk tissue-based DNA methylation-wide (MWAS) and transcriptome-wide association studies (TWAS) have identified CpG sites and genes associated with colorectal cancer (CRC) risk, but do not account for cellular heterogeneity. To address this, we developed a deconvolution-informed framework to infer cell-type specific DNA methylation and gene expression profiles from bulk normal colon tissues using reference single-cell epigenomic and transcriptomic datasets. We performed cell-type specific MWAS (ctMWAS) using deconvoluted DNA methylation data from 293 normal colon samples and conducted cell-type specific TWAS (ctTWAS) using deconvoluted gene expression data from 707 normal colon samples. Genetically predicted methylation and expression models were integrated with CRC GWAS summary statistics (78,473 cases and 107,143 controls) to identify risk-associated CpG sites and genes. Through ctMWAS, ctTWAS, and colocalization analyses, we identified 178 significant cell-type-specific CpG sites in 106 loci and 68 risk genes in 40 loci, including 26 previously unreported loci. Through additional integrative methylation-gene analysis, we prioritized 132 candidate risk genes, the majority of which were supported by multi-omics evidence and stage-specific dysregulation across the adenoma-carcinoma and serrated-carcinoma progression pathways. Pathway enrichment analyses implicated pathways involved in DNA double-strand break repair, TP53 regulation, TGF-β signaling, and innate immune responses. Among prioritized genes, 14 were identified as putative druggable targets linked to 90 FDA-approved or clinical-stage drugs. Experimental validation supports an oncogenic role for SF3A3. These findings demonstrate that deconvolution-informed integrative analyses enable cell-type-resolved identification of epigenetic and transcriptional mechanisms underlying CRC susceptibility and provide insights into disease biology, prevention, and therapeutic target discovery.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "medRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.06.11.26355460"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-15",
+    "firstIndexDate": "2026-06-15",
+    "firstPublicationDate": "2026-06-12",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1251318",
+    "source": "PPR",
+    "doi": "10.21203/rs.3.rs-9774527/v1",
+    "title": "Desmoplastic Myxoid Tumor, SMARCB1-Deficient, of the Pineal Region: Diagnostic Resolution by Methylation Profiling and Copy-Number Analysis",
+    "authorString": "Tiangco DAL, Porto KJ, Bernardo MC, Sih IM.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Tiangco DAL",
+          "firstName": "Denisse Ann",
+          "lastName": "Tiangco",
+          "initials": "DAL"
+        },
+        {
+          "fullName": "Porto KJ",
+          "firstName": "Kristine Joyce",
+          "lastName": "Porto",
+          "initials": "KJ"
+        },
+        {
+          "fullName": "Bernardo MC",
+          "firstName": "Marie Christine",
+          "lastName": "Bernardo",
+          "initials": "MC"
+        },
+        {
+          "fullName": "Sih IM",
+          "firstName": "Ibet Marie",
+          "lastName": "Sih",
+          "initials": "IM"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "<title>Abstract</title>  <p>Desmoplastic myxoid (DMT-PR), SMARCB1- mutant tumors are novel entities of the pineal gland sharing similar epigenetic characteristics with atypical teratoid/rhabdoid tumors and poorly differentiated chordomas. While DMT-PRs exhibit a comparatively more indolent course, its absence in earlier molecular classification systems present a significant diagnostic challenge making them at risk of misclassification as Atypical teratoid/rhabdoid tumors (AT/RT). Here, we report the first molecularly characterized case of a desmoplastic myxoid tumor of the pineal region in the Philippines, highlighting the critical role of updated DNA methylation profiling and copy-number analysis in resolving this diagnosis.</p>",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "Research Square",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.21203/rs.3.rs-9774527/v1"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "versionList": {
+      "version": [
+        {
+          "id": "PPR1251318",
+          "source": "PPR",
+          "firstPublishDate": "2026-06-14",
+          "versionNumber": 1,
+          "pubTypeList": {
+            "pubType": [
+              "preprint"
+            ]
+          },
+          "hasEvaluations": "N"
+        }
+      ]
+    },
+    "versionNumber": 1,
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-15",
+    "firstIndexDate": "2026-06-15",
+    "firstPublicationDate": "2026-06-14",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1251708",
+    "source": "PPR",
+    "doi": "10.64898/2026.06.11.731540",
+    "title": "MYC2 mediated regulation of xylan substitution patterns",
+    "authorString": "Wang S, Pauly M, Ramirez V.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Wang S",
+          "firstName": "Shaogan",
+          "lastName": "Wang",
+          "initials": "S"
+        },
+        {
+          "fullName": "Pauly M",
+          "firstName": "Markus",
+          "lastName": "Pauly",
+          "initials": "M"
+        },
+        {
+          "fullName": "Ramirez V",
+          "firstName": "Vicente",
+          "lastName": "Ramirez",
+          "initials": "V"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "O-Acetylation is the most abundant xylan decoration in eudicot plants and plays a critical role in determining xylan conformation and its interactions with cellulose and lignin, thereby contributing to secondary cell wall (SCW) integrity. In Arabidopsis, loss of the xylan O-acetyltransferase TBL29/ESK1 causes collapsed xylem and growth defects that can be suppressed by mutations in strigolactone (SL) biosynthesis genes such as MAX3. However, the molecular basis of this suppression remains unknown. Hypoacetylated xylan in tbl29 has a higher frequency of methyl glucuronic acid (MeGlcA) substituents, while the ratio of GlcA/MeGlcA is recovered in tbl29 max3. Furthermore, gene expression analyses reveal that the three xylan glucuronoxylan methyltransferases (GXM1/2/3) involved in xylan MeGlcA modification are upregulated in tbl29 SCWs but downregulated in tbl29 max3. Genetic analysis shows that the transcription factor MYC2 is required for max3-mediated suppression: the loss of MYC2 in tbl29 max3 prevents growth recovery and reverts GXM genes expression and xylan MeGlcA substitution levels. We propose a model where SL deficiency enhances MYC2 transcription, which in turn represses GXMs, thereby fine-tuning xylan methylation and re-establishing the MeGlcA/GlcA substitution balance under conditions of reduced O-acetylation. Our findings identify a MYC2-dependent regulatory module linking SL signalling to xylan methylation and reveal a genetically encoded compensatory mechanism that mitigates the consequences of defective xylan O-acetylation. More broadly, this work demonstrates that plants can preserve SCW function through adaptive remodelling of polysaccharide substitution patterns, highlighting an unexpected plasticity in SCW biosynthesis.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.06.11.731540"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-15",
+    "firstIndexDate": "2026-06-15",
+    "firstPublicationDate": "2026-06-11",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1251707",
+    "source": "PPR",
+    "doi": "10.64898/2026.06.10.731255",
+    "title": "Variable ectopic heterochromatin islands provide an alternative route to antifungal heteroresistance in Cryptococcus neoformans",
+    "authorString": "Yeboah R, Catania S, Tong P, Navarro-Mendoza MI, Perez-Arques C, Shukla M, Pidoux AL, Stone NR, Bicanic T, Heitman J, Allshire RC.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Yeboah R",
+          "firstName": "Rebecca",
+          "lastName": "Yeboah",
+          "initials": "R"
+        },
+        {
+          "fullName": "Catania S",
+          "firstName": "Sandra",
+          "lastName": "Catania",
+          "initials": "S"
+        },
+        {
+          "fullName": "Tong P",
+          "firstName": "Pin",
+          "lastName": "Tong",
+          "initials": "P"
+        },
+        {
+          "fullName": "Navarro-Mendoza MI",
+          "firstName": "Maria Isabel",
+          "lastName": "Navarro-Mendoza",
+          "initials": "MI"
+        },
+        {
+          "fullName": "Perez-Arques C",
+          "firstName": "Carlos",
+          "lastName": "Perez-Arques",
+          "initials": "C"
+        },
+        {
+          "fullName": "Shukla M",
+          "firstName": "Manu",
+          "lastName": "Shukla",
+          "initials": "M"
+        },
+        {
+          "fullName": "Pidoux AL",
+          "firstName": "Alison",
+          "lastName": "Pidoux",
+          "initials": "AL"
+        },
+        {
+          "fullName": "Stone NR",
+          "firstName": "Neil RH",
+          "lastName": "Stone",
+          "initials": "NR"
+        },
+        {
+          "fullName": "Bicanic T",
+          "firstName": "Tihana",
+          "lastName": "Bicanic",
+          "initials": "T"
+        },
+        {
+          "fullName": "Heitman J",
+          "firstName": "Joseph",
+          "lastName": "Heitman",
+          "initials": "J"
+        },
+        {
+          "fullName": "Allshire RC",
+          "firstName": "Robin",
+          "lastName": "Allshire",
+          "initials": "RC"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "The fungal pathogen Cryptococcus neoformans is estimated to cause approximately 180,000 deaths annually, primarily among immunocompromised HIV patients in resource-limited countries in central and southern Africa. Economic constraints regularly restrict treatment to fluconazole monotherapy. Unstably resistant cells arise in any otherwise fluconazole-sensitive C. neoformans population, with such heteroresistance often involving chromosome 1 disomy. Here we uncover a form of heteroresistance that occurs by a mechanism distinct from aneuploidy. Transient islands of histone H3 lysine 9 methylation-dependent heterochromatin occur at several locations across the genomes of clinical isolates from African patients. Some islands dissipate in the absence of fluconazole selection but are restored upon re-exposure. Deletion of specific heterochromatin island-located genes increased fluconazole resistance in an otherwise wild-type background, suggesting that heterochromatin-mediated alterations in gene expression elicit unstable resistance. Thus, in addition to aneuploidy, transient heterochromatin islands also appear to contribute to C. neoformans fluconazole heteroresistance. Heterochromatin islands have recently been shown to confer unstable antifungal resistance in the ascomycete fungus Schizosaccharomyces pombe (fission yeast) and fungal species of the Mucor circinelloides complex. Thus, similar unstable resistant epimutations may be widespread in pathogenic fungi, however, their instability and inaccessibility to detection by direct sequencing poses challenges for monitoring this form of heteroresistance in clinical settings.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.06.10.731255"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-15",
+    "firstIndexDate": "2026-06-15",
+    "firstPublicationDate": "2026-06-11",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1251422",
+    "source": "PPR",
+    "doi": "10.64898/2026.06.12.732001",
+    "title": "DNA 6mA marks transcriptionally active chromatin in malaria parasites",
+    "authorString": "Seshan D, Lauer W, Sarkar G, Govindasamy M, Murray CS, Greer EL, Smith ML, Vembar SS.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Seshan D",
+          "firstName": "Dhanasekaran",
+          "lastName": "Seshan",
+          "initials": "D"
+        },
+        {
+          "fullName": "Lauer W",
+          "firstName": "William",
+          "lastName": "Lauer",
+          "initials": "W"
+        },
+        {
+          "fullName": "Sarkar G",
+          "firstName": "Gautam",
+          "lastName": "Sarkar",
+          "initials": "G"
+        },
+        {
+          "fullName": "Govindasamy M",
+          "firstName": "Mohan",
+          "lastName": "Govindasamy",
+          "initials": "M"
+        },
+        {
+          "fullName": "Murray CS",
+          "firstName": "Connor Sean",
+          "lastName": "Murray",
+          "initials": "CS"
+        },
+        {
+          "fullName": "Greer EL",
+          "firstName": "Eric Lieberman",
+          "lastName": "Greer",
+          "initials": "EL"
+        },
+        {
+          "fullName": "Smith ML",
+          "firstName": "Melissa Laird",
+          "lastName": "Smith",
+          "initials": "ML"
+        },
+        {
+          "fullName": "Vembar SS",
+          "firstName": "Shruthi Sridhar",
+          "lastName": "Vembar",
+          "initials": "SS"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "DNA N6-methyladenine (6mA) has emerged as a significant epigenetic modification across a broad range of eukaryotes, from unicellular protists to metazoa. However, its role in unicellular eukaryotic parasites with highly AT-rich genomes, such as malaria-causing Plasmodium falciparum, remains unclear. Using mass spectrometry, South-western blotting, and Single Molecule Real-Time sequencing (Pacific Biosciences) across four stages of P. falciparum intra-erythrocytic development (IED), we confirmed that 0.02-0.04% of genomic adenines are modified to 6mA, with over 60% of the sites being stably maintained during the IED cycle. Notably, 6mA is enriched at transcription start sites, with genes bearing 6mA marks within their 5' and 3' untranslated regions exhibiting significantly elevated steady-state transcript levels. Consistent with this, 6mA loci show a strong positive correlation with activating histone post-translational modifications, while showing no significant association with repressive histone marks. Furthermore, in contrast to unicellular ciliates such as Oxytricha and Tetrahymena - organisms that share ancestry with Plasmodium - 6mA-marked genomic regions do not occlude nucleosomes. Lastly, we identified a putative 6mA methyltransferase belonging to the METTL4 family in P. falciparum, PfN6AMT encoded by the PF3D7_1303100 gene, and demonstrate that recombinant PfN6AMT exhibits robust methyltransferase activity in vitro, with mutation of its active site residues abolishing catalytic activity. Collectively, our findings demonstrate that 6mA is a low-abundance, yet reproducible, feature of the P. falciparum epigenome that is associated with transcriptionally active chromatin, and that the molecular mechanisms governing DNA adenine methylation may have undergone substantial evolutionary divergence, even among closely related eukaryotic lineages.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.06.12.732001"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-15",
+    "firstIndexDate": "2026-06-15",
+    "firstPublicationDate": "2026-06-13",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1251326",
+    "source": "PPR",
+    "doi": "10.21203/rs.3.rs-9919677/v1",
+    "title": "Arecoline induced epigenetic regulation of miR-378a-5p/CPT1A-mediated lipid droplet metabolism in oral squamous cell carcinoma",
+    "authorString": "Fan T, Hsu Y, Wu G, Hsiao J, Wang H, Shiah S.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Fan T",
+          "firstName": "Tzu-Yuan",
+          "lastName": "Fan",
+          "initials": "T"
+        },
+        {
+          "fullName": "Hsu Y",
+          "firstName": "Yuan-Ming",
+          "lastName": "Hsu",
+          "initials": "Y"
+        },
+        {
+          "fullName": "Wu G",
+          "firstName": "Guan-Hsun",
+          "lastName": "Wu",
+          "initials": "G"
+        },
+        {
+          "fullName": "Hsiao J",
+          "firstName": "Jenn-Ren",
+          "lastName": "Hsiao",
+          "initials": "J"
+        },
+        {
+          "fullName": "Wang H",
+          "firstName": "Horng-Dar",
+          "lastName": "Wang",
+          "initials": "H"
+        },
+        {
+          "fullName": "Shiah S",
+          "firstName": "Shine-Gwo",
+          "lastName": "Shiah",
+          "initials": "S"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "<title>Abstract</title>  <p>Background  Lipid droplets metabolism is closely related to the occurrence and development of oral squamous cell carcinoma (OSCC). Carnitine palmitoyltransferase 1A (CPT1A), a key enzyme controlling fatty acid oxidation (FAO), plays an important role in cancer development and progression. However, how microRNAs (miRNAs) regulate CPT1A-mediated lipid droplets (LDs) lipolysis remains to be elucidated. Methods  Immunohistochemistry and quantitative polymerase chain reaction were used to identify the clinical significance of miR-378a-5p and CPT1A in OSCC patients. CPT1A genetic silencing was performed with shRNA in OSCC cell lines to dissect its roles. Oxygen consumption rates (OCRs) and LDs immunofluorescence staining were used to detect the functions of miR-378a-5p and CPT1A in fatty acid oxidation. Reactive oxygen species (ROS) were also measured using flow cytometer. Cell proliferation, migration, invasion assays and animal experiments were used to evaluate the role of miR-378a-5p/CPT1A axis in OSCC progression in vitro and in vivo. Chromatin immunoprecipitation was performed to explore the molecular mechanisms by arecoline treatment. Results  CPT1A is significantly upregulated in OSCC patients and is associated with poor prognosis. Overexpression of CPT1A not only increases the proliferation, migration, invasion, and metastasis of OSCC cells in vitro and in vivo, but also promotes the degradation of lipid droplets through the PKA/HSL pathway. Treatment with the free radical scavenger NAC can inhibit the CPT1A-induced activity of PKA and HSL, further reducing the degradation of LDs. Furthermore, we found that miR-378a-5p was downregulated in oral cancer cells and that CPT1A expression could be inhibited by targeting its 3'-untranslated region. MiR-378a-5p inhibits LDs degradation and mitochondrial ATP production by inhibiting CPT1A, thereby preventing PKA/HSL activity and inhibiting the proliferation, migration, and invasion of oral cancer cells. miR-478a-5p can be transcriptionally co-regulated with its host gene PGC-1β through epigenetic repression. Arecoline (a major arecoline alkaloid) can recruit DNMT3B to bind to the PGC-1β promoter for DNA methylation, thereby attenuating miR-478a-5p expression in OSCC. Conclusion  Our study demonstrate that betel nut alkaloid may recruit DNMT3B to regulate miR-378a-5p/CPT1A axis which consequently influences the mitochondrial FAO and LD metabolism. This study provides a rationale for targeting lipid catabolic pathways for therapy in OSCC.</p>",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "Research Square",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.21203/rs.3.rs-9919677/v1"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "Y",
+    "hasTextMinedTerms": "Y",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "license": "cc by",
+    "versionList": {
+      "version": [
+        {
+          "id": "PPR1251326",
+          "source": "PPR",
+          "firstPublishDate": "2026-06-14",
+          "versionNumber": 1,
+          "pubTypeList": {
+            "pubType": [
+              "preprint"
+            ]
+          },
+          "hasEvaluations": "N"
+        }
+      ]
+    },
+    "versionNumber": 1,
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-15",
+    "firstIndexDate": "2026-06-15",
+    "firstPublicationDate": "2026-06-14",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1250921",
+    "source": "PPR",
+    "doi": "10.21203/rs.3.rs-9902246/v1",
+    "title": "Haplotype-defining NGR5 sequence variation identified through multiple bioinformatic approaches provides a potential mechanistic basis for differential NGR5 expression among the haplotypes",
+    "authorString": "Aravind B, Nayak S, Singh R, Chandran A, Manrauthia SK, Neeraja CN, Sundaram RM, Barbadikar K, Molla K, Thakur V, Mohannath G.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Aravind B",
+          "firstName": "Balamurugan",
+          "lastName": "Aravind",
+          "initials": "B"
+        },
+        {
+          "fullName": "Nayak S",
+          "firstName": "Sachidanand",
+          "lastName": "Nayak",
+          "initials": "S"
+        },
+        {
+          "fullName": "Singh R",
+          "firstName": "Rachit",
+          "lastName": "Singh",
+          "initials": "R"
+        },
+        {
+          "fullName": "Chandran A",
+          "firstName": "Anusree",
+          "lastName": "Chandran",
+          "initials": "A"
+        },
+        {
+          "fullName": "Manrauthia SK",
+          "firstName": "Satendra",
+          "lastName": "Manrauthia",
+          "initials": "SK"
+        },
+        {
+          "fullName": "Neeraja CN",
+          "lastName": "Neeraja",
+          "initials": "CN"
+        },
+        {
+          "fullName": "Sundaram RM",
+          "firstName": "Raman",
+          "lastName": "Sundaram",
+          "initials": "RM"
+        },
+        {
+          "fullName": "Barbadikar K",
+          "firstName": "Kalyani",
+          "lastName": "Barbadikar",
+          "initials": "K"
+        },
+        {
+          "fullName": "Molla K",
+          "firstName": "Kutubuddin",
+          "lastName": "Molla",
+          "initials": "K"
+        },
+        {
+          "fullName": "Thakur V",
+          "firstName": "Vivek",
+          "lastName": "Thakur",
+          "initials": "V"
+        },
+        {
+          "fullName": "Mohannath G",
+          "firstName": "Gireesha",
+          "lastName": "Mohannath",
+          "initials": "G"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "<title>Abstract</title>  <p>  <italic>NITROGEN-MEDIATED TILLER GROWTH RESPONSE 5</italic>  (  <italic>NGR5</italic>  ) encodes an AP2/ERF-family transcription factor, which recruits Polycomb Repressive Complex 2 (PRC2) to branching-inhibitory loci, promoting histone 3 lysine 27 trimethylation (H3K27me3), leading to transcriptional repression of branching-inhibitory genes. Higher NGR5 protein levels can lead to increased tiller growth and enhanced grain yield even under low soil nitrogen conditions. In this study, we employed multiple bioinformatic approaches to mine the NGR5 sequence variation derived primarily from the 3K Rice Genomes (3KRG) and publicly available  <italic>de novo</italic>  assembled rice genomes.. These approaches combinedly identified 53 SNPs (promoter + gene body) and nine structural variants in the promoter region. Haplotyping of this collective NGR5 sequence variation yielded 10 major haplotypes. Using about three representative accessions from each haplotype, grown under three diverse nitrogen regimes (N0, N50, and N100), we carried out NGR5 expression analysis through quantitative PCR (qPCR) approach. We show that across nitrogen regimes, mean NGR5 expression levels vary among haplotypes, among genotypes within a haplotype, and between haplotypes. Based on overall performance across the nitrogen regimes, we identified HAP2 as the most consistent and superior haplotype for NGR5 expression, closely followed by HAP4b and HAP3a. Notably, the NGR5 sequence variation identified in this study distinguishes these relatively superior haplotypes from the others, providing a potential mechanistic basis for differential NGR5 expression among haplotypes. We also identified a predicted differential targeting of NGR5 mRNA by a miRNA (osr-miR5071) among the haplotypes as another potential cause for varying NGR5 mRNA levels. Our proposed NGR5 sequence variation-mediated differential NGR5 expression among the haplotypes includes both genetic (cis-regulatory elements-based) and epigenetic (cytosine methylation-mediated) regulatory mechanisms. Furthermore, we show that the genotype x growth medium nitrogen status interaction also affects NGR5 expression levels. The study also provides sources of potentially superior NGR5 alleles and a focused approach for mining them from unknown rice germplasm, which can be exploited to enhance rice grain yield under low-nitrogen conditions. Lastly, the NGR5 polymorphic regions identified in this study are promising genome-editing targets for enhancing NGR5 expression levels.  </p>",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "Research Square",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.21203/rs.3.rs-9902246/v1"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "versionList": {
+      "version": [
+        {
+          "id": "PPR1250921",
+          "source": "PPR",
+          "firstPublishDate": "2026-06-12",
+          "versionNumber": 1,
+          "pubTypeList": {
+            "pubType": [
+              "preprint"
+            ]
+          },
+          "hasEvaluations": "N"
+        }
+      ]
+    },
+    "versionNumber": 1,
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-15",
+    "firstIndexDate": "2026-06-15",
+    "firstPublicationDate": "2026-06-12",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1251401",
+    "source": "PPR",
+    "doi": "10.64898/2026.06.10.731451",
+    "title": "Somatic variant detection in normal tissues from single-cell sequencing data",
+    "authorString": "Luo R, Wang Z, Dou J, Bhamidipati SV, Kalra D, Grochowski CM, Doddapaneni HV, Gibbs RA, Chen K, Chen R.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Luo R",
+          "firstName": "Rui",
+          "lastName": "Luo",
+          "initials": "R"
+        },
+        {
+          "fullName": "Wang Z",
+          "firstName": "Ziyi",
+          "lastName": "Wang",
+          "initials": "Z"
+        },
+        {
+          "fullName": "Dou J",
+          "firstName": "Jinzhuang",
+          "lastName": "Dou",
+          "initials": "J"
+        },
+        {
+          "fullName": "Bhamidipati SV",
+          "firstName": "Sravya Venkata",
+          "lastName": "Bhamidipati",
+          "initials": "SV"
+        },
+        {
+          "fullName": "Kalra D",
+          "firstName": "Divya",
+          "lastName": "Kalra",
+          "initials": "D"
+        },
+        {
+          "fullName": "Grochowski CM",
+          "firstName": "Christopher Michael",
+          "lastName": "Grochowski",
+          "initials": "CM"
+        },
+        {
+          "fullName": "Doddapaneni HV",
+          "firstName": "Harsha Vardhan",
+          "lastName": "Doddapaneni",
+          "initials": "HV"
+        },
+        {
+          "fullName": "Gibbs RA",
+          "firstName": "Richard Alexander",
+          "lastName": "Gibbs",
+          "initials": "RA"
+        },
+        {
+          "fullName": "Chen K",
+          "firstName": "Ken",
+          "lastName": "Chen",
+          "initials": "K"
+        },
+        {
+          "fullName": "Chen R",
+          "firstName": "Rui",
+          "lastName": "Chen",
+          "initials": "R"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "A crucial advantage of single-cell sequencing (SCS) is its ability to identify somatic variants in individual cells, enabling phylogenetic analysis of cellular populations within bulk tissues. While identifying somatic variants in tumor tissues via SCS has become a common practice, doing so in normal tissues remains challenging due to the rarity of somatic variants in normal cells. To evaluate the feasibility of somatic variant calling from widely available single-nucleus RNA-seq (snRNA-seq) and single-nucleus ATAC-seq (snATAC-seq) data, we profiled a Cell-line mix of six HapMap samples prepared by the SMaHT consortium using 10x Genomics 5' snRNA-seq (12k cells with 36k mean reads per cell) and snATAC-seq (11k cells with 14k median high-quality fragments per cell) for variant calling. PacBio long-read whole genome sequencing (WGS) data (109x) generated from individual cell lines were used as ground truth. Two computational tools, Monopogen and SComatic, were used for somatic variant calling from the SCS data. Monopogen achieved single nucleotide variant (SNV) detection accuracies of 93.30% in the snRNA-seq and 99.64% in the snATAC-seq data, both of which outperformed SComatic (74.35% and 94.29%, respectively). Monopogen also consistently detected somatic SNVs at cellular fractions as low as 0.5% (2.54% in snRNA and 0.81% in snATAC) in individual samples. Notably, snATAC-seq exhibited higher genomic coverage breadth and larger number of variants detected than snRNA-seq. While the SCS data have lower overall genome coverage than that of the bulk WGS, the single-cell level variant resolution allows Monopogen to assign variants to their cells of origin with over 80% accuracy in both RNA and ATAC modalities, thereby facilitating studies of clonal evolution and cell-type-specific mutagenesis. Other benchmarking methods were also evaluated (DeepVariant, Cellsnp-lite and Mutect2) for comparison. In conclusion, our study demonstrated the feasibility of performing reliable single-cell somatic mutation calling in a cell-line mixture and discussed the strengths and limitations of current computational methods when applied to normal tissues.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "grantsList": {
+      "grant": [
+        {
+          "grantId": "DI3-0000000288",
+          "agency": "Chan Zuckerberg Initiative (United States)",
+          "orderIn": 0
+        },
+        {
+          "grantId": "UM1 DA058229",
+          "agency": "NIH Common Fund",
+          "orderIn": 0
+        }
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.06.10.731451"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-15",
+    "firstIndexDate": "2026-06-15",
+    "firstPublicationDate": "2026-06-14",
+    "matched_keywords": [
+      "PacBio"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1250996",
+    "source": "PPR",
+    "doi": "10.21203/rs.3.rs-9959688/v1",
+    "title": "Long-Read Sequencing for Structural Variant Detection: A Scoping Review of Tools, Benchmarking Evidence, and Clinical Applications",
+    "authorString": "Alsharif M, Alsharif F.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Alsharif M",
+          "firstName": "Mohammed",
+          "lastName": "Alsharif",
+          "initials": "M"
+        },
+        {
+          "fullName": "Alsharif F",
+          "firstName": "Farah",
+          "lastName": "Alsharif",
+          "initials": "F"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "<title>Abstract</title>  <p>Background  Structural variants, including deletions, insertions, duplications, inversions, and translocations exceeding 50 base pairs, which collectively affect more nucleotides than single-nucleotide variants and contribute substantially to human disease [1,7]. Short-read whole-genome sequencing fails to genotype 35% of deletions and 47% of insertions within tandem repeats, a limitation that long-read sequencing platforms are increasingly positioned to address. Objective  To map and synthesise current evidence on long-read sequencing tools for structural variant detection, characterise their performance across platforms and clinical contexts, and present a framework for evidence-informed tool selection. Methods  A scoping review following PRISMA-ScR guidelines was conducted across PubMed, Google Scholar, and bioRxiv (January 2019 to June 2025). Of 554 records identified and 490 screened after deduplication, 19 primary studies reporting quantitative structural variant calling performance against validated truth sets were included. Results  Nineteen studies encompassed sixteen structural variant callers and three hybrid pipelines. On PacBio HiFi, Sawfish achieved F1 of 0.976 on the T2T-HG002-Q100 benchmark; 15x coverage appeared to match other tools at 30x [1]. Sniffles2 was 29% more accurate and 11.8 times faster than its predecessor, with F1 of 0.75 maintained at 5x Oxford Nanopore coverage [14]. For Oxford Nanopore, Dysgu appeared to offer favourable performance at 20x and above (F1 = 0.90) [3], while NanoVar demonstrated 100% PCR validation at 4x in an acute myeloid leukaemia cohort [8]. In one study, the transformer-based SVHunter reported 113 times fewer false positives than Sniffles2 on CHM13 data [17]. Consensus calling through ConsensuSV-ONT outperformed individual callers across three evaluated samples [19]. Reference genome upgrade to CHM13-T2T improved somatic benchmark precision from 85.71% to 100% in one melanoma dataset [13]. A reproducibility concern was identified: pbsv generated 71.3% call discordance between permuted FASTQ inputs when SAMtools was used for BAM sorting [6]. Conclusion  Available evidence suggests long-read sequencing offers substantial advantages over short-read platforms for structural variant detection. The reviewed evidence supports a framework for tool selection by application, though conclusions should be interpreted in light of benchmark heterogeneity and limited multi-site validation.</p>",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "Research Square",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.21203/rs.3.rs-9959688/v1"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "versionList": {
+      "version": [
+        {
+          "id": "PPR1250996",
+          "source": "PPR",
+          "firstPublishDate": "2026-06-12",
+          "versionNumber": 1,
+          "pubTypeList": {
+            "pubType": [
+              "preprint"
+            ]
+          },
+          "hasEvaluations": "N"
+        }
+      ]
+    },
+    "versionNumber": 1,
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-15",
+    "firstIndexDate": "2026-06-15",
+    "firstPublicationDate": "2026-06-12",
+    "matched_keywords": [
+      "PacBio"
+    ],
+    "matched_journals": []
+  }
+]

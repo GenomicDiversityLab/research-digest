@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Paper Digest — 2026-06-16</title>
+<style>:root {
+  color-scheme: light dark;
+  --bg: #fafaf7; --fg: #1c1c1a; --muted: #6b6b66; --soft: #4a4a45;
+  --accent: #b85c00; --accent-soft: #fef3e6;
+  --card: #ffffff; --border: #e5e3dc; --chip: #f0ede4;
+  --shadow: 0 1px 2px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.04);
+  --radius: 12px;
+}
+* { box-sizing: border-box; }
+html, body { margin:0; padding:0; background:var(--bg); color:var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
+    "Apple SD Gothic Neo", "Malgun Gothic", "Pretendard", sans-serif;
+  font-size: 15px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+.wrap { max-width: 920px; margin: 0 auto; padding: 28px 20px 80px; }
+a { color: var(--accent); }
+header.hero { display:flex; align-items:flex-end; justify-content:space-between; gap:16px;
+  padding: 12px 0 8px; border-bottom: 1px solid var(--border); margin-bottom: 24px; }
+header.hero h1 { margin: 0 0 2px; font-size: 26px; letter-spacing: -0.02em; font-weight: 700; }
+header.hero .meta { color: var(--muted); font-size: 13px; }
+header.hero .home-link { font-size: 13px; color: var(--muted); text-decoration: none; }
+header.hero .home-link:hover { color: var(--accent); }
+
+/* Day tabs (daily detail pages) */
+.daynav { display:flex; align-items:center; flex-wrap: wrap; gap: 10px;
+  background: var(--card); border:1px solid var(--border); border-radius: var(--radius);
+  padding: 10px 14px; margin-bottom: 18px; font-size: 13px; box-shadow: var(--shadow); }
+.daynav .arrow, .daynav .home { color: var(--muted); text-decoration:none; padding: 4px 8px;
+  border-radius: 6px; }
+.daynav .arrow:hover, .daynav .home:hover { background: var(--chip); color: var(--accent); }
+.daynav .arrow.disabled { opacity: 0.35; cursor: default; }
+.daynav .center { display:flex; gap:4px; flex-wrap:wrap; }
+.daynav .center a, .daynav .center span { color: var(--fg); text-decoration:none;
+  padding: 4px 9px; border-radius: 6px; font-variant-numeric: tabular-nums; }
+.daynav .center a:hover { background: var(--chip); }
+.daynav .center .today { background: var(--accent); color:#fff; font-weight:600; }
+.daynav .center .empty { color: var(--muted); }
+
+/* Summary card */
+.summary { background:var(--card); border:1px solid var(--border); border-radius:var(--radius);
+  padding: 16px 20px; margin: 0 0 22px; box-shadow: var(--shadow); }
+.summary h2 { margin:0 0 10px; font-size:11px; text-transform:uppercase; letter-spacing:0.08em; color:var(--muted); font-weight:600; }
+.summary-grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px 28px; }
+.summary-grid .col h3 { margin:0 0 6px; font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.06em; font-weight:600; }
+.summary-grid .col ul { margin:0; padding:0; list-style:none; font-size:13px; }
+.summary-grid .col li { display:flex; justify-content:space-between; gap:8px; padding:2px 0;
+  border-bottom: 1px dashed var(--border); }
+.summary-grid .col li:last-child { border-bottom: 0; }
+.summary-grid .col li b { font-weight:600; font-variant-numeric: tabular-nums; }
+
+/* Filter chips */
+.filter-row { display:flex; gap:14px; align-items:baseline; flex-wrap:wrap; margin-bottom: 8px; }
+.filter-row .lbl { font-size:10px; color:var(--muted); text-transform:uppercase; letter-spacing:0.08em;
+  font-weight:600; min-width:64px; padding-top: 4px; }
+.filters { display:flex; flex-wrap:wrap; gap:6px; }
+.chip { display:inline-flex; align-items:center; padding: 4px 11px; border-radius: 999px;
+  background: var(--chip); border:1px solid var(--border); font-size:12px;
+  cursor:pointer; user-select:none; transition: all 0.12s; text-decoration:none; color: inherit; }
+.chip:hover { border-color: var(--accent); }
+.chip.active { background: var(--accent); color:#fff; border-color: var(--accent); }
+.chip .count { opacity: 0.65; margin-left: 6px; font-variant-numeric: tabular-nums; font-size: 11px; }
+.chip.active .count { opacity: 0.95; }
+
+/* Per-keyword color chips (kw-* class injected per page) */
+.chip.kw-somatic-mosaicism, .tag.kw-somatic-mosaicism { background: #ede9fe; color: #5b21b6; border-color: #ede9fe; }
+.chip.kw-somatic-mosaicism:hover { filter: brightness(0.95); border-color: #5b21b6; }
+.chip.kw-somatic-mosaicism.active { background: #5b21b6; color: #fff; border-color: #5b21b6; }
+@media (prefers-color-scheme: dark) {
+  .chip.kw-somatic-mosaicism, .tag.kw-somatic-mosaicism { background: #3b1d6b; color: #c4b5fd; border-color: #3b1d6b; }
+  .chip.kw-somatic-mosaicism.active { background: #c4b5fd; color: #181815; border-color: #c4b5fd; }
+}
+.chip.kw-mosaic, .tag.kw-mosaic { background: #ffedd5; color: #9a3412; border-color: #ffedd5; }
+.chip.kw-mosaic:hover { filter: brightness(0.95); border-color: #9a3412; }
+.chip.kw-mosaic.active { background: #9a3412; color: #fff; border-color: #9a3412; }
+@media (prefers-color-scheme: dark) {
+  .chip.kw-mosaic, .tag.kw-mosaic { background: #3a2210; color: #fdba74; border-color: #3a2210; }
+  .chip.kw-mosaic.active { background: #fdba74; color: #181815; border-color: #fdba74; }
+}
+.chip.kw-mosaic-variant, .tag.kw-mosaic-variant { background: #fce7f3; color: #9d174d; border-color: #fce7f3; }
+.chip.kw-mosaic-variant:hover { filter: brightness(0.95); border-color: #9d174d; }
+.chip.kw-mosaic-variant.active { background: #9d174d; color: #fff; border-color: #9d174d; }
+@media (prefers-color-scheme: dark) {
+  .chip.kw-mosaic-variant, .tag.kw-mosaic-variant { background: #3a1626; color: #f9a8d4; border-color: #3a1626; }
+  .chip.kw-mosaic-variant.active { background: #f9a8d4; color: #181815; border-color: #f9a8d4; }
+}
+.chip.kw-methylation, .tag.kw-methylation { background: #dbeafe; color: #1e3a8a; border-color: #dbeafe; }
+.chip.kw-methylation:hover { filter: brightness(0.95); border-color: #1e3a8a; }
+.chip.kw-methylation.active { background: #1e3a8a; color: #fff; border-color: #1e3a8a; }
+@media (prefers-color-scheme: dark) {
+  .chip.kw-methylation, .tag.kw-methylation { background: #10204a; color: #93c5fd; border-color: #10204a; }
+  .chip.kw-methylation.active { background: #93c5fd; color: #181815; border-color: #93c5fd; }
+}
+.chip.kw-pacbio, .tag.kw-pacbio { background: #d1fae5; color: #065f46; border-color: #d1fae5; }
+.chip.kw-pacbio:hover { filter: brightness(0.95); border-color: #065f46; }
+.chip.kw-pacbio.active { background: #065f46; color: #fff; border-color: #065f46; }
+@media (prefers-color-scheme: dark) {
+  .chip.kw-pacbio, .tag.kw-pacbio { background: #0c2a23; color: #86efac; border-color: #0c2a23; }
+  .chip.kw-pacbio.active { background: #86efac; color: #181815; border-color: #86efac; }
+}
+.chip.pinned, .tag.pinned { background: #fef3c7; color: #854d0e; border-color: #fef3c7; font-weight: 600; }
+.chip.pinned:hover { filter: brightness(0.95); border-color: #854d0e; }
+.chip.pinned.active { background: #854d0e; color: #fff; border-color: #854d0e; }
+@media (prefers-color-scheme: dark) {
+  .chip.pinned, .tag.pinned { background: #3a2d0d; color: #fde68a; border-color: #3a2d0d; }
+  .chip.pinned.active { background: #fde68a; color: #181815; border-color: #fde68a; }
+}
+
+.search-box { width:100%; margin: 8px 0 18px; }
+.search-box input { width:100%; padding: 10px 14px; border:1px solid var(--border); border-radius: 8px;
+  font-size: 14px; background: var(--card); color: var(--fg); transition: border-color 0.12s; }
+.search-box input:focus { outline: none; border-color: var(--accent); }
+
+.papers { display:flex; flex-direction:column; gap: 12px; }
+.paper { background:var(--card); border:1px solid var(--border); border-radius: var(--radius);
+  padding: 16px 20px; transition: border-color 0.12s, box-shadow 0.12s; box-shadow: var(--shadow); }
+.paper:hover { border-color: var(--accent); box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 6px 18px rgba(184,92,0,0.10); }
+.paper.hidden { display:none; }
+.paper.hi { border-color: #f0c388; background: linear-gradient(0deg, var(--accent-soft), var(--card) 70%); }
+.paper h3 { margin: 0 0 6px; font-size: 16px; line-height: 1.4; font-weight: 600; }
+.paper h3 a { color: var(--fg); text-decoration: none; }
+.paper h3 a:hover { color: var(--accent); }
+.paper .if-tag { display:inline-block; margin-left: 6px; padding: 1px 7px; border-radius: 4px;
+  background: #fff3df; color: #8a4b00; font-size: 11px; font-weight: 700; vertical-align: 2px;
+  letter-spacing: 0.02em; }
+.paper.hi .if-tag { background: var(--accent); color: #fff; }
+.paper .by { font-size: 12px; color: var(--muted); margin: 0 0 6px; }
+.paper .meta { font-size: 11px; color: var(--muted); margin: 0 0 8px; display: flex;
+  flex-wrap: wrap; gap: 4px 10px; align-items: center; }
+.paper .meta .src { display:inline-block; padding: 1px 7px; border-radius: 4px; font-weight: 700;
+  letter-spacing: 0.02em; font-size: 10px; background: var(--chip); }
+.paper .meta .src.PPR { background:#fff3df; color:#8a4b00; }
+.paper .meta .src.MED { background:#e3eef6; color:#1f4e75; }
+.paper .meta .src.PMC { background:#e3f4e6; color:#2a6b35; }
+.paper .meta .date { font-variant-numeric: tabular-nums; }
+.tag { display:inline-block; padding: 1px 7px; border-radius: 999px; font-size: 11px;
+  background: var(--chip); border: 1px solid var(--border); text-decoration: none;
+  font-weight: 500; transition: all 0.12s; }
+.tag:hover { filter: brightness(0.95); }
+.paper .ksum { background: #fffefa; border:1px solid #efe9d8; border-radius: 8px; padding: 10px 14px;
+  margin: 8px 0 4px; font-size: 14px; line-height: 1.7; color: #2c2c28; }
+.paper.hi .ksum { background: #fffaf2; border-color: #efd9b8; }
+.paper .ksum .label { display:inline-block; font-size: 10px; font-weight: 700; color: var(--accent);
+  text-transform: uppercase; letter-spacing: 0.06em; margin-right: 6px; vertical-align: 2px; }
+.paper .ksum-struct { display: flex; flex-direction: column; gap: 8px; }
+.paper .ksum-struct .line { display: flex; gap: 10px; }
+.paper .ksum-struct .lbl { flex: 0 0 56px; font-size: 11px; font-weight: 700; color: var(--accent);
+  text-transform: uppercase; letter-spacing: 0.04em; padding-top: 3px; }
+.paper .ksum-struct .body { flex: 1 1 auto; }
+.paper .ksum-struct ul { margin: 2px 0 0; padding-left: 18px; }
+.paper .doi a { color: var(--muted); font-size: 11px; text-decoration: none; }
+.paper .doi a:hover { color: var(--accent); }
+.paper .ab { font-size: 13px; color: var(--soft); margin: 6px 0 0; }
+
+/* date headers used on per-keyword pages */
+.date-head { display:flex; align-items:baseline; gap: 12px; margin: 26px 0 8px;
+  padding-bottom: 6px; border-bottom: 1px dashed var(--border); }
+.date-head h2 { margin: 0; font-size: 14px; font-weight: 700; letter-spacing: -0.01em; }
+.date-head .day-meta { font-size: 12px; color: var(--muted); }
+
+/* index page */
+.kw-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 10px; margin: 14px 0 28px; }
+.kw-card { display:block; padding: 14px 16px; border-radius: var(--radius); background: var(--card);
+  border:1px solid var(--border); text-decoration: none; color: var(--fg); transition: all 0.12s;
+  box-shadow: var(--shadow); }
+.kw-card:hover { border-color: var(--accent); transform: translateY(-1px); box-shadow: 0 1px 2px rgba(0,0,0,0.04), 0 8px 22px rgba(184,92,0,0.10); }
+.kw-card .name { display:flex; align-items:center; gap: 8px; font-weight: 700; font-size: 15px;
+  margin-bottom: 4px; }
+.kw-card .swatch { width: 10px; height: 10px; border-radius: 999px; }
+.kw-card .stats { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.kw-card .recent { margin-top: 6px; font-size: 11px; color: var(--muted); }
+
+/* day list */
+.daylist { display: flex; flex-direction: column; gap: 8px; margin-top: 6px; }
+.daylist .row { display:grid; grid-template-columns: 110px 200px 1fr; gap: 14px;
+  align-items: baseline; padding: 12px 16px; border:1px solid var(--border); border-radius: var(--radius);
+  background: var(--card); text-decoration:none; color: var(--fg); transition: border-color 0.12s; }
+.daylist .row:hover { border-color: var(--accent); }
+.daylist .d { font-variant-numeric: tabular-nums; font-weight: 600; }
+.daylist .n { font-variant-numeric: tabular-nums; font-size: 14px; }
+.daylist .hi-pill { display:inline-block; margin-left: 6px; padding: 1px 7px; border-radius: 999px;
+  background:#fff0d6; color:#8a4b00; font-size: 11px; font-weight: 600; }
+.daylist .info { display:flex; flex-direction: column; gap: 2px; color: var(--muted); font-size: 12px; }
+
+.empty { background: var(--card); border:1px dashed var(--border); border-radius: var(--radius);
+  padding: 30px; text-align: center; color: var(--muted); }
+.section-h { margin: 30px 0 8px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em;
+  color: var(--muted); font-weight: 700; }
+footer { margin-top: 60px; padding-top: 16px; border-top: 1px solid var(--border);
+  font-size: 11px; color: var(--muted); }
+footer a { color: var(--muted); }
+
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#181815; --fg:#e8e6df; --muted:#8a8780; --soft:#bbbab2; --card:#232320;
+    --border:#353330; --chip:#2a2825; --accent:#f29349; --accent-soft:#2a2014;
+    --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 4px 12px rgba(0,0,0,0.3); }
+  .paper .meta .src.PPR { background:#3a2a13; color:#f0c388; }
+  .paper .meta .src.MED { background:#1a2a3a; color:#93c0e8; }
+  .paper .meta .src.PMC { background:#1d3322; color:#8fd29a; }
+  .paper .ksum { background:#1f1f1c; border-color:#3a3833; color: #e0ddd2; }
+  .paper.hi .ksum { background:#2a2419; border-color:#4a3e22; }
+  .paper.hi { background: linear-gradient(0deg, #2a2014, var(--card) 70%); }
+  .daylist .hi-pill { background:#3a2a13; color:#f0c388; }
+}</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="daynav"><a class="arrow" href="2026-06-15.html">← 2026-06-15</a><a class="home" href="../index.html">📚 인덱스</a><div class="center"><a class="" href="2026-04-29.html">4/29</a><a class="" href="2026-04-30.html">4/30</a><a class="" href="2026-05-01.html">5/1</a><a class="" href="2026-05-02.html">5/2</a><a class="" href="2026-05-03.html">5/3</a><a class="" href="2026-05-04.html">5/4</a><a class="" href="2026-05-05.html">5/5</a><a class="" href="2026-05-06.html">5/6</a><a class="" href="2026-05-07.html">5/7</a><a class="" href="2026-05-08.html">5/8</a><a class="" href="2026-05-09.html">5/9</a><a class="" href="2026-05-10.html">5/10</a><a class="" href="2026-05-11.html">5/11</a><a class="" href="2026-05-12.html">5/12</a><a class="" href="2026-05-13.html">5/13</a><a class="" href="2026-05-14.html">5/14</a><a class="" href="2026-05-15.html">5/15</a><a class="" href="2026-05-16.html">5/16</a><a class="" href="2026-05-17.html">5/17</a><a class="" href="2026-05-18.html">5/18</a><a class="" href="2026-05-19.html">5/19</a><a class="" href="2026-05-20.html">5/20</a><a class="" href="2026-05-21.html">5/21</a><a class="" href="2026-05-22.html">5/22</a><a class="" href="2026-05-23.html">5/23</a><a class="" href="2026-05-24.html">5/24</a><a class="" href="2026-05-25.html">5/25</a><a class="" href="2026-05-26.html">5/26</a><a class="" href="2026-05-27.html">5/27</a><a class="" href="2026-05-28.html">5/28</a><a class="" href="2026-05-29.html">5/29</a><a class="" href="2026-05-30.html">5/30</a><a class="" href="2026-05-31.html">5/31</a><a class="" href="2026-06-01.html">6/1</a><a class="" href="2026-06-02.html">6/2</a><a class="" href="2026-06-03.html">6/3</a><a class="" href="2026-06-04.html">6/4</a><a class="" href="2026-06-05.html">6/5</a><a class="" href="2026-06-06.html">6/6</a><a class="" href="2026-06-07.html">6/7</a><a class="" href="2026-06-08.html">6/8</a><a class="" href="2026-06-09.html">6/9</a><a class="" href="2026-06-10.html">6/10</a><a class="" href="2026-06-11.html">6/11</a><a class="" href="2026-06-12.html">6/12</a><a class="" href="2026-06-13.html">6/13</a><a class="" href="2026-06-14.html">6/14</a><a class="" href="2026-06-15.html">6/15</a><a class="today" href="2026-06-16.html">6/16</a><a class="" href="2026-06-17.html">6/17</a><a class="" href="2026-06-18.html">6/18</a></div><a class="arrow" href="2026-06-17.html">2026-06-17 →</a></nav>
+<header class="hero">
+  <div>
+    <h1>📄 Paper Digest</h1>
+    <div class="meta">2026년 06월 16일 (Tue) · Europe PMC · <b>88</b>편 · IF≥10 <b>11</b>편</div>
+  </div>
+</header>
+<section class="summary">
+  <h2>Summary</h2>
+  <div class="summary-grid">
+    <div class="col"><h3>Source</h3><ul><li><span>PubMed</span><b>81</b></li><li><span>Preprint</span><b>7</b></li></ul></div>
+    <div class="col"><h3>Top journals</h3><ul><li><span>(unspecified)</span><b>7</b></li><li><span>Nature</span><b>7</b></li><li><span>Horticulture research</span><b>3</b></li><li><span>Nature communications</span><b>2</b></li><li><span>Frontiers in microbiology</span><b>2</b></li><li><span>Scientific reports</span><b>2</b></li><li><span>Chembiochem </span><b>2</b></li><li><span>Aging and disease</span><b>2</b></li></ul></div>
+    <div class="col"><h3>Keyword</h3><ul><li><span>Somatic mosaicism</span><b>3</b></li><li><span>mosaic</span><b>12</b></li><li><span>mosaic variant</span><b>1</b></li><li><span>methylation</span><b>50</b></li><li><span>PacBio</span><b>16</b></li></ul></div>
+    <div class="col"><h3>📌 Pinned</h3><ul><li><span>📌 Cell</span><b>1</b></li><li><span>📌 Nature</span><b>7</b></li><li><span>📌 Science</span><b>0</b></li></ul></div>
+  </div>
+</section>
+
+<div class="filter-row"><div class="lbl">Keyword</div><div class="filters"><span class="chip active" data-filter="keyword" data-value="all">전체 <span class="count" id="visibleCount">88</span></span><span class="chip kw-somatic-mosaicism" data-filter="keyword" data-value="somatic-mosaicism">Somatic mosaicism<span class="count">3</span></span><span class="chip kw-mosaic" data-filter="keyword" data-value="mosaic">mosaic<span class="count">12</span></span><span class="chip kw-mosaic-variant" data-filter="keyword" data-value="mosaic-variant">mosaic variant<span class="count">1</span></span><span class="chip kw-methylation" data-filter="keyword" data-value="methylation">methylation<span class="count">50</span></span><span class="chip kw-pacbio" data-filter="keyword" data-value="pacbio">PacBio<span class="count">16</span></span><span class="chip pinned" data-filter="keyword" data-value="__pinned__">📌 Pinned<span class="count">8</span></span><span class="chip" data-filter="keyword" data-value="__hi__">⭐ IF≥10<span class="count">11</span></span></div></div>
+<div class="filter-row"><div class="lbl">Source</div><div class="filters"><span class="chip active" data-filter="source" data-value="all">전체</span><span class="chip" data-filter="source" data-value="MED">PubMed<span class="count">81</span></span><span class="chip" data-filter="source" data-value="PPR">Preprint<span class="count">7</span></span></div></div>
+<div class="search-box"><input id="search" type="search" placeholder="제목·저자·저널·초록·요약 검색…"></div>
+<div class="papers"><article class="paper hi" data-keywords="__pinned__|__hi__" data-source="MED" data-search="&#x27;Student Geng&#x27; ignites research-integrity scandal in China after calling out senior academics.   You X. Nature  Nature">
+  <h3><a href="https://europepmc.org/abstract/MED/42298208" target="_blank" rel="noopener">&#x27;Student Geng&#x27; ignites research-integrity scandal in China after calling out senior academics. </a><span class="if-tag">IF=50.5</span></h3>
+  <div class="by">You X.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Nature</span><span class="date">2026-06-12</span><span class="tag pinned">📌 Nature</span></div>
+  
+  <div class="doi"><a href="https://doi.org/10.1038/d41586-026-01902-0" target="_blank" rel="noopener">10.1038/d41586-026-01902-0</a></div>
+</article><article class="paper hi" data-keywords="__pinned__|__hi__" data-source="MED" data-search="At-home brain implant gives man with motor neuron disease his daily life back.   Naddaf M. Nature  Nature">
+  <h3><a href="https://europepmc.org/abstract/MED/42298211" target="_blank" rel="noopener">At-home brain implant gives man with motor neuron disease his daily life back. </a><span class="if-tag">IF=50.5</span></h3>
+  <div class="by">Naddaf M.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Nature</span><span class="date">2026-06-15</span><span class="tag pinned">📌 Nature</span></div>
+  
+  <div class="doi"><a href="https://doi.org/10.1038/d41586-026-01863-4" target="_blank" rel="noopener">10.1038/d41586-026-01863-4</a></div>
+</article><article class="paper hi" data-keywords="__pinned__|__hi__" data-source="MED" data-search="Bones of Iron Age skeleton were whittled into tools.   Nature  Nature">
+  <h3><a href="https://europepmc.org/abstract/MED/42289491" target="_blank" rel="noopener">Bones of Iron Age skeleton were whittled into tools.</a><span class="if-tag">IF=50.5</span></h3>
+  
+  <div class="meta"><span class="src MED">PubMed</span><span>Nature</span><span class="date">2026-06-15</span><span class="tag pinned">📌 Nature</span></div>
+  
+  <div class="doi"><a href="https://doi.org/10.1038/d41586-026-01833-w" target="_blank" rel="noopener">10.1038/d41586-026-01833-w</a></div>
+</article><article class="paper hi" data-keywords="__pinned__|__hi__" data-source="MED" data-search="How AI is revealing the secret lives of animals from hummingbirds to pumas.   Huling R. Nature  Nature">
+  <h3><a href="https://europepmc.org/abstract/MED/42298112" target="_blank" rel="noopener">How AI is revealing the secret lives of animals from hummingbirds to pumas. </a><span class="if-tag">IF=50.5</span></h3>
+  <div class="by">Huling R.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Nature</span><span class="date">2026-06-01</span><span class="tag pinned">📌 Nature</span></div>
+  
+  <div class="doi"><a href="https://doi.org/10.1038/d41586-026-01887-w" target="_blank" rel="noopener">10.1038/d41586-026-01887-w</a></div>
+</article><article class="paper hi" data-keywords="__pinned__|__hi__" data-source="MED" data-search="Huge study hints at risks of switching from tobacco cigarettes to vapes.    Nature  Nature">
+  <h3><a href="https://europepmc.org/abstract/MED/42298209" target="_blank" rel="noopener">Huge study hints at risks of switching from tobacco cigarettes to vapes. </a><span class="if-tag">IF=50.5</span></h3>
+  
+  <div class="meta"><span class="src MED">PubMed</span><span>Nature</span><span class="date">2026-06-14</span><span class="tag pinned">📌 Nature</span></div>
+  
+  <div class="doi"><a href="https://doi.org/10.1038/d41586-026-01834-9" target="_blank" rel="noopener">10.1038/d41586-026-01834-9</a></div>
+</article><article class="paper hi" data-keywords="__pinned__|__hi__" data-source="MED" data-search="In the field - and sometimes in the lab - the simplest tool is best.   Heidt A. Nature  Nature">
+  <h3><a href="https://europepmc.org/abstract/MED/42298111" target="_blank" rel="noopener">In the field - and sometimes in the lab - the simplest tool is best. </a><span class="if-tag">IF=50.5</span></h3>
+  <div class="by">Heidt A.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Nature</span><span class="date">2026-06-01</span><span class="tag pinned">📌 Nature</span></div>
+  
+  <div class="doi"><a href="https://doi.org/10.1038/d41586-026-01885-y" target="_blank" rel="noopener">10.1038/d41586-026-01885-y</a></div>
+</article><article class="paper hi" data-keywords="__pinned__|__hi__" data-source="MED" data-search="The latest benefit of obesity drugs: boosting testosterone and sperm quality.   Lenharo M. Nature  Nature">
+  <h3><a href="https://europepmc.org/abstract/MED/42298210" target="_blank" rel="noopener">The latest benefit of obesity drugs: boosting testosterone and sperm quality. </a><span class="if-tag">IF=50.5</span></h3>
+  <div class="by">Lenharo M.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Nature</span><span class="date">2026-06-15</span><span class="tag pinned">📌 Nature</span></div>
+  
+  <div class="doi"><a href="https://doi.org/10.1038/d41586-026-01867-0" target="_blank" rel="noopener">10.1038/d41586-026-01867-0</a></div>
+</article><article class="paper hi" data-keywords="__pinned__|__hi__" data-source="MED" data-search="The critical role of the endogenous immune compartment after CAR T cell therapy in recurrent GBM.  Glioblastoma (GBM) is the most common primary malignant brain tumor in adults, with a median survival of under 15 months and no effective treatment after recurrence. A recent phase 1 trial of intracerebroventricular bivalent chimeric antigen receptor (CAR) T cells in recurrent GBM, registered at Cli Freeburg NF, Chafamo D, Konanur Gopikrishna G, Murphy RM, Peng JJ, Parthasarathy S, Dumont S, Estrada EG, Logun MT, Sun Y, Wang X, Grover P, Rodriguez JL, Zhang DL, Park K, Fu Y, Ben Hamouda N, Hernandez-Verdin I, Lamrani L, Hicks KA, Cooper NA, Ekwegbara C, Bawden EG, Waterfall JJ, Fuentealba J, Alcantara M, Seykora JT, Prouty SM, Barrett D, Banerjee E, Cox A, Assenmacher CA, Macia C, Yin M, Carpenter EL, Ming GL, Sautès-Fridman C, Fridman WH, Tartour E, Wherry EJ, Amigorena S, Fraietta JA, Nasrallah MP, Song H, Miller TE, Bagley SJ, O&#x27;Rourke DM, Binder ZA, Alanio C, Silverbush D. Cell  Cell">
+  <h3><a href="https://europepmc.org/abstract/MED/42296961" target="_blank" rel="noopener">The critical role of the endogenous immune compartment after CAR T cell therapy in recurrent GBM. </a><span class="if-tag">IF=45.5</span></h3>
+  <div class="by">Freeburg NF, Chafamo D, Konanur Gopikrishna G, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Cell</span><span class="date">2026-06-15</span><span class="tag pinned">📌 Cell</span></div>
+  <div class="ab">Glioblastoma (GBM) is the most common primary malignant brain tumor in adults, with a median survival of under 15 months and no effective treatment after recurrence. A recent phase 1 trial of intracerebroventricular bivalent chimeric antigen receptor (CAR) T cells in recurrent GB…</div>
+  <div class="doi"><a href="https://doi.org/10.1016/j.cell.2026.05.026" target="_blank" rel="noopener">10.1016/j.cell.2026.05.026</a></div>
+</article><article class="paper hi" data-keywords="methylation|__hi__" data-source="MED" data-search="DNA methylation reprogramming in marsupial embryos is restricted to the extraembryonic lineage.  DNA methylation (5mC) is an epigenetic mark that plays a critical role in defining cell fate. Following fertilisation, DNA methylation inherited from gametes must be reprogrammed to establish totipotency and enable the parental-to-zygotic transition. To accomplish this, non-mammalian vertebrates suc Angeloni A, Hammond JM, Peters TJ, Reis ALM, Kemp L, Amos TG, Gamaarachchi H, Humphries S, Wilmott LA, Pal S, Masamsetti VP, Weatherstone M, Ip CK, Pazaky K, Steel A, Lyons R, Walters ED, Liu N, Tam P, Polo JM, Waters PD, Clark SJ, Richards LJ, Smith AD, Lee HJ, Deveson IW, Griffith OW, Skvortsova K. Nature communications methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42297797" target="_blank" rel="noopener">DNA methylation reprogramming in marsupial embryos is restricted to the extraembryonic lineage. </a><span class="if-tag">IF=14.7</span></h3>
+  <div class="by">Angeloni A, Hammond JM, Peters TJ, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Nature communications</span><span class="date">2026-06-15</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">DNA methylation (5mC) is an epigenetic mark that plays a critical role in defining cell fate. Following fertilisation, DNA methylation inherited from gametes must be reprogrammed to establish totipotency and enable the parental-to-zygotic transition. To accomplish this, non-mamma…</div>
+  <div class="doi"><a href="https://doi.org/10.1038/s41467-026-73847-x" target="_blank" rel="noopener">10.1038/s41467-026-73847-x</a></div>
+</article><article class="paper hi" data-keywords="mosaic|__hi__" data-source="MED" data-search="Spatial architecture of autism pathogenesis reveals mosaic structural disarray during early development. Autism spectrum disorder (ASD) has been associated with diverse genetic factors and molecular changes. Yet, how pathophysiology emerges during development and contributes to clinical heterogeneity remains unclear. Here we use spatial and single-cell transcriptomics of genetically diverse patient-der Lin L, Saw TY, Chou N, Goh JLJ, Kwa JE, Chock WK, Singhal V, Li Z, Huang MJ, Ng HH, Khor CC, Kuan HL, Chen KH, Prabhakar S, Liu J. Nature communications mosaic ">
+  <h3><a href="https://europepmc.org/abstract/MED/42288509" target="_blank" rel="noopener">Spatial architecture of autism pathogenesis reveals mosaic structural disarray during early development.</a><span class="if-tag">IF=14.7</span></h3>
+  <div class="by">Lin L, Saw TY, Chou N, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Nature communications</span><span class="date">2026-06-13</span><a class="tag kw-mosaic" href="../keywords/mosaic.html">mosaic</a></div>
+  <div class="ab">Autism spectrum disorder (ASD) has been associated with diverse genetic factors and molecular changes. Yet, how pathophysiology emerges during development and contributes to clinical heterogeneity remains unclear. Here we use spatial and single-cell transcriptomics of genetically…</div>
+  <div class="doi"><a href="https://doi.org/10.1038/s41467-026-74320-5" target="_blank" rel="noopener">10.1038/s41467-026-74320-5</a></div>
+</article><article class="paper hi" data-keywords="methylation|__hi__" data-source="MED" data-search="Ensilication preserves high-molecular weight native DNA for clinical long-read sequencing.  Native long-read DNA sequencing simultaneously captures genetic variants and epigenetic modifications from single molecules, but preserving molecular length and base modifications currently depends on cold-chain infrastructure that limits access to well-resourced settings. We demonstrate that ensili Ferrasse A, Mendez R, Gorzynski JE, Reuter C, Carter JN, Blas M, Undiagnosed Diseases Network, Bernstein JA, Wheeler MT, Banal JL, Ashley EA. Genome biology methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42298673" target="_blank" rel="noopener">Ensilication preserves high-molecular weight native DNA for clinical long-read sequencing. </a><span class="if-tag">IF=10.1</span></h3>
+  <div class="by">Ferrasse A, Mendez R, Gorzynski JE, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Genome biology</span><span class="date">2026-06-15</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Native long-read DNA sequencing simultaneously captures genetic variants and epigenetic modifications from single molecules, but preserving molecular length and base modifications currently depends on cold-chain infrastructure that limits access to well-resourced settings. We dem…</div>
+  <div class="doi"><a href="https://doi.org/10.1186/s13059-026-04137-4" target="_blank" rel="noopener">10.1186/s13059-026-04137-4</a></div>
+</article><article class="paper" data-keywords="pacbio" data-source="MED" data-search="Haplotype-resolved telomere-to-telomere genome assembly of the hybrid Eucalyptus urophylla × E. grandis. The hybrid Eucalyptus urophylla × E. grandis integrates strong stress tolerance with rapid growth traits, holding significant value for genetic improvement and industrial application. However, its highly heterozygous and complex genome has hindered the development of high-quality reference assemblie Yin H, Yang X, Zhan D, Chen Y, Pang Z, Wei S. Scientific data PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42288487" target="_blank" rel="noopener">Haplotype-resolved telomere-to-telomere genome assembly of the hybrid Eucalyptus urophylla × E. grandis.</a><span class="if-tag">IF=5.8</span></h3>
+  <div class="by">Yin H, Yang X, Zhan D, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Scientific data</span><span class="date">2026-06-13</span><a class="tag kw-pacbio" href="../keywords/pacbio.html">PacBio</a></div>
+  <div class="ab">The hybrid Eucalyptus urophylla × E. grandis integrates strong stress tolerance with rapid growth traits, holding significant value for genetic improvement and industrial application. However, its highly heterozygous and complex genome has hindered the development of high-quality…</div>
+  <div class="doi"><a href="https://doi.org/10.1038/s41597-026-07631-3" target="_blank" rel="noopener">10.1038/s41597-026-07631-3</a></div>
+</article><article class="paper" data-keywords="pacbio" data-source="MED" data-search="The first telomere-to-telomere genome assembly of a freshwater bivalve: Gibbosula rochechouartii.  Gibbosula rochechouartii is a vulnerable freshwater mussel species endemic to China, with severely degraded habitats. To date, there is no high-quality genome available for this species. In this study, we integrated PacBio HiFi, Oxford Nanopore Technologies (ONT), and Hi-C approaches to generate the Yan M, Jiang M, Zhan M, Jiang C, Wen H, Shu F, Liu K. Scientific data PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42297844" target="_blank" rel="noopener">The first telomere-to-telomere genome assembly of a freshwater bivalve: Gibbosula rochechouartii. </a><span class="if-tag">IF=5.8</span></h3>
+  <div class="by">Yan M, Jiang M, Zhan M, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Scientific data</span><span class="date">2026-06-15</span><a class="tag kw-pacbio" href="../keywords/pacbio.html">PacBio</a></div>
+  <div class="ab">Gibbosula rochechouartii is a vulnerable freshwater mussel species endemic to China, with severely degraded habitats. To date, there is no high-quality genome available for this species. In this study, we integrated PacBio HiFi, Oxford Nanopore Technologies (ONT), and Hi-C approa…</div>
+  <div class="doi"><a href="https://doi.org/10.1038/s41597-026-07359-0" target="_blank" rel="noopener">10.1038/s41597-026-07359-0</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Correction: Chromatinopathies: clinically overlapping disorders, revealing novel variants and their DNA methylation signatures.  Koparir A, Kerkhof J, Rzasa J, Metzger E, Carbajal PB, Kolokotronis K, Koparir E, Jelting Y, Hofrichter MAH, Klepper J, König T, Runkel E, Prastyo WE, Deinlein J, Babic ND, Spiegler J, Stachelscheid N, Kunstmann E, Haaf T, Sadikovic B, Klopocki E. Clinical epigenetics methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42288864" target="_blank" rel="noopener">Correction: Chromatinopathies: clinically overlapping disorders, revealing novel variants and their DNA methylation signatures.</a><span class="if-tag">IF=5.3</span></h3>
+  <div class="by">Koparir A, Kerkhof J, Rzasa J, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Clinical epigenetics</span><span class="date">2026-06-13</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  
+  <div class="doi"><a href="https://doi.org/10.1186/s13148-026-02173-2" target="_blank" rel="noopener">10.1186/s13148-026-02173-2</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="DNAm landscape up to 4 months post SARS-CoV-2 infection: insights from four population-based cohorts. Background Evidence for persistent epigenetic changes in individuals who had a mild SARS-CoV-2 infection is limited, as most DNA methylation (DNAm) studies to date have focused on either the acute phase of infection or on the months following infection in severe cases requiring hospitalization. Meth Matías-García PR, Lai L, Delerue T, Ohnmacht J, Stark KJ, Warmerdam R, Kolodkin A, Six-Merker J, Mangold N, Günther K, O&#x27;Sullivan MP, Rauschenberger A, Bohn B, Berger K, Fricke J, Ahnert P, Franke L, Krüger R, Gefeller O, Überla K, Heid IM, Wagner R, Lifelines Corona Research Initiative, TiKoCo Working Group, CON-VINCE Consortium, NAKO Investigators, ORCHESTRA working group, Waldenberger M, Peters A. Clinical epigenetics methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42288901" target="_blank" rel="noopener">DNAm landscape up to 4 months post SARS-CoV-2 infection: insights from four population-based cohorts.</a><span class="if-tag">IF=5.3</span></h3>
+  <div class="by">Matías-García PR, Lai L, Delerue T, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Clinical epigenetics</span><span class="date">2026-06-13</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Background Evidence for persistent epigenetic changes in individuals who had a mild SARS-CoV-2 infection is limited, as most DNA methylation (DNAm) studies to date have focused on either the acute phase of infection or on the months following infection in severe cases requiring h…</div>
+  <div class="doi"><a href="https://doi.org/10.1186/s13148-026-02166-1" target="_blank" rel="noopener">10.1186/s13148-026-02166-1</a></div>
+</article><article class="paper" data-keywords="mosaic" data-source="MED" data-search="Two divergent haploid nuclei shaped the landscape of population diversity in wheat stripe rust Puccinia striiformis f. sp. tritici.  Heterozygosity is a measure of allelic diversity within individuals. Puccinia striiformis f. sp. tritici (Pst) is a highly heterozygous dikaryotic crop pathogen. The source of heterozygosity variation and the contribution to adaptability are still unknown. By analyzing resequencing data of 266 world Wang Y, Yin M, Luo Q, He F. Communications biology mosaic ">
+  <h3><a href="https://europepmc.org/abstract/MED/42298063" target="_blank" rel="noopener">Two divergent haploid nuclei shaped the landscape of population diversity in wheat stripe rust Puccinia striiformis f. sp. tritici. </a><span class="if-tag">IF=5.2</span></h3>
+  <div class="by">Wang Y, Yin M, Luo Q, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Communications biology</span><span class="date">2026-06-15</span><a class="tag kw-mosaic" href="../keywords/mosaic.html">mosaic</a></div>
+  <div class="ab">Heterozygosity is a measure of allelic diversity within individuals. Puccinia striiformis f. sp. tritici (Pst) is a highly heterozygous dikaryotic crop pathogen. The source of heterozygosity variation and the contribution to adaptability are still unknown. By analyzing resequenci…</div>
+  <div class="doi"><a href="https://doi.org/10.1038/s42003-026-10468-6" target="_blank" rel="noopener">10.1038/s42003-026-10468-6</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Advances in post-translational and epigenetic modification of hyperuricemia-to-gout progression: mechanisms and therapeutic targets. Hyperuricemia (HUA) and gout are endocrine disorders resulting from abnormal uric acid (UA) metabolism, with gout typically developing secondary to HUA and being associated with an exacerbated inflammatory response. Epigenetic modifications and post-translational modifications (PTMs) may contribute  Fu W, Xu X, Li X, Guo Q, Liu P, Chen L, Cheng W, Zhang Z, Chen Z, Liu C. Frontiers in cell and developmental biology methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42293766" target="_blank" rel="noopener">Advances in post-translational and epigenetic modification of hyperuricemia-to-gout progression: mechanisms and therapeutic targets.</a><span class="if-tag">IF=4.6</span></h3>
+  <div class="by">Fu W, Xu X, Li X, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Frontiers in cell and developmental biology</span><span class="date">2026-05-29</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Hyperuricemia (HUA) and gout are endocrine disorders resulting from abnormal uric acid (UA) metabolism, with gout typically developing secondary to HUA and being associated with an exacerbated inflammatory response. Epigenetic modifications and post-translational modifications (P…</div>
+  <div class="doi"><a href="https://doi.org/10.3389/fcell.2026.1749194" target="_blank" rel="noopener">10.3389/fcell.2026.1749194</a></div>
+</article><article class="paper" data-keywords="pacbio" data-source="MED" data-search="Complete mitochondrial sequencing reveals the horizontal transfer and gene rearrangement of &amp;lt;i&amp;gt;Passiflora edulis&amp;lt;/i&amp;gt;. Introduction The mitochondrial genome (mitogenome) of Passiflora edulis , an economically important fruit crop, remains poorly characterized, with previous reports suggesting a simple circular structure. Methods We employed a hybrid sequencing strategy combining PacBio HiFi long reads and Illumina s Teng Y, Hao Z, Liu Y, Chen C, Zhang S, Wang Y, Sun Y, Jing H, Long X. Frontiers in plant science PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42293006" target="_blank" rel="noopener">Complete mitochondrial sequencing reveals the horizontal transfer and gene rearrangement of &amp;lt;i&amp;gt;Passiflora edulis&amp;lt;/i&amp;gt;.</a><span class="if-tag">IF=4.1</span></h3>
+  <div class="by">Teng Y, Hao Z, Liu Y, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Frontiers in plant science</span><span class="date">2026-05-28</span><a class="tag kw-pacbio" href="../keywords/pacbio.html">PacBio</a></div>
+  <div class="ab">Introduction The mitochondrial genome (mitogenome) of Passiflora edulis , an economically important fruit crop, remains poorly characterized, with previous reports suggesting a simple circular structure. Methods We employed a hybrid sequencing strategy combining PacBio HiFi long …</div>
+  <div class="doi"><a href="https://doi.org/10.3389/fpls.2026.1851081" target="_blank" rel="noopener">10.3389/fpls.2026.1851081</a></div>
+</article><article class="paper" data-keywords="pacbio" data-source="MED" data-search="Transcriptomic landscapes of tissue-specific color transition in eggplant reveal regulatory roles of lncRNAs and alternative splicing in anthocyanin biosynthesis. Background Color transitions from green to purple in eggplant ( Solanum melongena L.) flowers and berries result from chlorophyll and anthocyanin accumulation. While structural genes ( CHS , CHI , F3&#x27;H , DFR , ANS , UGT ) and regulatory transcription factors ( MYB , bHLH , WD40 ) in the anthocyanin  De Marchi F, Acquadro A, Moglia A, Gaccione L, Mannino G, Gramazio P, Barchi L, Bertea CM, Portis E, Prohens J, Comino C. Frontiers in plant science PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42292985" target="_blank" rel="noopener">Transcriptomic landscapes of tissue-specific color transition in eggplant reveal regulatory roles of lncRNAs and alternative splicing in anthocyanin biosynthesis.</a><span class="if-tag">IF=4.1</span></h3>
+  <div class="by">De Marchi F, Acquadro A, Moglia A, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Frontiers in plant science</span><span class="date">2026-05-28</span><a class="tag kw-pacbio" href="../keywords/pacbio.html">PacBio</a></div>
+  <div class="ab">Background Color transitions from green to purple in eggplant ( Solanum melongena L.) flowers and berries result from chlorophyll and anthocyanin accumulation. While structural genes ( CHS , CHI , F3&#x27;H , DFR , ANS , UGT ) and regulatory transcription factors ( MYB , bHLH , WD40 )…</div>
+  <div class="doi"><a href="https://doi.org/10.3389/fpls.2026.1832029" target="_blank" rel="noopener">10.3389/fpls.2026.1832029</a></div>
+</article><article class="paper" data-keywords="mosaic" data-source="MED" data-search="Reductive soil disinfestation alleviates continuous cropping obstacles in tobacco by reshaping microbial communities and improving soil properties in karst regions. Reductive soil disinfestation (RSD) shows potential for alleviating continuous cropping obstacles in greenhouse agriculture. However, its effects remain unclear in dryland tobacco cropping systems. A field experiment was conducted in continuous cropping tobacco fields in Bijie City, Guizhou Province Ding M, Shang N, Gong B, Liu Q, Li C, Zhao E, Zhang Y, Liang T. Frontiers in microbiology mosaic ">
+  <h3><a href="https://europepmc.org/abstract/MED/42293543" target="_blank" rel="noopener">Reductive soil disinfestation alleviates continuous cropping obstacles in tobacco by reshaping microbial communities and improving soil properties in karst regions.</a><span class="if-tag">IF=4.0</span></h3>
+  <div class="by">Ding M, Shang N, Gong B, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Frontiers in microbiology</span><span class="date">2026-05-28</span><a class="tag kw-mosaic" href="../keywords/mosaic.html">mosaic</a></div>
+  <div class="ab">Reductive soil disinfestation (RSD) shows potential for alleviating continuous cropping obstacles in greenhouse agriculture. However, its effects remain unclear in dryland tobacco cropping systems. A field experiment was conducted in continuous cropping tobacco fields in Bijie Ci…</div>
+  <div class="doi"><a href="https://doi.org/10.3389/fmicb.2026.1841207" target="_blank" rel="noopener">10.3389/fmicb.2026.1841207</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="The microbial nexus: linking arsenic biogeochemistry with greenhouse gas emissions. Microorganisms play a pivotal role in driving both arsenic (As) biogeochemical cycling and the significantly anomalous greenhouse gas (GHG) levels frequently observed in naturally high-As environments; however, the mechanistic coupling between these two processes remains insufficiently characterized Wu Z, Li M, Liu C, Luo R, Song T, Zhang P, Wang Y, Li P. Frontiers in microbiology methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42293529" target="_blank" rel="noopener">The microbial nexus: linking arsenic biogeochemistry with greenhouse gas emissions.</a><span class="if-tag">IF=4.0</span></h3>
+  <div class="by">Wu Z, Li M, Liu C, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Frontiers in microbiology</span><span class="date">2026-05-29</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Microorganisms play a pivotal role in driving both arsenic (As) biogeochemical cycling and the significantly anomalous greenhouse gas (GHG) levels frequently observed in naturally high-As environments; however, the mechanistic coupling between these two processes remains insuffic…</div>
+  <div class="doi"><a href="https://doi.org/10.3389/fmicb.2026.1818899" target="_blank" rel="noopener">10.3389/fmicb.2026.1818899</a></div>
+</article><article class="paper" data-keywords="mosaic" data-source="MED" data-search="Area-adjusted influence of built-up pattern on urban land surface temperature in an arid landscape.  Urban heat intensification threatens environmental quality and human health, particularly in arid urban areas where cooling resources are scarce. While impervious surface area is a well-established driver of urban land surface temperature (LST), the influence of built-up spatial patterns beyond thei Asgarian A. Scientific reports mosaic ">
+  <h3><a href="https://europepmc.org/abstract/MED/42298075" target="_blank" rel="noopener">Area-adjusted influence of built-up pattern on urban land surface temperature in an arid landscape. </a><span class="if-tag">IF=3.8</span></h3>
+  <div class="by">Asgarian A.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Scientific reports</span><span class="date">2026-06-16</span><a class="tag kw-mosaic" href="../keywords/mosaic.html">mosaic</a></div>
+  <div class="ab">Urban heat intensification threatens environmental quality and human health, particularly in arid urban areas where cooling resources are scarce. While impervious surface area is a well-established driver of urban land surface temperature (LST), the influence of built-up spatial …</div>
+  <div class="doi"><a href="https://doi.org/10.1038/s41598-026-58080-2" target="_blank" rel="noopener">10.1038/s41598-026-58080-2</a></div>
+</article><article class="paper" data-keywords="pacbio" data-source="MED" data-search="Prevalence, species diversity, and antimicrobial resistance profile of Listeria monocytogenes in retail meat and dairy products in Southern Ethiopia. Listeriosis, caused by Listeria monocytogenes (L. monocytogenes), is an important foodborne disease characterized by low incidence but high case fatality rates. Its prevalence varies across regions and is influenced by hygiene practices, food handling, and environmental conditions. In developing cou Ifa AC, Lemi BW. Scientific reports PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42288557" target="_blank" rel="noopener">Prevalence, species diversity, and antimicrobial resistance profile of Listeria monocytogenes in retail meat and dairy products in Southern Ethiopia.</a><span class="if-tag">IF=3.8</span></h3>
+  <div class="by">Ifa AC, Lemi BW.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Scientific reports</span><span class="date">2026-06-13</span><a class="tag kw-pacbio" href="../keywords/pacbio.html">PacBio</a></div>
+  <div class="ab">Listeriosis, caused by Listeria monocytogenes (L. monocytogenes), is an important foodborne disease characterized by low incidence but high case fatality rates. Its prevalence varies across regions and is influenced by hygiene practices, food handling, and environmental condition…</div>
+  <div class="doi"><a href="https://doi.org/10.1038/s41598-026-56187-0" target="_blank" rel="noopener">10.1038/s41598-026-56187-0</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="High-grade astrocytoma with piloid features: a case report of comprehensive management. High-grade astrocytoma with piloid features (HGAP) is a rare and recently defined nervous system tumor. To date, clinical reports and therapeutic experience regarding HGAP remain scarce. Herein, we describe a 35-year-old female patient presenting with progressive numbness in the right neck and shoul He Q, Wang F, Cao H, Li Z, Sun M. Frontiers in oncology methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42294280" target="_blank" rel="noopener">High-grade astrocytoma with piloid features: a case report of comprehensive management.</a><span class="if-tag">IF=3.5</span></h3>
+  <div class="by">He Q, Wang F, Cao H, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Frontiers in oncology</span><span class="date">2026-05-29</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">High-grade astrocytoma with piloid features (HGAP) is a rare and recently defined nervous system tumor. To date, clinical reports and therapeutic experience regarding HGAP remain scarce. Herein, we describe a 35-year-old female patient presenting with progressive numbness in the …</div>
+  <div class="doi"><a href="https://doi.org/10.3389/fonc.2026.1819378" target="_blank" rel="noopener">10.3389/fonc.2026.1819378</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Sex differences in gastric cancer mutational burden reflect MLH1-associated epigenetic regulation. Background Tumor mutational burden (TMB) is widely used as a biomarker for predicting response to immune checkpoint inhibitors. Therefore, understanding its variability across patient groups, particularly between sexes, and its underlying biological determinants is of critical importance. Methods We Klein N, Shweiki D. BMC cancer methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42289660" target="_blank" rel="noopener">Sex differences in gastric cancer mutational burden reflect MLH1-associated epigenetic regulation.</a><span class="if-tag">IF=3.4</span></h3>
+  <div class="by">Klein N, Shweiki D.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>BMC cancer</span><span class="date">2026-06-15</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Background Tumor mutational burden (TMB) is widely used as a biomarker for predicting response to immune checkpoint inhibitors. Therefore, understanding its variability across patient groups, particularly between sexes, and its underlying biological determinants is of critical im…</div>
+  <div class="doi"><a href="https://doi.org/10.1186/s12885-026-16327-1" target="_blank" rel="noopener">10.1186/s12885-026-16327-1</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="LCAT exhibits subtype specific prognostic and immunometabolic associations in renal cell carcinoma. Background The three major renal cell carcinoma subtypes-chromophobe renal cell carcinoma (KICH), clear cell renal cell carcinoma (KIRC), and papillary renal cell carcinoma (KIRP)-show marked differences in molecular programs and tumor microenvironmental features, supporting the need for subtype-res Li Y, Li Y. Discover oncology methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42295560" target="_blank" rel="noopener">LCAT exhibits subtype specific prognostic and immunometabolic associations in renal cell carcinoma.</a><span class="if-tag">IF=2.4</span></h3>
+  <div class="by">Li Y, Li Y.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Discover oncology</span><span class="date">2026-06-15</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Background The three major renal cell carcinoma subtypes-chromophobe renal cell carcinoma (KICH), clear cell renal cell carcinoma (KIRC), and papillary renal cell carcinoma (KIRP)-show marked differences in molecular programs and tumor microenvironmental features, supporting the …</div>
+  <div class="doi"><a href="https://doi.org/10.1007/s12672-026-05349-7" target="_blank" rel="noopener">10.1007/s12672-026-05349-7</a></div>
+</article><article class="paper" data-keywords="pacbio" data-source="MED" data-search="A telomere-to-telomere genome assembly of &amp;lt;i&amp;gt;Nymphaea minuta&amp;lt;/i&amp;gt; provides details into the developmental transcriptome atlas and adaptive regulatory mechanisms. The evolutionary history of the ANA-grade angiosperms provides a crucial window into the transition of early flowering plants. Within this group, the Nymphaeales (water lilies) are pivotal, yet a lack of gapless genomic resources has hindered research into their complex developmental and adaptive pr Chen H, Liang Y, Xue JY, Chen F. Horticulture research PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42292955" target="_blank" rel="noopener">A telomere-to-telomere genome assembly of &amp;lt;i&amp;gt;Nymphaea minuta&amp;lt;/i&amp;gt; provides details into the developmental transcriptome atlas and adaptive regulatory mechanisms.</a></h3>
+  <div class="by">Chen H, Liang Y, Xue JY, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Horticulture research</span><span class="date">2026-03-04</span><a class="tag kw-pacbio" href="../keywords/pacbio.html">PacBio</a></div>
+  <div class="ab">The evolutionary history of the ANA-grade angiosperms provides a crucial window into the transition of early flowering plants. Within this group, the Nymphaeales (water lilies) are pivotal, yet a lack of gapless genomic resources has hindered research into their complex developme…</div>
+  <div class="doi"><a href="https://doi.org/10.1093/hr/uhag085" target="_blank" rel="noopener">10.1093/hr/uhag085</a></div>
+</article><article class="paper" data-keywords="mosaic" data-source="MED" data-search="A wheat lncRNA-encoded peptide promotes autophagy and targets viral NIb for degradation to confer antiviral resistance.  Long noncoding RNAs (lncRNAs) are increasingly recognized as a source of functional peptides involved in plant development and immunity, yet little is known about whether lncRNA-encoded peptides participate in antiviral defence. By transcriptome analysis with peptide-coding potential prediction, we  Zhang J, Liu P, Yong B, Li Y, Qi C, Wu Z, Wu Z, Zhang T, Feng L, Guo L, Li F, Zhang C, Liu T, Chen J, Yang J. Plant communications mosaic ">
+  <h3><a href="https://europepmc.org/abstract/MED/42298820" target="_blank" rel="noopener">A wheat lncRNA-encoded peptide promotes autophagy and targets viral NIb for degradation to confer antiviral resistance. </a></h3>
+  <div class="by">Zhang J, Liu P, Yong B, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Plant communications</span><span class="date">2026-06-15</span><a class="tag kw-mosaic" href="../keywords/mosaic.html">mosaic</a></div>
+  <div class="ab">Long noncoding RNAs (lncRNAs) are increasingly recognized as a source of functional peptides involved in plant development and immunity, yet little is known about whether lncRNA-encoded peptides participate in antiviral defence. By transcriptome analysis with peptide-coding poten…</div>
+  <div class="doi"><a href="https://doi.org/10.1016/j.xplc.2026.101969" target="_blank" rel="noopener">10.1016/j.xplc.2026.101969</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="PPR" data-search="Aging restricts colorectal tumor growth by epigenetically silencing developmental gene programs The incidence of early-onset colorectal cancer (CRC) has risen sharply in recent decades1, yet the biological basis underlying the distinct behavior of tumors arising in young versus aged tissues remains poorly understood. Here we show that aging reprograms the epigenetic landscape of the colon, res Liu Y, Thiriveedi V, Khumukcham SS, Mirminachi B, Cano RR, Aladelokun O, Choudhri S, Patel V, Khan SR, Mottemal S, Markham NO, Khan SA, Johnson C, Grimm SA, Roper J, Wade P.  methylation ">
+  <h3><a href="https://europepmc.org/abstract/PPR/PPR1252246" target="_blank" rel="noopener">Aging restricts colorectal tumor growth by epigenetically silencing developmental gene programs</a></h3>
+  <div class="by">Liu Y, Thiriveedi V, Khumukcham SS, et al.</div>
+  <div class="meta"><span class="src PPR">Preprint</span><span class="date">2026-06-15</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">The incidence of early-onset colorectal cancer (CRC) has risen sharply in recent decades1, yet the biological basis underlying the distinct behavior of tumors arising in young versus aged tissues remains poorly understood. Here we show that aging reprograms the epigenetic landsca…</div>
+  <div class="doi"><a href="https://doi.org/10.64898/2026.06.12.731922" target="_blank" rel="noopener">10.64898/2026.06.12.731922</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="An Interpretable Deep Learning Framework Leveraging RNA Foundation Model and Capsule Networks for Accurate Prediction of RNA 2&#x27;-O-Methylation Sites.  RNA 2&#x27;-O-methylation (2OMe) is a widespread post-transcriptional modification that influences RNA stability, translation, and immune recognition. Yet, accurate computational identification of 2OMe sites remains challenging because conventional sequence encodings incompletely capture contextual depen Wang F, Shi B, Gu Y, Liu F, Zhao Z, Liu X, Liu X, Lee TY, Wei L, Guan J, Xie P, Tang J, Yao L. Journal of chemical information and modeling methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42296393" target="_blank" rel="noopener">An Interpretable Deep Learning Framework Leveraging RNA Foundation Model and Capsule Networks for Accurate Prediction of RNA 2&#x27;-O-Methylation Sites. </a></h3>
+  <div class="by">Wang F, Shi B, Gu Y, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Journal of chemical information and modeling</span><span class="date">2026-06-15</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">RNA 2&#x27;-O-methylation (2OMe) is a widespread post-transcriptional modification that influences RNA stability, translation, and immune recognition. Yet, accurate computational identification of 2OMe sites remains challenging because conventional sequence encodings incompletely capt…</div>
+  <div class="doi"><a href="https://doi.org/10.1021/acs.jcim.6c01274" target="_blank" rel="noopener">10.1021/acs.jcim.6c01274</a></div>
+</article><article class="paper" data-keywords="pacbio" data-source="MED" data-search="Assembly and phylogenetic analysis of the mitochondrial genome of the Cyclocarya paliurus.  Cyclocarya paliurus, a rare Chinese endemic known as the &quot;sweet tea tree,&quot; possesses significant hypoglycemic properties and holds dual status as both a traditional health beverage and an approved novel food ingredient. Despite extensive phytochemical research, its complete mitochondrial genome rema Chen H, Zhao Z, Shen L, Yu M. Functional &amp; integrative genomics PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42298248" target="_blank" rel="noopener">Assembly and phylogenetic analysis of the mitochondrial genome of the Cyclocarya paliurus. </a></h3>
+  <div class="by">Chen H, Zhao Z, Shen L, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Functional &amp; integrative genomics</span><span class="date">2026-06-16</span><a class="tag kw-pacbio" href="../keywords/pacbio.html">PacBio</a></div>
+  <div class="ab">Cyclocarya paliurus, a rare Chinese endemic known as the &quot;sweet tea tree,&quot; possesses significant hypoglycemic properties and holds dual status as both a traditional health beverage and an approved novel food ingredient. Despite extensive phytochemical research, its complete mitoc…</div>
+  <div class="doi"><a href="https://doi.org/10.1007/s10142-026-01926-9" target="_blank" rel="noopener">10.1007/s10142-026-01926-9</a></div>
+</article><article class="paper" data-keywords="pacbio" data-source="MED" data-search="Chromosome-level genome assembly and annotation of the transverse lady beetle Coccinella transversoguttata.  The transverse lady beetle Coccinella transversoguttata Faldermann, 1835 is an ecologically important aphid predator and a declining native biocontrol agent in parts of its range. To provide a genomic resource for evolutionary, ecological, and applied research, we generated a chromosome-level genome Wu XL, Jin PF, Liu HL, Chen ZT, Liu S, Li MY, Pu DQ. The Journal of heredity PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42296022" target="_blank" rel="noopener">Chromosome-level genome assembly and annotation of the transverse lady beetle Coccinella transversoguttata. </a></h3>
+  <div class="by">Wu XL, Jin PF, Liu HL, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>The Journal of heredity</span><span class="date">2026-06-15</span><a class="tag kw-pacbio" href="../keywords/pacbio.html">PacBio</a></div>
+  <div class="ab">The transverse lady beetle Coccinella transversoguttata Faldermann, 1835 is an ecologically important aphid predator and a declining native biocontrol agent in parts of its range. To provide a genomic resource for evolutionary, ecological, and applied research, we generated a chr…</div>
+  <div class="doi"><a href="https://doi.org/10.1093/jhered/esag050" target="_blank" rel="noopener">10.1093/jhered/esag050</a></div>
+</article><article class="paper" data-keywords="pacbio" data-source="PPR" data-search="Chromosome-level genome assembly of the Northeast China Brown Frog (Rana dybowskii) Rana dybowskii is distributed across Northeast Asian and represents a valuable medical resource. A high-quality assembly of the genome has not yet been reproted. This species has 2n=24 chromosomes, but a huge genome size that estimated at 3.5 ~4.6 Gb in the previous studies. The relatively large chr zhang y, Wang D, Zhao R, Li S, Zheng X, Hu G.  PacBio ">
+  <h3><a href="https://europepmc.org/abstract/PPR/PPR1252231" target="_blank" rel="noopener">Chromosome-level genome assembly of the Northeast China Brown Frog (Rana dybowskii)</a></h3>
+  <div class="by">zhang y, Wang D, Zhao R, et al.</div>
+  <div class="meta"><span class="src PPR">Preprint</span><span class="date">2026-06-15</span><a class="tag kw-pacbio" href="../keywords/pacbio.html">PacBio</a></div>
+  <div class="ab">Rana dybowskii is distributed across Northeast Asian and represents a valuable medical resource. A high-quality assembly of the genome has not yet been reproted. This species has 2n=24 chromosomes, but a huge genome size that estimated at 3.5 ~4.6 Gb in the previous studies. The …</div>
+  <div class="doi"><a href="https://doi.org/10.64898/2026.06.11.731602" target="_blank" rel="noopener">10.64898/2026.06.11.731602</a></div>
+</article><article class="paper" data-keywords="mosaic" data-source="MED" data-search="Clinical Characterization of Skin Findings on the Hands in Proteus Syndrome. Background Proteus syndrome is a progressive asymmetric overgrowth disorder caused by mosaic activating variants in AKT1. It most frequently affects the skin, soft tissues, bones, and central nervous system and increases the risk for certain tumors and venous thromboembolism. A hallmark feature is t Verling SD, Gaidici N, Biesecker LG, Darling TN, Ours CA. Pediatric dermatology mosaic ">
+  <h3><a href="https://europepmc.org/abstract/MED/42289769" target="_blank" rel="noopener">Clinical Characterization of Skin Findings on the Hands in Proteus Syndrome.</a></h3>
+  <div class="by">Verling SD, Gaidici N, Biesecker LG, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Pediatric dermatology</span><span class="date">2026-06-14</span><a class="tag kw-mosaic" href="../keywords/mosaic.html">mosaic</a></div>
+  <div class="ab">Background Proteus syndrome is a progressive asymmetric overgrowth disorder caused by mosaic activating variants in AKT1. It most frequently affects the skin, soft tissues, bones, and central nervous system and increases the risk for certain tumors and venous thromboembolism. A h…</div>
+  <div class="doi"><a href="https://doi.org/10.1111/pde.70281" target="_blank" rel="noopener">10.1111/pde.70281</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Comparative evaluation of junctional adhesion molecule 3 and paired box gene 1 methylation, cytology, E6/E7 messenger RNA, and high-risk human papillomavirus testing for detecting precancerous cervical lesions. Objectives This study evaluated paired box gene 1 ( PAX1 ) and junctional adhesion molecule 3 ( JAM3 ) methylation as biomarkers for detecting cervical precancerous lesions, comparing their performance with cytology, E6/E7 messenger RNA (mRNA) testing, and high-risk human papillomavirus (hrHPV) dete Luo S, Tao C, Wang F, Shi T, Zhang R. CytoJournal methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42291101" target="_blank" rel="noopener">Comparative evaluation of junctional adhesion molecule 3 and paired box gene 1 methylation, cytology, E6/E7 messenger RNA, and high-risk human papillomavirus testing for detecting precancerous cervical lesions.</a></h3>
+  <div class="by">Luo S, Tao C, Wang F, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>CytoJournal</span><span class="date">2026-05-30</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Objectives This study evaluated paired box gene 1 ( PAX1 ) and junctional adhesion molecule 3 ( JAM3 ) methylation as biomarkers for detecting cervical precancerous lesions, comparing their performance with cytology, E6/E7 messenger RNA (mRNA) testing, and high-risk human papillo…</div>
+  <div class="doi"><a href="https://doi.org/10.25259/cytojournal_239_2024" target="_blank" rel="noopener">10.25259/cytojournal_239_2024</a></div>
+</article><article class="paper" data-keywords="pacbio" data-source="MED" data-search="Complete genomes of grapevine downy mildew reveal effector cluster evolution driven by complex structural variations. Plasmopara viticola , the causal agent of grapevine downy mildew, exhibits substantial intraspecific variation in pathogenicity and genetic diversity, yet the genomic features underlying this variation remain incompletely characterized. Here, we sequenced and assembled two P. viticola isolates, PvH  Zhou L, Cui S, Zhang H, Kong F, Wang Q, Wang Z, Zhou Y, Li S, Du F, Huang X, Liu Y. Horticulture research PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42292960" target="_blank" rel="noopener">Complete genomes of grapevine downy mildew reveal effector cluster evolution driven by complex structural variations.</a></h3>
+  <div class="by">Zhou L, Cui S, Zhang H, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Horticulture research</span><span class="date">2026-03-04</span><a class="tag kw-pacbio" href="../keywords/pacbio.html">PacBio</a></div>
+  <div class="ab">Plasmopara viticola , the causal agent of grapevine downy mildew, exhibits substantial intraspecific variation in pathogenicity and genetic diversity, yet the genomic features underlying this variation remain incompletely characterized. Here, we sequenced and assembled two P. vit…</div>
+  <div class="doi"><a href="https://doi.org/10.1093/hr/uhag073" target="_blank" rel="noopener">10.1093/hr/uhag073</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Comprehensive profiling of paediatric chordoma: poorly differentiated and conventional subtypes. Chordoma in children is rare and inadequately characterized. This study aims to provide a comprehensive characterization of the clinicopathological and (epi)genetic features of chordomas in children, particularly the poorly differentiated chordomas (PDC). We established a cohort of seven PDCs and 28 Duan Z, Feng J, Wang H, Yang J, Ma Z, Han S, Zhu M, Fan X, Qi X. Brain communications methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42293322" target="_blank" rel="noopener">Comprehensive profiling of paediatric chordoma: poorly differentiated and conventional subtypes.</a></h3>
+  <div class="by">Duan Z, Feng J, Wang H, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Brain communications</span><span class="date">2026-06-03</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Chordoma in children is rare and inadequately characterized. This study aims to provide a comprehensive characterization of the clinicopathological and (epi)genetic features of chordomas in children, particularly the poorly differentiated chordomas (PDC). We established a cohort …</div>
+  <div class="doi"><a href="https://doi.org/10.1093/braincomms/fcag207" target="_blank" rel="noopener">10.1093/braincomms/fcag207</a></div>
+</article><article class="paper" data-keywords="mosaic" data-source="MED" data-search="Configurational Fragility of Forest Landscapes Under Multiple Anthropic Uses. The conversion of native vegetation to anthropogenic land uses and landscape fragmentation are primary drivers of biodiversity loss and ecosystem services decline in tropical watersheds. Understanding how land use shapes the spatial configuration of forest fragments is essential to inform conservati Saraiva-Maia JJO, da Silva MD, Beiroz W, Almeida NV. Ecology and evolution mosaic ">
+  <h3><a href="https://europepmc.org/abstract/MED/42292542" target="_blank" rel="noopener">Configurational Fragility of Forest Landscapes Under Multiple Anthropic Uses.</a></h3>
+  <div class="by">Saraiva-Maia JJO, da Silva MD, Beiroz W, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Ecology and evolution</span><span class="date">2026-06-11</span><a class="tag kw-mosaic" href="../keywords/mosaic.html">mosaic</a></div>
+  <div class="ab">The conversion of native vegetation to anthropogenic land uses and landscape fragmentation are primary drivers of biodiversity loss and ecosystem services decline in tropical watersheds. Understanding how land use shapes the spatial configuration of forest fragments is essential …</div>
+  <div class="doi"><a href="https://doi.org/10.1002/ece3.73460" target="_blank" rel="noopener">10.1002/ece3.73460</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Correction: Effects of obesity on DNA methylation and DNA methyltransferases in the reproductive system.  Sukur G, Cinar O, Cinar FU. Histochemistry and cell biology methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42287313" target="_blank" rel="noopener">Correction: Effects of obesity on DNA methylation and DNA methyltransferases in the reproductive system.</a></h3>
+  <div class="by">Sukur G, Cinar O, Cinar FU.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Histochemistry and cell biology</span><span class="date">2026-06-13</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  
+  <div class="doi"><a href="https://doi.org/10.1007/s00418-026-02493-7" target="_blank" rel="noopener">10.1007/s00418-026-02493-7</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="DNA methylation-mediated suppression of endocytosis confers resistance to duck hepatitis A virus type 3. Host DNA methylation plays a crucial role in antiviral defense, yet its impact on viral susceptibility remains unclear. Using ducklings resistant (R) or susceptible (S) to duck hepatitis A virus type 3 (DHAV-3), we integrated whole-genome bisulfite and oxidative bisulfite sequencing with transcripto Li S, Hu D, Mei X, Kinkpe L, Wang S, Wei J, Hou S, Zhang Y, Wang X. Microbiology spectrum methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42294723" target="_blank" rel="noopener">DNA methylation-mediated suppression of endocytosis confers resistance to duck hepatitis A virus type 3.</a></h3>
+  <div class="by">Li S, Hu D, Mei X, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Microbiology spectrum</span><span class="date">2026-06-15</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Host DNA methylation plays a crucial role in antiviral defense, yet its impact on viral susceptibility remains unclear. Using ducklings resistant (R) or susceptible (S) to duck hepatitis A virus type 3 (DHAV-3), we integrated whole-genome bisulfite and oxidative bisulfite sequenc…</div>
+  <div class="doi"><a href="https://doi.org/10.1128/spectrum.00565-26" target="_blank" rel="noopener">10.1128/spectrum.00565-26</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="DPY30 Sticks a Fork in PDAC Immunity. Pancreatic ductal adenocarcinoma (PDAC) remains one of the most lethal malignancies, with limited therapeutic options and poor responsiveness to immune checkpoint blockade (ICB). Emerging evidence links genome instability and replication stress to the activation of cyclic GMP-AMP synthase (cGAS)/STI Thakur BL, Oberdoerffer P. Cancer research methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42290170" target="_blank" rel="noopener">DPY30 Sticks a Fork in PDAC Immunity.</a></h3>
+  <div class="by">Thakur BL, Oberdoerffer P.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Cancer research</span><span class="date">2026-06-01</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Pancreatic ductal adenocarcinoma (PDAC) remains one of the most lethal malignancies, with limited therapeutic options and poor responsiveness to immune checkpoint blockade (ICB). Emerging evidence links genome instability and replication stress to the activation of cyclic GMP-AMP…</div>
+  <div class="doi"><a href="https://doi.org/10.1158/0008-5472.can-26-1308" target="_blank" rel="noopener">10.1158/0008-5472.can-26-1308</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Differential effects of periphyton and rice straw decomposition on arsenic mobilization and methylation in flooded paddy soils. Periphyton plays a pivotal role in microbial transformation of heavy metals. To elucidate how periphyton decomposition influences arsenic (As) biogeochemical behavior, anaerobic microcosm incubations were conducted in this study, using a representative As-contaminated flooded paddy soil. The results Chen B, Feng W, Huang Q, Yuan ZF, Zhai W, Zhao K, Tang X, Guo T, Zhang H. Journal of environmental management methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42287799" target="_blank" rel="noopener">Differential effects of periphyton and rice straw decomposition on arsenic mobilization and methylation in flooded paddy soils.</a></h3>
+  <div class="by">Chen B, Feng W, Huang Q, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Journal of environmental management</span><span class="date">2026-06-13</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Periphyton plays a pivotal role in microbial transformation of heavy metals. To elucidate how periphyton decomposition influences arsenic (As) biogeochemical behavior, anaerobic microcosm incubations were conducted in this study, using a representative As-contaminated flooded pad…</div>
+  <div class="doi"><a href="https://doi.org/10.1016/j.jenvman.2026.130217" target="_blank" rel="noopener">10.1016/j.jenvman.2026.130217</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Diffuse pediatric-type high-grade glioma, H3-wildtype and IDH-wildtype, of the adult cerebellum: a report of 2 cases. The 2021 World Health Organization (WHO) Classification of Tumors of the Central Nervous System, 5th Edition, defines diffuse pediatric-type high-grade glioma, H3-wildtype and IDH-wildtype (dpHGG, H3-/IDH-WT) as a molecularly distinct entity, primarily diagnosed by DNA methylation profiling. Althoug Satomi K, Nikai Y, Saito K, Gomyo M, Tsuchiya K, Nagahama K, Sasaki N, Kobayashi K, Tanaka Y, Nagane M, Shibahara J. Brain tumor pathology methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42295620" target="_blank" rel="noopener">Diffuse pediatric-type high-grade glioma, H3-wildtype and IDH-wildtype, of the adult cerebellum: a report of 2 cases.</a></h3>
+  <div class="by">Satomi K, Nikai Y, Saito K, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Brain tumor pathology</span><span class="date">2026-06-15</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">The 2021 World Health Organization (WHO) Classification of Tumors of the Central Nervous System, 5th Edition, defines diffuse pediatric-type high-grade glioma, H3-wildtype and IDH-wildtype (dpHGG, H3-/IDH-WT) as a molecularly distinct entity, primarily diagnosed by DNA methylatio…</div>
+  <div class="doi"><a href="https://doi.org/10.1007/s10014-026-00545-3" target="_blank" rel="noopener">10.1007/s10014-026-00545-3</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Discovery of Novel Plant O-Methyltransferases for Directed Methylation of Flavonoids and Stilbenoids. Flavonoid O-methylation (FOMT) is a major tailoring reaction that alters physicochemical properties and generates valuable methoxylated derivatives, but preparative biocatalysis remains limited by scarce enzymes and insufficient regioselective control. Here, we targeted a defined branch within a pre Abudureheman A, Tong Q, Zhuang W, Wang H, Tang Q, Yi D. Chembiochem : a European journal of chemical biology methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42287617" target="_blank" rel="noopener">Discovery of Novel Plant O-Methyltransferases for Directed Methylation of Flavonoids and Stilbenoids.</a></h3>
+  <div class="by">Abudureheman A, Tong Q, Zhuang W, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Chembiochem : a European journal of chemical biology</span><span class="date">2026-06-01</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Flavonoid O-methylation (FOMT) is a major tailoring reaction that alters physicochemical properties and generates valuable methoxylated derivatives, but preparative biocatalysis remains limited by scarce enzymes and insufficient regioselective control. Here, we targeted a defined…</div>
+  <div class="doi"><a href="https://doi.org/10.1002/cbic.70431" target="_blank" rel="noopener">10.1002/cbic.70431</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="PPR" data-search="Dual profiling of DNA modifications with enhancer features during the exit of naive pluripotency Cis-regulatory elements, such as enhancers, play an essential role in coordinating gene expression programs during cellular transitions. As such, substantial efforts have been made to characterize enhancer elements, e.g., chromatin accessibility, transcription factor (TF) binding sites, histone post Morales-Franco M, Demaret B, Romero PA, Bouvier H, Richard Albert J, David A, Defossez P, Bardet AF, Lhoumaud P, Greenberg MV.  methylation ">
+  <h3><a href="https://europepmc.org/abstract/PPR/PPR1252339" target="_blank" rel="noopener">Dual profiling of DNA modifications with enhancer features during the exit of naive pluripotency</a></h3>
+  <div class="by">Morales-Franco M, Demaret B, Romero PA, et al.</div>
+  <div class="meta"><span class="src PPR">Preprint</span><span class="date">2026-06-14</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Cis-regulatory elements, such as enhancers, play an essential role in coordinating gene expression programs during cellular transitions. As such, substantial efforts have been made to characterize enhancer elements, e.g., chromatin accessibility, transcription factor (TF) binding…</div>
+  <div class="doi"><a href="https://doi.org/10.64898/2026.06.12.731885" target="_blank" rel="noopener">10.64898/2026.06.12.731885</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Effect of Add-on Yoga-Based Intervention on Schizophrenia: A Randomized Controlled Trial. Schizophrenia is a complex, highly heterogenous, and multifactorial psychiatric disorder. Antipsychotic medications which are the mainstay pharmacological therapy of Schizophrenia, have significant limitations in improving negative and cognitive symptoms and are frequently associated with adverse ef Mullapudi T, Varambally S, Banerjee M, Govindaraj R, Raj P, Kavya PV, Krishnayya SD, Haribabu S, Kadiwal K, Ravi GS, Debnath M. Behavioral medicine (Washington, D.C.) methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42294521" target="_blank" rel="noopener">Effect of Add-on Yoga-Based Intervention on Schizophrenia: A Randomized Controlled Trial.</a></h3>
+  <div class="by">Mullapudi T, Varambally S, Banerjee M, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Behavioral medicine (Washington, D.C.)</span><span class="date">2026-06-15</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Schizophrenia is a complex, highly heterogenous, and multifactorial psychiatric disorder. Antipsychotic medications which are the mainstay pharmacological therapy of Schizophrenia, have significant limitations in improving negative and cognitive symptoms and are frequently associ…</div>
+  <div class="doi"><a href="https://doi.org/10.1080/08964289.2026.2669678" target="_blank" rel="noopener">10.1080/08964289.2026.2669678</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Epigenetic Clocks in the Cosmic Silence of a Deep Underground Laboratory: Implications for Aging and Space Exploration. DNA methylation aging clocks are among the most accurate biomarkers of chronological and biological age, yet why the methylome encodes time with reproducible precision remains unclear. Current models emphasize developmental patterning, imperfect epigenetic maintenance, chromatin drift, and remodelin Menendez JA, Peña-Garay C, Alarcón T, Cuyàs E. Aging and disease methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42295084" target="_blank" rel="noopener">Epigenetic Clocks in the Cosmic Silence of a Deep Underground Laboratory: Implications for Aging and Space Exploration.</a></h3>
+  <div class="by">Menendez JA, Peña-Garay C, Alarcón T, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Aging and disease</span><span class="date">2026-06-05</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">DNA methylation aging clocks are among the most accurate biomarkers of chronological and biological age, yet why the methylome encodes time with reproducible precision remains unclear. Current models emphasize developmental patterning, imperfect epigenetic maintenance, chromatin …</div>
+  <div class="doi"><a href="https://doi.org/10.14336/ad.2026.0468" target="_blank" rel="noopener">10.14336/ad.2026.0468</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="From AlphaFold to site-selective inhibition of DNA methylation in glioblastoma multiforme. Targeting specific protein-protein interactions, particularly those involving DNA methyltransferases (DNMTs), offers a promising strategy to resensitise glioblastoma multiforme cells to temozolomide. Glioblastoma multiforme is a highly aggressive brain cancer with a poor prognosis. The long-term eff Besson JM, Chavanieu A, Nadaradjane A, Cartron PF, Lopez M. RSC medicinal chemistry methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42294421" target="_blank" rel="noopener">From AlphaFold to site-selective inhibition of DNA methylation in glioblastoma multiforme.</a></h3>
+  <div class="by">Besson JM, Chavanieu A, Nadaradjane A, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>RSC medicinal chemistry</span><span class="date">2026-06-11</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Targeting specific protein-protein interactions, particularly those involving DNA methyltransferases (DNMTs), offers a promising strategy to resensitise glioblastoma multiforme cells to temozolomide. Glioblastoma multiforme is a highly aggressive brain cancer with a poor prognosi…</div>
+  <div class="doi"><a href="https://doi.org/10.1039/d5md00988j" target="_blank" rel="noopener">10.1039/d5md00988j</a></div>
+</article><article class="paper" data-keywords="mosaic" data-source="MED" data-search="From Familial Clustering to a Dedicated Classification: The Historical Recognition of Hereditary Tumor Syndromes in the WHO Classification of Tumors. Background Familial cancer aggregation has been recognized for more than 150 years. For much of that period, hereditary tumor predisposition was incorporated into tumor classification in a fragmented, organ-specific manner. Across successive editions, the WHO classification of tumours moved from mor Canberk S, Nosé V. Advances in anatomic pathology mosaic ">
+  <h3><a href="https://europepmc.org/abstract/MED/42290592" target="_blank" rel="noopener">From Familial Clustering to a Dedicated Classification: The Historical Recognition of Hereditary Tumor Syndromes in the WHO Classification of Tumors.</a></h3>
+  <div class="by">Canberk S, Nosé V.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Advances in anatomic pathology</span><span class="date">2026-06-15</span><a class="tag kw-mosaic" href="../keywords/mosaic.html">mosaic</a></div>
+  <div class="ab">Background Familial cancer aggregation has been recognized for more than 150 years. For much of that period, hereditary tumor predisposition was incorporated into tumor classification in a fragmented, organ-specific manner. Across successive editions, the WHO classification of tu…</div>
+  <div class="doi"><a href="https://doi.org/10.1097/pap.0000000000000544" target="_blank" rel="noopener">10.1097/pap.0000000000000544</a></div>
+</article><article class="paper" data-keywords="pacbio" data-source="MED" data-search="Genomic contraction of the &amp;lt;i&amp;gt;LOX&amp;lt;/i&amp;gt; gene family limits jasmonic acid biosynthesis and contributes to delayed flower bud opening in honeysuckle (&amp;lt;i&amp;gt;Lonicera japonica&amp;lt;/i&amp;gt;). The delayed flower bud opening of Lonicera japonica &#x27;Huajin 6&#x27; extends its harvest window and enhances agricultural value, yet the underlying molecular basis remains unclear. Here, we assembled a chromosome-level genome of &#x27;Huajin 6&#x27; using PacBio sequencing and high-throughput chromosome conformatio Liu Z, Liang C, Hou C, Zhang L, Li J, Huang L, Zhang G, Pan S, Li R, Liu C, Zhang Y, Li J, Pu G. Horticulture research PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42292954" target="_blank" rel="noopener">Genomic contraction of the &amp;lt;i&amp;gt;LOX&amp;lt;/i&amp;gt; gene family limits jasmonic acid biosynthesis and contributes to delayed flower bud opening in honeysuckle (&amp;lt;i&amp;gt;Lonicera japonica&amp;lt;/i&amp;gt;).</a></h3>
+  <div class="by">Liu Z, Liang C, Hou C, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Horticulture research</span><span class="date">2026-03-03</span><a class="tag kw-pacbio" href="../keywords/pacbio.html">PacBio</a></div>
+  <div class="ab">The delayed flower bud opening of Lonicera japonica &#x27;Huajin 6&#x27; extends its harvest window and enhances agricultural value, yet the underlying molecular basis remains unclear. Here, we assembled a chromosome-level genome of &#x27;Huajin 6&#x27; using PacBio sequencing and high-throughput ch…</div>
+  <div class="doi"><a href="https://doi.org/10.1093/hr/uhag078" target="_blank" rel="noopener">10.1093/hr/uhag078</a></div>
+</article><article class="paper" data-keywords="pacbio" data-source="MED" data-search="Gut microbiome in advanced non-small cell lung cancer: effect of chemotherapy and impact on efficacy. Background While evidence linking the gut microbiome (GM) to cancer immunotherapy is growing, data regarding its role in chemotherapy remains limited. This study aims to investigate the effect of chemotherapy on GM composition and its potential as a predictive biomarker for treatment outcomes in adv Trachu N, Sensorn I, Khiewngam K, Monnamo N, Chantratita W, Sirachainan E, Reungwetwattana T, Oranratnachai S. Translational lung cancer research PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42291363" target="_blank" rel="noopener">Gut microbiome in advanced non-small cell lung cancer: effect of chemotherapy and impact on efficacy.</a></h3>
+  <div class="by">Trachu N, Sensorn I, Khiewngam K, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Translational lung cancer research</span><span class="date">2026-05-26</span><a class="tag kw-pacbio" href="../keywords/pacbio.html">PacBio</a></div>
+  <div class="ab">Background While evidence linking the gut microbiome (GM) to cancer immunotherapy is growing, data regarding its role in chemotherapy remains limited. This study aims to investigate the effect of chemotherapy on GM composition and its potential as a predictive biomarker for treat…</div>
+  <div class="doi"><a href="https://doi.org/10.21037/tlcr-2026-1-0209" target="_blank" rel="noopener">10.21037/tlcr-2026-1-0209</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Harnessing the Versatility of SAM-Dependent Enzymes: From Mechanism to Application.  S-Adenosyl-L-methionine (SAM) is a central biological cofactor that supplied activated methyl groups and enables a broad-spectrum biochemical transformation. Beyond canonical SN2 methyl transfer, SAM-dependent enzymes could initiate radical-mediated chemistry via reductive SAM cleavage, enabling ver Zhao Y, Meng S, Chen M, Xu S, Wang J, Xu G, Cui H. Chembiochem : a European journal of chemical biology methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42298833" target="_blank" rel="noopener">Harnessing the Versatility of SAM-Dependent Enzymes: From Mechanism to Application. </a></h3>
+  <div class="by">Zhao Y, Meng S, Chen M, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Chembiochem : a European journal of chemical biology</span><span class="date">2026-06-01</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">S-Adenosyl-L-methionine (SAM) is a central biological cofactor that supplied activated methyl groups and enables a broad-spectrum biochemical transformation. Beyond canonical SN2 methyl transfer, SAM-dependent enzymes could initiate radical-mediated chemistry via reductive SAM cl…</div>
+  <div class="doi"><a href="https://doi.org/10.1002/cbic.70416" target="_blank" rel="noopener">10.1002/cbic.70416</a></div>
+</article><article class="paper" data-keywords="somatic-mosaicism" data-source="MED" data-search="Hematopoietic somatic mutations in atherosclerotic cardiovascular disease.  Age-related somatic mosaicism in the hematopoietic system is increasingly recognized as a risk factor for atherosclerotic cardiovascular disease. The most prominent example is clonal hematopoiesis of indeterminate potential (CHIP), defined as the expansion of hematopoietic clones carrying acquired m Ramos-Neble BL, Fuster JJ. Atherosclerosis Somatic mosaicism ">
+  <h3><a href="https://europepmc.org/abstract/MED/42297532" target="_blank" rel="noopener">Hematopoietic somatic mutations in atherosclerotic cardiovascular disease. </a></h3>
+  <div class="by">Ramos-Neble BL, Fuster JJ.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Atherosclerosis</span><span class="date">2026-05-24</span><a class="tag kw-somatic-mosaicism" href="../keywords/somatic-mosaicism.html">Somatic mosaicism</a></div>
+  <div class="ab">Age-related somatic mosaicism in the hematopoietic system is increasingly recognized as a risk factor for atherosclerotic cardiovascular disease. The most prominent example is clonal hematopoiesis of indeterminate potential (CHIP), defined as the expansion of hematopoietic clones…</div>
+  <div class="doi"><a href="https://doi.org/10.1016/j.atherosclerosis.2026.120718" target="_blank" rel="noopener">10.1016/j.atherosclerosis.2026.120718</a></div>
+</article><article class="paper" data-keywords="mosaic" data-source="MED" data-search="High-resolution genomic analysis reveals abundant mosaic outcomes of bacterial natural transformation independent of MutS-mediated mismatch repair. The nature and breadth of horizontal gene transfer outcomes specific to natural transformation remain elusive. We present a genome-scale analysis of location-specific information associated with single-round transformation events in Bacillus subtilis . Using distributed selectable markers to remove  Lombardino JM, Falbel TG, Dewey CN, Burton BM. mBio mosaic ">
+  <h3><a href="https://europepmc.org/abstract/MED/42294936" target="_blank" rel="noopener">High-resolution genomic analysis reveals abundant mosaic outcomes of bacterial natural transformation independent of MutS-mediated mismatch repair.</a></h3>
+  <div class="by">Lombardino JM, Falbel TG, Dewey CN, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>mBio</span><span class="date">2026-06-15</span><a class="tag kw-mosaic" href="../keywords/mosaic.html">mosaic</a></div>
+  <div class="ab">The nature and breadth of horizontal gene transfer outcomes specific to natural transformation remain elusive. We present a genome-scale analysis of location-specific information associated with single-round transformation events in Bacillus subtilis . Using distributed selectabl…</div>
+  <div class="doi"><a href="https://doi.org/10.1128/mbio.00444-26" target="_blank" rel="noopener">10.1128/mbio.00444-26</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Histone methylation machinery in gliomas: From enzymatic mechanisms to inhibitor development. Glioma is the most common primary malignant tumor of the central nervous system (CNS). Advances in molecular pathology have established a robust causal link between histone modifications and glioma genesis. In addition to prior findings, recent empirical evidence has unequivocally substantiated the  Wang X, Liu W, Sun J, Wei X, Wang Z, Zang L. Cancer treatment and research communications methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42287776" target="_blank" rel="noopener">Histone methylation machinery in gliomas: From enzymatic mechanisms to inhibitor development.</a></h3>
+  <div class="by">Wang X, Liu W, Sun J, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Cancer treatment and research communications</span><span class="date">2026-06-13</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Glioma is the most common primary malignant tumor of the central nervous system (CNS). Advances in molecular pathology have established a robust causal link between histone modifications and glioma genesis. In addition to prior findings, recent empirical evidence has unequivocall…</div>
+  <div class="doi"><a href="https://doi.org/10.1016/j.ctarc.2026.101283" target="_blank" rel="noopener">10.1016/j.ctarc.2026.101283</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="How cotton-specialized aphids hack cucumber plants: DNA methylation reshapes zinc finger protein xFG20-1 regulation for adaptive trade-offs.  The cotton-specialized aphid biotype Hap1 cannot survive directly on cucumber but achieves adaptation after several generations via an intermediate zucchini host, epigenetic mechanisms likely mediate this adaptive process. Although epigenetic regulation of insect environmental responses is well-docu Gao X, Xue H, Wang L, Xu WL, Zhang K, Li D, Ji J, Zhu X, Luo J, Cui J. Journal of advanced research methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42297137" target="_blank" rel="noopener">How cotton-specialized aphids hack cucumber plants: DNA methylation reshapes zinc finger protein xFG20-1 regulation for adaptive trade-offs. </a></h3>
+  <div class="by">Gao X, Xue H, Wang L, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Journal of advanced research</span><span class="date">2026-06-15</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">The cotton-specialized aphid biotype Hap1 cannot survive directly on cucumber but achieves adaptation after several generations via an intermediate zucchini host, epigenetic mechanisms likely mediate this adaptive process. Although epigenetic regulation of insect environmental re…</div>
+  <div class="doi"><a href="https://doi.org/10.1016/j.jare.2026.06.016" target="_blank" rel="noopener">10.1016/j.jare.2026.06.016</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Interplay between the RBP SYNCRIP and RNA methylation in determining sEV miRNA-cargo and function in cell-to-cell communication.  Small extracellular vesicles (sEVs) are critical mediators of tumor microenvironment communication, largely through the selective transfer of microRNAs (miRNAs) that reprogram recipient cells. Active miRNA sorting into sEVs depends on RNA‑binding proteins (RBPs), sequence determinants, and RNA modif Quattrocchi L, Garbo S, Marocco F, Renne MM, Loria M, Pucci M, Costanzo E, Brizzi MF, Fontana S, Battistelli C, Tripodi M. Cell death &amp; disease methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42297803" target="_blank" rel="noopener">Interplay between the RBP SYNCRIP and RNA methylation in determining sEV miRNA-cargo and function in cell-to-cell communication. </a></h3>
+  <div class="by">Quattrocchi L, Garbo S, Marocco F, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Cell death &amp; disease</span><span class="date">2026-06-15</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Small extracellular vesicles (sEVs) are critical mediators of tumor microenvironment communication, largely through the selective transfer of microRNAs (miRNAs) that reprogram recipient cells. Active miRNA sorting into sEVs depends on RNA‑binding proteins (RBPs), sequence determi…</div>
+  <div class="doi"><a href="https://doi.org/10.1038/s41419-026-08991-9" target="_blank" rel="noopener">10.1038/s41419-026-08991-9</a></div>
+</article><article class="paper" data-keywords="pacbio" data-source="PPR" data-search="Isoform-Resolved Post-Transcriptional Regulation in Human Skin Wound Healing Abstract Tissue repair requires rapid changes in cell state and gene function, yet most studies have focused on gene abundance and overlooked how transcript isoforms shape gene output during repair. Here, we built a cell-type-specific, isoform-resolved atlas of human skin wound repair by integrating Landen NX, Luo L, Li D, Sommar P, Niu G, Geara J, Friedlander M, Liu Z.  PacBio ">
+  <h3><a href="https://europepmc.org/abstract/PPR/PPR1252005" target="_blank" rel="noopener">Isoform-Resolved Post-Transcriptional Regulation in Human Skin Wound Healing</a></h3>
+  <div class="by">Landen NX, Luo L, Li D, et al.</div>
+  <div class="meta"><span class="src PPR">Preprint</span><span class="date">2026-06-15</span><a class="tag kw-pacbio" href="../keywords/pacbio.html">PacBio</a></div>
+  <div class="ab">Abstract Tissue repair requires rapid changes in cell state and gene function, yet most studies have focused on gene abundance and overlooked how transcript isoforms shape gene output during repair. Here, we built a cell-type-specific, isoform-resolved atlas of human skin wound r…</div>
+  <div class="doi"><a href="https://doi.org/10.21203/rs.3.rs-9917999/v1" target="_blank" rel="noopener">10.21203/rs.3.rs-9917999/v1</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Label-free CRISPR/Cas12a biosensor based on G-triplex/Thioflavin T and GlaI-assisted strand displacement amplification for ultrasensitive DNA methylation detection.  DNA methylation represents a pivotal epigenetic biomarker for cancer, and precise profiling of carcinogenesis-associated methylation is essential for early diagnosis and prognostic evaluation. Herein, we report a novel label-free, sensitive DNA methylation biosensor by integrating GlaI-assisted doub Xie Z, Wu Y, Zhou P, Zhang Y, Li X, Li Y, Cui H. Talanta methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42296867" target="_blank" rel="noopener">Label-free CRISPR/Cas12a biosensor based on G-triplex/Thioflavin T and GlaI-assisted strand displacement amplification for ultrasensitive DNA methylation detection. </a></h3>
+  <div class="by">Xie Z, Wu Y, Zhou P, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Talanta</span><span class="date">2026-06-15</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">DNA methylation represents a pivotal epigenetic biomarker for cancer, and precise profiling of carcinogenesis-associated methylation is essential for early diagnosis and prognostic evaluation. Herein, we report a novel label-free, sensitive DNA methylation biosensor by integratin…</div>
+  <div class="doi"><a href="https://doi.org/10.1016/j.talanta.2026.130144" target="_blank" rel="noopener">10.1016/j.talanta.2026.130144</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="MBD8 acts as a conserved cofactor of the histone demethylase LDL2 to regulate flowering time in plants.  Histone demethylases have been extensively characterized in plants, yet how their enzymatic activities are regulated remains largely unknown. Here, we identify that MBD8, a protein harboring a putative methyl-CpG-binding domain (MBD), forms a protein complex with the histone demethylase LDL2 in Arab Zheng H, Feng C, Tan LM, Zhuang MT, Yuan DY, Mei J, Liu ZZ, Han H, Li L, Chen S, He XJ. Journal of integrative plant biology methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42298355" target="_blank" rel="noopener">MBD8 acts as a conserved cofactor of the histone demethylase LDL2 to regulate flowering time in plants. </a></h3>
+  <div class="by">Zheng H, Feng C, Tan LM, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Journal of integrative plant biology</span><span class="date">2026-06-15</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Histone demethylases have been extensively characterized in plants, yet how their enzymatic activities are regulated remains largely unknown. Here, we identify that MBD8, a protein harboring a putative methyl-CpG-binding domain (MBD), forms a protein complex with the histone deme…</div>
+  <div class="doi"><a href="https://doi.org/10.1111/jipb.70321" target="_blank" rel="noopener">10.1111/jipb.70321</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Maternal methionine supplementation regulates skeletal muscle development through N&amp;lt;sup&amp;gt;6&amp;lt;/sup&amp;gt;-methyladenosine mRNA methylation in broiler offspring. Maternal nutrition is a key determinant of offspring growth, as poultry embryonic muscle depends entirely on yolk-derived nutrients. Methionine (Met), a vital amino acid and methyl donor in one-carbon metabolism, regulates myogenesis, yet its epigenetic mechanisms remain poorly understood. Two indep Gao M, Chen S, Chen Y, Han Q, Li D, Li W, Li X, Liu A, Nie W, Guo Y, Lv Z. Animal nutrition (Zhongguo xu mu shou yi xue hui) methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42290959" target="_blank" rel="noopener">Maternal methionine supplementation regulates skeletal muscle development through N&amp;lt;sup&amp;gt;6&amp;lt;/sup&amp;gt;-methyladenosine mRNA methylation in broiler offspring.</a></h3>
+  <div class="by">Gao M, Chen S, Chen Y, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Animal nutrition (Zhongguo xu mu shou yi xue hui)</span><span class="date">2026-05-04</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Maternal nutrition is a key determinant of offspring growth, as poultry embryonic muscle depends entirely on yolk-derived nutrients. Methionine (Met), a vital amino acid and methyl donor in one-carbon metabolism, regulates myogenesis, yet its epigenetic mechanisms remain poorly u…</div>
+  <div class="doi"><a href="https://doi.org/10.1016/j.aninu.2025.12.017" target="_blank" rel="noopener">10.1016/j.aninu.2025.12.017</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Maternal separation increases anxiety-like phenotypes, fear responses, and alters &amp;lt;i&amp;gt;Bdnf&amp;lt;/i&amp;gt; methylation in a predator odor exposure model of early life adversity. Early life adversity (ELA) can increase incidences of psychopathology later in life, partly through aberrant expression of the brain-derived neurotrophic factor ( Bdnf ) gene. One mechanism whereby ELA can alter Bdnf expression is through DNA methylation, typically reducing expression. Previously, o Collins NJ, Ross SE, Prysakar M, Bigham O, Ayers LW, Rosen JB, Roth TL. Neurobiology of stress methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42291690" target="_blank" rel="noopener">Maternal separation increases anxiety-like phenotypes, fear responses, and alters &amp;lt;i&amp;gt;Bdnf&amp;lt;/i&amp;gt; methylation in a predator odor exposure model of early life adversity.</a></h3>
+  <div class="by">Collins NJ, Ross SE, Prysakar M, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Neurobiology of stress</span><span class="date">2026-05-28</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Early life adversity (ELA) can increase incidences of psychopathology later in life, partly through aberrant expression of the brain-derived neurotrophic factor ( Bdnf ) gene. One mechanism whereby ELA can alter Bdnf expression is through DNA methylation, typically reducing expre…</div>
+  <div class="doi"><a href="https://doi.org/10.1016/j.ynstr.2026.100825" target="_blank" rel="noopener">10.1016/j.ynstr.2026.100825</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Moderate iron restriction improves metabolism via epigenetic regulation of GDF15. Iron overload disrupts endocrine function and metabolic health, while iron chelation and phlebotomy enhance metabolic fitness in humans and mice. However, the working mechanism of iron-lowering strategies remains largely undefined, and it is unclear whether dietary iron restriction can serve as a ne Yang J, Shi L, Cubito AL, Govarthanan A, Sabripour JS, Scott K, de Kloet A, Yue F, Liu B, Strath LJ, Krause E, Collins JF, Cheng Z. The Journal of nutritional biochemistry methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42288146" target="_blank" rel="noopener">Moderate iron restriction improves metabolism via epigenetic regulation of GDF15.</a></h3>
+  <div class="by">Yang J, Shi L, Cubito AL, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>The Journal of nutritional biochemistry</span><span class="date">2026-06-13</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Iron overload disrupts endocrine function and metabolic health, while iron chelation and phlebotomy enhance metabolic fitness in humans and mice. However, the working mechanism of iron-lowering strategies remains largely undefined, and it is unclear whether dietary iron restricti…</div>
+  <div class="doi"><a href="https://doi.org/10.1016/j.jnutbio.2026.110448" target="_blank" rel="noopener">10.1016/j.jnutbio.2026.110448</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="PPR" data-search="Multi-platform reassessment of human mitochondrial DNA methylation reveals signals consistent with technical artifacts The existence and functional relevance of mitochondrial DNA methylation remain controversial. Here, we systematically profiled cytosine methylation and hydroxymethylation across human brain and blood tissues spanning healthy and malignant states using orthogonal sequencing approaches that avoid chem Basrai S, Bahcheli AT, Tan D, Zuzarte PC, Bevan A, Chan T, Ng K, Lam B, Arruda A, Das S, Minden MD, Simpson JT, Reimand J, Abelson S.  methylation ">
+  <h3><a href="https://europepmc.org/abstract/PPR/PPR1252311" target="_blank" rel="noopener">Multi-platform reassessment of human mitochondrial DNA methylation reveals signals consistent with technical artifacts</a></h3>
+  <div class="by">Basrai S, Bahcheli AT, Tan D, et al.</div>
+  <div class="meta"><span class="src PPR">Preprint</span><span class="date">2026-06-15</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">The existence and functional relevance of mitochondrial DNA methylation remain controversial. Here, we systematically profiled cytosine methylation and hydroxymethylation across human brain and blood tissues spanning healthy and malignant states using orthogonal sequencing approa…</div>
+  <div class="doi"><a href="https://doi.org/10.64898/2026.06.10.730935" target="_blank" rel="noopener">10.64898/2026.06.10.730935</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Oleanolic acid modulates neuronal regeneration through KLF5-mediated FGF13 mRNA degradation to alleviate Alzheimer&#x27;s disease-like cognitive dysfunction. Despite understanding the pathophysiology of Alzheimer&#x27;s disease (AD), the mechanisms of neuronal regeneration mediated by oleanolic acid (OA) through m6A RNA methylation remain unexplored, forming the crux of this study. In a streptozotocin (STZ)-induced AD rat model, we administered OA and conduct Ren D, Xu J, Xiao L, Zhang T, Li B, Li R, Zhu H. Journal of molecular medicine (Berlin, Germany) methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42289606" target="_blank" rel="noopener">Oleanolic acid modulates neuronal regeneration through KLF5-mediated FGF13 mRNA degradation to alleviate Alzheimer&#x27;s disease-like cognitive dysfunction.</a></h3>
+  <div class="by">Ren D, Xu J, Xiao L, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Journal of molecular medicine (Berlin, Germany)</span><span class="date">2026-06-15</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Despite understanding the pathophysiology of Alzheimer&#x27;s disease (AD), the mechanisms of neuronal regeneration mediated by oleanolic acid (OA) through m6A RNA methylation remain unexplored, forming the crux of this study. In a streptozotocin (STZ)-induced AD rat model, we adminis…</div>
+  <div class="doi"><a href="https://doi.org/10.1007/s00109-026-02691-9" target="_blank" rel="noopener">10.1007/s00109-026-02691-9</a></div>
+</article><article class="paper" data-keywords="pacbio" data-source="PPR" data-search="PacBio HiFi Reads Data Sets for the ATCC-Authenticated Isolate of Candida albicans SC5314 (ATCC MYA-2876) Candida albicans is a yeast of major medical importance. The genome sequence for the reference isolate SC5314 has been available for many years and is displayed as a phased diploid assembly through a public community resource. As DNA sequencing technologies continue to advance, new high-quality data Hoyer LL, Hogan EK, Hernandez AG.  PacBio ">
+  <h3><a href="https://europepmc.org/abstract/PPR/PPR1252215" target="_blank" rel="noopener">PacBio HiFi Reads Data Sets for the ATCC-Authenticated Isolate of Candida albicans SC5314 (ATCC MYA-2876)</a></h3>
+  <div class="by">Hoyer LL, Hogan EK, Hernandez AG.</div>
+  <div class="meta"><span class="src PPR">Preprint</span><span class="date">2026-06-15</span><a class="tag kw-pacbio" href="../keywords/pacbio.html">PacBio</a></div>
+  <div class="ab">Candida albicans is a yeast of major medical importance. The genome sequence for the reference isolate SC5314 has been available for many years and is displayed as a phased diploid assembly through a public community resource. As DNA sequencing technologies continue to advance, n…</div>
+  <div class="doi"><a href="https://doi.org/10.1099/acmi.0.001142.v2" target="_blank" rel="noopener">10.1099/acmi.0.001142.v2</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Pan-cancer expression, methylation, and prognostic significance of α7 nicotinic acetylcholine receptor in tumor immunology. The α7 nicotinic acetylcholine receptor (α7nAChR), functioning as a critical ligand-gated ion channel in the nervous system, has recently been implicated to play a role in various non-neuronal tissues. Nonetheless, a comprehensive understanding of its expression patterns, mechanisms of epigenetic co Bai X, Ma T, Shi L, Wang P, Zhao D, Long J, Hai Y, You Y, Zhao R, Ma L. Biochemistry and biophysics reports methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42292701" target="_blank" rel="noopener">Pan-cancer expression, methylation, and prognostic significance of α7 nicotinic acetylcholine receptor in tumor immunology.</a></h3>
+  <div class="by">Bai X, Ma T, Shi L, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Biochemistry and biophysics reports</span><span class="date">2026-06-09</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">The α7 nicotinic acetylcholine receptor (α7nAChR), functioning as a critical ligand-gated ion channel in the nervous system, has recently been implicated to play a role in various non-neuronal tissues. Nonetheless, a comprehensive understanding of its expression patterns, mechani…</div>
+  <div class="doi"><a href="https://doi.org/10.1016/j.bbrep.2026.102649" target="_blank" rel="noopener">10.1016/j.bbrep.2026.102649</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Pan-cancer multi-omic integration of Trop2 reveals biological determinants and translational implications for ADC therapy.  Trop2-directed antibody-drug conjugates (ADCs) show activity across epithelial cancers, yet determinants of target expression in tumors and normal tissues remain poorly defined. We integrated bulk and single-cell transcriptomic profiles from over 20,000 samples across TCGA, GTEx and public atlases t Notini G, Galbardi B, Viale G, Naldini MM, Bosi C, De Micheli G, Licata L, Mariani M, Piras M, Criscitiello C, Barreca M, Callari M, Zanibelli C, Patanè F, Chiavassa A, Pérez-García JM, Ali HR, Córtes J, Pusztai L, Gianni L, Bianchini G, Dugo M. NPJ precision oncology methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42297906" target="_blank" rel="noopener">Pan-cancer multi-omic integration of Trop2 reveals biological determinants and translational implications for ADC therapy. </a></h3>
+  <div class="by">Notini G, Galbardi B, Viale G, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>NPJ precision oncology</span><span class="date">2026-06-15</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Trop2-directed antibody-drug conjugates (ADCs) show activity across epithelial cancers, yet determinants of target expression in tumors and normal tissues remain poorly defined. We integrated bulk and single-cell transcriptomic profiles from over 20,000 samples across TCGA, GTEx …</div>
+  <div class="doi"><a href="https://doi.org/10.1038/s41698-026-01523-w" target="_blank" rel="noopener">10.1038/s41698-026-01523-w</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Phosphate-tagged substrate recognition by a PrmC-like methyltransferase in apramycin biosynthesis.  Apramycin biosynthesis features an unusual O-5 phosphorylation on octose-containing pseudotrisaccharide intermediates that functions as a pathway recognition tag. AprI catalyzes 7&#x27;-N-methylation of the phosphorylated intermediate. Unexpectedly, sequence and phylogenetic analysis place AprI within th Zhang Q, Zhang Y, Cui Y, Deng Z, Zhao Q, Long F, Yu Y. International journal of biological macromolecules methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42297172" target="_blank" rel="noopener">Phosphate-tagged substrate recognition by a PrmC-like methyltransferase in apramycin biosynthesis. </a></h3>
+  <div class="by">Zhang Q, Zhang Y, Cui Y, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>International journal of biological macromolecules</span><span class="date">2026-06-15</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Apramycin biosynthesis features an unusual O-5 phosphorylation on octose-containing pseudotrisaccharide intermediates that functions as a pathway recognition tag. AprI catalyzes 7&#x27;-N-methylation of the phosphorylated intermediate. Unexpectedly, sequence and phylogenetic analysis …</div>
+  <div class="doi"><a href="https://doi.org/10.1016/j.ijbiomac.2026.153063" target="_blank" rel="noopener">10.1016/j.ijbiomac.2026.153063</a></div>
+</article><article class="paper" data-keywords="mosaic" data-source="MED" data-search="Postcranial anatomy and osteohistology of an early prozostrodont cynodont from the Upper Triassic of Brazil.  Prozostrodon brasiliensis, a probainognathian cynodont of the clade Prozostrodontia, is recognized as a key taxon for understanding the origin of Mammaliaformes and mammals. Despite detailed investigations of its cranial anatomy, the postcranial skeleton has received comparatively less attention. In Michelotti IM, Roese-Miron L, Farias BDM, Soares MB, Kerber L. Anatomical record (Hoboken, N.J. : 2007) mosaic ">
+  <h3><a href="https://europepmc.org/abstract/MED/42298815" target="_blank" rel="noopener">Postcranial anatomy and osteohistology of an early prozostrodont cynodont from the Upper Triassic of Brazil. </a></h3>
+  <div class="by">Michelotti IM, Roese-Miron L, Farias BDM, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Anatomical record (Hoboken, N.J. : 2007)</span><span class="date">2026-06-15</span><a class="tag kw-mosaic" href="../keywords/mosaic.html">mosaic</a></div>
+  <div class="ab">Prozostrodon brasiliensis, a probainognathian cynodont of the clade Prozostrodontia, is recognized as a key taxon for understanding the origin of Mammaliaformes and mammals. Despite detailed investigations of its cranial anatomy, the postcranial skeleton has received comparativel…</div>
+  <div class="doi"><a href="https://doi.org/10.1002/ar.70245" target="_blank" rel="noopener">10.1002/ar.70245</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Programmable methylation engineering: Design principles from alkaloid biosynthesis.  Methyltransferases (MTs) play a central role in alkaloid biosynthesis by catalyzing methylation reactions that critically shape scaffold diversification, bioactivity, solubility, and pharmacokinetic properties. However, their application in methyltransferase-tailored alkaloid biosynthesis (MTAB) rem Zhou H, Shen X, Wang J, Sun X, Yuan Q. Biotechnology advances methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42297263" target="_blank" rel="noopener">Programmable methylation engineering: Design principles from alkaloid biosynthesis. </a></h3>
+  <div class="by">Zhou H, Shen X, Wang J, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Biotechnology advances</span><span class="date">2026-06-15</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Methyltransferases (MTs) play a central role in alkaloid biosynthesis by catalyzing methylation reactions that critically shape scaffold diversification, bioactivity, solubility, and pharmacokinetic properties. However, their application in methyltransferase-tailored alkaloid bio…</div>
+  <div class="doi"><a href="https://doi.org/10.1016/j.biotechadv.2026.108949" target="_blank" rel="noopener">10.1016/j.biotechadv.2026.108949</a></div>
+</article><article class="paper" data-keywords="somatic-mosaicism" data-source="MED" data-search="Promoter TERT-Related Hematopoietic Somatic Mosaicism in Patients With Telomere Biology Disorders.  Franke M, Kirchner R, Barredo B, Zaidan A, Torres-Esquius S, Acha P, Novoa-Jáuregui S, Montoro MJ, Churpek JE, Babushok DV, Lasho T, Kewan T, Ogbue O, Mangaonkar A, Jerez A, Ferrer A, Patnaik MM. American journal of hematology Somatic mosaicism ">
+  <h3><a href="https://europepmc.org/abstract/MED/42290596" target="_blank" rel="noopener">Promoter TERT-Related Hematopoietic Somatic Mosaicism in Patients With Telomere Biology Disorders.</a></h3>
+  <div class="by">Franke M, Kirchner R, Barredo B, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>American journal of hematology</span><span class="date">2026-06-15</span><a class="tag kw-somatic-mosaicism" href="../keywords/somatic-mosaicism.html">Somatic mosaicism</a></div>
+  
+  <div class="doi"><a href="https://doi.org/10.1002/ajh.70412" target="_blank" rel="noopener">10.1002/ajh.70412</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Quantitative DNA melting analysis with hybridization probes (qDMA-HP) as a novel approach to assess MGMT promoter methylation in malignant glioma. Purpose Quantifying MGMT methylation in malignant glioma is vital for clinical decision-making. Methylated MGMT indicates a better prognosis and enhances the effectiveness of temozolomide therapy. However, there is ongoing debate regarding the best assay methods, targeted CpG sites, and optimal meth Botezatu IV, Kondratova VN, Stroganova AM, Prokopev IG, Khabarova AV, Khalafyan DA, Bekyashev AK, Naskhletashvili DR, Lichtenstein AV. Journal of neuro-oncology methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42295419" target="_blank" rel="noopener">Quantitative DNA melting analysis with hybridization probes (qDMA-HP) as a novel approach to assess MGMT promoter methylation in malignant glioma.</a></h3>
+  <div class="by">Botezatu IV, Kondratova VN, Stroganova AM, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Journal of neuro-oncology</span><span class="date">2026-06-15</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Purpose Quantifying MGMT methylation in malignant glioma is vital for clinical decision-making. Methylated MGMT indicates a better prognosis and enhances the effectiveness of temozolomide therapy. However, there is ongoing debate regarding the best assay methods, targeted CpG sit…</div>
+  <div class="doi"><a href="https://doi.org/10.1007/s11060-026-05648-7" target="_blank" rel="noopener">10.1007/s11060-026-05648-7</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Reductive Methylation: An Alternative to Lysine → Arginine Mutagenesis.  Modification of lysine residues is a common strategy in protein engineering, whether to prevent posttranslational modifications, control bioconjugation, or improve crystallization. The standard genetic approach-replacement with arginine by site-directed mutagenesis-preserves positive charge but alte Molina OJ, Gutierrez CS, Yang J, Wralstad EC, Raines RT. Journal of peptide science : an official publication of the European Peptide Society methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42299689" target="_blank" rel="noopener">Reductive Methylation: An Alternative to Lysine → Arginine Mutagenesis. </a></h3>
+  <div class="by">Molina OJ, Gutierrez CS, Yang J, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Journal of peptide science : an official publication of the European Peptide Society</span><span class="date">2026-07-01</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Modification of lysine residues is a common strategy in protein engineering, whether to prevent posttranslational modifications, control bioconjugation, or improve crystallization. The standard genetic approach-replacement with arginine by site-directed mutagenesis-preserves posi…</div>
+  <div class="doi"><a href="https://doi.org/10.1002/psc.70110" target="_blank" rel="noopener">10.1002/psc.70110</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="SF3A3 in Liver Hepatocellular Carcinoma: Oncogenic Role and Prognostic Significance.  Splicing factor 3a subunit 3 (SF3A3) is a core component of the SF3A complex, which is essential for pre‑mRNA splicing. However, its role and prognostic significance in liver hepatocellular carcinoma (LIHC) remain poorly characterized. We systematically investigated the role of SF3A3 in LIHC using R Liu F, Blakeley PD. Oncology methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42296035" target="_blank" rel="noopener">SF3A3 in Liver Hepatocellular Carcinoma: Oncogenic Role and Prognostic Significance. </a></h3>
+  <div class="by">Liu F, Blakeley PD.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Oncology</span><span class="date">2026-06-15</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Splicing factor 3a subunit 3 (SF3A3) is a core component of the SF3A complex, which is essential for pre‑mRNA splicing. However, its role and prognostic significance in liver hepatocellular carcinoma (LIHC) remain poorly characterized. We systematically investigated the role of S…</div>
+  <div class="doi"><a href="https://doi.org/10.1159/000552986" target="_blank" rel="noopener">10.1159/000552986</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Sleep and aging: The role of DNA methylation. Although its evolutionary origins remain poorly understood, sleep is a highly conserved physiological process crucial to animal life and widely recognized as a major determinant of human healthspan. Sleep disturbances are a major public health concern, particularly among older adults, contributing t Davinelli S, Scapagnini G, Medoro A. Experimental gerontology methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42288204" target="_blank" rel="noopener">Sleep and aging: The role of DNA methylation.</a></h3>
+  <div class="by">Davinelli S, Scapagnini G, Medoro A.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Experimental gerontology</span><span class="date">2026-06-13</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Although its evolutionary origins remain poorly understood, sleep is a highly conserved physiological process crucial to animal life and widely recognized as a major determinant of human healthspan. Sleep disturbances are a major public health concern, particularly among older ad…</div>
+  <div class="doi"><a href="https://doi.org/10.1016/j.exger.2026.113205" target="_blank" rel="noopener">10.1016/j.exger.2026.113205</a></div>
+</article><article class="paper" data-keywords="mosaic" data-source="MED" data-search="Spatial Distribution and Genetic Characterization of Pepper Yellow Leaf Curl Virus Infecting Chili (Capsicum annuum) in Lampung Province, Indonesia.  Chili pepper (Capsicum annuum) is a major horticultural commodity in Indonesia whose productivity is constrained by viral diseases, particularly pepper yellow leaf curl virus (PepYLCV). This study investigated the spatial distribution, symptomatology, incidence, severity, and genetic diversity of Pe Helina S, Akin HM, Fitriana Y, Maryono T, Aeny TN, Ratih S. The plant pathology journal mosaic ">
+  <h3><a href="https://europepmc.org/abstract/MED/42297377" target="_blank" rel="noopener">Spatial Distribution and Genetic Characterization of Pepper Yellow Leaf Curl Virus Infecting Chili (Capsicum annuum) in Lampung Province, Indonesia. </a></h3>
+  <div class="by">Helina S, Akin HM, Fitriana Y, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>The plant pathology journal</span><span class="date">2026-06-15</span><a class="tag kw-mosaic" href="../keywords/mosaic.html">mosaic</a></div>
+  <div class="ab">Chili pepper (Capsicum annuum) is a major horticultural commodity in Indonesia whose productivity is constrained by viral diseases, particularly pepper yellow leaf curl virus (PepYLCV). This study investigated the spatial distribution, symptomatology, incidence, severity, and gen…</div>
+  <div class="doi"><a href="https://doi.org/10.5423/ppj.oa.12.2025.0190" target="_blank" rel="noopener">10.5423/ppj.oa.12.2025.0190</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Spinal low-grade ependymal tumors harboring telomerase reverse transcriptase promoter mutation and chromosome 7 gain with methylation profile of spinal subependymoma. Spinal intramedullary tumors comprise a heterogeneous group of entities with diverse histopathological features, making their diagnosis particularly challenging. With the introduction of DNA methylation profiling, the underlying biological diversity of these tumors has been increasingly clarified an Nagashima Y, Yamaguchi J, Nishimura Y, Seki M, Yamada S, Maeda S, Tsukamoto E, Yamamoto R, Takido Y, Kimura K, Ohka F, Karube K, Saito R. Acta neuropathologica communications methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42288846" target="_blank" rel="noopener">Spinal low-grade ependymal tumors harboring telomerase reverse transcriptase promoter mutation and chromosome 7 gain with methylation profile of spinal subependymoma.</a></h3>
+  <div class="by">Nagashima Y, Yamaguchi J, Nishimura Y, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Acta neuropathologica communications</span><span class="date">2026-06-13</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Spinal intramedullary tumors comprise a heterogeneous group of entities with diverse histopathological features, making their diagnosis particularly challenging. With the introduction of DNA methylation profiling, the underlying biological diversity of these tumors has been incre…</div>
+  <div class="doi"><a href="https://doi.org/10.1186/s40478-026-02334-7" target="_blank" rel="noopener">10.1186/s40478-026-02334-7</a></div>
+</article><article class="paper" data-keywords="mosaic|mosaic-variant" data-source="MED" data-search="Splicing Alterations Associated with Multiple Homozygous TNXB Variants in a Patient with Suspected Classical-Like Ehlers-Danlos Syndrome. Ehlers-Danlos syndrome (EDS) comprises a heterogeneous group of heritable connective tissue disorders characterized by joint hypermobility, skin hyperextensibility, and tissue fragility. Classical-like EDS (clEDS) is typically associated with pathogenic biallelic variants in TNXB. The patient showed Imanaka B, Hasegawa Y, Kawato K, Kimoto Y, Oda I, Okamoto N, Saigoh K, Nakama M. Biochemical genetics mosaic mosaic variant ">
+  <h3><a href="https://europepmc.org/abstract/MED/42295573" target="_blank" rel="noopener">Splicing Alterations Associated with Multiple Homozygous TNXB Variants in a Patient with Suspected Classical-Like Ehlers-Danlos Syndrome.</a></h3>
+  <div class="by">Imanaka B, Hasegawa Y, Kawato K, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Biochemical genetics</span><span class="date">2026-06-15</span><a class="tag kw-mosaic" href="../keywords/mosaic.html">mosaic</a><a class="tag kw-mosaic-variant" href="../keywords/mosaic-variant.html">mosaic variant</a></div>
+  <div class="ab">Ehlers-Danlos syndrome (EDS) comprises a heterogeneous group of heritable connective tissue disorders characterized by joint hypermobility, skin hyperextensibility, and tissue fragility. Classical-like EDS (clEDS) is typically associated with pathogenic biallelic variants in TNXB…</div>
+  <div class="doi"><a href="https://doi.org/10.1007/s10528-026-11416-z" target="_blank" rel="noopener">10.1007/s10528-026-11416-z</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Stress-Induced Changes in the Methylation Status of Mmp1 and Mmp8 Genes in Tumor Tissue of Rats with Guerin Carcinoma. Background Chronic stress is a key determinant of public health, signifi antly impacting regulatory systems and potentially contributing to carcinogenesis. Chronic stress, through the activation of the hypothalamic-pituitary- adrenal axis and glucocorticoid signaling, can modify the epigenetic lands Borikun T, Herasymchuk Y. Experimental oncology methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42290557" target="_blank" rel="noopener">Stress-Induced Changes in the Methylation Status of Mmp1 and Mmp8 Genes in Tumor Tissue of Rats with Guerin Carcinoma.</a></h3>
+  <div class="by">Borikun T, Herasymchuk Y.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Experimental oncology</span><span class="date">2026-06-14</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Background Chronic stress is a key determinant of public health, signifi antly impacting regulatory systems and potentially contributing to carcinogenesis. Chronic stress, through the activation of the hypothalamic-pituitary- adrenal axis and glucocorticoid signaling, can modify …</div>
+  <div class="doi"><a href="https://doi.org/10.15407/exp-oncology.2026.01.046" target="_blank" rel="noopener">10.15407/exp-oncology.2026.01.046</a></div>
+</article><article class="paper" data-keywords="pacbio" data-source="MED" data-search="T2T Genome Assembly and Multi-Omics Data Reveal Terrestrial Adaptation and Mucus Biosynthesis in Tropical Leatherleaf Slug (Laevicaulis alte). Laevichaulis alte is a slug in the order Systellommatophora that evolved from aquatic ancestors and now faces strong challenges from desiccation, respiration on land, and novel pathogens. Its mucus is essential for water retention, locomotion, and defense. To link terrestrial adaptation with mucus b Wang G, He S, Wang Z, Pang A, Sun X, Liu R, Wang F, Chen S, Bian Z, Wei D, Wu L, Zhao S, Ji Q, Sun Y, Sun N, Fujaya Y, Tang B, Tan K, Zhang D, Chen L. Advanced science (Weinheim, Baden-Wurttemberg, Germany) PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42294640" target="_blank" rel="noopener">T2T Genome Assembly and Multi-Omics Data Reveal Terrestrial Adaptation and Mucus Biosynthesis in Tropical Leatherleaf Slug (Laevicaulis alte).</a></h3>
+  <div class="by">Wang G, He S, Wang Z, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Advanced science (Weinheim, Baden-Wurttemberg, Germany)</span><span class="date">2026-06-15</span><a class="tag kw-pacbio" href="../keywords/pacbio.html">PacBio</a></div>
+  <div class="ab">Laevichaulis alte is a slug in the order Systellommatophora that evolved from aquatic ancestors and now faces strong challenges from desiccation, respiration on land, and novel pathogens. Its mucus is essential for water retention, locomotion, and defense. To link terrestrial ada…</div>
+  <div class="doi"><a href="https://doi.org/10.1002/advs.76129" target="_blank" rel="noopener">10.1002/advs.76129</a></div>
+</article><article class="paper" data-keywords="pacbio" data-source="MED" data-search="Telomere-to-telomere genome assembly of Metarhizium acridum provides insights into Metarhizium genome evolution. Metarhizium acridum is a highly specialized entomopathogenic fungus widely used as a biocontrol agent against locusts. Despite its ecological and agricultural importance, the genomic basis of its host specificity and pathogenicity remains poorly understood. We present the first telomere-to-telomere  Zhao Q, Sun X, Li X, Yang C, Wang G, Zhang Z, Feng S, Dong H, Tu X. BMC genomics PacBio ">
+  <h3><a href="https://europepmc.org/abstract/MED/42288757" target="_blank" rel="noopener">Telomere-to-telomere genome assembly of Metarhizium acridum provides insights into Metarhizium genome evolution.</a></h3>
+  <div class="by">Zhao Q, Sun X, Li X, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>BMC genomics</span><span class="date">2026-06-13</span><a class="tag kw-pacbio" href="../keywords/pacbio.html">PacBio</a></div>
+  <div class="ab">Metarhizium acridum is a highly specialized entomopathogenic fungus widely used as a biocontrol agent against locusts. Despite its ecological and agricultural importance, the genomic basis of its host specificity and pathogenicity remains poorly understood. We present the first t…</div>
+  <div class="doi"><a href="https://doi.org/10.1186/s12864-026-12599-w" target="_blank" rel="noopener">10.1186/s12864-026-12599-w</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="The SET domain group protein FonSDG1 regulates virulence through modulating the expression of ammonium permeases in Fusarium oxysporum f. sp. niveum. Histone lysine methylation, catalyzed by a family of SET domain-containing histone lysine methyltransferases, modulates chromatin structure and accessibility, thereby regulating gene expression. In this study, we identified and characterized twenty-four putative SET domain group (SDG) protein-encodi Wang J, Guo M, Xiong X, Gao Y, Li D, Song F. Microbiological research methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42287942" target="_blank" rel="noopener">The SET domain group protein FonSDG1 regulates virulence through modulating the expression of ammonium permeases in Fusarium oxysporum f. sp. niveum.</a></h3>
+  <div class="by">Wang J, Guo M, Xiong X, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Microbiological research</span><span class="date">2026-06-11</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Histone lysine methylation, catalyzed by a family of SET domain-containing histone lysine methyltransferases, modulates chromatin structure and accessibility, thereby regulating gene expression. In this study, we identified and characterized twenty-four putative SET domain group …</div>
+  <div class="doi"><a href="https://doi.org/10.1016/j.micres.2026.128589" target="_blank" rel="noopener">10.1016/j.micres.2026.128589</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="The nutrigenomic-epigenetic axis in cancer: from dietary bioactives to precision oncology.  Cancer development and progression are increasingly understood to arise from dynamic interactions between genetic alterations and environmentally driven epigenetic regulation, with dietary exposures representing one of the most biologically influential and modifiable factors. Given the expanding evi Boroomand F, Karimi MA, Karimzadeh-Soureshjani E, Kiani-Shamsabadi D, Farhang F, Mardani H, Jafari A. Nutrition &amp; metabolism methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42298579" target="_blank" rel="noopener">The nutrigenomic-epigenetic axis in cancer: from dietary bioactives to precision oncology. </a></h3>
+  <div class="by">Boroomand F, Karimi MA, Karimzadeh-Soureshjani E, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Nutrition &amp; metabolism</span><span class="date">2026-06-15</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Cancer development and progression are increasingly understood to arise from dynamic interactions between genetic alterations and environmentally driven epigenetic regulation, with dietary exposures representing one of the most biologically influential and modifiable factors. Giv…</div>
+  <div class="doi"><a href="https://doi.org/10.1186/s12986-026-01147-8" target="_blank" rel="noopener">10.1186/s12986-026-01147-8</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="The pentose phosphate pathway coordinates cytokinin homeostasis and CpG island methylation to control radicle development in maize. The pentose phosphate pathway (PPP) is a crucial metabolic route that influences various physiological processes in plants. In this study, we examined the effects of PPP inhibition on maize radicle growth using the PPP inhibitors and mutant. Our results showed that PPP inhibition significantly reduc Zhang Z, Li Z, Wang K, Zhang Y, Wang S, Teng H, Wu L, Wang Y, Jiao F, Zhang H, Sakr S, Chen J, Wang M. Plant physiology and biochemistry : PPB methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42287977" target="_blank" rel="noopener">The pentose phosphate pathway coordinates cytokinin homeostasis and CpG island methylation to control radicle development in maize.</a></h3>
+  <div class="by">Zhang Z, Li Z, Wang K, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Plant physiology and biochemistry : PPB</span><span class="date">2026-06-11</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">The pentose phosphate pathway (PPP) is a crucial metabolic route that influences various physiological processes in plants. In this study, we examined the effects of PPP inhibition on maize radicle growth using the PPP inhibitors and mutant. Our results showed that PPP inhibition…</div>
+  <div class="doi"><a href="https://doi.org/10.1016/j.plaphy.2026.111468" target="_blank" rel="noopener">10.1016/j.plaphy.2026.111468</a></div>
+</article><article class="paper" data-keywords="somatic-mosaicism|methylation" data-source="PPR" data-search="Transgenerational imprint of subindividual variation: somatic epigenetic divergence within trees cascades into epigenetic and phenotypic pollen divergence The evolutionary significance of somatic mosaicism created within plants by random epigenetic drift or localized responses to the environment will rest on its transgenerational implications. This paper tests whether the epigenetic mosaicism exhibited by individuals of a long-lived tree leaves some d Herrera CM, Medrano M, Bazaga P, Alonso C.  Somatic mosaicism methylation ">
+  <h3><a href="https://europepmc.org/abstract/PPR/PPR1252285" target="_blank" rel="noopener">Transgenerational imprint of subindividual variation: somatic epigenetic divergence within trees cascades into epigenetic and phenotypic pollen divergence</a></h3>
+  <div class="by">Herrera CM, Medrano M, Bazaga P, et al.</div>
+  <div class="meta"><span class="src PPR">Preprint</span><span class="date">2026-06-15</span><a class="tag kw-somatic-mosaicism" href="../keywords/somatic-mosaicism.html">Somatic mosaicism</a><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">The evolutionary significance of somatic mosaicism created within plants by random epigenetic drift or localized responses to the environment will rest on its transgenerational implications. This paper tests whether the epigenetic mosaicism exhibited by individuals of a long-live…</div>
+  <div class="doi"><a href="https://doi.org/10.64898/2026.06.13.732073" target="_blank" rel="noopener">10.64898/2026.06.13.732073</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Validation of a cervical CDO1/CELF4 methylation test for endometrial cancer: a prospective paired-sample comparison with intrauterine specimen. Background The increasing global incidence of endometrial cancer (EC) underscores the urgent need for effective early detection. Noninvasive detection approaches, such as transvaginal ultrasonography (TVS), frequently exhibit low specificity, leading to a high rate of unnecessary invasive procedures Cai B, Wang Y, Ma W, Wu Z, Yao T, Liu P, Wang L, Zhou P, Li Y. Frontiers in medicine methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42292232" target="_blank" rel="noopener">Validation of a cervical CDO1/CELF4 methylation test for endometrial cancer: a prospective paired-sample comparison with intrauterine specimen.</a></h3>
+  <div class="by">Cai B, Wang Y, Ma W, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Frontiers in medicine</span><span class="date">2026-05-29</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Background The increasing global incidence of endometrial cancer (EC) underscores the urgent need for effective early detection. Noninvasive detection approaches, such as transvaginal ultrasonography (TVS), frequently exhibit low specificity, leading to a high rate of unnecessary…</div>
+  <div class="doi"><a href="https://doi.org/10.3389/fmed.2026.1690020" target="_blank" rel="noopener">10.3389/fmed.2026.1690020</a></div>
+</article><article class="paper" data-keywords="methylation" data-source="MED" data-search="Vascular Aging Across the Cardiovascular-Alzheimer&#x27;s Continuum: Hemodynamics and Artificial Intelligence. Predicting health trajectories and accurately measuring aging processes across the human lifespan remain profound scientific challenges. Assessing the effectiveness and impact of interventions targeting aging is even more elusive, largely due to the intricate, multidimensional nature of aging-a proc Zhou Z, Zhang R, Wang J, Yu Y, Wei S, Wan W. Aging and disease methylation ">
+  <h3><a href="https://europepmc.org/abstract/MED/42295094" target="_blank" rel="noopener">Vascular Aging Across the Cardiovascular-Alzheimer&#x27;s Continuum: Hemodynamics and Artificial Intelligence.</a></h3>
+  <div class="by">Zhou Z, Zhang R, Wang J, et al.</div>
+  <div class="meta"><span class="src MED">PubMed</span><span>Aging and disease</span><span class="date">2026-06-08</span><a class="tag kw-methylation" href="../keywords/methylation.html">methylation</a></div>
+  <div class="ab">Predicting health trajectories and accurately measuring aging processes across the human lifespan remain profound scientific challenges. Assessing the effectiveness and impact of interventions targeting aging is even more elusive, largely due to the intricate, multidimensional na…</div>
+  <div class="doi"><a href="https://doi.org/10.14336/ad.2026.0539" target="_blank" rel="noopener">10.14336/ad.2026.0539</a></div>
+</article></div>
+<div id="empty" class="empty" style="display:none">조건에 맞는 논문이 없습니다.</div>
+<footer>
+  Generated 2026-06-19 08:01 KST · <a href="https://europepmc.org" target="_blank">Europe PMC</a> · IF: JCR 2024 (curated)
+</footer>
+</div>
+<script>
+(function() {
+  var state = { keyword: 'all', source: 'all', q: '' };
+  function apply() {
+    var q = state.q.toLowerCase();
+    document.querySelectorAll('.paper').forEach(function(el) {
+      var kws = (el.dataset.keywords || '').split('|');
+      var src = el.dataset.source || '';
+      var hay = (el.dataset.search || '').toLowerCase();
+      var ok = true;
+      if (state.keyword !== 'all' && kws.indexOf(state.keyword) === -1) ok = false;
+      if (state.source !== 'all' && src !== state.source) ok = false;
+      if (q && hay.indexOf(q) === -1) ok = false;
+      el.classList.toggle('hidden', !ok);
+    });
+    var visible = document.querySelectorAll('.paper:not(.hidden)').length;
+    var em = document.getElementById('empty'); if (em) em.style.display = visible ? 'none' : 'block';
+    var vc = document.getElementById('visibleCount'); if (vc) vc.textContent = visible;
+  }
+  document.querySelectorAll('.chip[data-filter]').forEach(function(chip) {
+    chip.addEventListener('click', function() {
+      var dim = chip.dataset.filter;
+      state[dim] = chip.dataset.value;
+      document.querySelectorAll('.chip[data-filter="' + dim + '"]').forEach(function(c) { c.classList.remove('active'); });
+      chip.classList.add('active'); apply();
+    });
+  });
+  var search = document.getElementById('search');
+  if (search) search.addEventListener('input', function(e) { state.q = e.target.value; apply(); });
+  apply();
+  document.addEventListener('keydown', function(e) {
+    if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) return;
+    if (e.key === 'ArrowLeft') { var p = document.querySelector('.daynav .arrow:not(.disabled):first-of-type'); if (p && p.href) location.href = p.href; }
+    else if (e.key === 'ArrowRight') { var nodes = document.querySelectorAll('.daynav .arrow:not(.disabled)'); var n = nodes[nodes.length-1]; if (n && n.href) location.href = n.href; }
+  });
+})();
+</script>
+</body></html>

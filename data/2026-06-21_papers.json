@@ -1,0 +1,317 @@
+[
+  {
+    "id": "PPR1256464",
+    "source": "PPR",
+    "doi": "10.64898/2026.06.15.730052",
+    "title": "Single-cell multiomic profiling reveals lineage plasticity in pediatric B-lineage Acute Lymphoblastic Leukemia during the early phase of treatment",
+    "authorString": "Gomiero G, Peloso A, Varotto E, Scarparo P, Volgger M, Frasson C, Cani A, Fazio G, Cazzaniga G, Melchionda F, Testi AM, Locatelli F, Rizzari C, Biffi A, Dworzak MN, Bresolin S, Buldini B.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Gomiero G",
+          "firstName": "Giulia",
+          "lastName": "Gomiero",
+          "initials": "G"
+        },
+        {
+          "fullName": "Peloso A",
+          "firstName": "Alberto",
+          "lastName": "Peloso",
+          "initials": "A"
+        },
+        {
+          "fullName": "Varotto E",
+          "firstName": "Elena",
+          "lastName": "Varotto",
+          "initials": "E"
+        },
+        {
+          "fullName": "Scarparo P",
+          "firstName": "Pamela",
+          "lastName": "Scarparo",
+          "initials": "P"
+        },
+        {
+          "fullName": "Volgger M",
+          "firstName": "Martina",
+          "lastName": "Volgger",
+          "initials": "M"
+        },
+        {
+          "fullName": "Frasson C",
+          "firstName": "Chiara",
+          "lastName": "Frasson",
+          "initials": "C"
+        },
+        {
+          "fullName": "Cani A",
+          "firstName": "Alice",
+          "lastName": "Cani",
+          "initials": "A"
+        },
+        {
+          "fullName": "Fazio G",
+          "firstName": "Grazia",
+          "lastName": "Fazio",
+          "initials": "G"
+        },
+        {
+          "fullName": "Cazzaniga G",
+          "firstName": "Giovanni",
+          "lastName": "Cazzaniga",
+          "initials": "G"
+        },
+        {
+          "fullName": "Melchionda F",
+          "firstName": "Fraia",
+          "lastName": "Melchionda",
+          "initials": "F"
+        },
+        {
+          "fullName": "Testi AM",
+          "firstName": "Anna Maria",
+          "lastName": "Testi",
+          "initials": "AM"
+        },
+        {
+          "fullName": "Locatelli F",
+          "firstName": "Franco",
+          "lastName": "Locatelli",
+          "initials": "F"
+        },
+        {
+          "fullName": "Rizzari C",
+          "firstName": "Carmelo",
+          "lastName": "Rizzari",
+          "initials": "C"
+        },
+        {
+          "fullName": "Biffi A",
+          "firstName": "Alessandra",
+          "lastName": "Biffi",
+          "initials": "A"
+        },
+        {
+          "fullName": "Dworzak MN",
+          "firstName": "Michael",
+          "lastName": "Dworzak",
+          "initials": "MN"
+        },
+        {
+          "fullName": "Bresolin S",
+          "firstName": "Silvia",
+          "lastName": "Bresolin",
+          "initials": "S"
+        },
+        {
+          "fullName": "Buldini B",
+          "firstName": "Barbara",
+          "lastName": "Buldini",
+          "initials": "B"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "The biological bases of transient myelomonocytic switch (mmSW) during induction therapy in B‑cell precursor acute lymphoblastic leukemia (BCP‑ALL) remains largely undefined. Here we integrated single-cell transcriptomic and surface marker profiling with genomic and DNA methylation analyses of pediatric BCP‑ALL, including matched diagnosis (Dx) and Day+15 samples from mmSW‑positive (mmSWpos) and mmSW‑negative cases. At Dx, mmSWpos leukemia samples were enriched for hematopoietic stem/progenitor‑like cell subpopulations. Trajectory and entropy analyses identified a pre‑existing ″fate‑uncertain″cell compartment co‑expressing both lymphoid and myeloid programs. Longitudinal single‑cell data showed that, in mmSWpos samples, this population undergoes complete transdifferentiation. mmSWpos are enriched for Ras pathway and chromatin regulation mutations and display a specific DNA hypermethylation pattern at Dx. These findings indicate that transient mmSW arises from intrinsic leukemic plasticity, in which immature transcriptomic and distinct epigenetic states at diagnosis enable lineage switching under the pressure of ALL treatment.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.06.15.730052"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-21",
+    "firstIndexDate": "2026-06-21",
+    "firstPublicationDate": "2026-06-19",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1256435",
+    "source": "PPR",
+    "doi": "10.64898/2026.06.15.732407",
+    "title": "BAZ1A promotes expression of  <i>DUX4-fl</i>  and its lncRNA activator  <i>DBE-T</i>  in facioscapulohumeral muscular dystrophy",
+    "authorString": "Chang N, Jones TI, Jones PL, Himeda CL.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Chang N",
+          "firstName": "Ning",
+          "lastName": "Chang",
+          "initials": "N"
+        },
+        {
+          "fullName": "Jones TI",
+          "firstName": "Takako",
+          "lastName": "Jones",
+          "initials": "TI"
+        },
+        {
+          "fullName": "Jones PL",
+          "firstName": "Peter",
+          "lastName": "Jones",
+          "initials": "PL"
+        },
+        {
+          "fullName": "Himeda CL",
+          "firstName": "Charis",
+          "lastName": "Himeda",
+          "initials": "CL"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "Facioscapulohumeral muscular dystrophy (FSHD) is caused by incomplete epigenetic silencing of a D4Z4 macrosatellite array, leading to pathogenic misexpression of the  DUX4 gene in skeletal muscle. Thus far, therapeutic development of small molecule drugs for FSHD has been hampered by screens that yield key myogenic regulators as candidates and a lack of mechanistic knowledge regarding their effects on  DUX4 . In an effort to uncover more specific targets, we performed a candidate-based screen which identified several epigenetic facilitators of  DUX4 expression in primary FSHD myocytes, including the chromatin remodeling factor BAZ1A. Here, we used a compound termed C06 that we recently identified as a BAZ1A inhibitor and potent suppressor of  DUX4 to interrogate the role of BAZ1A at the FSHD locus. Our data suggest a model in which BAZ1A binds to D4Z4 in FSHD muscle, changing the chromatin landscape of the array. BAZ1A binding is associated with reduced occupancy of the HP1α repressor, increased occupancy of the p300 coactivator, and increased H3K27 acetylation, promoting transcription of both  DUX4 and the long non-coding RNA  DBE-T from the disease locus.  DBE-T , in turn, recruits the histone methyltransferase ASH1L, which establishes H3K36 methylation in cis, further promoting  DUX4 transcription. Our results indicate that BAZ1A inhibition disrupts this powerful feed-forward loop, supporting the development of more metabolically stable inhibitors.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.06.15.732407"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-21",
+    "firstIndexDate": "2026-06-21",
+    "firstPublicationDate": "2026-06-19",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1256453",
+    "source": "PPR",
+    "doi": "10.64898/2026.06.15.732467",
+    "title": "The first reference genome assembly of the Chilean sea fig (  <i>Carpobrotus chilensis</i>  )",
+    "authorString": "Lee H, D'Antonio CM, Yi SV.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Lee H",
+          "firstName": "Haein",
+          "lastName": "Lee",
+          "initials": "H"
+        },
+        {
+          "fullName": "D'Antonio CM",
+          "firstName": "Carla",
+          "lastName": "D'Antonio",
+          "initials": "CM"
+        },
+        {
+          "fullName": "Yi SV",
+          "firstName": "Soojin",
+          "lastName": "Yi",
+          "initials": "SV"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "Carpobrotus chilensis (Chilean sea fig) is a coastal succulent of uncertain origin that has naturalized along the California coast, where it co-occurs and hybridizes with the invasive species,  Carpobrotus edulis . Despite their ecological importance and widely supported hybridization, genomic resources for this genus remain scarce. Here, we present a draft genome assembly of  C. chilensis generated from PacBio HiFi long reads. The assembled nuclear genome spans 981.7 Mb across 178 contigs. The contig N50 was 73.0 Mb, and BUSCO completeness was 96.3%. K-mer and SNP-based analyses indicate extremely low heterozygosity (3.4 × 10  −4 ), reduced genetic diversity in this population. The genome is highly repetitive, with 81.67% of the sequences composed of transposable elements, predominantly long terminal repeat (LTR) retrotransposons. Gene prediction identified 21,744 protein-coding genes, with BUSCO completeness of 95.8%. Comparative analysis with  C. edulis identified 8,783 single-copy orthologous gene pairs, with a median synonymous substitution rate (dS) of 0.019, indicating low sequence divergence between the two species. This genome assembly provides a foundational resource for investigating the genomic basis of hybridization and invasion in  Carpobrotus .",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.06.15.732467"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-21",
+    "firstIndexDate": "2026-06-21",
+    "firstPublicationDate": "2026-06-19",
+    "matched_keywords": [
+      "PacBio"
+    ],
+    "matched_journals": []
+  }
+]

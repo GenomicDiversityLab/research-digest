@@ -1,0 +1,95 @@
+[
+  {
+    "id": "PPR1260667",
+    "source": "PPR",
+    "doi": "10.64898/2026.06.22.733643",
+    "title": "Kente: A Graph-based Pangenomic Approach for Horizontal Gene Transfer Detection in Microbiomes",
+    "authorString": "Kokroko N, Jayanti R, Sapoval N, Nute MG, Nakhleh L, Treangen T.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Kokroko N",
+          "firstName": "Natalie",
+          "lastName": "Kokroko",
+          "initials": "N"
+        },
+        {
+          "fullName": "Jayanti R",
+          "firstName": "Richa",
+          "lastName": "Jayanti",
+          "initials": "R"
+        },
+        {
+          "fullName": "Sapoval N",
+          "firstName": "Nicolae",
+          "lastName": "Sapoval",
+          "initials": "N"
+        },
+        {
+          "fullName": "Nute MG",
+          "firstName": "Michael",
+          "lastName": "Nute",
+          "initials": "MG"
+        },
+        {
+          "fullName": "Nakhleh L",
+          "firstName": "Luay",
+          "lastName": "Nakhleh",
+          "initials": "L"
+        },
+        {
+          "fullName": "Treangen T",
+          "firstName": "Todd",
+          "lastName": "Treangen",
+          "initials": "T"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "Motivation: Horizontal gene transfer (HGT) shapes bacterial evolution and microbial ecosystems, yet detecting HGT within microbiomes remains a challenge due to fragmented metagenomic assemblies, reference bias, reliance on gene boundaries, and limited ability to model structural mosaicism and patterns across genomes. <h4>Methods:</h4> We present Kente, a novel pangenome graph-based framework designed for HGT detection that aligns metagenomic assembly contigs to a curated database of >600 genus-level bacterial pangenome graphs constructed using minigraph. Kente infers local taxonomic composition along contigs using alignment evidence and classifies candidate transfers using structured clade-transition topologies (e.g., A-B-A sandwich, open tips, and mosaic patterns). A complementary intra-genus module detects inter-species transfers within a single genus graph using segment-level clade annotations. <h4>Results:</h4> Across simulated intra- and inter-genus transfer scenarios, Kente achieves higher precision and comparable recall relative to existing gene-centric microbiome HGT detection approaches while reducing false positives from fragmented assemblies. Application to real human gut metagenomes (HMP2, n = 26) demonstrates Kente's ability to detect candidate cross-lineage transfer regions in complex microbial communities. Runtime profiling shows near-linear scaling with input size, enabling efficient analysis of large metagenomic assemblies. Availability and Implementation: https://github.com/treangenlab/Kente",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.06.22.733643"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-06-28",
+    "firstIndexDate": "2026-06-28",
+    "firstPublicationDate": "2026-06-26",
+    "matched_keywords": [
+      "mosaic"
+    ],
+    "matched_journals": []
+  }
+]

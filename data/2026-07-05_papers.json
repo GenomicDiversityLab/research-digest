@@ -1,0 +1,2684 @@
+[
+  {
+    "id": "42401671",
+    "source": "MED",
+    "pmid": "42401671",
+    "doi": "10.1038/s41598-026-59431-9",
+    "title": "Targeted long-read sequencing with adaptive sampling enables the integrated genomic and epigenomic profiling of imprinting disorders. ",
+    "authorString": "Rondot F, Centofanti F, Micaletto A, Angheben L, Fontana F, Rossi N, Cerrato F, Pignata L, Carta G, Di Tommaso S, Bontempo P, Pasini B, Novelli A, Mussa A, Riccio A, Ferrero GB, Brusco A, Delledonne M.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Rondot F",
+          "firstName": "Federico",
+          "lastName": "Rondot",
+          "initials": "F",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Public Health and Pediatrics, University of Turin, 10126, Turin, Italy."
+              },
+              {
+                "affiliation": "Medical Genetics Unit, Città della Salute e della Scienza di Torino University Hospital, 10126, Turin, Italy."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Centofanti F",
+          "firstName": "Federica",
+          "lastName": "Centofanti",
+          "initials": "F",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Biomedicine and Prevention, Medical Genetics, University of Rome \"Tor Vergata\", 00133, Rome, Italy."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Micaletto A",
+          "firstName": "Anna",
+          "lastName": "Micaletto",
+          "initials": "A",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Biotechnology, University of Verona, 37134, Verona, Italy."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Angheben L",
+          "firstName": "Luca",
+          "lastName": "Angheben",
+          "initials": "L",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Biotechnology, University of Verona, 37134, Verona, Italy."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Fontana F",
+          "firstName": "Federico",
+          "lastName": "Fontana",
+          "initials": "F",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Biotechnology, University of Verona, 37134, Verona, Italy."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Rossi N",
+          "firstName": "Niccolò",
+          "lastName": "Rossi",
+          "initials": "N",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Biotechnology, University of Verona, 37134, Verona, Italy."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Cerrato F",
+          "firstName": "Flavia",
+          "lastName": "Cerrato",
+          "initials": "F",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Environmental, Biological and Pharmaceutical Sciences and Technologies, University of Campania Luigi Vanvitelli, 81100, Caserta, Italy."
+              },
+              {
+                "affiliation": "Institute of Genetics and Biophysics A, Buzzati-Traverso, CNR, 80131, Naples, Italy."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Pignata L",
+          "firstName": "Laura",
+          "lastName": "Pignata",
+          "initials": "L",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Genetics, Genomics and Informatics, University of Tennessee Health Science Center, Memphis, USA."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Carta G",
+          "firstName": "Giada",
+          "lastName": "Carta",
+          "initials": "G",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Biotechnology, University of Verona, 37134, Verona, Italy."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Di Tommaso S",
+          "firstName": "Silvia",
+          "lastName": "Di Tommaso",
+          "initials": "S",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Laboratory of Medical Genetics, Translational Cytogenomics Research Unit, Bambino Gesù Children's Hospital, IRCCS, Rome, Italy."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Bontempo P",
+          "firstName": "Piera",
+          "lastName": "Bontempo",
+          "initials": "P",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Laboratory of Medical Genetics, Translational Cytogenomics Research Unit, Bambino Gesù Children's Hospital, IRCCS, Rome, Italy."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Pasini B",
+          "firstName": "Barbara",
+          "lastName": "Pasini",
+          "initials": "B",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Medical Genetics Unit, Città della Salute e della Scienza di Torino University Hospital, 10126, Turin, Italy."
+              },
+              {
+                "affiliation": "Department of Medical Sciences, University of Turin, 10126, Turin, Italy."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Novelli A",
+          "firstName": "Antonio",
+          "lastName": "Novelli",
+          "initials": "A",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Laboratory of Medical Genetics, Translational Cytogenomics Research Unit, Bambino Gesù Children's Hospital, IRCCS, Rome, Italy."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Mussa A",
+          "firstName": "Alessandro",
+          "lastName": "Mussa",
+          "initials": "A",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Public Health and Pediatrics, University of Turin, 10126, Turin, Italy."
+              },
+              {
+                "affiliation": "Clinical Genetics Unit, Regina Margherita Children's Hospital, 10126, Turin, Italy."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Riccio A",
+          "firstName": "Andrea",
+          "lastName": "Riccio",
+          "initials": "A",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Environmental, Biological and Pharmaceutical Sciences and Technologies, University of Campania Luigi Vanvitelli, 81100, Caserta, Italy."
+              },
+              {
+                "affiliation": "Institute of Genetics and Biophysics A, Buzzati-Traverso, CNR, 80131, Naples, Italy."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Ferrero GB",
+          "firstName": "Giovanni Battista",
+          "lastName": "Ferrero",
+          "initials": "GB",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Clinical and Biological Sciences, University of Turin, 10049, Orbassano, Italy."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Brusco A",
+          "firstName": "Alfredo",
+          "lastName": "Brusco",
+          "initials": "A",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0002-8318-7231"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Medical Genetics Unit, Città della Salute e della Scienza di Torino University Hospital, 10126, Turin, Italy. alfredo.brusco@unito.it."
+              },
+              {
+                "affiliation": "Department of Neurosciences \"Rita Levi Montalcini\", University of Turin, 10126, Turin, Italy. alfredo.brusco@unito.it."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Delledonne M",
+          "firstName": "Massimo",
+          "lastName": "Delledonne",
+          "initials": "M",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Biotechnology, University of Verona, 37134, Verona, Italy. massimo.delledonne@univr.it."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "authorIdList": {
+      "authorId": [
+        {
+          "type": "ORCID",
+          "value": "0000-0002-8318-7231"
+        }
+      ]
+    },
+    "journalInfo": {
+      "journalIssueId": 4219416,
+      "dateOfPublication": "2026 Jul",
+      "monthOfPublication": 7,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-07-01",
+      "journal": {
+        "title": "Scientific reports",
+        "medlineAbbreviation": "Sci Rep",
+        "issn": "2045-2322",
+        "isoabbreviation": "Sci Rep",
+        "essn": "2045-2322",
+        "nlmid": "101563288"
+      }
+    },
+    "pubYear": "2026",
+    "abstractText": "Conventional molecular diagnostics for imprinting disorders rely on sequential DNA-intensive assays, which are expensive, time-consuming, and often insufficient for detecting mosaicism, resulting in suboptimal clinical management. Here, we present a targeted long-read sequencing strategy that enables the integrated detection of DNA methylation, copy-number variants, and sequence variants in a single assay for Beckwith-Wiedemann spectrum (BWSp), a genomic imprinting disorder caused by genetic or epigenetic alterations affecting imprinting control regions 1 and 2 (IC1/IC2) within the 11p15.5 locus. We evaluated three Oxford Nanopore Technologies (ONT) workflows: adaptive sampling on MinION (AS-MinION), adaptive sampling on PromethION P2 (AS-P2), and whole-genome sequencing on P2 (WGS-P2). Three cases of BWSp patients were analyzed, including two with mosaic paternal uniparental disomy (pUPD) and one with IC2 loss of methylation (LoM). We compared sequencing output, genome-wide and region-of-interest coverage, IC1/IC2 methylation profiles, and variant concordance with Illumina short read sequencing using the Simplex basecalling model. AS-P2 achieved the highest coverage of target regions while maintaining broad and uniform genome-wide coverage, outperforming AS-MinION and WGS-P2. This dual performance enables efficient and scalable simultaneous genetic and epigenetic analysis in a single sequencing run. Using Simplex basecalling, AS-P2 accurately identified all underlying molecular defects in conventionally characterized samples. In conclusion, AS-P2 enablesa cost-effective and sensitive approach for the molecular diagnosis of imprinting disorders, particularly in cases with mosaic or complex genetic and epigenetic architectures.",
+    "affiliation": "Department of Public Health and Pediatrics, University of Turin, 10126, Turin, Italy.",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Journal Article"
+      ]
+    },
+    "grantsList": {
+      "grant": [
+        {
+          "grantId": "PNRR-MR1-2022-12376067",
+          "agency": "NextGenerationEU",
+          "orderIn": 0
+        },
+        {
+          "grantId": "'Departments of Excellence 2023-2027' program, awarded to the Department of Neuroscience, University of Turin",
+          "agency": "Ministero dell'Istruzione, dell'Università e della Ricerca",
+          "orderIn": 0
+        }
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1038/s41598-026-59431-9"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-07-04",
+    "firstIndexDate": "2026-07-05",
+    "dateOfRevision": "2026-07-04",
+    "electronicPublicationDate": "2026-07-04",
+    "firstPublicationDate": "2026-07-04",
+    "matched_keywords": [
+      "mosaic",
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42401413",
+    "source": "MED",
+    "pmid": "42401413",
+    "doi": "10.1016/j.ijbiomac.2026.153368",
+    "title": "Zmlaccase2 is essential for cuticle pigmentation and development in the edible beetle Zophobas morio. ",
+    "authorString": "Cheng Y, Liang X, Dai H, Liu Y, Zhang J, Francis F, Chen J, Xu J, Xue M, Zhang Y.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Cheng Y",
+          "firstName": "Yumeng",
+          "lastName": "Cheng",
+          "initials": "Y",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory for Biology of Plant Diseases and Insect Pests, Institute of Plant Protection, Chinese Academy of Agricultural Sciences, Beijing, 100193, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Liang X",
+          "firstName": "Xiaofang",
+          "lastName": "Liang",
+          "initials": "X",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "National Aquafeed Safety Assessment Center, Institute of Feed Research, Chinese Academy of Agricultural Sciences, Beijing, 100081, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Dai H",
+          "firstName": "Huiling",
+          "lastName": "Dai",
+          "initials": "H",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory of Plant Trait Design, Center for Excellence in Molecular Plant Sciences, Chinese Academy of Sciences, Shanghai, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Liu Y",
+          "firstName": "Yanxia",
+          "lastName": "Liu",
+          "initials": "Y",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory for Biology of Plant Diseases and Insect Pests, Institute of Plant Protection, Chinese Academy of Agricultural Sciences, Beijing, 100193, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zhang J",
+          "firstName": "Jingyi",
+          "lastName": "Zhang",
+          "initials": "J",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory for Biology of Plant Diseases and Insect Pests, Institute of Plant Protection, Chinese Academy of Agricultural Sciences, Beijing, 100193, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Francis F",
+          "firstName": "Frédéric",
+          "lastName": "Francis",
+          "initials": "F",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Functional and Evolutionary Entomology, Gembloux Agro-Bio Tech, University of Liège, Gembloux, Belgium."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Chen J",
+          "firstName": "Julian",
+          "lastName": "Chen",
+          "initials": "J",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory for Biology of Plant Diseases and Insect Pests, Institute of Plant Protection, Chinese Academy of Agricultural Sciences, Beijing, 100193, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Xu J",
+          "firstName": "Jun",
+          "lastName": "Xu",
+          "initials": "J",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory of Plant Trait Design, Center for Excellence in Molecular Plant Sciences, Chinese Academy of Sciences, Shanghai, China. Electronic address: junxu@cemps.ac.cn."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Xue M",
+          "firstName": "Min",
+          "lastName": "Xue",
+          "initials": "M",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "National Aquafeed Safety Assessment Center, Institute of Feed Research, Chinese Academy of Agricultural Sciences, Beijing, 100081, China. Electronic address: xuemin@caas.cn."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Zhang Y",
+          "firstName": "Yong",
+          "lastName": "Zhang",
+          "initials": "Y",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "State Key Laboratory for Biology of Plant Diseases and Insect Pests, Institute of Plant Protection, Chinese Academy of Agricultural Sciences, Beijing, 100193, China. Electronic address: zhangyong02@caas.cn."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "journalIssueId": 4224214,
+      "dateOfPublication": "2026 Jul",
+      "monthOfPublication": 7,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-07-01",
+      "journal": {
+        "title": "International journal of biological macromolecules",
+        "medlineAbbreviation": "Int J Biol Macromol",
+        "issn": "0141-8130",
+        "isoabbreviation": "Int J Biol Macromol",
+        "essn": "1879-0003",
+        "nlmid": "7909578"
+      }
+    },
+    "pubYear": "2026",
+    "pageInfo": "153368",
+    "abstractText": "Laccase2 is a multicopper oxidase that plays a central role in insect cuticle tanning and sclerotization, yet its molecular characteristics and biological functions remain poorly understood in the edible beetle superworm Zophobas morio. In this study, the laccase2 homolog, Zmlaccase2, was identified and functionally characterized in Z. morio. Sequence analysis revealed conserved multicopper oxidase domains and copper-binding motifs typical of insect laccase2 orthologs. Expression profiling showed that Zmlaccase2 is dynamically expressed from embryogenesis to adulthood, with expression peaks corresponding to periods of active cuticle remodeling, particularly during the prepupal and late pupal stages. RNAi-mediated silencing of Zmlaccase2 resulted in persistent cuticle hypopigmentation, with larval depigmentation persisting through pupal development and adult emergence, ultimately preventing normal adult cuticle melanization. Moreover, Zmlaccase2 knockdown significantly impaired larval growth and survival, accompanied by decreases in pupation and adult emergence rates. To further investigate its biological function, we established a CRISPR/Cas9-mediated genome-editing platform in Z. morio and generated Zmlaccase2 loss-of-function mutants. Consistently, Zmlaccase2 knockout individuals exhibited mosaic depigmentation and severe growth inhibition, and all tested mutants completely failed to pupate. Overall, our study demonstrated that Zmlaccase2 plays vital roles in cuticle tanning, growth, and development in Z. morio and provides both a valuable phenotypic marker gene and a functional genomic platform for this species.",
+    "affiliation": "State Key Laboratory for Biology of Plant Diseases and Insect Pests, Institute of Plant Protection, Chinese Academy of Agricultural Sciences, Beijing, 100193, China.",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Journal Article"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1016/j.ijbiomac.2026.153368"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-07-04",
+    "firstIndexDate": "2026-07-05",
+    "dateOfRevision": "2026-07-04",
+    "electronicPublicationDate": "2026-07-04",
+    "firstPublicationDate": "2026-07-04",
+    "matched_keywords": [
+      "mosaic"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42400449",
+    "source": "MED",
+    "pmid": "42400449",
+    "doi": "10.1093/jme/tjag109",
+    "title": "Mitogenomic diversity and phylogenetic characterization of Aedes albopictus (Diptera: Culicidae) populations from the Black Sea region of Türkiye. ",
+    "authorString": "Diop SD, Yildirim A, Arslanhan BA, Toroslu AM, Pekmezci GZ, Sahin S, Kizgin DA, Teber S, Ibis O, Gunay F, Burkett-Cadena N, Campbell LP, Inci A, Alto B.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Diop SD",
+          "firstName": "Samba Deguene",
+          "lastName": "Diop",
+          "initials": "SD",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0009-0004-1777-3787"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Faculty of Veterinary Medicine, Parasitology Department, Erciyes University, Kayseri, Türkiye."
+              },
+              {
+                "affiliation": "Health Science Institute, Erciyes University, Erciyes University, Kayseri, Türkiye."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Yildirim A",
+          "firstName": "Alparslan",
+          "lastName": "Yildirim",
+          "initials": "A",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0001-9868-0363"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Faculty of Veterinary Medicine, Parasitology Department, Erciyes University, Kayseri, Türkiye."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Arslanhan BA",
+          "firstName": "Batuhan Askim",
+          "lastName": "Arslanhan",
+          "initials": "BA",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0009-0001-0340-1948"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Faculty of Veterinary Medicine, Parasitology Department, Erciyes University, Kayseri, Türkiye."
+              },
+              {
+                "affiliation": "Health Science Institute, Erciyes University, Erciyes University, Kayseri, Türkiye."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Toroslu AM",
+          "firstName": "Ahsen Meliha",
+          "lastName": "Toroslu",
+          "initials": "AM",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Faculty of Veterinary Medicine, Department of Parasitology, Ondokuz Mayis University, Samsun, Türkiye."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Pekmezci GZ",
+          "firstName": "Gokmen Zafer",
+          "lastName": "Pekmezci",
+          "initials": "GZ",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0002-7791-1959"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Faculty of Veterinary Medicine, Department of Preclinical Sciences, Ondokuz Mayis University, Samsun, Türkiye."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Sahin S",
+          "firstName": "Simge",
+          "lastName": "Sahin",
+          "initials": "S",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0001-8372-6365"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Faculty of Veterinary Medicine, Parasitology Department, Erciyes University, Kayseri, Türkiye."
+              },
+              {
+                "affiliation": "Health Science Institute, Erciyes University, Erciyes University, Kayseri, Türkiye."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Kizgin DA",
+          "firstName": "Denis Alina",
+          "lastName": "Kizgin",
+          "initials": "DA",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0009-0005-5665-8738"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Faculty of Veterinary Medicine, Parasitology Department, Erciyes University, Kayseri, Türkiye."
+              },
+              {
+                "affiliation": "Health Science Institute, Erciyes University, Erciyes University, Kayseri, Türkiye."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Teber S",
+          "firstName": "Saffet",
+          "lastName": "Teber",
+          "initials": "S",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0002-9987-3287"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Faculty of Agriculture, Department of Agricultural Biotechnology, Erciyes University, Kayseri, Türkiye."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Ibis O",
+          "firstName": "Osman",
+          "lastName": "Ibis",
+          "initials": "O",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Faculty of Agriculture, Department of Agricultural Biotechnology, Erciyes University, Kayseri, Türkiye."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Gunay F",
+          "firstName": "Filiz",
+          "lastName": "Gunay",
+          "initials": "F",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Florida Medical Entomology Laboratory, University of Florida, IFAS, Vero Beach, FL, USA."
+              },
+              {
+                "affiliation": "Biology Department, Ecology Section, Hacettepe University, Ankara, Türkiye."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Burkett-Cadena N",
+          "firstName": "Nathan",
+          "lastName": "Burkett-Cadena",
+          "initials": "N",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0001-6168-1637"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Florida Medical Entomology Laboratory, University of Florida, IFAS, Vero Beach, FL, USA."
+              },
+              {
+                "affiliation": "Department of Entomology and Nematology, IFAS, University of Florida, Gainesville, FL, USA."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Campbell LP",
+          "firstName": "Lindsay P",
+          "lastName": "Campbell",
+          "initials": "LP",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0001-6069-1198"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Florida Medical Entomology Laboratory, University of Florida, IFAS, Vero Beach, FL, USA."
+              },
+              {
+                "affiliation": "Department of Entomology and Nematology, IFAS, University of Florida, Gainesville, FL, USA."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Inci A",
+          "firstName": "Abdullah",
+          "lastName": "Inci",
+          "initials": "A",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0003-1614-0756"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Faculty of Veterinary Medicine, Parasitology Department, Erciyes University, Kayseri, Türkiye."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Alto B",
+          "firstName": "Barry",
+          "lastName": "Alto",
+          "initials": "B",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0001-7054-2081"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Florida Medical Entomology Laboratory, University of Florida, IFAS, Vero Beach, FL, USA."
+              },
+              {
+                "affiliation": "Department of Entomology and Nematology, IFAS, University of Florida, Gainesville, FL, USA."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "authorIdList": {
+      "authorId": [
+        {
+          "type": "ORCID",
+          "value": "0000-0001-6069-1198"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0001-6168-1637"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0001-7054-2081"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0001-8372-6365"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0001-9868-0363"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0002-7791-1959"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0002-9987-3287"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0003-1614-0756"
+        },
+        {
+          "type": "ORCID",
+          "value": "0009-0001-0340-1948"
+        },
+        {
+          "type": "ORCID",
+          "value": "0009-0004-1777-3787"
+        },
+        {
+          "type": "ORCID",
+          "value": "0009-0005-5665-8738"
+        }
+      ]
+    },
+    "journalInfo": {
+      "issue": "4",
+      "volume": "63",
+      "journalIssueId": 4224771,
+      "dateOfPublication": "2026 Jul",
+      "monthOfPublication": 7,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-07-01",
+      "journal": {
+        "title": "Journal of medical entomology",
+        "medlineAbbreviation": "J Med Entomol",
+        "issn": "0022-2585",
+        "isoabbreviation": "J Med Entomol",
+        "essn": "1938-2928",
+        "nlmid": "0375400"
+      }
+    },
+    "pubYear": "2026",
+    "pageInfo": "tjag109",
+    "abstractText": "Aedes albopictus (Skuse, 1894), the Asian tiger mosquito, is one of the most invasive mosquito species worldwide and an important vector of several arboviruses of public health concern. Although its distribution in Türkiye has expanded rapidly since its first detection, the mitogenomic diversity and phylogeographic relationships of Turkish populations remain poorly understood. Here, we provide the first mitogenome-based characterization of Ae. albopictus populations from the Black Sea region of Türkiye within a global comparative framework. Complete mitochondrial genomes were generated from 20 specimens collected along the Turkish Black Sea coast and analyzed together with 75 reference mitogenomes retrieved from GenBank. The Turkish mitogenomes ranged from 15.8 to 17.1 kb and exhibited the typical Ae. albopictus mitochondrial organization, including 13 protein-coding genes, 22 transfer RNAs, 2 ribosomal RNAs, and a control region. Gene order and orientation were conserved across all Turkish samples, and most size variation was confined to the control region. The mitogenomes were strongly AT-rich, and codon usage showed a marked bias toward A/U-ending codons. Phylogenetic analyses using concatenated sequences of all 13 protein-coding genes and both ribosomal RNA genes showed that Turkish samples were not monophyletic; rather, they were distributed among multiple subclades within the broad A1a complex. The results indicate high mitogenomic diversity and a mosaic phylogeographic structure, consistent with multiple maternal lineages contributing to Ae. albopictus populations in Türkiye's Black Sea region. The phylogenetic signature supports a scenario of multiple introductions of Ae. albopictus rather than spread from a single founding population.",
+    "affiliation": "Faculty of Veterinary Medicine, Parasitology Department, Erciyes University, Kayseri, Türkiye.",
+    "publicationStatus": "ppublish",
+    "language": "eng",
+    "pubModel": "Print",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Journal Article"
+      ]
+    },
+    "grantsList": {
+      "grant": [
+        {
+          "grantId": "HDTRA12210015",
+          "agency": "Defense Threat Reduction Agency",
+          "orderIn": 0
+        }
+      ]
+    },
+    "meshHeadingList": {
+      "meshHeading": [
+        {
+          "majorTopic_YN": "N",
+          "descriptorName": "Animals"
+        },
+        {
+          "majorTopic_YN": "Y",
+          "descriptorName": "Aedes",
+          "meshQualifierList": {
+            "meshQualifier": [
+              {
+                "abbreviation": "GE",
+                "qualifierName": "genetics",
+                "majorTopic_YN": "N"
+              }
+            ]
+          }
+        },
+        {
+          "majorTopic_YN": "N",
+          "descriptorName": "Phylogeny"
+        },
+        {
+          "majorTopic_YN": "N",
+          "descriptorName": "Turkey"
+        },
+        {
+          "majorTopic_YN": "Y",
+          "descriptorName": "Genome, Mitochondrial"
+        },
+        {
+          "majorTopic_YN": "Y",
+          "descriptorName": "Genetic Variation"
+        },
+        {
+          "majorTopic_YN": "N",
+          "descriptorName": "Black Sea"
+        }
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1093/jme/tjag109"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCompletion": "2026-07-04",
+    "dateOfCreation": "2026-07-04",
+    "firstIndexDate": "2026-07-05",
+    "dateOfRevision": "2026-07-04",
+    "firstPublicationDate": "2026-07-01",
+    "matched_keywords": [
+      "mosaic"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1271619",
+    "source": "PPR",
+    "doi": "10.64898/2026.07.01.733993",
+    "title": "A High-Confidence Atlas of Protein Methylation Enables AI-Driven Detection of Methylated Peptides",
+    "authorString": "Wang S, Hartmaring Y, Schlaffner CN, Bowler-Barnett E, Martin M, Fan J, Sun Z, Renard BY, Jones AR, Vizcaino JAR.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Wang S",
+          "firstName": "Shengbo",
+          "lastName": "Wang",
+          "initials": "S"
+        },
+        {
+          "fullName": "Hartmaring Y",
+          "firstName": "Yannick",
+          "lastName": "Hartmaring",
+          "initials": "Y"
+        },
+        {
+          "fullName": "Schlaffner CN",
+          "firstName": "Christoph",
+          "lastName": "Schlaffner",
+          "initials": "CN"
+        },
+        {
+          "fullName": "Bowler-Barnett E",
+          "firstName": "Emily",
+          "lastName": "Bowler-Barnett",
+          "initials": "E"
+        },
+        {
+          "fullName": "Martin M",
+          "firstName": "Maria",
+          "lastName": "Martin",
+          "initials": "M"
+        },
+        {
+          "fullName": "Fan J",
+          "firstName": "Jun",
+          "lastName": "Fan",
+          "initials": "J"
+        },
+        {
+          "fullName": "Sun Z",
+          "firstName": "Zhi",
+          "lastName": "Sun",
+          "initials": "Z"
+        },
+        {
+          "fullName": "Renard BY",
+          "firstName": "Bernhard",
+          "lastName": "Renard",
+          "initials": "BY"
+        },
+        {
+          "fullName": "Jones AR",
+          "firstName": "Andrew",
+          "lastName": "Jones",
+          "initials": "AR"
+        },
+        {
+          "fullName": "Vizcaino JAR",
+          "firstName": "Juan Antonio",
+          "lastName": "Vizcaino",
+          "initials": "JAR"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "Lysine and arginine methylation regulate chromatin dynamics, transcription, and cellular signaling, however confident mass spectrometry (MS)-based detection and localization of this modification remain challenging. We reanalyzed eight public human methylation-enriched datasets using an open and standardized workflow that integrates database searching via the Trans-Proteomic Pipeline with a decoy-based statistical method for the independent estimation of false localization rates (FLR). This yielded a high-confidence Human Methylation Atlas of 1,828 sites (57 methyl-lysine, 1,771 methyl-arginine) across 1,021 proteins, classified into Gold, Silver, and Bronze confidence tiers. This is far fewer sites than reported in previous studies, reflecting the application of stringent FLR control, and what we hypothesise is potential high-false discovery in previous analyses.  We then leveraged this resource to adapt a deep learning-based methodology for the improved detection of methylated peptides. Three mouse methylation-enriched datasets were reanalysed to augment training and the phosphoproteomics-trained AHLF (ad hoc learning of peptide fragmentation) model was fine-tuned by transfer learning to create AHLF-Methylation. The model achieved mean ROC-AUC values of 0.824 on human spectra, and 0.829 on combined human-mouse spectra. The atlas is available through PTMeXchange and PRIDE, with curated site evidence integrated into UniProt and PeptideAtlas",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.07.01.733993"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-07-05",
+    "firstIndexDate": "2026-07-05",
+    "firstPublicationDate": "2026-07-04",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1271731",
+    "source": "PPR",
+    "doi": "10.64898/2026.06.29.734667",
+    "title": "glmmDMR reveals replicate-level methylation variance as a major determinant of false-positive DMR detection",
+    "authorString": "Daito Y, Uechi M, Kinoshita T, Tonosaki K.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Daito Y",
+          "firstName": "Yuki",
+          "lastName": "Daito",
+          "initials": "Y"
+        },
+        {
+          "fullName": "Uechi M",
+          "firstName": "Mako",
+          "lastName": "Uechi",
+          "initials": "M"
+        },
+        {
+          "fullName": "Kinoshita T",
+          "firstName": "Tetsu",
+          "lastName": "Kinoshita",
+          "initials": "T"
+        },
+        {
+          "fullName": "Tonosaki K",
+          "firstName": "Kaoru",
+          "lastName": "Tonosaki",
+          "initials": "K"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "<h4>Background: </h4> Accurate identification of differentially methylated regions (DMRs) is fundamental to epigenomic research but remains challenging due to biological variability among replicates, heterogeneous effect sizes, and the tendency of adjacent cytosines to share similar methylation states. Many existing methods aggregate methylation measurements before statistical testing or do not explicitly account for replicate-level variability, contributing to elevated false-positive rates. <h4>Results:</h4> We developed glmmDMR, a DMR detection framework that combines generalized linear mixed models with a seed-based strategy for reconstructing DMRs from locally high-confidence signals while explicitly modeling replicate-level variability. Using simulated datasets with known ground-truth DMRs, we demonstrate that false-positive detections are more strongly associated with methylation variance among biological replicates than with the magnitude of methylation differences between groups. glmmDMR achieved higher precision than existing approaches while maintaining competitive recall, particularly for subtle methylation differences. Site-level modeling with beta regression provided the strongest overall performance, and seed-based region construction reduced artificial DMR fragmentation, improving recovery of true DMR boundaries and producing more contiguous, biologically interpretable DMRs. Applied to Arabidopsis thaliana ddm1 methylomes and a rice DEMETER-LIKE DNA demethylase mutant (Osdml3a-1), glmmDMR identified biologically meaningful DMRs, revealing widespread TE-associated hypomethylation and subtle TE-family-specific hypermethylation. <h4>Conclusions:</h4> Replicate-level methylation variance is an important determinant of DMR detection performance, and explicitly modeling this variance improves discrimination of biologically meaningful methylation changes from high-variance signals. By combining variance-aware statistical modeling with seed-based region construction, glmmDMR provides a robust framework for identifying contiguous, biologically interpretable DMRs across diverse methylome datasets.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.06.29.734667"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-07-05",
+    "firstIndexDate": "2026-07-05",
+    "firstPublicationDate": "2026-07-03",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42401947",
+    "source": "MED",
+    "pmid": "42401947",
+    "doi": "10.1186/s40478-026-02366-z",
+    "title": "Challenging anatomical paradigms: unexpected supratentorial localization of posterior fossa B ependymomas identified by DNA methylation. ",
+    "authorString": "Lago PP, Maschietto M, Sant'Ana MC, Fernandes CER, de Castro JVA, Costa FD, Vega-Delgado MS, da Costa JGR, Dos Santos AC, de Oliveira RS, Santos MV, Fonseca DSL, Scrideli CA, Valera ET.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Lago PP",
+          "firstName": "Pedro Piovesan",
+          "lastName": "Lago",
+          "initials": "PP",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0009-0004-9281-3566"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pathology, A.C.Camargo Cancer Center, São Paulo, Brazil."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Maschietto M",
+          "firstName": "Mariana",
+          "lastName": "Maschietto",
+          "initials": "M",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0003-2589-3186"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Research Center, Boldrini Children's Center, Campinas, São Paulo, Brazil."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Sant'Ana MC",
+          "firstName": "Marllon Cindra",
+          "lastName": "Sant'Ana",
+          "initials": "MC",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0009-0002-5542-7020"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pediatrics, Ribeirão Preto Medical School, University of São Paulo, Av Bandeirantes 3900 - Bairro Monte Alegre - HC Criança, 5o andar - Departamento de Puericultura e Pediatria - sala 505, Ribeirao Preto, Brazil."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Fernandes CER",
+          "firstName": "Carlos Eduardo Ramos",
+          "lastName": "Fernandes",
+          "initials": "CER",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0003-2610-269X"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pediatric Oncology, A.C. Camargo Cancer Center, São Paulo, SP, 14048-900, Brazil."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "de Castro JVA",
+          "firstName": "João Victor Alves",
+          "lastName": "de Castro",
+          "initials": "JVA",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0002-1279-3672"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pathology, A.C.Camargo Cancer Center, São Paulo, Brazil."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Costa FD",
+          "firstName": "Felipe D'Almeida",
+          "lastName": "Costa",
+          "initials": "FD",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0002-6470-749X"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pathology, A.C.Camargo Cancer Center, São Paulo, Brazil."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Vega-Delgado MS",
+          "firstName": "María Soledad",
+          "lastName": "Vega-Delgado",
+          "initials": "MS",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0003-2968-3303"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pediatrics, Ribeirão Preto Medical School, University of São Paulo, Av Bandeirantes 3900 - Bairro Monte Alegre - HC Criança, 5o andar - Departamento de Puericultura e Pediatria - sala 505, Ribeirao Preto, Brazil."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "da Costa JGR",
+          "firstName": "Julia Gabriela Ramos",
+          "lastName": "da Costa",
+          "initials": "JGR",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0009-0002-6097-1995"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pediatrics, Ribeirão Preto Medical School, University of São Paulo, Av Bandeirantes 3900 - Bairro Monte Alegre - HC Criança, 5o andar - Departamento de Puericultura e Pediatria - sala 505, Ribeirao Preto, Brazil."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Dos Santos AC",
+          "firstName": "Antonio Carlos",
+          "lastName": "Dos Santos",
+          "initials": "AC",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0002-5502-4734"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Medical Imaging, Hematology and Oncology, Ribeirao Preto Medical School, University of São Paulo, Ribeirao Preto, SP, Brazil."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "de Oliveira RS",
+          "firstName": "Ricardo Santos",
+          "lastName": "de Oliveira",
+          "initials": "RS",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0003-0390-5553"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Division of Neurosurgery, Department of Surgery and Anatomy, Ribeirão Preto Medical School, University of São Paulo, Ribeirao Preto, SP, Brazil."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Santos MV",
+          "firstName": "Marcelo Volpon",
+          "lastName": "Santos",
+          "initials": "MV",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0002-0850-7039"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Division of Neurosurgery, Department of Surgery and Anatomy, Ribeirão Preto Medical School, University of São Paulo, Ribeirao Preto, SP, Brazil."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Fonseca DSL",
+          "firstName": "Diego Souza Lima",
+          "lastName": "Fonseca",
+          "initials": "DSL",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Medical Imaging, Hematology and Oncology, Ribeirao Preto Medical School, University of São Paulo, Ribeirao Preto, SP, Brazil."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Scrideli CA",
+          "firstName": "Carlos Alberto",
+          "lastName": "Scrideli",
+          "initials": "CA",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0001-6618-789X"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pediatrics, Ribeirão Preto Medical School, University of São Paulo, Av Bandeirantes 3900 - Bairro Monte Alegre - HC Criança, 5o andar - Departamento de Puericultura e Pediatria - sala 505, Ribeirao Preto, Brazil."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Valera ET",
+          "firstName": "Elvis Terci",
+          "lastName": "Valera",
+          "initials": "ET",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0002-4434-429X"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pediatrics, Ribeirão Preto Medical School, University of São Paulo, Av Bandeirantes 3900 - Bairro Monte Alegre - HC Criança, 5o andar - Departamento de Puericultura e Pediatria - sala 505, Ribeirao Preto, Brazil. etvalera@fmrp.usp.br."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "authorIdList": {
+      "authorId": [
+        {
+          "type": "ORCID",
+          "value": "0000-0001-6618-789X"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0002-0850-7039"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0002-1279-3672"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0002-4434-429X"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0002-5502-4734"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0002-6470-749X"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0003-0390-5553"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0003-2589-3186"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0003-2610-269X"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0003-2968-3303"
+        },
+        {
+          "type": "ORCID",
+          "value": "0009-0002-5542-7020"
+        },
+        {
+          "type": "ORCID",
+          "value": "0009-0002-6097-1995"
+        },
+        {
+          "type": "ORCID",
+          "value": "0009-0004-9281-3566"
+        }
+      ]
+    },
+    "journalInfo": {
+      "journalIssueId": 4224725,
+      "dateOfPublication": "2026 Jul",
+      "monthOfPublication": 7,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-07-01",
+      "journal": {
+        "title": "Acta neuropathologica communications",
+        "medlineAbbreviation": "Acta Neuropathol Commun",
+        "essn": "2051-5960",
+        "issn": "2051-5960",
+        "isoabbreviation": "Acta Neuropathol Commun",
+        "nlmid": "101610673"
+      }
+    },
+    "pubYear": "2026",
+    "abstractText": "Molecular subgroups of ependymomas are strongly associated with their primary anatomical compartments, namely the supratentorial region, posterior fossa and spine locations. Although it is generally accepted that posterior fossa ependymomas may arise from radial glia-like progenitor cells, the precise cellular origin of the distinct posterior fossa molecular subgroups remains to be determined. Given that DNA methylation profile strongly recapitulates developmental lineage and the cell of origin, the characterization of unexpectedly located molecular subgroups of ependymomas may provide insights into their cells of origin and potential migratory dynamics during embryogenesis and brain development. Herein, we describe two male school-aged pediatric patients with supratentorial tumors located in the third ventricle/pineal region that were classified as posterior fossa group B ependymomas based on DNA methylation profiling. To our knowledge, this represents the first reports of posterior fossa group B ependymomas identified outside the posterior fossa compartment.",
+    "affiliation": "Department of Pathology, A.C.Camargo Cancer Center, São Paulo, Brazil.",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Journal Article"
+      ]
+    },
+    "grantsList": {
+      "grant": [
+        {
+          "grantId": "406716/2022-6",
+          "agency": "Brazilian Ministry of Health - MoH (Programa Nacional de Genômica e Saúde de Precisão - Genomas Brasil) and National Council for Scientific and Technological Development - CNPq",
+          "orderIn": 0
+        }
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1186/s40478-026-02366-z"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-07-04",
+    "firstIndexDate": "2026-07-05",
+    "dateOfRevision": "2026-07-04",
+    "electronicPublicationDate": "2026-07-04",
+    "firstPublicationDate": "2026-07-04",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42401582",
+    "source": "MED",
+    "pmid": "42401582",
+    "doi": "10.1038/s41467-026-74931-y",
+    "title": "metilene<sup>3</sup>: identifying DMRs across multiple conditions with auto-classification. ",
+    "authorString": "Zhu Z, Bernhart SH, Jühling F, Kretzmer H, Hoffmann S.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Zhu Z",
+          "firstName": "Zhihan",
+          "lastName": "Zhu",
+          "initials": "Z",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0003-3779-4265"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Max Planck Institute for Molecular Genetics, Berlin, Germany."
+              },
+              {
+                "affiliation": "Department of Mathematics and Computer Science, Free University Berlin, Berlin, Germany."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Bernhart SH",
+          "firstName": "Stephan H",
+          "lastName": "Bernhart",
+          "initials": "SH",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0002-5928-9449"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "LeiCeM - Leipzig Center of Metabolism, Leipzig University, Leipzig, Germany."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Jühling F",
+          "firstName": "Frank",
+          "lastName": "Jühling",
+          "initials": "F",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "University of Strasbourg, Inserm, Institute for Translational Medicine and Liver Disease (ITM), UMR_S1110, Strasbourg, France."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Kretzmer H",
+          "firstName": "Helene",
+          "lastName": "Kretzmer",
+          "initials": "H",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0002-0723-4980"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Max Planck Institute for Molecular Genetics, Berlin, Germany. helene.kretzmer@hpi.de."
+              },
+              {
+                "affiliation": "Hasso Plattner Institute for Digital Engineering, Digital Engineering Faculty, University of Potsdam, Potsdam, Germany. helene.kretzmer@hpi.de."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Hoffmann S",
+          "firstName": "Steve",
+          "lastName": "Hoffmann",
+          "initials": "S",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0002-5239-7201"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Mathematics and Computer Science, Free University Berlin, Berlin, Germany. steve.hoffmann@leibniz-fli.de."
+              },
+              {
+                "affiliation": "Hoffmann Group, Leibniz Institute on Aging - Fritz Lipmann Institute (FLI), Jena, Germany. steve.hoffmann@leibniz-fli.de."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "authorIdList": {
+      "authorId": [
+        {
+          "type": "ORCID",
+          "value": "0000-0002-0723-4980"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0002-5239-7201"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0002-5928-9449"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0003-3779-4265"
+        }
+      ]
+    },
+    "journalInfo": {
+      "issue": "1",
+      "volume": "17",
+      "journalIssueId": 4224502,
+      "dateOfPublication": "2026 Jul",
+      "monthOfPublication": 7,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-07-01",
+      "journal": {
+        "title": "Nature communications",
+        "medlineAbbreviation": "Nat Commun",
+        "essn": "2041-1723",
+        "issn": "2041-1723",
+        "isoabbreviation": "Nat Commun",
+        "nlmid": "101528555"
+      }
+    },
+    "pubYear": "2026",
+    "pageInfo": "5848",
+    "abstractText": "DNA methylation is a critical epigenetic mark across numerous species, and identifying differentially methylated regions (DMRs) is essential for understanding genome regulation. Most existing DMR detection methods require predefined sample conditions, limiting the discovery of new epigenetic patterns, especially when group identities are unknown or uncertain, as is common in clinical settings. Additionally, only a very few approaches enable comparisons across multiple conditions. To address this significant gap, we present metilene3, a method for rapid, multi-condition DMR detection that operates in both supervised and unsupervised modes, using user-provided labels or autonomously clustering unlabeled samples. By segmenting the genome based on multiple pairwise methylation difference signals, metilene3 enables sample classification and DMR-anchored inference of epigenetic relationships. Using simulated and diverse human datasets, we show that metilene3 accurately detects DMRs, robustly clusters samples, and holds the potential to reveal new regulatory elements and sample stratifications. Specifically, in a pancreatic tissue dataset, metilene3 identifies DMRs enriched for key transcription factors involved in pancreatic cancer development, hinting towards an altered NFKB-NFAT regulatory program. Together, metilene3 provides a fast, interpretable framework for exploring heterogeneous methylomes and discovering epigenetic patterns across complex biological and clinical datasets.",
+    "affiliation": "Max Planck Institute for Molecular Genetics, Berlin, Germany.",
+    "publicationStatus": "epublish",
+    "language": "eng",
+    "pubModel": "Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Journal Article"
+      ]
+    },
+    "grantsList": {
+      "grant": [
+        {
+          "grantId": "EXC-3105/1 - 533765739",
+          "agency": "Deutsche Forschungsgemeinschaft (German Research Foundation)",
+          "orderIn": 0
+        }
+      ]
+    },
+    "meshHeadingList": {
+      "meshHeading": [
+        {
+          "majorTopic_YN": "N",
+          "descriptorName": "Humans"
+        },
+        {
+          "majorTopic_YN": "N",
+          "descriptorName": "Pancreatic Neoplasms",
+          "meshQualifierList": {
+            "meshQualifier": [
+              {
+                "abbreviation": "GE",
+                "qualifierName": "genetics",
+                "majorTopic_YN": "N"
+              }
+            ]
+          }
+        },
+        {
+          "majorTopic_YN": "Y",
+          "descriptorName": "DNA Methylation"
+        },
+        {
+          "majorTopic_YN": "Y",
+          "descriptorName": "Epigenesis, Genetic"
+        }
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1038/s41467-026-74931-y"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "Y",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCompletion": "2026-07-04",
+    "dateOfCreation": "2026-07-04",
+    "firstIndexDate": "2026-07-05",
+    "dateOfRevision": "2026-07-04",
+    "electronicPublicationDate": "2026-07-04",
+    "firstPublicationDate": "2026-07-04",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42400909",
+    "source": "MED",
+    "pmid": "42400909",
+    "doi": "10.1016/j.celrep.2026.117643",
+    "title": "An IGF2BP3-dependent metabolic circuit governs macrophage recruitment and immunosuppression in glioblastoma. ",
+    "authorString": "Dai W, Tian R, Chong MW, Li J, Yin B, Fan Z, Bian S, Shu M.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Dai W",
+          "firstName": "Weiwei",
+          "lastName": "Dai",
+          "initials": "W",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pharmacology, School of Basic Medical Sciences, Shanghai Medical College, Fudan University, Shanghai 200032, China; Key Laboratory of Medical Molecular Virology (Ministry of Education/ National Health Commission/ Chinese Academy of Medical Sciences), Shanghai Frontiers Science Center of Pathogenic Microorganisms and Infection, School of Basic Medical Sciences, Shanghai Medical College, Fudan University, Shanghai 200032, China; Nanhu Laboratory, Jiaxing, Zhejiang Province 314002, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Tian R",
+          "firstName": "Ruotong",
+          "lastName": "Tian",
+          "initials": "R",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pharmacology, School of Basic Medical Sciences, Shanghai Medical College, Fudan University, Shanghai 200032, China; Key Laboratory of Medical Molecular Virology (Ministry of Education/ National Health Commission/ Chinese Academy of Medical Sciences), Shanghai Frontiers Science Center of Pathogenic Microorganisms and Infection, School of Basic Medical Sciences, Shanghai Medical College, Fudan University, Shanghai 200032, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Chong MW",
+          "firstName": "Ming Whye",
+          "lastName": "Chong",
+          "initials": "MW",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pharmacology, School of Basic Medical Sciences, Shanghai Medical College, Fudan University, Shanghai 200032, China; Key Laboratory of Medical Molecular Virology (Ministry of Education/ National Health Commission/ Chinese Academy of Medical Sciences), Shanghai Frontiers Science Center of Pathogenic Microorganisms and Infection, School of Basic Medical Sciences, Shanghai Medical College, Fudan University, Shanghai 200032, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Li J",
+          "firstName": "Jin",
+          "lastName": "Li",
+          "initials": "J",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pharmacology, School of Basic Medical Sciences, Shanghai Medical College, Fudan University, Shanghai 200032, China; Key Laboratory of Medical Molecular Virology (Ministry of Education/ National Health Commission/ Chinese Academy of Medical Sciences), Shanghai Frontiers Science Center of Pathogenic Microorganisms and Infection, School of Basic Medical Sciences, Shanghai Medical College, Fudan University, Shanghai 200032, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Yin B",
+          "firstName": "Bowen",
+          "lastName": "Yin",
+          "initials": "B",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pharmacology, School of Basic Medical Sciences, Shanghai Medical College, Fudan University, Shanghai 200032, China; Key Laboratory of Medical Molecular Virology (Ministry of Education/ National Health Commission/ Chinese Academy of Medical Sciences), Shanghai Frontiers Science Center of Pathogenic Microorganisms and Infection, School of Basic Medical Sciences, Shanghai Medical College, Fudan University, Shanghai 200032, China; Nanhu Laboratory, Jiaxing, Zhejiang Province 314002, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Fan Z",
+          "firstName": "Zhuoyang",
+          "lastName": "Fan",
+          "initials": "Z",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pharmacology, School of Basic Medical Sciences, Shanghai Medical College, Fudan University, Shanghai 200032, China; Key Laboratory of Medical Molecular Virology (Ministry of Education/ National Health Commission/ Chinese Academy of Medical Sciences), Shanghai Frontiers Science Center of Pathogenic Microorganisms and Infection, School of Basic Medical Sciences, Shanghai Medical College, Fudan University, Shanghai 200032, China; Department of Interventional Radiology, Zhongshan Hospital, Fudan University, Shanghai 200032, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Bian S",
+          "firstName": "Shasha",
+          "lastName": "Bian",
+          "initials": "S",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pharmacology, School of Basic Medical Sciences, Shanghai Medical College, Fudan University, Shanghai 200032, China; Key Laboratory of Medical Molecular Virology (Ministry of Education/ National Health Commission/ Chinese Academy of Medical Sciences), Shanghai Frontiers Science Center of Pathogenic Microorganisms and Infection, School of Basic Medical Sciences, Shanghai Medical College, Fudan University, Shanghai 200032, China."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Shu M",
+          "firstName": "Minfeng",
+          "lastName": "Shu",
+          "initials": "M",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Department of Pharmacology, School of Basic Medical Sciences, Shanghai Medical College, Fudan University, Shanghai 200032, China; Key Laboratory of Medical Molecular Virology (Ministry of Education/ National Health Commission/ Chinese Academy of Medical Sciences), Shanghai Frontiers Science Center of Pathogenic Microorganisms and Infection, School of Basic Medical Sciences, Shanghai Medical College, Fudan University, Shanghai 200032, China; Nanhu Laboratory, Jiaxing, Zhejiang Province 314002, China. Electronic address: minfeng_shu@fudan.edu.cn."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "issue": "7",
+      "volume": "45",
+      "journalIssueId": 4223939,
+      "dateOfPublication": "2026 Jul",
+      "monthOfPublication": 7,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-07-01",
+      "journal": {
+        "title": "Cell reports",
+        "medlineAbbreviation": "Cell Rep",
+        "essn": "2211-1247",
+        "issn": "2211-1247",
+        "isoabbreviation": "Cell Rep",
+        "nlmid": "101573691"
+      }
+    },
+    "pubYear": "2026",
+    "pageInfo": "117643",
+    "abstractText": "The glioblastoma microenvironment is highly immunosuppressive and enriched with macrophages, which critically promote tumor progression and confer resistance to current therapies. However, the molecular mechanisms by which glioblastoma cells orchestrate macrophage recruitment through post-transcriptional regulation remain poorly understood. Here, we identify a glioblastoma-intrinsic pathway whereby the m6A RNA modification reader IGF2BP3 couples RNA metabolism with metabolic competition and immune remodeling. Specifically, IGF2BP3 selectively binds and stabilizes m6A-modified transcripts encoding the methionine transporter SLC38A2, thereby enhancing methionine uptake by glioblastoma cells. This metabolic advantage creates a methionine-deprived state in neighboring macrophages, leading to reduced global m6A methylation and increased expression of the chemokine CCL5. Elevated CCL5 subsequently drives further macrophage infiltration, establishing a feedforward loop that amplifies nutrient competition and sustains immunosuppression within the tumor microenvironment. Together, our findings delineate an m6A-dependent metabolic circuit that governs macrophage recruitment in glioblastoma and suggest a therapeutic avenue to reprogram the tumor immune microenvironment.",
+    "affiliation": "Department of Pharmacology, School of Basic Medical Sciences, Shanghai Medical College, Fudan University, Shanghai 200032, China; Key Laboratory of Medical Molecular Virology (Ministry of Education/ National Health Commission/ Chinese Academy of Medical Sciences), Shanghai Frontiers Science Center of Pathogenic Microorganisms and Infection, School of Basic Medical Sciences, Shanghai Medical College, Fudan University, Shanghai 200032, China; Nanhu Laboratory, Jiaxing, Zhejiang Province 314002, China.",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Journal Article"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1016/j.celrep.2026.117643"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-07-04",
+    "firstIndexDate": "2026-07-05",
+    "dateOfRevision": "2026-07-04",
+    "electronicPublicationDate": "2026-07-03",
+    "firstPublicationDate": "2026-07-03",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1271789",
+    "source": "PPR",
+    "doi": "10.64898/2026.07.02.735974",
+    "title": "ViralEpiBase: a manually curated repository of epitranscriptomic modification sites across viral RNA genomes and virus-encoded transcripts",
+    "authorString": "Srinivasan S, Chande A.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Srinivasan S",
+          "firstName": "Sreeram",
+          "lastName": "Srinivasan",
+          "initials": "S"
+        },
+        {
+          "fullName": "Chande A",
+          "firstName": "Ajit",
+          "lastName": "Chande",
+          "initials": "A"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "Post-transcriptional chemical modifications of RNA, collectively termed the epitranscriptome, have emerged as critical regulatory layers governing viral replication, pathogenicity, and host-virus interactions. Despite the rapid accumulation of experimental data on viral RNA modifications, no dedicated, freely accessible resource existed for systematically cataloguing these sites across diverse viral species. Here we present ViralEpiBase, a manually curated database of epitranscriptomic modification sites identified in viral RNA genomes and virus-encoded transcripts at single-nucleotide resolution. ViralEpiBase currently integrates seven chemically distinct RNA modification types: N6-methyladenosine (m6A), N1-methyladenosine (m1A), pseudouridine (Ψ), 5-methylcytosine (m5C), 2′-O-methylation (2′OMe), inosine and N4-acetylcytidine (ac4C); across 12 viral species encompassing both DNA and RNA viruses of clinical and biological significance. Each entry is linked to its primary literature source or deposited dataset and is retrievable by modification type, genomic coordinates, or viral taxonomy. The database is freely accessible through an intuitive web interface and is updated continuously as new experimental evidence becomes available. ViralEpiBase thus provides the first unified platform dedicated exclusively to viral epitranscriptomics and is designed to facilitate mechanistic investigation of RNA modification functions in viral biology.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.07.02.735974"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-07-05",
+    "firstIndexDate": "2026-07-05",
+    "firstPublicationDate": "2026-07-03",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42400915",
+    "source": "MED",
+    "pmid": "42400915",
+    "doi": "10.1021/acs.inorgchem.6c00835",
+    "title": "Nonporous Self-Assembled Pd(II) Coordination Cage Enabling Dual Capture of Iodine and Methyl Iodide. ",
+    "authorString": "Singha R, Pradhan R, Manna D, Ghosh S, Samanta D.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Singha R",
+          "firstName": "Raghunath",
+          "lastName": "Singha",
+          "initials": "R",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "School of Chemical Sciences, National Institute of Science Education and Research (NISER), An OCC of Homi Bhabha National Institute (HBNI), Khurda, Odisha752050, India."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Pradhan R",
+          "firstName": "Risikeshan",
+          "lastName": "Pradhan",
+          "initials": "R",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "School of Chemical Sciences, National Institute of Science Education and Research (NISER), An OCC of Homi Bhabha National Institute (HBNI), Khurda, Odisha752050, India."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Manna D",
+          "firstName": "Debashree",
+          "lastName": "Manna",
+          "initials": "D",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0002-1080-8068"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Institute of Organic Chemistry and Biochemistry, Czech Academy of Sciences, v.v.i.Flemingovo nám. 2, Prague 6, Praha16610, Czech Republic."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Ghosh S",
+          "firstName": "Subhadip",
+          "lastName": "Ghosh",
+          "initials": "S",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0002-8527-5534"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "School of Chemical Sciences, National Institute of Science Education and Research (NISER), An OCC of Homi Bhabha National Institute (HBNI), Khurda, Odisha752050, India."
+              },
+              {
+                "affiliation": "Center for Interdisciplinary Sciences (CIS), National Institute of Science Education and Research (NISER), An OCC of Homi Bhabha National Institute (HBNI), Khurda, Odisha752050, India."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Samanta D",
+          "firstName": "Dipak",
+          "lastName": "Samanta",
+          "initials": "D",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0002-3474-3588"
+          },
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "School of Chemical Sciences, National Institute of Science Education and Research (NISER), An OCC of Homi Bhabha National Institute (HBNI), Khurda, Odisha752050, India."
+              },
+              {
+                "affiliation": "Center for Interdisciplinary Sciences (CIS), National Institute of Science Education and Research (NISER), An OCC of Homi Bhabha National Institute (HBNI), Khurda, Odisha752050, India."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "authorIdList": {
+      "authorId": [
+        {
+          "type": "ORCID",
+          "value": "0000-0002-1080-8068"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0002-3474-3588"
+        },
+        {
+          "type": "ORCID",
+          "value": "0000-0002-8527-5534"
+        }
+      ]
+    },
+    "journalInfo": {
+      "journalIssueId": 4223414,
+      "dateOfPublication": "2026 Jul",
+      "monthOfPublication": 7,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-07-01",
+      "journal": {
+        "title": "Inorganic chemistry",
+        "medlineAbbreviation": "Inorg Chem",
+        "essn": "1520-510X",
+        "issn": "0020-1669",
+        "isoabbreviation": "Inorg Chem",
+        "nlmid": "0366543"
+      }
+    },
+    "pubYear": "2026",
+    "abstractText": "The expansion of nuclear energy necessitates the development of advanced materials capable of managing volatile radioactive byproducts. Herein, we report the rational design and synthesis of a discrete metal-organic cage (MOC1), assembled through coordination interactions between Pd(II) acceptor (M) and tetratopic ligand (L), and its molecular boat-like structure was unambiguously determined by single-crystal X-ray diffraction. This pyridyl-functionalized architecture is specifically engineered for the simultaneous sequestration of molecular iodine (I2) and methyl iodide (CH3I). The nonporous coordination cage exhibits exceptional iodine capture performance, achieving a vapor-phase uptake of 2.54 g g-1 at 75 °C and a solution-phase capacity of 338.8 mg g-1 in n-hexane, driven by synergistic π-iodine and electron-pair interactions. Remarkably, it also displays dynamic vapor-phase adsorption with an uptake of 1.26 g g-1. In addition, the cage effectively captures CH3I vapor, reaching capacities of up to 1.10 g g-1 through a nucleophilic methylation mechanism. Stability studies confirm that MOC1 retains its structural integrity and adsorption efficiency over at least five regeneration cycles. This work establishes an effective approach for designing recyclable metallo-assembly optimized for the remediation of iodine and organic iodides, significantly advancing the safety standards of nuclear power generation.",
+    "affiliation": "School of Chemical Sciences, National Institute of Science Education and Research (NISER), An OCC of Homi Bhabha National Institute (HBNI), Khurda, Odisha752050, India.",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Journal Article"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1021/acs.inorgchem.6c00835"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-07-04",
+    "firstIndexDate": "2026-07-05",
+    "dateOfRevision": "2026-07-04",
+    "electronicPublicationDate": "2026-07-04",
+    "firstPublicationDate": "2026-07-04",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42401527",
+    "source": "MED",
+    "pmid": "42401527",
+    "doi": "10.1016/j.joim.2026.06.003",
+    "title": "Epigenetic modulation by essential oils: Potential applications and challenges in palliative care. ",
+    "authorString": "Diogo Gonçalves S, Garcia Diogo R.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Diogo Gonçalves S",
+          "firstName": "Sara",
+          "lastName": "Diogo Gonçalves",
+          "initials": "S",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Clinical Academic Center of Trás-os-Montes and Alto Douro, University of Trás-os-Montes and Alto Douro, Vila Real 5000-801, Portugal. Electronic address: sgoncalves@utad.com."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Garcia Diogo R",
+          "firstName": "Raquel",
+          "lastName": "Garcia Diogo",
+          "initials": "R",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Dentistry, Hospital da Luz of Vila Real, Vila Real 5000-657, Portugal."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "journalIssueId": 4222149,
+      "dateOfPublication": "2026 Jun",
+      "monthOfPublication": 6,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-06-01",
+      "journal": {
+        "title": "Journal of integrative medicine",
+        "medlineAbbreviation": "J Integr Med",
+        "issn": "2095-4964",
+        "isoabbreviation": "J Integr Med",
+        "nlmid": "101603118"
+      }
+    },
+    "pubYear": "2026",
+    "pageInfo": "S2095-4964(26)00081-6",
+    "abstractText": "Essential oils have long been used in complementary medicine, and recent research has demonstrated their potential to modulate epigenetic mechanisms such as DNA methylation, histone modification and microRNA regulation. These epigenetic effects suggest that essential oils may offer novel therapeutic benefits in palliative care, which primarily focus on symptom management, improvement of quality of life, and support for emotional well-being in patients with life-limiting conditions. This review examined the epigenetic mechanisms by which key compounds in essential oils, such as curcumin, eugenol, limonene and thymoquinone, modulate gene expression and cellular pathways associated with pain, inflammation, neurodegeneration and cancer progression. Preclinical studies indicate that these compounds demonstrate the ability to modulate inflammation, reduce oxidative stress, promote neuroprotection and support immune function, making them promising adjuncts in the management of pain, cognitive decline and psychological distress. Despite these promising preclinical findings, challenges remain regarding bioavailability, optimal dosing and clinical safety. Further human studies are necessary to establish standardised protocols for using essential oils in palliative care. As research progresses, the integration of epigenetically active essential oils may provide a personalised and non-invasive approach to symptom management, thereby improving the quality of life and overall well-being of palliative care patients. Despite the promising preclinical findings, it is essential to note that clinical studies evaluating the epigenetic effects of essential oils in palliative care patients are currently lacking, underscoring the need for future research. Please cite this article as: Gonçalves SD, Diogo RG. Epigenetic modulation by essential oils: Potential applications and challenges in palliative care. J Integr Med. 2026; Epub ahead of print.",
+    "affiliation": "Clinical Academic Center of Trás-os-Montes and Alto Douro, University of Trás-os-Montes and Alto Douro, Vila Real 5000-801, Portugal. Electronic address: sgoncalves@utad.com.",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Review",
+        "Journal Article"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1016/j.joim.2026.06.003"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-07-04",
+    "firstIndexDate": "2026-07-05",
+    "dateOfRevision": "2026-07-04",
+    "electronicPublicationDate": "2026-06-16",
+    "firstPublicationDate": "2026-06-16",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1271693",
+    "source": "PPR",
+    "doi": "10.64898/2026.07.02.735893",
+    "title": "Long-read sequencing maps transposable element variation and its regulatory and epigenetic effects in the human brain",
+    "authorString": "Ayuketah A, Meredith M, Groza C, Moller A, Daida K, Catching A, Weller C, Kouam C, Paulin L, Malik L, Baker B, Hu F, Bromberek S, Jerez PA, Paquette K, Izydorczyk M, Gu B, Chaisson MJ, Middlehurst B, Bubb VJ, Quinn JP, Price E, Singleton AB, Jain M, Blauwendraat C, Nalls MA, Cookson MR, Reed X, Sedlazeck FJ, Goubert C, Billingsley KJ.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Ayuketah A",
+          "firstName": "Alexis",
+          "lastName": "Ayuketah",
+          "initials": "A"
+        },
+        {
+          "fullName": "Meredith M",
+          "firstName": "Melissa",
+          "lastName": "Meredith",
+          "initials": "M"
+        },
+        {
+          "fullName": "Groza C",
+          "firstName": "Cristian",
+          "lastName": "Groza",
+          "initials": "C"
+        },
+        {
+          "fullName": "Moller A",
+          "firstName": "Abraham",
+          "lastName": "Moller",
+          "initials": "A"
+        },
+        {
+          "fullName": "Daida K",
+          "firstName": "Kensuke",
+          "lastName": "Daida",
+          "initials": "K"
+        },
+        {
+          "fullName": "Catching A",
+          "firstName": "Adam",
+          "lastName": "Catching",
+          "initials": "A"
+        },
+        {
+          "fullName": "Weller C",
+          "firstName": "Cory",
+          "lastName": "Weller",
+          "initials": "C"
+        },
+        {
+          "fullName": "Kouam C",
+          "firstName": "Cedric",
+          "lastName": "Kouam",
+          "initials": "C"
+        },
+        {
+          "fullName": "Paulin L",
+          "firstName": "Luis",
+          "lastName": "Paulin",
+          "initials": "L"
+        },
+        {
+          "fullName": "Malik L",
+          "firstName": "Laksh",
+          "lastName": "Malik",
+          "initials": "L"
+        },
+        {
+          "fullName": "Baker B",
+          "firstName": "Breeana",
+          "lastName": "Baker",
+          "initials": "B"
+        },
+        {
+          "fullName": "Hu F",
+          "firstName": "Fangle",
+          "lastName": "Hu",
+          "initials": "F"
+        },
+        {
+          "fullName": "Bromberek S",
+          "firstName": "Sarah",
+          "lastName": "Bromberek",
+          "initials": "S"
+        },
+        {
+          "fullName": "Jerez PA",
+          "firstName": "Pilar Alvarez",
+          "lastName": "Jerez",
+          "initials": "PA"
+        },
+        {
+          "fullName": "Paquette K",
+          "firstName": "Kimberly",
+          "lastName": "Paquette",
+          "initials": "K"
+        },
+        {
+          "fullName": "Izydorczyk M",
+          "firstName": "Michal",
+          "lastName": "Izydorczyk",
+          "initials": "M"
+        },
+        {
+          "fullName": "Gu B",
+          "firstName": "Bida",
+          "lastName": "Gu",
+          "initials": "B"
+        },
+        {
+          "fullName": "Chaisson MJ",
+          "firstName": "Mark J.P.",
+          "lastName": "Chaisson",
+          "initials": "MJ"
+        },
+        {
+          "fullName": "Middlehurst B",
+          "firstName": "Ben",
+          "lastName": "Middlehurst",
+          "initials": "B"
+        },
+        {
+          "fullName": "Bubb VJ",
+          "firstName": "Vivien",
+          "lastName": "Bubb",
+          "initials": "VJ"
+        },
+        {
+          "fullName": "Quinn JP",
+          "firstName": "John",
+          "lastName": "Quinn",
+          "initials": "JP"
+        },
+        {
+          "fullName": "Price E",
+          "firstName": "Emma",
+          "lastName": "Price",
+          "initials": "E"
+        },
+        {
+          "fullName": "Singleton AB",
+          "firstName": "Andrew",
+          "lastName": "Singleton",
+          "initials": "AB"
+        },
+        {
+          "fullName": "Jain M",
+          "firstName": "Miten",
+          "lastName": "Jain",
+          "initials": "M"
+        },
+        {
+          "fullName": "Blauwendraat C",
+          "firstName": "Cornelis",
+          "lastName": "Blauwendraat",
+          "initials": "C"
+        },
+        {
+          "fullName": "Nalls MA",
+          "firstName": "Mike",
+          "lastName": "Nalls",
+          "initials": "MA"
+        },
+        {
+          "fullName": "Cookson MR",
+          "firstName": "Mark",
+          "lastName": "Cookson",
+          "initials": "MR"
+        },
+        {
+          "fullName": "Reed X",
+          "firstName": "Xylena",
+          "lastName": "Reed",
+          "initials": "X"
+        },
+        {
+          "fullName": "Sedlazeck FJ",
+          "firstName": "Fritz",
+          "lastName": "Sedlazeck",
+          "initials": "FJ"
+        },
+        {
+          "fullName": "Goubert C",
+          "firstName": "Clément",
+          "lastName": "Goubert",
+          "initials": "C"
+        },
+        {
+          "fullName": "Billingsley KJ",
+          "firstName": "Kimberley",
+          "lastName": "Billingsley",
+          "initials": "KJ"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "Transposable elements (TEs) are mobile DNA sequences that shape genome architecture and gene regulation, yet their roles in the human brain remain largely unresolved. Short-read sequencing lacks the resolution to accurately map TE insertions, detect associated structural variants, and resolve highly repetitive regions. Here, we leverage long-read whole-genome sequencing to profile germline TE insertions in postmortem brain tissue from two ancestrally diverse cohorts: the North American Brain Expression Consortium (NABEC; European ancestry, n = 205) and the Human Brain Collection Core (HBCC; African and African-admixed ancestry, n = 146). We identified 2,842 and 1,660 high-confidence non-reference insertions in HBCC and NABEC, respectively, spanning Alu, LINE-1, and SVA elements. We then also further characterized complex short tandem repeat and variable number tandem repeat variation within reference SVA and Alu loci. Reference TEs were also found to mediate complex structural variants at loci implicated in brain development and neurodegenerative disease, with several showing ancestry-specific patterns. Integration of bulk RNA-sequencing data identified TE expression quantitative trait loci, including insertions that modulate neuronal gene expression. Single-nucleus RNA sequencing revealed cell-type-specific effects of TE regulation across cortical populations. Long-read methylation profiling further demonstrated age-associated epigenetic regulation of both reference and non-reference Alu elements. As a community resource, we release a catalog of TE insertions, allele frequencies, and ancestry-specific distributions to enable future functional and disease-focused investigations. Together, these findings highlight the widespread regulatory and epigenetic influence of TEs in the human brain and establish long-read sequencing as a powerful approach for uncovering cell-type- and population-specific TE dynamics.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.07.02.735893"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-07-05",
+    "firstIndexDate": "2026-07-05",
+    "firstPublicationDate": "2026-07-03",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "42401939",
+    "source": "MED",
+    "pmid": "42401939",
+    "doi": "10.1186/s12920-026-02424-4",
+    "title": "Genetic architecture of patients with autism spectrum disorder - data analysis based on the literature review. ",
+    "authorString": "Ręka G, Wojciechowska K, Lejman M.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Ręka G",
+          "firstName": "Gabriela",
+          "lastName": "Ręka",
+          "initials": "G",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Independent Laboratory of Genetic Diagnostics of the Department of Pediatrics, Medical University of Lublin, Antoni Gebala Street 6, Lublin, 20-093, Poland. gabriela.reka@umlub.edu.pl."
+              },
+              {
+                "affiliation": "Doctoral School of Medical University of Lublin, Chodźki Street 7, Lublin, 20-093, Poland. gabriela.reka@umlub.edu.pl."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Wojciechowska K",
+          "firstName": "Katarzyna",
+          "lastName": "Wojciechowska",
+          "initials": "K",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Independent Laboratory of Genetic Diagnostics of the Department of Pediatrics, Medical University of Lublin, Antoni Gebala Street 6, Lublin, 20-093, Poland."
+              }
+            ]
+          }
+        },
+        {
+          "fullName": "Lejman M",
+          "firstName": "Monika",
+          "lastName": "Lejman",
+          "initials": "M",
+          "authorAffiliationDetailsList": {
+            "authorAffiliation": [
+              {
+                "affiliation": "Independent Laboratory of Genetic Diagnostics of the Department of Pediatrics, Medical University of Lublin, Antoni Gebala Street 6, Lublin, 20-093, Poland."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "journalInfo": {
+      "journalIssueId": 4224675,
+      "dateOfPublication": "2026 Jul",
+      "monthOfPublication": 7,
+      "yearOfPublication": 2026,
+      "printPublicationDate": "2026-07-01",
+      "journal": {
+        "title": "BMC medical genomics",
+        "medlineAbbreviation": "BMC Med Genomics",
+        "essn": "1755-8794",
+        "issn": "1755-8794",
+        "isoabbreviation": "BMC Med Genomics",
+        "nlmid": "101319628"
+      }
+    },
+    "pubYear": "2026",
+    "abstractText": "Autism spectrum disorder (ASD) is a neurodevelopmental condition including incorrect functioning in communication, social interaction, and repetitive behavior. Global prevalence is estimated as 1-2%, with a predominance of men. Different pre- and perinatal, environmental, immunological, neurobiological, genetic, and epigenetic factors are involved in the etiology of ASD. The study aims to analyze genetic abnormalities in patients with ASD according to data from the current literature. Studies available in the PubMed and Google Scholar databases were chosen through a literature search. Only papers published from 2020, available as full-text publications in English, with studies conducted on humans, original papers, or meta-analyses were included. The following types of genetic variation were identified: copy number variants, larger insertions, inversions, uniparental disomies, tandem repeat expansions, common single nucleotide polymorphisms, single nucleotide variants, short insertions/deletions, and mitochondrial variants. Epigenetic factors, like histone modifications, deoxyribonucleic acid (DNA) methylation, and micro ribonucleic acid might play an important role in ASD predisposition. Genes identified in the review were mainly involved in neurodevelopment, synaptic formation, neuronal migration, neurotransmission, glial proliferation, ubiquitination, chromatin remodeling, or transcription. ASD is described as a component of the phenotype in fragile X syndrome, tuberous sclerosis complex, neurofibromatosis type 1, Angelman, Phelan-McDermid, Smith-Lemli-Opitz syndromes, and chromosome trisomies. Current guidelines for genetic diagnosis of ASD recommend performing directed genetic studies in the first line (like multiplex ligation-dependent probe amplification - MLPA, analysis of FMR1 gene), in case of a negative result, chromosomal microarray as a routine method, then next-generation sequencing (NGS) panel testing, WES (whole exome sequencing), or even WGS (whole genome sequencing) as the last test. Wider access to modern diagnostic methods has increased the number of ASD patients in whom the genetic etiology of the disorder has been uncovered. Knowledge of the genetic background would be applicable in the diagnosis, prevention, prognosis, and individualized treatment.",
+    "affiliation": "Independent Laboratory of Genetic Diagnostics of the Department of Pediatrics, Medical University of Lublin, Antoni Gebala Street 6, Lublin, 20-093, Poland. gabriela.reka@umlub.edu.pl.",
+    "publicationStatus": "aheadofprint",
+    "language": "eng",
+    "pubModel": "Print-Electronic",
+    "pubTypeList": {
+      "pubType": [
+        "IM",
+        "Review",
+        "Journal Article"
+      ]
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Subscription required",
+          "availabilityCode": "S",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.1186/s12920-026-02424-4"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-07-04",
+    "firstIndexDate": "2026-07-05",
+    "dateOfRevision": "2026-07-04",
+    "electronicPublicationDate": "2026-07-04",
+    "firstPublicationDate": "2026-07-04",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  }
+]

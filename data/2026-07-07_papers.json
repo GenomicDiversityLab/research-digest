@@ -1,0 +1,678 @@
+[
+  {
+    "id": "PPR1272014",
+    "source": "PPR",
+    "doi": "10.64898/2026.07.04.736504",
+    "title": "Individualized parcellation reveals functional boundaries in human prefrontal cortex",
+    "authorString": "Xiang JD, Zhi D, Arafat B, Nettekoven C, Diedrichsen J, Mur M.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Xiang JD",
+          "firstName": "Jinkang Derrick",
+          "lastName": "Xiang",
+          "initials": "JD"
+        },
+        {
+          "fullName": "Zhi D",
+          "firstName": "Da",
+          "lastName": "Zhi",
+          "initials": "D"
+        },
+        {
+          "fullName": "Arafat B",
+          "firstName": "Bassel",
+          "lastName": "Arafat",
+          "initials": "B"
+        },
+        {
+          "fullName": "Nettekoven C",
+          "firstName": "Caroline",
+          "lastName": "Nettekoven",
+          "initials": "C"
+        },
+        {
+          "fullName": "Diedrichsen J",
+          "firstName": "Joern",
+          "lastName": "Diedrichsen",
+          "initials": "J"
+        },
+        {
+          "fullName": "Mur M",
+          "firstName": "Marieke",
+          "lastName": "Mur",
+          "initials": "M"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "Human prefrontal cortex (PFC) supports diverse higher-order cognitive functions during task execution. Increasing evidence suggests that these functions are organized along large-scale gradients, such as a rostro-caudal axis supporting progressively abstract-to-concrete information processing. At the same time, regional specialization within PFC, including focal patches selective for specific stimulus categories, suggests the presence of discrete functional boundaries. Whether PFC organization is best characterized by continuous gradients or discrete subdivisions remains unresolved. Here we show that task-evoked functional organization in PFC exhibits substantial inter-individual variability, limiting the usefulness of conventional group atlases in testing for functional boundaries. To address this challenge, we estimated individualized functional parcellations by combining a group atlas with task-evoked fMRI data spanning diverse cognitive tasks. The group atlas revealed large-scale functional gradients across PFC, whereas individualized parcellations additionally uncovered sharp functional boundaries obscured by group averaging. Moreover, functional organization in PFC was substantially more fine-grained than in other association cortices, consistent with its integrative role in cognitive control. Together, these findings suggest that PFC organization reflects an individualized mosaic of fine-grained functional subdivisions embedded within broader large-scale gradients, with important implications for defining core constructs such as the multiple-demand system.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.07.04.736504"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-07-07",
+    "firstIndexDate": "2026-07-07",
+    "firstPublicationDate": "2026-07-06",
+    "matched_keywords": [
+      "mosaic"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1271888",
+    "source": "PPR",
+    "doi": "10.64898/2026.06.28.735086",
+    "title": "Quantifying the Information Capacity of DNA Methylation as an Epigenetic Memory System",
+    "authorString": "De la Fuente IM, Carrasco Pujante J, Fedetz M, Legarreta L, Malaina I, Camino B, Perez-Yarza G, Martinez L, Cortes J, Lopez JI.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "De la Fuente IM",
+          "firstName": "Ildefonso",
+          "lastName": "De la Fuente",
+          "initials": "IM"
+        },
+        {
+          "fullName": "Carrasco Pujante J",
+          "firstName": "Jose",
+          "lastName": "Carrasco Pujante",
+          "initials": "J",
+          "authorId": {
+            "type": "ORCID",
+            "value": "0000-0001-6490-738X"
+          }
+        },
+        {
+          "fullName": "Fedetz M",
+          "firstName": "Maria",
+          "lastName": "Fedetz",
+          "initials": "M"
+        },
+        {
+          "fullName": "Legarreta L",
+          "firstName": "Leire",
+          "lastName": "Legarreta",
+          "initials": "L"
+        },
+        {
+          "fullName": "Malaina I",
+          "firstName": "Iker",
+          "lastName": "Malaina",
+          "initials": "I"
+        },
+        {
+          "fullName": "Camino B",
+          "firstName": "Borja",
+          "lastName": "Camino",
+          "initials": "B"
+        },
+        {
+          "fullName": "Perez-Yarza G",
+          "firstName": "Gorka",
+          "lastName": "Perez-Yarza",
+          "initials": "G"
+        },
+        {
+          "fullName": "Martinez L",
+          "firstName": "Luis",
+          "lastName": "Martinez",
+          "initials": "L"
+        },
+        {
+          "fullName": "Cortes J",
+          "firstName": "Jesus",
+          "lastName": "Cortes",
+          "initials": "J"
+        },
+        {
+          "fullName": "Lopez JI",
+          "firstName": "Jose",
+          "lastName": "Lopez",
+          "initials": "JI"
+        }
+      ]
+    },
+    "authorIdList": {
+      "authorId": [
+        {
+          "type": "ORCID",
+          "value": "0000-0001-6490-738X"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "The information content of the genome has been extensively analyzed. However, a comparable quantitative framework for DNA methylation is still lacking. Without such quantification, the magnitude of this regulatory and dynamic epigenetic structure remains conceptually imprecise, even though methylation dysregulation is strongly linked to disease-related phenotypes and altered cellular identity. Here we address this gap by applying Shannon information theory to DNA methylation. We first consider methylation marks as binary or probabilistic regulatory states and estimate the theoretical upper-bound information capacity of the human methylome under simplifying assumptions. We then progressively refine this estimate by incorporating biologically relevant constraints, including methylation bias, bimodal methylation distributions, local CpG correlation, genomic regulatory class, and cell-type-discriminative methylation patterns. This approach allows us to distinguish between theoretical methylation capacity, statistical methylation entropy, and biologically interpretable regulatory information. Finally, we consider methylation information from a discriminative perspective, analyzing its contribution to distinguishing cell types and regulatory cellular states. Within this framework, mutual information between methylation patterns and cell identity provides a biologically constrained estimate of methylation′s role as an epigenetic identity code. Our layered analysis reconciles megabit-scale methylome capacity with compact, biologically interpretable identity signatures.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.06.28.735086"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "Y",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "license": "cc by",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-07-07",
+    "firstIndexDate": "2026-07-07",
+    "firstPublicationDate": "2026-07-06",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1272026",
+    "source": "PPR",
+    "doi": "10.64898/2026.07.05.736545",
+    "title": "METTL1 regulates glioma proliferation through internal m7G methylation of EPHA2.",
+    "authorString": "Li G, Xu T, Yu P, Sun Y, Huang J, Fang X, Lv J, Yang S.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Li G",
+          "firstName": "Guangyu",
+          "lastName": "Li",
+          "initials": "G"
+        },
+        {
+          "fullName": "Xu T",
+          "firstName": "Tutu",
+          "lastName": "Xu",
+          "initials": "T"
+        },
+        {
+          "fullName": "Yu P",
+          "firstName": "Peng",
+          "lastName": "Yu",
+          "initials": "P"
+        },
+        {
+          "fullName": "Sun Y",
+          "firstName": "Yongqing",
+          "lastName": "Sun",
+          "initials": "Y"
+        },
+        {
+          "fullName": "Huang J",
+          "firstName": "Jinhai",
+          "lastName": "Huang",
+          "initials": "J"
+        },
+        {
+          "fullName": "Fang X",
+          "firstName": "Xiang",
+          "lastName": "Fang",
+          "initials": "X"
+        },
+        {
+          "fullName": "Lv J",
+          "firstName": "Junhui",
+          "lastName": "Lv",
+          "initials": "J"
+        },
+        {
+          "fullName": "Yang S",
+          "firstName": "Shuxu",
+          "lastName": "Yang",
+          "initials": "S"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "This study reveals that METTL1 promotes glioma progression through internal m7G methylation of EPHA2 mRNA. METTL1 was highly expressed in glioma and associated with poor prognosis. METTL1 knockdown inhibited glioma cell proliferation, migration, invasion, and cell-cycle progression. Mechanistically, METTL1 bound to EPHA2 mRNA and mediated m7G methylation at two coding-sequence sites, thereby enhancing EPHA2 mRNA stability and expression. Increased EPHA2 activated the AKT/Cyclin D1 signaling pathway, while EPHA2 rescue restored proliferation impaired by METTL1 knockdown. These findings identify the METTL1-EPHA2-AKT axis as a potential therapeutic target in glioma.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.07.05.736545"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-07-07",
+    "firstIndexDate": "2026-07-07",
+    "firstPublicationDate": "2026-07-05",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1271961",
+    "source": "PPR",
+    "doi": "10.64898/2026.07.03.736420",
+    "title": "Short-term methionine starvation induces de novo diurnal oscillations of hepatic m6A RNA methylation",
+    "authorString": "Liu Y, Chrysovergis K, Johnson KL, Williams JG, Lih FB, Deterding LJ, Grimm SA, Wade PA.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Liu Y",
+          "firstName": "Yang",
+          "lastName": "Liu",
+          "initials": "Y"
+        },
+        {
+          "fullName": "Chrysovergis K",
+          "firstName": "Kaliopi",
+          "lastName": "Chrysovergis",
+          "initials": "K"
+        },
+        {
+          "fullName": "Johnson KL",
+          "firstName": "Katina",
+          "lastName": "Johnson",
+          "initials": "KL"
+        },
+        {
+          "fullName": "Williams JG",
+          "firstName": "Jason",
+          "lastName": "Williams",
+          "initials": "JG"
+        },
+        {
+          "fullName": "Lih FB",
+          "firstName": "Fred",
+          "lastName": "Lih",
+          "initials": "FB"
+        },
+        {
+          "fullName": "Deterding LJ",
+          "firstName": "Leesa",
+          "lastName": "Deterding",
+          "initials": "LJ"
+        },
+        {
+          "fullName": "Grimm SA",
+          "firstName": "Sara",
+          "lastName": "Grimm",
+          "initials": "SA"
+        },
+        {
+          "fullName": "Wade PA",
+          "firstName": "Paul",
+          "lastName": "Wade",
+          "initials": "PA"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "Dietary methionine restriction has been shown to improve metabolic health and treat multiple diseases. Methionine metabolism regulates transmethylation reactions, including N6-methyladenosine (m6A) RNA methylation, by modulating the availability of S-adenosyl methionine (SAM). Both m6A RNA methylation and methionine metabolism are involved in the regulation of the circadian clock. However, it remains unclear whether dietary methionine influences circadian rhythms through the regulation of m6A RNA modification. In this study, we investigated the effects of short-term methionine deprivation on the diurnal oscillations of m6A RNA methylation in the mouse liver. We found that a methionine-deficient (MD) diet reprogrammed the cyclic expression patterns of m6A writers, erasers, and readers. Methylated RNA immunoprecipitation sequencing (MeRIP-seq) revealed that the MD diet induced de novo diurnal m6A oscillations in genes associated with RNA processing, protein translation, protein ubiquitination, and mTORC1 signaling pathways. RNA-seq and quantitative proteomics analyses demonstrated that MD induced changes in m6A RNA levels were linked to alterations in mRNA and protein abundance. We observed that dynamic m6A RNA methylation of the transcripts encoding two key enzymes, MAT2A and CBS, helps maintain methionine homeostasis in response to methionine starvation. These findings identify m6A RNA methylation as a key mechanism linking methionine metabolism to circadian regulation.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.07.03.736420"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-07-07",
+    "firstIndexDate": "2026-07-07",
+    "firstPublicationDate": "2026-07-06",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1271865",
+    "source": "PPR",
+    "doi": "10.64898/2026.07.05.736536",
+    "title": "Dynamic Histone Lysine Methylation and Demethylation in Wood Frog (Rana sylvatica) Liver During Anoxia",
+    "authorString": "Chakraborty P.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Chakraborty P",
+          "firstName": "Pallabi",
+          "lastName": "Chakraborty",
+          "initials": "P"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "Anoxia is a major stress for most vertebrates and frequently accompanies harsh winter conditions, particularly in species that spend much of the season frozen solid. North American freeze tolerant wood frogs (Rana sylvatica) can survive several months without oxygen and endure whole body freezing for up to eight months of the year, with ~70% of total body water frozen as extracellular ice, yet revive when temperatures rise in spring. Survival depends on multiple adaptations, including tolerance of prolonged oxygen deprivation while frozen, when breathing and circulation are halted. A key strategy involves hepatic glycogen mobilization, producing large amounts of glucose that are distributed to tissues where it functions both as a cryoprotectant and as a substrate for anaerobic ATP production. The present study examines the role of histone lysine methylation and demethylation in regulating liver proteins under anoxic conditions. Relative protein expression of seven histone methyltransferases (ASH2L S, ASH2L L, RBBP5, SETD8, SMYD2, ESET, SETD1), six lysine demethylases (KDM1A, KDM3B, KDM4A, KDM4B, KDM5A, KDM5C), and eight histone marks (H3K4me1, H3K4me2, H3K9me3, H3K27me3, H3K36me3, H3K79me3, H4K20me1, H4K20me3) were evaluated in wood frog liver under control, 4 hour, and 24 hour anoxia exposures. The data indicate that histone lysine methylation and demethylation contribute significantly to transcriptional regulation under anoxia. Specifically, H3K4, H3K36, and H3K79 methylation were associated with transcriptional activation, whereas H3K9, H3K27, and H4K20 methylation correlated with transcriptional repression. These findings highlight the dynamic role of epigenetic regulation in supporting hypometabolism and stress adaptation in freeze tolerant wood frogs.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.07.05.736536"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-07-07",
+    "firstIndexDate": "2026-07-07",
+    "firstPublicationDate": "2026-07-06",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1271875",
+    "source": "PPR",
+    "doi": "10.64898/2026.07.05.736617",
+    "title": "<i>E. coli</i>  RsmF activity depends on prior modification of 16S rRNA helix 44",
+    "authorString": "Barmada MI, Hanna A, Bair CR, McGinity EN, Zelinskaya N, Dey D, Conn GL.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "Barmada MI",
+          "firstName": "Mohamed",
+          "lastName": "Barmada",
+          "initials": "MI"
+        },
+        {
+          "fullName": "Hanna A",
+          "firstName": "Aya",
+          "lastName": "Hanna",
+          "initials": "A"
+        },
+        {
+          "fullName": "Bair CR",
+          "firstName": "Camden",
+          "lastName": "Bair",
+          "initials": "CR"
+        },
+        {
+          "fullName": "McGinity EN",
+          "firstName": "Erin",
+          "lastName": "McGinity",
+          "initials": "EN"
+        },
+        {
+          "fullName": "Zelinskaya N",
+          "firstName": "Natalia",
+          "lastName": "Zelinskaya",
+          "initials": "N"
+        },
+        {
+          "fullName": "Dey D",
+          "firstName": "Debayan",
+          "lastName": "Dey",
+          "initials": "D"
+        },
+        {
+          "fullName": "Conn GL",
+          "firstName": "Graeme",
+          "lastName": "Conn",
+          "initials": "GL"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "Bacterial ribosomal RNA (rRNA) methylations are important for accurate translation. Four distinct methylations incorporated by RsmE, RsmF, and RsmH/ RsmI form a cluster of three modified 16S rRNA nucleotides (m  3 U1498, m  5 C1407, and m  4 Cm1402) surrounding the decoding center of the 30S subunit. Given their common substrate requirement of a late-stage intermediate 30S subunit, these enzymes likely act contemporaneously during subunit biogenesis, but whether there exists a required modification order is unknown. Here, using hypomethylated 30S subunits obtained from a collection of rsmH/I/E/F-deleted  Escherichia coli strains, we identify RsmF activity to be highly dependent on prior modification of h44 both  in vitro and in  E. coli . RsmF activity on hypomethylated 30S subunits could be partially rescued by prior in vitro methylation using RsmE and RsmH, indicating that incorporation of these methyl groups directly shapes h44 for recognition by RsmF. RNA structure probing using SHAPE-MaP and molecular dynamics simulations reveal specific alterations in 16S rRNA structure and dynamics in the absence of the m  4 C1402 (RsmH) and m  3 U1498 (RsmE) modifications that likely restrict RsmF action. These studies thus uncover a previously unappreciated \"order of operations\" for 16S rRNA modification during ribosome biogenesis with important implications for studies on the collective functions of these modifications.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.07.05.736617"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-07-07",
+    "firstIndexDate": "2026-07-07",
+    "firstPublicationDate": "2026-07-06",
+    "matched_keywords": [
+      "methylation"
+    ],
+    "matched_journals": []
+  },
+  {
+    "id": "PPR1272020",
+    "source": "PPR",
+    "doi": "10.64898/2026.07.02.736232",
+    "title": "SSUplex: fast, both-strand extraction and origin-sorting of small-subunit rRNA for environmental DNA metabarcoding",
+    "authorString": "O'Brien A, Vargas J, Acuna I, Parada P.",
+    "authorList": {
+      "author": [
+        {
+          "fullName": "O'Brien A",
+          "firstName": "Aaron",
+          "lastName": "O'Brien",
+          "initials": "A"
+        },
+        {
+          "fullName": "Vargas J",
+          "firstName": "Juan",
+          "lastName": "Vargas",
+          "initials": "J"
+        },
+        {
+          "fullName": "Acuna I",
+          "firstName": "Isabel",
+          "lastName": "Acuna",
+          "initials": "I"
+        },
+        {
+          "fullName": "Parada P",
+          "firstName": "Pilar",
+          "lastName": "Parada",
+          "initials": "P"
+        }
+      ]
+    },
+    "pubYear": "2026",
+    "abstractText": "Ribosomal RNA metabarcoding sits at the centre of how we characterise microbial and eukaryotic communities in environmental samples, and long-read sequencing has made full-length small-subunit (SSU; 16S/18S) profiling routine. The broadly conserved primers that make rRNA such a convenient marker are also its liability: by design they co-amplify organellar (mitochondrial, chloroplast) and cross-domain SSU alongside the intended target. Left unsorted before taxonomic assignment, these passengers are systematically misclassified, and the error propagates straight into estimates of community composition and diversity. Reads must therefore be detected, extracted, and sorted by origin before they ever reach a classifier. We present SSUplex, an open-source tool that detects SSU rRNA, assigns each read to one of five origins (bacteria, archaea, eukaryota, mitochondria, chloroplast), and extracts the SSU region for downstream classification. SSUplex reimplements the extraction-and-origin logic of the widely used Metaxa2 in the Rust programming language, scans both strands, and ships as a single dependency-light binary suited to long-read (Oxford Nanopore, PacBio HiFi) and short-read data. Benchmarked against Metaxa2 on public data, SSUplex reproduces Metaxa2 origin calls on full-length reads (96.8% concordance) and matches its extraction speed on small inputs, then pulls away to run up to approximately 3.4-fold faster with approximately 35% lower peak memory at 200,000 reads, the per-sample scale a long-read amplicon run typically reaches. We characterise a genuine, measured trade-off in the origin-ranking statistic, and we identify the bacteria-versus-mitochondria boundary as the method's one intrinsically lower-confidence edge. For the now-common workflow in which origin-sorted reads are handed to a dedicated classifier rather than classified in place, SSUplex is a fast, reproducible, embeddable stand-in for Metaxa2's extraction role. Source code and a benchmark harness that regenerates every result from public data are available under the MIT license at https://github.com/ayobi/ssuplex.",
+    "pubTypeList": {
+      "pubType": [
+        "Preprint"
+      ]
+    },
+    "bookOrReportDetails": {
+      "publisher": "bioRxiv",
+      "yearOfPublication": 2026
+    },
+    "fullTextUrlList": {
+      "fullTextUrl": [
+        {
+          "availability": "Free",
+          "availabilityCode": "F",
+          "documentStyle": "doi",
+          "site": "DOI",
+          "url": "https://doi.org/10.64898/2026.07.02.736232"
+        }
+      ]
+    },
+    "isOpenAccess": "N",
+    "inEPMC": "N",
+    "inPMC": "N",
+    "hasPDF": "N",
+    "hasBook": "N",
+    "hasSuppl": "N",
+    "citedByCount": 0,
+    "hasData": "N",
+    "hasReferences": "N",
+    "hasTextMinedTerms": "N",
+    "hasDbCrossReferences": "N",
+    "hasLabsLinks": "N",
+    "hasEvaluations": "N",
+    "authMan": "N",
+    "epmcAuthMan": "N",
+    "nihAuthMan": "N",
+    "hasTMAccessionNumbers": "N",
+    "dateOfCreation": "2026-07-07",
+    "firstIndexDate": "2026-07-07",
+    "firstPublicationDate": "2026-07-05",
+    "matched_keywords": [
+      "PacBio"
+    ],
+    "matched_journals": []
+  }
+]
